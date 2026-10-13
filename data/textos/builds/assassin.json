@@ -34,42 +34,8 @@
    "uso": "Grupos de monstruos y subir de nivel: entra Tiro de daga sombría."
   }
  ],
- "tecla_macro": "Una tecla que mantienes pulsada (no dice cuál). El primer día basta una macro sencilla en un botón del ratón.",
- "macros_por_preset": [
-  {
-   "preset_en": "Boss and dungeons",
-   "pasos": [
-    "Explosión de insignia",
-    "Estocada al corazón",
-    "Emboscada",
-    "Corte rápido"
-   ],
-   "retardo_ms": 10,
-   "nota": "En el juego son 2 pasos: la tecla de daño (Explosión de insignia con Estocada al corazón y Emboscada apiladas debajo) y Corte rápido."
-  },
-  {
-   "preset_en": "Progression and new fights",
-   "pasos": [
-    "Explosión de insignia",
-    "Estocada al corazón",
-    "Emboscada",
-    "Corte rápido"
-   ],
-   "retardo_ms": 10,
-   "nota": "Misma macro que en jefes."
-  },
-  {
-   "preset_en": "Farming and leveling",
-   "pasos": [
-    "Explosión de insignia",
-    "Estocada al corazón",
-    "Rugido bestial",
-    "Corte rápido"
-   ],
-   "retardo_ms": 10,
-   "nota": "Rugido bestial sustituye a Emboscada: en un grupo de monstruos no hay espalda que cuidar."
-  }
- ],
+ "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
+ "macros_por_preset": [],
  "secciones": {
   "equipo": [
    {
@@ -543,6 +509,35 @@
   ],
   "rotacion": [
    {
+    "id": "pilas",
+    "tipo": "aviso",
+    "texto": "En cada pila sale primero la de **abajo** (prioridad 1): si está lista, la lanza; si no, prueba la de encima. Por eso el relleno sin enfriamiento va siempre **arriba del todo**."
+   },
+   {
+    "id": "macro",
+    "tipo": "aviso",
+    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso a 10 ms; con ping alto, 40-50 ms. Las pilas de las letras las pulsa la macro; las de los números, tú."
+   },
+   {
+    "id": "pruebas",
+    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
+    "tipo": "lista",
+    "items": [
+     "Emboscada dentro de la pila E o fuera (algunos la quitan: ~3 % del daño).",
+     "Desenfreno de tormenta a mano o como 2.º paso de la macro (meta coreana, para cancelar animaciones)."
+    ]
+   },
+   {
+    "id": "presets",
+    "titulo": "Otros presets",
+    "tipo": "lista",
+    "items": [
+     "Preset «Progresión y combates nuevos»: quita Puñal de Triniel (tecla 1) y pon **Postura de evasión** en la 5, a mano.",
+     "Preset «Farmeo y subida de nivel»: quita Puñal de Triniel (tecla 1) y pon **Tiro de daga sombría** en la 5, a mano.",
+     "La macro es la misma: pulsa las mismas teclas."
+    ]
+   },
+   {
     "titulo": "Posicionamiento",
     "tipo": "lista",
     "items": [
@@ -557,11 +552,11 @@
     "titulo": "Ventana de burst",
     "tipo": "pasos",
     "items": [
-     "Ponte a la espalda del jefe (Ataque sigiloso si no estás).",
-     "Clon ilusorio, Pacto de celeridad, Colmillo salvaje (pone las 5 Insignias de golpe).",
-     "Puñal de Triniel justo después, por el −10% a todos tus enfriamientos.",
+     "Ponte a la espalda del jefe con el 4 (Ataque sigiloso; si el objetivo queda aturdido, otra pulsación del 4 lanza Caída sombría).",
+     "Pulsa la pila del 1 varias veces: Pacto de celeridad, Clon ilusorio y Colmillo salvaje (pone las 5 Insignias de golpe).",
+     "Una pulsación más del 1 y sale Puñal de Triniel, por el −10% a todos tus enfriamientos.",
      "Mantén la macro: Estocada al corazón sale en cada pulsación y Corte rápido acorta Explosión de insignia.",
-     "Si el jefe entra en stagger: Desenfreno de tormenta."
+     "Si el jefe entra en stagger: Desenfreno de tormenta (tecla 2)."
     ]
    },
    {
@@ -576,7 +571,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Nunca en la macro: Clon ilusorio, Pacto de celeridad, Colmillo salvaje ni Puñal de Triniel. Rugido bestial también a mano, aunque tengas buen ping. Corte rápido lánzalo también aparte para cancelar animaciones."
+    "texto": "Nunca en la macro: los cuatro estigmas (pila del 1, a mano; Pacto de celeridad sale primero y su velocidad acorta la animación de Clon ilusorio). Rugido bestial va arriba del todo en la línea de daño: solo sale cuando todo lo demás está en enfriamiento. Pulsa tú también Clic izq. (Corte rápido): cada golpe acorta Explosión de insignia."
    },
    {
     "tipo": "aviso",

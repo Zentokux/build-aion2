@@ -35,36 +35,8 @@
    "uso": "Contenido diario: Proclama de esprint e Ira de Marchutan."
   }
  ],
- "tecla_macro": "Una tecla que mantengas pulsada (no dice cuál). Mouse1 es Fractura trituradora y Mouse2 la línea de Fractura sombría.",
- "macros_por_preset": [
-  {
-   "preset_en": "Party with a Cleric",
-   "pasos": [
-    "Fractura sombría",
-    "Fractura trituradora"
-   ],
-   "retardo_ms": 10,
-   "nota": "El paso 1 es la línea de Fractura sombría (con Golpe giratorio, Fractura impactante y Golpe incandescente apilados encima)."
-  },
-  {
-   "preset_en": "No Cleric in the party",
-   "pasos": [
-    "Fractura sombría",
-    "Fractura trituradora"
-   ],
-   "retardo_ms": 10,
-   "nota": "Misma macro en todos los presets."
-  },
-  {
-   "preset_en": "Dailies and farming",
-   "pasos": [
-    "Fractura sombría",
-    "Fractura trituradora"
-   ],
-   "retardo_ms": 10,
-   "nota": "Misma macro en todos los presets."
-  }
- ],
+ "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
+ "macros_por_preset": [],
  "secciones": {
   "equipo": [
    {
@@ -567,10 +539,39 @@
   ],
   "rotacion": [
    {
+    "id": "pilas",
+    "tipo": "aviso",
+    "texto": "En cada pila sale primero la de **abajo** (prioridad 1): si está lista, la lanza; si no, prueba la de encima. Por eso el relleno sin enfriamiento va siempre **arriba del todo**."
+   },
+   {
+    "id": "macro",
+    "tipo": "aviso",
+    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso a 10 ms; con ping alto, 40-50 ms. Las pilas de las letras las pulsa la macro; las de los números, tú."
+   },
+   {
+    "id": "pruebas",
+    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
+    "tipo": "lista",
+    "items": [
+     "Macro «E → Clic izq.» o solo «E» con Clic izq. mantenido.",
+     "Skill Queue activado o desactivado (choca con el cancel de Fractura trituradora)."
+    ]
+   },
+   {
+    "id": "presets",
+    "titulo": "Otros presets",
+    "tipo": "lista",
+    "items": [
+     "Preset «Sin Clérigo en el grupo»: quita Defensa concentrada (tecla 6), Ira de Marchutan (tecla 2) y pon **Proclama de esprint** en la 6, **Toque de recobro** en la 2, a mano.",
+     "Preset «Diarias y farmeo»: quita Defensa concentrada (tecla 6) y pon **Proclama de esprint** en la 6, a mano.",
+     "La macro es la misma: pulsa las mismas teclas."
+    ]
+   },
+   {
     "titulo": "Antes de empezar",
     "tipo": "lista",
     "items": [
-     "**Desactiva Skill Queue**: estorba al cancel del Conjurador (mantén Mouse1 y toca Mouse2 para cortar el final de Fractura trituradora con la línea de Fractura sombría). Si aún no usas el cancel, dejarlo activo no molesta.",
+     "**Desactiva Skill Queue**: estorba al cancel del Conjurador (mantén Clic izq. y toca la E para cortar el final de Fractura trituradora con la línea de Fractura sombría). Si aún no usas el cancel, dejarlo activo no molesta.",
      "Activa Proclama del invicto y Proclama de esprint a mano, una vez, antes del pull.",
      "Fractura sombría solo se puede usar 2 s tras Golpe giratorio o Fractura impactante, y 3 s tras Ira de Marchutan.",
      "Fractura trituradora golpea 4 veces (el 4.º es Storm Chain) y cada golpe debe llegar a menos de 3 s del anterior."

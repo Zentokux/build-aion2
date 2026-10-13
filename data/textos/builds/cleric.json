@@ -34,48 +34,8 @@
    "uso": "Si el mantra del Conjurador ya cubre Luz de protección: entra Absolución."
   }
  ],
- "tecla_macro": "",
- "macros_por_preset": [
-  {
-   "preset_en": "Party dungeons (no Chanter)",
-   "pasos": [
-    "Retribución terrestre",
-    "Rayo del juicio",
-    "Relámpagos sin puntería",
-    "Condena",
-    "Relámpagos sin puntería",
-    "Condena",
-    "Condena"
-   ],
-   "retardo_ms": 10,
-   "nota": "Con mucho ping, prueba 40-50 ms. Relámpagos sin puntería solo sale con el jefe en stagger; si no, la macro se la salta."
-  },
-  {
-   "preset_en": "New dungeon or struggling party",
-   "pasos": [
-    "Retribución terrestre",
-    "Condena",
-    "Rayo del juicio",
-    "Condena"
-   ],
-   "retardo_ms": 10,
-   "nota": "Con mucho ping, prueba 40-50 ms."
-  },
-  {
-   "preset_en": "Chanter in the party",
-   "pasos": [
-    "Retribución terrestre",
-    "Rayo del juicio",
-    "Relámpagos sin puntería",
-    "Condena",
-    "Relámpagos sin puntería",
-    "Condena",
-    "Condena"
-   ],
-   "retardo_ms": 10,
-   "nota": "Igual que en grupo normal. Condena va tres veces a propósito para aprovechar cada reinicio."
-  }
- ],
+ "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
+ "macros_por_preset": [],
  "secciones": {
   "equipo": [
    {
@@ -568,6 +528,35 @@
   ],
   "rotacion": [
    {
+    "id": "pilas",
+    "tipo": "aviso",
+    "texto": "En cada pila sale primero la de **abajo** (prioridad 1): si está lista, la lanza; si no, prueba la de encima. Por eso el relleno sin enfriamiento va siempre **arriba del todo**."
+   },
+   {
+    "id": "macro",
+    "tipo": "aviso",
+    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso a 10 ms; con ping alto, 40-50 ms. Las pilas de las letras las pulsa la macro; las de los números, tú."
+   },
+   {
+    "id": "pruebas",
+    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
+    "tipo": "lista",
+    "items": [
+     "Macro «E, E, E, R» (la medida: 26k frente a 22k con una E menos) o solo «E».",
+     "Que Condena salga al menos tantas veces como Rayo del juicio; si no, añade otra E."
+    ]
+   },
+   {
+    "id": "presets",
+    "titulo": "Otros presets",
+    "tipo": "lista",
+    "items": [
+     "Preset «Mazmorra nueva o grupo que muere»: quita Castigo terrestre (tecla E), Oración de amplificación (tecla E), Aura noble (tecla 6) y pon **Absolución** en la 6, **Resurrección de invocación** en la 7, **Poder de Yustiel** en la 8, a mano.",
+     "Preset «Conjurador en el grupo»: quita Luz de protección (tecla 5) y pon **Absolución** en la 5, a mano.",
+     "La macro es la misma: pulsa las mismas teclas."
+    ]
+   },
+   {
     "titulo": "Prioridad de curas",
     "tipo": "tabla",
     "columnas": [
@@ -602,9 +591,9 @@
     "tipo": "pasos",
     "items": [
      "Luz de protección activa antes del pull.",
-     "Abre con Estigma debilitante y Enlace de dolor, luego Castigo terrestre.",
-     "Mantén la tecla de Condena o la macro: cada crítico es otra Condena.",
-     "En el stagger: Centella cargada del todo con Oración de amplificación activa. Suelta la tecla de Condena para que salga Relámpagos sin puntería.",
+     "Abre con la pila del 1 (Estigma debilitante); la macro ya lanza Enlace de dolor y Castigo terrestre.",
+     "Mantén la macro (Clic der.) y Clic izq.: cada crítico es otra Condena.",
+     "En el stagger: Centella (4) cargada del todo con Oración de amplificación activa, y la pila del 1: con el jefe en stagger sale Relámpagos sin puntería.",
      "Vigila al jefe: cura antes de su golpe fuerte y vuelve al paso 3.",
      "Renueva Enlace de dolor y Castigo terrestre cuando se caigan."
     ]

@@ -35,39 +35,8 @@
    "uso": "Jefes con comprobación de stagger (sin probar, punto de partida)."
   }
  ],
- "tecla_macro": "Botón derecho del ratón (Key Settings > General > Play, «basic skill assist function»); la línea que estaba ahí pasa a la T",
- "macros_por_preset": [
-  {
-   "preset_en": "Bosses and dungeons",
-   "pasos": [
-    "Mejora: Favor de Espíritu",
-    "Fusión elemental",
-    "Golpe conjunto: Corrosión"
-   ],
-   "retardo_ms": 10,
-   "nota": "Mantén Mouse1 (Impacto helado) y el botón derecho a la vez; el resto, a mano."
-  },
-  {
-   "preset_en": "Solo and leveling",
-   "pasos": [
-    "Invocación: Espíritu de agua",
-    "Fusión elemental",
-    "Golpe conjunto: Corrosión"
-   ],
-   "retardo_ms": 10,
-   "nota": "El planificador guarda una sola macro (la de Favor de Espíritu); esta variante es la del texto."
-  },
-  {
-   "preset_en": "Stagger burst",
-   "pasos": [
-    "Mejora: Favor de Espíritu",
-    "Fusión elemental",
-    "Golpe conjunto: Corrosión"
-   ],
-   "retardo_ms": 10,
-   "nota": ""
-  }
- ],
+ "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
+ "macros_por_preset": [],
  "secciones": {
   "equipo": [
    {
@@ -433,6 +402,35 @@
    }
   ],
   "rotacion": [
+   {
+    "id": "pilas",
+    "tipo": "aviso",
+    "texto": "En cada pila sale primero la de **abajo** (prioridad 1): si está lista, la lanza; si no, prueba la de encima. Por eso el relleno sin enfriamiento va siempre **arriba del todo**."
+   },
+   {
+    "id": "macro",
+    "tipo": "aviso",
+    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso a 10 ms; con ping alto, 40-50 ms. Las pilas de las letras las pulsa la macro; las de los números, tú."
+   },
+   {
+    "id": "pruebas",
+    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
+    "tipo": "lista",
+    "items": [
+     "Macro «Q → E → R» o «R → E» con los buffs a mano.",
+     "Que las 5 acumulaciones de Temblor terrestre no se caigan con la macro."
+    ]
+   },
+   {
+    "id": "presets",
+    "titulo": "Otros presets",
+    "tipo": "lista",
+    "items": [
+     "Preset «Solo y subida de nivel»: quita Bendición ardiente (tecla Q) y pon **Drenaje** en la 2, a mano.",
+     "Preset «Burst en stagger»: quita Bendición ardiente (tecla Q) y pon **Golpe conjunto: Ofensiva de perdición** en la 2, a mano.",
+     "La macro es la misma: pulsa las mismas teclas."
+    ]
+   },
    {
     "titulo": "Antes de empezar",
     "tipo": "lista",

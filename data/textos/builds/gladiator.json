@@ -34,41 +34,8 @@
    "uso": "Juego en solitario y grupos de enemigos."
   }
  ],
- "tecla_macro": "",
- "macros_por_preset": [
-  {
-   "preset_en": "Boss dungeons with a Templar",
-   "pasos": [
-    "Explosión de furia",
-    "Punzada descendente",
-    "Embestida desgarradora"
-   ],
-   "retardo_ms": 10,
-   "nota": "Con ping de más de 80 ms, sube cada paso a 40-50 ms o la macro se saltará habilidades."
-  },
-  {
-   "preset_en": "Off-tank or no Templar",
-   "pasos": [
-    "Explosión de furia",
-    "Punzada descendente",
-    "Embestida desgarradora",
-    "Estacazo punzante"
-   ],
-   "retardo_ms": 10,
-   "nota": "Con ping de más de 80 ms, 40-50 ms por paso."
-  },
-  {
-   "preset_en": "Solo and open world",
-   "pasos": [
-    "Embestida de perdición",
-    "Explosión de furia",
-    "Punzada descendente",
-    "Onda pulverizadora"
-   ],
-   "retardo_ms": 10,
-   "nota": "Con ping de más de 80 ms, 40-50 ms por paso."
-  }
- ],
+ "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
+ "macros_por_preset": [],
  "secciones": {
   "equipo": [
    {
@@ -539,6 +506,35 @@
   ],
   "rotacion": [
    {
+    "id": "pilas",
+    "tipo": "aviso",
+    "texto": "En cada pila sale primero la de **abajo** (prioridad 1): si está lista, la lanza; si no, prueba la de encima. Por eso el relleno sin enfriamiento va siempre **arriba del todo**."
+   },
+   {
+    "id": "macro",
+    "tipo": "aviso",
+    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso a 10 ms; con ping alto, 40-50 ms. Las pilas de las letras las pulsa la macro; las de los números, tú."
+   },
+   {
+    "id": "pruebas",
+    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
+    "tipo": "lista",
+    "items": [
+     "Clic izq. mantenido o no: con Punzada descendente y Embestida desgarradora a 16 o más, algunos lo sueltan.",
+     "Embestida de perdición a mano (1) o en la macro."
+    ]
+   },
+   {
+    "id": "presets",
+    "titulo": "Otros presets",
+    "tipo": "lista",
+    "items": [
+     "Preset «Off-tank o sin Templario»: quita Bendición de Zikel (tecla 2), Blindaje de onda (tecla 6) y pon **Bloqueo concentrado** en la 6, **Espada de drenaje de sangre** en la 7, a mano.",
+     "Preset «Solitario y mundo abierto»: quita Bendición de Zikel (tecla 2) y pon **Espada de drenaje de sangre** en la 7, a mano.",
+     "La macro es la misma: pulsa las mismas teclas."
+    ]
+   },
+   {
     "titulo": "Antes de empezar",
     "tipo": "lista",
     "items": [
@@ -553,7 +549,7 @@
     "items": [
      "Antes del pull: Bendición de Zikel.",
      "Entra con Perforación con salto y luego Embestida de perdición (20 s de Prepare for Battle).",
-     "Postura de asalto, Explosión de furia y mantén la macro: Punzada descendente y Upward Strike los 10 s completos. Aquí Postura de asalto recibe más críticos.",
+     "Pila del 2 (Postura de asalto y Bendición de Zikel) y mantén la macro: Explosión de furia sale sola desde la línea principal; pulsa Embestida de perdición (1) justo con ella (las dos recargan en unos 45 s), y luego Punzada descendente y Upward Strike los 10 s completos. Aquí Postura de asalto recibe más críticos.",
      "Rellena con Embestida desgarradora y Estacazo punzante hasta que vuelva Explosión de furia (los dos devuelven Maná).",
      "Con Explosión de furia en enfriamiento: Espada devastadora, su Knockdown abre Punzada descendente.",
      "Si tanqueas: Bloqueo concentrado en el primer golpe fuerte para tener el buff de grupo desde el principio."

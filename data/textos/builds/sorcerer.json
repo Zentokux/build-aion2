@@ -35,42 +35,8 @@
    "uso": "Subir de nivel y jugar solo, con Barrera de acero como red de seguridad."
   }
  ],
- "tecla_macro": "Botón derecho del ratón",
- "macros_por_preset": [
-  {
-   "preset_en": "Boss dungeons",
-   "pasos": [
-    "Viento helado",
-    "Viento helado",
-    "Viento helado",
-    "Mejora elemental"
-   ],
-   "retardo_ms": 10,
-   "nota": "Mantén pulsados los dos botones del ratón. Con ping de 80-100 o más, sube el retardo a 40-50 ms."
-  },
-  {
-   "preset_en": "Stagger checks",
-   "pasos": [
-    "Viento helado",
-    "Viento helado",
-    "Viento helado",
-    "Mejora elemental"
-   ],
-   "retardo_ms": 10,
-   "nota": "Misma macro en los tres presets."
-  },
-  {
-   "preset_en": "Leveling and solo",
-   "pasos": [
-    "Viento helado",
-    "Viento helado",
-    "Viento helado",
-    "Mejora elemental"
-   ],
-   "retardo_ms": 10,
-   "nota": "Misma macro en los tres presets."
-  }
- ],
+ "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
+ "macros_por_preset": [],
  "secciones": {
   "equipo": [
    {
@@ -472,6 +438,35 @@
   ],
   "rotacion": [
    {
+    "id": "pilas",
+    "tipo": "aviso",
+    "texto": "En cada pila sale primero la de **abajo** (prioridad 1): si está lista, la lanza; si no, prueba la de encima. Por eso el relleno sin enfriamiento va siempre **arriba del todo**."
+   },
+   {
+    "id": "macro",
+    "tipo": "aviso",
+    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso a 10 ms; con ping alto, 40-50 ms. Las pilas de las letras las pulsa la macro; las de los números, tú."
+   },
+   {
+    "id": "pruebas",
+    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
+    "tipo": "lista",
+    "items": [
+     "Tormenta helada y Barrera de fuego a mano (3) o dentro de la macro.",
+     "4.ª casilla de la Q: Voto de concentración o Atadura invernal."
+    ]
+   },
+   {
+    "id": "presets",
+    "titulo": "Otros presets",
+    "tipo": "lista",
+    "items": [
+     "Preset «Comprobaciones de Stagger»: quita Tormenta helada (tecla 3) y pon **Explosión de divinidad** en la 5, a mano.",
+     "Preset «Leveling y solitario»: quita Tormenta helada (tecla 3) y pon **Barrera de acero** en la 5, a mano.",
+     "La macro es la misma: pulsa las mismas teclas."
+    ]
+   },
+   {
     "titulo": "Antes de empezar",
     "tipo": "lista",
     "items": [
@@ -489,7 +484,7 @@
      "Explosión retrasada.",
      "Llamas del infierno con la carga al máximo.",
      "Barrera de fuego y Tormenta helada sobre el jefe.",
-     "Activa la macro y sigue con Flecha en llamas."
+     "Mantén Clic izq. (Flecha en llamas) junto a la macro: rellena entre los hechizos caros y te devuelve Maná. Apertura a mano: pila E (Mejora elemental y Explosión retrasada), tecla 3 (Tormenta helada y Barrera de fuego bajo el jefe), Llamas del infierno cargada (1) y la macro."
     ]
    },
    {
@@ -508,7 +503,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Retardo de la macro: ping < 50 → 10 ms; ping de 80-100 o más → 40-50 ms. Las tres entradas de Viento helado dan prioridad a su pila (tus enfriamientos cortos)."
+    "texto": "Retardo de la macro: ping < 50 → 10 ms; ping de 80-100 o más → 40-50 ms. Si ves «sombras» detrás del personaje, la macro está cancelando animaciones: el retardo va bien. Si aun así te quedas sin Maná, suelta la macro, lanza unas Flechas en llamas y sigue."
    },
    {
     "titulo": "A qué apuntar",

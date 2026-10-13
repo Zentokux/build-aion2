@@ -50,10 +50,10 @@ function pintarClase() {
     var x = B.habilidades.concat(EXTRA).filter(function (h) { return h.nombre.toLowerCase() === String(n).toLowerCase(); })[0];
     return x && x.id;
   }
-  // tecla de cada habilidad según la barra («Clic der.·1» = 1.ª encima de la de abajo)
+  // tecla de cada habilidad según la barra («E·2» = 2.ª prioridad de la pila de la E; la 1.ª es la de abajo)
   var teclaDe = {};
   B.barra.forEach(function (c) {
-    c.pila.forEach(function (id, i) { teclaDe[id] = (c.tecla === "Otra" ? "Q" : (TECLA_TXT[c.tecla] || c.tecla)) + (i ? "·" + i : ""); });
+    c.pila.forEach(function (id, i) { teclaDe[id] = (TECLA_TXT[c.tecla] || c.tecla) + (c.pila.length > 1 ? "·" + (i + 1) : ""); });
   });
 
   // ---------- cabecera y resumen ----------
@@ -133,11 +133,11 @@ function pintarClase() {
           (x.nivel ? '<span class="nv">' + x.nivel + "</span>" : "") + "</div>";
       } else celdas += '<div class="mr-celda"></div>';
     }
-    return '<div class="mr-col">' + celdas + '<span class="mr-tecla">' + esc(c ? (c.tecla === "Otra" ? "Q" : (TECLA_TXT[c.tecla] || c.tecla)) : "") + "</span></div>";
+    return '<div class="mr-col">' + celdas + '<span class="mr-tecla">' + esc(c ? (TECLA_TXT[c.tecla] || c.tecla) : "") + "</span></div>";
   }
-  var th = '<div class="mr-barra"><div class="cols"><div class="bloque"><div class="cab"><span>Habilidades</span><span>' + normales.length + "/" + normales.length +
-    ' asignadas</span></div><div class="fila-cols">' + normales.map(colMR).join("") + '</div></div><div class="bloque"><div class="cab"><span>Estigma</span><span>' +
-    estigmas.length + '/4 asignadas</span></div><div class="fila-cols">' + estigmas.map(colMR).join("") + "</div></div></div>";
+  var th = '<div class="mr-barra"><div class="cols"><div class="bloque"><div class="cab"><span>Habilidades</span><span>' + normales.length + " teclas" +
+    '</span></div><div class="fila-cols">' + normales.map(colMR).join("") + "</div></div>" + (estigmas.length ? '<div class="bloque"><div class="cab"><span>Estigma</span><span>' +
+    estigmas.length + " teclas" + '</span></div><div class="fila-cols">' + estigmas.map(colMR).join("") + "</div></div>" : "") + "</div>";
   var pas = B.habilidades.filter(function (x) { return x.tipo === "Pasiva"; });
   th += '<div class="sub-mr">' + pas.length + ' pasivas</div><div class="chips-pas">' + pas.map(function (x) {
     return '<span class="chip-pas">' + icono(x.id) + esc(x.nombre) + "</span>";
@@ -173,7 +173,10 @@ function pintarClase() {
       }).join(" ") + "</div>" : "";
     }).join("") +
     B.macros.map(function (m) {
-      return '<div class="sub-mr">Macro: ' + esc(m.nombre_en) + "</div>" + m.pasos.map(function (p, i) { return (i ? " → " : "") + hab(p.id) + " <small>" + p.ms + " ms</small>"; }).join("");
+      return '<div class="sub-mr">Macro (Clic der.)</div>' + m.pasos.map(function (p, i) {
+        var c = B.barra.filter(function (x) { return x.tecla === p.tecla; })[0];
+        return (i ? " → " : "") + "<b>" + esc(TECLA_TXT[p.tecla] || p.tecla) + "</b> " + esc(c.pila.length > 1 ? c.nombre : H[c.pila[0]].nombre) + " <small>" + p.ms + " ms</small>";
+      }).join("");
     }).join("") + "</div></details>";
 
   if (T.presets && T.presets.length) {
@@ -249,59 +252,51 @@ function pintarClase() {
 // ===== barra estilo juego (la que pidió el usuario) =====
 function barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) {
   var porTecla = {};
-  B.barra.forEach(function (c) { (porTecla[c.tecla] = porTecla[c.tecla] || []).push(c); });
+  B.barra.forEach(function (c) { porTecla[c.tecla] = c; });
   var macro = B.macros[0];
   var enMacro = {};
-  if (macro) macro.pasos.forEach(function (p) { enMacro[p.id] = true; });
-  var grupos = [["1", "2", "3", "4"], ["5", "6", "7", "8"], ["Q", "E"], ["Espacio"], ["LMB", "RMB"]];
-  if (porTecla.Otra) grupos.push(porTecla.Otra.map(function (_, i) { return "Otra#" + i; }));
+  if (macro) macro.pasos.forEach(function (p) { enMacro[p.tecla] = true; });
+  var grupos = [["1", "2", "3", "4"], ["5", "6", "7", "8"], ["Q", "E", "R", "T"], ["Espacio"], ["LMB", "RMB"]];
   var filas = 4;
   B.barra.forEach(function (c) { filas = Math.max(filas, c.pila.length); });
+  function txt(t) { return TECLA_TXT[t] || t; }
   var barra = '<div class="barra">' + grupos.map(function (g) {
     return '<div class="grupo">' + g.map(function (t) {
-      var col = t.indexOf("Otra#") === 0 ? porTecla.Otra[+t.split("#")[1]] : (porTecla[t] || [])[0];
-      var pila = col ? col.pila : [];
-      var pilaOro = pila.length > 1 && enMacro[pila[0]];
-      var celdas = [], oro = false;
+      var col = porTecla[t], pila = col ? col.pila : [], oro = !!enMacro[t] || (t === "RMB" && !!macro);
+      var celdas = [];
       for (var i = filas - 1; i >= 0; i--) {
         var id = pila[i];
-        if (id) {
-          var o = enMacro[id] || pilaOro;
-          if (o) oro = true;
-          celdas.push('<div class="celda llena' + (o ? " oro" : "") + '">' + icono(id) + (pila.length > 1 ? '<span class="orden">' + (i + 1) + "</span>" : "") + "</div>");
-        } else if (t === "RMB" && !col && i === 0 && macro) {
-          oro = true;
-          celdas.push('<div class="celda oro macro">MACRO</div>');
-        } else celdas.push('<div class="celda"></div>');
+        if (id) celdas.push('<div class="celda llena' + (oro ? " oro" : "") + '">' + icono(id) + (pila.length > 1 ? '<span class="orden">' + (i + 1) + "</span>" : "") + "</div>");
+        else if (t === "RMB" && i === 0 && macro) celdas.push('<div class="celda oro macro">MACRO</div>');
+        else celdas.push('<div class="celda"></div>');
       }
-      if (t === "RMB" && macro) oro = true;
-      var etiqueta = t.indexOf("Otra#") === 0 ? "Otra" : (TECLA_TXT[t] || t);
-      return '<div class="col">' + celdas.join("") + '<span class="tecla' + (oro ? " oro" : "") + '">' + esc(etiqueta) + "</span></div>";
+      return '<div class="col">' + celdas.join("") + '<span class="tecla' + (oro ? " oro" : "") + '">' + esc(txt(t)) + "</span></div>";
     }).join("") + "</div>";
   }).join("") + "</div>";
 
-  var out = '<div class="barra-box"><h3 style="margin-top:0">Barra nivel ' + B.nivel + " (orden del juego)</h3>" + barra +
-    '<div class="barra-pie">Orden del juego: 1-8, Q, E, barra espaciadora, clic izquierdo, clic derecho. Ordenadas por la rotación: lo que más usas, más a mano. Las doradas son las que pulsa la macro. ' +
-    "En una línea apilada sale primero la de abajo (el número pequeño es el orden).</div>" +
-    (porTecla.Otra ? '<p class="notas-barra">«Otra»: esta clase lleva una 9.ª habilidad en la barra; como Q ya está ocupada, ponla en cualquier tecla libre.</p>' : "") + "</div>";
+  var out = '<div class="barra-box"><h3 style="margin-top:0">Barra nivel ' + B.nivel + "</h3>" + barra +
+    '<div class="barra-pie">Doradas: lo que pulsa la macro (en Clic der.). Letras (Q, E, R, T): pilas que pulsa la macro; números: lo que pulsas tú. ' +
+    "En cada pila sale primero la de abajo (el número pequeño es la prioridad).</div></div>";
+
+  // tabla de pilas
+  var orden = ["LMB", "Q", "E", "R", "T", "1", "2", "3", "4", "5", "6", "7", "8", "Espacio"];
+  var cols = B.barra.slice().sort(function (a, b) { return orden.indexOf(a.tecla) - orden.indexOf(b.tecla); });
+  out += '<h3>Qué va en cada tecla</h3><div class="tabla-scroll"><table class="pilas"><thead><tr><th>Tecla</th><th>Para qué</th><th>Pila (1 = abajo, sale primero)</th><th>La pulsa</th></tr></thead><tbody>' +
+    cols.map(function (c) {
+      var quien = c.tecla === "LMB" ? "Tú: mantenla pulsada" : enMacro[c.tecla] ? (c.uso === "ambas" ? "La macro (y tú, si quieres)" : "La macro") : "Tú";
+      return "<tr><td><strong>" + esc(txt(c.tecla)) + "</strong></td><td>" + esc(c.nombre) + "</td><td>" +
+        c.pila.map(function (id, i) { return '<span class="item">' + (c.pila.length > 1 ? "<small>" + (i + 1) + ".</small> " : "") + hab(id) + "</span>"; }).join("") + "</td><td>" + esc(quien) + "</td></tr>";
+    }).join("") + "</tbody></table></div>";
+
   if (macro) {
-    out += "<h3>Tu macro (" + esc(nombrePreset(B.presets[0] && B.presets[0].nombre_en)) + ")</h3>" +
-      '<div class="panel"><div class="macro">' + macro.pasos.map(function (p, i) {
-        var x = H[p.id] || { nombre: p.id };
-        return (i ? '<span class="flecha">→</span>' : "") + '<div class="paso"><b>Paso ' + (i + 1) + "</b>" + icono(p.id) +
-          "<span>" + esc(x.nombre) + "</span><small>" + p.ms + " ms</small></div>";
-      }).join("") + "</div><table><tr><th>Tecla</th><td><strong>Clic der.</strong>, mantenla pulsada" +
-      (B.macro_rmb ? "" : " (o cualquier tecla que puedas mantener pulsada)") + "</td></tr></table></div>";
-  }
-  var otras = (T.macros_por_preset || []).filter(function (m) { return m.pasos && m.pasos.length; });
-  if (otras.length) {
-    out += "<h3>Macro de cada preset</h3><div class=\"tabla-scroll\"><table><thead><tr><th>Preset</th><th>Pasos (en orden)</th><th>Nota</th></tr></thead><tbody>" +
-      otras.map(function (m) {
-        return "<tr><td>" + esc(nombrePreset(m.preset_en)) + "</td><td>" + m.pasos.map(function (n, i) {
-          var id = idPorNombre(n);
-          return (i ? " → " : "") + (id ? hab(id) : esc(n));
-        }).join("") + "</td><td>" + md(m.nota || "") + "</td></tr>";
-      }).join("") + "</tbody></table></div>";
+    out += '<h3>Tu macro</h3><div class="panel"><div class="macro">' + macro.pasos.map(function (p, i) {
+      var c = porTecla[p.tecla];
+      return (i ? '<span class="flecha">→</span>' : "") + '<div class="paso"><b>Paso ' + (i + 1) + "</b>" +
+        '<span class="iconos-pila">' + c.pila.map(function (id) { return icono(id); }).join("") + "</span>" +
+        "<span>Tecla <strong>" + esc(txt(p.tecla)) + "</strong>" + (c.pila.length > 1 ? " · " + esc(c.nombre) : " · " + esc(H[c.pila[0]].nombre)) + "</span><small>" + p.ms + " ms</small></div>";
+    }).join("") + "</div><table><tr><th>Tecla de la macro</th><td><strong>Clic der.</strong>, mantenla pulsada junto a Clic izq. " +
+      "(Ajustes → Configuración de teclas → General → Macro)</td></tr><tr><th>Al crearla</th><td>En la ventana de la macro eliges <strong>teclas</strong> (pilas), no habilidades sueltas: " +
+      "la macro lanza lo que esté listo en esa pila.</td></tr></table></div>";
   }
   return out;
 }
@@ -435,7 +430,7 @@ function pintarColeccionables(C, filasStats) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  cargarScript("data/builds/" + c + ".js?v=3", pintarClase, function () {
+  cargarScript("data/builds/" + c + ".js?v=5", pintarClase, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
 })();

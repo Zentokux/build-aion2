@@ -34,47 +34,8 @@
    "uso": "Juego en solitario o cuando mueres demasiado; cambia daño por supervivencia."
   }
  ],
- "tecla_macro": "Botón derecho del ratón",
- "macros_por_preset": [
-  {
-   "preset_en": "Bosses and dungeons",
-   "pasos": [
-    "Flecha de tentáculo",
-    "Estallido de flechas",
-    "Flecha de grifo",
-    "Tiro rápido",
-    "Flecha punzante",
-    "Huracán de flechas"
-   ],
-   "retardo_ms": 10,
-   "nota": "Línea del grifo + línea de Gale. El texto la da sin Flecha de tentáculo al inicio; el planificador ya la pone delante para que Estallido de flechas no falle."
-  },
-  {
-   "preset_en": "Packs and stagger checks",
-   "pasos": [
-    "Flecha de tentáculo",
-    "Estallido de flechas",
-    "Flecha de grifo",
-    "Tiro rápido",
-    "Flecha punzante",
-    "Huracán de flechas"
-   ],
-   "retardo_ms": 10,
-   "nota": "Misma macro que en jefes."
-  },
-  {
-   "preset_en": "Solo and hard progression",
-   "pasos": [
-    "Flecha de tentáculo",
-    "Estallido de flechas",
-    "Tiro rápido",
-    "Flecha punzante",
-    "Huracán de flechas"
-   ],
-   "retardo_ms": 10,
-   "nota": "Igual pero sin Flecha de grifo, que sale de este preset."
-  }
- ],
+ "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
+ "macros_por_preset": [],
  "secciones": {
   "equipo": [
    {
@@ -552,12 +513,41 @@
   ],
   "rotacion": [
    {
+    "id": "pilas",
+    "tipo": "aviso",
+    "texto": "En cada pila sale primero la de **abajo** (prioridad 1): si está lista, la lanza; si no, prueba la de encima. Por eso el relleno sin enfriamiento va siempre **arriba del todo**."
+   },
+   {
+    "id": "macro",
+    "tipo": "aviso",
+    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso a 10 ms; con ping alto, 40-50 ms. Las pilas de las letras las pulsa la macro; las de los números, tú."
+   },
+   {
+    "id": "pruebas",
+    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
+    "tipo": "lista",
+    "items": [
+     "Retardo 10 o 20 ms (o 40-50 ms con ping alto).",
+     "Skill Queue activado o desactivado."
+    ]
+   },
+   {
+    "id": "presets",
+    "titulo": "Otros presets",
+    "tipo": "lista",
+    "items": [
+     "Preset «Grupos y comprobaciones de stagger»: quita Disparos de apoyo (tecla 1) y pon **Tormenta de flechas (o Flecha explosiva)** en la 7, a mano.",
+     "Preset «Solo y progresión difícil»: quita Flecha de grifo (tecla Q) y pon **Respiro de Madre Naturaleza** en la 7, a mano.",
+     "La macro es la misma: pulsa las mismas teclas."
+    ]
+   },
+   {
     "titulo": "Antes de empezar",
     "tipo": "lista",
     "items": [
      "Usa el modo de control de AION 2 (no el de AION 1): la macro lo necesita.",
      "Activa **Skill Queue ON** en opciones.",
-     "Puedes apilar hasta 3 habilidades sobre una ranura: sale primero la de abajo, y no se puede apilar una reutilización más larga sobre una más corta."
+     "Puedes apilar hasta 3 habilidades más sobre una ranura: sale primero la de abajo."
     ]
    },
    {
@@ -575,7 +565,7 @@
     "tipo": "pasos",
     "items": [
      "Acierta Flecha de tentáculo (u otra ralentización/inmovilización) antes de usar la macro: su ralentización dura 5 s y tiene 15 s de reutilización.",
-     "Mantén Disparo certero pulsado y la macro en el botón derecho.",
+     "Mantén Disparo certero (Clic izq.) y la macro (Clic der.). Dale a Flecha al objetivo una 2.ª tecla en un botón lateral del ratón (Configuración de teclas → Ranura rápida) para cargarla sin soltar nada.",
      "Lanza Flecha al objetivo cada vez que vuelva.",
      "Renueva Flecha en el objetivo cuando a Precisión le queden menos de 3 s.",
      "Relanza cada buff al terminar su reutilización: Poder de Vaizel cada minuto, Flecha de bendición cada dos; Disparos de apoyo a nivel 15 coincide con cada Vaizel."

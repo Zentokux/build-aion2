@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap");
 
 .pag { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 28px; align-items: start; }
-@media (max-width: 900px) { .pag { grid-template-columns: 1fr; } .lateral { display: none; } }
 .lateral { position: sticky; top: 64px; display: flex; flex-direction: column; gap: 12px; }
+@media (max-width: 900px) { .pag { grid-template-columns: minmax(0, 1fr); } .lateral { display: none; } }
 .lat-caja { background: var(--panel); border: 1px solid var(--borde); border-radius: 8px; padding: 12px; font-size: 13px; }
 .lat-caja .titulo { font-size: 11px; letter-spacing: 1px; color: var(--suave); text-transform: uppercase; text-align: center; margin-bottom: 8px; }
 .lat-caja .fila { display: flex; justify-content: space-between; color: var(--suave); padding: 3px 0; }

@@ -34,47 +34,8 @@
    "uso": "Jugar solo y mundo abierto."
   }
  ],
- "tecla_macro": "",
- "macros_por_preset": [
-  {
-   "preset_en": "Stagger dungeons",
-   "pasos": [
-    "Golpe de escudo",
-    "Juicio",
-    "Estacazo de amparo",
-    "Juicio",
-    "Embestida decadente"
-   ],
-   "retardo_ms": 10,
-   "nota": "Es la macro que guarda el planificador."
-  },
-  {
-   "preset_en": "Daily and no-stagger runs",
-   "pasos": [
-    "Golpe de escudo",
-    "Juicio",
-    "Escudo de perdición",
-    "Juicio",
-    "Estacazo de amparo",
-    "Juicio"
-   ],
-   "retardo_ms": 10,
-   "nota": ""
-  },
-  {
-   "preset_en": "Solo and open world",
-   "pasos": [
-    "Escudo de perdición",
-    "Juicio",
-    "Golpe de escudo",
-    "Juicio",
-    "Estacazo de amparo",
-    "Juicio"
-   ],
-   "retardo_ms": 10,
-   "nota": ""
-  }
- ],
+ "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
+ "macros_por_preset": [],
  "secciones": {
   "equipo": [
    {
@@ -469,6 +430,35 @@
   ],
   "rotacion": [
    {
+    "id": "pilas",
+    "tipo": "aviso",
+    "texto": "En cada pila sale primero la de **abajo** (prioridad 1): si está lista, la lanza; si no, prueba la de encima. Por eso el relleno sin enfriamiento va siempre **arriba del todo**."
+   },
+   {
+    "id": "macro",
+    "tipo": "aviso",
+    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso a 10 ms; con ping alto, 40-50 ms. Las pilas de las letras las pulsa la macro; las de los números, tú."
+   },
+   {
+    "id": "pruebas",
+    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
+    "tipo": "lista",
+    "items": [
+     "Pila R con Embestida decadente abajo o con Aniquilación abajo.",
+     "Estacazo de amparo en la macro o guardado para golpes fuertes."
+    ]
+   },
+   {
+    "id": "presets",
+    "titulo": "Otros presets",
+    "tipo": "lista",
+    "items": [
+     "Preset «Diarias y partidas sin Stagger»: quita Castigo empíreo (tecla 3) y pon **Escudo de perdición** en la 3, a mano.",
+     "Preset «Solitario y mundo abierto»: quita Provocación (tecla 2), Armadura de nobleza (tecla 5) y pon **Escudo de perdición** en la 2, **Estandarte del campo de batalla** en la 5, a mano.",
+     "La macro es la misma: pulsa las mismas teclas."
+    ]
+   },
+   {
     "titulo": "Antes de empezar",
     "tipo": "lista",
     "items": [
@@ -483,7 +473,7 @@
     "items": [
      "Provocación (Encogimiento sobre el jefe).",
      "Entra con Asalto con escudo o Aprisionamiento.",
-     "Empieza a spamear la tecla de Juicio o la macro."
+     "Mantén la macro (Clic der.) y Clic izq. todo el combate."
     ]
    },
    {
