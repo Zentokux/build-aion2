@@ -10,6 +10,10 @@ function pintarClase() {
   var B = window.BUILD, T = B.textos || {}, S = T.secciones || {};
   var H = {};
   B.habilidades.forEach(function (h) { H[h.id] = h; });
+  // habilidades que el texto nombra pero no van en la build (alternativas, PvP, farmeo): solo icono y nombre
+  var EXTRA = (B.habilidades_extra || []).map(function (x) {
+    return H["x:" + x.nombre] = { id: "x:" + x.nombre, nombre: x.nombre, icono: x.icono, tipo: "No va en esta build (alternativa)", especializaciones: [], efecto: "" };
+  });
   var main = document.getElementById("main");
   document.title = "Build PvE de " + B.nombre + " · BUILD AION2";
   var secciones = [];
@@ -43,7 +47,7 @@ function pintarClase() {
     return p ? p.nombre : (en || "");
   }
   function idPorNombre(n) {
-    var x = B.habilidades.filter(function (h) { return h.nombre.toLowerCase() === String(n).toLowerCase(); })[0];
+    var x = B.habilidades.concat(EXTRA).filter(function (h) { return h.nombre.toLowerCase() === String(n).toLowerCase(); })[0];
     return x && x.id;
   }
   // tecla de cada habilidad según la barra («Clic der.·1» = 1.ª encima de la de abajo)
@@ -214,12 +218,28 @@ function pintarClase() {
     secciones.map(function (s) { return '<li><a href="#' + s[0] + '">' + esc(s[1]) + "</a></li>"; }).join("") + "</ol></div></aside>";
   main.innerHTML = '<div class="pag">' + lateral + '<div class="contenido">' + h + "</div></div>";
 
-  // icono junto a cada nombre de habilidad en la 1.ª columna de las tablas y en las negritas de los textos
-  var nombresHab = B.habilidades.map(function (x) { return x.nombre; }).sort(function (a, b) { return b.length - a.length; });
-  var reHab = new RegExp(nombresHab.map(function (n) { return n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }).join("|"), "g");
-  main.querySelectorAll(".contenido td:first-child, .contenido strong").forEach(function (el) {
-    if (el.querySelector("img") || el.closest(".hab")) return;
-    el.innerHTML = el.innerHTML.replace(reHab, function (n) { return hab(idPorNombre(n)); });
+  // icono junto a cada nombre de habilidad en todos los textos (párrafos, listas, tablas, avisos)
+  var nombresHab = B.habilidades.concat(EXTRA).map(function (x) { return x.nombre; }).sort(function (a, b) { return b.length - a.length; });
+  var reHab = new RegExp("(^|[^\\p{L}])(" + nombresHab.map(function (n) { return n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }).join("|") + ")(?![\\p{L}])", "gu");
+  var textos = [], w = document.createTreeWalker(main.querySelector(".contenido"), NodeFilter.SHOW_TEXT), nt;
+  while ((nt = w.nextNode())) {
+    if (!nt.parentElement.closest(".hab, h2, h3, button, .mr-barra, .barra-box, .tarjeta-build, .daev, .ficha, .paso, .chip-pas") && reHab.test(nt.textContent)) textos.push(nt);
+    reHab.lastIndex = 0;
+  }
+  textos.forEach(function (nt) {
+    var t = nt.textContent, html = "", ult = 0, m;
+    reHab.lastIndex = 0;
+    while ((m = reHab.exec(t))) {
+      var ini = m.index + m[1].length;
+      // «Congelación» también es un estado («estado de Congelación»): solo la habilidad lleva icono
+      if (m[2] === "Congelación" && /de $/.test(t.slice(0, ini))) continue;
+      html += esc(t.slice(ult, ini)) + hab(idPorNombre(m[2]));
+      ult = ini + m[2].length;
+    }
+    if (!ult) return;
+    var span = document.createElement("span");
+    span.innerHTML = html + esc(t.slice(ult));
+    nt.replaceWith.apply(nt, Array.prototype.slice.call(span.childNodes));
   });
 
   pintarDaevanion(B, H);
@@ -415,7 +435,7 @@ function pintarColeccionables(C, filasStats) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  cargarScript("data/builds/" + c + ".js?v=2", pintarClase, function () {
+  cargarScript("data/builds/" + c + ".js?v=3", pintarClase, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
 })();

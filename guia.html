@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Guía · BUILD AION2</title>
-<link rel="stylesheet" href="css/estilo.css?v=1">
+<link rel="stylesheet" href="css/estilo.css?v=3">
 </head>
 <body>
 <main id="main"><p>Cargando…</p></main>
@@ -24,6 +24,17 @@
       (misma.length ? "<h2>Más de " + esc(CATEGORIAS[G.categoria] || "") + '</h2><div class="rejilla">' + misma.map(function (x) {
         return '<a class="guia-link" href="guia.html?g=' + x.slug + '">' + md(x.titulo) + "<small>" + md(x.resumen) + "</small></a>";
       }).join("") + "</div>" : "");
+    // icono de las habilidades de clase que nombran las guías
+    var ICONOS = { "Resurrección de invocación": "ICON_CL_SKILL_039", "Provocación": "ICON_TE_SKILL_012" };
+    var re = new RegExp("(" + Object.keys(ICONOS).join("|") + ")", "g"), lista = [], w = document.createTreeWalker(main, NodeFilter.SHOW_TEXT), n;
+    while ((n = w.nextNode())) if (!n.parentElement.closest("h1, h2, .hab") && n.textContent.match(re)) lista.push(n);
+    lista.forEach(function (n) {
+      var span = document.createElement("span");
+      span.innerHTML = esc(n.textContent).replace(re, function (x) {
+        return '<span class="hab"><img src="icons/habilidades/' + ICONOS[x] + '.webp" alt="">' + x + "</span>";
+      });
+      n.replaceWith.apply(n, Array.prototype.slice.call(span.childNodes));
+    });
   }, function () { document.getElementById("main").innerHTML = "<p>No existe esa guía.</p>"; });
 })();
 </script>
