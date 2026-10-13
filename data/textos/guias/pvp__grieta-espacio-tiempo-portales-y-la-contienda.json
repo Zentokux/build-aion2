@@ -151,6 +151,87 @@
    ]
   },
   {
+   "titulo": "Cubos ocultos al cruzar la Grieta",
+   "tipo": "tabla",
+   "columnas": [
+    "Si eres",
+    "Llegas a",
+    "Dónde mirar primero (cubos)",
+    "Llave"
+   ],
+   "filas": [
+    [
+     "Elyos",
+     "**Altgard** (59 cubos)",
+     "**Restos del Dredgion** (6), **Bosque de la Purificación** (4), **Montículo de la Cicatriz de Batalla** (4), **Altiplano occidental de Gribade** (4-5)",
+     "**Sí, siempre** (1 llave = 1 cubo)"
+    ],
+    [
+     "Asmodiano",
+     "**Verteron** (95 cubos)",
+     "**Cañón de Altamia** (9), **Tramo medio del río Ellun** (7), **Ruinas de la fortaleza de Verteron** (7), **Aldea de Aullaeu** (6)",
+     "**Sí, siempre** (1 llave = 1 cubo)"
+    ]
+   ]
+  },
+  {
+   "titulo": "Sitios concretos",
+   "tipo": "tabla",
+   "columnas": [
+    "Mapa",
+    "Dónde está el cubo"
+   ],
+   "filas": [
+    [
+     "Altgard",
+     "Acantilados y crestas de la costa junto al **Cementerio sin nombre**"
+    ],
+    [
+     "Altgard",
+     "Orilla al **noroeste del Depósito de Fafnita**"
+    ],
+    [
+     "Altgard",
+     "Encima del **puente de piedra natural** al noreste del **Escondite del Colmillo**"
+    ],
+    [
+     "Altgard",
+     "Sobre una roca en agua poco profunda (hay **3** cubos en el agua)"
+    ],
+    [
+     "Verteron",
+     "**Bajo el agua** en los lagos del **valle de Cantas** (oeste y este); hay **8** cubos en el agua"
+    ],
+    [
+     "Verteron",
+     "Islotes flotantes junto al **Puesto de guardia escarpado**"
+    ],
+    [
+     "Verteron",
+     "Orilla al **norte de la Base de la Legión del Alba**"
+    ],
+    [
+     "Verteron",
+     "Encima de las ruinas de la fortaleza y **encima de setas gigantes**"
+    ]
+   ]
+  },
+  {
+   "titulo": "Cómo farmearlos en la hora que tienes",
+   "tipo": "lista",
+   "items": [
+    "Lleva **llaves** antes de cruzar: sin llave no se abren.",
+    "La salida del portal es aleatoria: ve a la zona con más cubos que te quede **más cerca**.",
+    "No salen en el mapa: cubo **rojo/amarillo brillante** que flota; vuela pegado a acantilados, ruinas y mira bajo el agua.",
+    "Abrir tarda **4 s** y te deja quieto: limpia monstruos y mira que no venga nadie (decide el **War Mode** antes de cruzar).",
+    "Cada cubo tiene muchos sitios posibles y solo uno está activo; si otro lo abrió, sale en otro punto del mismo grupo más tarde (en Corea, entre 30 min y 3 h)."
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "**Sin confirmar:** ninguna guía dice si un jugador puede abrir los cubos del mapa de la **otra facción**. Los recuentos son de guías de la comunidad (oct 2026) y cambian según quién cuente sitios o cubos. Prueba con un cubo antes de gastar varias llaves."
+  },
+  {
    "titulo": "War Mode (desde el 3 dic 2025)",
    "tipo": "tabla",
    "columnas": [
