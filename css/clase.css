@@ -1,4 +1,4 @@
-/* Página de clase con la maqueta de metaroad */
+/* Página de clase */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap");
 
 .pag { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 28px; align-items: start; }
@@ -99,7 +99,7 @@ h2.mr {
 .nodo.ultimo { box-shadow: 0 0 0 2px #fff, 0 0 10px rgba(255, 255, 255, .6); }
 .leyenda-daev { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--suave); margin-top: 10px; }
 
-/* barra de habilidades de metaroad */
+/* barra de habilidades */
 .mr-barra { background: #121620; border: 1px solid var(--borde); border-radius: 10px; padding: 12px; }
 .mr-barra .cols { display: flex; gap: 22px; overflow-x: auto; }
 .mr-barra .bloque .cab { display: flex; justify-content: space-between; font-size: 11px; letter-spacing: 1px; color: var(--suave); text-transform: uppercase; margin-bottom: 8px; gap: 30px; }

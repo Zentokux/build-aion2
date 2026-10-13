@@ -1,196 +1,614 @@
 {
-  "clase": "spiritmaster",
-  "nombre": "Espiritualista",
-  "fuente": "https://metaroad.gg/es/aion2/build-guides/build-pve-de-espiritualista",
-  "resumen": "Invocadora a distancia y la clase a distancia más resistente. Regla de oro: el espíritu **copia tus stats y buffs al invocarlo**, así que siempre buffs primero, luego Invocación: Espíritu ancestral. El bucle: los espíritus usan habilidades, llenas Four Elements y lanzas **Fusión elemental** (sin reutilización), mientras mantienes Impacto helado.",
-  "pros": [
-    "A distancia y la más resistente de las clases a distancia: Protección de Espíritu y los espíritus absorben mucho daño.",
-    "Fusión elemental no tiene reutilización: tu golpe más grande vuelve cada vez que llenas Four Elements.",
-    "Los espíritus siguen pegando mientras te mueves, esquivas o te recolocas.",
-    "Mejora: Favor de Espíritu os da a ti y al espíritu +20% de Amplificación de Daño de JcE y Tolerancia a Daño.",
-    "Tus dos pasivas principales llegan a 28, sobre todo por las líneas del equipo.",
-    "Golpe conjunto: Corrosión hace que el jefe reciba daño extra de tus espíritus."
-  ],
-  "contras": [
-    "Un orden descuidado castiga: un espíritu invocado antes de los buffs queda más débil.",
-    "Hay que mantener 5 acumulaciones de Earth Tremor todo el combate.",
-    "Pide 65%+ de Velocidad de Hechizo y poco ping (menos de ~60 ms) para encadenar bien.",
-    "Invocación: Espíritu ancestral y Golpe conjunto: Corrosión solo brillan con niveles altos de stigma.",
-    "Maná justo mientras subes de nivel, hasta que el equipo se pone al día.",
-    "Ráfaga continua solo funciona sobre un objetivo en stagger."
-  ],
-  "presets": [
-    {"nombre_en": "Bosses and dungeons", "nombre": "Jefes y mazmorras", "uso": "Preset por defecto; el que llevan las Espiritualistas serias."},
-    {"nombre_en": "Solo and leveling", "nombre": "Solo y subida de nivel", "uso": "Jugar solo o subir de nivel, con Drenaje para aguantar."},
-    {"nombre_en": "Stagger burst", "nombre": "Burst en stagger", "uso": "Jefes con comprobación de stagger (sin probar, punto de partida)."}
-  ],
-  "tecla_macro": "Botón derecho del ratón (Key Settings > General > Play, «basic skill assist function»); la línea que estaba ahí pasa a la T",
-  "macros_por_preset": [
-    {"preset_en": "Bosses and dungeons", "pasos": ["Mejora: Favor de Espíritu", "Fusión elemental", "Golpe conjunto: Corrosión"], "retardo_ms": 10, "nota": "Mantén Mouse1 (Impacto helado) y el botón derecho a la vez; el resto, a mano."},
-    {"preset_en": "Solo and leveling", "pasos": ["Invocación: Espíritu de agua", "Fusión elemental", "Golpe conjunto: Corrosión"], "retardo_ms": 10, "nota": "El planificador guarda una sola macro (la de Favor de Espíritu); esta variante es la del texto."},
-    {"preset_en": "Stagger burst", "pasos": ["Mejora: Favor de Espíritu", "Fusión elemental", "Golpe conjunto: Corrosión"], "retardo_ms": 10, "nota": ""}
-  ],
-  "secciones": {
-    "equipo": [
-      {"titulo": "Camino de orbe y escudo", "tipo": "tabla", "columnas": ["Etapa", "Pieza", "Notas"], "filas": [
-        ["1.ª mejora a 45", "Aulamus Orb (Urugugu Canyon) + Vakron Guard (Vakron Sky Island)", "Nivel de objeto 70; el orbe tiene 4 líneas"],
-        ["Fire Temple", "Enraged Kromede Jewel", "Nivel de objeto 86, pero solo 3 líneas"],
-        ["Objetivo crafteado", "White Dragon Lord Orb + White Dragon Lord Guard (Elyos) / Orbe de rey dragón oscuro + Guard (Asmodian)", "Primero el orbe, luego el escudo, luego accesorios"]
-      ]},
-      {"tipo": "aviso", "texto": "White Dragon Lord es nivel de objeto 78 (menos que Kromede), pero lleva **5 líneas de Soul Binding y 4 engarces**, y las líneas se conservan al subir a Splendent (86), Wise (94) y Splendent Wise (102). Mientras subes de nivel, llevar el arma a ~+10 es el mayor salto que puedes dar."},
-      {"titulo": "Soul Binding: reglas", "tipo": "lista", "items": [
-        "Armadura, collar y pendientes (10 piezas): una línea de **Concentración mental** y una de **Golpe de Espíritu** en cada una.",
-        "Anillos: tus tres activas imprescindibles (Fusión elemental, Combustión, Invocación: Espíritu de fuego).",
-        "Líneas de valor variable en las primeras ranuras (ahí rerolleas).",
-        "Mucha Perforación porque el Ataque del orbe varía mucho (240-480 en White Dragon Lord) y la Perforación te lleva a lo alto del rango.",
-        "6.ª línea con Piedra filosofal: Unificación elemental en armadura, Ataque en collar y pendientes, Acierto de Multigolpe en armas y Golpe conjunto: Maldición en un anillo. Esa línea **no se conserva** al transferir o subir de tier."
-      ]},
-      {"titulo": "Manastones", "tipo": "pasos", "items": [
-        "Damage Boost.",
-        "Critical Damage Boost.",
-        "Front Attack Damage Boost.",
-        "Ataque normal.",
-        "Precisión y Crítico."
-      ]},
-      {"tipo": "aviso", "texto": "Ve a por piedras Unique y lleva siempre al menos una de Precisión (el planificador la pone en orbe y escudo): una Fusión elemental fallada es el fallo más caro. Ataque Frontal es discutido: si pegas casi siempre por detrás o de lado, cámbialo por Ataque. Las manastones se pierden al transferir."},
-      {"titulo": "Accesorios", "tipo": "tabla", "columnas": ["Qué", "1.ª opción", "Notas"], "filas": [
-        ["Brazaletes", "Abyssal Bracelet con Tiempo, Destrucción, Sabiduría y Fantasía", "Cada línea llega a 17; 10 puntos de stat de dios = 1%"],
-        ["Amuleto", "Revelation Amulet (Amplificación de Daño de Arma)", "Fierce Battle Amulet para PvP"],
-        ["Cinturón y runas", "Noble Belt + 2 Clash Rune", "Recomendación de metaroad: nadie ha publicado una elección de Espiritualista"]
-      ]},
-      {"titulo": "Objetivos de stats (Season 1)", "tipo": "tabla", "columnas": ["Stat", "Objetivo"], "filas": [
-        ["Double Chance", "25%"],
-        ["Cooldown Reduction", "20% para empezar (Espíritu ancestral cada 72 s en vez de 90); ~33% para tener Golpe conjunto: Corrosión siempre activo"],
-        ["Precisión", "1.500"]
-      ]},
-      {"titulo": "Arcana", "tipo": "lista", "items": [
-        "Caen en Transcendence. Cada carta da su stat de dios + hasta 4 líneas de su grupo: buscas una carta cuyas líneas caigan en tus habilidades.",
-        "Set: 3 cartas Vitalidad primordial + 2 Armadura mágica = dos bonus de 2 piezas (Ataque JcE extra con mucha vida y recarga de maná cuando vas bajo).",
-        "El planificador anota una habilidad por carta: toma sus niveles como mínimo.",
-        "Si prefieres Reducción de Tiempo de Enfriamiento a Golpe, cambia Mirror of Magic por Mirror of Vigor (Fantasía): Vitalidad primordial pasa a 4 piezas, pero pierdes la pareja de Armadura mágica y su maná."
-      ]}
-    ],
-    "habilidades": [
-      {"tipo": "aviso", "texto": "Consigue fragmentos de punto de habilidad cuanto antes: los niveles son tu mayor palanca de daño y tres habilidades quieren llegar a 20."},
-      {"titulo": "Activas clave", "tipo": "tabla", "columnas": ["Habilidad", "Para qué", "Ojo con"], "filas": [
-        ["Fusión elemental", "Golpe más fuerte: daño extra a los 3 s, +10 a todos los Element Boost y 25% de recuperar Four Elements", "Necesita Four Elements"],
-        ["Combustión", "Más daño contra menos objetivos, +20% velocidad y Ashy Call en cadena", "—"],
-        ["Invocación: Espíritu de fuego", "Espíritu base con más daño (+20% daño crítico, +20% stats)", "—"],
-        ["Impacto helado", "Ataque básico; encadena Vacuum Explosion y Earth Tremor", "Espec. 4: +2% Ataque por Temblor terrestre (hasta 5) y los espíritus lo copian al invocar"],
-        ["Invocación: Espíritu de agua", "+10% Ataque; ayuda con el maná al subir de nivel", "Si las Arcana lo llevan a 16, cambia la espec. 3 por la 5"],
-        ["Golpe conjunto: Maldición", "+2 s de Maldición, lanzable en movimiento", "—"],
-        ["Dominio espacial", "Daño extra a los 3 s y más Multigolpe; devuelve 100 de maná", "Solo se ilumina un momento tras la habilidad de un espíritu: púlsala al instante"],
-        ["Ráfaga continua", "Móvil y Multigolpe", "Solo contra objetivo en stagger. Desde 16, espec. 5 en vez de la 3"],
-        ["Invocación: Espíritu de tierra", "+20% Tolerancia a Daño JcE para el espíritu", "—"],
-        ["Eliminación de impacto", "Rompe aturdimientos, +20% de vida, +2 s de Robustez", "Desde 16, espec. 5 en vez de la 4. Reutilización 47 s a 14; solo la acortan los niveles"]
-      ]},
-      {"tipo": "aviso", "texto": "Fuera de la barra de PvE: Invocación: Espíritu de viento (saca su habilidad menos y más tarde) y Grito de alma (PvP)."},
-      {"tipo": "aviso", "texto": "Debates abiertos: algunos usan la espec. 4 de Fusión elemental (cargada, hasta +200%) en vez de 2, 3, 5, y nadie ha medido cuál gana en global. Los medidores coreanos dan a Combustión más daño total que a Fusión. No cambia la build: ambas van arriba."},
-      {"titulo": "Cómo se suman los niveles", "tipo": "tabla", "columnas": ["Habilidades", "Cuenta", "Resultado"], "filas": [
-        ["Fusión elemental, Combustión, Espíritu de fuego", "10 + 4 tableros + 2 anillos = 16; + Arcana", "20 (3.ª especialización)"],
-        ["Impacto helado, Espíritu de agua, Espíritu de tierra, Maldición, Dominio espacial, Ráfaga continua, Eliminación de impacto", "10 + 4 tableros", "14 (dos especializaciones; la 5 pide 16)"]
-      ]},
-      {"titulo": "Pasivas", "tipo": "tabla", "columnas": ["Pasiva", "Nivel objetivo", "Por qué"], "filas": [
-        ["Concentración mental", "28", "Acierto de Tipo Mental y algo de Golpe (10 + 4 tableros + 10 equipo + 4 Espejo)"],
-        ["Golpe de Espíritu", "28", "Amplificación de Daño de JcE y Perforación para ti y el espíritu (misma cuenta con la Campana)"],
-        ["Unificación elemental", "14+", "+1,1% Amplificación de Daño Crítico por habilidad de espíritu, hasta 5"],
-        ["Revitalización de Espíritu", "14+", "Probabilidad de quitar 1 s a las invocaciones al golpear"],
-        ["Resto (Protección de Espíritu, Descenso de Espíritu, Erosión, Retroceso continuo, Comunión de Espíritu, Pacto de resurrección)", "14", "Con los tableros basta para PvE"]
-      ]}
-    ],
-    "estigmas": [
-      {"tipo": "aviso", "texto": "4 ranuras (niveles 22, 27, 32 y 37); sus especializaciones llegan solas a 5, 10, 15 y 20. Sube los cuatro a 10 y luego a 20 en este orden: **Invocación: Espíritu ancestral, Mejora: Favor de Espíritu, Bendición ardiente, Golpe conjunto: Corrosión**. Fragmentos en la tienda del Shugo Festival y la del Abyss."},
-      {"titulo": "Qué lleva cada preset", "tipo": "tabla", "columnas": ["Preset", "Stigmas", "Por qué"], "filas": [
-        ["Jefes y mazmorras", "Invocación: Espíritu ancestral, Mejora: Favor de Espíritu, Bendición ardiente, Golpe conjunto: Corrosión", "El set de las Espiritualistas serias: máximo daño"],
-        ["Solo y subida de nivel", "Invocación: Espíritu ancestral, Mejora: Favor de Espíritu, Golpe conjunto: Corrosión, Drenaje", "Drenaje da absorción y escudo (a 15) para aguantar solo"],
-        ["Burst en stagger", "Invocación: Espíritu ancestral, Mejora: Favor de Espíritu, Golpe conjunto: Corrosión, Golpe conjunto: Ofensiva de perdición", "Mucho daño de stagger"]
-      ]},
-      {"titulo": "Qué hace cada stigma", "tipo": "tabla", "columnas": ["Stigma", "Efecto", "Niveles clave"], "filas": [
-        ["Invocación: Espíritu ancestral", "Stigma de daño más fuerte; cada habilidad suya te da Four Elements. 30 s fuera, 90 s de reutilización", "15 (el que más importa): habilidad tras 5 básicos en vez de 7; 10: potencia Descenso de Espíritu; 20: +20% stats"],
-        ["Mejora: Favor de Espíritu", "+20% Amplificación de Daño de JcE y Tolerancia a Daño 10 s para ti y el espíritu", "10: Golpe de Espíritu ×1,5; 20: +25%"],
-        ["Bendición ardiente", "50% de daño extra al golpear 10 s", "5: +100 Precisión; 10: +100 Crítico; 15: +10% Amplificación de Daño Crítico; 20: mitad de reutilización del daño extra"],
-        ["Golpe conjunto: Corrosión", "El jefe recibe más daño de tu espíritu + daño en el tiempo 20 s", "5: daño extra del 10% al 25%; 20: +10 s, y con ~33% de Reducción queda siempre activo"],
-        ["Drenaje", "Skill Speed y absorción de vida", "15: escudo del 30% de tu vida máxima"],
-        ["Golpe conjunto: Ofensiva de perdición", "Mucho daño de stagger", "5: golpe cargado; 20: el primer golpe reaplica Maldición y Erosión"]
-      ]},
-      {"tipo": "aviso", "texto": "Los presets de solo y de stagger son recomendación de metaroad; el de stagger **está sin probar**. Cursed Cloud también es fuerte en PvE, pero no cabe con 4 ranuras. PvP: Espíritu ancestral, Favor de Espíritu, Command: Proxy y Seize Magic (Golpe conjunto: Corrosión en vez de Proxy contra sanadores), y sube Eliminación de impacto, Impacto helado, Maldición y Combustión a 20."}
-    ],
-    "daevanion": [
-      {"titulo": "Desbloqueo de tableros", "tipo": "lista", "items": [
-        "Nezekan a 12, Zikel a 20, Vaizel a 30, Triniel a 40 y Azphel a 45.",
-        "Los cuatro primeros comparten puntos (570 para completarlos); Azphel tiene los suyos y solo da PvP: déjalo para después."
-      ]},
-      {"titulo": "Orden", "tipo": "pasos", "items": [
-        "Nodos azules en los 4 tableros: Fusión elemental, Combustión, Invocación: Espíritu de fuego, Impacto helado e Invocación: Espíritu de agua. Si vas corto, primero el nodo más barato de cada una.",
-        "Verdes: Concentración mental (Zikel ×2, Vaizel, Triniel) y Golpe de Espíritu (Nezekan ×2, Vaizel, Triniel): 4 de cada.",
-        "Naranjas: Reducción de Tiempo de Enfriamiento y Velocidad de Hechizo en Nezekan, Amplificación de Daño en Zikel, Amplificación de Daño Crítico en Vaizel, Acierto de Multigolpe en Triniel.",
-        "Resto de azules y verdes, luego Ataque y lo demás de camino."
-      ]},
-      {"titulo": "Qué saltarte", "tipo": "lista", "items": [
-        "Nodos de Invocación: Espíritu de viento (no va en la barra de PvE).",
-        "Nodos de Grito de alma: es un Fear de PvP, 3 puntos por nodo para nada.",
-        "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): inútiles en PvE."
-      ]},
-      {"tipo": "aviso", "texto": "Dos presets: **Prioridad de lanzamiento** (258 puntos, pasos 1-3) y **PvE completo** (526). No se sabe cuántos puntos tiene un nivel 45 en el lanzamiento: sigue el primero y para donde se acaben. Reasignar es barato."}
-    ],
-    "rotacion": [
-      {"titulo": "Antes de empezar", "tipo": "lista", "items": [
-        "Asigna «dismiss all spirits» a una tecla a mano.",
-        "Puedes apilar hasta 3 habilidades sobre una ranura; la de abajo sale primero.",
-        "En el juego puedes apilar en una tecla Favor de Espíritu, Bendición ardiente y Espíritu ancestral, para que los buffs vayan siempre antes de la invocación.",
-        "En la línea de espíritus, Fusión elemental abajo (sale en cuanto tengas Four Elements) e Invocación: Espíritu de fuego al final (el que quieres fuera más tiempo)."
-      ]},
-      {"titulo": "Opener", "tipo": "pasos", "items": [
-        "Bendición ardiente.",
-        "Mejora: Favor de Espíritu.",
-        "Invocación: Espíritu ancestral (siempre después de los buffs).",
-        "Línea de espíritus y Golpe conjunto: Corrosión: espíritus base fuera y daño en el tiempo sobre el jefe.",
-        "Empieza a mantener los dos botones (Impacto helado + macro)."
-      ]},
-      {"titulo": "Durante el combate", "tipo": "pasos", "items": [
-        "Relanza los buffs en cuanto estén listos; no los guardes para el siguiente Espíritu ancestral.",
-        "Mantén 5 acumulaciones de Earth Tremor: vale la pena retrasar una invocación un ataque básico para tener antes la quinta.",
-        "Golpe conjunto: Corrosión cada vez que salga de reutilización.",
-        "Pulsa Dominio espacial en cuanto se ilumine."
-      ]},
-      {"tipo": "aviso", "texto": "La copia de stats al invocar manda: un espíritu invocado antes de tus buffs queda más débil todo el rato que esté fuera."},
-      {"tipo": "aviso", "texto": "La primera semana no pasa nada por jugar sin macro. Con equipo bajo, algunos dejan Espíritu de viento en la línea de espíritus para llenar antes Four Elements; quítalo al subir las habilidades principales."}
-    ],
-    "coleccionables": [
-      {"titulo": "Alas", "tipo": "tabla", "columnas": ["Qué", "Alas", "Por qué / dónde"], "filas": [
-        ["1.ª opción", "Talisra Wings", "4% Reducción de Tiempo de Enfriamiento, Precisión y Ataque; tienda de temporada"],
-        ["2.ª opción", "Dark Veil Wings", "Amplificación de Daño y Tolerancia a Daño de Jefe; Ferocious Horn Den"],
-        ["3.ª opción", "Forest Spirit Wings", "Amplificación de Daño de Jefe; Vakron"]
-      ]},
-      {"tipo": "aviso", "texto": "Colecciona todas las alas: dan stats aunque no las lleves puestas."},
-      {"titulo": "Títulos", "tipo": "tabla", "columnas": ["Tipo", "1.ª opción", "Opcional"], "filas": [
-        ["Ofensivo", "Librarse de las ataduras de raza (Crítico, Ataque Adicional, 4,5% Amplificación de Daño de JcE)", "Creación del cielo y la tierra"],
-        ["Defensivo", "Gobernar todas las cosas (Tolerancia a Daño de Jefe y por la Espalda; al coleccionar 200 tipos de mascotas)", "—"],
-        ["Otro", "Ay, no tengo nada que ponerme (Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento)", "—"]
-      ]},
-      {"titulo": "Panteón", "tipo": "tabla", "columnas": ["Qué", "Prioridad"], "filas": [
-        ["Stat de dios", "Fantasía (Reducción de Tiempo de Enfriamiento), luego Sabiduría (Golpe)"],
-        ["Coloso", "Coloso: Ectoplasma de Zikel; si prefieres Golpe a Perforación: Coloso: Ilusión de Kaisinel, Coloso: Tassin tirano o Coloso: Atheron ascendido"],
-        ["Estatuas", "Libertad → Muerte → Espacio"],
-        ["Obras maestras", "Fantasía → Sabiduría → Vida → Destino"]
-      ]}
-    ],
-    "mascotas": [
-      {"titulo": "Reglas", "tipo": "lista", "items": [
-        "El genus es tu primer gran gasto de Kina. La mascota solo llega a nivel 3; el genus sube hasta 10.",
-        "Sube cada genus a 10 antes de bloquear nada.",
-        "Bloquea solo tiradas Unique cerca del máximo de su rango."
-      ]},
-      {"titulo": "Ranuras 4 y 7 (prioridad: 4, luego 7)", "tipo": "tabla", "columnas": ["Genus", "Ranura 4", "Ranura 7"], "filas": [
-        ["Cogni, Fera, Natura, Varian", "Amplificación de Daño de JcE", "Tolerancia a Daño JcE"],
-        ["Special", "Golpe", "Tolerancia a Daño"]
-      ]},
-      {"titulo": "Resto de ranuras", "tipo": "tabla", "columnas": ["Ranuras", "Qué buscar"], "filas": [
-        ["1 y 5", "Ataque Adicional, o Ataque Máximo (base de tus golpes de Perforación: alternativa fuerte)"],
-        ["2 y 8", "Aumento de Puntos de Vida"],
-        ["3, 6 y 9", "Precisión Adicional hasta 1.500 de Precisión, luego Daño Adicional de Fragmento de Poder"]
-      ]},
-      {"tipo": "aviso", "texto": "La ranura 4 de Special es la única del juego que saca Golpe: vale la Kina extra. Si una ranura no sale, sirven tiradas altas de Amplificación de Daño Crítico, Amplificación de Daño Frontal, Perforación, Amplificación de Daño o Tenacidad. Alternativa general: el stat propio de cada genus en la ranura 4 (Amplificación de Daño Crítico en Cogni, Amplificación de Daño de Arma en Fera)."}
-    ]
+ "clase": "spiritmaster",
+ "nombre": "Espiritualista",
+ "resumen": "Invocadora a distancia y la clase a distancia más resistente. Regla de oro: el espíritu **copia tus stats y buffs al invocarlo**, así que siempre buffs primero, luego Invocación: Espíritu ancestral. El bucle: los espíritus usan habilidades, llenas Four Elements y lanzas **Fusión elemental** (sin reutilización), mientras mantienes Impacto helado.",
+ "pros": [
+  "A distancia y la más resistente de las clases a distancia: Protección de Espíritu y los espíritus absorben mucho daño.",
+  "Fusión elemental no tiene reutilización: tu golpe más grande vuelve cada vez que llenas Four Elements.",
+  "Los espíritus siguen pegando mientras te mueves, esquivas o te recolocas.",
+  "Mejora: Favor de Espíritu os da a ti y al espíritu +20% de Amplificación de Daño de JcE y Tolerancia a Daño.",
+  "Tus dos pasivas principales llegan a 28, sobre todo por las líneas del equipo.",
+  "Golpe conjunto: Corrosión hace que el jefe reciba daño extra de tus espíritus."
+ ],
+ "contras": [
+  "Un orden descuidado castiga: un espíritu invocado antes de los buffs queda más débil.",
+  "Hay que mantener 5 acumulaciones de Earth Tremor todo el combate.",
+  "Pide 65%+ de Velocidad de Hechizo y poco ping (menos de ~60 ms) para encadenar bien.",
+  "Invocación: Espíritu ancestral y Golpe conjunto: Corrosión solo brillan con niveles altos de stigma.",
+  "Maná justo mientras subes de nivel, hasta que el equipo se pone al día.",
+  "Ráfaga continua solo funciona sobre un objetivo en stagger."
+ ],
+ "presets": [
+  {
+   "nombre_en": "Bosses and dungeons",
+   "nombre": "Jefes y mazmorras",
+   "uso": "Preset por defecto; el que llevan las Espiritualistas serias."
+  },
+  {
+   "nombre_en": "Solo and leveling",
+   "nombre": "Solo y subida de nivel",
+   "uso": "Jugar solo o subir de nivel, con Drenaje para aguantar."
+  },
+  {
+   "nombre_en": "Stagger burst",
+   "nombre": "Burst en stagger",
+   "uso": "Jefes con comprobación de stagger (sin probar, punto de partida)."
   }
+ ],
+ "tecla_macro": "Botón derecho del ratón (Key Settings > General > Play, «basic skill assist function»); la línea que estaba ahí pasa a la T",
+ "macros_por_preset": [
+  {
+   "preset_en": "Bosses and dungeons",
+   "pasos": [
+    "Mejora: Favor de Espíritu",
+    "Fusión elemental",
+    "Golpe conjunto: Corrosión"
+   ],
+   "retardo_ms": 10,
+   "nota": "Mantén Mouse1 (Impacto helado) y el botón derecho a la vez; el resto, a mano."
+  },
+  {
+   "preset_en": "Solo and leveling",
+   "pasos": [
+    "Invocación: Espíritu de agua",
+    "Fusión elemental",
+    "Golpe conjunto: Corrosión"
+   ],
+   "retardo_ms": 10,
+   "nota": "El planificador guarda una sola macro (la de Favor de Espíritu); esta variante es la del texto."
+  },
+  {
+   "preset_en": "Stagger burst",
+   "pasos": [
+    "Mejora: Favor de Espíritu",
+    "Fusión elemental",
+    "Golpe conjunto: Corrosión"
+   ],
+   "retardo_ms": 10,
+   "nota": ""
+  }
+ ],
+ "secciones": {
+  "equipo": [
+   {
+    "titulo": "Camino de orbe y escudo",
+    "tipo": "tabla",
+    "columnas": [
+     "Etapa",
+     "Pieza",
+     "Notas"
+    ],
+    "filas": [
+     [
+      "1.ª mejora a 45",
+      "Aulamus Orb (Urugugu Canyon) + Vakron Guard (Vakron Sky Island)",
+      "Nivel de objeto 70; el orbe tiene 4 líneas"
+     ],
+     [
+      "Fire Temple",
+      "Enraged Kromede Jewel",
+      "Nivel de objeto 86, pero solo 3 líneas"
+     ],
+     [
+      "Objetivo crafteado",
+      "White Dragon Lord Orb + White Dragon Lord Guard (Elyos) / Orbe de rey dragón oscuro + Guard (Asmodian)",
+      "Primero el orbe, luego el escudo, luego accesorios"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "White Dragon Lord es nivel de objeto 78 (menos que Kromede), pero lleva **5 líneas de Soul Binding y 4 engarces**, y las líneas se conservan al subir a Splendent (86), Wise (94) y Splendent Wise (102). Mientras subes de nivel, llevar el arma a ~+10 es el mayor salto que puedes dar."
+   },
+   {
+    "titulo": "Soul Binding: reglas",
+    "tipo": "lista",
+    "items": [
+     "Armadura, collar y pendientes (10 piezas): una línea de **Concentración mental** y una de **Golpe de Espíritu** en cada una.",
+     "Anillos: tus tres activas imprescindibles (Fusión elemental, Combustión, Invocación: Espíritu de fuego).",
+     "Líneas de valor variable en las primeras ranuras (ahí rerolleas).",
+     "Mucha Perforación porque el Ataque del orbe varía mucho (240-480 en White Dragon Lord) y la Perforación te lleva a lo alto del rango.",
+     "6.ª línea con Piedra filosofal: Unificación elemental en armadura, Ataque en collar y pendientes, Acierto de Multigolpe en armas y Golpe conjunto: Maldición en un anillo. Esa línea **no se conserva** al transferir o subir de tier."
+    ]
+   },
+   {
+    "titulo": "Manastones",
+    "tipo": "pasos",
+    "items": [
+     "Damage Boost.",
+     "Critical Damage Boost.",
+     "Front Attack Damage Boost.",
+     "Ataque normal.",
+     "Precisión y Crítico."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Ve a por piedras Unique y lleva siempre al menos una de Precisión (el planificador la pone en orbe y escudo): una Fusión elemental fallada es el fallo más caro. Ataque Frontal es discutido: si pegas casi siempre por detrás o de lado, cámbialo por Ataque. Las manastones se pierden al transferir."
+   },
+   {
+    "titulo": "Accesorios",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "1.ª opción",
+     "Notas"
+    ],
+    "filas": [
+     [
+      "Brazaletes",
+      "Abyssal Bracelet con Tiempo, Destrucción, Sabiduría y Fantasía",
+      "Cada línea llega a 17; 10 puntos de stat de dios = 1%"
+     ],
+     [
+      "Amuleto",
+      "Revelation Amulet (Amplificación de Daño de Arma)",
+      "Fierce Battle Amulet para PvP"
+     ],
+     [
+      "Cinturón y runas",
+      "Noble Belt + 2 Clash Rune",
+      "Recomendación de esta guía: nadie ha publicado una elección de Espiritualista"
+     ]
+    ]
+   },
+   {
+    "titulo": "Objetivos de stats (Season 1)",
+    "tipo": "tabla",
+    "columnas": [
+     "Stat",
+     "Objetivo"
+    ],
+    "filas": [
+     [
+      "Double Chance",
+      "25%"
+     ],
+     [
+      "Cooldown Reduction",
+      "20% para empezar (Espíritu ancestral cada 72 s en vez de 90); ~33% para tener Golpe conjunto: Corrosión siempre activo"
+     ],
+     [
+      "Precisión",
+      "1.500"
+     ]
+    ]
+   },
+   {
+    "titulo": "Arcana",
+    "tipo": "lista",
+    "items": [
+     "Caen en Transcendence. Cada carta da su stat de dios + hasta 4 líneas de su grupo: buscas una carta cuyas líneas caigan en tus habilidades.",
+     "Set: 3 cartas Vitalidad primordial + 2 Armadura mágica = dos bonus de 2 piezas (Ataque JcE extra con mucha vida y recarga de maná cuando vas bajo).",
+     "El planificador anota una habilidad por carta: toma sus niveles como mínimo.",
+     "Si prefieres Reducción de Tiempo de Enfriamiento a Golpe, cambia Mirror of Magic por Mirror of Vigor (Fantasía): Vitalidad primordial pasa a 4 piezas, pero pierdes la pareja de Armadura mágica y su maná."
+    ]
+   }
+  ],
+  "habilidades": [
+   {
+    "tipo": "aviso",
+    "texto": "Consigue fragmentos de punto de habilidad cuanto antes: los niveles son tu mayor palanca de daño y tres habilidades quieren llegar a 20."
+   },
+   {
+    "titulo": "Activas clave",
+    "tipo": "tabla",
+    "columnas": [
+     "Habilidad",
+     "Para qué",
+     "Ojo con"
+    ],
+    "filas": [
+     [
+      "Fusión elemental",
+      "Golpe más fuerte: daño extra a los 3 s, +10 a todos los Element Boost y 25% de recuperar Four Elements",
+      "Necesita Four Elements"
+     ],
+     [
+      "Combustión",
+      "Más daño contra menos objetivos, +20% velocidad y Ashy Call en cadena",
+      "—"
+     ],
+     [
+      "Invocación: Espíritu de fuego",
+      "Espíritu base con más daño (+20% daño crítico, +20% stats)",
+      "—"
+     ],
+     [
+      "Impacto helado",
+      "Ataque básico; encadena Vacuum Explosion y Earth Tremor",
+      "Espec. 4: +2% Ataque por Temblor terrestre (hasta 5) y los espíritus lo copian al invocar"
+     ],
+     [
+      "Invocación: Espíritu de agua",
+      "+10% Ataque; ayuda con el maná al subir de nivel",
+      "Si las Arcana lo llevan a 16, cambia la espec. 3 por la 5"
+     ],
+     [
+      "Golpe conjunto: Maldición",
+      "+2 s de Maldición, lanzable en movimiento",
+      "—"
+     ],
+     [
+      "Dominio espacial",
+      "Daño extra a los 3 s y más Multigolpe; devuelve 100 de maná",
+      "Solo se ilumina un momento tras la habilidad de un espíritu: púlsala al instante"
+     ],
+     [
+      "Ráfaga continua",
+      "Móvil y Multigolpe",
+      "Solo contra objetivo en stagger. Desde 16, espec. 5 en vez de la 3"
+     ],
+     [
+      "Invocación: Espíritu de tierra",
+      "+20% Tolerancia a Daño JcE para el espíritu",
+      "—"
+     ],
+     [
+      "Eliminación de impacto",
+      "Rompe aturdimientos, +20% de vida, +2 s de Robustez",
+      "Desde 16, espec. 5 en vez de la 4. Reutilización 47 s a 14; solo la acortan los niveles"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Fuera de la barra de PvE: Invocación: Espíritu de viento (saca su habilidad menos y más tarde) y Grito de alma (PvP)."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Debates abiertos: algunos usan la espec. 4 de Fusión elemental (cargada, hasta +200%) en vez de 2, 3, 5, y nadie ha medido cuál gana en global. Los medidores coreanos dan a Combustión más daño total que a Fusión. No cambia la build: ambas van arriba."
+   },
+   {
+    "titulo": "Cómo se suman los niveles",
+    "tipo": "tabla",
+    "columnas": [
+     "Habilidades",
+     "Cuenta",
+     "Resultado"
+    ],
+    "filas": [
+     [
+      "Fusión elemental, Combustión, Espíritu de fuego",
+      "10 + 4 tableros + 2 anillos = 16; + Arcana",
+      "20 (3.ª especialización)"
+     ],
+     [
+      "Impacto helado, Espíritu de agua, Espíritu de tierra, Maldición, Dominio espacial, Ráfaga continua, Eliminación de impacto",
+      "10 + 4 tableros",
+      "14 (dos especializaciones; la 5 pide 16)"
+     ]
+    ]
+   },
+   {
+    "titulo": "Pasivas",
+    "tipo": "tabla",
+    "columnas": [
+     "Pasiva",
+     "Nivel objetivo",
+     "Por qué"
+    ],
+    "filas": [
+     [
+      "Concentración mental",
+      "28",
+      "Acierto de Tipo Mental y algo de Golpe (10 + 4 tableros + 10 equipo + 4 Espejo)"
+     ],
+     [
+      "Golpe de Espíritu",
+      "28",
+      "Amplificación de Daño de JcE y Perforación para ti y el espíritu (misma cuenta con la Campana)"
+     ],
+     [
+      "Unificación elemental",
+      "14+",
+      "+1,1% Amplificación de Daño Crítico por habilidad de espíritu, hasta 5"
+     ],
+     [
+      "Revitalización de Espíritu",
+      "14+",
+      "Probabilidad de quitar 1 s a las invocaciones al golpear"
+     ],
+     [
+      "Resto (Protección de Espíritu, Descenso de Espíritu, Erosión, Retroceso continuo, Comunión de Espíritu, Pacto de resurrección)",
+      "14",
+      "Con los tableros basta para PvE"
+     ]
+    ]
+   }
+  ],
+  "estigmas": [
+   {
+    "tipo": "aviso",
+    "texto": "4 ranuras (niveles 22, 27, 32 y 37); sus especializaciones llegan solas a 5, 10, 15 y 20. Sube los cuatro a 10 y luego a 20 en este orden: **Invocación: Espíritu ancestral, Mejora: Favor de Espíritu, Bendición ardiente, Golpe conjunto: Corrosión**. Fragmentos en la tienda del Shugo Festival y la del Abyss."
+   },
+   {
+    "titulo": "Qué lleva cada preset",
+    "tipo": "tabla",
+    "columnas": [
+     "Preset",
+     "Stigmas",
+     "Por qué"
+    ],
+    "filas": [
+     [
+      "Jefes y mazmorras",
+      "Invocación: Espíritu ancestral, Mejora: Favor de Espíritu, Bendición ardiente, Golpe conjunto: Corrosión",
+      "El set de las Espiritualistas serias: máximo daño"
+     ],
+     [
+      "Solo y subida de nivel",
+      "Invocación: Espíritu ancestral, Mejora: Favor de Espíritu, Golpe conjunto: Corrosión, Drenaje",
+      "Drenaje da absorción y escudo (a 15) para aguantar solo"
+     ],
+     [
+      "Burst en stagger",
+      "Invocación: Espíritu ancestral, Mejora: Favor de Espíritu, Golpe conjunto: Corrosión, Golpe conjunto: Ofensiva de perdición",
+      "Mucho daño de stagger"
+     ]
+    ]
+   },
+   {
+    "titulo": "Qué hace cada stigma",
+    "tipo": "tabla",
+    "columnas": [
+     "Stigma",
+     "Efecto",
+     "Niveles clave"
+    ],
+    "filas": [
+     [
+      "Invocación: Espíritu ancestral",
+      "Stigma de daño más fuerte; cada habilidad suya te da Four Elements. 30 s fuera, 90 s de reutilización",
+      "15 (el que más importa): habilidad tras 5 básicos en vez de 7; 10: potencia Descenso de Espíritu; 20: +20% stats"
+     ],
+     [
+      "Mejora: Favor de Espíritu",
+      "+20% Amplificación de Daño de JcE y Tolerancia a Daño 10 s para ti y el espíritu",
+      "10: Golpe de Espíritu ×1,5; 20: +25%"
+     ],
+     [
+      "Bendición ardiente",
+      "50% de daño extra al golpear 10 s",
+      "5: +100 Precisión; 10: +100 Crítico; 15: +10% Amplificación de Daño Crítico; 20: mitad de reutilización del daño extra"
+     ],
+     [
+      "Golpe conjunto: Corrosión",
+      "El jefe recibe más daño de tu espíritu + daño en el tiempo 20 s",
+      "5: daño extra del 10% al 25%; 20: +10 s, y con ~33% de Reducción queda siempre activo"
+     ],
+     [
+      "Drenaje",
+      "Skill Speed y absorción de vida",
+      "15: escudo del 30% de tu vida máxima"
+     ],
+     [
+      "Golpe conjunto: Ofensiva de perdición",
+      "Mucho daño de stagger",
+      "5: golpe cargado; 20: el primer golpe reaplica Maldición y Erosión"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Los presets de solo y de stagger son recomendación de esta guía; el de stagger **está sin probar**. Cursed Cloud también es fuerte en PvE, pero no cabe con 4 ranuras. PvP: Espíritu ancestral, Favor de Espíritu, Command: Proxy y Seize Magic (Golpe conjunto: Corrosión en vez de Proxy contra sanadores), y sube Eliminación de impacto, Impacto helado, Maldición y Combustión a 20."
+   }
+  ],
+  "daevanion": [
+   {
+    "titulo": "Desbloqueo de tableros",
+    "tipo": "lista",
+    "items": [
+     "Nezekan a 12, Zikel a 20, Vaizel a 30, Triniel a 40 y Azphel a 45.",
+     "Los cuatro primeros comparten puntos (570 para completarlos); Azphel tiene los suyos y solo da PvP: déjalo para después."
+    ]
+   },
+   {
+    "titulo": "Orden",
+    "tipo": "pasos",
+    "items": [
+     "Nodos azules en los 4 tableros: Fusión elemental, Combustión, Invocación: Espíritu de fuego, Impacto helado e Invocación: Espíritu de agua. Si vas corto, primero el nodo más barato de cada una.",
+     "Verdes: Concentración mental (Zikel ×2, Vaizel, Triniel) y Golpe de Espíritu (Nezekan ×2, Vaizel, Triniel): 4 de cada.",
+     "Naranjas: Reducción de Tiempo de Enfriamiento y Velocidad de Hechizo en Nezekan, Amplificación de Daño en Zikel, Amplificación de Daño Crítico en Vaizel, Acierto de Multigolpe en Triniel.",
+     "Resto de azules y verdes, luego Ataque y lo demás de camino."
+    ]
+   },
+   {
+    "titulo": "Qué saltarte",
+    "tipo": "lista",
+    "items": [
+     "Nodos de Invocación: Espíritu de viento (no va en la barra de PvE).",
+     "Nodos de Grito de alma: es un Fear de PvP, 3 puntos por nodo para nada.",
+     "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): inútiles en PvE."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Dos presets: **Prioridad de lanzamiento** (258 puntos, pasos 1-3) y **PvE completo** (526). No se sabe cuántos puntos tiene un nivel 45 en el lanzamiento: sigue el primero y para donde se acaben. Reasignar es barato."
+   }
+  ],
+  "rotacion": [
+   {
+    "titulo": "Antes de empezar",
+    "tipo": "lista",
+    "items": [
+     "Asigna «dismiss all spirits» a una tecla a mano.",
+     "Puedes apilar hasta 3 habilidades sobre una ranura; la de abajo sale primero.",
+     "En el juego puedes apilar en una tecla Favor de Espíritu, Bendición ardiente y Espíritu ancestral, para que los buffs vayan siempre antes de la invocación.",
+     "En la línea de espíritus, Fusión elemental abajo (sale en cuanto tengas Four Elements) e Invocación: Espíritu de fuego al final (el que quieres fuera más tiempo)."
+    ]
+   },
+   {
+    "titulo": "Opener",
+    "tipo": "pasos",
+    "items": [
+     "Bendición ardiente.",
+     "Mejora: Favor de Espíritu.",
+     "Invocación: Espíritu ancestral (siempre después de los buffs).",
+     "Línea de espíritus y Golpe conjunto: Corrosión: espíritus base fuera y daño en el tiempo sobre el jefe.",
+     "Empieza a mantener los dos botones (Impacto helado + macro)."
+    ]
+   },
+   {
+    "titulo": "Durante el combate",
+    "tipo": "pasos",
+    "items": [
+     "Relanza los buffs en cuanto estén listos; no los guardes para el siguiente Espíritu ancestral.",
+     "Mantén 5 acumulaciones de Earth Tremor: vale la pena retrasar una invocación un ataque básico para tener antes la quinta.",
+     "Golpe conjunto: Corrosión cada vez que salga de reutilización.",
+     "Pulsa Dominio espacial en cuanto se ilumine."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "La copia de stats al invocar manda: un espíritu invocado antes de tus buffs queda más débil todo el rato que esté fuera."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "La primera semana no pasa nada por jugar sin macro. Con equipo bajo, algunos dejan Espíritu de viento en la línea de espíritus para llenar antes Four Elements; quítalo al subir las habilidades principales."
+   }
+  ],
+  "coleccionables": [
+   {
+    "titulo": "Alas",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "Alas",
+     "Por qué / dónde"
+    ],
+    "filas": [
+     [
+      "1.ª opción",
+      "Talisra Wings",
+      "4% Reducción de Tiempo de Enfriamiento, Precisión y Ataque; tienda de temporada"
+     ],
+     [
+      "2.ª opción",
+      "Dark Veil Wings",
+      "Amplificación de Daño y Tolerancia a Daño de Jefe; Ferocious Horn Den"
+     ],
+     [
+      "3.ª opción",
+      "Forest Spirit Wings",
+      "Amplificación de Daño de Jefe; Vakron"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Colecciona todas las alas: dan stats aunque no las lleves puestas."
+   },
+   {
+    "titulo": "Títulos",
+    "tipo": "tabla",
+    "columnas": [
+     "Tipo",
+     "1.ª opción",
+     "Opcional"
+    ],
+    "filas": [
+     [
+      "Ofensivo",
+      "Librarse de las ataduras de raza (Crítico, Ataque Adicional, 4,5% Amplificación de Daño de JcE)",
+      "Creación del cielo y la tierra"
+     ],
+     [
+      "Defensivo",
+      "Gobernar todas las cosas (Tolerancia a Daño de Jefe y por la Espalda; al coleccionar 200 tipos de mascotas)",
+      "—"
+     ],
+     [
+      "Otro",
+      "Ay, no tengo nada que ponerme (Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento)",
+      "—"
+     ]
+    ]
+   },
+   {
+    "titulo": "Panteón",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "Prioridad"
+    ],
+    "filas": [
+     [
+      "Stat de dios",
+      "Fantasía (Reducción de Tiempo de Enfriamiento), luego Sabiduría (Golpe)"
+     ],
+     [
+      "Coloso",
+      "Coloso: Ectoplasma de Zikel; si prefieres Golpe a Perforación: Coloso: Ilusión de Kaisinel, Coloso: Tassin tirano o Coloso: Atheron ascendido"
+     ],
+     [
+      "Estatuas",
+      "Libertad → Muerte → Espacio"
+     ],
+     [
+      "Obras maestras",
+      "Fantasía → Sabiduría → Vida → Destino"
+     ]
+    ]
+   }
+  ],
+  "mascotas": [
+   {
+    "titulo": "Reglas",
+    "tipo": "lista",
+    "items": [
+     "El genus es tu primer gran gasto de Kina. La mascota solo llega a nivel 3; el genus sube hasta 10.",
+     "Sube cada genus a 10 antes de bloquear nada.",
+     "Bloquea solo tiradas Unique cerca del máximo de su rango."
+    ]
+   },
+   {
+    "titulo": "Ranuras 4 y 7 (prioridad: 4, luego 7)",
+    "tipo": "tabla",
+    "columnas": [
+     "Genus",
+     "Ranura 4",
+     "Ranura 7"
+    ],
+    "filas": [
+     [
+      "Cogni, Fera, Natura, Varian",
+      "Amplificación de Daño de JcE",
+      "Tolerancia a Daño JcE"
+     ],
+     [
+      "Special",
+      "Golpe",
+      "Tolerancia a Daño"
+     ]
+    ]
+   },
+   {
+    "titulo": "Resto de ranuras",
+    "tipo": "tabla",
+    "columnas": [
+     "Ranuras",
+     "Qué buscar"
+    ],
+    "filas": [
+     [
+      "1 y 5",
+      "Ataque Adicional, o Ataque Máximo (base de tus golpes de Perforación: alternativa fuerte)"
+     ],
+     [
+      "2 y 8",
+      "Aumento de Puntos de Vida"
+     ],
+     [
+      "3, 6 y 9",
+      "Precisión Adicional hasta 1.500 de Precisión, luego Daño Adicional de Fragmento de Poder"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "La ranura 4 de Special es la única del juego que saca Golpe: vale la Kina extra. Si una ranura no sale, sirven tiradas altas de Amplificación de Daño Crítico, Amplificación de Daño Frontal, Perforación, Amplificación de Daño o Tenacidad. Alternativa general: el stat propio de cada genus en la ranura 4 (Amplificación de Daño Crítico en Cogni, Amplificación de Daño de Arma en Fera)."
+   }
+  ]
+ }
 }

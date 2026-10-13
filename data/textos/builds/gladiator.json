@@ -1,216 +1,686 @@
 {
-  "clase": "gladiator",
-  "nombre": "Gladiador",
-  "fuente": "https://metaroad.gg/es/aion2/build-guides/build-pve-de-gladiador-dps",
-  "resumen": "Gladiador DPS JcE a nivel 45 con mandoble y guarda: tu daño es **Punzada descendente**, y **Explosión de furia** la abre 10 s sin enfriamiento para spamearla. **Postura de asalto** mantiene la ventana en ciclo y **Embestida desgarradora** y **Estacazo punzante** pagan el Maná. Puedes aguantar el aggro si no hay Templario.",
-  "pros": [
-    "Explosión de furia + Punzada descendente es de las mayores ventanas de burst del juego",
-    "Placas, bloqueo y robo de vida: difícil de matar para ser DPS",
-    "Puedes aguantar el aggro: los grupos sin Templario siguen funcionando",
-    "Contraataque experimentado potencia el daño JcE del grupo cuando bloqueas",
-    "Punzada descendente no cuesta Maná y no tiene enfriamiento a nivel 16",
-    "El equipo crafteado conserva sus líneas de Soul Binding al subir de tier"
-  ],
-  "contras": [
-    "El mayor gasto de Maná del juego hasta que Embestida desgarradora llega a 16",
-    "Tu daño vive en una ventana de 10 s: fallar una Explosión de furia cuesta mucho",
-    "El buff de grupo de Contraataque experimentado no se acumula con el Arrebato de un Templario",
-    "Solo 4 ranuras de estigma y Postura de asalto y Explosión de furia ocupan dos",
-    "Flojo subiendo de nivel, antes de abrir las specs de Punzada descendente"
-  ],
-  "presets": [
-    {"nombre_en": "Boss dungeons with a Templar", "nombre": "Mazmorras de jefes con Templario", "uso": "El Templario tanquea: máximo daño con Bendición de Zikel y Blindaje de onda."},
-    {"nombre_en": "Off-tank or no Templar", "nombre": "Off-tank o sin Templario", "uso": "Aguantas tú el aggro: Bloqueo concentrado y Espada de drenaje de sangre."},
-    {"nombre_en": "Solo and open world", "nombre": "Solitario y mundo abierto", "uso": "Juego en solitario y grupos de enemigos."}
-  ],
-  "tecla_macro": "",
-  "macros_por_preset": [
-    {"preset_en": "Boss dungeons with a Templar", "pasos": ["Explosión de furia", "Punzada descendente", "Embestida desgarradora"], "retardo_ms": 10, "nota": "Con ping de más de 80 ms, sube cada paso a 40-50 ms o la macro se saltará habilidades."},
-    {"preset_en": "Off-tank or no Templar", "pasos": ["Explosión de furia", "Punzada descendente", "Embestida desgarradora", "Estacazo punzante"], "retardo_ms": 10, "nota": "Con ping de más de 80 ms, 40-50 ms por paso."},
-    {"preset_en": "Solo and open world", "pasos": ["Embestida de perdición", "Explosión de furia", "Punzada descendente", "Onda pulverizadora"], "retardo_ms": 10, "nota": "Con ping de más de 80 ms, 40-50 ms por paso."}
-  ],
-  "secciones": {
-    "equipo": [
-      {"titulo": "Ruta del arma", "tipo": "tabla", "columnas": ["Etapa", "Mandoble", "Guarda", "Nota"], "filas": [
-        ["Inicio (nivel de objeto 70)", "Aulamus Greatsword (4 líneas)", "Vakron Guard", "El arma más habitual entre los Gladiadores mejor clasificados"],
-        ["Fire Temple (86)", "Enraged Kromede Claymore", "", "Solo 3 líneas. Abyssal Claymore es del mismo nivel con 4"],
-        ["Objetivo crafteado (78)", "White Dragon Lord Greatsword (Elyos) / Espadón de rey dragón oscuro (Asmodian)", "White Dragon Lord Guard / Guard", "5 líneas que se conservan al subir de tier"]
-      ]},
-      {"titulo": "Claves del equipo", "tipo": "lista", "items": [
-        "Primero mazmorra, luego crafteado pieza a pieza; casi todos mezclan un tiempo. Al principio no hay equipo Heroic.",
-        "Orden de crafteo: mandoble, guarda y después accesorios.",
-        "El crafteado (78) sube de tier a Splendent (86), Wise (94) y Splendent Wise (102). Vincular pronto ahorra materiales.",
-        "Encanta primero el mandoble: los Gladiadores fuertes van a **+13** en el arma y **+10** en lo demás."
-      ]},
-      {"tipo": "aviso", "texto": "No hay tabla publicada de líneas por ranura para Gladiador: la del planificador es recomendación de metaroad, basada en lo que llevan los Gladiadores fuertes."},
-      {"titulo": "Reglas de Soul Binding", "tipo": "lista", "items": [
-        "Las líneas de valor variable (como Golpe) en las primeras ranuras, para rerollear.",
-        "Nada de líneas de habilidad en arma ni guarda: ahí valen más las de stats.",
-        "Anillos: Fuerza, Precisión y líneas de habilidad. Los dos son +2 a tus tres principales; Punzada descendente y Embestida desgarradora los necesitan para llegar a 20.",
-        "El Crítico vale más de lo que parece: el Maná de Embestida desgarradora, el reinicio de Onda pulverizadora y el recorte de Postura de asalto salen con Crítico.",
-        "Si fallas golpes, cambia Crítico por Precisión en cualquier pieza."
-      ]},
-      {"tipo": "aviso", "texto": "El crítico tiene tope del 50% y la Resistencia Crítica del jefe lo baja. Punzada descendente ya es crítica siempre (spec 4) y Explosión de furia desde nv 15: tu Crítico sirve para Embestida desgarradora, Onda pulverizadora y relleno. Cerca del tope, coge Precisión."},
-      {"tipo": "aviso", "texto": "La línea extra de la Piedra filosofal (la morada de «fusión») se pierde al transferir o subir de tier. Todo lo demás se conserva."},
-      {"titulo": "Manastones", "tipo": "tabla", "columnas": ["Pieza", "1.ª opción", "Nota"], "filas": [
-        ["Arma y guarda", "Front Attack Damage Boost y Weapon Damage Boost, luego Ataque", ""],
-        ["Armadura y accesorios", "Ataque con 1 piedra de Crítico por pieza", "Hasta acercarte al 50% de crítico"],
-        ["Critical Damage Boost", "No", "Estallido de sed de sangre ya da esa estadística"]
-      ]},
-      {"tipo": "aviso", "texto": "Las manastones se pierden al transferir: no gastes las caras en equipo que vas a sustituir."},
-      {"titulo": "Accesorios", "tipo": "tabla", "columnas": ["Qué", "1.ª opción", "Nota"], "filas": [
-        ["Brazaletes", "Abyssal Bracelet: Sabiduría, Destrucción, Tiempo, Fantasía", "Sabiduría da Golpe y menos coste de Maná"],
-        ["Amuleto", "Revelation Amulet", "Amplificación de Daño de Arma. Fierce Battle Amulet es el de PvP"],
-        ["Cinturón y runas", "Noble Belt + 2 Clash Rune", ""]
-      ]},
-      {"titulo": "Arcana", "tipo": "tabla", "columnas": ["Carta", "Stat de dios", "Líneas a pescar"], "filas": [
-        ["Chalice of Vigor", "Tiempo: Velocidad de Hechizo", "Onda pulverizadora, Embestida de perdición, Punzada descendente, Preparación de ataque"],
-        ["Parchment of Magic", "Destino: Puntos de Maná máximos", "Punzada descendente, Embestida de perdición, Estacazo punzante, Perforación con salto"],
-        ["Compass of Magic", "Muerte: Crítico", "Embestida desgarradora, Onda pulverizadora, Desenfreno de aura de espada, Espada devastadora"],
-        ["Bell of Magic", "Destrucción: Ataque", "Preparación de ataque"],
-        ["Mirror of Magic", "Sabiduría: Golpe", "Contraataque experimentado, Estallido de sed de sangre, Acierto de impacto"]
-      ]},
-      {"titulo": "Consejos de Arcana", "tipo": "lista", "items": [
-        "Cuatro de las cinco son de **Armadura mágica**: 1.500 de Maná al bajar al 20% (una vez cada 30 s) y +1.000 de Defensa JcE con el Maná a la mitad o más.",
-        "Pergamino y Brújula de magia antes que los de vitalidad: Maná máximo y Crítico alimentan el ciclo de Maná.",
-        "Fabrica el Cáliz el último: es el comodín. metaroad lo pone en Onda pulverizadora (sin línea de anillo), que pasa de 14 a 18."
-      ]}
-    ],
-    "habilidades": [
-      {"tipo": "aviso", "texto": "Consigue todos los fragmentos de puntos de habilidad cuanto antes: tus dos habilidades principales necesitan todas las fuentes para llegar a 20."},
-      {"titulo": "Activas: por qué y cuándo cambiar", "tipo": "tabla", "columnas": ["Habilidad", "Por qué importa", "Cambio posible"], "filas": [
-        ["Punzada descendente", "Tu daño principal: cadena Upward Strike, crítico garantizado y sin enfriamiento a 16", "Subiendo de nivel, spec 1 (absorción de vida) hasta que la 3 compense"],
-        ["Embestida desgarradora", "Genera Enmity y paga el Maná: spec 5 devuelve 50 de Maná por crítico (obligatoria); spec 3 te deja moverte", "Subiendo, spec 1 (−20% de Maná) en vez de la 3"],
-        ["Embestida de perdición", "Daño extra, spec 5 ignora Bloqueo/Evasión; da Sangría 20 s", "Si llega a 20: spec 3 (+30% de Crítico) o spec 1 si vas bajo de Velocidad de Hechizo"],
-        ["Onda pulverizadora", "Tu AoE y autocura contra trash; spec 4 reinicia con crítico", "A 20, spec 5 (atrae enemigos)"],
-        ["Perforación con salto", "Acortar distancias", "Contra trash, spec 3 (reinicia al matar) en vez de la 1"],
-        ["Espada devastadora", "Knockdown garantizado: abre Punzada descendente sin Explosión de furia. Spec 4 = +1 s de Knockdown", ""],
-        ["Estacazo punzante", "Ataque básico y generador de Maná; spec 4 quita 1 s a Embestida de perdición por golpe", ""],
-        ["Desenfreno de aura de espada", "Solo contra objetivo en Stagger; spec 2 devuelve 120 de Maná", "A 16, spec 5 (−1 s a todo por golpe) en vez de la 4"],
-        ["Amarre aéreo", "Doble daño contra jefes con Inmunidad a Incapacitación; cadena Caída forzada", "A 16, spec 5 (mitad de enfriamiento) en vez de la 4"],
-        ["Estacazo de acometida", "Mismo alcance que Perforación con salto, −10 s de enfriamiento", ""],
-        ["Corte de tobillo", "Añade Ankle Smash e ignora Bloqueo/Evasión", ""],
-        ["Eliminación de impacto", "Rompe aturdimientos y devuelve 20% de vida", ""]
-      ]},
-      {"titulo": "Cómo llegan a 20 las principales", "tipo": "pasos", "items": [
-        "Puntos de habilidad: hasta 10.",
-        "4 tableros de Daevanion: +4.",
-        "2 anillos: +2.",
-        "Pergamino y Brújula: +4. Total 20 para Punzada descendente y Embestida desgarradora.",
-        "Embestida de perdición se queda en 16 sin línea de Arcana; Onda pulverizadora en 18 (tableros + Cáliz); el resto en 14.",
-        "Specs: 1.ª a 8, 2.ª a 12, 3.ª a 20; la spec 5 pide 16."
-      ]},
-      {"titulo": "Pasivas", "tipo": "tabla", "columnas": ["Pasiva", "Qué te da", "Prioridad"], "filas": [
-        ["Preparación de ataque", "Amplificación de Daño de JcE incondicional (15% a 20), Defensa y 100 de Precisión", "Máxima"],
-        ["Contraataque experimentado", "Daño Frontal para ti y Amplificación de Daño de JcE al grupo 20 s al bloquear. Lo del grupo no se acumula con el Arrebato de un Templario", "Alta"],
-        ["Estallido de sed de sangre", "Amplificación de Daño Crítico: no la necesitas en otro sitio", "Alta"],
-        ["Acierto de impacto", "Acierto de Tipo Impacto y algo de Golpe", "Media"],
-        ["Absorción de sangre", "La mitad de tus golpes curan; al 50% de vida recuperas un cuarto, 1 vez por minuto", "Media"],
-        ["Identificación de debilidades", "Vale con el nivel que tenga; Postura de asalto a 15 la multiplica x1,5", "Baja"]
-      ]},
-      {"tipo": "aviso", "texto": "Casi todo lo conocido viene de Corea, donde varias specs cambiaron antes del global. metaroad las comprobó con el texto de global. Los números pueden cambiar con parches."},
-      {"tipo": "aviso", "texto": "PvP: combo Espada devastadora, Punzada descendente, Amarre aéreo y Forced Fall; estigmas Armadura de equilibrio, Tenaciousness y Blade Toss. La guía no cubre más PvP."}
-    ],
-    "estigmas": [
-      {"titulo": "Qué estigmas lleva cada preset", "tipo": "tabla", "columnas": ["Preset", "Estigmas", "Por qué"], "filas": [
-        ["Mazmorras de jefes con Templario", "Postura de asalto, Explosión de furia, Bendición de Zikel, Blindaje de onda", "El Templario ya cubre el buff de grupo: Blindaje de onda es daño"],
-        ["Off-tank o sin Templario", "Postura de asalto, Explosión de furia, Bloqueo concentrado, Espada de drenaje de sangre", "Bloqueo garantizado que activa el buff de grupo y robo de vida"],
-        ["Solitario y mundo abierto", "Postura de asalto, Explosión de furia, Espada de drenaje de sangre, Blindaje de onda", "Robo de vida en área y daño de aura"]
-      ]},
-      {"titulo": "Para qué sirve cada uno", "tipo": "tabla", "columnas": ["Estigma", "Qué hace", "Nivel objetivo"], "filas": [
-        ["Postura de asalto", "+20% de Velocidad de Hechizo 20 s a nv 20; la mitad de tus críticos quitan 1 s a todos los enfriamientos. El motor de la build", "20 cuanto antes"],
-        ["Explosión de furia", "5 golpes, Contusión (−10% de Ataque), +10% de Amplificación de Daño de JcE y abre Punzada descendente 10 s. Nv 5: −15 s; nv 15: los 5 golpes son críticos; nv 20: +20%", "5 primero, luego 15 y 20"],
-        ["Bendición de Zikel", "Ataque y +100 de Precisión (10 s; 14,5 s a nv 10; 17 s a nv 15). Nv 5: +50% al Stagger; nv 10: +10% de Amplificación de Daño de JcE", "10-15"],
-        ["Blindaje de onda", "Aura de daño. Nv 10: Contraataque experimentado x1,5; nv 15: Estallido de sed de sangre x1,5", ""],
-        ["Bloqueo concentrado", "Bloqueo con Arma garantizado, devuelve Maná y Vigor y activa Contraataque experimentado; nv 5 da segundo uso", "5"],
-        ["Espada de drenaje de sangre", "Robo de vida en área (hasta 4); nv 10: Predation al grupo 20 s", "20 a largo plazo"],
-        ["Wrath Wave", "50 de Stagger de un golpe, lo más alto de la clase", "4.ª ranura en mazmorras con Stagger cronometrado"]
-      ]},
-      {"tipo": "aviso", "texto": "Con la Provocación de un Templario, Contusión no se acumula con Encogimiento: la spec de nivel 10 de Explosión de furia no hace nada ahí."},
-      {"tipo": "aviso", "texto": "Guías antiguas dicen que Postura de asalto baja el Maná a nv 5 o que su nv 20 salta con cualquier golpe. En global, nv 5 es +5% de Golpe y nv 20 solo con críticos."},
-      {"titulo": "Cómo subirlos", "tipo": "lista", "items": [
-        "4 ranuras en el lanzamiento; en global llegan a nivel 20.",
-        "Fuentes: tienda del Shugo Festival, tienda del Abyss o transformar Unstable Stigma Shards (con Kina ligada, no la comerciable)."
-      ]}
-    ],
-    "daevanion": [
-      {"titulo": "Tableros", "tipo": "lista", "items": [
-        "Nezekan nv 12, Zikel nv 20, Vaizel nv 30, Triniel nv 40, Azphel nv 45.",
-        "Los cuatro primeros comparten puntos. Azphel tiene los suyos y solo da PvP: déjalo para después."
-      ]},
-      {"titulo": "Orden de puntos", "tipo": "pasos", "items": [
-        "Nodos azules (+4 a cada activa): primero Punzada descendente, Embestida desgarradora y Embestida de perdición; luego Onda pulverizadora, Estacazo punzante y Perforación con salto.",
-        "Naranjas (1,5% por 4 puntos): Reducción de Tiempo de Enfriamiento y Velocidad de Hechizo (Nezekan), Amplificación de Daño (Zikel), Amplificación de Daño Crítico (Vaizel), Acierto de Multigolpe (Triniel).",
-        "Verdes: Preparación de ataque (Nezekan); Contraataque experimentado, Estallido de sed de sangre y Acierto de impacto (Zikel); las cuatro en Vaizel y Triniel.",
-        "Ataque, Crítico y lo que pille. **Quédate con los nodos de Maná máximo**: en un Gladiador es justo lo que se acaba."
-      ]},
-      {"titulo": "Qué saltarse", "tipo": "lista", "items": [
-        "Verdes de Armadura de protección: parece defensivo, pero para un DPS es una trampa.",
-        "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): nada en JcE.",
-        "Voluntad de supervivencia e Impulso de destrucción: solo si te sobran puntos."
-      ]},
-      {"tipo": "aviso", "texto": "Prioridad de lanzamiento gasta 295 puntos (pasos 1 a 3); JcE completo gasta 542. No se sabe cuántos puntos tiene un nivel 45 en el lanzamiento: sigue el primer preset. Resetear es barato."}
-    ],
-    "rotacion": [
-      {"titulo": "Antes de empezar", "tipo": "lista", "items": [
-        "**Activa Skill Queue**: hace más fluida la cadena de Explosión de furia a Punzada descendente.",
-        "Punzada descendente solo va sobre objetivo derribado, con un proc del 7% contra jefes que no se derriban, o con Explosión de furia (10 s).",
-        "Si tu ping pasa de 80 ms, sube cada paso de la macro a 40-50 ms."
-      ]},
-      {"titulo": "Combate contra jefe", "tipo": "pasos", "items": [
-        "Antes del pull: Bendición de Zikel.",
-        "Entra con Perforación con salto y luego Embestida de perdición (20 s de Prepare for Battle).",
-        "Postura de asalto, Explosión de furia y mantén la macro: Punzada descendente y Upward Strike los 10 s completos. Aquí Postura de asalto recibe más críticos.",
-        "Rellena con Embestida desgarradora y Estacazo punzante hasta que vuelva Explosión de furia (los dos devuelven Maná).",
-        "Con Explosión de furia en enfriamiento: Espada devastadora, su Knockdown abre Punzada descendente.",
-        "Si tanqueas: Bloqueo concentrado en el primer golpe fuerte para tener el buff de grupo desde el principio."
-      ]},
-      {"titulo": "Ciclos", "tipo": "lista", "items": [
-        "Embestida de perdición y Explosión de furia vuelven con 1-2 s de diferencia: lánzalas juntas como un solo ciclo.",
-        "Postura de asalto (60 s) entra cada dos ciclos de Explosión de furia (30 s), o antes si sus procs la recortan."
-      ]},
-      {"tipo": "aviso", "texto": "Nunca en la macro: Postura de asalto, Bendición de Zikel, Bloqueo concentrado ni las habilidades para acortar distancias. Esas, a tu ritmo."}
-    ],
-    "coleccionables": [
-      {"titulo": "Alas", "tipo": "tabla", "columnas": ["Alas", "Qué dan", "Cuándo"], "filas": [
-        ["Talisra Wings", "4% de Reducción de Tiempo de Enfriamiento (se suma a Postura de asalto)", "1.ª opción: más ventanas de Explosión de furia"],
-        ["Nightmare Wings", "Amplificación de Daño de Jefe", "Alternativa fuerte"],
-        ["Dark Veil Wings", "Amplificación de Daño", "Opción temprana"]
-      ]},
-      {"tipo": "aviso", "texto": "Colecciona todas las alas: dan stats sin llevarlas puestas, y el poder de vuelo ayuda al farmear el Abyss."},
-      {"titulo": "Títulos", "tipo": "tabla", "columnas": ["Tipo", "1.ª opción", "Opcional"], "filas": [
-        ["Ofensivo", "Creación del cielo y la tierra (Golpe, Amplificación de Daño de JcE)", "Librarse de las ataduras de raza (el más fácil mientras tanto)"],
-        ["Defensivo", "Santo de Verteron (Elyos) / Santo de Altgard (Asmodian): Bloqueo y Tolerancia a Daño", "El Bloqueo alimenta Contraataque experimentado"],
-        ["Otros", "Ay, no tengo nada que ponerme (Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento)", ""]
-      ]},
-      {"titulo": "Panteón", "tipo": "lista", "items": [
-        "Clave: Sabiduría (Golpe y menos Maná), Destrucción (Ataque) y Tiempo (Velocidad de Hechizo).",
-        "Libertad si vas corto de Precisión; después Fantasía (Reducción de Tiempo de Enfriamiento).",
-        "Sin prisa con los retratos: salen jugando."
-      ]}
-    ],
-    "mascotas": [
-      {"titulo": "Reglas", "tipo": "lista", "items": [
-        "El género es tu primer gran gasto de Kina.",
-        "Sube cada género a 10 antes de bloquear nada.",
-        "Bloquea solo tiradas Unique cerca de lo más alto.",
-        "Prioridad: ranura 4, luego 7, luego 2 y 8.",
-        "Gasta los tickets semanales en Odylium Repository en cuanto abra."
-      ]},
-      {"tipo": "aviso", "texto": "No hay tabla de géneros publicada para Gladiador: es recomendación de metaroad ajustada a la clase."},
-      {"titulo": "Ranuras 4 y 7 por género", "tipo": "tabla", "columnas": ["Género", "Ranura 4", "Ranura 7"], "filas": [
-        ["Cogni", "Amplificación de Daño", "Tolerancia a Daño"],
-        ["Fera", "Amplificación de Daño de Arma", "Tolerancia a Daño"],
-        ["Natura", "Perforación", "Tenacidad"],
-        ["Varian", "Amplificación de Daño Frontal", "Tenacidad"],
-        ["Special", "Golpe", "Tolerancia a Daño"]
-      ]},
-      {"titulo": "Resto de ranuras", "tipo": "tabla", "columnas": ["Ranuras", "1.ª opción", "Opcional"], "filas": [
-        ["1 y 5", "Ataque Máximo, luego Ataque Adicional", ""],
-        ["2 y 8", "Aumento de Puntos de Vida", ""],
-        ["3, 6 y 9", "Crítico o Precisión", ""]
-      ]},
-      {"tipo": "aviso", "texto": "Cogni lleva Amplificación de Daño (no Daño Crítico como otras clases) porque Estallido de sed de sangre ya da Daño Crítico."}
-    ]
+ "clase": "gladiator",
+ "nombre": "Gladiador",
+ "resumen": "Gladiador DPS JcE a nivel 45 con mandoble y guarda: tu daño es **Punzada descendente**, y **Explosión de furia** la abre 10 s sin enfriamiento para spamearla. **Postura de asalto** mantiene la ventana en ciclo y **Embestida desgarradora** y **Estacazo punzante** pagan el Maná. Puedes aguantar el aggro si no hay Templario.",
+ "pros": [
+  "Explosión de furia + Punzada descendente es de las mayores ventanas de burst del juego",
+  "Placas, bloqueo y robo de vida: difícil de matar para ser DPS",
+  "Puedes aguantar el aggro: los grupos sin Templario siguen funcionando",
+  "Contraataque experimentado potencia el daño JcE del grupo cuando bloqueas",
+  "Punzada descendente no cuesta Maná y no tiene enfriamiento a nivel 16",
+  "El equipo crafteado conserva sus líneas de Soul Binding al subir de tier"
+ ],
+ "contras": [
+  "El mayor gasto de Maná del juego hasta que Embestida desgarradora llega a 16",
+  "Tu daño vive en una ventana de 10 s: fallar una Explosión de furia cuesta mucho",
+  "El buff de grupo de Contraataque experimentado no se acumula con el Arrebato de un Templario",
+  "Solo 4 ranuras de estigma y Postura de asalto y Explosión de furia ocupan dos",
+  "Flojo subiendo de nivel, antes de abrir las specs de Punzada descendente"
+ ],
+ "presets": [
+  {
+   "nombre_en": "Boss dungeons with a Templar",
+   "nombre": "Mazmorras de jefes con Templario",
+   "uso": "El Templario tanquea: máximo daño con Bendición de Zikel y Blindaje de onda."
+  },
+  {
+   "nombre_en": "Off-tank or no Templar",
+   "nombre": "Off-tank o sin Templario",
+   "uso": "Aguantas tú el aggro: Bloqueo concentrado y Espada de drenaje de sangre."
+  },
+  {
+   "nombre_en": "Solo and open world",
+   "nombre": "Solitario y mundo abierto",
+   "uso": "Juego en solitario y grupos de enemigos."
   }
+ ],
+ "tecla_macro": "",
+ "macros_por_preset": [
+  {
+   "preset_en": "Boss dungeons with a Templar",
+   "pasos": [
+    "Explosión de furia",
+    "Punzada descendente",
+    "Embestida desgarradora"
+   ],
+   "retardo_ms": 10,
+   "nota": "Con ping de más de 80 ms, sube cada paso a 40-50 ms o la macro se saltará habilidades."
+  },
+  {
+   "preset_en": "Off-tank or no Templar",
+   "pasos": [
+    "Explosión de furia",
+    "Punzada descendente",
+    "Embestida desgarradora",
+    "Estacazo punzante"
+   ],
+   "retardo_ms": 10,
+   "nota": "Con ping de más de 80 ms, 40-50 ms por paso."
+  },
+  {
+   "preset_en": "Solo and open world",
+   "pasos": [
+    "Embestida de perdición",
+    "Explosión de furia",
+    "Punzada descendente",
+    "Onda pulverizadora"
+   ],
+   "retardo_ms": 10,
+   "nota": "Con ping de más de 80 ms, 40-50 ms por paso."
+  }
+ ],
+ "secciones": {
+  "equipo": [
+   {
+    "titulo": "Ruta del arma",
+    "tipo": "tabla",
+    "columnas": [
+     "Etapa",
+     "Mandoble",
+     "Guarda",
+     "Nota"
+    ],
+    "filas": [
+     [
+      "Inicio (nivel de objeto 70)",
+      "Aulamus Greatsword (4 líneas)",
+      "Vakron Guard",
+      "El arma más habitual entre los Gladiadores mejor clasificados"
+     ],
+     [
+      "Fire Temple (86)",
+      "Enraged Kromede Claymore",
+      "",
+      "Solo 3 líneas. Abyssal Claymore es del mismo nivel con 4"
+     ],
+     [
+      "Objetivo crafteado (78)",
+      "White Dragon Lord Greatsword (Elyos) / Espadón de rey dragón oscuro (Asmodian)",
+      "White Dragon Lord Guard / Guard",
+      "5 líneas que se conservan al subir de tier"
+     ]
+    ]
+   },
+   {
+    "titulo": "Claves del equipo",
+    "tipo": "lista",
+    "items": [
+     "Primero mazmorra, luego crafteado pieza a pieza; casi todos mezclan un tiempo. Al principio no hay equipo Heroic.",
+     "Orden de crafteo: mandoble, guarda y después accesorios.",
+     "El crafteado (78) sube de tier a Splendent (86), Wise (94) y Splendent Wise (102). Vincular pronto ahorra materiales.",
+     "Encanta primero el mandoble: los Gladiadores fuertes van a **+13** en el arma y **+10** en lo demás."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "No hay tabla publicada de líneas por ranura para Gladiador: la del planificador es recomendación de esta guía, basada en lo que llevan los Gladiadores fuertes."
+   },
+   {
+    "titulo": "Reglas de Soul Binding",
+    "tipo": "lista",
+    "items": [
+     "Las líneas de valor variable (como Golpe) en las primeras ranuras, para rerollear.",
+     "Nada de líneas de habilidad en arma ni guarda: ahí valen más las de stats.",
+     "Anillos: Fuerza, Precisión y líneas de habilidad. Los dos son +2 a tus tres principales; Punzada descendente y Embestida desgarradora los necesitan para llegar a 20.",
+     "El Crítico vale más de lo que parece: el Maná de Embestida desgarradora, el reinicio de Onda pulverizadora y el recorte de Postura de asalto salen con Crítico.",
+     "Si fallas golpes, cambia Crítico por Precisión en cualquier pieza."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "El crítico tiene tope del 50% y la Resistencia Crítica del jefe lo baja. Punzada descendente ya es crítica siempre (spec 4) y Explosión de furia desde nv 15: tu Crítico sirve para Embestida desgarradora, Onda pulverizadora y relleno. Cerca del tope, coge Precisión."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "La línea extra de la Piedra filosofal (la morada de «fusión») se pierde al transferir o subir de tier. Todo lo demás se conserva."
+   },
+   {
+    "titulo": "Manastones",
+    "tipo": "tabla",
+    "columnas": [
+     "Pieza",
+     "1.ª opción",
+     "Nota"
+    ],
+    "filas": [
+     [
+      "Arma y guarda",
+      "Front Attack Damage Boost y Weapon Damage Boost, luego Ataque",
+      ""
+     ],
+     [
+      "Armadura y accesorios",
+      "Ataque con 1 piedra de Crítico por pieza",
+      "Hasta acercarte al 50% de crítico"
+     ],
+     [
+      "Critical Damage Boost",
+      "No",
+      "Estallido de sed de sangre ya da esa estadística"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Las manastones se pierden al transferir: no gastes las caras en equipo que vas a sustituir."
+   },
+   {
+    "titulo": "Accesorios",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "1.ª opción",
+     "Nota"
+    ],
+    "filas": [
+     [
+      "Brazaletes",
+      "Abyssal Bracelet: Sabiduría, Destrucción, Tiempo, Fantasía",
+      "Sabiduría da Golpe y menos coste de Maná"
+     ],
+     [
+      "Amuleto",
+      "Revelation Amulet",
+      "Amplificación de Daño de Arma. Fierce Battle Amulet es el de PvP"
+     ],
+     [
+      "Cinturón y runas",
+      "Noble Belt + 2 Clash Rune",
+      ""
+     ]
+    ]
+   },
+   {
+    "titulo": "Arcana",
+    "tipo": "tabla",
+    "columnas": [
+     "Carta",
+     "Stat de dios",
+     "Líneas a pescar"
+    ],
+    "filas": [
+     [
+      "Chalice of Vigor",
+      "Tiempo: Velocidad de Hechizo",
+      "Onda pulverizadora, Embestida de perdición, Punzada descendente, Preparación de ataque"
+     ],
+     [
+      "Parchment of Magic",
+      "Destino: Puntos de Maná máximos",
+      "Punzada descendente, Embestida de perdición, Estacazo punzante, Perforación con salto"
+     ],
+     [
+      "Compass of Magic",
+      "Muerte: Crítico",
+      "Embestida desgarradora, Onda pulverizadora, Desenfreno de aura de espada, Espada devastadora"
+     ],
+     [
+      "Bell of Magic",
+      "Destrucción: Ataque",
+      "Preparación de ataque"
+     ],
+     [
+      "Mirror of Magic",
+      "Sabiduría: Golpe",
+      "Contraataque experimentado, Estallido de sed de sangre, Acierto de impacto"
+     ]
+    ]
+   },
+   {
+    "titulo": "Consejos de Arcana",
+    "tipo": "lista",
+    "items": [
+     "Cuatro de las cinco son de **Armadura mágica**: 1.500 de Maná al bajar al 20% (una vez cada 30 s) y +1.000 de Defensa JcE con el Maná a la mitad o más.",
+     "Pergamino y Brújula de magia antes que los de vitalidad: Maná máximo y Crítico alimentan el ciclo de Maná.",
+     "Fabrica el Cáliz el último: es el comodín. esta guía lo pone en Onda pulverizadora (sin línea de anillo), que pasa de 14 a 18."
+    ]
+   }
+  ],
+  "habilidades": [
+   {
+    "tipo": "aviso",
+    "texto": "Consigue todos los fragmentos de puntos de habilidad cuanto antes: tus dos habilidades principales necesitan todas las fuentes para llegar a 20."
+   },
+   {
+    "titulo": "Activas: por qué y cuándo cambiar",
+    "tipo": "tabla",
+    "columnas": [
+     "Habilidad",
+     "Por qué importa",
+     "Cambio posible"
+    ],
+    "filas": [
+     [
+      "Punzada descendente",
+      "Tu daño principal: cadena Upward Strike, crítico garantizado y sin enfriamiento a 16",
+      "Subiendo de nivel, spec 1 (absorción de vida) hasta que la 3 compense"
+     ],
+     [
+      "Embestida desgarradora",
+      "Genera Enmity y paga el Maná: spec 5 devuelve 50 de Maná por crítico (obligatoria); spec 3 te deja moverte",
+      "Subiendo, spec 1 (−20% de Maná) en vez de la 3"
+     ],
+     [
+      "Embestida de perdición",
+      "Daño extra, spec 5 ignora Bloqueo/Evasión; da Sangría 20 s",
+      "Si llega a 20: spec 3 (+30% de Crítico) o spec 1 si vas bajo de Velocidad de Hechizo"
+     ],
+     [
+      "Onda pulverizadora",
+      "Tu AoE y autocura contra trash; spec 4 reinicia con crítico",
+      "A 20, spec 5 (atrae enemigos)"
+     ],
+     [
+      "Perforación con salto",
+      "Acortar distancias",
+      "Contra trash, spec 3 (reinicia al matar) en vez de la 1"
+     ],
+     [
+      "Espada devastadora",
+      "Knockdown garantizado: abre Punzada descendente sin Explosión de furia. Spec 4 = +1 s de Knockdown",
+      ""
+     ],
+     [
+      "Estacazo punzante",
+      "Ataque básico y generador de Maná; spec 4 quita 1 s a Embestida de perdición por golpe",
+      ""
+     ],
+     [
+      "Desenfreno de aura de espada",
+      "Solo contra objetivo en Stagger; spec 2 devuelve 120 de Maná",
+      "A 16, spec 5 (−1 s a todo por golpe) en vez de la 4"
+     ],
+     [
+      "Amarre aéreo",
+      "Doble daño contra jefes con Inmunidad a Incapacitación; cadena Caída forzada",
+      "A 16, spec 5 (mitad de enfriamiento) en vez de la 4"
+     ],
+     [
+      "Estacazo de acometida",
+      "Mismo alcance que Perforación con salto, −10 s de enfriamiento",
+      ""
+     ],
+     [
+      "Corte de tobillo",
+      "Añade Ankle Smash e ignora Bloqueo/Evasión",
+      ""
+     ],
+     [
+      "Eliminación de impacto",
+      "Rompe aturdimientos y devuelve 20% de vida",
+      ""
+     ]
+    ]
+   },
+   {
+    "titulo": "Cómo llegan a 20 las principales",
+    "tipo": "pasos",
+    "items": [
+     "Puntos de habilidad: hasta 10.",
+     "4 tableros de Daevanion: +4.",
+     "2 anillos: +2.",
+     "Pergamino y Brújula: +4. Total 20 para Punzada descendente y Embestida desgarradora.",
+     "Embestida de perdición se queda en 16 sin línea de Arcana; Onda pulverizadora en 18 (tableros + Cáliz); el resto en 14.",
+     "Specs: 1.ª a 8, 2.ª a 12, 3.ª a 20; la spec 5 pide 16."
+    ]
+   },
+   {
+    "titulo": "Pasivas",
+    "tipo": "tabla",
+    "columnas": [
+     "Pasiva",
+     "Qué te da",
+     "Prioridad"
+    ],
+    "filas": [
+     [
+      "Preparación de ataque",
+      "Amplificación de Daño de JcE incondicional (15% a 20), Defensa y 100 de Precisión",
+      "Máxima"
+     ],
+     [
+      "Contraataque experimentado",
+      "Daño Frontal para ti y Amplificación de Daño de JcE al grupo 20 s al bloquear. Lo del grupo no se acumula con el Arrebato de un Templario",
+      "Alta"
+     ],
+     [
+      "Estallido de sed de sangre",
+      "Amplificación de Daño Crítico: no la necesitas en otro sitio",
+      "Alta"
+     ],
+     [
+      "Acierto de impacto",
+      "Acierto de Tipo Impacto y algo de Golpe",
+      "Media"
+     ],
+     [
+      "Absorción de sangre",
+      "La mitad de tus golpes curan; al 50% de vida recuperas un cuarto, 1 vez por minuto",
+      "Media"
+     ],
+     [
+      "Identificación de debilidades",
+      "Vale con el nivel que tenga; Postura de asalto a 15 la multiplica x1,5",
+      "Baja"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Casi todo lo conocido viene de Corea, donde varias specs cambiaron antes del global. se comprobaron con el texto de global. Los números pueden cambiar con parches."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "PvP: combo Espada devastadora, Punzada descendente, Amarre aéreo y Forced Fall; estigmas Armadura de equilibrio, Tenaciousness y Blade Toss. La guía no cubre más PvP."
+   }
+  ],
+  "estigmas": [
+   {
+    "titulo": "Qué estigmas lleva cada preset",
+    "tipo": "tabla",
+    "columnas": [
+     "Preset",
+     "Estigmas",
+     "Por qué"
+    ],
+    "filas": [
+     [
+      "Mazmorras de jefes con Templario",
+      "Postura de asalto, Explosión de furia, Bendición de Zikel, Blindaje de onda",
+      "El Templario ya cubre el buff de grupo: Blindaje de onda es daño"
+     ],
+     [
+      "Off-tank o sin Templario",
+      "Postura de asalto, Explosión de furia, Bloqueo concentrado, Espada de drenaje de sangre",
+      "Bloqueo garantizado que activa el buff de grupo y robo de vida"
+     ],
+     [
+      "Solitario y mundo abierto",
+      "Postura de asalto, Explosión de furia, Espada de drenaje de sangre, Blindaje de onda",
+      "Robo de vida en área y daño de aura"
+     ]
+    ]
+   },
+   {
+    "titulo": "Para qué sirve cada uno",
+    "tipo": "tabla",
+    "columnas": [
+     "Estigma",
+     "Qué hace",
+     "Nivel objetivo"
+    ],
+    "filas": [
+     [
+      "Postura de asalto",
+      "+20% de Velocidad de Hechizo 20 s a nv 20; la mitad de tus críticos quitan 1 s a todos los enfriamientos. El motor de la build",
+      "20 cuanto antes"
+     ],
+     [
+      "Explosión de furia",
+      "5 golpes, Contusión (−10% de Ataque), +10% de Amplificación de Daño de JcE y abre Punzada descendente 10 s. Nv 5: −15 s; nv 15: los 5 golpes son críticos; nv 20: +20%",
+      "5 primero, luego 15 y 20"
+     ],
+     [
+      "Bendición de Zikel",
+      "Ataque y +100 de Precisión (10 s; 14,5 s a nv 10; 17 s a nv 15). Nv 5: +50% al Stagger; nv 10: +10% de Amplificación de Daño de JcE",
+      "10-15"
+     ],
+     [
+      "Blindaje de onda",
+      "Aura de daño. Nv 10: Contraataque experimentado x1,5; nv 15: Estallido de sed de sangre x1,5",
+      ""
+     ],
+     [
+      "Bloqueo concentrado",
+      "Bloqueo con Arma garantizado, devuelve Maná y Vigor y activa Contraataque experimentado; nv 5 da segundo uso",
+      "5"
+     ],
+     [
+      "Espada de drenaje de sangre",
+      "Robo de vida en área (hasta 4); nv 10: Predation al grupo 20 s",
+      "20 a largo plazo"
+     ],
+     [
+      "Wrath Wave",
+      "50 de Stagger de un golpe, lo más alto de la clase",
+      "4.ª ranura en mazmorras con Stagger cronometrado"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Con la Provocación de un Templario, Contusión no se acumula con Encogimiento: la spec de nivel 10 de Explosión de furia no hace nada ahí."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Guías antiguas dicen que Postura de asalto baja el Maná a nv 5 o que su nv 20 salta con cualquier golpe. En global, nv 5 es +5% de Golpe y nv 20 solo con críticos."
+   },
+   {
+    "titulo": "Cómo subirlos",
+    "tipo": "lista",
+    "items": [
+     "4 ranuras en el lanzamiento; en global llegan a nivel 20.",
+     "Fuentes: tienda del Shugo Festival, tienda del Abyss o transformar Unstable Stigma Shards (con Kina ligada, no la comerciable)."
+    ]
+   }
+  ],
+  "daevanion": [
+   {
+    "titulo": "Tableros",
+    "tipo": "lista",
+    "items": [
+     "Nezekan nv 12, Zikel nv 20, Vaizel nv 30, Triniel nv 40, Azphel nv 45.",
+     "Los cuatro primeros comparten puntos. Azphel tiene los suyos y solo da PvP: déjalo para después."
+    ]
+   },
+   {
+    "titulo": "Orden de puntos",
+    "tipo": "pasos",
+    "items": [
+     "Nodos azules (+4 a cada activa): primero Punzada descendente, Embestida desgarradora y Embestida de perdición; luego Onda pulverizadora, Estacazo punzante y Perforación con salto.",
+     "Naranjas (1,5% por 4 puntos): Reducción de Tiempo de Enfriamiento y Velocidad de Hechizo (Nezekan), Amplificación de Daño (Zikel), Amplificación de Daño Crítico (Vaizel), Acierto de Multigolpe (Triniel).",
+     "Verdes: Preparación de ataque (Nezekan); Contraataque experimentado, Estallido de sed de sangre y Acierto de impacto (Zikel); las cuatro en Vaizel y Triniel.",
+     "Ataque, Crítico y lo que pille. **Quédate con los nodos de Maná máximo**: en un Gladiador es justo lo que se acaba."
+    ]
+   },
+   {
+    "titulo": "Qué saltarse",
+    "tipo": "lista",
+    "items": [
+     "Verdes de Armadura de protección: parece defensivo, pero para un DPS es una trampa.",
+     "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): nada en JcE.",
+     "Voluntad de supervivencia e Impulso de destrucción: solo si te sobran puntos."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Prioridad de lanzamiento gasta 295 puntos (pasos 1 a 3); JcE completo gasta 542. No se sabe cuántos puntos tiene un nivel 45 en el lanzamiento: sigue el primer preset. Resetear es barato."
+   }
+  ],
+  "rotacion": [
+   {
+    "titulo": "Antes de empezar",
+    "tipo": "lista",
+    "items": [
+     "**Activa Skill Queue**: hace más fluida la cadena de Explosión de furia a Punzada descendente.",
+     "Punzada descendente solo va sobre objetivo derribado, con un proc del 7% contra jefes que no se derriban, o con Explosión de furia (10 s).",
+     "Si tu ping pasa de 80 ms, sube cada paso de la macro a 40-50 ms."
+    ]
+   },
+   {
+    "titulo": "Combate contra jefe",
+    "tipo": "pasos",
+    "items": [
+     "Antes del pull: Bendición de Zikel.",
+     "Entra con Perforación con salto y luego Embestida de perdición (20 s de Prepare for Battle).",
+     "Postura de asalto, Explosión de furia y mantén la macro: Punzada descendente y Upward Strike los 10 s completos. Aquí Postura de asalto recibe más críticos.",
+     "Rellena con Embestida desgarradora y Estacazo punzante hasta que vuelva Explosión de furia (los dos devuelven Maná).",
+     "Con Explosión de furia en enfriamiento: Espada devastadora, su Knockdown abre Punzada descendente.",
+     "Si tanqueas: Bloqueo concentrado en el primer golpe fuerte para tener el buff de grupo desde el principio."
+    ]
+   },
+   {
+    "titulo": "Ciclos",
+    "tipo": "lista",
+    "items": [
+     "Embestida de perdición y Explosión de furia vuelven con 1-2 s de diferencia: lánzalas juntas como un solo ciclo.",
+     "Postura de asalto (60 s) entra cada dos ciclos de Explosión de furia (30 s), o antes si sus procs la recortan."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Nunca en la macro: Postura de asalto, Bendición de Zikel, Bloqueo concentrado ni las habilidades para acortar distancias. Esas, a tu ritmo."
+   }
+  ],
+  "coleccionables": [
+   {
+    "titulo": "Alas",
+    "tipo": "tabla",
+    "columnas": [
+     "Alas",
+     "Qué dan",
+     "Cuándo"
+    ],
+    "filas": [
+     [
+      "Talisra Wings",
+      "4% de Reducción de Tiempo de Enfriamiento (se suma a Postura de asalto)",
+      "1.ª opción: más ventanas de Explosión de furia"
+     ],
+     [
+      "Nightmare Wings",
+      "Amplificación de Daño de Jefe",
+      "Alternativa fuerte"
+     ],
+     [
+      "Dark Veil Wings",
+      "Amplificación de Daño",
+      "Opción temprana"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Colecciona todas las alas: dan stats sin llevarlas puestas, y el poder de vuelo ayuda al farmear el Abyss."
+   },
+   {
+    "titulo": "Títulos",
+    "tipo": "tabla",
+    "columnas": [
+     "Tipo",
+     "1.ª opción",
+     "Opcional"
+    ],
+    "filas": [
+     [
+      "Ofensivo",
+      "Creación del cielo y la tierra (Golpe, Amplificación de Daño de JcE)",
+      "Librarse de las ataduras de raza (el más fácil mientras tanto)"
+     ],
+     [
+      "Defensivo",
+      "Santo de Verteron (Elyos) / Santo de Altgard (Asmodian): Bloqueo y Tolerancia a Daño",
+      "El Bloqueo alimenta Contraataque experimentado"
+     ],
+     [
+      "Otros",
+      "Ay, no tengo nada que ponerme (Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento)",
+      ""
+     ]
+    ]
+   },
+   {
+    "titulo": "Panteón",
+    "tipo": "lista",
+    "items": [
+     "Clave: Sabiduría (Golpe y menos Maná), Destrucción (Ataque) y Tiempo (Velocidad de Hechizo).",
+     "Libertad si vas corto de Precisión; después Fantasía (Reducción de Tiempo de Enfriamiento).",
+     "Sin prisa con los retratos: salen jugando."
+    ]
+   }
+  ],
+  "mascotas": [
+   {
+    "titulo": "Reglas",
+    "tipo": "lista",
+    "items": [
+     "El género es tu primer gran gasto de Kina.",
+     "Sube cada género a 10 antes de bloquear nada.",
+     "Bloquea solo tiradas Unique cerca de lo más alto.",
+     "Prioridad: ranura 4, luego 7, luego 2 y 8.",
+     "Gasta los tickets semanales en Odylium Repository en cuanto abra."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "No hay tabla de géneros publicada para Gladiador: es recomendación de esta guía ajustada a la clase."
+   },
+   {
+    "titulo": "Ranuras 4 y 7 por género",
+    "tipo": "tabla",
+    "columnas": [
+     "Género",
+     "Ranura 4",
+     "Ranura 7"
+    ],
+    "filas": [
+     [
+      "Cogni",
+      "Amplificación de Daño",
+      "Tolerancia a Daño"
+     ],
+     [
+      "Fera",
+      "Amplificación de Daño de Arma",
+      "Tolerancia a Daño"
+     ],
+     [
+      "Natura",
+      "Perforación",
+      "Tenacidad"
+     ],
+     [
+      "Varian",
+      "Amplificación de Daño Frontal",
+      "Tenacidad"
+     ],
+     [
+      "Special",
+      "Golpe",
+      "Tolerancia a Daño"
+     ]
+    ]
+   },
+   {
+    "titulo": "Resto de ranuras",
+    "tipo": "tabla",
+    "columnas": [
+     "Ranuras",
+     "1.ª opción",
+     "Opcional"
+    ],
+    "filas": [
+     [
+      "1 y 5",
+      "Ataque Máximo, luego Ataque Adicional",
+      ""
+     ],
+     [
+      "2 y 8",
+      "Aumento de Puntos de Vida",
+      ""
+     ],
+     [
+      "3, 6 y 9",
+      "Crítico o Precisión",
+      ""
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Cogni lleva Amplificación de Daño (no Daño Crítico como otras clases) porque Estallido de sed de sangre ya da Daño Crítico."
+   }
+  ]
+ }
 }

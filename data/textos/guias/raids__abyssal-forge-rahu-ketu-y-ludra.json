@@ -1,248 +1,499 @@
 {
-  "slug": "raids__abyssal-forge-rahu-ketu-y-ludra",
-  "categoria": "raids",
-  "titulo": "Abyssal Forge: Rahu, Ketu y Ludra",
-  "fuente": "https://metaroad.gg/es/aion2/raids/abyssal-forge-rahu-ketu-y-ludra",
-  "resumen": "Raid de 10 jugadores con tres jefes: **Rahu**, **Ketu** y **Ludra** (final, gasta tu recompensa semanal). Lo que decide el clear no es el gear score: es que tu **Clérigo** siga vivo y que tu daño entre (**Precisión**).",
-  "bloques": [
-    {
-      "tipo": "aviso",
-      "texto": "Nota del 10-oct-2026: Ludra (Sanctuary Raid: Ludra) no está ahora en el juego global. NC la retiró con la build del 5 de octubre para rehacer el combate, con vuelta prevista como muy tarde el **16 de octubre**. Volverá con mecánicas y patrones nuevos o ajustados: las secciones de jefes describen el combate de los servidores coreanos."
-    },
-    {
-      "titulo": "Datos básicos",
-      "tipo": "tabla",
-      "columnas": ["Qué", "Dato"],
-      "filas": [
-        ["Jugadores", "10 (2 grupos de 5)"],
-        ["Jefes con nombre (en orden)", "1. **Rahu** · 2. **Ketu** · 3. **Ludra** (final). Sin cuarto jefe ni encuentro oculto"],
-        ["Entrada", "~**2.700** a nivel de personaje 45 (cifra de la comunidad; no hay número oficial en inglés y la etiqueta varía: nivel de objeto, gear score o poder de combate)"],
-        ["Lo que piden los grupos", "**3.200+**"],
-        ["Gear score orientativo (tracker de terceros)", "Grupo cómodo ~30.000; clear estable con aleatorios ~35.000"],
-        ["Precisión objetivo", "Base **1.000-1.100**, ~**1.450** con buffs y título; total con margen **1.500**"],
-        ["Crítico objetivo", "**1.600** (el jefe tiene defensas contra críticos)"],
-        ["Resurrección", "Piedras de resurrección **desactivadas**: solo levanta la Resurrección de invocación del Clérigo"]
-      ]
-    },
-    {
-      "titulo": "Precisión: la puerta escondida",
-      "tipo": "lista",
-      "items": [
-        "Por debajo del umbral, Ludra hace **Bloqueo con Arma** a buena parte de tus golpes: parece que «se acaba el tiempo» pero falta precisión.",
-        "Fuentes: mascota de crafteo, reparto de stats, título y buffs de raid coordinados.",
-        "Los 1.500 / 1.600 (servidores asiáticos) cuentan todas las fuentes, incluidas Precisión JcE y Penetración de Bloqueo: tu hoja principal puede marcar menos. Son aproximados y no confirmados en global.",
-        "Apunta a 1.500 con todo incluido y cubres las dos lecturas."
-      ]
-    },
-    {
-      "titulo": "Antes del pull",
-      "tipo": "tabla",
-      "columnas": ["Qué", "Por qué"],
-      "filas": [
-        ["Planta el **kiosco de grupo** fuera de la sala del jefe, antes de entrar", "Es tu único punto de reaparición; importa sobre todo en Ludra"],
-        ["**Calidad de batallas a gran escala** en alta", "Si no ves a los aliados lejanos no ves al ancla"],
-        ["**Resistencia al daño** en las piezas de armadura inferiores", "Para sobrevivir a la fase 2 de Ludra"],
-        ["Revisa **Precisión y Crítico**", "Los números que nadie revisa"]
-      ]
-    },
-    {
-      "titulo": "Tu semana de raid",
-      "tipo": "tabla",
-      "columnas": ["Qué", "Dato"],
-      "filas": [
-        ["Intentos", "**Ilimitados** (desde el 27-may-2026)"],
-        ["Rahu y Ketu", "Cada uno da a cada jugador su propio **Abyssal Chest** en cada kill, sin tocar el contador semanal"],
-        ["Ludra", "**1 recompensa por semana** con pago doblado (Chapter 1)"],
-        ["Límite de sesión", "**2 horas** (antes 60 minutos)"],
-        ["Plan", "Farmea Rahu y Ketu cuanto quieras; gasta la recompensa en runs donde matáis a Ludra. Las runs sin cobrar son práctica gratis"]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Lo del cofre por jugador viene de los jugadores coreanos; NC nunca publicó la regla. Una fuente sigue marcando el límite de 2 horas como no confirmado: reserva la hora segura y trata la segunda como extra."
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Todo el material coreano se escribió con raids de **8**. Lo que se reparte por persona (marcas, orbes, carriles, posiciones) puede haber cambiado con 10: cuenta lo que ves y cántalo. Se mantienen: el contador de 3 agujeros negros, las posiciones de reloj, tiempos de casteo y rayos, la cuadrícula 6×6, la ventana de 1,5 s del cierre y los 7.000+ de daño por tick fuera de la arena."
-    },
-    {
-      "titulo": "Rahu: reglas del combate",
-      "tipo": "lista",
-      "items": [
-        "Cada mecánica fallada deja un **agujero negro** permanente. **3 agujeros = wipe**: tenéis presupuesto de **2 errores**. Dilo antes del pull.",
-        "Elegid un **ancla** antes del pull y decid su nombre en voz alta; muchas mecánicas son «todos sobre el ancla».",
-        "Es el único jefe que un **Conjurador** puede curar solo, sin Clérigo dedicado.",
-        "Las mecánicas de vida baja salen por umbral de vida: un grupo fuerte puede no ver nunca la segunda mitad (Cruz, Predation)."
-      ]
-    },
-    {
-      "titulo": "Jefe 1: Rahu",
-      "tipo": "tabla",
-      "columnas": ["Ataque", "Qué hace", "Qué haces tú"],
-      "filas": [
-        ["Fixed Gaze / barrido de 350°", "Marca a un jugador con un ojo; ~350° de la arena se vuelven letales salvo una cuña; un rayo recto sigue al marcado ~7 s", "Los demás, apretados en la cuña. El marcado va al borde opuesto y **gira el cuerpo** para que el rayo no apunte a la raid. Con ~2 s de debuff, entra en la cuña"],
-        ["Pasar la bomba", "Rayo morado marca a un jugador con temporizador; a los ~20 s se vuelve zona permanente = **agujero negro**", "Toca a un aliado para pasarle la marca y seguid moviéndola. Nunca te la quedes"],
-        ["Donut", "Círculo rojo en cada jugador y ondas moradas letales hacia fuera", "**Todos apilados** en el ancla: los círculos se fusionan en una zona segura. Dispersarse mata"],
-        ["Wheel of Suffering (~50%)", "Lanza a la raid a las 12, 3, 6 y 9; contador de 15 s; dos abanicos giratorios y zona circular en el jefe", "Reagrupaos en el ancla al aterrizar y girad en **sentido horario** por delante de los abanicos. Dentro del grupo recibes menos daño"],
-        ["La Cruz (~33%)", "Zona segura en cruz; salto en área del jefe; caen proyectiles de veneno que dejan zonas permanentes; arena dividida en cuartos", "Reagrupaos en la intersección con el tanque delante absorbiendo el salto. Lleva tu veneno **al borde**. Cuidado con caerte"],
-        ["Time of Predation", "Invoca adds de Abyss Predator fuera (3 o 4 según la fuente); un marcado con Fixed Gaze recibe 3 rayos seguidos", "Dirige cada rayo contra un add. La marca puede pasar entre casteos: cantad cada relevo. Un add vivo = agujero negro"]
-      ]
-    },
-    {
-      "titulo": "Ketu: reglas del combate",
-      "tipo": "lista",
-      "items": [
-        "Aquí el **Clérigo es obligatorio**: es donde acaban la mayoría de grupos aleatorios.",
-        "Grupos divididos: con Rahu, el grupo 1 pelea y el 2 limpia trash en la sala de refinado; en Ketu se cambian (grupo 2 con el jefe, grupo 1 con el trash).",
-        "El trash da 3 buffs: vida, daño, y velocidad de ataque y movimiento. Romper la misma piedra dos veces no acumula."
-      ]
-    },
-    {
-      "titulo": "Jefe 2: Ketu",
-      "tipo": "tabla",
-      "columnas": ["Ataque", "Qué hace", "Qué haces tú"],
-      "filas": [
-        ["Golpe y comba", "Marca a un jugador (icono rojo), carga y golpea; luego una cuerda barre el suelo", "Bloquea el golpe con una defensiva y la cuerda no sale. Si no, **salta** la cuerda"],
-        ["Hide and Seek with the Abyss", "Láser pesado desde **las 6** del minimapa, enjambre de espíritus, misiles pequeños, anillo blanco que se cierra (espíritu que lo toca aplica miedo) y luego un sello", "Ver pasos abajo"],
-        ["Atrapar orbes", "Caen orbes del cielo", "Uno por jugador, sepárate y **salta** para atraparlo antes de que toque el suelo"],
-        ["Guadaña de Ketu", "Guadañas teledirigidas persiguen a varios jugadores; poco daño", "**Rómpelas**, no las kitees"],
-        ["Orbes de orientación (desde ~50%)", "Orbe que explota; primero uno solo, luego tres seguidos; tras los tres aparece zona segura", "**Rojo: míralo. Azul: dale la espalda.** Cuenta la orientación del personaje, no la cámara. Tras la tanda de tres, entra en la zona segura (un orbe suelto no la genera). Pueden llegar en mitad del escondite"],
-        ["Estallido de poder («la hora del tronco»)", "Abanicos rojos según la posición de cada jugador; brotan Mortal's Soulstones; al final ~6 s de daño inevitable", "Ver pasos abajo"]
-      ]
-    },
-    {
-      "titulo": "Hide and Seek with the Abyss paso a paso",
-      "tipo": "pasos",
-      "items": [
-        "Esquiva primero el láser de las 6; no pegues aún a los espíritus.",
-        "Separaos a cada lado de la línea de las 6 y avanzad matando espíritus (los misiles hacen más daño del que parece).",
-        "Cuando el efecto blanco se cierre hacia el centro, apilaos en el centro.",
-        "Subid al sello y aguantad mientras el Clérigo cura hasta que acabe el patrón."
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Teoría de la comunidad no confirmada: los espíritus mueren con un número fijo de golpes, no por daño. Si tus cooldowns grandes parecen desperdiciados aquí, será por eso. El número de orbes que caen y su castigo si tocan suelo tampoco están publicados para 10 jugadores."
-    },
-    {
-      "titulo": "Estallido de poder paso a paso",
-      "tipo": "pasos",
-      "items": [
-        "Apilaos en una dirección mientras cargan los abanicos (así se estrechan y quedan más soulstones fuera).",
-        "A ~5 s, los abanicos se fijan: sal de ellos.",
-        "A ~3,5 s impacta y destruye las soulstones dentro de los abanicos.",
-        "En cero empiezan ~6 s de daño continuo: rompe una soulstone (~4 s de invulnerabilidad) y encadena otra.",
-        "No le quites la piedra al Clérigo: si él sobrevive, Ketu muere igual."
-      ]
-    },
-    {
-      "titulo": "Las tres mecánicas de orbes de colores (no las mezcles)",
-      "tipo": "tabla",
-      "columnas": ["Jefe", "Mecánica", "Qué haces tú"],
-      "filas": [
-        ["Ketu", "Atrapar orbes", "Ponte debajo y cógelo en el aire"],
-        ["Ketu", "Orbes de orientación", "Rojo: míralo. Azul: espalda"],
-        ["Ludra", "Debuff de color por lado", "**Rojo a la izquierda, azul a la derecha**"]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Circulan guías en inglés con los colores de Ketu al revés. Si una fuente da los colores sin distinguir estas tres mecánicas, desconfía. Nadie ha publicado el daño exacto de fallar la orientación."
-    },
-    {
-      "titulo": "Jefe final: Ludra, fase 1",
-      "tipo": "tabla",
-      "columnas": ["Ataque", "Qué hace", "Qué haces tú"],
-      "filas": [
-        ["Onion Rings", "Anillos concéntricos hacia fuera; dos impactos superpuestos matan al instante", "Nunca te comas un 2.º anillo en la ventana del primero; elige una dirección sin dudar"],
-        ["Tail Swipe", "Ataque trasero con derribo que quita ~80% de vida", "**No te pongas detrás** del jefe"],
-        ["«Abyss, Expand»", "Orbes azules y un orbe rojo", "Azules: recógelos en el aire. Rojo: solo con inmunidad activa (invulnerabilidad, bloqueo o postura de esquiva) o te mata"],
-        ["Secuencia en ciclo", "Orbe azul, torbellino, aliento direccional, zona personal en el suelo", "Tras verla dos veces, colócate antes para el aliento y mete daño"],
-        ["Bingo (~50%, cambio de fase)", "Suelo en cuadrícula **6×6** (36 casillas); las seguras (azules) solo se revelan al absorber el golpe que cae en ellas; láser imposible de esquivar que solo bloquea una casilla segura", "Cada grupo un carril, avanzando casilla a casilla, hasta quedar las 4 centrales; luego cada uno a la más cercana. Asignad carriles en voz alta antes. Sin huecos"]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "El reparto de carriles del Bingo se calculó para 8 jugadores. La cuadrícula sigue siendo de 36: acordad los carriles con vuestro número de personas, no copiéis un diagrama para 8."
-    },
-    {
-      "titulo": "Jefe final: Ludra, fase 2",
-      "tipo": "tabla",
-      "columnas": ["Ataque", "Qué hace", "Qué haces tú"],
-      "filas": [
-        ["Borde de la arena", "Fuera del límite, **más de 7.000 de daño por tick**; varios patrones te empujan hacia él", "Mantente lejos del borde"],
-        ["Golpe y Onion Rings", "Golpe cuerpo a cuerpo seguido de anillos", "Igual que en fase 1: nunca dos impactos superpuestos"],
-        ["La Cruz", "Zona de muerte instantánea en cruz con timing impredecible", "Quédate fuera de su huella por defecto"],
-        ["Doble barrido de alas", "Dos barridos seguidos", "No vuelvas a entrar tras el primero"],
-        ["Dos carriles rectos", "Dos carriles que se cruzan", "No te quedes donde se superponen"],
-        ["Láser diagonal", "Láser en diagonal", "Escapa en **perpendicular**, no a lo largo"],
-        ["Espiral", "Espiral de tres tiempos", "Punto seguro en el **centro**"],
-        ["Orbes más anillos", "Cuatro orbes azules y un golpe cuerpo a cuerpo", "Los de distancia cogen los orbes lejanos"],
-        ["Rojo izquierda, azul derecha", "Debuff de color que fija tu lado; se reaplica continuamente", "Rojo a la **izquierda**, azul a la **derecha**; no cambies de lado porque el jefe gire. Mira tu color cada ciclo"],
-        ["Segundo Bingo (~25%)", "Mismo Bingo, solapado con saltos de onion rings", "Mismo método, con menos margen"],
-        ["Casillas de colores (15%, cierre)", "Casillas en el suelo; ventana de ~**1,5 s**", "Ve a la casilla de **tu color**, un jugador por casilla, **healers primero**. Cuenta las casillas en el primer intento y cántalo"]
-      ]
-    },
-    {
-      "titulo": "Ludra: notas de grupo",
-      "tipo": "lista",
-      "items": [
-        "La fase 2 castiga al **cuerpo a cuerpo**; el daño a distancia lo tiene más fácil. Una raid muy melé debe contar con perder gente.",
-        "Es el kill que gasta tu recompensa semanal: practica la cuadrícula en runs sin cobrar."
-      ]
-    },
-    {
-      "titulo": "Botín: cofres de Rahu y Ketu y set Abyssal",
-      "tipo": "lista",
-      "items": [
-        "Rahu y Ketu: un **Abyssal Chest** por jugador.",
-        "Set Abyssal (Único): armas como Abyssal Claymore y Abyssal Staff, armadura de Abyssal Helm a Abyssal Boots, joyería y **Abyssal Bracelet**.",
-        "Abyssal Bracelet: 4 líneas al azar de los 10 stats de Panteón (p. ej. Destrucción [Zikel], Ilusión [Kaisinel], Wisdom [Lumiel]), cada uno al 10%, valores de 9 a 17. Primer brazalete con stats de dioses (el de la misión principal solo tiene fijos)."
-      ]
-    },
-    {
-      "titulo": "Armas de Ludra (Únicas, ~0,56% por clear cada una)",
-      "tipo": "tabla",
-      "columnas": ["Arma", "Tipo"],
-      "filas": [
-        ["Ludra's Blade of Extinction", "Mandoble"],
-        ["Ludra's Scale Sword", "Espada"],
-        ["Ludra's Claw", "Daga"],
-        ["Ludra's Fatal Bow", "Arco"],
-        ["Ludra's Grimoire", "Libro de hechizos"],
-        ["Ludra's Abyssal Jade", "Orbe"],
-        ["Ludra's Fatal Mace", "Maza"],
-        ["Ludra's Heavenbound Staff", "Bastón"],
-        ["Ludra's Heart", "Guarda"]
-      ]
-    },
-    {
-      "titulo": "Resto del botín de Ludra (tabla de la comunidad)",
-      "tipo": "tabla",
-      "columnas": ["Qué", "Dato"],
-      "filas": [
-        ["Pity", "Tras **8 clears**: Ludra Gear Voucher o una pieza Abyssal a elegir"],
-        ["Tier Legendario", "Set Lunatic (Lunatic Greatsword, Lunatic Bow y resto), ~0,4%-1,1% por pieza"],
-        ["Garantizado por clear", "4-9 Amplify Stone Fragments Únicos, 10 Códice de alma, 20 Silentium, 1.000.000 Kina, 1 Piedra de maná inferior y 1 Piedra de alma inferior"],
-        ["Épico", "Equipo Épico de cualquier slot, a tasa baja"],
-        ["Desbloqueo", "Matar a Ludra desbloquea el crafteo del objeto de endgame **Eungryongwang**"]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Un arma de Ludra es un objetivo de meses. Monta un buen grupo para la run en la que cobras."
-    },
-    {
-      "titulo": "Antes de tu primera noche",
-      "tipo": "pasos",
-      "items": [
-        "Precisión y Crítico en los objetivos (1.500 / 1.600 con todo).",
-        "Un Clérigo en la raid desde Ketu.",
-        "Roster de 10 con aggro y curación por grupo (ver guía de Raids de Sanctuary).",
-        "Combates en orden: Rahu es el filtro de los aleatorios; Ludra gasta tu recompensa.",
-        "Practica la cuadrícula de Ludra en runs sin cobrar.",
-        "Siguiente escalón (solo Corea): Corroded Facility y Snowfield of Sorrow."
-      ]
-    }
-  ]
+ "slug": "raids__abyssal-forge-rahu-ketu-y-ludra",
+ "categoria": "raids",
+ "titulo": "Abyssal Forge: Rahu, Ketu y Ludra",
+ "resumen": "Raid de 10 jugadores con tres jefes: **Rahu**, **Ketu** y **Ludra** (final, gasta tu recompensa semanal). Lo que decide el clear no es el gear score: es que tu **Clérigo** siga vivo y que tu daño entre (**Precisión**).",
+ "bloques": [
+  {
+   "tipo": "aviso",
+   "texto": "Nota del 10-oct-2026: Ludra (Sanctuary Raid: Ludra) no está ahora en el juego global. NC la retiró con la build del 5 de octubre para rehacer el combate, con vuelta prevista como muy tarde el **16 de octubre**. Volverá con mecánicas y patrones nuevos o ajustados: las secciones de jefes describen el combate de los servidores coreanos."
+  },
+  {
+   "titulo": "Datos básicos",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Jugadores",
+     "10 (2 grupos de 5)"
+    ],
+    [
+     "Jefes con nombre (en orden)",
+     "1. **Rahu** · 2. **Ketu** · 3. **Ludra** (final). Sin cuarto jefe ni encuentro oculto"
+    ],
+    [
+     "Entrada",
+     "~**2.700** a nivel de personaje 45 (cifra de la comunidad; no hay número oficial en inglés y la etiqueta varía: nivel de objeto, gear score o poder de combate)"
+    ],
+    [
+     "Lo que piden los grupos",
+     "**3.200+**"
+    ],
+    [
+     "Gear score orientativo (tracker de terceros)",
+     "Grupo cómodo ~30.000; clear estable con aleatorios ~35.000"
+    ],
+    [
+     "Precisión objetivo",
+     "Base **1.000-1.100**, ~**1.450** con buffs y título; total con margen **1.500**"
+    ],
+    [
+     "Crítico objetivo",
+     "**1.600** (el jefe tiene defensas contra críticos)"
+    ],
+    [
+     "Resurrección",
+     "Piedras de resurrección **desactivadas**: solo levanta la Resurrección de invocación del Clérigo"
+    ]
+   ]
+  },
+  {
+   "titulo": "Precisión: la puerta escondida",
+   "tipo": "lista",
+   "items": [
+    "Por debajo del umbral, Ludra hace **Bloqueo con Arma** a buena parte de tus golpes: parece que «se acaba el tiempo» pero falta precisión.",
+    "Fuentes: mascota de crafteo, reparto de stats, título y buffs de raid coordinados.",
+    "Los 1.500 / 1.600 (servidores asiáticos) cuentan todas las fuentes, incluidas Precisión JcE y Penetración de Bloqueo: tu hoja principal puede marcar menos. Son aproximados y no confirmados en global.",
+    "Apunta a 1.500 con todo incluido y cubres las dos lecturas."
+   ]
+  },
+  {
+   "titulo": "Antes del pull",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Por qué"
+   ],
+   "filas": [
+    [
+     "Planta el **kiosco de grupo** fuera de la sala del jefe, antes de entrar",
+     "Es tu único punto de reaparición; importa sobre todo en Ludra"
+    ],
+    [
+     "**Calidad de batallas a gran escala** en alta",
+     "Si no ves a los aliados lejanos no ves al ancla"
+    ],
+    [
+     "**Resistencia al daño** en las piezas de armadura inferiores",
+     "Para sobrevivir a la fase 2 de Ludra"
+    ],
+    [
+     "Revisa **Precisión y Crítico**",
+     "Los números que nadie revisa"
+    ]
+   ]
+  },
+  {
+   "titulo": "Tu semana de raid",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Intentos",
+     "**Ilimitados** (desde el 27-may-2026)"
+    ],
+    [
+     "Rahu y Ketu",
+     "Cada uno da a cada jugador su propio **Abyssal Chest** en cada kill, sin tocar el contador semanal"
+    ],
+    [
+     "Ludra",
+     "**1 recompensa por semana** con pago doblado (Chapter 1)"
+    ],
+    [
+     "Límite de sesión",
+     "**2 horas** (antes 60 minutos)"
+    ],
+    [
+     "Plan",
+     "Farmea Rahu y Ketu cuanto quieras; gasta la recompensa en runs donde matáis a Ludra. Las runs sin cobrar son práctica gratis"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Lo del cofre por jugador viene de los jugadores coreanos; NC nunca publicó la regla. Una fuente sigue marcando el límite de 2 horas como no confirmado: reserva la hora segura y trata la segunda como extra."
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Todo el material coreano se escribió con raids de **8**. Lo que se reparte por persona (marcas, orbes, carriles, posiciones) puede haber cambiado con 10: cuenta lo que ves y cántalo. Se mantienen: el contador de 3 agujeros negros, las posiciones de reloj, tiempos de casteo y rayos, la cuadrícula 6×6, la ventana de 1,5 s del cierre y los 7.000+ de daño por tick fuera de la arena."
+  },
+  {
+   "titulo": "Rahu: reglas del combate",
+   "tipo": "lista",
+   "items": [
+    "Cada mecánica fallada deja un **agujero negro** permanente. **3 agujeros = wipe**: tenéis presupuesto de **2 errores**. Dilo antes del pull.",
+    "Elegid un **ancla** antes del pull y decid su nombre en voz alta; muchas mecánicas son «todos sobre el ancla».",
+    "Es el único jefe que un **Conjurador** puede curar solo, sin Clérigo dedicado.",
+    "Las mecánicas de vida baja salen por umbral de vida: un grupo fuerte puede no ver nunca la segunda mitad (Cruz, Predation)."
+   ]
+  },
+  {
+   "titulo": "Jefe 1: Rahu",
+   "tipo": "tabla",
+   "columnas": [
+    "Ataque",
+    "Qué hace",
+    "Qué haces tú"
+   ],
+   "filas": [
+    [
+     "Fixed Gaze / barrido de 350°",
+     "Marca a un jugador con un ojo; ~350° de la arena se vuelven letales salvo una cuña; un rayo recto sigue al marcado ~7 s",
+     "Los demás, apretados en la cuña. El marcado va al borde opuesto y **gira el cuerpo** para que el rayo no apunte a la raid. Con ~2 s de debuff, entra en la cuña"
+    ],
+    [
+     "Pasar la bomba",
+     "Rayo morado marca a un jugador con temporizador; a los ~20 s se vuelve zona permanente = **agujero negro**",
+     "Toca a un aliado para pasarle la marca y seguid moviéndola. Nunca te la quedes"
+    ],
+    [
+     "Donut",
+     "Círculo rojo en cada jugador y ondas moradas letales hacia fuera",
+     "**Todos apilados** en el ancla: los círculos se fusionan en una zona segura. Dispersarse mata"
+    ],
+    [
+     "Wheel of Suffering (~50%)",
+     "Lanza a la raid a las 12, 3, 6 y 9; contador de 15 s; dos abanicos giratorios y zona circular en el jefe",
+     "Reagrupaos en el ancla al aterrizar y girad en **sentido horario** por delante de los abanicos. Dentro del grupo recibes menos daño"
+    ],
+    [
+     "La Cruz (~33%)",
+     "Zona segura en cruz; salto en área del jefe; caen proyectiles de veneno que dejan zonas permanentes; arena dividida en cuartos",
+     "Reagrupaos en la intersección con el tanque delante absorbiendo el salto. Lleva tu veneno **al borde**. Cuidado con caerte"
+    ],
+    [
+     "Time of Predation",
+     "Invoca adds de Abyss Predator fuera (3 o 4 según la fuente); un marcado con Fixed Gaze recibe 3 rayos seguidos",
+     "Dirige cada rayo contra un add. La marca puede pasar entre casteos: cantad cada relevo. Un add vivo = agujero negro"
+    ]
+   ]
+  },
+  {
+   "titulo": "Ketu: reglas del combate",
+   "tipo": "lista",
+   "items": [
+    "Aquí el **Clérigo es obligatorio**: es donde acaban la mayoría de grupos aleatorios.",
+    "Grupos divididos: con Rahu, el grupo 1 pelea y el 2 limpia trash en la sala de refinado; en Ketu se cambian (grupo 2 con el jefe, grupo 1 con el trash).",
+    "El trash da 3 buffs: vida, daño, y velocidad de ataque y movimiento. Romper la misma piedra dos veces no acumula."
+   ]
+  },
+  {
+   "titulo": "Jefe 2: Ketu",
+   "tipo": "tabla",
+   "columnas": [
+    "Ataque",
+    "Qué hace",
+    "Qué haces tú"
+   ],
+   "filas": [
+    [
+     "Golpe y comba",
+     "Marca a un jugador (icono rojo), carga y golpea; luego una cuerda barre el suelo",
+     "Bloquea el golpe con una defensiva y la cuerda no sale. Si no, **salta** la cuerda"
+    ],
+    [
+     "Hide and Seek with the Abyss",
+     "Láser pesado desde **las 6** del minimapa, enjambre de espíritus, misiles pequeños, anillo blanco que se cierra (espíritu que lo toca aplica miedo) y luego un sello",
+     "Ver pasos abajo"
+    ],
+    [
+     "Atrapar orbes",
+     "Caen orbes del cielo",
+     "Uno por jugador, sepárate y **salta** para atraparlo antes de que toque el suelo"
+    ],
+    [
+     "Guadaña de Ketu",
+     "Guadañas teledirigidas persiguen a varios jugadores; poco daño",
+     "**Rómpelas**, no las kitees"
+    ],
+    [
+     "Orbes de orientación (desde ~50%)",
+     "Orbe que explota; primero uno solo, luego tres seguidos; tras los tres aparece zona segura",
+     "**Rojo: míralo. Azul: dale la espalda.** Cuenta la orientación del personaje, no la cámara. Tras la tanda de tres, entra en la zona segura (un orbe suelto no la genera). Pueden llegar en mitad del escondite"
+    ],
+    [
+     "Estallido de poder («la hora del tronco»)",
+     "Abanicos rojos según la posición de cada jugador; brotan Mortal's Soulstones; al final ~6 s de daño inevitable",
+     "Ver pasos abajo"
+    ]
+   ]
+  },
+  {
+   "titulo": "Hide and Seek with the Abyss paso a paso",
+   "tipo": "pasos",
+   "items": [
+    "Esquiva primero el láser de las 6; no pegues aún a los espíritus.",
+    "Separaos a cada lado de la línea de las 6 y avanzad matando espíritus (los misiles hacen más daño del que parece).",
+    "Cuando el efecto blanco se cierre hacia el centro, apilaos en el centro.",
+    "Subid al sello y aguantad mientras el Clérigo cura hasta que acabe el patrón."
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Teoría de la comunidad no confirmada: los espíritus mueren con un número fijo de golpes, no por daño. Si tus cooldowns grandes parecen desperdiciados aquí, será por eso. El número de orbes que caen y su castigo si tocan suelo tampoco están publicados para 10 jugadores."
+  },
+  {
+   "titulo": "Estallido de poder paso a paso",
+   "tipo": "pasos",
+   "items": [
+    "Apilaos en una dirección mientras cargan los abanicos (así se estrechan y quedan más soulstones fuera).",
+    "A ~5 s, los abanicos se fijan: sal de ellos.",
+    "A ~3,5 s impacta y destruye las soulstones dentro de los abanicos.",
+    "En cero empiezan ~6 s de daño continuo: rompe una soulstone (~4 s de invulnerabilidad) y encadena otra.",
+    "No le quites la piedra al Clérigo: si él sobrevive, Ketu muere igual."
+   ]
+  },
+  {
+   "titulo": "Las tres mecánicas de orbes de colores (no las mezcles)",
+   "tipo": "tabla",
+   "columnas": [
+    "Jefe",
+    "Mecánica",
+    "Qué haces tú"
+   ],
+   "filas": [
+    [
+     "Ketu",
+     "Atrapar orbes",
+     "Ponte debajo y cógelo en el aire"
+    ],
+    [
+     "Ketu",
+     "Orbes de orientación",
+     "Rojo: míralo. Azul: espalda"
+    ],
+    [
+     "Ludra",
+     "Debuff de color por lado",
+     "**Rojo a la izquierda, azul a la derecha**"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Circulan guías en inglés con los colores de Ketu al revés. Si una fuente da los colores sin distinguir estas tres mecánicas, desconfía. Nadie ha publicado el daño exacto de fallar la orientación."
+  },
+  {
+   "titulo": "Jefe final: Ludra, fase 1",
+   "tipo": "tabla",
+   "columnas": [
+    "Ataque",
+    "Qué hace",
+    "Qué haces tú"
+   ],
+   "filas": [
+    [
+     "Onion Rings",
+     "Anillos concéntricos hacia fuera; dos impactos superpuestos matan al instante",
+     "Nunca te comas un 2.º anillo en la ventana del primero; elige una dirección sin dudar"
+    ],
+    [
+     "Tail Swipe",
+     "Ataque trasero con derribo que quita ~80% de vida",
+     "**No te pongas detrás** del jefe"
+    ],
+    [
+     "«Abyss, Expand»",
+     "Orbes azules y un orbe rojo",
+     "Azules: recógelos en el aire. Rojo: solo con inmunidad activa (invulnerabilidad, bloqueo o postura de esquiva) o te mata"
+    ],
+    [
+     "Secuencia en ciclo",
+     "Orbe azul, torbellino, aliento direccional, zona personal en el suelo",
+     "Tras verla dos veces, colócate antes para el aliento y mete daño"
+    ],
+    [
+     "Bingo (~50%, cambio de fase)",
+     "Suelo en cuadrícula **6×6** (36 casillas); las seguras (azules) solo se revelan al absorber el golpe que cae en ellas; láser imposible de esquivar que solo bloquea una casilla segura",
+     "Cada grupo un carril, avanzando casilla a casilla, hasta quedar las 4 centrales; luego cada uno a la más cercana. Asignad carriles en voz alta antes. Sin huecos"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "El reparto de carriles del Bingo se calculó para 8 jugadores. La cuadrícula sigue siendo de 36: acordad los carriles con vuestro número de personas, no copiéis un diagrama para 8."
+  },
+  {
+   "titulo": "Jefe final: Ludra, fase 2",
+   "tipo": "tabla",
+   "columnas": [
+    "Ataque",
+    "Qué hace",
+    "Qué haces tú"
+   ],
+   "filas": [
+    [
+     "Borde de la arena",
+     "Fuera del límite, **más de 7.000 de daño por tick**; varios patrones te empujan hacia él",
+     "Mantente lejos del borde"
+    ],
+    [
+     "Golpe y Onion Rings",
+     "Golpe cuerpo a cuerpo seguido de anillos",
+     "Igual que en fase 1: nunca dos impactos superpuestos"
+    ],
+    [
+     "La Cruz",
+     "Zona de muerte instantánea en cruz con timing impredecible",
+     "Quédate fuera de su huella por defecto"
+    ],
+    [
+     "Doble barrido de alas",
+     "Dos barridos seguidos",
+     "No vuelvas a entrar tras el primero"
+    ],
+    [
+     "Dos carriles rectos",
+     "Dos carriles que se cruzan",
+     "No te quedes donde se superponen"
+    ],
+    [
+     "Láser diagonal",
+     "Láser en diagonal",
+     "Escapa en **perpendicular**, no a lo largo"
+    ],
+    [
+     "Espiral",
+     "Espiral de tres tiempos",
+     "Punto seguro en el **centro**"
+    ],
+    [
+     "Orbes más anillos",
+     "Cuatro orbes azules y un golpe cuerpo a cuerpo",
+     "Los de distancia cogen los orbes lejanos"
+    ],
+    [
+     "Rojo izquierda, azul derecha",
+     "Debuff de color que fija tu lado; se reaplica continuamente",
+     "Rojo a la **izquierda**, azul a la **derecha**; no cambies de lado porque el jefe gire. Mira tu color cada ciclo"
+    ],
+    [
+     "Segundo Bingo (~25%)",
+     "Mismo Bingo, solapado con saltos de onion rings",
+     "Mismo método, con menos margen"
+    ],
+    [
+     "Casillas de colores (15%, cierre)",
+     "Casillas en el suelo; ventana de ~**1,5 s**",
+     "Ve a la casilla de **tu color**, un jugador por casilla, **healers primero**. Cuenta las casillas en el primer intento y cántalo"
+    ]
+   ]
+  },
+  {
+   "titulo": "Ludra: notas de grupo",
+   "tipo": "lista",
+   "items": [
+    "La fase 2 castiga al **cuerpo a cuerpo**; el daño a distancia lo tiene más fácil. Una raid muy melé debe contar con perder gente.",
+    "Es el kill que gasta tu recompensa semanal: practica la cuadrícula en runs sin cobrar."
+   ]
+  },
+  {
+   "titulo": "Botín: cofres de Rahu y Ketu y set Abyssal",
+   "tipo": "lista",
+   "items": [
+    "Rahu y Ketu: un **Abyssal Chest** por jugador.",
+    "Set Abyssal (Único): armas como Abyssal Claymore y Abyssal Staff, armadura de Abyssal Helm a Abyssal Boots, joyería y **Abyssal Bracelet**.",
+    "Abyssal Bracelet: 4 líneas al azar de los 10 stats de Panteón (p. ej. Destrucción [Zikel], Ilusión [Kaisinel], Wisdom [Lumiel]), cada uno al 10%, valores de 9 a 17. Primer brazalete con stats de dioses (el de la misión principal solo tiene fijos)."
+   ]
+  },
+  {
+   "titulo": "Armas de Ludra (Únicas, ~0,56% por clear cada una)",
+   "tipo": "tabla",
+   "columnas": [
+    "Arma",
+    "Tipo"
+   ],
+   "filas": [
+    [
+     "Ludra's Blade of Extinction",
+     "Mandoble"
+    ],
+    [
+     "Ludra's Scale Sword",
+     "Espada"
+    ],
+    [
+     "Ludra's Claw",
+     "Daga"
+    ],
+    [
+     "Ludra's Fatal Bow",
+     "Arco"
+    ],
+    [
+     "Ludra's Grimoire",
+     "Libro de hechizos"
+    ],
+    [
+     "Ludra's Abyssal Jade",
+     "Orbe"
+    ],
+    [
+     "Ludra's Fatal Mace",
+     "Maza"
+    ],
+    [
+     "Ludra's Heavenbound Staff",
+     "Bastón"
+    ],
+    [
+     "Ludra's Heart",
+     "Guarda"
+    ]
+   ]
+  },
+  {
+   "titulo": "Resto del botín de Ludra (tabla de la comunidad)",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Pity",
+     "Tras **8 clears**: Ludra Gear Voucher o una pieza Abyssal a elegir"
+    ],
+    [
+     "Tier Legendario",
+     "Set Lunatic (Lunatic Greatsword, Lunatic Bow y resto), ~0,4%-1,1% por pieza"
+    ],
+    [
+     "Garantizado por clear",
+     "4-9 Amplify Stone Fragments Únicos, 10 Códice de alma, 20 Silentium, 1.000.000 Kina, 1 Piedra de maná inferior y 1 Piedra de alma inferior"
+    ],
+    [
+     "Épico",
+     "Equipo Épico de cualquier slot, a tasa baja"
+    ],
+    [
+     "Desbloqueo",
+     "Matar a Ludra desbloquea el crafteo del objeto de endgame **Eungryongwang**"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Un arma de Ludra es un objetivo de meses. Monta un buen grupo para la run en la que cobras."
+  },
+  {
+   "titulo": "Antes de tu primera noche",
+   "tipo": "pasos",
+   "items": [
+    "Precisión y Crítico en los objetivos (1.500 / 1.600 con todo).",
+    "Un Clérigo en la raid desde Ketu.",
+    "Roster de 10 con aggro y curación por grupo (ver guía de Raids de Sanctuary).",
+    "Combates en orden: Rahu es el filtro de los aleatorios; Ludra gasta tu recompensa.",
+    "Practica la cuadrícula de Ludra en runs sin cobrar.",
+    "Siguiente escalón (solo Corea): Corroded Facility y Snowfield of Sorrow."
+   ]
+  }
+ ]
 }

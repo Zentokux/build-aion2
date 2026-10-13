@@ -1,111 +1,185 @@
 {
-  "slug": "getting-started__como-elegir-faccion-y-servidor",
-  "categoria": "getting-started",
-  "titulo": "Cómo elegir facción y servidor",
-  "fuente": "https://metaroad.gg/es/aion2/getting-started/como-elegir-faccion-y-servidor",
-  "resumen": "Ninguna facción es más fuerte: clases, stats y habilidades son iguales. Decide con tu grupo facción, región y oleada de servidores; solo el servidor se puede cambiar, una vez y gratis.",
-  "bloques": [
-    {
-      "titulo": "Qué decides y si tiene vuelta atrás",
-      "tipo": "tabla",
-      "columnas": ["Decisión", "¿Se puede cambiar?"],
-      "filas": [
-        ["Facción (Elyos / Asmodianos)", "No se sabe; planifica como si fuera permanente"],
-        ["Región", "No"],
-        ["Oleada (Early Access o lanzamiento)", "No: los traslados no cruzan entre oleadas"],
-        ["Servidor", "Sí: un traslado gratis por cuenta, dentro de tu facción y región"]
-      ]
-    },
-    {
-      "titulo": "Lo que cambia la facción",
-      "tipo": "tabla",
-      "columnas": ["Qué", "Detalle"],
-      "filas": [
-        ["Zona inicial e historia", "Elyos: tono luminoso y heroico, región principal **Verteron**. Asmodianos: tono oscuro y de rencor, región principal **Altgard**. Subes de nivel en la mitad del mapa de tu bando"],
-        ["Con quién te agrupas", "Son facciones hostiles: en el mundo abierto no haces grupo ni cooperas con el otro bando"],
-        ["Tu servidor", "Cada servidor es de una sola facción. Cada servidor Elyos está emparejado con uno Asmodiano para el contenido facción contra facción (Abismo, Grietas Espacio-Tiempo). Los emparejamientos duran un tiempo limitado"]
-      ]
-    },
-    {
-      "titulo": "Lo que NO cambia",
-      "tipo": "lista",
-      "items": [
-        "Las ocho clases (Templario, Gladiador, Sicario, Ranger, Hechicero, Espiritualista, Clérigo, Conjurador) existen en los dos bandos, con mismos kits y números.",
-        "Daño, tanqueo, curación, escaleras de equipo, acceso a mazmorras, Odyle Energy e ingresos de Kina: idénticos.",
-        "La diferencia visual entre bandos es mucho menor que en AION 1.",
-        "Tu personaje Elyos y el Asmodiano de tu amigo nunca comparten servidor, y ningún traslado lo arregla."
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "En Corea, parches de 2026 quitaron la facción del emparejamiento del buscador de mazmorras, la arena 4v4 y el campo de batalla. La global parte de una Season 1 modificada: puede que esto no esté el primer día."
-    },
-    {
-      "titulo": "Las cinco regiones",
-      "tipo": "lista",
-      "items": [
-        "Europa, NA East, NA West, Sudamérica y Asia.",
-        "Orden al crear personaje: región → facción → servidor.",
-        "Oceanía no tiene región: Australia y Nueva Zelanda juegan en **NA West**. No hay plan anunciado de región OCE.",
-        "Idiomas del cliente: inglés, francés, alemán, español, portugués (Brasil), ruso, japonés y coreano. Voces completas en inglés, japonés y coreano. El idioma es un ajuste, no un servidor."
-      ]
-    },
-    {
-      "titulo": "Publicado y no publicado",
-      "tipo": "tabla",
-      "columnas": ["Tema", "Estado"],
-      "filas": [
-        ["Nombres de servidor y emparejamientos", "Publicados en el aviso de NC y se actualizan (2 nuevos en Europa el 8 de octubre, 2 en NA East el 9 de octubre)"],
-        ["Límites de población", "No publicados. El lanzamiento oficial usó política de cero colas. Cada servidor limita los traslados de entrada y salida"],
-        ["Bloqueo por región / IP en global", "Nada publicado. Usar VPN para cruzar regiones es un riesgo para la cuenta según NC"],
-        ["KR y TW", "Sí están bloqueados por IP en el login"],
-        ["Nombres", "Pertenecen al servidor; no hubo reserva. Al trasladarte pasas a «@TemporaryName» hasta elegir nombre; si el tuyo está cogido, necesitas otro"]
-      ]
-    },
-    {
-      "titulo": "Regla de colas",
-      "tipo": "lista",
-      "items": [
-        "Con el servidor lleno, los miembros con cuenta en regla van a una **cola prioritaria**; la general sigue avanzando también.",
-        "Es un privilegio, no una garantía: una sanción disciplinaria puede quitártelo.",
-        "No hay hueco reservado, solo una segunda fila."
-      ]
-    },
-    {
-      "titulo": "Las dos oleadas de servidores",
-      "tipo": "tabla",
-      "columnas": ["Oleada", "Fechas", "Detalle"],
-      "filas": [
-        ["Advance Access (servidores de Early Access)", "30 de septiembre – 4 de octubre", "Para quien tiene Founder's Pack; sin pack solo si queda sitio. Market solo de tu servidor (Cross-Server Market desde el 5 de octubre), PvP del Abismo solo entre servidores de Early Access, comercio directo desactivado (antibots)"],
-        ["Servidores de lanzamiento", "5 de octubre", "Lanzamiento free-to-play, entra todo el mundo"]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Un personaje de Early Access solo puede trasladarse a otro servidor de Early Access, y uno de lanzamiento solo a otro de lanzamiento. Mete a todo tu grupo en la misma oleada. Mientras tanto, Expedition y Transcendence ya emparejan entre servidores."
-    },
-    {
-      "titulo": "Traslados de servidor",
-      "tipo": "tabla",
-      "columnas": ["Caso", "Regla"],
-      "filas": [
-        ["De KR o TW a global", "No existe ni está anunciado"],
-        ["Servidores de Early Access", "Abre tras el mantenimiento del 14 de octubre, durante una semana"],
-        ["Servidores de lanzamiento", "Abre tras el mantenimiento del 21 de octubre, durante una semana"],
-        ["Coste y límite", "Primero gratis; uno por cuenta en todo el periodo; solo a tu facción y tu región"],
-        ["Antes de trasladarte", "Sal de tu Legión y vacía el Almacén del servidor (no viaja)"]
-      ]
-    },
-    {
-      "titulo": "Cómo elegir",
-      "tipo": "pasos",
-      "items": [
-        "**Región**: por latencia y por tu gente. NA son dos regiones. Desde Oceanía, NA West.",
-        "**Oleada**: si el grupo está repartido, decidid juntos; es la decisión que se queda.",
-        "**Founder's Pack**: uno por cuenta; subir de tier es una mejora en PURPLE o, en Steam, reembolso del pack inferior vía Atención al Cliente.",
-        "**Facción**: elige también tus servidores posibles. Lo sencillo: todo el grupo en la misma.",
-        "**Gusto**: ¿Verteron luminosa o Altgard sombría durante los próximos treinta niveles? Es la única diferencia real."
-      ]
-    }
-  ]
+ "slug": "getting-started__como-elegir-faccion-y-servidor",
+ "categoria": "getting-started",
+ "titulo": "Cómo elegir facción y servidor",
+ "resumen": "Ninguna facción es más fuerte: clases, stats y habilidades son iguales. Decide con tu grupo facción, región y oleada de servidores; solo el servidor se puede cambiar, una vez y gratis.",
+ "bloques": [
+  {
+   "titulo": "Qué decides y si tiene vuelta atrás",
+   "tipo": "tabla",
+   "columnas": [
+    "Decisión",
+    "¿Se puede cambiar?"
+   ],
+   "filas": [
+    [
+     "Facción (Elyos / Asmodianos)",
+     "No se sabe; planifica como si fuera permanente"
+    ],
+    [
+     "Región",
+     "No"
+    ],
+    [
+     "Oleada (Early Access o lanzamiento)",
+     "No: los traslados no cruzan entre oleadas"
+    ],
+    [
+     "Servidor",
+     "Sí: un traslado gratis por cuenta, dentro de tu facción y región"
+    ]
+   ]
+  },
+  {
+   "titulo": "Lo que cambia la facción",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Detalle"
+   ],
+   "filas": [
+    [
+     "Zona inicial e historia",
+     "Elyos: tono luminoso y heroico, región principal **Verteron**. Asmodianos: tono oscuro y de rencor, región principal **Altgard**. Subes de nivel en la mitad del mapa de tu bando"
+    ],
+    [
+     "Con quién te agrupas",
+     "Son facciones hostiles: en el mundo abierto no haces grupo ni cooperas con el otro bando"
+    ],
+    [
+     "Tu servidor",
+     "Cada servidor es de una sola facción. Cada servidor Elyos está emparejado con uno Asmodiano para el contenido facción contra facción (Abismo, Grietas Espacio-Tiempo). Los emparejamientos duran un tiempo limitado"
+    ]
+   ]
+  },
+  {
+   "titulo": "Lo que NO cambia",
+   "tipo": "lista",
+   "items": [
+    "Las ocho clases (Templario, Gladiador, Sicario, Ranger, Hechicero, Espiritualista, Clérigo, Conjurador) existen en los dos bandos, con mismos kits y números.",
+    "Daño, tanqueo, curación, escaleras de equipo, acceso a mazmorras, Odyle Energy e ingresos de Kina: idénticos.",
+    "La diferencia visual entre bandos es mucho menor que en AION 1.",
+    "Tu personaje Elyos y el Asmodiano de tu amigo nunca comparten servidor, y ningún traslado lo arregla."
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "En Corea, parches de 2026 quitaron la facción del emparejamiento del buscador de mazmorras, la arena 4v4 y el campo de batalla. La global parte de una Season 1 modificada: puede que esto no esté el primer día."
+  },
+  {
+   "titulo": "Las cinco regiones",
+   "tipo": "lista",
+   "items": [
+    "Europa, NA East, NA West, Sudamérica y Asia.",
+    "Orden al crear personaje: región → facción → servidor.",
+    "Oceanía no tiene región: Australia y Nueva Zelanda juegan en **NA West**. No hay plan anunciado de región OCE.",
+    "Idiomas del cliente: inglés, francés, alemán, español, portugués (Brasil), ruso, japonés y coreano. Voces completas en inglés, japonés y coreano. El idioma es un ajuste, no un servidor."
+   ]
+  },
+  {
+   "titulo": "Publicado y no publicado",
+   "tipo": "tabla",
+   "columnas": [
+    "Tema",
+    "Estado"
+   ],
+   "filas": [
+    [
+     "Nombres de servidor y emparejamientos",
+     "Publicados en el aviso de NC y se actualizan (2 nuevos en Europa el 8 de octubre, 2 en NA East el 9 de octubre)"
+    ],
+    [
+     "Límites de población",
+     "No publicados. El lanzamiento oficial usó política de cero colas. Cada servidor limita los traslados de entrada y salida"
+    ],
+    [
+     "Bloqueo por región / IP en global",
+     "Nada publicado. Usar VPN para cruzar regiones es un riesgo para la cuenta según NC"
+    ],
+    [
+     "KR y TW",
+     "Sí están bloqueados por IP en el login"
+    ],
+    [
+     "Nombres",
+     "Pertenecen al servidor; no hubo reserva. Al trasladarte pasas a «@TemporaryName» hasta elegir nombre; si el tuyo está cogido, necesitas otro"
+    ]
+   ]
+  },
+  {
+   "titulo": "Regla de colas",
+   "tipo": "lista",
+   "items": [
+    "Con el servidor lleno, los miembros con cuenta en regla van a una **cola prioritaria**; la general sigue avanzando también.",
+    "Es un privilegio, no una garantía: una sanción disciplinaria puede quitártelo.",
+    "No hay hueco reservado, solo una segunda fila."
+   ]
+  },
+  {
+   "titulo": "Las dos oleadas de servidores",
+   "tipo": "tabla",
+   "columnas": [
+    "Oleada",
+    "Fechas",
+    "Detalle"
+   ],
+   "filas": [
+    [
+     "Advance Access (servidores de Early Access)",
+     "30 de septiembre – 4 de octubre",
+     "Para quien tiene Founder's Pack; sin pack solo si queda sitio. Market solo de tu servidor (Cross-Server Market desde el 5 de octubre), PvP del Abismo solo entre servidores de Early Access, comercio directo desactivado (antibots)"
+    ],
+    [
+     "Servidores de lanzamiento",
+     "5 de octubre",
+     "Lanzamiento free-to-play, entra todo el mundo"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Un personaje de Early Access solo puede trasladarse a otro servidor de Early Access, y uno de lanzamiento solo a otro de lanzamiento. Mete a todo tu grupo en la misma oleada. Mientras tanto, Expedition y Transcendence ya emparejan entre servidores."
+  },
+  {
+   "titulo": "Traslados de servidor",
+   "tipo": "tabla",
+   "columnas": [
+    "Caso",
+    "Regla"
+   ],
+   "filas": [
+    [
+     "De KR o TW a global",
+     "No existe ni está anunciado"
+    ],
+    [
+     "Servidores de Early Access",
+     "Abre tras el mantenimiento del 14 de octubre, durante una semana"
+    ],
+    [
+     "Servidores de lanzamiento",
+     "Abre tras el mantenimiento del 21 de octubre, durante una semana"
+    ],
+    [
+     "Coste y límite",
+     "Primero gratis; uno por cuenta en todo el periodo; solo a tu facción y tu región"
+    ],
+    [
+     "Antes de trasladarte",
+     "Sal de tu Legión y vacía el Almacén del servidor (no viaja)"
+    ]
+   ]
+  },
+  {
+   "titulo": "Cómo elegir",
+   "tipo": "pasos",
+   "items": [
+    "**Región**: por latencia y por tu gente. NA son dos regiones. Desde Oceanía, NA West.",
+    "**Oleada**: si el grupo está repartido, decidid juntos; es la decisión que se queda.",
+    "**Founder's Pack**: uno por cuenta; subir de tier es una mejora en PURPLE o, en Steam, reembolso del pack inferior vía Atención al Cliente.",
+    "**Facción**: elige también tus servidores posibles. Lo sencillo: todo el grupo en la misma.",
+    "**Gusto**: ¿Verteron luminosa o Altgard sombría durante los próximos treinta niveles? Es la única diferencia real."
+   ]
+  }
+ ]
 }

@@ -1,329 +1,328 @@
 {
-  "slug": "economy__farmear-kina-tope-diario-rutas-y-comisiones-del-mercado",
-  "categoria": "economy",
-  "titulo": "Farmear Kina: tope, rutas y comisiones",
-  "fuente": "https://metaroad.gg/es/aion2/economy/farmear-kina-tope-diario-rutas-y-comisiones-del-mercado",
-  "resumen": "En Corea la caza en campo tiene un tope de 1.000.000 de Kina por personaje y día, y al llegar se cortan también los drops. Caza hasta el tope y pasa a mazmorras, mercado y alts. Vender cuesta 10% en tu servidor, 20% entre servidores y ~35% convertir Kina en Quna.",
-  "bloques": [
-    {
-      "tipo": "aviso",
-      "texto": "**Todos los números son de Corea.** Ninguno está confirmado en un servidor occidental; los techos de ganancias y las comisiones son justo lo que una versión regional reajusta."
-    },
-    {
-      "titulo": "El tope diario de caza",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Cantidad",
-          "**1.000.000 de Kina** (desde el 10 dic 2025; antes **2.000.000**)"
-        ],
-        [
-          "Alcance",
-          "**Por personaje**, no por cuenta"
-        ],
-        [
-          "Qué cuenta",
-          "La **caza en el campo**. Que la Kina de cubos de Expedition y Transcendence quede fuera es interpretación (tiene su propio límite)"
-        ],
-        [
-          "Reinicio",
-          "**05:00** en Corea; hora global no anunciada"
-        ],
-        [
-          "Motivo del recorte",
-          "El mercado entre servidores y las macros meterían demasiada Kina; NC dijo que seguiría vigilándolo"
-        ]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Al llegar al tope **se cortan también los drops de objetos**: sigues ganando XP, pero ni Kina ni botín."
-    },
-    {
-      "titulo": "Cómo saber que llegaste al tope",
-      "tipo": "lista",
-      "items": [
-        "Aparece un **icono en tu ventana de buffs**.",
-        "También se ve en el **marco de los miembros del grupo**."
-      ]
-    },
-    {
-      "titulo": "Tres hábitos",
-      "tipo": "pasos",
-      "items": [
-        "Mira tus buffs al terminar cada pull.",
-        "Revisa los marcos del grupo antes de una sesión larga; quien esté al tope, mándalo a otra cosa.",
-        "Haz el bloque de campo **al principio del día**."
-      ]
-    },
-    {
-      "titulo": "Decaimiento de la Kina de mazmorra (parche coreano 8 abr 2026)",
-      "tipo": "tabla",
-      "columnas": [
-        "Partidas de Conquest hechas",
-        "Kina que paga"
-      ],
-      "filas": [
-        [
-          "1 a 63",
-          "100%"
-        ],
-        [
-          "64 a 77",
-          "80%"
-        ],
-        [
-          "78 a 91",
-          "60%"
-        ],
-        [
-          "92 a 105",
-          "40%"
-        ],
-        [
-          "106 en adelante",
-          "20%"
-        ]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "No se sabe si ese contador es semanal, de temporada o permanente, ni hay cifras globales. Mide tu primera semana. Reparte las partidas entre el contenido que puedes superar en vez de exprimir una sola mazmorra."
-    },
-    {
-      "titulo": "De dónde sale la Kina (sin orden de pago)",
-      "tipo": "tabla",
-      "columnas": [
-        "Fuente",
-        "Detalle",
-        "Límite"
-      ],
-      "filas": [
-        [
-          "Cubos de **Expedition** y **Transcendence**",
-          "Ingreso fijo: superas, gastas **Odyle Energy** y la Kina sale con el equipo",
-          "Tu energía y un umbral de servidor"
-        ],
-        [
-          "**Draupnir** en Conquest",
-          "La partida más eficiente: ~**600.000** en Normal y algo más de **1.000.000** en Hard (medido 1 jul 2026); también materiales y piezas Únicas",
-          "La entrada está dentro del **Abismo** (PvP abierto)"
-        ],
-        [
-          "Vender en el mercado",
-          "Drops y crafteos",
-          "**Membership** e impuesto de venta"
-        ],
-        [
-          "Caza en campo",
-          "Una vez al día hasta el tope; zona recomendada: **Papnite Burial Ground** (nombre traducido)",
-          "El tope diario"
-        ]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Zona gris: los jugadores coreanos farmean los bichos de la **etapa 1 de Transcendence** saltándose al jefe. No se sabe si cuentan para el tope de campo; vigila el icono."
-    },
-    {
-      "titulo": "Alts",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Idea",
-          "Cada personaje tiene su propio tope y sus entradas: más personajes, más Kina"
-        ],
-        [
-          "Estimación coreana (dic 2025)",
-          "**4 personajes** en Expedition Conquest ≈ **7.200.000 Kina/día** (calculado, no reportado)"
-        ],
-        [
-          "Consejo coreano",
-          "Llevar «cuatro barracones»"
-        ],
-        [
-          "Segundo techo",
-          "La Kina de cubo baja cuando el **total de partidas del servidor** (todos tus personajes ahí) pasa de un umbral"
-        ],
-        [
-          "Umbral Expedition Conquest (dic 2025)",
-          "**84 partidas a la semana** a pago completo (≈ 4 personajes × 3/día × 7 días). Pasado eso baja poco a poco"
-        ],
-        [
-          "Umbral Transcendence",
-          "No publicado"
-        ]
-      ]
-    },
-    {
-      "titulo": "Reglas que recortan el plan de alts",
-      "tipo": "lista",
-      "items": [
-        "Desde diciembre 2025 hace falta una **contribución mínima** para abrir un cubo: el alt tiene que jugar.",
-        "Con el **Chapter 1**, parte de la Kina de ciertas mazmorras cae **sellada**: compruébalo antes de pasarla a tu main."
-      ]
-    },
-    {
-      "titulo": "Un día de Kina (forma coreana)",
-      "tipo": "pasos",
-      "items": [
-        "Bloque de campo hasta que salga el icono de buff.",
-        "Partidas de **Expedition**, abriendo todos los cubos que permita tu energía. **Draupnir** en Conquest si tu equipo da.",
-        "Pon a la venta drops y crafteos (si eres miembro).",
-        "Alts con sus propias partidas, hasta el umbral del servidor."
-      ]
-    },
-    {
-      "titulo": "Tres sitios para comerciar",
-      "tipo": "tabla",
-      "columnas": [
-        "Sitio",
-        "Qué es"
-      ],
-      "filas": [
-        [
-          "**Mercado del servidor**",
-          "Objetos por Kina con jugadores de tu servidor"
-        ],
-        [
-          "**Mercado entre servidores** (mercado mundial; global: Cross-Server Market)",
-          "Lo mismo con todos los servidores de tu facción"
-        ],
-        [
-          "**Kina↔Quna Exchange**",
-          "Casa de cambio entre jugadores: unos venden Kina, otros pagan Quna"
-        ]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "En global, durante el **Advance Access** (desde el 30 sep) el mercado es solo de tu servidor; el **Cross-Server Market abre el 5 de octubre**. Los precios de esos cinco días no representan la economía real."
-    },
-    {
-      "titulo": "Requisito: Membership",
-      "tipo": "lista",
-      "items": [
-        "Mercado y casa de cambio están detrás de la **Special Quai Membership** de **15 US$** (confirmado para global).",
-        "**Quai** es la suscripción; **Quna** es la moneda premium."
-      ]
-    },
-    {
-      "titulo": "Comisiones al vender objetos",
-      "tipo": "tabla",
-      "columnas": [
-        "Mercado",
-        "Impuesto de venta",
-        "Te quedas con"
-      ],
-      "filas": [
-        [
-          "Del servidor",
-          "**10%**",
-          "90%"
-        ],
-        [
-          "Entre servidores",
-          "**20%** (el doble)",
-          "80%"
-        ]
-      ]
-    },
-    {
-      "titulo": "Reglas de venta",
-      "tipo": "lista",
-      "items": [
-        "Hasta **10 objetos** a la venta a la vez en cada mercado.",
-        "El impuesto se descuenta de la venta; la **comisión de publicación** es aparte y es igual en los dos.",
-        "Compensa el mercado entre servidores cuando su precio es ~**12,5% más alto** (cuenta propia sobre tasas coreanas).",
-        "Suposición: los objetos raros suelen superar ese listón; los materiales baratos a granel, no."
-      ]
-    },
-    {
-      "titulo": "Convertir Kina en Quna: los tres cargos",
-      "tipo": "tabla",
-      "columnas": [
-        "Paso",
-        "Coste"
-      ],
-      "filas": [
-        [
-          "**Empaquetar** la Kina en una caja (tamaños fijos)",
-          "**10%**, en Kina"
-        ],
-        [
-          "**Publicar** la caja",
-          "Comisión que escala con tu precio en Quna; **la pagas aunque no se venda** y otra vez si la vuelves a publicar"
-        ],
-        [
-          "**Cobrar** al venderse",
-          "**10% o 20%** de la Quna, según el mercado"
-        ],
-        [
-          "Total medido",
-          "~**35%**: 1.000.000 de Kina ≈ **650.000** en Quna"
-        ]
-      ]
-    },
-    {
-      "titulo": "Consejo para la casa de cambio",
-      "tipo": "lista",
-      "items": [
-        "El impuesto anunciado no es el coste real.",
-        "Mira a cuánto se venden las cajas antes de publicar: **pon precio para vender**.",
-        "No hay cifra publicada de lo que paga quien compra Kina con Quna."
-      ]
-    },
-    {
-      "titulo": "Por qué cada guía da una cifra distinta",
-      "tipo": "tabla",
-      "columnas": [
-        "Cifra",
-        "De dónde sale"
-      ],
-      "filas": [
-        [
-          "20%",
-          "Impuesto del mercado entre servidores"
-        ],
-        [
-          "10%",
-          "Impuesto del mercado del servidor"
-        ],
-        [
-          "~35%",
-          "Coste total de convertir Kina en Quna (no es un impuesto de mercado)"
-        ],
-        [
-          "5% + 3%",
-          "Sin fuente rastreable"
-        ],
-        [
-          "~5%",
-          "Suposición de un jugador coreano; coincide con una comisión de publicación medida"
-        ],
-        [
-          "8%",
-          "Sin fuente"
-        ]
-      ]
-    },
-    {
-      "titulo": "Antes de poner nada a la venta",
-      "tipo": "pasos",
-      "items": [
-        "Confirma que tu **Membership** está activa.",
-        "Elige mercado por precio: el del servidor por defecto, el entre servidores si la diferencia supera ~12,5%.",
-        "Pon precio a las cajas para venderlas.",
-        "Descuenta **un tercio** de la Kina que pienses convertir en Quna hasta ver las tasas globales."
-      ]
-    }
-  ]
+ "slug": "economy__farmear-kina-tope-diario-rutas-y-comisiones-del-mercado",
+ "categoria": "economy",
+ "titulo": "Farmear Kina: tope, rutas y comisiones",
+ "resumen": "En Corea la caza en campo tiene un tope de 1.000.000 de Kina por personaje y día, y al llegar se cortan también los drops. Caza hasta el tope y pasa a mazmorras, mercado y alts. Vender cuesta 10% en tu servidor, 20% entre servidores y ~35% convertir Kina en Quna.",
+ "bloques": [
+  {
+   "tipo": "aviso",
+   "texto": "**Todos los números son de Corea.** Ninguno está confirmado en un servidor occidental; los techos de ganancias y las comisiones son justo lo que una versión regional reajusta."
+  },
+  {
+   "titulo": "El tope diario de caza",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Cantidad",
+     "**1.000.000 de Kina** (desde el 10 dic 2025; antes **2.000.000**)"
+    ],
+    [
+     "Alcance",
+     "**Por personaje**, no por cuenta"
+    ],
+    [
+     "Qué cuenta",
+     "La **caza en el campo**. Que la Kina de cubos de Expedition y Transcendence quede fuera es interpretación (tiene su propio límite)"
+    ],
+    [
+     "Reinicio",
+     "**05:00** en Corea; hora global no anunciada"
+    ],
+    [
+     "Motivo del recorte",
+     "El mercado entre servidores y las macros meterían demasiada Kina; NC dijo que seguiría vigilándolo"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Al llegar al tope **se cortan también los drops de objetos**: sigues ganando XP, pero ni Kina ni botín."
+  },
+  {
+   "titulo": "Cómo saber que llegaste al tope",
+   "tipo": "lista",
+   "items": [
+    "Aparece un **icono en tu ventana de buffs**.",
+    "También se ve en el **marco de los miembros del grupo**."
+   ]
+  },
+  {
+   "titulo": "Tres hábitos",
+   "tipo": "pasos",
+   "items": [
+    "Mira tus buffs al terminar cada pull.",
+    "Revisa los marcos del grupo antes de una sesión larga; quien esté al tope, mándalo a otra cosa.",
+    "Haz el bloque de campo **al principio del día**."
+   ]
+  },
+  {
+   "titulo": "Decaimiento de la Kina de mazmorra (parche coreano 8 abr 2026)",
+   "tipo": "tabla",
+   "columnas": [
+    "Partidas de Conquest hechas",
+    "Kina que paga"
+   ],
+   "filas": [
+    [
+     "1 a 63",
+     "100%"
+    ],
+    [
+     "64 a 77",
+     "80%"
+    ],
+    [
+     "78 a 91",
+     "60%"
+    ],
+    [
+     "92 a 105",
+     "40%"
+    ],
+    [
+     "106 en adelante",
+     "20%"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "No se sabe si ese contador es semanal, de temporada o permanente, ni hay cifras globales. Mide tu primera semana. Reparte las partidas entre el contenido que puedes superar en vez de exprimir una sola mazmorra."
+  },
+  {
+   "titulo": "De dónde sale la Kina (sin orden de pago)",
+   "tipo": "tabla",
+   "columnas": [
+    "Fuente",
+    "Detalle",
+    "Límite"
+   ],
+   "filas": [
+    [
+     "Cubos de **Expedition** y **Transcendence**",
+     "Ingreso fijo: superas, gastas **Odyle Energy** y la Kina sale con el equipo",
+     "Tu energía y un umbral de servidor"
+    ],
+    [
+     "**Draupnir** en Conquest",
+     "La partida más eficiente: ~**600.000** en Normal y algo más de **1.000.000** en Hard (medido 1 jul 2026); también materiales y piezas Únicas",
+     "La entrada está dentro del **Abismo** (PvP abierto)"
+    ],
+    [
+     "Vender en el mercado",
+     "Drops y crafteos",
+     "**Membership** e impuesto de venta"
+    ],
+    [
+     "Caza en campo",
+     "Una vez al día hasta el tope; zona recomendada: **Papnite Burial Ground** (nombre traducido)",
+     "El tope diario"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Zona gris: los jugadores coreanos farmean los bichos de la **etapa 1 de Transcendence** saltándose al jefe. No se sabe si cuentan para el tope de campo; vigila el icono."
+  },
+  {
+   "titulo": "Alts",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Idea",
+     "Cada personaje tiene su propio tope y sus entradas: más personajes, más Kina"
+    ],
+    [
+     "Estimación coreana (dic 2025)",
+     "**4 personajes** en Expedition Conquest ≈ **7.200.000 Kina/día** (calculado, no reportado)"
+    ],
+    [
+     "Consejo coreano",
+     "Llevar «cuatro barracones»"
+    ],
+    [
+     "Segundo techo",
+     "La Kina de cubo baja cuando el **total de partidas del servidor** (todos tus personajes ahí) pasa de un umbral"
+    ],
+    [
+     "Umbral Expedition Conquest (dic 2025)",
+     "**84 partidas a la semana** a pago completo (≈ 4 personajes × 3/día × 7 días). Pasado eso baja poco a poco"
+    ],
+    [
+     "Umbral Transcendence",
+     "No publicado"
+    ]
+   ]
+  },
+  {
+   "titulo": "Reglas que recortan el plan de alts",
+   "tipo": "lista",
+   "items": [
+    "Desde diciembre 2025 hace falta una **contribución mínima** para abrir un cubo: el alt tiene que jugar.",
+    "Con el **Chapter 1**, parte de la Kina de ciertas mazmorras cae **sellada**: compruébalo antes de pasarla a tu main."
+   ]
+  },
+  {
+   "titulo": "Un día de Kina (forma coreana)",
+   "tipo": "pasos",
+   "items": [
+    "Bloque de campo hasta que salga el icono de buff.",
+    "Partidas de **Expedition**, abriendo todos los cubos que permita tu energía. **Draupnir** en Conquest si tu equipo da.",
+    "Pon a la venta drops y crafteos (si eres miembro).",
+    "Alts con sus propias partidas, hasta el umbral del servidor."
+   ]
+  },
+  {
+   "titulo": "Tres sitios para comerciar",
+   "tipo": "tabla",
+   "columnas": [
+    "Sitio",
+    "Qué es"
+   ],
+   "filas": [
+    [
+     "**Mercado del servidor**",
+     "Objetos por Kina con jugadores de tu servidor"
+    ],
+    [
+     "**Mercado entre servidores** (mercado mundial; global: Cross-Server Market)",
+     "Lo mismo con todos los servidores de tu facción"
+    ],
+    [
+     "**Kina↔Quna Exchange**",
+     "Casa de cambio entre jugadores: unos venden Kina, otros pagan Quna"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "En global, durante el **Advance Access** (desde el 30 sep) el mercado es solo de tu servidor; el **Cross-Server Market abre el 5 de octubre**. Los precios de esos cinco días no representan la economía real."
+  },
+  {
+   "titulo": "Requisito: Membership",
+   "tipo": "lista",
+   "items": [
+    "Mercado y casa de cambio están detrás de la **Special Quai Membership** de **15 US$** (confirmado para global).",
+    "**Quai** es la suscripción; **Quna** es la moneda premium."
+   ]
+  },
+  {
+   "titulo": "Comisiones al vender objetos",
+   "tipo": "tabla",
+   "columnas": [
+    "Mercado",
+    "Impuesto de venta",
+    "Te quedas con"
+   ],
+   "filas": [
+    [
+     "Del servidor",
+     "**10%**",
+     "90%"
+    ],
+    [
+     "Entre servidores",
+     "**20%** (el doble)",
+     "80%"
+    ]
+   ]
+  },
+  {
+   "titulo": "Reglas de venta",
+   "tipo": "lista",
+   "items": [
+    "Hasta **10 objetos** a la venta a la vez en cada mercado.",
+    "El impuesto se descuenta de la venta; la **comisión de publicación** es aparte y es igual en los dos.",
+    "Compensa el mercado entre servidores cuando su precio es ~**12,5% más alto** (cuenta propia sobre tasas coreanas).",
+    "Suposición: los objetos raros suelen superar ese listón; los materiales baratos a granel, no."
+   ]
+  },
+  {
+   "titulo": "Convertir Kina en Quna: los tres cargos",
+   "tipo": "tabla",
+   "columnas": [
+    "Paso",
+    "Coste"
+   ],
+   "filas": [
+    [
+     "**Empaquetar** la Kina en una caja (tamaños fijos)",
+     "**10%**, en Kina"
+    ],
+    [
+     "**Publicar** la caja",
+     "Comisión que escala con tu precio en Quna; **la pagas aunque no se venda** y otra vez si la vuelves a publicar"
+    ],
+    [
+     "**Cobrar** al venderse",
+     "**10% o 20%** de la Quna, según el mercado"
+    ],
+    [
+     "Total medido",
+     "~**35%**: 1.000.000 de Kina ≈ **650.000** en Quna"
+    ]
+   ]
+  },
+  {
+   "titulo": "Consejo para la casa de cambio",
+   "tipo": "lista",
+   "items": [
+    "El impuesto anunciado no es el coste real.",
+    "Mira a cuánto se venden las cajas antes de publicar: **pon precio para vender**.",
+    "No hay cifra publicada de lo que paga quien compra Kina con Quna."
+   ]
+  },
+  {
+   "titulo": "Por qué cada guía da una cifra distinta",
+   "tipo": "tabla",
+   "columnas": [
+    "Cifra",
+    "De dónde sale"
+   ],
+   "filas": [
+    [
+     "20%",
+     "Impuesto del mercado entre servidores"
+    ],
+    [
+     "10%",
+     "Impuesto del mercado del servidor"
+    ],
+    [
+     "~35%",
+     "Coste total de convertir Kina en Quna (no es un impuesto de mercado)"
+    ],
+    [
+     "5% + 3%",
+     "Sin fuente rastreable"
+    ],
+    [
+     "~5%",
+     "Suposición de un jugador coreano; coincide con una comisión de publicación medida"
+    ],
+    [
+     "8%",
+     "Sin fuente"
+    ]
+   ]
+  },
+  {
+   "titulo": "Antes de poner nada a la venta",
+   "tipo": "pasos",
+   "items": [
+    "Confirma que tu **Membership** está activa.",
+    "Elige mercado por precio: el del servidor por defecto, el entre servidores si la diferencia supera ~12,5%.",
+    "Pon precio a las cajas para venderlas.",
+    "Descuenta **un tercio** de la Kina que pienses convertir en Quna hasta ver las tasas globales."
+   ]
+  }
+ ]
 }

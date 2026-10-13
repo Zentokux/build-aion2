@@ -1,234 +1,233 @@
 {
-  "slug": "dungeons__vakron-sky-island-tiae-tamon-y-vakron",
-  "categoria": "dungeons",
-  "titulo": "Vakron Sky Island: Tiae, Tamon y Vakron",
-  "fuente": "https://metaroad.gg/es/aion2/dungeons/vakron-sky-island-tiae-tamon-y-vakron",
-  "resumen": "Expedition de 3 jefes (Tiae, Tamon, Vakron) con 1.600 de nivel de objeto en Corea, aunque los grupos piden 1.900. Tamon se cura si le pegas con el tipo de daño equivocado y Vakron alterna dos mecánicas de wipe.",
-  "bloques": [
-    {
-      "tipo": "aviso",
-      "texto": "Datos de Corea. Vakron Sky Island no aparece en las páginas oficiales global ni japonesa (sí Krao Cave, Draupnir, Urugugu Canyon y Fire Temple). Es probable que exista, pero no planifiques el lanzamiento con ella."
-    },
-    {
-      "titulo": "Requisitos (Corea)",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Nivel de personaje",
-          "45"
-        ],
-        [
-          "Conquest Normal",
-          "1.600 de nivel de objeto"
-        ],
-        [
-          "Conquest Hard",
-          "2.500"
-        ],
-        [
-          "Corte práctico de grupos",
-          "1.900 (cómodo: 2.200)"
-        ],
-        [
-          "Grupo",
-          "Mínimo 2, completo 5"
-        ],
-        [
-          "Orden de jefes",
-          "Tiae → Tamon → Vakron"
-        ]
-      ]
-    },
-    {
-      "titulo": "Mapa",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Qué haces tú"
-      ],
-      "filas": [
-        [
-          "Debuff de Gaze",
-          "Se acumula fuera de las arenas; con 3 acumulaciones quedas atado y los aliados cortan las enredaderas. Lo limpian las Mist Spirit Stones. No avanza en combates contra jefes"
-        ],
-        [
-          "Llave de 4 elementos",
-          "Vuela por el tramo abierto y recoge fuego, agua, viento y tierra (posición aleatoria cada intento); ofrécelos en el altar. Separaos y que cada uno coja uno"
-        ]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Las guías coreanas discrepan sobre el Gaze: una dice que se puede ignorar (va muy lento) y otra que hay que gestionarlo. Localiza las piedras y sigue."
-    },
-    {
-      "titulo": "Tiae (veneno)",
-      "tipo": "tabla",
-      "columnas": [
-        "Ataque",
-        "Qué hace",
-        "Qué haces tú"
-      ],
-      "filas": [
-        [
-          "Fase de la flor (~75 % y ~25 %)",
-          "Va al centro, llena de veneno todo fuera de un círculo e invoca una flor",
-          "Mata la flor"
-        ],
-        [
-          "Disparos de veneno",
-          "4 disparos seguidos a la posición de cada jugador; dejan suelo que no se pisa",
-          "Rota alrededor de donde estaba la flor; los grupos lo cantan por posiciones de reloj"
-        ],
-        [
-          "Estado de veneno a todos",
-          "No hace nada solo; duele al solaparse con el de otro",
-          "Da por hecho que solaparse se castiga y mira el icono del debuff en tu primer intento"
-        ]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Las fuentes se contradicen sobre el veneno de grupo: una dice separarse todo el combate y otra pide juntarse en un momento de la flor para repartir daño. No está resuelto."
-    },
-    {
-      "titulo": "Tamon (cambio de color)",
-      "tipo": "tabla",
-      "columnas": [
-        "Ataque",
-        "Qué hace",
-        "Qué haces tú"
-      ],
-      "filas": [
-        [
-          "Brillo rojo (~85 % y ~15 %)",
-          "El daño **físico** lo cura",
-          "Paran: Templario, Gladiador, Ranger y Sicario"
-        ],
-        [
-          "Brillo morado (~85 % y ~15 %)",
-          "El daño **mágico** lo cura",
-          "Paran: Hechicero, Clérigo, Conjurador y Espiritualista"
-        ],
-        [
-          "Golpe al suelo",
-          "Mano derecha con círculo visible y luego círculos pequeños alrededor de cada jugador",
-          "No pises los círculos pequeños o quedas atado"
-        ],
-        [
-          "Piedras que suben",
-          "Petrifican al contacto; un solo petrificado provoca un golpe a todo el grupo que no se puede evitar",
-          "Evítalas: son problema de todos"
-        ]
-      ]
-    },
-    {
-      "titulo": "Vakron: mecánicas de wipe (orden 60 → 55 → 40 → 35)",
-      "tipo": "tabla",
-      "columnas": [
-        "Ataque",
-        "Qué hace",
-        "Qué haces tú"
-      ],
-      "filas": [
-        [
-          "Ring Burst (60 % y 40 %)",
-          "Va al centro, el campo se pone rojo y salen 3 anillos amarillos uno tras otro; líneas en 6 direcciones dos veces. Tras el 3.er anillo todo el suelo es letal",
-          "Salta cada anillo de cerca. Tras el 3.º, pulsa **espacio dos veces** para usar las alas. Si te roza, quedas atado y mueres"
-        ],
-        [
-          "Boulder Annihilation (55 % y 35 %)",
-          "Salta a un punto, atrae al grupo y levanta un anillo de roca",
-          "Rompe la roca que brilla en **rojo** (10 golpes) y sal"
-        ]
-      ]
-    },
-    {
-      "titulo": "Vakron: otros patrones",
-      "tipo": "tabla",
-      "columnas": [
-        "Ataque",
-        "Qué hace",
-        "Qué haces tú"
-      ],
-      "filas": [
-        [
-          "Meteoritos",
-          "Persiguen a cada jugador",
-          "Muévete"
-        ],
-        [
-          "Líneas en 6 direcciones",
-          "Dos veces seguidas",
-          "Ponte en los huecos"
-        ],
-        [
-          "Salto de apertura",
-          "Abre el combate",
-          "Esquiva"
-        ],
-        [
-          "Rombo amarillo",
-          "Un jugador con rombo dentro de un círculo queda atado al completarse; quien esté dentro recibe el rombo también. El atado recibe daño sin parar",
-          "El marcado se aleja; el grupo se queda. Los aliados rompen la atadura con 10 golpes"
-        ],
-        [
-          "Medidor amarillo",
-          "Se vacía durante el combate; al vaciarse entra en berserk con patrones imposibles de esquivar",
-          "No alargues el combate (duración no publicada)"
-        ]
-      ]
-    },
-    {
-      "titulo": "Botín",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Detalle"
-      ],
-      "filas": [
-        [
-          "Principal",
-          "Arma de Puño"
-        ],
-        [
-          "Otros drops",
-          "Armadura de Vakron, Vakron Guard, hombreras y guantes de Espíritu ancestral"
-        ],
-        [
-          "Pity",
-          "Pieza de armadura de Vakron a elegir a los **21** clears (Krao Cave: 14)"
-        ],
-        [
-          "Plumas",
-          "Salen en clears repetidos y se convierten en alas muy valoradas para PvE"
-        ],
-        [
-          "Coste",
-          "Abrir el cubo cuesta Odyle Energy; sin energía no cobras"
-        ]
-      ]
-    },
-    {
-      "titulo": "Espíritu ancestral repartido por la escalera",
-      "tipo": "lista",
-      "items": [
-        "Krao Cave: collar y casco.",
-        "Vakron Sky Island: hombreras y guantes.",
-        "Ferocious Horn Den: peto y capa."
-      ]
-    },
-    {
-      "titulo": "Dónde encaja",
-      "tipo": "lista",
-      "items": [
-        "Urugugu Canyon (mismo requisito): línea de armadura y farmeo de nivel 2. Vakron: Arma de Puño y plumas. Elige según lo que te falte.",
-        "Siguiente peldaño (2.200): Ferocious Horn Den: Kuhapu, Duanka, Nuakum."
-      ]
-    }
-  ]
+ "slug": "dungeons__vakron-sky-island-tiae-tamon-y-vakron",
+ "categoria": "dungeons",
+ "titulo": "Vakron Sky Island: Tiae, Tamon y Vakron",
+ "resumen": "Expedition de 3 jefes (Tiae, Tamon, Vakron) con 1.600 de nivel de objeto en Corea, aunque los grupos piden 1.900. Tamon se cura si le pegas con el tipo de daño equivocado y Vakron alterna dos mecánicas de wipe.",
+ "bloques": [
+  {
+   "tipo": "aviso",
+   "texto": "Datos de Corea. Vakron Sky Island no aparece en las páginas oficiales global ni japonesa (sí Krao Cave, Draupnir, Urugugu Canyon y Fire Temple). Es probable que exista, pero no planifiques el lanzamiento con ella."
+  },
+  {
+   "titulo": "Requisitos (Corea)",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Nivel de personaje",
+     "45"
+    ],
+    [
+     "Conquest Normal",
+     "1.600 de nivel de objeto"
+    ],
+    [
+     "Conquest Hard",
+     "2.500"
+    ],
+    [
+     "Corte práctico de grupos",
+     "1.900 (cómodo: 2.200)"
+    ],
+    [
+     "Grupo",
+     "Mínimo 2, completo 5"
+    ],
+    [
+     "Orden de jefes",
+     "Tiae → Tamon → Vakron"
+    ]
+   ]
+  },
+  {
+   "titulo": "Mapa",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Qué haces tú"
+   ],
+   "filas": [
+    [
+     "Debuff de Gaze",
+     "Se acumula fuera de las arenas; con 3 acumulaciones quedas atado y los aliados cortan las enredaderas. Lo limpian las Mist Spirit Stones. No avanza en combates contra jefes"
+    ],
+    [
+     "Llave de 4 elementos",
+     "Vuela por el tramo abierto y recoge fuego, agua, viento y tierra (posición aleatoria cada intento); ofrécelos en el altar. Separaos y que cada uno coja uno"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Las guías coreanas discrepan sobre el Gaze: una dice que se puede ignorar (va muy lento) y otra que hay que gestionarlo. Localiza las piedras y sigue."
+  },
+  {
+   "titulo": "Tiae (veneno)",
+   "tipo": "tabla",
+   "columnas": [
+    "Ataque",
+    "Qué hace",
+    "Qué haces tú"
+   ],
+   "filas": [
+    [
+     "Fase de la flor (~75 % y ~25 %)",
+     "Va al centro, llena de veneno todo fuera de un círculo e invoca una flor",
+     "Mata la flor"
+    ],
+    [
+     "Disparos de veneno",
+     "4 disparos seguidos a la posición de cada jugador; dejan suelo que no se pisa",
+     "Rota alrededor de donde estaba la flor; los grupos lo cantan por posiciones de reloj"
+    ],
+    [
+     "Estado de veneno a todos",
+     "No hace nada solo; duele al solaparse con el de otro",
+     "Da por hecho que solaparse se castiga y mira el icono del debuff en tu primer intento"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Las fuentes se contradicen sobre el veneno de grupo: una dice separarse todo el combate y otra pide juntarse en un momento de la flor para repartir daño. No está resuelto."
+  },
+  {
+   "titulo": "Tamon (cambio de color)",
+   "tipo": "tabla",
+   "columnas": [
+    "Ataque",
+    "Qué hace",
+    "Qué haces tú"
+   ],
+   "filas": [
+    [
+     "Brillo rojo (~85 % y ~15 %)",
+     "El daño **físico** lo cura",
+     "Paran: Templario, Gladiador, Ranger y Sicario"
+    ],
+    [
+     "Brillo morado (~85 % y ~15 %)",
+     "El daño **mágico** lo cura",
+     "Paran: Hechicero, Clérigo, Conjurador y Espiritualista"
+    ],
+    [
+     "Golpe al suelo",
+     "Mano derecha con círculo visible y luego círculos pequeños alrededor de cada jugador",
+     "No pises los círculos pequeños o quedas atado"
+    ],
+    [
+     "Piedras que suben",
+     "Petrifican al contacto; un solo petrificado provoca un golpe a todo el grupo que no se puede evitar",
+     "Evítalas: son problema de todos"
+    ]
+   ]
+  },
+  {
+   "titulo": "Vakron: mecánicas de wipe (orden 60 → 55 → 40 → 35)",
+   "tipo": "tabla",
+   "columnas": [
+    "Ataque",
+    "Qué hace",
+    "Qué haces tú"
+   ],
+   "filas": [
+    [
+     "Ring Burst (60 % y 40 %)",
+     "Va al centro, el campo se pone rojo y salen 3 anillos amarillos uno tras otro; líneas en 6 direcciones dos veces. Tras el 3.er anillo todo el suelo es letal",
+     "Salta cada anillo de cerca. Tras el 3.º, pulsa **espacio dos veces** para usar las alas. Si te roza, quedas atado y mueres"
+    ],
+    [
+     "Boulder Annihilation (55 % y 35 %)",
+     "Salta a un punto, atrae al grupo y levanta un anillo de roca",
+     "Rompe la roca que brilla en **rojo** (10 golpes) y sal"
+    ]
+   ]
+  },
+  {
+   "titulo": "Vakron: otros patrones",
+   "tipo": "tabla",
+   "columnas": [
+    "Ataque",
+    "Qué hace",
+    "Qué haces tú"
+   ],
+   "filas": [
+    [
+     "Meteoritos",
+     "Persiguen a cada jugador",
+     "Muévete"
+    ],
+    [
+     "Líneas en 6 direcciones",
+     "Dos veces seguidas",
+     "Ponte en los huecos"
+    ],
+    [
+     "Salto de apertura",
+     "Abre el combate",
+     "Esquiva"
+    ],
+    [
+     "Rombo amarillo",
+     "Un jugador con rombo dentro de un círculo queda atado al completarse; quien esté dentro recibe el rombo también. El atado recibe daño sin parar",
+     "El marcado se aleja; el grupo se queda. Los aliados rompen la atadura con 10 golpes"
+    ],
+    [
+     "Medidor amarillo",
+     "Se vacía durante el combate; al vaciarse entra en berserk con patrones imposibles de esquivar",
+     "No alargues el combate (duración no publicada)"
+    ]
+   ]
+  },
+  {
+   "titulo": "Botín",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Detalle"
+   ],
+   "filas": [
+    [
+     "Principal",
+     "Arma de Puño"
+    ],
+    [
+     "Otros drops",
+     "Armadura de Vakron, Vakron Guard, hombreras y guantes de Espíritu ancestral"
+    ],
+    [
+     "Pity",
+     "Pieza de armadura de Vakron a elegir a los **21** clears (Krao Cave: 14)"
+    ],
+    [
+     "Plumas",
+     "Salen en clears repetidos y se convierten en alas muy valoradas para PvE"
+    ],
+    [
+     "Coste",
+     "Abrir el cubo cuesta Odyle Energy; sin energía no cobras"
+    ]
+   ]
+  },
+  {
+   "titulo": "Espíritu ancestral repartido por la escalera",
+   "tipo": "lista",
+   "items": [
+    "Krao Cave: collar y casco.",
+    "Vakron Sky Island: hombreras y guantes.",
+    "Ferocious Horn Den: peto y capa."
+   ]
+  },
+  {
+   "titulo": "Dónde encaja",
+   "tipo": "lista",
+   "items": [
+    "Urugugu Canyon (mismo requisito): línea de armadura y farmeo de nivel 2. Vakron: Arma de Puño y plumas. Elige según lo que te falte.",
+    "Siguiente peldaño (2.200): Ferocious Horn Den: Kuhapu, Duanka, Nuakum."
+   ]
+  }
+ ]
 }

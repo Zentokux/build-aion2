@@ -1,306 +1,305 @@
 {
-  "slug": "pvp__grieta-espacio-tiempo-portales-y-la-contienda",
-  "categoria": "pvp",
-  "titulo": "Grieta Espacio-Tiempo: portales y contienda",
-  "fuente": "https://metaroad.gg/es/aion2/pvp/grieta-espacio-tiempo-portales-y-la-contienda",
-  "resumen": "Un nombre, dos contenidos: los portales (nivel 45, misiones, 7 fragmentos de stigma) probablemente estén en global; la contienda (invasión masiva con requisitos durísimos) llegó a Corea el 2 de septiembre de 2026 y probablemente no.",
-  "bloques": [
-    {
-      "tipo": "aviso",
-      "texto": "Todo son mediciones coreanas. La **contienda** se abrió en Corea el **2 sep 2026**, un mes antes de los servidores occidentales: **cuenta con que no esté**. Planifica en torno a los portales."
-    },
-    {
-      "titulo": "No confundir",
-      "tipo": "tabla",
-      "columnas": [
-        "Contenido",
-        "Qué es",
-        "Cuándo"
-      ],
-      "filas": [
-        [
-          "**Grieta Espacio-Tiempo** (portales)",
-          "Portal a territorio enemigo; nivel 45, misiones, se puede en solitario",
-          "Ciclo de 3 horas"
-        ],
-        [
-          "**Contienda de la Grieta Espacio-Tiempo**",
-          "Invasión de territorio masiva, cientos por bando",
-          "**Lunes, jueves y sábado a las 20:00 y 23:00**"
-        ],
-        [
-          "**Asedio de artefactos** (otra cosa)",
-          "Pelea por los artefactos del Abismo",
-          "**Miércoles y sábado a las 22:00**"
-        ]
-      ]
-    },
-    {
-      "titulo": "Portales: datos (post coreano 21 nov 2025, editado 10 dic)",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Nivel",
-          "**45** en adelante"
-        ],
-        [
-          "Ciclo",
-          "Cada **3 horas**; aperturas recogidas a las **02:00, 05:00, 08:00 y 11:00**"
-        ],
-        [
-          "Portal abierto",
-          "**10 minutos** (si lo pierdes, al siguiente)"
-        ],
-        [
-          "Tiempo dentro",
-          "Hasta **1 hora** en territorio enemigo; luego te devuelve a casa"
-        ],
-        [
-          "Aforo",
-          "**400 jugadores** por portal"
-        ]
-      ]
-    },
-    {
-      "titulo": "Rework del 3 dic 2025",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Antes",
-        "Ahora"
-      ],
-      "filas": [
-        [
-          "Ciclo",
-          "4 horas (aperturas 10:00, 14:00, 18:00 y 22:00)",
-          "3 horas"
-        ],
-        [
-          "Aforo",
-          "200",
-          "400"
-        ]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Una guía del 20 nov 2025 da el portal abierto **1 hora** en vez de 10 minutos; nadie ha conciliado las dos cifras. Deducción no confirmada: con ciclo de 3 h, las aperturas restantes serían 14:00, 17:00, 20:00 y 23:00, coincidiendo con la contienda."
-    },
-    {
-      "titulo": "Dónde se forman los portales",
-      "tipo": "tabla",
-      "columnas": [
-        "Facción",
-        "Tres zonas fijas"
-      ],
-      "filas": [
-        [
-          "Elyos",
-          "Tramo medio del río Ellun, asentamiento de Aullaeu, tierras altas de Artamia"
-        ],
-        [
-          "Asmodianos",
-          "Moslan Forest, Forest of Purification, ruinas de Baspelt"
-        ]
-      ]
-    },
-    {
-      "titulo": "Salida del portal",
-      "tipo": "lista",
-      "items": [
-        "La entrada es fija; la **salida es aleatoria** entre varios puntos del territorio enemigo.",
-        "Planifica el viaje, no el aterrizaje."
-      ]
-    },
-    {
-      "titulo": "Recompensas de la cadena de 7 misiones",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Por misión",
-        "Total"
-      ],
-      "filas": [
-        [
-          "Daevanion",
-          "3",
-          "**21**"
-        ],
-        [
-          "Fragmentos de stigma",
-          "1",
-          "**7**"
-        ],
-        [
-          "Abyss Points",
-          "2.000",
-          "**14.000**"
-        ]
-      ]
-    },
-    {
-      "titulo": "Por qué merece la pena",
-      "tipo": "lista",
-      "items": [
-        "Los fragmentos de stigma adicionales solo salen de la economía de AP: aquí te dan 7 sin pelear ni rankear.",
-        "Los Daevanion sirven para llevar una habilidad más allá de su techo normal.",
-        "Consejo coreano: **cruza, haz las misiones, vete**."
-      ]
-    },
-    {
-      "titulo": "War Mode (desde el 3 dic 2025)",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Qué es",
-          "Interruptor para activar o desactivar el PvP"
-        ],
-        [
-          "Cooldown",
-          "**70 minutos** entre cambios"
-        ],
-        [
-          "Dónde se cambia",
-          "Solo dentro del territorio de **tu propia facción**"
-        ],
-        [
-          "Qué haces tú",
-          "Decide el estado **antes de coger el portal**"
-        ]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "La comunidad describe un debuff tipo maldición que castiga rachas largas de kills revelando tu posición y anulando el sigilo. Sale de un texto de la comunidad, no de notas de parche: **pista, no regla medida**."
-    },
-    {
-      "titulo": "Contienda: formato",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Dónde",
-          "Territorios de **Verteron** y **Altgard**; un bando ataca y otro defiende (rota cada semana)"
-        ],
-        [
-          "Guarniciones",
-          "Tres grupos de 5; se elige uno **al azar** al empezar"
-        ],
-        [
-          "Capturar una guarnición",
-          "Romper sus **3 monolitos**"
-        ],
-        [
-          "Ganan atacantes",
-          "Tomando **3 de 5** guarniciones"
-        ],
-        [
-          "Ganan defensores",
-          "Manteniendo la mayoría hasta el final"
-        ],
-        [
-          "Duración",
-          "10 minutos de portal + **25 minutos de contienda**"
-        ]
-      ]
-    },
-    {
-      "titulo": "Contienda: requisitos de entrada",
-      "tipo": "tabla",
-      "columnas": [
-        "Requisito",
-        "Valor"
-      ],
-      "filas": [
-        [
-          "Nivel",
-          "**50** o más"
-        ],
-        [
-          "Nivel de objeto",
-          "**4.500** o más"
-        ],
-        [
-          "Poder de combate",
-          "**500.000** o más"
-        ],
-        [
-          "Logro",
-          "Puesto avanzado del territorio completado (cadena de sometimiento de guarniciones de Verteron o Altgard)"
-        ]
-      ]
-    },
-    {
-      "titulo": "Contienda: inscripción y aforo",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Entrada",
-          "**Por orden de llegada**: llegar tarde = sin plaza"
-        ],
-        [
-          "Aforo",
-          "**200 por facción** (400 en total); mínimo **60 por facción** para que se juegue"
-        ],
-        [
-          "Cómo te apuntas",
-          "Estar en territorio de la facción contraria antes de la ventana y apuntarte desde la entrada de ocupación de guarniciones en el panel de misiones"
-        ],
-        [
-          "Oportunidades",
-          "6 por semana; la misión semanal pide cobrar en **3**"
-        ],
-        [
-          "Llaves",
-          "Una fuente habla de **3 llaves** que se recargan el **miércoles a las 05:00**; nadie ha explicado cómo encaja con las 6 oportunidades"
-        ]
-      ]
-    },
-    {
-      "titulo": "PvP restringido en la contienda",
-      "tipo": "lista",
-      "items": [
-        "Solo los inscritos pueden atacar o ser atacados.",
-        "Los NPC guardias van a por los marcados.",
-        "Un transeúnte no se convierte en AP de nadie (a diferencia del Abismo)."
-      ]
-    },
-    {
-      "titulo": "Contienda: recompensas",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Sistema",
-          "Por **contribución**: destruir monolitos, matar guardias defensores y matar jugadores"
-        ],
-        [
-          "Reparto",
-          "Quien supera un umbral mínimo cobra según un ranking de contribución **por clase**"
-        ],
-        [
-          "Valores",
-          "**No publicados** (umbral, tramos, AP). Tampoco si atacar y defender pagan distinto"
-        ]
-      ]
-    }
-  ]
+ "slug": "pvp__grieta-espacio-tiempo-portales-y-la-contienda",
+ "categoria": "pvp",
+ "titulo": "Grieta Espacio-Tiempo: portales y contienda",
+ "resumen": "Un nombre, dos contenidos: los portales (nivel 45, misiones, 7 fragmentos de stigma) probablemente estén en global; la contienda (invasión masiva con requisitos durísimos) llegó a Corea el 2 de septiembre de 2026 y probablemente no.",
+ "bloques": [
+  {
+   "tipo": "aviso",
+   "texto": "Todo son mediciones coreanas. La **contienda** se abrió en Corea el **2 sep 2026**, un mes antes de los servidores occidentales: **cuenta con que no esté**. Planifica en torno a los portales."
+  },
+  {
+   "titulo": "No confundir",
+   "tipo": "tabla",
+   "columnas": [
+    "Contenido",
+    "Qué es",
+    "Cuándo"
+   ],
+   "filas": [
+    [
+     "**Grieta Espacio-Tiempo** (portales)",
+     "Portal a territorio enemigo; nivel 45, misiones, se puede en solitario",
+     "Ciclo de 3 horas"
+    ],
+    [
+     "**Contienda de la Grieta Espacio-Tiempo**",
+     "Invasión de territorio masiva, cientos por bando",
+     "**Lunes, jueves y sábado a las 20:00 y 23:00**"
+    ],
+    [
+     "**Asedio de artefactos** (otra cosa)",
+     "Pelea por los artefactos del Abismo",
+     "**Miércoles y sábado a las 22:00**"
+    ]
+   ]
+  },
+  {
+   "titulo": "Portales: datos (post coreano 21 nov 2025, editado 10 dic)",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Nivel",
+     "**45** en adelante"
+    ],
+    [
+     "Ciclo",
+     "Cada **3 horas**; aperturas recogidas a las **02:00, 05:00, 08:00 y 11:00**"
+    ],
+    [
+     "Portal abierto",
+     "**10 minutos** (si lo pierdes, al siguiente)"
+    ],
+    [
+     "Tiempo dentro",
+     "Hasta **1 hora** en territorio enemigo; luego te devuelve a casa"
+    ],
+    [
+     "Aforo",
+     "**400 jugadores** por portal"
+    ]
+   ]
+  },
+  {
+   "titulo": "Rework del 3 dic 2025",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Antes",
+    "Ahora"
+   ],
+   "filas": [
+    [
+     "Ciclo",
+     "4 horas (aperturas 10:00, 14:00, 18:00 y 22:00)",
+     "3 horas"
+    ],
+    [
+     "Aforo",
+     "200",
+     "400"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Una guía del 20 nov 2025 da el portal abierto **1 hora** en vez de 10 minutos; nadie ha conciliado las dos cifras. Deducción no confirmada: con ciclo de 3 h, las aperturas restantes serían 14:00, 17:00, 20:00 y 23:00, coincidiendo con la contienda."
+  },
+  {
+   "titulo": "Dónde se forman los portales",
+   "tipo": "tabla",
+   "columnas": [
+    "Facción",
+    "Tres zonas fijas"
+   ],
+   "filas": [
+    [
+     "Elyos",
+     "Tramo medio del río Ellun, asentamiento de Aullaeu, tierras altas de Artamia"
+    ],
+    [
+     "Asmodianos",
+     "Moslan Forest, Forest of Purification, ruinas de Baspelt"
+    ]
+   ]
+  },
+  {
+   "titulo": "Salida del portal",
+   "tipo": "lista",
+   "items": [
+    "La entrada es fija; la **salida es aleatoria** entre varios puntos del territorio enemigo.",
+    "Planifica el viaje, no el aterrizaje."
+   ]
+  },
+  {
+   "titulo": "Recompensas de la cadena de 7 misiones",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Por misión",
+    "Total"
+   ],
+   "filas": [
+    [
+     "Daevanion",
+     "3",
+     "**21**"
+    ],
+    [
+     "Fragmentos de stigma",
+     "1",
+     "**7**"
+    ],
+    [
+     "Abyss Points",
+     "2.000",
+     "**14.000**"
+    ]
+   ]
+  },
+  {
+   "titulo": "Por qué merece la pena",
+   "tipo": "lista",
+   "items": [
+    "Los fragmentos de stigma adicionales solo salen de la economía de AP: aquí te dan 7 sin pelear ni rankear.",
+    "Los Daevanion sirven para llevar una habilidad más allá de su techo normal.",
+    "Consejo coreano: **cruza, haz las misiones, vete**."
+   ]
+  },
+  {
+   "titulo": "War Mode (desde el 3 dic 2025)",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Qué es",
+     "Interruptor para activar o desactivar el PvP"
+    ],
+    [
+     "Cooldown",
+     "**70 minutos** entre cambios"
+    ],
+    [
+     "Dónde se cambia",
+     "Solo dentro del territorio de **tu propia facción**"
+    ],
+    [
+     "Qué haces tú",
+     "Decide el estado **antes de coger el portal**"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "La comunidad describe un debuff tipo maldición que castiga rachas largas de kills revelando tu posición y anulando el sigilo. Sale de un texto de la comunidad, no de notas de parche: **pista, no regla medida**."
+  },
+  {
+   "titulo": "Contienda: formato",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Dónde",
+     "Territorios de **Verteron** y **Altgard**; un bando ataca y otro defiende (rota cada semana)"
+    ],
+    [
+     "Guarniciones",
+     "Tres grupos de 5; se elige uno **al azar** al empezar"
+    ],
+    [
+     "Capturar una guarnición",
+     "Romper sus **3 monolitos**"
+    ],
+    [
+     "Ganan atacantes",
+     "Tomando **3 de 5** guarniciones"
+    ],
+    [
+     "Ganan defensores",
+     "Manteniendo la mayoría hasta el final"
+    ],
+    [
+     "Duración",
+     "10 minutos de portal + **25 minutos de contienda**"
+    ]
+   ]
+  },
+  {
+   "titulo": "Contienda: requisitos de entrada",
+   "tipo": "tabla",
+   "columnas": [
+    "Requisito",
+    "Valor"
+   ],
+   "filas": [
+    [
+     "Nivel",
+     "**50** o más"
+    ],
+    [
+     "Nivel de objeto",
+     "**4.500** o más"
+    ],
+    [
+     "Poder de combate",
+     "**500.000** o más"
+    ],
+    [
+     "Logro",
+     "Puesto avanzado del territorio completado (cadena de sometimiento de guarniciones de Verteron o Altgard)"
+    ]
+   ]
+  },
+  {
+   "titulo": "Contienda: inscripción y aforo",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Entrada",
+     "**Por orden de llegada**: llegar tarde = sin plaza"
+    ],
+    [
+     "Aforo",
+     "**200 por facción** (400 en total); mínimo **60 por facción** para que se juegue"
+    ],
+    [
+     "Cómo te apuntas",
+     "Estar en territorio de la facción contraria antes de la ventana y apuntarte desde la entrada de ocupación de guarniciones en el panel de misiones"
+    ],
+    [
+     "Oportunidades",
+     "6 por semana; la misión semanal pide cobrar en **3**"
+    ],
+    [
+     "Llaves",
+     "Una fuente habla de **3 llaves** que se recargan el **miércoles a las 05:00**; nadie ha explicado cómo encaja con las 6 oportunidades"
+    ]
+   ]
+  },
+  {
+   "titulo": "PvP restringido en la contienda",
+   "tipo": "lista",
+   "items": [
+    "Solo los inscritos pueden atacar o ser atacados.",
+    "Los NPC guardias van a por los marcados.",
+    "Un transeúnte no se convierte en AP de nadie (a diferencia del Abismo)."
+   ]
+  },
+  {
+   "titulo": "Contienda: recompensas",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Sistema",
+     "Por **contribución**: destruir monolitos, matar guardias defensores y matar jugadores"
+    ],
+    [
+     "Reparto",
+     "Quien supera un umbral mínimo cobra según un ranking de contribución **por clase**"
+    ],
+    [
+     "Valores",
+     "**No publicados** (umbral, tramos, AP). Tampoco si atacar y defender pagan distinto"
+    ]
+   ]
+  }
+ ]
 }

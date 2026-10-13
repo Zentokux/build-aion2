@@ -1,219 +1,218 @@
 {
-  "slug": "dungeons__azure-breath-island-baumnute-xyrepe-alturadon",
-  "categoria": "dungeons",
-  "titulo": "Azure Breath Island: Baumnute, Xyrepe, Alturadon",
-  "fuente": "https://metaroad.gg/es/aion2/dungeons/azure-breath-island-baumnute-xyrepe-alturadon",
-  "resumen": "Expedition de nivel 45 con puerta de nivel de objeto 3.000 (Hard 3.500). La clave es el último jefe: **alguien tiene que comerse los orbes de rayo**, porque si el jefe recoge 10 lanza un wipe.",
-  "bloques": [
-    {
-      "tipo": "aviso",
-      "texto": "Datos medidos en Corea (mazmorra abierta el 22 de abril de 2026, Season 3). Global parte de Season 1 y NCSOFT no ha dicho qué mazmorras estarán activas en el lanzamiento: tómala como meta a futuro, no para la primera semana."
-    },
-    {
-      "titulo": "Requisitos",
-      "tipo": "tabla",
-      "columnas": [
-        "Dificultad",
-        "Nivel",
-        "Nivel de objeto",
-        "Odyle Energy"
-      ],
-      "filas": [
-        [
-          "Exploration",
-          "45",
-          "3.000",
-          "Sin publicar"
-        ],
-        [
-          "Conquest Normal",
-          "45",
-          "3.000",
-          "Sin publicar"
-        ],
-        [
-          "Conquest Hard",
-          "45",
-          "3.500",
-          "Sin publicar"
-        ]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "No hay coste de Odyle publicado por dificultad. No des por hecho que Normal y Hard cuestan igual: en Citadel of the Fallen Daeva Hard cuesta 60 frente a 40."
-    },
-    {
-      "titulo": "Botín",
-      "tipo": "tabla",
-      "columnas": [
-        "Objeto",
-        "Grado / nivel",
-        "Nota"
-      ],
-      "filas": [
-        [
-          "Guarda, casco, hombreras, capa y grebas de **Awakened Alturadon**",
-          "Único, nivel de equipo 100",
-          ""
-        ],
-        [
-          "Collar y pendientes **Eroded Afterimage**",
-          "Épico, nivel de equipo 108",
-          "El pecho, grebas y casco del set salen de Hall of Illusion: Nazarak, Glassvein, Nathara. Haz las dos."
-        ],
-        [
-          "**Sacred Flame of Wrath**",
-          "Material de crafteo",
-          "Sirve para unas alas"
-        ],
-        [
-          "**Fragment: Yustiel's Trace**",
-          "Material del tablero de Daevanion",
-          "25 en Normal, 30 en Hard, 0 en Exploration"
-        ]
-      ]
-    },
-    {
-      "titulo": "Alas hechas con el material de aquí",
-      "tipo": "tabla",
-      "columnas": [
-        "Estado",
-        "Bonos"
-      ],
-      "filas": [
-        [
-          "En posesión",
-          "200 de flight, 1% de amplificación de daño, 10 de block"
-        ],
-        [
-          "Equipadas",
-          "2,5% de amplificación de daño, +35 de accuracy, 60 de block, 3% de ironwall"
-        ]
-      ]
-    },
-    {
-      "titulo": "Veredicto de los jugadores coreanos",
-      "tipo": "lista",
-      "items": [
-        "Las **alas** merecen la pena (su efecto de posesión da amplificación de daño).",
-        "El **cuadro** no: duplica algo que seguramente ya tienes."
-      ]
-    },
-    {
-      "titulo": "Jefe 1: Baumnute the Wise",
-      "tipo": "tabla",
-      "columnas": [
-        "Ataque",
-        "Qué hace",
-        "Qué haces tú"
-      ],
-      "filas": [
-        [
-          "Rayo en cadena desde los cristales",
-          "Invoca rayos por los cristales del borde; el jugador pillado conduce la cadena a los de al lado.",
-          "Mantente separado del resto."
-        ],
-        [
-          "Rayo en cadena a un jugador",
-          "Marca a alguien al azar y le encadena el rayo.",
-          "Separación, no cooldowns."
-        ],
-        [
-          "**Indomitable Veil**",
-          "Va al borde de las 11 o las 5 y castea. Si no se rompe, muere todo el grupo. No se esquiva ni se aguanta.",
-          "Ponte **detrás** del jefe y haz stagger. Si estás lejos, no uses un ataque de área que te aturda a ti."
-        ]
-      ]
-    },
-    {
-      "titulo": "Jefe 2: Xyrepe the Swelling (el más fácil)",
-      "tipo": "tabla",
-      "columnas": [
-        "Ataque",
-        "Qué hace",
-        "Qué haces tú"
-      ],
-      "filas": [
-        [
-          "Setas del borde",
-          "Setas verdes y rojas dan una espora de ese color. Sin espora recibes más daño.",
-          "Coge una espora antes del combate; si la pierdes, ve a por otra (reaparecen)."
-        ],
-        [
-          "Suelo de esporas",
-          "Marca a cada jugador 3 veces, dos veces seguidas; crece suelo verde y rojo.",
-          "No pises el color contrario: DoT que acumula hasta 4 veces."
-        ],
-        [
-          "Triángulos cruzados",
-          "Triángulo en 4 direcciones y luego golpe sobre las zonas seguras del primero; alterna 4 veces.",
-          "Lee la forma, muévete y vuelve a leer. No te quedes en la zona segura."
-        ],
-        [
-          "Cortina de esporas",
-          "Desde el centro llena la sala de proyectiles verdes y rojos.",
-          "Solo esquiva los del color que no es el tuyo."
-        ]
-      ]
-    },
-    {
-      "titulo": "Jefe 3: Awakened Alturadon",
-      "tipo": "tabla",
-      "columnas": [
-        "Ataque",
-        "Qué hace",
-        "Qué haces tú"
-      ],
-      "filas": [
-        [
-          "**Torrent of Blue Lightning** (orbes)",
-          "Genera orbes de rayo. Cogerlos te da un DoT que crece con cada orbe. Los que deja el grupo le dan una acumulación de **Blue Breath**; con 10 hace wipe.",
-          "**Coged todos los orbes**, pequeños y grandes. El healer cura ese daño: es el precio del clear."
-        ],
-        [
-          "Thunder Dash",
-          "Va al centro, rayos cubren las 12 y las 6, copias del jefe cargan (daño + empuje) y el jefe real carga contra un jugador.",
-          "Esquiva las copias y la carga."
-        ],
-        [
-          "Blue Beam (por debajo del 50%)",
-          "Dos rayos a izquierda y derecha que se cruzan barriendo.",
-          "Rodéalos; hacen daño al tocarlos."
-        ],
-        [
-          "**Blue Crystal**",
-          "Rayos también en las 3 y las 9, salen cristales azules y carga contra un jugador marcado. Si la carga toca un cristal: daño de área al grupo y deja un orbe.",
-          "Marcado: lleva al jefe a una esquina sin cristales y muévete en diagonal adelante y atrás. Al acabar, el grupo barre los orbes antes de que el jefe los absorba."
-        ],
-        [
-          "Aturdimiento",
-          "Tras resolver la mecánica el jefe queda aturdido.",
-          "Vuelve al centro y fúndelo."
-        ]
-      ]
-    },
-    {
-      "titulo": "Reglas de botín",
-      "tipo": "lista",
-      "items": [
-        "Botín individual: un cofre por jugador y por jefe con nombre. Sin dados.",
-        "Tienes que estar **vivo** cuando cae y superar un pequeño mínimo de contribución.",
-        "Abrir el cofre cuesta **Odyle Energy**: ese es tu tope semanal real.",
-        "Desde el 22 de abril de 2026 parte de las Kina pasó del cubo a los jefes intermedios, y el nivel de recompensa final sube con los jefes matados: **no te saltes a Baumnute ni a Xyrepe**."
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "La cobertura es de abril de 2026, con grupos de 4. Desde el Chapter 1 (1 de julio) son 5 y se ajustaron patrones de algunos jefes sin detallar cuáles. Si ves otro número de marcas o setas que en un vídeo, fíate de tu cliente."
-    },
-    {
-      "titulo": "Después",
-      "tipo": "lista",
-      "items": [
-        "Haz **Hall of Illusion: Nazarak, Glassvein, Nathara** (misma puerta, resto del set Eroded Afterimage).",
-        "Gasta los **Yustiel's Trace** en el tablero de Daevanion."
-      ]
-    }
-  ]
+ "slug": "dungeons__azure-breath-island-baumnute-xyrepe-alturadon",
+ "categoria": "dungeons",
+ "titulo": "Azure Breath Island: Baumnute, Xyrepe, Alturadon",
+ "resumen": "Expedition de nivel 45 con puerta de nivel de objeto 3.000 (Hard 3.500). La clave es el último jefe: **alguien tiene que comerse los orbes de rayo**, porque si el jefe recoge 10 lanza un wipe.",
+ "bloques": [
+  {
+   "tipo": "aviso",
+   "texto": "Datos medidos en Corea (mazmorra abierta el 22 de abril de 2026, Season 3). Global parte de Season 1 y NCSOFT no ha dicho qué mazmorras estarán activas en el lanzamiento: tómala como meta a futuro, no para la primera semana."
+  },
+  {
+   "titulo": "Requisitos",
+   "tipo": "tabla",
+   "columnas": [
+    "Dificultad",
+    "Nivel",
+    "Nivel de objeto",
+    "Odyle Energy"
+   ],
+   "filas": [
+    [
+     "Exploration",
+     "45",
+     "3.000",
+     "Sin publicar"
+    ],
+    [
+     "Conquest Normal",
+     "45",
+     "3.000",
+     "Sin publicar"
+    ],
+    [
+     "Conquest Hard",
+     "45",
+     "3.500",
+     "Sin publicar"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "No hay coste de Odyle publicado por dificultad. No des por hecho que Normal y Hard cuestan igual: en Citadel of the Fallen Daeva Hard cuesta 60 frente a 40."
+  },
+  {
+   "titulo": "Botín",
+   "tipo": "tabla",
+   "columnas": [
+    "Objeto",
+    "Grado / nivel",
+    "Nota"
+   ],
+   "filas": [
+    [
+     "Guarda, casco, hombreras, capa y grebas de **Awakened Alturadon**",
+     "Único, nivel de equipo 100",
+     ""
+    ],
+    [
+     "Collar y pendientes **Eroded Afterimage**",
+     "Épico, nivel de equipo 108",
+     "El pecho, grebas y casco del set salen de Hall of Illusion: Nazarak, Glassvein, Nathara. Haz las dos."
+    ],
+    [
+     "**Sacred Flame of Wrath**",
+     "Material de crafteo",
+     "Sirve para unas alas"
+    ],
+    [
+     "**Fragment: Yustiel's Trace**",
+     "Material del tablero de Daevanion",
+     "25 en Normal, 30 en Hard, 0 en Exploration"
+    ]
+   ]
+  },
+  {
+   "titulo": "Alas hechas con el material de aquí",
+   "tipo": "tabla",
+   "columnas": [
+    "Estado",
+    "Bonos"
+   ],
+   "filas": [
+    [
+     "En posesión",
+     "200 de flight, 1% de amplificación de daño, 10 de block"
+    ],
+    [
+     "Equipadas",
+     "2,5% de amplificación de daño, +35 de accuracy, 60 de block, 3% de ironwall"
+    ]
+   ]
+  },
+  {
+   "titulo": "Veredicto de los jugadores coreanos",
+   "tipo": "lista",
+   "items": [
+    "Las **alas** merecen la pena (su efecto de posesión da amplificación de daño).",
+    "El **cuadro** no: duplica algo que seguramente ya tienes."
+   ]
+  },
+  {
+   "titulo": "Jefe 1: Baumnute the Wise",
+   "tipo": "tabla",
+   "columnas": [
+    "Ataque",
+    "Qué hace",
+    "Qué haces tú"
+   ],
+   "filas": [
+    [
+     "Rayo en cadena desde los cristales",
+     "Invoca rayos por los cristales del borde; el jugador pillado conduce la cadena a los de al lado.",
+     "Mantente separado del resto."
+    ],
+    [
+     "Rayo en cadena a un jugador",
+     "Marca a alguien al azar y le encadena el rayo.",
+     "Separación, no cooldowns."
+    ],
+    [
+     "**Indomitable Veil**",
+     "Va al borde de las 11 o las 5 y castea. Si no se rompe, muere todo el grupo. No se esquiva ni se aguanta.",
+     "Ponte **detrás** del jefe y haz stagger. Si estás lejos, no uses un ataque de área que te aturda a ti."
+    ]
+   ]
+  },
+  {
+   "titulo": "Jefe 2: Xyrepe the Swelling (el más fácil)",
+   "tipo": "tabla",
+   "columnas": [
+    "Ataque",
+    "Qué hace",
+    "Qué haces tú"
+   ],
+   "filas": [
+    [
+     "Setas del borde",
+     "Setas verdes y rojas dan una espora de ese color. Sin espora recibes más daño.",
+     "Coge una espora antes del combate; si la pierdes, ve a por otra (reaparecen)."
+    ],
+    [
+     "Suelo de esporas",
+     "Marca a cada jugador 3 veces, dos veces seguidas; crece suelo verde y rojo.",
+     "No pises el color contrario: DoT que acumula hasta 4 veces."
+    ],
+    [
+     "Triángulos cruzados",
+     "Triángulo en 4 direcciones y luego golpe sobre las zonas seguras del primero; alterna 4 veces.",
+     "Lee la forma, muévete y vuelve a leer. No te quedes en la zona segura."
+    ],
+    [
+     "Cortina de esporas",
+     "Desde el centro llena la sala de proyectiles verdes y rojos.",
+     "Solo esquiva los del color que no es el tuyo."
+    ]
+   ]
+  },
+  {
+   "titulo": "Jefe 3: Awakened Alturadon",
+   "tipo": "tabla",
+   "columnas": [
+    "Ataque",
+    "Qué hace",
+    "Qué haces tú"
+   ],
+   "filas": [
+    [
+     "**Torrent of Blue Lightning** (orbes)",
+     "Genera orbes de rayo. Cogerlos te da un DoT que crece con cada orbe. Los que deja el grupo le dan una acumulación de **Blue Breath**; con 10 hace wipe.",
+     "**Coged todos los orbes**, pequeños y grandes. El healer cura ese daño: es el precio del clear."
+    ],
+    [
+     "Thunder Dash",
+     "Va al centro, rayos cubren las 12 y las 6, copias del jefe cargan (daño + empuje) y el jefe real carga contra un jugador.",
+     "Esquiva las copias y la carga."
+    ],
+    [
+     "Blue Beam (por debajo del 50%)",
+     "Dos rayos a izquierda y derecha que se cruzan barriendo.",
+     "Rodéalos; hacen daño al tocarlos."
+    ],
+    [
+     "**Blue Crystal**",
+     "Rayos también en las 3 y las 9, salen cristales azules y carga contra un jugador marcado. Si la carga toca un cristal: daño de área al grupo y deja un orbe.",
+     "Marcado: lleva al jefe a una esquina sin cristales y muévete en diagonal adelante y atrás. Al acabar, el grupo barre los orbes antes de que el jefe los absorba."
+    ],
+    [
+     "Aturdimiento",
+     "Tras resolver la mecánica el jefe queda aturdido.",
+     "Vuelve al centro y fúndelo."
+    ]
+   ]
+  },
+  {
+   "titulo": "Reglas de botín",
+   "tipo": "lista",
+   "items": [
+    "Botín individual: un cofre por jugador y por jefe con nombre. Sin dados.",
+    "Tienes que estar **vivo** cuando cae y superar un pequeño mínimo de contribución.",
+    "Abrir el cofre cuesta **Odyle Energy**: ese es tu tope semanal real.",
+    "Desde el 22 de abril de 2026 parte de las Kina pasó del cubo a los jefes intermedios, y el nivel de recompensa final sube con los jefes matados: **no te saltes a Baumnute ni a Xyrepe**."
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "La cobertura es de abril de 2026, con grupos de 4. Desde el Chapter 1 (1 de julio) son 5 y se ajustaron patrones de algunos jefes sin detallar cuáles. Si ves otro número de marcas o setas que en un vídeo, fíate de tu cliente."
+  },
+  {
+   "titulo": "Después",
+   "tipo": "lista",
+   "items": [
+    "Haz **Hall of Illusion: Nazarak, Glassvein, Nathara** (misma puerta, resto del set Eroded Afterimage).",
+    "Gasta los **Yustiel's Trace** en el tablero de Daevanion."
+   ]
+  }
+ ]
 }

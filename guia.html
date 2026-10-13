@@ -8,7 +8,7 @@
 </head>
 <body>
 <main id="main"><p>Cargando…</p></main>
-<script src="js/comun.js?v=1"></script>
+<script src="js/comun.js?v=3"></script>
 <script src="data/indice.js?v=1"></script>
 <script>
 (function () {
@@ -21,7 +21,6 @@
     main.innerHTML = '<p class="sub"><a href="index.html#' + G.categoria + '">' + esc(CATEGORIAS[G.categoria] || G.categoria) + "</a></p>" +
       "<h1>" + md(G.titulo) + "</h1>" +
       '<div class="panel">' + md(G.resumen) + "</div>" + bloquesHTML(G.bloques) +
-      '<p class="fuente" style="margin-top:28px">Guía original (metaroad.gg): <a href="' + esc(G.fuente) + '" target="_blank" rel="noopener">' + esc(G.fuente) + "</a></p>" +
       (misma.length ? "<h2>Más de " + esc(CATEGORIAS[G.categoria] || "") + '</h2><div class="rejilla">' + misma.map(function (x) {
         return '<a class="guia-link" href="guia.html?g=' + x.slug + '">' + md(x.titulo) + "<small>" + md(x.resumen) + "</small></a>";
       }).join("") + "</div>" : "");

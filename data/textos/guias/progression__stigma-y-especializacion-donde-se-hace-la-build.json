@@ -1,135 +1,234 @@
 {
-  "slug": "progression__stigma-y-especializacion-donde-se-hace-la-build",
-  "categoria": "progression",
-  "titulo": "Stigma y especialización",
-  "fuente": "https://metaroad.gg/es/aion2/progression/stigma-y-especializacion-donde-se-hace-la-build",
-  "resumen": "No hay ascensión: tu build son los stigmas que equipas y las especializaciones de cada habilidad. Reparte fragmentos entre varios stigmas y sube tu rotación principal a nivel de habilidad 12 con nodos de Daevanion.",
-  "bloques": [
-    {
-      "titulo": "Las dos capas de la build",
-      "tipo": "tabla",
-      "columnas": ["Capa", "Qué es", "Cómo sube"],
-      "filas": [
-        ["**Stigma**", "Habilidades avanzadas de tu clase; equipas solo unas pocas", "**Fragmentos de stigma** (no puntos de habilidad)"],
-        ["**Especialización**", "Efectos alternativos de cada habilidad activa; solo unos pocos activos a la vez", "Se desbloquea con el **nivel de cada habilidad**"]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "AION 2 no tiene ascensión ni subclases: eliges una de ocho clases al crear el personaje y es para siempre. Todos los números son de Corea (activa desde noviembre de 2025, ~11 meses por delante del global)."
-    },
-    {
-      "titulo": "Lo que hacer ya",
-      "tipo": "tabla",
-      "columnas": ["Qué", "1.ª opción", "Opcional"],
-      "filas": [
-        ["Fragmentos de stigma", "Repártelos entre varios stigmas a nivel usable", "Profundizar cuando sepas qué stigmas usas en nivel máximo"],
-        ["Nivel de habilidad", "Rotación principal a **12** con nodos de Daevanion (2 especializaciones gratis)", "Hasta 20 solo en 4-5 habilidades que pulsas siempre"]
-      ]
-    },
-    {
-      "titulo": "Stigma: cómo han cambiado los números en Corea",
-      "tipo": "tabla",
-      "columnas": ["Fecha", "Stigmas por clase", "Equipados", "Tope de nivel"],
-      "filas": [
-        ["Noviembre 2025 (Season 1)", "12", "4", "20"],
-        ["Finales de marzo 2026 (25 de marzo)", "13 (uno nuevo por clase)", "5", "20"],
-        ["Chapter 1 (1 de julio de 2026)", "13", "6 (a nivel 50)", "25 (21-25 con fragmento superior que cae hacia nivel 46)"]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "El global parte de la Season 1 con injertos: lo más probable es **4 ranuras**, conjunto de 12 o 13 y tope **20**, pero nada está confirmado. Cuenta los stigmas en tu ventana de habilidades el primer día. El tope de stigma no es el tope de nivel del personaje."
-    },
-    {
-      "titulo": "Stigma: lo que sí está claro",
-      "tipo": "lista",
-      "items": [
-        "Las habilidades de maestría básicas se aprenden solas al llegar al nivel; suben con puntos hasta 10 y luego consumen objetos.",
-        "Los stigmas solo suben con **fragmentos**: subir de nivel más rápido no ayuda.",
-        "El coste en fragmentos sube **por tramos**: llevar uno al tope cuesta mucho más que varios a nivel bajo.",
-        "Desde finales de marzo de 2026 (Corea), maestría y stigmas **comparten espacio en la barra**: piensa en el loadout entero.",
-        "Los stigmas se desbloquean con una **misión** y las ranuras se abren en orden (rango de nivel sin confirmar: más o menos de la veintena a mediados de la treintena).",
-        "Están pensados para cambiarse según el contenido: loadout de mazmorra distinto al de asedio."
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Sin publicar o sin resolver: coste exacto de fragmentos por tramo, de dónde salen en global, qué niveles de stigma dan efectos especiales (las fuentes se contradicen) y si el reinicio es gratis (lo es en Corea desde el Chapter 1). Da por hecho que puede costar y mira tus tooltips."
-    },
-    {
-      "titulo": "Nivel de habilidad 20: la lista de materiales",
-      "tipo": "tabla",
-      "columnas": ["Fuente", "Niveles", "Nota"],
-      "filas": [
-        ["Puntos de habilidad (base)", "10", "Tope sin otros sistemas"],
-        ["Daevanion", "4", "Lo más barato"],
-        ["Anillo", "2", "—"],
-        ["Arcana", "4", "Techo más alto"]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Desglose coreano de abril de 2026. De 10 en adelante no subes jugando más horas, y cada nivel que pones en una habilidad no va a otra: no repartas cartas y grabados a partes iguales."
-    },
-    {
-      "titulo": "Puertas de especialización",
-      "tipo": "tabla",
-      "columnas": ["Nivel de habilidad", "Qué pasa"],
-      "filas": [
-        ["8", "Primer grupo de opciones"],
-        ["12", "Se abren más (fácil solo con nodos de Daevanion)"],
-        ["16", "Se abren más"],
-        ["20", "Tercera ranura según la lectura más respaldada"]
-      ]
-    },
-    {
-      "titulo": "¿Cuántas especializaciones activas a la vez? (lecturas coreanas)",
-      "tipo": "tabla",
-      "columnas": ["Fuente", "Lectura"],
-      "filas": [
-        ["Análisis de Templario (21 nov 2025)", "Una ranura en cada nivel 8, 12 y 16: tres a 16"],
-        ["Foro de consejos (25 nov 2025)", "Todas desbloqueadas a 16 pero solo 2 usables; la 3.ª a nivel 20"],
-        ["Prensa coreana (diciembre 2025)", "Tres colocaciones como recompensa de nivel 20"]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Todas coinciden en que son pocas y dependen del nivel de esa habilidad, no del personaje. Mira tu tooltip antes de gastar."
-    },
-    {
-      "titulo": "Maestría vs. stigma",
-      "tipo": "tabla",
-      "columnas": ["Tipo", "Especialización"],
-      "filas": [
-        ["Habilidad de maestría", "Cada nivel te deja **elegir** una opción"],
-        ["Habilidad de stigma", "Las opciones **se activan solas** al llegar al nivel: concentra fragmentos en los stigmas que pulsas (sin llevar uno solo al tope)"]
-      ]
-    },
-    {
-      "titulo": "Presets de habilidades (Corea, 7 de enero de 2026)",
-      "tipo": "lista",
-      "items": [
-        "Guardan distribución de habilidades y elecciones de especialización de maestría; cambias al instante (PvE / PvP).",
-        "Los niveles de habilidad se comparten entre presets: cambias elecciones, no inversión.",
-        "No reembolsan puntos de stigma: no es un botón de reinicio.",
-        "Es Season 2: no se sabe si estarán en global. El coste de cambiar especialización no está publicado; planifica como barato pero no gratis."
-      ]
-    },
-    {
-      "titulo": "Día de lanzamiento",
-      "tipo": "pasos",
-      "items": [
-        "Lee las notas del parche: ranuras de stigma, tamaño del conjunto y tope de stigma.",
-        "Abre una habilidad que vayas a pulsar y cuenta las ranuras de especialización del tooltip; compáralo con las tres lecturas.",
-        "Lee el tooltip de un stigma en un nivel que otorgue efecto.",
-        "Trata como temporal toda especialización elegida antes del tope.",
-        "Cuenta con que el loadout cambie: en Corea se movieron ranuras, topes y costes en un año."
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Solo el Gladiador tiene una build de stigma resuelta en público por la comunidad coreana. Para las otras siete clases no hay loadout respaldado ni recomendación de atributos."
-    }
-  ]
+ "slug": "progression__stigma-y-especializacion-donde-se-hace-la-build",
+ "categoria": "progression",
+ "titulo": "Stigma y especialización",
+ "resumen": "No hay ascensión: tu build son los stigmas que equipas y las especializaciones de cada habilidad. Reparte fragmentos entre varios stigmas y sube tu rotación principal a nivel de habilidad 12 con nodos de Daevanion.",
+ "bloques": [
+  {
+   "titulo": "Las dos capas de la build",
+   "tipo": "tabla",
+   "columnas": [
+    "Capa",
+    "Qué es",
+    "Cómo sube"
+   ],
+   "filas": [
+    [
+     "**Stigma**",
+     "Habilidades avanzadas de tu clase; equipas solo unas pocas",
+     "**Fragmentos de stigma** (no puntos de habilidad)"
+    ],
+    [
+     "**Especialización**",
+     "Efectos alternativos de cada habilidad activa; solo unos pocos activos a la vez",
+     "Se desbloquea con el **nivel de cada habilidad**"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "AION 2 no tiene ascensión ni subclases: eliges una de ocho clases al crear el personaje y es para siempre. Todos los números son de Corea (activa desde noviembre de 2025, ~11 meses por delante del global)."
+  },
+  {
+   "titulo": "Lo que hacer ya",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "1.ª opción",
+    "Opcional"
+   ],
+   "filas": [
+    [
+     "Fragmentos de stigma",
+     "Repártelos entre varios stigmas a nivel usable",
+     "Profundizar cuando sepas qué stigmas usas en nivel máximo"
+    ],
+    [
+     "Nivel de habilidad",
+     "Rotación principal a **12** con nodos de Daevanion (2 especializaciones gratis)",
+     "Hasta 20 solo en 4-5 habilidades que pulsas siempre"
+    ]
+   ]
+  },
+  {
+   "titulo": "Stigma: cómo han cambiado los números en Corea",
+   "tipo": "tabla",
+   "columnas": [
+    "Fecha",
+    "Stigmas por clase",
+    "Equipados",
+    "Tope de nivel"
+   ],
+   "filas": [
+    [
+     "Noviembre 2025 (Season 1)",
+     "12",
+     "4",
+     "20"
+    ],
+    [
+     "Finales de marzo 2026 (25 de marzo)",
+     "13 (uno nuevo por clase)",
+     "5",
+     "20"
+    ],
+    [
+     "Chapter 1 (1 de julio de 2026)",
+     "13",
+     "6 (a nivel 50)",
+     "25 (21-25 con fragmento superior que cae hacia nivel 46)"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "El global parte de la Season 1 con injertos: lo más probable es **4 ranuras**, conjunto de 12 o 13 y tope **20**, pero nada está confirmado. Cuenta los stigmas en tu ventana de habilidades el primer día. El tope de stigma no es el tope de nivel del personaje."
+  },
+  {
+   "titulo": "Stigma: lo que sí está claro",
+   "tipo": "lista",
+   "items": [
+    "Las habilidades de maestría básicas se aprenden solas al llegar al nivel; suben con puntos hasta 10 y luego consumen objetos.",
+    "Los stigmas solo suben con **fragmentos**: subir de nivel más rápido no ayuda.",
+    "El coste en fragmentos sube **por tramos**: llevar uno al tope cuesta mucho más que varios a nivel bajo.",
+    "Desde finales de marzo de 2026 (Corea), maestría y stigmas **comparten espacio en la barra**: piensa en el loadout entero.",
+    "Los stigmas se desbloquean con una **misión** y las ranuras se abren en orden (rango de nivel sin confirmar: más o menos de la veintena a mediados de la treintena).",
+    "Están pensados para cambiarse según el contenido: loadout de mazmorra distinto al de asedio."
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Sin publicar o sin resolver: coste exacto de fragmentos por tramo, de dónde salen en global, qué niveles de stigma dan efectos especiales (las fuentes se contradicen) y si el reinicio es gratis (lo es en Corea desde el Chapter 1). Da por hecho que puede costar y mira tus tooltips."
+  },
+  {
+   "titulo": "Nivel de habilidad 20: la lista de materiales",
+   "tipo": "tabla",
+   "columnas": [
+    "Fuente",
+    "Niveles",
+    "Nota"
+   ],
+   "filas": [
+    [
+     "Puntos de habilidad (base)",
+     "10",
+     "Tope sin otros sistemas"
+    ],
+    [
+     "Daevanion",
+     "4",
+     "Lo más barato"
+    ],
+    [
+     "Anillo",
+     "2",
+     "—"
+    ],
+    [
+     "Arcana",
+     "4",
+     "Techo más alto"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Desglose coreano de abril de 2026. De 10 en adelante no subes jugando más horas, y cada nivel que pones en una habilidad no va a otra: no repartas cartas y grabados a partes iguales."
+  },
+  {
+   "titulo": "Puertas de especialización",
+   "tipo": "tabla",
+   "columnas": [
+    "Nivel de habilidad",
+    "Qué pasa"
+   ],
+   "filas": [
+    [
+     "8",
+     "Primer grupo de opciones"
+    ],
+    [
+     "12",
+     "Se abren más (fácil solo con nodos de Daevanion)"
+    ],
+    [
+     "16",
+     "Se abren más"
+    ],
+    [
+     "20",
+     "Tercera ranura según la lectura más respaldada"
+    ]
+   ]
+  },
+  {
+   "titulo": "¿Cuántas especializaciones activas a la vez? (lecturas coreanas)",
+   "tipo": "tabla",
+   "columnas": [
+    "Fuente",
+    "Lectura"
+   ],
+   "filas": [
+    [
+     "Análisis de Templario (21 nov 2025)",
+     "Una ranura en cada nivel 8, 12 y 16: tres a 16"
+    ],
+    [
+     "Foro de consejos (25 nov 2025)",
+     "Todas desbloqueadas a 16 pero solo 2 usables; la 3.ª a nivel 20"
+    ],
+    [
+     "Prensa coreana (diciembre 2025)",
+     "Tres colocaciones como recompensa de nivel 20"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Todas coinciden en que son pocas y dependen del nivel de esa habilidad, no del personaje. Mira tu tooltip antes de gastar."
+  },
+  {
+   "titulo": "Maestría vs. stigma",
+   "tipo": "tabla",
+   "columnas": [
+    "Tipo",
+    "Especialización"
+   ],
+   "filas": [
+    [
+     "Habilidad de maestría",
+     "Cada nivel te deja **elegir** una opción"
+    ],
+    [
+     "Habilidad de stigma",
+     "Las opciones **se activan solas** al llegar al nivel: concentra fragmentos en los stigmas que pulsas (sin llevar uno solo al tope)"
+    ]
+   ]
+  },
+  {
+   "titulo": "Presets de habilidades (Corea, 7 de enero de 2026)",
+   "tipo": "lista",
+   "items": [
+    "Guardan distribución de habilidades y elecciones de especialización de maestría; cambias al instante (PvE / PvP).",
+    "Los niveles de habilidad se comparten entre presets: cambias elecciones, no inversión.",
+    "No reembolsan puntos de stigma: no es un botón de reinicio.",
+    "Es Season 2: no se sabe si estarán en global. El coste de cambiar especialización no está publicado; planifica como barato pero no gratis."
+   ]
+  },
+  {
+   "titulo": "Día de lanzamiento",
+   "tipo": "pasos",
+   "items": [
+    "Lee las notas del parche: ranuras de stigma, tamaño del conjunto y tope de stigma.",
+    "Abre una habilidad que vayas a pulsar y cuenta las ranuras de especialización del tooltip; compáralo con las tres lecturas.",
+    "Lee el tooltip de un stigma en un nivel que otorgue efecto.",
+    "Trata como temporal toda especialización elegida antes del tope.",
+    "Cuenta con que el loadout cambie: en Corea se movieron ranuras, topes y costes en un año."
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Solo el Gladiador tiene una build de stigma resuelta en público por la comunidad coreana. Para las otras siete clases no hay loadout respaldado ni recomendación de atributos."
+  }
+ ]
 }

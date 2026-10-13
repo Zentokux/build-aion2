@@ -1,6 +1,4 @@
-# Páginas y textos originales de metaroad: solo para generar, no se publican
-tools/fuentes/
-tools/crudo/
+# Herramientas y fuentes: solo en local
+tools/
 respaldo/
 __pycache__/
-tools/referencia/

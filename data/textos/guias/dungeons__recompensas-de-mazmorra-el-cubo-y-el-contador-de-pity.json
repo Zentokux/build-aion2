@@ -1,207 +1,206 @@
 {
-  "slug": "dungeons__recompensas-de-mazmorra-el-cubo-y-el-contador-de-pity",
-  "categoria": "dungeons",
-  "titulo": "Recompensas de mazmorra: el cubo y el pity",
-  "fuente": "https://metaroad.gg/es/aion2/dungeons/recompensas-de-mazmorra-el-cubo-y-el-contador-de-pity",
-  "resumen": "El clear no paga: paga abrir el Odyle Energy Cube, que cuesta Odyle Energy. El pity se llena por mazmorra y no incluye armas; mata siempre a los 3 jefes con nombre y sigue vivo.",
-  "bloques": [
-    {
-      "tipo": "aviso",
-      "texto": "NC nunca ha publicado la regla de botín por escrito: sale de lo que cuentan los jugadores coreanos. Pity, mínimos de contribución y tasas son números de Corea (sobre todo tras el Chapter 1, julio 2026), no confirmados para global."
-    },
-    {
-      "titulo": "Reglas en seis líneas",
-      "tipo": "tabla",
-      "columnas": [
-        "Regla",
-        "Qué implica"
-      ],
-      "filas": [
-        [
-          "Hacer el clear no paga; abrir el cubo sí",
-          "El cubo cuesta Odyle Energy"
-        ],
-        [
-          "Wipes y carreos son gratis",
-          "Gastas al salir, no al entrar. Hacer contenido por debajo de tu nivel cuesta lo mismo en energía"
-        ],
-        [
-          "Pity por mazmorra, sin armas",
-          "Céntrate en 1-2 mazmorras"
-        ],
-        [
-          "3 jefes con nombre por Expedition y Transcendence",
-          "Saltarte uno baja la recompensa final"
-        ],
-        [
-          "Cofre solo tuyo",
-          "Sigue vivo y haz el 1 % del trabajo"
-        ],
-        [
-          "Fragmentos de Sync Stone",
-          "Solo en Conquest Hard"
-        ]
-      ]
-    },
-    {
-      "titulo": "El cubo (Odyle Energy Cube)",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Detalle"
-      ],
-      "filas": [
-        [
-          "Coste",
-          "Normalmente igual sea cual sea la mazmorra o dificultad"
-        ],
-        [
-          "Excepción publicada",
-          "Citadel of the Fallen Daeva: **40** Normal · **60** Hard (nota oficial Chapter 1, 1-jul-2026), con recompensas proporcionalmente mejores"
-        ],
-        [
-          "Tickets de entrada",
-          "Eliminados en Expedition y Transcendence (Chapter 1)"
-        ],
-        [
-          "Carrear amigos",
-          "Intentos y recompensas cuentan aparte: entra y no abras el cubo"
-        ]
-      ]
-    },
-    {
-      "titulo": "Contador de pity (Cube Condensed Energy)",
-      "tipo": "tabla",
-      "columnas": [
-        "Nivel de mazmorra",
-        "Clears para la garantía",
-        "Qué da"
-      ],
-      "filas": [
-        [
-          "Nivel 1",
-          "14",
-          "1 pieza de equipo de esa mazmorra"
-        ],
-        [
-          "Nivel 2",
-          "21",
-          "1 pieza"
-        ],
-        [
-          "Nivel 3",
-          "28",
-          "1 pieza"
-        ],
-        [
-          "Nivel 4",
-          "28",
-          "2 piezas"
-        ]
-      ]
-    },
-    {
-      "titulo": "Ojo con el pity",
-      "tipo": "lista",
-      "items": [
-        "Cubre armadura y accesorios, **no armas**. Para el arma ten plan B: crafteo, cadena de raid o mercado.",
-        "Cada mazmorra tiene su contador: repartir clears en 6 mazmorras deja 6 contadores a medias."
-      ]
-    },
-    {
-      "titulo": "Botín individual",
-      "tipo": "tabla",
-      "columnas": [
-        "Regla",
-        "Detalle"
-      ],
-      "filas": [
-        [
-          "Sin tiradas",
-          "Cada jefe con nombre te da tu propio cofre"
-        ],
-        [
-          "Muerto = sin botín",
-          "Si estás muerto cuando sale, se pierde. Levántate antes de que se resuelva"
-        ],
-        [
-          "Mínimo de contribución",
-          "Era 3 %; el Chapter 1 lo bajó a **1 %**. Es anti-leech, no quita nada a los demás"
-        ],
-        [
-          "Jefes con nombre",
-          "3 en las 11 Expedition y en las 3 Transcendence nuevas (estas, más cuota de bichos). La recompensa final escala con los que mates"
-        ]
-      ]
-    },
-    {
-      "titulo": "Truco de Sanctuary (Abyssal Forge)",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Detalle"
-      ],
-      "filas": [
-        [
-          "Jefes 1 y 2",
-          "Cada uno suelta su propio Abyssal Chest"
-        ],
-        [
-          "Cuota semanal",
-          "Solo se gasta al morir el jefe final"
-        ],
-        [
-          "Patrón coreano",
-          "Matar jefes 1 y 2 varias veces por semana y al final solo lo que permita la cuota: más cofres que clears"
-        ]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "Está por ver si ese truco de Abyssal Forge sobrevive en la versión global."
-    },
-    {
-      "titulo": "Kina y materiales del cubo",
-      "tipo": "tabla",
-      "columnas": [
-        "Recompensa",
-        "Detalle"
-      ],
-      "filas": [
-        [
-          "Kina",
-          "Escala con nivel y dificultad: cientos de miles en Conquest Normal de nivel bajo, varios millones en el Conquest Hard más alto de Corea"
-        ],
-        [
-          "Kina de jefes intermedios",
-          "Desde el 22-abr-2026 parte de la Kina sale de ellos: saltarte uno cuesta Kina directa"
-        ],
-        [
-          "Kina sellada",
-          "El Chapter 1 selló la Kina de algunas mazmorras: compruébalo antes de pasarla a otro personaje"
-        ],
-        [
-          "Sync Stones y fragmentos",
-          "De Expedition y Sanctuary; ajustan opciones del equipo. Fragmentos + Kina = piedras superiores. Fragmentos **solo en Hard**"
-        ],
-        [
-          "Piedra filosofal",
-          "Nivel más alto de Expedition"
-        ],
-        [
-          "Arcana",
-          "Transcendence: la mayor subida de nivel de objeto de una vez. Prioriza Transcendence si tienes poca energía"
-        ]
-      ]
-    },
-    {
-      "titulo": "Para esta noche",
-      "tipo": "pasos",
-      "items": [
-        "Elige una mazmorra y mete ahí los clears de la semana para completar un pity.",
-        "Mata a los 3 jefes con nombre aunque alguien pida saltarse uno.",
-        "Si tus piedras no avanzan, pasa de Conquest Normal a Hard."
-      ]
-    }
-  ]
+ "slug": "dungeons__recompensas-de-mazmorra-el-cubo-y-el-contador-de-pity",
+ "categoria": "dungeons",
+ "titulo": "Recompensas de mazmorra: el cubo y el pity",
+ "resumen": "El clear no paga: paga abrir el Odyle Energy Cube, que cuesta Odyle Energy. El pity se llena por mazmorra y no incluye armas; mata siempre a los 3 jefes con nombre y sigue vivo.",
+ "bloques": [
+  {
+   "tipo": "aviso",
+   "texto": "NC nunca ha publicado la regla de botín por escrito: sale de lo que cuentan los jugadores coreanos. Pity, mínimos de contribución y tasas son números de Corea (sobre todo tras el Chapter 1, julio 2026), no confirmados para global."
+  },
+  {
+   "titulo": "Reglas en seis líneas",
+   "tipo": "tabla",
+   "columnas": [
+    "Regla",
+    "Qué implica"
+   ],
+   "filas": [
+    [
+     "Hacer el clear no paga; abrir el cubo sí",
+     "El cubo cuesta Odyle Energy"
+    ],
+    [
+     "Wipes y carreos son gratis",
+     "Gastas al salir, no al entrar. Hacer contenido por debajo de tu nivel cuesta lo mismo en energía"
+    ],
+    [
+     "Pity por mazmorra, sin armas",
+     "Céntrate en 1-2 mazmorras"
+    ],
+    [
+     "3 jefes con nombre por Expedition y Transcendence",
+     "Saltarte uno baja la recompensa final"
+    ],
+    [
+     "Cofre solo tuyo",
+     "Sigue vivo y haz el 1 % del trabajo"
+    ],
+    [
+     "Fragmentos de Sync Stone",
+     "Solo en Conquest Hard"
+    ]
+   ]
+  },
+  {
+   "titulo": "El cubo (Odyle Energy Cube)",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Detalle"
+   ],
+   "filas": [
+    [
+     "Coste",
+     "Normalmente igual sea cual sea la mazmorra o dificultad"
+    ],
+    [
+     "Excepción publicada",
+     "Citadel of the Fallen Daeva: **40** Normal · **60** Hard (nota oficial Chapter 1, 1-jul-2026), con recompensas proporcionalmente mejores"
+    ],
+    [
+     "Tickets de entrada",
+     "Eliminados en Expedition y Transcendence (Chapter 1)"
+    ],
+    [
+     "Carrear amigos",
+     "Intentos y recompensas cuentan aparte: entra y no abras el cubo"
+    ]
+   ]
+  },
+  {
+   "titulo": "Contador de pity (Cube Condensed Energy)",
+   "tipo": "tabla",
+   "columnas": [
+    "Nivel de mazmorra",
+    "Clears para la garantía",
+    "Qué da"
+   ],
+   "filas": [
+    [
+     "Nivel 1",
+     "14",
+     "1 pieza de equipo de esa mazmorra"
+    ],
+    [
+     "Nivel 2",
+     "21",
+     "1 pieza"
+    ],
+    [
+     "Nivel 3",
+     "28",
+     "1 pieza"
+    ],
+    [
+     "Nivel 4",
+     "28",
+     "2 piezas"
+    ]
+   ]
+  },
+  {
+   "titulo": "Ojo con el pity",
+   "tipo": "lista",
+   "items": [
+    "Cubre armadura y accesorios, **no armas**. Para el arma ten plan B: crafteo, cadena de raid o mercado.",
+    "Cada mazmorra tiene su contador: repartir clears en 6 mazmorras deja 6 contadores a medias."
+   ]
+  },
+  {
+   "titulo": "Botín individual",
+   "tipo": "tabla",
+   "columnas": [
+    "Regla",
+    "Detalle"
+   ],
+   "filas": [
+    [
+     "Sin tiradas",
+     "Cada jefe con nombre te da tu propio cofre"
+    ],
+    [
+     "Muerto = sin botín",
+     "Si estás muerto cuando sale, se pierde. Levántate antes de que se resuelva"
+    ],
+    [
+     "Mínimo de contribución",
+     "Era 3 %; el Chapter 1 lo bajó a **1 %**. Es anti-leech, no quita nada a los demás"
+    ],
+    [
+     "Jefes con nombre",
+     "3 en las 11 Expedition y en las 3 Transcendence nuevas (estas, más cuota de bichos). La recompensa final escala con los que mates"
+    ]
+   ]
+  },
+  {
+   "titulo": "Truco de Sanctuary (Abyssal Forge)",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Detalle"
+   ],
+   "filas": [
+    [
+     "Jefes 1 y 2",
+     "Cada uno suelta su propio Abyssal Chest"
+    ],
+    [
+     "Cuota semanal",
+     "Solo se gasta al morir el jefe final"
+    ],
+    [
+     "Patrón coreano",
+     "Matar jefes 1 y 2 varias veces por semana y al final solo lo que permita la cuota: más cofres que clears"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Está por ver si ese truco de Abyssal Forge sobrevive en la versión global."
+  },
+  {
+   "titulo": "Kina y materiales del cubo",
+   "tipo": "tabla",
+   "columnas": [
+    "Recompensa",
+    "Detalle"
+   ],
+   "filas": [
+    [
+     "Kina",
+     "Escala con nivel y dificultad: cientos de miles en Conquest Normal de nivel bajo, varios millones en el Conquest Hard más alto de Corea"
+    ],
+    [
+     "Kina de jefes intermedios",
+     "Desde el 22-abr-2026 parte de la Kina sale de ellos: saltarte uno cuesta Kina directa"
+    ],
+    [
+     "Kina sellada",
+     "El Chapter 1 selló la Kina de algunas mazmorras: compruébalo antes de pasarla a otro personaje"
+    ],
+    [
+     "Sync Stones y fragmentos",
+     "De Expedition y Sanctuary; ajustan opciones del equipo. Fragmentos + Kina = piedras superiores. Fragmentos **solo en Hard**"
+    ],
+    [
+     "Piedra filosofal",
+     "Nivel más alto de Expedition"
+    ],
+    [
+     "Arcana",
+     "Transcendence: la mayor subida de nivel de objeto de una vez. Prioriza Transcendence si tienes poca energía"
+    ]
+   ]
+  },
+  {
+   "titulo": "Para esta noche",
+   "tipo": "pasos",
+   "items": [
+    "Elige una mazmorra y mete ahí los clears de la semana para completar un pity.",
+    "Mata a los 3 jefes con nombre aunque alguien pida saltarse uno.",
+    "Si tus piedras no avanzan, pasa de Conquest Normal a Hard."
+   ]
+  }
+ ]
 }

@@ -1,221 +1,683 @@
 {
-  "clase": "assassin",
-  "nombre": "Sicario",
-  "fuente": "https://metaroad.gg/es/aion2/build-guides/build-pve-de-sicario-burst",
-  "resumen": "Sicario de burst JcE para mazmorras a nivel 45 con equipo crafteado de Dragon Lord. Tu daño es **Estocada al corazón**: con su spec 5 cada crítico reinicia su enfriamiento y **Clon ilusorio** lo elimina del todo hasta 20 s, así que la ventana es spamearla. La otra regla: vive a la espalda del jefe.",
-  "pros": [
-    "Burst enorme a un solo objetivo con Clon ilusorio activo",
-    "Estocada al corazón se reinicia sola con cada crítico",
-    "Explosión de insignia y la cadena de Rugido bestial mantienen el daño entre ventanas",
-    "Ataque sigiloso te pone a la espalda del jefe al instante",
-    "El equipo crafteado conserva sus líneas de Soul Binding al subir de tier",
-    "Con una línea de la Brújula, Eliminación de impacto da +50% de Tolerancia a Daño JcE mientras te liberas de un aturdimiento"
-  ],
-  "contras": [
-    "Frágil: sin bloqueo, poca defensa y siempre cuerpo a cuerpo",
-    "Si pierdes la espalda del jefe, tu daño se hunde",
-    "Depende de la tasa de crítico: el equipo temprano se siente flojo",
-    "Los combates largos de global dejan tiempo muerto entre Clones",
-    "Solo 4 ranuras de stigma en el lanzamiento y el cuarteto de burst las ocupa todas"
-  ],
-  "presets": [
-    {"nombre_en": "Boss and dungeons", "nombre": "Jefes y mazmorras", "uso": "Tu configuración normal de daño contra jefes, con Puñal de Triniel."},
-    {"nombre_en": "Progression and new fights", "nombre": "Progresión y combates nuevos", "uso": "Cuando aún aprendes un combate: cambia Puñal de Triniel por Postura de evasión."},
-    {"nombre_en": "Farming and leveling", "nombre": "Farmeo y subida de nivel", "uso": "Grupos de monstruos y subir de nivel: entra Tiro de daga sombría."}
-  ],
-  "tecla_macro": "Una tecla que mantienes pulsada (no dice cuál). El primer día basta una macro sencilla en un botón del ratón.",
-  "macros_por_preset": [
-    {"preset_en": "Boss and dungeons", "pasos": ["Explosión de insignia", "Estocada al corazón", "Emboscada", "Corte rápido"], "retardo_ms": 10, "nota": "En el juego son 2 pasos: la tecla de daño (Explosión de insignia con Estocada al corazón y Emboscada apiladas debajo) y Corte rápido."},
-    {"preset_en": "Progression and new fights", "pasos": ["Explosión de insignia", "Estocada al corazón", "Emboscada", "Corte rápido"], "retardo_ms": 10, "nota": "Misma macro que en jefes."},
-    {"preset_en": "Farming and leveling", "pasos": ["Explosión de insignia", "Estocada al corazón", "Rugido bestial", "Corte rápido"], "retardo_ms": 10, "nota": "Rugido bestial sustituye a Emboscada: en un grupo de monstruos no hay espalda que cuidar."}
-  ],
-  "secciones": {
-    "equipo": [
-      {"titulo": "Ruta del arma", "tipo": "tabla", "columnas": ["Etapa", "Daga", "Guarda", "Nota"], "filas": [
-        ["Inicio (nivel de objeto 70)", "Aulamus Dagger (Urugugu Canyon)", "Vakron Guard (Vakron Sky Island)", ""],
-        ["Fire Temple (nivel de objeto 86)", "Enraged Kromede Silver Dagger", "Nuakum Guard", "La daga de Kromede solo tiene 3 líneas de Soul Binding"],
-        ["Alternativa (86)", "Abyssal Dagger", "Abyssal Guard", "4 líneas"],
-        ["Objetivo crafteado (78)", "White Dragon Lord Dagger (Elyos) / Dark Dragon Lord (Asmodian)", "White Dragon Lord Guard / Dark Dragon Lord", "5 líneas que se conservan al subir de tier"]
-      ]},
-      {"tipo": "aviso", "texto": "Nadie ha publicado una ruta de mazmorras de Sicario para el lanzamiento: esta ruta es recomendación de metaroad, copiando lo que farmean las otras clases cuerpo a cuerpo."},
-      {"titulo": "Claves del equipo", "tipo": "lista", "items": [
-        "El juego muestra dos dagas, pero la mano secundaria es una **guarda**: la build es daga + guarda.",
-        "Primero termina la historia y las secundarias; luego pasa de mazmorra a crafteado. Casi todos acaban mezclando piezas.",
-        "Orden de crafteo: daga, guarda y después accesorios.",
-        "El crafteado (78) está por debajo de Fire Temple (86), pero da igual: sube de tier a Splendent (86), Wise (94) y Splendent Wise (102). En Asmodian: Splendent Dark, Ebony y Splendent Ebony.",
-        "Sube la daga a **+10** aprox. antes que nada: es el mayor salto de daño al principio."
-      ]},
-      {"titulo": "Reglas de Soul Binding", "tipo": "lista", "items": [
-        "Las líneas de valor variable (como Golpe) en las primeras ranuras, que son las que vas a rerollear.",
-        "Armadura y accesorios aceptan líneas de pasivas; solo los **anillos** admiten activas.",
-        "Nunca una línea de habilidad en la daga ni en la guarda: ahí valen más las de daño.",
-        "Precisión se queda en el arma porque da Crítico además de Precisión. Si vas sobrado de crítico, cámbiala por **Acierto de Multigolpe**.",
-        "Las grebas llevan **Tolerancia a Daño** en vez de línea de habilidad: no tienes bloqueo y es la única armadura que la saca."
-      ]},
-      {"tipo": "aviso", "texto": "La línea extra de la Piedra filosofal se pierde al transferir o subir de tier. Todo lo demás se conserva."},
-      {"titulo": "Manastones", "tipo": "tabla", "columnas": ["Pieza", "1.ª opción", "Nota"], "filas": [
-        ["Pieza definitiva", "Amplificación de Daño por la Espalda, luego Weapon Damage Boost y Critical Damage Boost", "Deja siempre 1 piedra de Crítico por pieza: Estocada al corazón vive de críticos"],
-        ["Pieza que vas a cambiar", "Ataque, Crítico y Precisión normales", "Las manastones se pierden al transferir: no gastes las caras"]
-      ]},
-      {"tipo": "aviso", "texto": "El crítico tiene tope del 50% y la Resistencia Crítica del jefe lo baja. Pasado ese punto rinden más Ataque por la Espalda y Daño de Arma. Corte rápido con spec 5 ya es crítico siempre."},
-      {"titulo": "Accesorios", "tipo": "tabla", "columnas": ["Qué", "1.ª opción", "Nota"], "filas": [
-        ["Brazaletes", "Abyssal Bracelet: Destrucción, Muerte, Sabiduría, Fantasía", "Muerte = Crítico, Sabiduría = Golpe, Fantasía = Reducción de Tiempo de Enfriamiento para el Clon"],
-        ["Amuleto", "Revelation Amulet", "Lleva Amplificación de Daño de Arma. Fierce Battle Amulet es el de PvP"],
-        ["Cinturón y runas", "Noble Belt + 2 Clash Rune", "Elección de metaroad; no hay una específica de Sicario"]
-      ]},
-      {"titulo": "Arcana", "tipo": "tabla", "columnas": ["Carta", "Estadística de dios", "Líneas a pescar"], "filas": [
-        ["Parchment of Vigor", "Vida: Puntos de Vida", "Estocada al corazón, Corte rápido, Explosión de insignia, Ataque sigiloso"],
-        ["Compass of Magic", "Muerte: Crítico", "Rugido bestial, Emboscada, Desenfreno de tormenta, Eliminación de impacto"],
-        ["Bell of Magic", "Destrucción: Ataque", "Postura de agresión, Postura de emboscada, Maximización de sexto sentido"],
-        ["Mirror of Magic", "Sabiduría: Golpe", "Impacto trasero, Explotar debilidades, Acierto de impacto, Determinación"],
-        ["Chalice of Vigor", "Tiempo: Velocidad de Hechizo", "Cualquiera: Explotar debilidades, Estocada al corazón, Postura de agresión, Impacto trasero"]
-      ]},
-      {"titulo": "Consejos de Arcana", "tipo": "lista", "items": [
-        "Caen en las mazmorras de Transcendence. Cada carta da su estadística de dios y hasta 4 líneas de habilidad de su propio pool.",
-        "Sin bonus de 4 piezas a propósito: Crítico (Brújula) y Golpe (Espejo) valen más al principio.",
-        "El Pergamino es el grind: confórmate con 2 de las 4 líneas que quieres.",
-        "El Cáliz es la única carta que saca cualquier habilidad: úsalo para tapar lo que no llegue a su nivel.",
-        "El planificador guarda una habilidad por carta: tómalo como el mínimo."
-      ]}
-    ],
-    "habilidades": [
-      {"tipo": "aviso", "texto": "Consigue todos los fragmentos de puntos de habilidad cuanto antes: Estocada al corazón y las tres pasivas principales escalan con cada nivel."},
-      {"titulo": "Activas: por qué y cuándo cambiar", "tipo": "tabla", "columnas": ["Habilidad", "Por qué importa", "Cambio posible"], "filas": [
-        ["Estocada al corazón", "Spec 5 reinicia el enfriamiento con cada crítico (imprescindible); spec 1 cura, spec 4 da Multigolpe", "Con poco crítico, spec 3 en lugar de la 1"],
-        ["Explosión de insignia", "Conserva 2 Insignias tras dispararse y 3 s menos de enfriamiento; pega más con 5 Insignias", "Subiendo de nivel, spec 3 primero. Si el Pergamino la lleva a 20, spec 2 como tercera"],
-        ["Corte rápido", "Ataque básico. Spec 4 quita 1 s a Explosión de insignia por golpe; spec 5 ignora Bloqueo/Evasión y siempre es crítico", "A 20, spec 3 (o spec 2 si necesitas aguante). Subiendo, spec 1 ayuda con Maná"],
-        ["Rugido bestial", "Cadena de 3 golpes, cada uno graba una Insignia y quita 1 s a Ataque sigiloso", "Spec 3 a 20. Necesita la Brújula para pasar de 14"],
-        ["Emboscada", "2 Insignias por la espalda y absorción de vida", "Con la Brújula a 16, spec 5 sustituye a la 1"],
-        ["Desenfreno de tormenta", "Solo contra objetivo en stagger; guárdala para esa ventana", "A 16 (Brújula), spec 5: −1 s a todos tus enfriamientos por golpe"],
-        ["Ataque sigiloso", "Te teletransporta a la espalda y da +20% de Amplificación de Daño Crítico 10 s", ""],
-        ["Eliminación de impacto", "Rompe aturdimientos; la Reducción de Tiempo de Enfriamiento no le afecta", "A 16 (Brújula), spec 5: +50% de Tolerancia a Daño JcE"],
-        ["Corte de destello, Infiltración, Corte torbellino, Caída sombría", "Utilidad. Infiltración solo tras esquiva o en vuelo; Corte torbellino al evadir; Caída sombría con objetivo aturdido", ""]
-      ]},
-      {"titulo": "Cómo llega Estocada al corazón a 20", "tipo": "pasos", "items": [
-        "Puntos de habilidad: hasta 10.",
-        "4 tableros de Daevanion: +4.",
-        "2 anillos con línea de habilidad: +2 (16 para Estocada al corazón, Corte rápido y Explosión de insignia).",
-        "Pergamino: sube Estocada al corazón a 20. Rugido bestial no tiene línea de anillo y necesita la Brújula (+4).",
-        "Specs: 2.ª ranura a 12, 3.ª solo a 20; la spec 5 pide 16. Por eso solo Estocada al corazón lleva tres."
-      ]},
-      {"titulo": "Pasivas", "tipo": "tabla", "columnas": ["Pasiva", "Qué te da", "Prioridad"], "filas": [
-        ["Impacto trasero", "Amplificación de Daño por la Espalda y de JcE (12,5% cada una a 20); Pacto de celeridad la multiplica", "Máxima"],
-        ["Postura de agresión", "25% de Amplificación de Daño Crítico a 20; Pacto de celeridad la multiplica a 15", "Alta"],
-        ["Explotar debilidades", "+290 de Crítico a 20 y probabilidad de +15% de Ataque; Clon ilusorio la multiplica a 15", "Alta"],
-        ["Acierto de impacto", "Acierto de Tipo Impacto y algo de Golpe (en global da Golpe)", "Media"],
-        ["Determinación", "Daño extra contra objetivos por debajo del 30% de vida", "Media"],
-        ["Maximización de sexto sentido / Pacto de resurrección", "Cura al esquivar; cura del 35% una vez por minuto al bajar al 10%", "Súbelas si mueres mucho aprendiendo"]
-      ]},
-      {"tipo": "aviso", "texto": "Los niveles de las pasivas y de los stigmas son recomendación de metaroad: ninguna guía publicada los da."},
-      {"tipo": "aviso", "texto": "PvP: configuración aparte de evasión con Corte torbellino a 20 y stigmas como Evasion Contract, Smoke Bomb y Spiral Slice (quita buffs). La guía no cubre más PvP."}
-    ],
-    "estigmas": [
-      {"titulo": "Qué stigmas lleva cada preset", "tipo": "tabla", "columnas": ["Preset", "Stigmas", "Por qué"], "filas": [
-        ["Jefes y mazmorras", "Clon ilusorio, Pacto de celeridad, Colmillo salvaje, Puñal de Triniel", "El cuarteto de burst completo"],
-        ["Progresión y combates nuevos", "Clon ilusorio, Pacto de celeridad, Colmillo salvaje, Postura de evasión", "Una esquiva garantizada mientras aprendes el combate"],
-        ["Farmeo y subida de nivel", "Tiro de daga sombría, Colmillo salvaje, Clon ilusorio, Pacto de celeridad", "Tiro a 20 m con Slow que se reinicia al matar (nivel 10)"]
-      ]},
-      {"titulo": "Para qué sirve cada uno", "tipo": "tabla", "columnas": ["Stigma", "Qué hace", "Nivel objetivo"], "filas": [
-        ["Clon ilusorio", "Quita el enfriamiento de Estocada al corazón (10 s a nv 1, 20 s a nv 20) y añade 20% de daño extra. Nv 10: Amplificación de Daño Crítico; nv 15: Explotar debilidades x1,5", "20"],
-        ["Pacto de celeridad", "+20% de Velocidad de Hechizo en la ventana. Nv 10: Impacto trasero x1,5; nv 15: Postura de agresión x1,5", "20"],
-        ["Colmillo salvaje", "3 golpes que graban las 5 Insignias y llenan el medidor de stagger. Nv 15: +10% de Amplificación de Daño de JcE 10 s", "15"],
-        ["Puñal de Triniel", "Golpe fuerte, +30% por la espalda. Nv 10: −10% a todos tus enfriamientos al entrar", "10"],
-        ["Postura de evasión", "Esquiva garantizada con enfriamiento corto; nv 5 da un segundo uso", "5"],
-        ["Tiro de daga sombría", "Lanzamiento a 20 m con Slow; nv 10 se reinicia al matar", "10"]
-      ]},
-      {"titulo": "Orden de subida", "tipo": "pasos", "items": [
-        "Pacto de celeridad y Clon ilusorio a 10.",
-        "Los dos a 15.",
-        "Colmillo salvaje a 15.",
-        "Clon ilusorio y Pacto de celeridad a 20.",
-        "Puñal de Triniel a 10 cuando te venga bien."
-      ]},
-      {"tipo": "aviso", "texto": "Las 4 ranuras se abren a los niveles 22, 27, 32 y 37."}
-    ],
-    "daevanion": [
-      {"titulo": "Tableros", "tipo": "lista", "items": [
-        "Nezekan nv 12, Zikel nv 20, Vaizel nv 30, Triniel nv 40, Azphel nv 45.",
-        "Los cuatro primeros comparten puntos. Azphel tiene los suyos y solo da PvP: déjalo para después."
-      ]},
-      {"titulo": "Orden de puntos", "tipo": "pasos", "items": [
-        "Nodos azules de habilidad en los cuatro tableros (+4): Estocada al corazón, Explosión de insignia, Corte rápido, Rugido bestial, Emboscada, Desenfreno de tormenta y Ataque sigiloso.",
-        "Naranjas: Reducción de Tiempo de Enfriamiento y Velocidad de Hechizo (Nezekan), Amplificación de Daño y Tolerancia a Daño (Zikel), Amplificación de Daño Crítico (Vaizel), Acierto de Multigolpe (Triniel).",
-        "Verdes: Impacto trasero, Postura de agresión y Explotar debilidades (dos de cada en Nezekan), luego Acierto de impacto (dos en Zikel).",
-        "Ataque, Crítico y lo que pille de camino."
-      ]},
-      {"titulo": "Qué saltarse", "tipo": "lista", "items": [
-        "Puntos de Maná máximos: es Ataque que dejas de coger.",
-        "Aplicación de veneno (menos del 1% de tu daño) y Grieta defensiva (pide objetivo en stagger o aturdido).",
-        "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): no hacen nada en JcE."
-      ]},
-      {"tipo": "aviso", "texto": "Prioridad de lanzamiento gasta 345 puntos (pasos 1 a 3); JcE completo gasta 498. No se sabe cuántos puntos tiene un nivel 45 en el lanzamiento: sigue el primer preset y para donde se te acaben. Reasignar es barato."}
-    ],
-    "rotacion": [
-      {"titulo": "Posicionamiento", "tipo": "lista", "items": [
-        "Tu sitio es la **espalda del jefe**: Impacto trasero, Emboscada, Puñal de Triniel y todo lo de Ataque por la Espalda solo rinde ahí. Cuenta con estar detrás entre el 60 y el 80% del combate.",
-        "Ataque sigiloso y Corte de destello te devuelven detrás cuando el jefe se gira.",
-        "Abre desde Sigilo con Emboscada o Ataque sigiloso si el combate lo permite.",
-        "Infiltración necesita una esquiva antes (o vuelo): es para recolocarte, no para abrir.",
-        "Avisa al tanque de que eres Sicario: un jefe mirando al tanque es tu mayor buff."
-      ]},
-      {"titulo": "Ventana de burst", "tipo": "pasos", "items": [
-        "Ponte a la espalda del jefe (Ataque sigiloso si no estás).",
-        "Clon ilusorio, Pacto de celeridad, Colmillo salvaje (pone las 5 Insignias de golpe).",
-        "Puñal de Triniel justo después, por el −10% a todos tus enfriamientos.",
-        "Mantén la macro: Estocada al corazón sale en cada pulsación y Corte rápido acorta Explosión de insignia.",
-        "Si el jefe entra en stagger: Desenfreno de tormenta."
-      ]},
-      {"titulo": "Entre ventanas", "tipo": "pasos", "items": [
-        "Corte rápido para el Maná y para recortar Explosión de insignia.",
-        "Cadena de Rugido bestial y Emboscada para acumular Insignias, luego Explosión de insignia.",
-        "Estocada al corazón cada vez que un crítico la reinicie.",
-        "Vigila el temporizador de Clon ilusorio: a veces conviene guardar enfriamientos unos segundos para el siguiente Clon."
-      ]},
-      {"tipo": "aviso", "texto": "Nunca en la macro: Clon ilusorio, Pacto de celeridad, Colmillo salvaje ni Puñal de Triniel. Rugido bestial también a mano, aunque tengas buen ping. Corte rápido lánzalo también aparte para cancelar animaciones."},
-      {"tipo": "aviso", "texto": "El primer día, si todo esto te supera, usa una macro sencilla: al principio no tienes Velocidad de Hechizo para notar la versión elaborada."}
-    ],
-    "coleccionables": [
-      {"titulo": "Alas", "tipo": "tabla", "columnas": ["Alas", "Qué dan", "Cuándo"], "filas": [
-        ["Talisra Wings", "4% de Reducción de Tiempo de Enfriamiento, Precisión y Ataque", "1.ª opción: más ventanas de Clon"],
-        ["Nightmare Wings", "Amplificación de Daño de Jefe, Crítico y Precisión", "Alternativa fuerte"],
-        ["Dark Veil Wings", "Amplificación de Daño y algo de tolerancia contra jefes", "Opcional"],
-        ["Forest Spirit Wings", "Amplificación de Daño de Jefe con más defensa", "Opcional"],
-        ["Black Fragment Wings", "Opción de crítico", "Si vas justo de Crítico"]
-      ]},
-      {"tipo": "aviso", "texto": "Colecciona todas las alas que puedas: dan estadísticas aunque no las lleves puestas."},
-      {"titulo": "Títulos", "tipo": "tabla", "columnas": ["Tipo", "1.ª opción", "Opcional"], "filas": [
-        ["Ofensivo", "Creación del cielo y la tierra (Precisión, Golpe, Amplificación de Daño de JcE)", "Librarse de las ataduras de raza (Crítico, Amplificación de Daño de JcE) si te falta crítico"],
-        ["Defensivo", "Dominador del espacio (Tolerancia a Daño JcE)", "Gobernar todas las cosas"],
-        ["Otros", "Ay, no tengo nada que ponerme (Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento)", ""]
-      ]},
-      {"titulo": "Panteón", "tipo": "lista", "items": [
-        "Estadísticas de dios clave: Muerte (Crítico), Sabiduría (Golpe), Destrucción (Ataque), Fantasía (Reducción de Tiempo de Enfriamiento).",
-        "Pieza a perseguir: **Coloso: Ilusión de Kaisinel** (Tiempo, Sabiduría, Destrucción).",
-        "Alternativas: Coloso: Ectoplasma de Zikel y Coloso: Ambición de Kromede (Destrucción, Justicia, Tiempo).",
-        "Sin prisa con los retratos: casi todos salen jugando."
-      ]}
-    ],
-    "mascotas": [
-      {"titulo": "Reglas", "tipo": "lista", "items": [
-        "El genus de mascota es tu primer gran gasto de Kina.",
-        "Sube cada genus a 10 antes de bloquear nada: más nivel, mejores grados.",
-        "Bloquea solo tiradas Unique cerca del máximo de su rango.",
-        "Prioridad de ranuras: 4, luego 7, luego 2 y 8. Termina primero Special y Varian."
-      ]},
-      {"titulo": "Ranuras 4 y 7 por genus", "tipo": "tabla", "columnas": ["Genus", "Ranura 4", "Ranura 7"], "filas": [
-        ["Cogni", "Amplificación de Daño Crítico", "Tolerancia a Daño"],
-        ["Fera", "Amplificación de Daño de Arma", "Tolerancia a Daño"],
-        ["Natura", "Perforación", "Tolerancia a Daño JcE"],
-        ["Varian", "Amplificación de Daño por la Espalda", "Tolerancia a Daño JcE"],
-        ["Special", "Golpe", "Tolerancia a Daño"]
-      ]},
-      {"titulo": "Resto de ranuras", "tipo": "tabla", "columnas": ["Ranuras", "1.ª opción", "Opcional"], "filas": [
-        ["1 y 5", "Ataque Máximo, luego Ataque Adicional", "Ataque por la Espalda si sale alto"],
-        ["2 y 8", "Aumento de Puntos de Vida", ""],
-        ["3 y 9", "Ataque Crítico por la Espalda", ""],
-        ["6", "Precisión", "Crítico cuando tu precisión ya llegue"]
-      ]},
-      {"tipo": "aviso", "texto": "Special también puede sacar Amplificación de Daño por la Espalda en la ranura 4: Golpe va primero, pero una buena tirada de Espalda merece conservarse."}
-    ]
+ "clase": "assassin",
+ "nombre": "Sicario",
+ "resumen": "Sicario de burst JcE para mazmorras a nivel 45 con equipo crafteado de Dragon Lord. Tu daño es **Estocada al corazón**: con su spec 5 cada crítico reinicia su enfriamiento y **Clon ilusorio** lo elimina del todo hasta 20 s, así que la ventana es spamearla. La otra regla: vive a la espalda del jefe.",
+ "pros": [
+  "Burst enorme a un solo objetivo con Clon ilusorio activo",
+  "Estocada al corazón se reinicia sola con cada crítico",
+  "Explosión de insignia y la cadena de Rugido bestial mantienen el daño entre ventanas",
+  "Ataque sigiloso te pone a la espalda del jefe al instante",
+  "El equipo crafteado conserva sus líneas de Soul Binding al subir de tier",
+  "Con una línea de la Brújula, Eliminación de impacto da +50% de Tolerancia a Daño JcE mientras te liberas de un aturdimiento"
+ ],
+ "contras": [
+  "Frágil: sin bloqueo, poca defensa y siempre cuerpo a cuerpo",
+  "Si pierdes la espalda del jefe, tu daño se hunde",
+  "Depende de la tasa de crítico: el equipo temprano se siente flojo",
+  "Los combates largos de global dejan tiempo muerto entre Clones",
+  "Solo 4 ranuras de stigma en el lanzamiento y el cuarteto de burst las ocupa todas"
+ ],
+ "presets": [
+  {
+   "nombre_en": "Boss and dungeons",
+   "nombre": "Jefes y mazmorras",
+   "uso": "Tu configuración normal de daño contra jefes, con Puñal de Triniel."
+  },
+  {
+   "nombre_en": "Progression and new fights",
+   "nombre": "Progresión y combates nuevos",
+   "uso": "Cuando aún aprendes un combate: cambia Puñal de Triniel por Postura de evasión."
+  },
+  {
+   "nombre_en": "Farming and leveling",
+   "nombre": "Farmeo y subida de nivel",
+   "uso": "Grupos de monstruos y subir de nivel: entra Tiro de daga sombría."
   }
+ ],
+ "tecla_macro": "Una tecla que mantienes pulsada (no dice cuál). El primer día basta una macro sencilla en un botón del ratón.",
+ "macros_por_preset": [
+  {
+   "preset_en": "Boss and dungeons",
+   "pasos": [
+    "Explosión de insignia",
+    "Estocada al corazón",
+    "Emboscada",
+    "Corte rápido"
+   ],
+   "retardo_ms": 10,
+   "nota": "En el juego son 2 pasos: la tecla de daño (Explosión de insignia con Estocada al corazón y Emboscada apiladas debajo) y Corte rápido."
+  },
+  {
+   "preset_en": "Progression and new fights",
+   "pasos": [
+    "Explosión de insignia",
+    "Estocada al corazón",
+    "Emboscada",
+    "Corte rápido"
+   ],
+   "retardo_ms": 10,
+   "nota": "Misma macro que en jefes."
+  },
+  {
+   "preset_en": "Farming and leveling",
+   "pasos": [
+    "Explosión de insignia",
+    "Estocada al corazón",
+    "Rugido bestial",
+    "Corte rápido"
+   ],
+   "retardo_ms": 10,
+   "nota": "Rugido bestial sustituye a Emboscada: en un grupo de monstruos no hay espalda que cuidar."
+  }
+ ],
+ "secciones": {
+  "equipo": [
+   {
+    "titulo": "Ruta del arma",
+    "tipo": "tabla",
+    "columnas": [
+     "Etapa",
+     "Daga",
+     "Guarda",
+     "Nota"
+    ],
+    "filas": [
+     [
+      "Inicio (nivel de objeto 70)",
+      "Aulamus Dagger (Urugugu Canyon)",
+      "Vakron Guard (Vakron Sky Island)",
+      ""
+     ],
+     [
+      "Fire Temple (nivel de objeto 86)",
+      "Enraged Kromede Silver Dagger",
+      "Nuakum Guard",
+      "La daga de Kromede solo tiene 3 líneas de Soul Binding"
+     ],
+     [
+      "Alternativa (86)",
+      "Abyssal Dagger",
+      "Abyssal Guard",
+      "4 líneas"
+     ],
+     [
+      "Objetivo crafteado (78)",
+      "White Dragon Lord Dagger (Elyos) / Dark Dragon Lord (Asmodian)",
+      "White Dragon Lord Guard / Dark Dragon Lord",
+      "5 líneas que se conservan al subir de tier"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Nadie ha publicado una ruta de mazmorras de Sicario para el lanzamiento: esta ruta es recomendación de esta guía, copiando lo que farmean las otras clases cuerpo a cuerpo."
+   },
+   {
+    "titulo": "Claves del equipo",
+    "tipo": "lista",
+    "items": [
+     "El juego muestra dos dagas, pero la mano secundaria es una **guarda**: la build es daga + guarda.",
+     "Primero termina la historia y las secundarias; luego pasa de mazmorra a crafteado. Casi todos acaban mezclando piezas.",
+     "Orden de crafteo: daga, guarda y después accesorios.",
+     "El crafteado (78) está por debajo de Fire Temple (86), pero da igual: sube de tier a Splendent (86), Wise (94) y Splendent Wise (102). En Asmodian: Splendent Dark, Ebony y Splendent Ebony.",
+     "Sube la daga a **+10** aprox. antes que nada: es el mayor salto de daño al principio."
+    ]
+   },
+   {
+    "titulo": "Reglas de Soul Binding",
+    "tipo": "lista",
+    "items": [
+     "Las líneas de valor variable (como Golpe) en las primeras ranuras, que son las que vas a rerollear.",
+     "Armadura y accesorios aceptan líneas de pasivas; solo los **anillos** admiten activas.",
+     "Nunca una línea de habilidad en la daga ni en la guarda: ahí valen más las de daño.",
+     "Precisión se queda en el arma porque da Crítico además de Precisión. Si vas sobrado de crítico, cámbiala por **Acierto de Multigolpe**.",
+     "Las grebas llevan **Tolerancia a Daño** en vez de línea de habilidad: no tienes bloqueo y es la única armadura que la saca."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "La línea extra de la Piedra filosofal se pierde al transferir o subir de tier. Todo lo demás se conserva."
+   },
+   {
+    "titulo": "Manastones",
+    "tipo": "tabla",
+    "columnas": [
+     "Pieza",
+     "1.ª opción",
+     "Nota"
+    ],
+    "filas": [
+     [
+      "Pieza definitiva",
+      "Amplificación de Daño por la Espalda, luego Weapon Damage Boost y Critical Damage Boost",
+      "Deja siempre 1 piedra de Crítico por pieza: Estocada al corazón vive de críticos"
+     ],
+     [
+      "Pieza que vas a cambiar",
+      "Ataque, Crítico y Precisión normales",
+      "Las manastones se pierden al transferir: no gastes las caras"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "El crítico tiene tope del 50% y la Resistencia Crítica del jefe lo baja. Pasado ese punto rinden más Ataque por la Espalda y Daño de Arma. Corte rápido con spec 5 ya es crítico siempre."
+   },
+   {
+    "titulo": "Accesorios",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "1.ª opción",
+     "Nota"
+    ],
+    "filas": [
+     [
+      "Brazaletes",
+      "Abyssal Bracelet: Destrucción, Muerte, Sabiduría, Fantasía",
+      "Muerte = Crítico, Sabiduría = Golpe, Fantasía = Reducción de Tiempo de Enfriamiento para el Clon"
+     ],
+     [
+      "Amuleto",
+      "Revelation Amulet",
+      "Lleva Amplificación de Daño de Arma. Fierce Battle Amulet es el de PvP"
+     ],
+     [
+      "Cinturón y runas",
+      "Noble Belt + 2 Clash Rune",
+      "elección de esta guía; no hay una específica de Sicario"
+     ]
+    ]
+   },
+   {
+    "titulo": "Arcana",
+    "tipo": "tabla",
+    "columnas": [
+     "Carta",
+     "Estadística de dios",
+     "Líneas a pescar"
+    ],
+    "filas": [
+     [
+      "Parchment of Vigor",
+      "Vida: Puntos de Vida",
+      "Estocada al corazón, Corte rápido, Explosión de insignia, Ataque sigiloso"
+     ],
+     [
+      "Compass of Magic",
+      "Muerte: Crítico",
+      "Rugido bestial, Emboscada, Desenfreno de tormenta, Eliminación de impacto"
+     ],
+     [
+      "Bell of Magic",
+      "Destrucción: Ataque",
+      "Postura de agresión, Postura de emboscada, Maximización de sexto sentido"
+     ],
+     [
+      "Mirror of Magic",
+      "Sabiduría: Golpe",
+      "Impacto trasero, Explotar debilidades, Acierto de impacto, Determinación"
+     ],
+     [
+      "Chalice of Vigor",
+      "Tiempo: Velocidad de Hechizo",
+      "Cualquiera: Explotar debilidades, Estocada al corazón, Postura de agresión, Impacto trasero"
+     ]
+    ]
+   },
+   {
+    "titulo": "Consejos de Arcana",
+    "tipo": "lista",
+    "items": [
+     "Caen en las mazmorras de Transcendence. Cada carta da su estadística de dios y hasta 4 líneas de habilidad de su propio pool.",
+     "Sin bonus de 4 piezas a propósito: Crítico (Brújula) y Golpe (Espejo) valen más al principio.",
+     "El Pergamino es el grind: confórmate con 2 de las 4 líneas que quieres.",
+     "El Cáliz es la única carta que saca cualquier habilidad: úsalo para tapar lo que no llegue a su nivel.",
+     "El planificador guarda una habilidad por carta: tómalo como el mínimo."
+    ]
+   }
+  ],
+  "habilidades": [
+   {
+    "tipo": "aviso",
+    "texto": "Consigue todos los fragmentos de puntos de habilidad cuanto antes: Estocada al corazón y las tres pasivas principales escalan con cada nivel."
+   },
+   {
+    "titulo": "Activas: por qué y cuándo cambiar",
+    "tipo": "tabla",
+    "columnas": [
+     "Habilidad",
+     "Por qué importa",
+     "Cambio posible"
+    ],
+    "filas": [
+     [
+      "Estocada al corazón",
+      "Spec 5 reinicia el enfriamiento con cada crítico (imprescindible); spec 1 cura, spec 4 da Multigolpe",
+      "Con poco crítico, spec 3 en lugar de la 1"
+     ],
+     [
+      "Explosión de insignia",
+      "Conserva 2 Insignias tras dispararse y 3 s menos de enfriamiento; pega más con 5 Insignias",
+      "Subiendo de nivel, spec 3 primero. Si el Pergamino la lleva a 20, spec 2 como tercera"
+     ],
+     [
+      "Corte rápido",
+      "Ataque básico. Spec 4 quita 1 s a Explosión de insignia por golpe; spec 5 ignora Bloqueo/Evasión y siempre es crítico",
+      "A 20, spec 3 (o spec 2 si necesitas aguante). Subiendo, spec 1 ayuda con Maná"
+     ],
+     [
+      "Rugido bestial",
+      "Cadena de 3 golpes, cada uno graba una Insignia y quita 1 s a Ataque sigiloso",
+      "Spec 3 a 20. Necesita la Brújula para pasar de 14"
+     ],
+     [
+      "Emboscada",
+      "2 Insignias por la espalda y absorción de vida",
+      "Con la Brújula a 16, spec 5 sustituye a la 1"
+     ],
+     [
+      "Desenfreno de tormenta",
+      "Solo contra objetivo en stagger; guárdala para esa ventana",
+      "A 16 (Brújula), spec 5: −1 s a todos tus enfriamientos por golpe"
+     ],
+     [
+      "Ataque sigiloso",
+      "Te teletransporta a la espalda y da +20% de Amplificación de Daño Crítico 10 s",
+      ""
+     ],
+     [
+      "Eliminación de impacto",
+      "Rompe aturdimientos; la Reducción de Tiempo de Enfriamiento no le afecta",
+      "A 16 (Brújula), spec 5: +50% de Tolerancia a Daño JcE"
+     ],
+     [
+      "Corte de destello, Infiltración, Corte torbellino, Caída sombría",
+      "Utilidad. Infiltración solo tras esquiva o en vuelo; Corte torbellino al evadir; Caída sombría con objetivo aturdido",
+      ""
+     ]
+    ]
+   },
+   {
+    "titulo": "Cómo llega Estocada al corazón a 20",
+    "tipo": "pasos",
+    "items": [
+     "Puntos de habilidad: hasta 10.",
+     "4 tableros de Daevanion: +4.",
+     "2 anillos con línea de habilidad: +2 (16 para Estocada al corazón, Corte rápido y Explosión de insignia).",
+     "Pergamino: sube Estocada al corazón a 20. Rugido bestial no tiene línea de anillo y necesita la Brújula (+4).",
+     "Specs: 2.ª ranura a 12, 3.ª solo a 20; la spec 5 pide 16. Por eso solo Estocada al corazón lleva tres."
+    ]
+   },
+   {
+    "titulo": "Pasivas",
+    "tipo": "tabla",
+    "columnas": [
+     "Pasiva",
+     "Qué te da",
+     "Prioridad"
+    ],
+    "filas": [
+     [
+      "Impacto trasero",
+      "Amplificación de Daño por la Espalda y de JcE (12,5% cada una a 20); Pacto de celeridad la multiplica",
+      "Máxima"
+     ],
+     [
+      "Postura de agresión",
+      "25% de Amplificación de Daño Crítico a 20; Pacto de celeridad la multiplica a 15",
+      "Alta"
+     ],
+     [
+      "Explotar debilidades",
+      "+290 de Crítico a 20 y probabilidad de +15% de Ataque; Clon ilusorio la multiplica a 15",
+      "Alta"
+     ],
+     [
+      "Acierto de impacto",
+      "Acierto de Tipo Impacto y algo de Golpe (en global da Golpe)",
+      "Media"
+     ],
+     [
+      "Determinación",
+      "Daño extra contra objetivos por debajo del 30% de vida",
+      "Media"
+     ],
+     [
+      "Maximización de sexto sentido / Pacto de resurrección",
+      "Cura al esquivar; cura del 35% una vez por minuto al bajar al 10%",
+      "Súbelas si mueres mucho aprendiendo"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Los niveles de las pasivas y de los stigmas son recomendación de esta guía: ninguna guía publicada los da."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "PvP: configuración aparte de evasión con Corte torbellino a 20 y stigmas como Evasion Contract, Smoke Bomb y Spiral Slice (quita buffs). La guía no cubre más PvP."
+   }
+  ],
+  "estigmas": [
+   {
+    "titulo": "Qué stigmas lleva cada preset",
+    "tipo": "tabla",
+    "columnas": [
+     "Preset",
+     "Stigmas",
+     "Por qué"
+    ],
+    "filas": [
+     [
+      "Jefes y mazmorras",
+      "Clon ilusorio, Pacto de celeridad, Colmillo salvaje, Puñal de Triniel",
+      "El cuarteto de burst completo"
+     ],
+     [
+      "Progresión y combates nuevos",
+      "Clon ilusorio, Pacto de celeridad, Colmillo salvaje, Postura de evasión",
+      "Una esquiva garantizada mientras aprendes el combate"
+     ],
+     [
+      "Farmeo y subida de nivel",
+      "Tiro de daga sombría, Colmillo salvaje, Clon ilusorio, Pacto de celeridad",
+      "Tiro a 20 m con Slow que se reinicia al matar (nivel 10)"
+     ]
+    ]
+   },
+   {
+    "titulo": "Para qué sirve cada uno",
+    "tipo": "tabla",
+    "columnas": [
+     "Stigma",
+     "Qué hace",
+     "Nivel objetivo"
+    ],
+    "filas": [
+     [
+      "Clon ilusorio",
+      "Quita el enfriamiento de Estocada al corazón (10 s a nv 1, 20 s a nv 20) y añade 20% de daño extra. Nv 10: Amplificación de Daño Crítico; nv 15: Explotar debilidades x1,5",
+      "20"
+     ],
+     [
+      "Pacto de celeridad",
+      "+20% de Velocidad de Hechizo en la ventana. Nv 10: Impacto trasero x1,5; nv 15: Postura de agresión x1,5",
+      "20"
+     ],
+     [
+      "Colmillo salvaje",
+      "3 golpes que graban las 5 Insignias y llenan el medidor de stagger. Nv 15: +10% de Amplificación de Daño de JcE 10 s",
+      "15"
+     ],
+     [
+      "Puñal de Triniel",
+      "Golpe fuerte, +30% por la espalda. Nv 10: −10% a todos tus enfriamientos al entrar",
+      "10"
+     ],
+     [
+      "Postura de evasión",
+      "Esquiva garantizada con enfriamiento corto; nv 5 da un segundo uso",
+      "5"
+     ],
+     [
+      "Tiro de daga sombría",
+      "Lanzamiento a 20 m con Slow; nv 10 se reinicia al matar",
+      "10"
+     ]
+    ]
+   },
+   {
+    "titulo": "Orden de subida",
+    "tipo": "pasos",
+    "items": [
+     "Pacto de celeridad y Clon ilusorio a 10.",
+     "Los dos a 15.",
+     "Colmillo salvaje a 15.",
+     "Clon ilusorio y Pacto de celeridad a 20.",
+     "Puñal de Triniel a 10 cuando te venga bien."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Las 4 ranuras se abren a los niveles 22, 27, 32 y 37."
+   }
+  ],
+  "daevanion": [
+   {
+    "titulo": "Tableros",
+    "tipo": "lista",
+    "items": [
+     "Nezekan nv 12, Zikel nv 20, Vaizel nv 30, Triniel nv 40, Azphel nv 45.",
+     "Los cuatro primeros comparten puntos. Azphel tiene los suyos y solo da PvP: déjalo para después."
+    ]
+   },
+   {
+    "titulo": "Orden de puntos",
+    "tipo": "pasos",
+    "items": [
+     "Nodos azules de habilidad en los cuatro tableros (+4): Estocada al corazón, Explosión de insignia, Corte rápido, Rugido bestial, Emboscada, Desenfreno de tormenta y Ataque sigiloso.",
+     "Naranjas: Reducción de Tiempo de Enfriamiento y Velocidad de Hechizo (Nezekan), Amplificación de Daño y Tolerancia a Daño (Zikel), Amplificación de Daño Crítico (Vaizel), Acierto de Multigolpe (Triniel).",
+     "Verdes: Impacto trasero, Postura de agresión y Explotar debilidades (dos de cada en Nezekan), luego Acierto de impacto (dos en Zikel).",
+     "Ataque, Crítico y lo que pille de camino."
+    ]
+   },
+   {
+    "titulo": "Qué saltarse",
+    "tipo": "lista",
+    "items": [
+     "Puntos de Maná máximos: es Ataque que dejas de coger.",
+     "Aplicación de veneno (menos del 1% de tu daño) y Grieta defensiva (pide objetivo en stagger o aturdido).",
+     "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): no hacen nada en JcE."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Prioridad de lanzamiento gasta 345 puntos (pasos 1 a 3); JcE completo gasta 498. No se sabe cuántos puntos tiene un nivel 45 en el lanzamiento: sigue el primer preset y para donde se te acaben. Reasignar es barato."
+   }
+  ],
+  "rotacion": [
+   {
+    "titulo": "Posicionamiento",
+    "tipo": "lista",
+    "items": [
+     "Tu sitio es la **espalda del jefe**: Impacto trasero, Emboscada, Puñal de Triniel y todo lo de Ataque por la Espalda solo rinde ahí. Cuenta con estar detrás entre el 60 y el 80% del combate.",
+     "Ataque sigiloso y Corte de destello te devuelven detrás cuando el jefe se gira.",
+     "Abre desde Sigilo con Emboscada o Ataque sigiloso si el combate lo permite.",
+     "Infiltración necesita una esquiva antes (o vuelo): es para recolocarte, no para abrir.",
+     "Avisa al tanque de que eres Sicario: un jefe mirando al tanque es tu mayor buff."
+    ]
+   },
+   {
+    "titulo": "Ventana de burst",
+    "tipo": "pasos",
+    "items": [
+     "Ponte a la espalda del jefe (Ataque sigiloso si no estás).",
+     "Clon ilusorio, Pacto de celeridad, Colmillo salvaje (pone las 5 Insignias de golpe).",
+     "Puñal de Triniel justo después, por el −10% a todos tus enfriamientos.",
+     "Mantén la macro: Estocada al corazón sale en cada pulsación y Corte rápido acorta Explosión de insignia.",
+     "Si el jefe entra en stagger: Desenfreno de tormenta."
+    ]
+   },
+   {
+    "titulo": "Entre ventanas",
+    "tipo": "pasos",
+    "items": [
+     "Corte rápido para el Maná y para recortar Explosión de insignia.",
+     "Cadena de Rugido bestial y Emboscada para acumular Insignias, luego Explosión de insignia.",
+     "Estocada al corazón cada vez que un crítico la reinicie.",
+     "Vigila el temporizador de Clon ilusorio: a veces conviene guardar enfriamientos unos segundos para el siguiente Clon."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Nunca en la macro: Clon ilusorio, Pacto de celeridad, Colmillo salvaje ni Puñal de Triniel. Rugido bestial también a mano, aunque tengas buen ping. Corte rápido lánzalo también aparte para cancelar animaciones."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "El primer día, si todo esto te supera, usa una macro sencilla: al principio no tienes Velocidad de Hechizo para notar la versión elaborada."
+   }
+  ],
+  "coleccionables": [
+   {
+    "titulo": "Alas",
+    "tipo": "tabla",
+    "columnas": [
+     "Alas",
+     "Qué dan",
+     "Cuándo"
+    ],
+    "filas": [
+     [
+      "Talisra Wings",
+      "4% de Reducción de Tiempo de Enfriamiento, Precisión y Ataque",
+      "1.ª opción: más ventanas de Clon"
+     ],
+     [
+      "Nightmare Wings",
+      "Amplificación de Daño de Jefe, Crítico y Precisión",
+      "Alternativa fuerte"
+     ],
+     [
+      "Dark Veil Wings",
+      "Amplificación de Daño y algo de tolerancia contra jefes",
+      "Opcional"
+     ],
+     [
+      "Forest Spirit Wings",
+      "Amplificación de Daño de Jefe con más defensa",
+      "Opcional"
+     ],
+     [
+      "Black Fragment Wings",
+      "Opción de crítico",
+      "Si vas justo de Crítico"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Colecciona todas las alas que puedas: dan estadísticas aunque no las lleves puestas."
+   },
+   {
+    "titulo": "Títulos",
+    "tipo": "tabla",
+    "columnas": [
+     "Tipo",
+     "1.ª opción",
+     "Opcional"
+    ],
+    "filas": [
+     [
+      "Ofensivo",
+      "Creación del cielo y la tierra (Precisión, Golpe, Amplificación de Daño de JcE)",
+      "Librarse de las ataduras de raza (Crítico, Amplificación de Daño de JcE) si te falta crítico"
+     ],
+     [
+      "Defensivo",
+      "Dominador del espacio (Tolerancia a Daño JcE)",
+      "Gobernar todas las cosas"
+     ],
+     [
+      "Otros",
+      "Ay, no tengo nada que ponerme (Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento)",
+      ""
+     ]
+    ]
+   },
+   {
+    "titulo": "Panteón",
+    "tipo": "lista",
+    "items": [
+     "Estadísticas de dios clave: Muerte (Crítico), Sabiduría (Golpe), Destrucción (Ataque), Fantasía (Reducción de Tiempo de Enfriamiento).",
+     "Pieza a perseguir: **Coloso: Ilusión de Kaisinel** (Tiempo, Sabiduría, Destrucción).",
+     "Alternativas: Coloso: Ectoplasma de Zikel y Coloso: Ambición de Kromede (Destrucción, Justicia, Tiempo).",
+     "Sin prisa con los retratos: casi todos salen jugando."
+    ]
+   }
+  ],
+  "mascotas": [
+   {
+    "titulo": "Reglas",
+    "tipo": "lista",
+    "items": [
+     "El genus de mascota es tu primer gran gasto de Kina.",
+     "Sube cada genus a 10 antes de bloquear nada: más nivel, mejores grados.",
+     "Bloquea solo tiradas Unique cerca del máximo de su rango.",
+     "Prioridad de ranuras: 4, luego 7, luego 2 y 8. Termina primero Special y Varian."
+    ]
+   },
+   {
+    "titulo": "Ranuras 4 y 7 por genus",
+    "tipo": "tabla",
+    "columnas": [
+     "Genus",
+     "Ranura 4",
+     "Ranura 7"
+    ],
+    "filas": [
+     [
+      "Cogni",
+      "Amplificación de Daño Crítico",
+      "Tolerancia a Daño"
+     ],
+     [
+      "Fera",
+      "Amplificación de Daño de Arma",
+      "Tolerancia a Daño"
+     ],
+     [
+      "Natura",
+      "Perforación",
+      "Tolerancia a Daño JcE"
+     ],
+     [
+      "Varian",
+      "Amplificación de Daño por la Espalda",
+      "Tolerancia a Daño JcE"
+     ],
+     [
+      "Special",
+      "Golpe",
+      "Tolerancia a Daño"
+     ]
+    ]
+   },
+   {
+    "titulo": "Resto de ranuras",
+    "tipo": "tabla",
+    "columnas": [
+     "Ranuras",
+     "1.ª opción",
+     "Opcional"
+    ],
+    "filas": [
+     [
+      "1 y 5",
+      "Ataque Máximo, luego Ataque Adicional",
+      "Ataque por la Espalda si sale alto"
+     ],
+     [
+      "2 y 8",
+      "Aumento de Puntos de Vida",
+      ""
+     ],
+     [
+      "3 y 9",
+      "Ataque Crítico por la Espalda",
+      ""
+     ],
+     [
+      "6",
+      "Precisión",
+      "Crítico cuando tu precisión ya llegue"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Special también puede sacar Amplificación de Daño por la Espalda en la ranura 4: Golpe va primero, pero una buena tirada de Espalda merece conservarse."
+   }
+  ]
+ }
 }

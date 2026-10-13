@@ -1,212 +1,668 @@
 {
-  "clase": "sorcerer",
-  "nombre": "Hechicero",
-  "fuente": "https://metaroad.gg/es/aion2/build-guides/build-pve-de-hechicero-dps",
-  "resumen": "Caster de PvE a 20 metros cuyo daño es una cadena de reducciones de enfriamiento: Flecha en llamas marca, Explosión de llama gasta la marca y acelera Voto de concentración, Voto quita 10 s a todo y Quebrantamiento en llamas acelera **Llamas del infierno**, tu golpe más fuerte. Mejora elemental (+20% de Ataque de Fuego y Agua) lo multiplica todo y la **Reducción de Tiempo de Enfriamiento** es lo que mantiene la rueda girando.",
-  "pros": [
-    "20 metros de alcance: rara vez te comes lo malo del suelo.",
-    "El daño se reparte entre muchas habilidades: un casteo fallado no arruina el pull.",
-    "Barrera de fuego, Tormenta helada y Viento helado golpean hasta 4 enemigos y siguen golpeando mientras estén dentro.",
-    "Toga de llama no tiene techo de nivel: cada nivel es más daño PvE.",
-    "Explosión de Congelación te cura: aguantas en solitario mejor que la mayoría de casters.",
-    "El equipo crafteado conserva sus líneas de Soul Binding al subirlo de tier."
-  ],
-  "contras": [
-    "Subir de nivel es duro: el kit no cuaja hasta que las habilidades principales llegan a 16.",
-    "Al principio vas muy corto de Reducción de Tiempo de Enfriamiento y Velocidad de Hechizo.",
-    "Maná justo al empezar (unos 3.000), y dos pasivas lo piden por encima del 25% o del 50%.",
-    "Barrera de fuego y Tormenta helada se quedan donde las pones: un jefe que se mueve las desperdicia.",
-    "La macro es sensible al ping: con ping alto pierdes daño de verdad.",
-    "Solo 4 ranuras de estigma en el lanzamiento: toca cambiar de configuración entre mazmorras."
-  ],
-  "presets": [
-    {"nombre_en": "Boss dungeons", "nombre": "Mazmorras de jefes", "uso": "Preset por defecto contra jefes."},
-    {"nombre_en": "Stagger checks", "nombre": "Comprobaciones de Stagger", "uso": "Jefes con barra de Stagger que hay que romper (Explosión de divinidad)."},
-    {"nombre_en": "Leveling and solo", "nombre": "Leveling y solitario", "uso": "Subir de nivel y jugar solo, con Barrera de acero como red de seguridad."}
-  ],
-  "tecla_macro": "Botón derecho del ratón",
-  "macros_por_preset": [
-    {"preset_en": "Boss dungeons", "pasos": ["Viento helado", "Viento helado", "Viento helado", "Mejora elemental"], "retardo_ms": 10, "nota": "Mantén pulsados los dos botones del ratón. Con ping de 80-100 o más, sube el retardo a 40-50 ms."},
-    {"preset_en": "Stagger checks", "pasos": ["Viento helado", "Viento helado", "Viento helado", "Mejora elemental"], "retardo_ms": 10, "nota": "Misma macro en los tres presets."},
-    {"preset_en": "Leveling and solo", "pasos": ["Viento helado", "Viento helado", "Viento helado", "Mejora elemental"], "retardo_ms": 10, "nota": "Misma macro en los tres presets."}
-  ],
-  "secciones": {
-    "equipo": [
-      {"titulo": "Ruta del grimorio", "tipo": "tabla", "columnas": ["Etapa", "Pieza", "Notas"], "filas": [
-        ["1.ª mejora a 45", "Aulamus Spellbook", "Nivel de objeto 70, 4 líneas de Soul Binding"],
-        ["Nivel de objeto 86", "Abyssal Spellbook (raid, 4 líneas)", "Mejor que Enraged Kromede Spellbook, que solo tiene 3"],
-        ["Objetivo crafteado", "White Dragon Lord Spellbook + White Dragon Lord Guard (Elyos) / Dark Dragon Lord Spellbook (Asmodian)", "Primero grimorio, luego guarda, luego accesorios"]
-      ]},
-      {"tipo": "aviso", "texto": "White Dragon Lord empieza en nivel de objeto 78 (menos que el 86 de mazmorra), pero tiene **5 líneas** y las conserva al subir a Splendent (86), Wise (94) y Splendent Wise (102); en Asmodian esos pasos se llaman Ebony. Lleva el arma a +10 pronto, pero no pases de ahí antes del nivel máximo."},
-      {"titulo": "Soul Binding: reglas", "tipo": "lista", "items": [
-        "Las líneas de valor variable, en las primeras ranuras (ahí rerolleas).",
-        "**Toga de llama** en toda la armadura, pendientes y collar: 10 líneas = +10 niveles a tu mejor pasiva.",
-        "Amplificación de Daño es la línea más rara del grimorio: no tires uno con buena Velocidad de Hechizo y Amplificación de Daño de Arma por esperarla.",
-        "Perforación tiene poca prioridad: tu rango de daño solo tiene un 10% de amplitud.",
-        "Tolerancia a Daño Crítico y Tolerancia a Daño de Arma en la capa no sirven en PvE: rerolléalas.",
-        "Anillos = niveles de habilidad: llevan las 4 principales de 14 a 16 (5.ª especialización). Ataque en un anillo solo cuando cumplas todos los objetivos de habilidad.",
-        "La línea extra de Piedra filosofal no se conserva al transferir o subir de tier; todo lo demás sí."
-      ]},
-      {"titulo": "Manastones", "tipo": "tabla", "columnas": ["Dónde", "Orden"], "filas": [
-        ["Grimorio y guarda", "Weapon Damage Boost y Critical Damage Boost → Front Attack Damage Boost → Ataque"],
-        ["Armadura", "Amplificación de Daño Frontal y Ataque"]
-      ]},
-      {"tipo": "aviso", "texto": "Ataque Frontal es discutido en el Hechicero. Un medidor en Taiwán dio: habilidades de fuego 100% frontales, Tormenta helada 96%, Barrera de fuego 63%, Viento helado 0% (unas tres cuartas partes del daño). Merece una piedra, pero no antes de las dos seguras. **Nadie lo ha probado aún en global.** Las manastones se pierden al transferir: no gastes las caras en equipo de paso."},
-      {"titulo": "Accesorios", "tipo": "tabla", "columnas": ["Qué", "1.ª opción", "Opcional"], "filas": [
-        ["Brazaletes", "Abyssal Bracelet con Fantasía, Sabiduría, Destrucción y Tiempo (no se negocian)", "Línea sobrante: Muerte (Crítico) o Libertad (Precisión)"],
-        ["Amuleto", "Revelation Amulet (Amplificación de Daño de Arma); a +10 cuando tengas las plumas", "Fierce Battle Amulet para PvP"],
-        ["Cinturón y runas", "Noble Belt + 2 Clash Rune", "—"]
-      ]},
-      {"tipo": "aviso", "texto": "Amuleto, cinturón y runas son elección de metaroad por efecto: ninguna guía del Hechicero los cubre todavía."},
-      {"titulo": "Arcana", "tipo": "lista", "items": [
-        "Caen en Transcendence. Cada carta da su stat de dios + hasta 4 líneas de su propio grupo: buscas una carta cuyas líneas caigan en tus habilidades.",
-        "El set se salta a propósito el bonus de 4 piezas: al principio valen más los stats sueltos.",
-        "Compass of Magic antes que la de vitalidad: te falta mucho más Crítico que Precisión (pero el crítico topa en 50%).",
-        "Mirror of Vigor da Reducción de Tiempo de Enfriamiento; cuando pases de ~35% sin ella, cámbiala por Mirror of Magic (Golpe).",
-        "Bell of Magic apenas importa en PvE: va por su Ataque.",
-        "El planificador anota una habilidad por carta: toma sus niveles como mínimo. Chalice of Vigor (saca cualquier habilidad) se craftea la última."
-      ]}
-    ],
-    "habilidades": [
-      {"tipo": "aviso", "texto": "Consigue fragmentos de punto de habilidad cuanto antes. El Hechicero florece tarde: se siente completo cuando Llamas del infierno, Voto de concentración, Explosión de llama, Quebrantamiento en llamas y Flecha en llamas llegan a 16."},
-      {"titulo": "Cómo se suman los niveles", "tipo": "pasos", "items": [
-        "Puntos de habilidad: 10. Los 4 tableros de Daevanion: +4 = 14 (abre la 2.ª especialización, que pide 12).",
-        "Dos anillos con Llamas del infierno, Voto de concentración, Explosión de llama y Quebrantamiento en llamas: 16 (abre la 5.ª especialización).",
-        "La 3.ª ranura pide 20 y necesita Arcana: el Pergamino sube Llamas del infierno a 20.",
-        "Viento helado: 10 + 4 + 4 de la Brújula = 18.",
-        "Flecha en llamas, Atadura invernal y Llamas sin puntería se quedan en 14; necesitan una línea de Arcana (Pergamino o Brújula) para 16."
-      ]},
-      {"titulo": "Activas clave", "tipo": "tabla", "columnas": ["Habilidad", "Para qué", "Ojo con"], "filas": [
-        ["Llamas del infierno", "Golpe más fuerte, cargado en 3 fases", "Te deja quieto al cargar: la espec. 3 te deja moverte. Contra jefe quieto, cambia la 3 por la 4"],
-        ["Voto de concentración", "+10% Velocidad de Hechizo; espec. 5 quita 10 s a todos los enfriamientos", "Hasta tener la 5 lleva la 2 y la 4; a 16 la 5 ocupa la ranura de la 2, que vuelve a 20"],
-        ["Explosión de llama", "Daño extra (espec. 3: ~35% más)", "Solo contra objetivo con Marca ígnea. La espec. 5 (−3 s a Voto por golpe) es imprescindible"],
-        ["Quebrantamiento en llamas", "Espec. 4: −2 s a Llamas del infierno por bola de fuego (el motor)", "Si vas justo de maná al principio, espec. 1 (−50% de coste)"],
-        ["Viento helado", "Crítico garantizado (espec. 4) e inmoviliza 3 s a los monstruos", "Nunca la espec. 5 contra jefes. Con 25,6% de Reducción pasa de 18 a 26 golpes"],
-        ["Flecha en llamas", "Ataque básico, devuelve maná", "Hasta 16, espec. 1 (+20% maná) o 2 (absorción) junto a la 4"],
-        ["Atadura invernal", "Espec. 3: +20% Amplificación de Daño de JcE 5 s", "Quitar la espec. 3 cuesta ~3% de daño"],
-        ["Llamas sin puntería", "Solo contra objetivo en Stagger; a 16 la espec. 5 quita 1 s a todo por golpe", "Por debajo de 16, fuera de la barra"],
-        ["Cadena gélida", "Rellena huecos mientras tu Reducción sea baja", "—"],
-        ["Explosión de Congelación", "Tu cura (absorción) y móvil", "No es daño"],
-        ["Congelación", "Resetea Explosión de Congelación", "Sobre todo para subir de nivel y PvP"],
-        ["Eliminación de impacto", "Ruptura de aturdimiento, +20% de vida", "La Reducción no la afecta: cada nivel le quita 1 s (49 s a nivel 12)"]
-      ]},
-      {"tipo": "aviso", "texto": "Se lanzan en movimiento: Flecha en llamas, Quebrantamiento en llamas, Explosión de llama, Cadena gélida, Congelación, Voto de concentración y los estigmas Mejora elemental, Explosión retrasada, Barrera de acero y Blindaje ártico. Te dejan quieto: Llamas del infierno, Viento helado, Atadura invernal, Explosión de Congelación, Llamas sin puntería, Barrera de fuego, Tormenta helada, Explosión de divinidad y Golpe de glaciar. Por eso las especializaciones de movimiento valen la pena en las primeras."},
-      {"titulo": "Pasivas", "tipo": "tabla", "columnas": ["Pasiva", "Nivel objetivo", "Por qué"], "filas": [
-        ["Toga de llama", "32", "+100 Precisión, +1% Amplificación de Daño de JcE y +0,2% Golpe por nivel (32% y 6,4% a 32). Sin techo: aliméntala siempre"],
-        ["Merced de mejora", "16", "+20% Amplificación de Daño de JcE con maná ≥25%. Otros ponen Vaporización de viveza o Marca ígnea"],
-        ["Marca ígnea", "18", "Desbloquea Explosión de llama; basta el nivel base"],
-        ["Toga terrestre / Vaporización de viveza", "14", "Maná y Crítico con maná ≥50% / daño extra a objetivos >70% de vida; nivel base + tableros"]
-      ]}
-    ],
-    "estigmas": [
-      {"tipo": "aviso", "texto": "4 ranuras (niveles 22, 27, 32 y 37). Coste en fragmentos: 1 por nivel hasta 5, 2 hasta 10, 4 hasta 15 y 8 hasta 20 (75 para llevar uno a 20). Orden: **Mejora elemental hasta arriba**, luego Barrera de fuego, Tormenta helada y Explosión retrasada a 10. Explosión retrasada da su 15% desde nivel 1: equípala ya."},
-      {"titulo": "Qué lleva cada preset", "tipo": "tabla", "columnas": ["Preset", "Estigmas", "Por qué"], "filas": [
-        ["Mazmorras de jefes", "Mejora elemental, Barrera de fuego, Tormenta helada, Explosión retrasada", "Máximo daño: campos sobre el jefe + buff de daño antes de Llamas del infierno"],
-        ["Comprobaciones de Stagger", "Mejora elemental, Barrera de fuego, Explosión de divinidad, Explosión retrasada", "Explosión de divinidad mete 50 de Stagger de golpe"],
-        ["Leveling y solitario", "Mejora elemental, Barrera de fuego, Barrera de acero, Explosión retrasada", "Barrera de acero es tu red de seguridad"]
-      ]},
-      {"titulo": "Qué hace cada estigma", "tipo": "tabla", "columnas": ["Estigma", "Efecto", "Niveles clave"], "filas": [
-        ["Mejora elemental", "+20% Ataque de Fuego y Agua (núcleo de la clase)", "5: +200 Precisión; 10: Toga de llama ×1,5; 15: Merced de mejora ×1,5; 20: +10% más"],
-        ["Barrera de fuego", "Muro de 10 m, golpea 5 veces y deja Embers", "10: +2 m de ancho"],
-        ["Tormenta helada", "Daño, Slow y campo de Frostbite 7 s", "—"],
-        ["Explosión retrasada", "Daño a los 4 s; el objetivo recibe +15% de ti mientras tanto", "Siempre justo antes de Llamas del infierno. 10: −10 s de enfriamiento"],
-        ["Explosión de divinidad", "50 de Stagger en un lanzamiento", "Comparación: Llamas del infierno 20-35, Golpe de glaciar y Tormenta helada 20, Congelación y Viento helado 10, Explosión de llama 7, Quebrantamiento en llamas 5, Cadena gélida 2"],
-        ["Barrera de acero", "Escudo 60 s + 10% Tolerancia a Daño JcE", "20: enfriamiento 45 s, el escudo nunca cae"],
-        ["Blindaje ártico", "+20% Tolerancia a Daño JcE 10 s", "Cambio por Tormenta helada mientras aprendes un jefe que pega fuerte"]
-      ]},
-      {"tipo": "aviso", "texto": "Farmeo de mobs: cambia Barrera de fuego o Tormenta helada por Golpe de glaciar. PvP (arena): Mejora elemental, Barrera de acero, Soul Freeze y Hibernation (Blindaje ártico en vez de Hibernation contra presión constante), y espec. 3 de Quebrantamiento en llamas (−60% de curación recibida)."}
-    ],
-    "daevanion": [
-      {"titulo": "Desbloqueo de tableros", "tipo": "lista", "items": [
-        "Nezekan a 12, Zikel a 20, Vaizel a 30, Triniel a 40 y Azphel a 45.",
-        "Los cuatro primeros comparten puntos; Azphel tiene los suyos y solo da PvP: déjalo para después."
-      ]},
-      {"titulo": "Orden", "tipo": "pasos", "items": [
-        "Nodos azules en los 4 tableros: Llamas del infierno, Voto de concentración, Explosión de llama (en el tablero sale como Flame Explosion), Quebrantamiento en llamas, Viento helado, Flecha en llamas y Atadura invernal.",
-        "Naranjas: Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento en Nezekan, Amplificación de Daño en Zikel, Amplificación de Daño Crítico en Vaizel.",
-        "Verdes: Toga de llama donde aparezca (2 en Nezekan, 1 en Vaizel y Triniel, 0 en Zikel; en el tablero, Flame Robe), luego Merced de mejora.",
-        "Ataque, Crítico y lo que pille de camino."
-      ]},
-      {"titulo": "Qué saltarte", "tipo": "lista", "items": [
-        "Al principio: Puntos de Vida máximos, Defensa, Puntos de Maná máximos y Resistencia Crítica (cógelos al completar el tablero).",
-        "Absorción de esencia, Merced de resistencia y Pacto de resurrección: PvP y aguante, nada para mazmorra.",
-        "Tolerancia a Daño Crítico (Vaizel) y Resistencia a Multigolpe (Triniel): inútiles en PvE.",
-        "Acierto de Multigolpe en Triniel es opinable: metaroad lo coge en el tablero completo, no en el de lanzamiento."
-      ]},
-      {"tipo": "aviso", "texto": "Dos presets: **Prioridad de lanzamiento** (277 puntos, pasos 1-3) y **PvE completo** (471). No se sabe cuántos puntos tendrá un nivel 45 en el lanzamiento: sigue el primero y para donde se acaben. Al principio resetear es gratis."}
-    ],
-    "rotacion": [
-      {"titulo": "Antes de empezar", "tipo": "lista", "items": [
-        "Juega en **Target Mode**: el modo acción interrumpe el ataque básico entre habilidades.",
-        "Activa Skill Queue si las habilidades no salen.",
-        "Puedes apilar hasta 3 habilidades sobre una ranura rápida.",
-        "Mantén pulsada Flecha en llamas: también cancela el final de las animaciones (verás una imagen fantasma)."
-      ]},
-      {"titulo": "Opener", "tipo": "pasos", "items": [
-        "Mejora elemental.",
-        "Explosión retrasada.",
-        "Llamas del infierno con la carga al máximo.",
-        "Barrera de fuego y Tormenta helada sobre el jefe.",
-        "Activa la macro y sigue con Flecha en llamas."
-      ]},
-      {"titulo": "Entre ventanas", "tipo": "pasos", "items": [
-        "Voto de concentración siempre que esté listo (resetea casi toda la barra).",
-        "Mantén Viento helado en enfriamiento.",
-        "Rellena huecos con Explosión de llama, Quebrantamiento en llamas y Flecha en llamas.",
-        "Cuando vuelva Llamas del infierno: Explosión retrasada primero, Atadura invernal justo antes de cargar (su buff de 5 s la cubre) y carga al máximo."
-      ]},
-      {"tipo": "aviso", "texto": "Llamas del infierno nunca va en la macro: cárgala a mano."},
-      {"tipo": "aviso", "texto": "Retardo de la macro: ping < 50 → 10 ms; ping de 80-100 o más → 40-50 ms. Las tres entradas de Viento helado dan prioridad a su pila (tus enfriamientos cortos)."},
-      {"titulo": "A qué apuntar", "tipo": "tabla", "columnas": ["Stat", "Objetivo"], "filas": [
-        ["Reducción de Tiempo de Enfriamiento", "Mínimo 25% (Voto siempre activo y golpes extra de Viento helado); cómodo con 35%; tope del juego 60%"],
-        ["Velocidad de Hechizo", "115-120% con Voto y un pergamino de Velocidad de Hechizo"],
-        ["Crítico", "Tope 50% y la Resistencia Crítica del jefe lo baja; Viento helado (espec. 4) ya critea siempre. Cerca del tope, mejor Ataque o Precisión"],
-        ["Precisión", "Voto y Mejora elemental a 5 ya dan 300: necesitas menos del equipo"],
-        ["Maná", "Por encima del 50% (Toga terrestre pierde Crítico por debajo; Merced de mejora pierde su 20% bajo el 25%)"]
-      ]},
-      {"tipo": "aviso", "texto": "Referencia: en Corea y Taiwán un Hechicero bien equipado mete Llamas del infierno 26-28 veces por minuto en un muñeco. Sirve para medir cuánto te rinde la Reducción."}
-    ],
-    "coleccionables": [
-      {"titulo": "Alas", "tipo": "tabla", "columnas": ["Qué", "Alas", "Por qué"], "filas": [
-        ["1.ª opción", "Talisra Wings", "4% de Reducción de Tiempo de Enfriamiento; más de 9 de cada 10 Hechiceros coreanos las llevan"],
-        ["Apaño", "Nightmare Wings / Dark Veil Wings", "—"],
-        ["Opcional", "Forest Spirit Wings", "Amplificación de Daño de Jefe y Tolerancia a Daño"]
-      ]},
-      {"tipo": "aviso", "texto": "Las alas de Ataque Frontal que mencionan los coreanos no existen en global. Colecciona todas las alas: dan stats aunque no las lleves."},
-      {"titulo": "Títulos", "tipo": "tabla", "columnas": ["Momento", "Título", "Qué da"], "filas": [
-        ["Lanzamiento", "Protector de Verteron (Protector de Altgard en Asmodian)", "Amplificación de Daño de JcE y Penetración"],
-        ["Lanzamiento", "Santo de Verteron (Santo de Altgard en Asmodian)", "Defensa"],
-        ["Lanzamiento", "Castigador de Comandante de Lagta (jefe de campo)", "Velocidad de Hechizo y Velocidad de Movimiento"],
-        ["Más adelante", "Creación del cielo y la tierra", "5.5% Amplificación de Daño de JcE, 4% Golpe, 90 Precisión"],
-        ["Más adelante", "Dominador del espacio", "Tolerancia a Daño JcE"],
-        ["Más adelante", "Ay, no tengo nada que ponerme", "Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento"],
-        ["Más adelante", "De ida y vuelta al infierno", "Reducción de Tiempo de Enfriamiento"]
-      ]},
-      {"titulo": "Panteón", "tipo": "lista", "items": [
-        "Busca Fantasía (Reducción de Tiempo de Enfriamiento) y Sabiduría (Golpe) en retratos, la estatua dorada de 3 líneas y un coloso con Tiempo, Sabiduría y Destrucción (Coloso: Ilusión de Kaisinel, Coloso: Tassin tirano o Coloso: Atheron ascendido), antes que los de Justicia.",
-        "Sin prisa con los retratos: salen jugando."
-      ]}
-    ],
-    "mascotas": [
-      {"titulo": "Reglas", "tipo": "lista", "items": [
-        "El género es tu primer gran gasto de Kina.",
-        "Sube cada género a 10 antes de bloquear nada.",
-        "Bloquea solo tiradas Unique cerca del máximo de su rango."
-      ]},
-      {"titulo": "Prioridad de ranuras", "tipo": "pasos", "items": ["Ranura 4.", "Ranura 7.", "Ranuras 2 y 8.", "El resto: ataque y Precisión o Crítico."]},
-      {"titulo": "Ranuras 4 y 7 por género", "tipo": "tabla", "columnas": ["Género", "Ranura 4", "Ranura 7"], "filas": [
-        ["Cogni", "Amplificación de Daño Crítico", "Tolerancia a Daño"],
-        ["Fera", "Amplificación de Daño de Arma", "Tolerancia a Daño"],
-        ["Natura", "Acierto de Multigolpe", "Tolerancia a Daño JcE"],
-        ["Varian", "Amplificación de Daño Frontal", "Tolerancia a Daño JcE"],
-        ["Special", "Golpe", "Tolerancia a Daño"]
-      ]},
-      {"titulo": "Resto de ranuras", "tipo": "tabla", "columnas": ["Ranuras", "Qué buscar"], "filas": [
-        ["1 y 5", "Ataque Máximo, luego Ataque Adicional"],
-        ["2 y 8", "Aumento de Puntos de Vida"],
-        ["3, 6 y 9", "Crítico o Precisión"]
-      ]},
-      {"tipo": "aviso", "texto": "En Natura, Acierto de Multigolpe antes que Perforación (la Perforación apenas rinde al Hechicero). Si la ranura 4 de Cogni o Fera no sale, Amplificación de Daño es buen plan B. Los Hechiceros de Corea y Taiwán buscan Golpe y Ataque Frontal en las ranuras 3 y 9, pero **en global esas tiradas no existen ahí**: ignora esos objetivos."}
-    ]
+ "clase": "sorcerer",
+ "nombre": "Hechicero",
+ "resumen": "Caster de PvE a 20 metros cuyo daño es una cadena de reducciones de enfriamiento: Flecha en llamas marca, Explosión de llama gasta la marca y acelera Voto de concentración, Voto quita 10 s a todo y Quebrantamiento en llamas acelera **Llamas del infierno**, tu golpe más fuerte. Mejora elemental (+20% de Ataque de Fuego y Agua) lo multiplica todo y la **Reducción de Tiempo de Enfriamiento** es lo que mantiene la rueda girando.",
+ "pros": [
+  "20 metros de alcance: rara vez te comes lo malo del suelo.",
+  "El daño se reparte entre muchas habilidades: un casteo fallado no arruina el pull.",
+  "Barrera de fuego, Tormenta helada y Viento helado golpean hasta 4 enemigos y siguen golpeando mientras estén dentro.",
+  "Toga de llama no tiene techo de nivel: cada nivel es más daño PvE.",
+  "Explosión de Congelación te cura: aguantas en solitario mejor que la mayoría de casters.",
+  "El equipo crafteado conserva sus líneas de Soul Binding al subirlo de tier."
+ ],
+ "contras": [
+  "Subir de nivel es duro: el kit no cuaja hasta que las habilidades principales llegan a 16.",
+  "Al principio vas muy corto de Reducción de Tiempo de Enfriamiento y Velocidad de Hechizo.",
+  "Maná justo al empezar (unos 3.000), y dos pasivas lo piden por encima del 25% o del 50%.",
+  "Barrera de fuego y Tormenta helada se quedan donde las pones: un jefe que se mueve las desperdicia.",
+  "La macro es sensible al ping: con ping alto pierdes daño de verdad.",
+  "Solo 4 ranuras de estigma en el lanzamiento: toca cambiar de configuración entre mazmorras."
+ ],
+ "presets": [
+  {
+   "nombre_en": "Boss dungeons",
+   "nombre": "Mazmorras de jefes",
+   "uso": "Preset por defecto contra jefes."
+  },
+  {
+   "nombre_en": "Stagger checks",
+   "nombre": "Comprobaciones de Stagger",
+   "uso": "Jefes con barra de Stagger que hay que romper (Explosión de divinidad)."
+  },
+  {
+   "nombre_en": "Leveling and solo",
+   "nombre": "Leveling y solitario",
+   "uso": "Subir de nivel y jugar solo, con Barrera de acero como red de seguridad."
   }
+ ],
+ "tecla_macro": "Botón derecho del ratón",
+ "macros_por_preset": [
+  {
+   "preset_en": "Boss dungeons",
+   "pasos": [
+    "Viento helado",
+    "Viento helado",
+    "Viento helado",
+    "Mejora elemental"
+   ],
+   "retardo_ms": 10,
+   "nota": "Mantén pulsados los dos botones del ratón. Con ping de 80-100 o más, sube el retardo a 40-50 ms."
+  },
+  {
+   "preset_en": "Stagger checks",
+   "pasos": [
+    "Viento helado",
+    "Viento helado",
+    "Viento helado",
+    "Mejora elemental"
+   ],
+   "retardo_ms": 10,
+   "nota": "Misma macro en los tres presets."
+  },
+  {
+   "preset_en": "Leveling and solo",
+   "pasos": [
+    "Viento helado",
+    "Viento helado",
+    "Viento helado",
+    "Mejora elemental"
+   ],
+   "retardo_ms": 10,
+   "nota": "Misma macro en los tres presets."
+  }
+ ],
+ "secciones": {
+  "equipo": [
+   {
+    "titulo": "Ruta del grimorio",
+    "tipo": "tabla",
+    "columnas": [
+     "Etapa",
+     "Pieza",
+     "Notas"
+    ],
+    "filas": [
+     [
+      "1.ª mejora a 45",
+      "Aulamus Spellbook",
+      "Nivel de objeto 70, 4 líneas de Soul Binding"
+     ],
+     [
+      "Nivel de objeto 86",
+      "Abyssal Spellbook (raid, 4 líneas)",
+      "Mejor que Enraged Kromede Spellbook, que solo tiene 3"
+     ],
+     [
+      "Objetivo crafteado",
+      "White Dragon Lord Spellbook + White Dragon Lord Guard (Elyos) / Dark Dragon Lord Spellbook (Asmodian)",
+      "Primero grimorio, luego guarda, luego accesorios"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "White Dragon Lord empieza en nivel de objeto 78 (menos que el 86 de mazmorra), pero tiene **5 líneas** y las conserva al subir a Splendent (86), Wise (94) y Splendent Wise (102); en Asmodian esos pasos se llaman Ebony. Lleva el arma a +10 pronto, pero no pases de ahí antes del nivel máximo."
+   },
+   {
+    "titulo": "Soul Binding: reglas",
+    "tipo": "lista",
+    "items": [
+     "Las líneas de valor variable, en las primeras ranuras (ahí rerolleas).",
+     "**Toga de llama** en toda la armadura, pendientes y collar: 10 líneas = +10 niveles a tu mejor pasiva.",
+     "Amplificación de Daño es la línea más rara del grimorio: no tires uno con buena Velocidad de Hechizo y Amplificación de Daño de Arma por esperarla.",
+     "Perforación tiene poca prioridad: tu rango de daño solo tiene un 10% de amplitud.",
+     "Tolerancia a Daño Crítico y Tolerancia a Daño de Arma en la capa no sirven en PvE: rerolléalas.",
+     "Anillos = niveles de habilidad: llevan las 4 principales de 14 a 16 (5.ª especialización). Ataque en un anillo solo cuando cumplas todos los objetivos de habilidad.",
+     "La línea extra de Piedra filosofal no se conserva al transferir o subir de tier; todo lo demás sí."
+    ]
+   },
+   {
+    "titulo": "Manastones",
+    "tipo": "tabla",
+    "columnas": [
+     "Dónde",
+     "Orden"
+    ],
+    "filas": [
+     [
+      "Grimorio y guarda",
+      "Weapon Damage Boost y Critical Damage Boost → Front Attack Damage Boost → Ataque"
+     ],
+     [
+      "Armadura",
+      "Amplificación de Daño Frontal y Ataque"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Ataque Frontal es discutido en el Hechicero. Un medidor en Taiwán dio: habilidades de fuego 100% frontales, Tormenta helada 96%, Barrera de fuego 63%, Viento helado 0% (unas tres cuartas partes del daño). Merece una piedra, pero no antes de las dos seguras. **Nadie lo ha probado aún en global.** Las manastones se pierden al transferir: no gastes las caras en equipo de paso."
+   },
+   {
+    "titulo": "Accesorios",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "1.ª opción",
+     "Opcional"
+    ],
+    "filas": [
+     [
+      "Brazaletes",
+      "Abyssal Bracelet con Fantasía, Sabiduría, Destrucción y Tiempo (no se negocian)",
+      "Línea sobrante: Muerte (Crítico) o Libertad (Precisión)"
+     ],
+     [
+      "Amuleto",
+      "Revelation Amulet (Amplificación de Daño de Arma); a +10 cuando tengas las plumas",
+      "Fierce Battle Amulet para PvP"
+     ],
+     [
+      "Cinturón y runas",
+      "Noble Belt + 2 Clash Rune",
+      "—"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Amuleto, cinturón y runas son elección de esta guía por efecto: ninguna guía del Hechicero los cubre todavía."
+   },
+   {
+    "titulo": "Arcana",
+    "tipo": "lista",
+    "items": [
+     "Caen en Transcendence. Cada carta da su stat de dios + hasta 4 líneas de su propio grupo: buscas una carta cuyas líneas caigan en tus habilidades.",
+     "El set se salta a propósito el bonus de 4 piezas: al principio valen más los stats sueltos.",
+     "Compass of Magic antes que la de vitalidad: te falta mucho más Crítico que Precisión (pero el crítico topa en 50%).",
+     "Mirror of Vigor da Reducción de Tiempo de Enfriamiento; cuando pases de ~35% sin ella, cámbiala por Mirror of Magic (Golpe).",
+     "Bell of Magic apenas importa en PvE: va por su Ataque.",
+     "El planificador anota una habilidad por carta: toma sus niveles como mínimo. Chalice of Vigor (saca cualquier habilidad) se craftea la última."
+    ]
+   }
+  ],
+  "habilidades": [
+   {
+    "tipo": "aviso",
+    "texto": "Consigue fragmentos de punto de habilidad cuanto antes. El Hechicero florece tarde: se siente completo cuando Llamas del infierno, Voto de concentración, Explosión de llama, Quebrantamiento en llamas y Flecha en llamas llegan a 16."
+   },
+   {
+    "titulo": "Cómo se suman los niveles",
+    "tipo": "pasos",
+    "items": [
+     "Puntos de habilidad: 10. Los 4 tableros de Daevanion: +4 = 14 (abre la 2.ª especialización, que pide 12).",
+     "Dos anillos con Llamas del infierno, Voto de concentración, Explosión de llama y Quebrantamiento en llamas: 16 (abre la 5.ª especialización).",
+     "La 3.ª ranura pide 20 y necesita Arcana: el Pergamino sube Llamas del infierno a 20.",
+     "Viento helado: 10 + 4 + 4 de la Brújula = 18.",
+     "Flecha en llamas, Atadura invernal y Llamas sin puntería se quedan en 14; necesitan una línea de Arcana (Pergamino o Brújula) para 16."
+    ]
+   },
+   {
+    "titulo": "Activas clave",
+    "tipo": "tabla",
+    "columnas": [
+     "Habilidad",
+     "Para qué",
+     "Ojo con"
+    ],
+    "filas": [
+     [
+      "Llamas del infierno",
+      "Golpe más fuerte, cargado en 3 fases",
+      "Te deja quieto al cargar: la espec. 3 te deja moverte. Contra jefe quieto, cambia la 3 por la 4"
+     ],
+     [
+      "Voto de concentración",
+      "+10% Velocidad de Hechizo; espec. 5 quita 10 s a todos los enfriamientos",
+      "Hasta tener la 5 lleva la 2 y la 4; a 16 la 5 ocupa la ranura de la 2, que vuelve a 20"
+     ],
+     [
+      "Explosión de llama",
+      "Daño extra (espec. 3: ~35% más)",
+      "Solo contra objetivo con Marca ígnea. La espec. 5 (−3 s a Voto por golpe) es imprescindible"
+     ],
+     [
+      "Quebrantamiento en llamas",
+      "Espec. 4: −2 s a Llamas del infierno por bola de fuego (el motor)",
+      "Si vas justo de maná al principio, espec. 1 (−50% de coste)"
+     ],
+     [
+      "Viento helado",
+      "Crítico garantizado (espec. 4) e inmoviliza 3 s a los monstruos",
+      "Nunca la espec. 5 contra jefes. Con 25,6% de Reducción pasa de 18 a 26 golpes"
+     ],
+     [
+      "Flecha en llamas",
+      "Ataque básico, devuelve maná",
+      "Hasta 16, espec. 1 (+20% maná) o 2 (absorción) junto a la 4"
+     ],
+     [
+      "Atadura invernal",
+      "Espec. 3: +20% Amplificación de Daño de JcE 5 s",
+      "Quitar la espec. 3 cuesta ~3% de daño"
+     ],
+     [
+      "Llamas sin puntería",
+      "Solo contra objetivo en Stagger; a 16 la espec. 5 quita 1 s a todo por golpe",
+      "Por debajo de 16, fuera de la barra"
+     ],
+     [
+      "Cadena gélida",
+      "Rellena huecos mientras tu Reducción sea baja",
+      "—"
+     ],
+     [
+      "Explosión de Congelación",
+      "Tu cura (absorción) y móvil",
+      "No es daño"
+     ],
+     [
+      "Congelación",
+      "Resetea Explosión de Congelación",
+      "Sobre todo para subir de nivel y PvP"
+     ],
+     [
+      "Eliminación de impacto",
+      "Ruptura de aturdimiento, +20% de vida",
+      "La Reducción no la afecta: cada nivel le quita 1 s (49 s a nivel 12)"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Se lanzan en movimiento: Flecha en llamas, Quebrantamiento en llamas, Explosión de llama, Cadena gélida, Congelación, Voto de concentración y los estigmas Mejora elemental, Explosión retrasada, Barrera de acero y Blindaje ártico. Te dejan quieto: Llamas del infierno, Viento helado, Atadura invernal, Explosión de Congelación, Llamas sin puntería, Barrera de fuego, Tormenta helada, Explosión de divinidad y Golpe de glaciar. Por eso las especializaciones de movimiento valen la pena en las primeras."
+   },
+   {
+    "titulo": "Pasivas",
+    "tipo": "tabla",
+    "columnas": [
+     "Pasiva",
+     "Nivel objetivo",
+     "Por qué"
+    ],
+    "filas": [
+     [
+      "Toga de llama",
+      "32",
+      "+100 Precisión, +1% Amplificación de Daño de JcE y +0,2% Golpe por nivel (32% y 6,4% a 32). Sin techo: aliméntala siempre"
+     ],
+     [
+      "Merced de mejora",
+      "16",
+      "+20% Amplificación de Daño de JcE con maná ≥25%. Otros ponen Vaporización de viveza o Marca ígnea"
+     ],
+     [
+      "Marca ígnea",
+      "18",
+      "Desbloquea Explosión de llama; basta el nivel base"
+     ],
+     [
+      "Toga terrestre / Vaporización de viveza",
+      "14",
+      "Maná y Crítico con maná ≥50% / daño extra a objetivos >70% de vida; nivel base + tableros"
+     ]
+    ]
+   }
+  ],
+  "estigmas": [
+   {
+    "tipo": "aviso",
+    "texto": "4 ranuras (niveles 22, 27, 32 y 37). Coste en fragmentos: 1 por nivel hasta 5, 2 hasta 10, 4 hasta 15 y 8 hasta 20 (75 para llevar uno a 20). Orden: **Mejora elemental hasta arriba**, luego Barrera de fuego, Tormenta helada y Explosión retrasada a 10. Explosión retrasada da su 15% desde nivel 1: equípala ya."
+   },
+   {
+    "titulo": "Qué lleva cada preset",
+    "tipo": "tabla",
+    "columnas": [
+     "Preset",
+     "Estigmas",
+     "Por qué"
+    ],
+    "filas": [
+     [
+      "Mazmorras de jefes",
+      "Mejora elemental, Barrera de fuego, Tormenta helada, Explosión retrasada",
+      "Máximo daño: campos sobre el jefe + buff de daño antes de Llamas del infierno"
+     ],
+     [
+      "Comprobaciones de Stagger",
+      "Mejora elemental, Barrera de fuego, Explosión de divinidad, Explosión retrasada",
+      "Explosión de divinidad mete 50 de Stagger de golpe"
+     ],
+     [
+      "Leveling y solitario",
+      "Mejora elemental, Barrera de fuego, Barrera de acero, Explosión retrasada",
+      "Barrera de acero es tu red de seguridad"
+     ]
+    ]
+   },
+   {
+    "titulo": "Qué hace cada estigma",
+    "tipo": "tabla",
+    "columnas": [
+     "Estigma",
+     "Efecto",
+     "Niveles clave"
+    ],
+    "filas": [
+     [
+      "Mejora elemental",
+      "+20% Ataque de Fuego y Agua (núcleo de la clase)",
+      "5: +200 Precisión; 10: Toga de llama ×1,5; 15: Merced de mejora ×1,5; 20: +10% más"
+     ],
+     [
+      "Barrera de fuego",
+      "Muro de 10 m, golpea 5 veces y deja Embers",
+      "10: +2 m de ancho"
+     ],
+     [
+      "Tormenta helada",
+      "Daño, Slow y campo de Frostbite 7 s",
+      "—"
+     ],
+     [
+      "Explosión retrasada",
+      "Daño a los 4 s; el objetivo recibe +15% de ti mientras tanto",
+      "Siempre justo antes de Llamas del infierno. 10: −10 s de enfriamiento"
+     ],
+     [
+      "Explosión de divinidad",
+      "50 de Stagger en un lanzamiento",
+      "Comparación: Llamas del infierno 20-35, Golpe de glaciar y Tormenta helada 20, Congelación y Viento helado 10, Explosión de llama 7, Quebrantamiento en llamas 5, Cadena gélida 2"
+     ],
+     [
+      "Barrera de acero",
+      "Escudo 60 s + 10% Tolerancia a Daño JcE",
+      "20: enfriamiento 45 s, el escudo nunca cae"
+     ],
+     [
+      "Blindaje ártico",
+      "+20% Tolerancia a Daño JcE 10 s",
+      "Cambio por Tormenta helada mientras aprendes un jefe que pega fuerte"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Farmeo de mobs: cambia Barrera de fuego o Tormenta helada por Golpe de glaciar. PvP (arena): Mejora elemental, Barrera de acero, Soul Freeze y Hibernation (Blindaje ártico en vez de Hibernation contra presión constante), y espec. 3 de Quebrantamiento en llamas (−60% de curación recibida)."
+   }
+  ],
+  "daevanion": [
+   {
+    "titulo": "Desbloqueo de tableros",
+    "tipo": "lista",
+    "items": [
+     "Nezekan a 12, Zikel a 20, Vaizel a 30, Triniel a 40 y Azphel a 45.",
+     "Los cuatro primeros comparten puntos; Azphel tiene los suyos y solo da PvP: déjalo para después."
+    ]
+   },
+   {
+    "titulo": "Orden",
+    "tipo": "pasos",
+    "items": [
+     "Nodos azules en los 4 tableros: Llamas del infierno, Voto de concentración, Explosión de llama (en el tablero sale como Flame Explosion), Quebrantamiento en llamas, Viento helado, Flecha en llamas y Atadura invernal.",
+     "Naranjas: Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento en Nezekan, Amplificación de Daño en Zikel, Amplificación de Daño Crítico en Vaizel.",
+     "Verdes: Toga de llama donde aparezca (2 en Nezekan, 1 en Vaizel y Triniel, 0 en Zikel; en el tablero, Flame Robe), luego Merced de mejora.",
+     "Ataque, Crítico y lo que pille de camino."
+    ]
+   },
+   {
+    "titulo": "Qué saltarte",
+    "tipo": "lista",
+    "items": [
+     "Al principio: Puntos de Vida máximos, Defensa, Puntos de Maná máximos y Resistencia Crítica (cógelos al completar el tablero).",
+     "Absorción de esencia, Merced de resistencia y Pacto de resurrección: PvP y aguante, nada para mazmorra.",
+     "Tolerancia a Daño Crítico (Vaizel) y Resistencia a Multigolpe (Triniel): inútiles en PvE.",
+     "Acierto de Multigolpe en Triniel es opinable: esta guía lo coge en el tablero completo, no en el de lanzamiento."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Dos presets: **Prioridad de lanzamiento** (277 puntos, pasos 1-3) y **PvE completo** (471). No se sabe cuántos puntos tendrá un nivel 45 en el lanzamiento: sigue el primero y para donde se acaben. Al principio resetear es gratis."
+   }
+  ],
+  "rotacion": [
+   {
+    "titulo": "Antes de empezar",
+    "tipo": "lista",
+    "items": [
+     "Juega en **Target Mode**: el modo acción interrumpe el ataque básico entre habilidades.",
+     "Activa Skill Queue si las habilidades no salen.",
+     "Puedes apilar hasta 3 habilidades sobre una ranura rápida.",
+     "Mantén pulsada Flecha en llamas: también cancela el final de las animaciones (verás una imagen fantasma)."
+    ]
+   },
+   {
+    "titulo": "Opener",
+    "tipo": "pasos",
+    "items": [
+     "Mejora elemental.",
+     "Explosión retrasada.",
+     "Llamas del infierno con la carga al máximo.",
+     "Barrera de fuego y Tormenta helada sobre el jefe.",
+     "Activa la macro y sigue con Flecha en llamas."
+    ]
+   },
+   {
+    "titulo": "Entre ventanas",
+    "tipo": "pasos",
+    "items": [
+     "Voto de concentración siempre que esté listo (resetea casi toda la barra).",
+     "Mantén Viento helado en enfriamiento.",
+     "Rellena huecos con Explosión de llama, Quebrantamiento en llamas y Flecha en llamas.",
+     "Cuando vuelva Llamas del infierno: Explosión retrasada primero, Atadura invernal justo antes de cargar (su buff de 5 s la cubre) y carga al máximo."
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Llamas del infierno nunca va en la macro: cárgala a mano."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Retardo de la macro: ping < 50 → 10 ms; ping de 80-100 o más → 40-50 ms. Las tres entradas de Viento helado dan prioridad a su pila (tus enfriamientos cortos)."
+   },
+   {
+    "titulo": "A qué apuntar",
+    "tipo": "tabla",
+    "columnas": [
+     "Stat",
+     "Objetivo"
+    ],
+    "filas": [
+     [
+      "Reducción de Tiempo de Enfriamiento",
+      "Mínimo 25% (Voto siempre activo y golpes extra de Viento helado); cómodo con 35%; tope del juego 60%"
+     ],
+     [
+      "Velocidad de Hechizo",
+      "115-120% con Voto y un pergamino de Velocidad de Hechizo"
+     ],
+     [
+      "Crítico",
+      "Tope 50% y la Resistencia Crítica del jefe lo baja; Viento helado (espec. 4) ya critea siempre. Cerca del tope, mejor Ataque o Precisión"
+     ],
+     [
+      "Precisión",
+      "Voto y Mejora elemental a 5 ya dan 300: necesitas menos del equipo"
+     ],
+     [
+      "Maná",
+      "Por encima del 50% (Toga terrestre pierde Crítico por debajo; Merced de mejora pierde su 20% bajo el 25%)"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Referencia: en Corea y Taiwán un Hechicero bien equipado mete Llamas del infierno 26-28 veces por minuto en un muñeco. Sirve para medir cuánto te rinde la Reducción."
+   }
+  ],
+  "coleccionables": [
+   {
+    "titulo": "Alas",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "Alas",
+     "Por qué"
+    ],
+    "filas": [
+     [
+      "1.ª opción",
+      "Talisra Wings",
+      "4% de Reducción de Tiempo de Enfriamiento; más de 9 de cada 10 Hechiceros coreanos las llevan"
+     ],
+     [
+      "Apaño",
+      "Nightmare Wings / Dark Veil Wings",
+      "—"
+     ],
+     [
+      "Opcional",
+      "Forest Spirit Wings",
+      "Amplificación de Daño de Jefe y Tolerancia a Daño"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Las alas de Ataque Frontal que mencionan los coreanos no existen en global. Colecciona todas las alas: dan stats aunque no las lleves."
+   },
+   {
+    "titulo": "Títulos",
+    "tipo": "tabla",
+    "columnas": [
+     "Momento",
+     "Título",
+     "Qué da"
+    ],
+    "filas": [
+     [
+      "Lanzamiento",
+      "Protector de Verteron (Protector de Altgard en Asmodian)",
+      "Amplificación de Daño de JcE y Penetración"
+     ],
+     [
+      "Lanzamiento",
+      "Santo de Verteron (Santo de Altgard en Asmodian)",
+      "Defensa"
+     ],
+     [
+      "Lanzamiento",
+      "Castigador de Comandante de Lagta (jefe de campo)",
+      "Velocidad de Hechizo y Velocidad de Movimiento"
+     ],
+     [
+      "Más adelante",
+      "Creación del cielo y la tierra",
+      "5.5% Amplificación de Daño de JcE, 4% Golpe, 90 Precisión"
+     ],
+     [
+      "Más adelante",
+      "Dominador del espacio",
+      "Tolerancia a Daño JcE"
+     ],
+     [
+      "Más adelante",
+      "Ay, no tengo nada que ponerme",
+      "Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento"
+     ],
+     [
+      "Más adelante",
+      "De ida y vuelta al infierno",
+      "Reducción de Tiempo de Enfriamiento"
+     ]
+    ]
+   },
+   {
+    "titulo": "Panteón",
+    "tipo": "lista",
+    "items": [
+     "Busca Fantasía (Reducción de Tiempo de Enfriamiento) y Sabiduría (Golpe) en retratos, la estatua dorada de 3 líneas y un coloso con Tiempo, Sabiduría y Destrucción (Coloso: Ilusión de Kaisinel, Coloso: Tassin tirano o Coloso: Atheron ascendido), antes que los de Justicia.",
+     "Sin prisa con los retratos: salen jugando."
+    ]
+   }
+  ],
+  "mascotas": [
+   {
+    "titulo": "Reglas",
+    "tipo": "lista",
+    "items": [
+     "El género es tu primer gran gasto de Kina.",
+     "Sube cada género a 10 antes de bloquear nada.",
+     "Bloquea solo tiradas Unique cerca del máximo de su rango."
+    ]
+   },
+   {
+    "titulo": "Prioridad de ranuras",
+    "tipo": "pasos",
+    "items": [
+     "Ranura 4.",
+     "Ranura 7.",
+     "Ranuras 2 y 8.",
+     "El resto: ataque y Precisión o Crítico."
+    ]
+   },
+   {
+    "titulo": "Ranuras 4 y 7 por género",
+    "tipo": "tabla",
+    "columnas": [
+     "Género",
+     "Ranura 4",
+     "Ranura 7"
+    ],
+    "filas": [
+     [
+      "Cogni",
+      "Amplificación de Daño Crítico",
+      "Tolerancia a Daño"
+     ],
+     [
+      "Fera",
+      "Amplificación de Daño de Arma",
+      "Tolerancia a Daño"
+     ],
+     [
+      "Natura",
+      "Acierto de Multigolpe",
+      "Tolerancia a Daño JcE"
+     ],
+     [
+      "Varian",
+      "Amplificación de Daño Frontal",
+      "Tolerancia a Daño JcE"
+     ],
+     [
+      "Special",
+      "Golpe",
+      "Tolerancia a Daño"
+     ]
+    ]
+   },
+   {
+    "titulo": "Resto de ranuras",
+    "tipo": "tabla",
+    "columnas": [
+     "Ranuras",
+     "Qué buscar"
+    ],
+    "filas": [
+     [
+      "1 y 5",
+      "Ataque Máximo, luego Ataque Adicional"
+     ],
+     [
+      "2 y 8",
+      "Aumento de Puntos de Vida"
+     ],
+     [
+      "3, 6 y 9",
+      "Crítico o Precisión"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "En Natura, Acierto de Multigolpe antes que Perforación (la Perforación apenas rinde al Hechicero). Si la ranura 4 de Cogni o Fera no sale, Amplificación de Daño es buen plan B. Los Hechiceros de Corea y Taiwán buscan Golpe y Ataque Frontal en las ranuras 3 y 9, pero **en global esas tiradas no existen ahí**: ignora esos objetivos."
+   }
+  ]
+ }
 }

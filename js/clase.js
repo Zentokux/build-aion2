@@ -1,4 +1,4 @@
-// Página de clase: lee window.BUILD (data/builds/<clase>.js) y la pinta con la maqueta de metaroad
+// Página de clase: lee window.BUILD (data/builds/<clase>.js) y la pinta
 var TECLA_TXT = { LMB: "Clic izq.", RMB: "Clic der.", Otra: "Otra" };
 var PRESET_DAEV = { "Launch priority": "Prioridad de lanzamiento", "Full PvE": "JcE completo" };
 var IZQ = [["MainHand", "SubHand"], ["Helmet", "Shoulder"], ["Torso", "Pants"], ["Gloves", "Boots"], ["Cape"]];
@@ -91,7 +91,7 @@ function pintarClase() {
     '<div class="arte"><img class="pj" src="icons/clases/' + B.clase + '-arte.webp" alt="" onerror="this.remove()"><img class="emb" src="icons/clases/' + B.clase + '.webp" alt=""></div>' +
     lado(DER) + "</div>";
   te += '<p class="fuente">Pasa el ratón por cada pieza para ver sus estadísticas, Soul Binding y Manastones.</p>';
-  // tabla de Soul Binding como la de metaroad: ranuras con las mismas líneas juntas
+  // tabla de Soul Binding: ranuras con las mismas líneas juntas
   var GRUPOS = [["MainHand", "SubHand", "Arma y guarda"], ["Earring1", "Earring2", "Pendientes"], ["Ring1", "Ring2", "Anillos"], ["Bracelet1", "Bracelet2", "Brazaletes"]];
   var filasSB = [], hechas = {};
   ["MainHand", "SubHand", "Helmet", "Shoulder", "Torso", "Pants", "Gloves", "Cape", "Boots", "Necklace", "Earring1", "Earring2", "Ring1", "Ring2", "Bracelet1", "Bracelet2"].forEach(function (k) {
@@ -146,7 +146,7 @@ function pintarClase() {
       (sp.length ? '<div class="esp">' + sp.map(function (s) { return esc(s.texto); }).join(" · ") + "</div>" : "") + "</div></div>";
   }
   var enP1 = (B.presets[0] || {}).habilidades || [];
-  // orden de metaroad: por casilla de la barra y, dentro de cada pila, de abajo arriba
+  // orden: por casilla de la barra y, dentro de cada pila, de abajo arriba
   var ordenBarra = {};
   B.barra.forEach(function (c, i) { c.pila.forEach(function (id, j) { ordenBarra[id] = i * 10 + j; }); });
   function grupoFichas(titulo, lista) {
@@ -208,13 +208,9 @@ function pintarClase() {
   tm += bloquesHTML(S.mascotas);
   h += seccion("mascotas", "Mascotas", tm);
 
-  h += '<p class="fuente" style="margin-top:30px">Fuente: <a href="' + esc(B.fuente) + '" target="_blank" rel="noopener">' + esc(B.fuente) + "</a>" +
-    (B.planificador ? ' · <a href="' + esc(B.planificador) + '" target="_blank" rel="noopener">abrir la build en el planificador de metaroad</a>' : "") + "</p>";
 
   // ---------- maqueta con lateral ----------
-  var lateral = '<aside class="lateral"><div class="lat-caja autor"><div class="titulo">Autor</div><b>' + esc(B.autor || "metaroad") +
-    '</b><div style="color:var(--morado);font-size:12px">metaroad.gg</div><div class="fila" style="margin-top:8px">Actualizado<b>' + esc(B.actualizado) +
-    '</b></div></div><div class="lat-caja indice"><div class="titulo" style="text-align:left">Índice</div><ol>' +
+  var lateral = '<aside class="lateral"><div class="lat-caja indice"><div class="titulo" style="text-align:left">Índice</div><ol>' +
     secciones.map(function (s) { return '<li><a href="#' + s[0] + '">' + esc(s[1]) + "</a></li>"; }).join("") + "</ol></div></aside>";
   main.innerHTML = '<div class="pag">' + lateral + '<div class="contenido">' + h + "</div></div>";
 
@@ -259,7 +255,7 @@ function barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) {
   var out = '<div class="barra-box"><h3 style="margin-top:0">Barra nivel ' + B.nivel + " (orden del juego)</h3>" + barra +
     '<div class="barra-pie">Orden del juego: 1-8, Q, E, clic izquierdo, clic derecho. Las doradas son las que pulsa la macro. ' +
     "En una línea apilada sale primero la de abajo (el número pequeño es el orden).</div>" +
-    (porTecla.Otra ? '<p class="notas-barra">«Otra»: metaroad pone una 9.ª habilidad y también la rotula «Q»; como Q ya está ocupada, ponla en cualquier tecla libre.</p>' : "") + "</div>";
+    (porTecla.Otra ? '<p class="notas-barra">«Otra»: esta clase lleva una 9.ª habilidad en la barra; como Q ya está ocupada, ponla en cualquier tecla libre.</p>' : "") + "</div>";
   if (macro) {
     out += "<h3>Tu macro (" + esc(nombrePreset(B.presets[0] && B.presets[0].nombre_en)) + ")</h3>" +
       '<div class="panel"><div class="macro">' + macro.pasos.map(function (p, i) {
@@ -267,7 +263,7 @@ function barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) {
         return (i ? '<span class="flecha">→</span>' : "") + '<div class="paso"><b>Paso ' + (i + 1) + "</b>" + icono(p.id) +
           "<span>" + esc(x.nombre) + "</span><small>" + p.ms + " ms</small></div>";
       }).join("") + "</div><table><tr><th>Tecla</th><td><strong>Clic der.</strong>, mantenla pulsada" +
-      (B.macro_rmb_metaroad ? "" : " (metaroad solo dice «una tecla que mantengas pulsada»)") + "</td></tr></table></div>";
+      (B.macro_rmb ? "" : " (o cualquier tecla que puedas mantener pulsada)") + "</td></tr></table></div>";
   }
   var otras = (T.macros_por_preset || []).filter(function (m) { return m.pasos && m.pasos.length; });
   if (otras.length) {

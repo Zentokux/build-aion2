@@ -1,129 +1,243 @@
 {
-  "slug": "getting-started__la-cronologia-coreana-y-lo-que-hereda-la-version-global",
-  "categoria": "getting-started",
-  "titulo": "La cronología coreana y lo que hereda la global",
-  "fuente": "https://metaroad.gg/es/aion2/getting-started/la-cronologia-coreana-y-lo-que-hereda-la-version-global",
-  "resumen": "Corea parcheó casi cada miércoles durante 45 semanas. La global es la Season 1 (noviembre de 2025) con los tamaños de grupo del Chapter 1 injertados; casi todo lo demás posterior es un «quizá».",
-  "bloques": [
-    {
-      "titulo": "Datos clave",
-      "tipo": "lista",
-      "items": [
-        "Lanzamiento coreano: **19 de noviembre de 2025**. Global: **5 de octubre de 2026**. Entre medias: 320 días y 45 miércoles.",
-        "Cuatro parches abrieron temporada; los otros 41 movieron números (drops, coeficientes de clase, tiendas, topes) sin resumen oficial.",
-        "Desde el 27 de mayo hubo 19 notas semanales seguidas (lectura del 25 de septiembre de 2026), casi todas en miércoles.",
-        "Ante un número coreano, pregunta: ¿de qué fecha es?"
-      ]
-    },
-    {
-      "titulo": "Season 1 (19 de noviembre de 2025): tu cliente",
-      "tipo": "lista",
-      "items": [
-        "Ocho clases, nivel máximo **45**.",
-        "Expedition, Transcendence, Sanctuary, Nightmare, Subjugation, Ascension Trial, el Abismo, vuelo y fabricación.",
-        "Raid de lanzamiento: Abyssal Forge, con Ludra como jefe final.",
-        "Stigma, Enhancement, Daevanion, Arcana y Pantheon incluidos.",
-        "Entonces el grupo era de 4 y la raid de Sanctuary de 8 (luego cambió)."
-      ]
-    },
-    {
-      "titulo": "Las tres primeras semanas: control de daños",
-      "tipo": "tabla",
-      "columnas": ["Fecha", "Qué pasó"],
-      "filas": [
-        ["19 de noviembre de 2025", "NC retiró cuatro paquetes de Quna que regalaban 100 Battle Enhance Scrolls y 50 Soul Codex, y dio esos mismos 100 + 50 a todos como disculpa"],
-        ["26 de noviembre de 2025", "Sanciones: 1.098 cuentas farmeando mazmorra sin matar al jefe (450 millones de Kina recuperados); 2.440 cuentas abusando de entradas ilimitadas a Abyss Corridor (7 días de suspensión); 170 transferencias ilícitas de Kina y 50 bots (ban permanente). Kina diaria limitada a 2.000.000 por personaje y compras del mercado detrás de suscripción"],
-        ["10 de diciembre de 2025", "World Trading Post (comercio entre servidores): doble impuesto de venta que el del servidor, misma comisión de publicación, 10 anuncios activos por mercado. Tope diario de caza bajado a 1.000.000; al alcanzarlo también se cortan los drops de objetos"]
-      ]
-    },
-    {
-      "titulo": "Season 2 (desde el 21 de enero de 2026)",
-      "tipo": "tabla",
-      "columnas": ["Fecha", "Contenido"],
-      "filas": [
-        ["21 de enero", "Abre la Season 2: nuevas Expedition, Subjugation y Ascension Trial; debut de **Transfer**"],
-        ["11 de febrero", "**Soul Binding** y Cradle of Nihility (prometida para el 28 de enero)"],
-        ["25 de febrero", "Submerged Life Temple, diez niveles de dificultad (prometido para el 4 de febrero)"],
-        ["4 de marzo", "**Potential Enhancement** en equipo de mazmorra"],
-        ["11 de marzo", "Corroded Decontamination Facility, segundo Sanctuary (prometido para el 25 de febrero)"]
-      ]
-    },
-    {
-      "titulo": "25 de marzo de 2026: el parche que cambió las clases",
-      "tipo": "lista",
-      "items": [
-        "Coeficientes de JcE y PvP separados.",
-        "Una 13.ª habilidad de Stigma por clase; huecos de Stigma equipados de 4 a 5.",
-        "Habilidades de Stigma y de maestría comparten huecos sin restricción.",
-        "Kina ligada separada de la comerciable: la de misiones, encargos, ventas a NPC, mazmorras selladas y puestos avanzados se gasta primero y no se transfiere.",
-        "Cualquier ranking de clases coreano anterior al 25 de marzo de 2026 está desfasado."
-      ]
-    },
-    {
-      "titulo": "Season 3 y Chapter 1",
-      "tipo": "tabla",
-      "columnas": ["Fecha", "Contenido"],
-      "filas": [
-        ["8 de abril de 2026", "Season 3: Expedition Hall of Illusion, Advanced Transfer, Abismo renovado"],
-        ["27 de mayo de 2026", "Chalice of Muspel; hueco **Brooch** (más de 200 de nivel de objeto entre dos piezas); refuerzo de alas; se quita el tope de intentos de Sanctuary"],
-        ["1 de julio de 2026 (Chapter 1)", "Nivel máximo 45 → 50; Stigma hasta nivel 25; 9.ª clase Luchador (armas de puño); dos regiones nuevas; Odyle Energy sustituye a los tickets; huecos Pendant y Arcana; tres suscripciones fusionadas en una; tamaños de grupo subidos"]
-      ]
-    },
-    {
-      "titulo": "El injerto del Chapter 1 que sí tienes",
-      "tipo": "tabla",
-      "columnas": ["Contenido", "Antes", "Ahora (también en global)"],
-      "filas": [
-        ["Expedition y Transcendence", "4", "5"],
-        ["Sanctuary", "8", "10"],
-        ["Force", "16", "20"]
-      ]
-    },
-    {
-      "titulo": "Después del Chapter 1 (no lo recibes)",
-      "tipo": "tabla",
-      "columnas": ["Fecha", "Contenido"],
-      "filas": [
-        ["15 de julio de 2026", "Nivel Trial con Vakron Sky Island (nivel de objeto 4.800) y Abyss Rift 300 contra 300"],
-        ["12 de agosto de 2026", "Revisión de curación: potencia -20% a -50%, radio a 40 metros; dos mazmorras nuevas"],
-        ["2 de septiembre de 2026", "Grieta Espacio-Tiempo: Domination, asedio de 60 a 200 jugadores, luego 25 a 500"],
-        ["9 de septiembre de 2026", "Snowfield of Sorrow, cuarto Sanctuary: nivel de objeto 5.800 (6.200 en la máxima dificultad); hueco **Seal**"],
-        ["23 de septiembre de 2026", "Trial rota: Vakron Sky Island cierra, entra Fire Temple (nivel 50, nivel de objeto 4.800). Soul Binding con ajuste automático"]
-      ]
-    },
-    {
-      "titulo": "Publicado frente a deducido",
-      "tipo": "tabla",
-      "columnas": ["Afirmación", "Estado"],
-      "filas": [
-        ["Fechas coreanas de esta página", "Publicado (notas oficiales, NC o prensa coreana)"],
-        ["Global recibe los tamaños de grupo del Chapter 1", "Publicado por NC"],
-        ["Global = temporada de lanzamiento modificada, con calidad de vida y equilibrio del primer año y un año de contenido en reserva", "Publicado por NC"],
-        ["Sistemas posteriores a la Season 1 probablemente no están", "Deducción"],
-        ["Ajustes de economía de diciembre y separación de coeficientes de marzo incluidos", "Deducción, sin confirmar"],
-        ["Nivel máximo 45", "Deducción"],
-        ["Lista exacta de qué hereda global de cada parche", "No existe"]
-      ]
-    },
-    {
-      "titulo": "Cómo fechar una guía",
-      "tipo": "tabla",
-      "columnas": ["Si ves…", "Es de…"],
-      "filas": [
-        ["Grupo de 4, raid de 8", "Antes del 1 de julio de 2026"],
-        ["Transfer, Soul Binding o Potential Enhancement como algo normal", "Corea, de enero a marzo de 2026 en adelante: sin demostrar para ti"],
-        ["Ruta a nivel 50, Luchador u objetivos de nivel de objeto por encima de unos 4.000", "Corea después del 1 de julio de 2026"],
-        ["Número coreano sin fecha", "Imposible de fechar: casi igual que inútil"]
-      ]
-    },
-    {
-      "titulo": "Qué hacer",
-      "tipo": "pasos",
-      "items": [
-        "Planifica sobre la Season 1 con los tamaños de grupo del Chapter 1.",
-        "Trata como «quizá» todo lo fechado entre ambos.",
-        "Lee la nota del Advance Access (30 de septiembre): resuelve nivel máximo, menús de progreso activos y lista de mazmorras y raids."
-      ]
-    }
-  ]
+ "slug": "getting-started__la-cronologia-coreana-y-lo-que-hereda-la-version-global",
+ "categoria": "getting-started",
+ "titulo": "La cronología coreana y lo que hereda la global",
+ "resumen": "Corea parcheó casi cada miércoles durante 45 semanas. La global es la Season 1 (noviembre de 2025) con los tamaños de grupo del Chapter 1 injertados; casi todo lo demás posterior es un «quizá».",
+ "bloques": [
+  {
+   "titulo": "Datos clave",
+   "tipo": "lista",
+   "items": [
+    "Lanzamiento coreano: **19 de noviembre de 2025**. Global: **5 de octubre de 2026**. Entre medias: 320 días y 45 miércoles.",
+    "Cuatro parches abrieron temporada; los otros 41 movieron números (drops, coeficientes de clase, tiendas, topes) sin resumen oficial.",
+    "Desde el 27 de mayo hubo 19 notas semanales seguidas (lectura del 25 de septiembre de 2026), casi todas en miércoles.",
+    "Ante un número coreano, pregunta: ¿de qué fecha es?"
+   ]
+  },
+  {
+   "titulo": "Season 1 (19 de noviembre de 2025): tu cliente",
+   "tipo": "lista",
+   "items": [
+    "Ocho clases, nivel máximo **45**.",
+    "Expedition, Transcendence, Sanctuary, Nightmare, Subjugation, Ascension Trial, el Abismo, vuelo y fabricación.",
+    "Raid de lanzamiento: Abyssal Forge, con Ludra como jefe final.",
+    "Stigma, Enhancement, Daevanion, Arcana y Pantheon incluidos.",
+    "Entonces el grupo era de 4 y la raid de Sanctuary de 8 (luego cambió)."
+   ]
+  },
+  {
+   "titulo": "Las tres primeras semanas: control de daños",
+   "tipo": "tabla",
+   "columnas": [
+    "Fecha",
+    "Qué pasó"
+   ],
+   "filas": [
+    [
+     "19 de noviembre de 2025",
+     "NC retiró cuatro paquetes de Quna que regalaban 100 Battle Enhance Scrolls y 50 Soul Codex, y dio esos mismos 100 + 50 a todos como disculpa"
+    ],
+    [
+     "26 de noviembre de 2025",
+     "Sanciones: 1.098 cuentas farmeando mazmorra sin matar al jefe (450 millones de Kina recuperados); 2.440 cuentas abusando de entradas ilimitadas a Abyss Corridor (7 días de suspensión); 170 transferencias ilícitas de Kina y 50 bots (ban permanente). Kina diaria limitada a 2.000.000 por personaje y compras del mercado detrás de suscripción"
+    ],
+    [
+     "10 de diciembre de 2025",
+     "World Trading Post (comercio entre servidores): doble impuesto de venta que el del servidor, misma comisión de publicación, 10 anuncios activos por mercado. Tope diario de caza bajado a 1.000.000; al alcanzarlo también se cortan los drops de objetos"
+    ]
+   ]
+  },
+  {
+   "titulo": "Season 2 (desde el 21 de enero de 2026)",
+   "tipo": "tabla",
+   "columnas": [
+    "Fecha",
+    "Contenido"
+   ],
+   "filas": [
+    [
+     "21 de enero",
+     "Abre la Season 2: nuevas Expedition, Subjugation y Ascension Trial; debut de **Transfer**"
+    ],
+    [
+     "11 de febrero",
+     "**Soul Binding** y Cradle of Nihility (prometida para el 28 de enero)"
+    ],
+    [
+     "25 de febrero",
+     "Submerged Life Temple, diez niveles de dificultad (prometido para el 4 de febrero)"
+    ],
+    [
+     "4 de marzo",
+     "**Potential Enhancement** en equipo de mazmorra"
+    ],
+    [
+     "11 de marzo",
+     "Corroded Decontamination Facility, segundo Sanctuary (prometido para el 25 de febrero)"
+    ]
+   ]
+  },
+  {
+   "titulo": "25 de marzo de 2026: el parche que cambió las clases",
+   "tipo": "lista",
+   "items": [
+    "Coeficientes de JcE y PvP separados.",
+    "Una 13.ª habilidad de Stigma por clase; huecos de Stigma equipados de 4 a 5.",
+    "Habilidades de Stigma y de maestría comparten huecos sin restricción.",
+    "Kina ligada separada de la comerciable: la de misiones, encargos, ventas a NPC, mazmorras selladas y puestos avanzados se gasta primero y no se transfiere.",
+    "Cualquier ranking de clases coreano anterior al 25 de marzo de 2026 está desfasado."
+   ]
+  },
+  {
+   "titulo": "Season 3 y Chapter 1",
+   "tipo": "tabla",
+   "columnas": [
+    "Fecha",
+    "Contenido"
+   ],
+   "filas": [
+    [
+     "8 de abril de 2026",
+     "Season 3: Expedition Hall of Illusion, Advanced Transfer, Abismo renovado"
+    ],
+    [
+     "27 de mayo de 2026",
+     "Chalice of Muspel; hueco **Brooch** (más de 200 de nivel de objeto entre dos piezas); refuerzo de alas; se quita el tope de intentos de Sanctuary"
+    ],
+    [
+     "1 de julio de 2026 (Chapter 1)",
+     "Nivel máximo 45 → 50; Stigma hasta nivel 25; 9.ª clase Luchador (armas de puño); dos regiones nuevas; Odyle Energy sustituye a los tickets; huecos Pendant y Arcana; tres suscripciones fusionadas en una; tamaños de grupo subidos"
+    ]
+   ]
+  },
+  {
+   "titulo": "El injerto del Chapter 1 que sí tienes",
+   "tipo": "tabla",
+   "columnas": [
+    "Contenido",
+    "Antes",
+    "Ahora (también en global)"
+   ],
+   "filas": [
+    [
+     "Expedition y Transcendence",
+     "4",
+     "5"
+    ],
+    [
+     "Sanctuary",
+     "8",
+     "10"
+    ],
+    [
+     "Force",
+     "16",
+     "20"
+    ]
+   ]
+  },
+  {
+   "titulo": "Después del Chapter 1 (no lo recibes)",
+   "tipo": "tabla",
+   "columnas": [
+    "Fecha",
+    "Contenido"
+   ],
+   "filas": [
+    [
+     "15 de julio de 2026",
+     "Nivel Trial con Vakron Sky Island (nivel de objeto 4.800) y Abyss Rift 300 contra 300"
+    ],
+    [
+     "12 de agosto de 2026",
+     "Revisión de curación: potencia -20% a -50%, radio a 40 metros; dos mazmorras nuevas"
+    ],
+    [
+     "2 de septiembre de 2026",
+     "Grieta Espacio-Tiempo: Domination, asedio de 60 a 200 jugadores, luego 25 a 500"
+    ],
+    [
+     "9 de septiembre de 2026",
+     "Snowfield of Sorrow, cuarto Sanctuary: nivel de objeto 5.800 (6.200 en la máxima dificultad); hueco **Seal**"
+    ],
+    [
+     "23 de septiembre de 2026",
+     "Trial rota: Vakron Sky Island cierra, entra Fire Temple (nivel 50, nivel de objeto 4.800). Soul Binding con ajuste automático"
+    ]
+   ]
+  },
+  {
+   "titulo": "Publicado frente a deducido",
+   "tipo": "tabla",
+   "columnas": [
+    "Afirmación",
+    "Estado"
+   ],
+   "filas": [
+    [
+     "Fechas coreanas de esta página",
+     "Publicado (notas oficiales, NC o prensa coreana)"
+    ],
+    [
+     "Global recibe los tamaños de grupo del Chapter 1",
+     "Publicado por NC"
+    ],
+    [
+     "Global = temporada de lanzamiento modificada, con calidad de vida y equilibrio del primer año y un año de contenido en reserva",
+     "Publicado por NC"
+    ],
+    [
+     "Sistemas posteriores a la Season 1 probablemente no están",
+     "Deducción"
+    ],
+    [
+     "Ajustes de economía de diciembre y separación de coeficientes de marzo incluidos",
+     "Deducción, sin confirmar"
+    ],
+    [
+     "Nivel máximo 45",
+     "Deducción"
+    ],
+    [
+     "Lista exacta de qué hereda global de cada parche",
+     "No existe"
+    ]
+   ]
+  },
+  {
+   "titulo": "Cómo fechar una guía",
+   "tipo": "tabla",
+   "columnas": [
+    "Si ves…",
+    "Es de…"
+   ],
+   "filas": [
+    [
+     "Grupo de 4, raid de 8",
+     "Antes del 1 de julio de 2026"
+    ],
+    [
+     "Transfer, Soul Binding o Potential Enhancement como algo normal",
+     "Corea, de enero a marzo de 2026 en adelante: sin demostrar para ti"
+    ],
+    [
+     "Ruta a nivel 50, Luchador u objetivos de nivel de objeto por encima de unos 4.000",
+     "Corea después del 1 de julio de 2026"
+    ],
+    [
+     "Número coreano sin fecha",
+     "Imposible de fechar: casi igual que inútil"
+    ]
+   ]
+  },
+  {
+   "titulo": "Qué hacer",
+   "tipo": "pasos",
+   "items": [
+    "Planifica sobre la Season 1 con los tamaños de grupo del Chapter 1.",
+    "Trata como «quizá» todo lo fechado entre ambos.",
+    "Lee la nota del Advance Access (30 de septiembre): resuelve nivel máximo, menús de progreso activos y lista de mazmorras y raids."
+   ]
+  }
+ ]
 }

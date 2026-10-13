@@ -1,321 +1,320 @@
 {
-  "slug": "pvp__campo-de-batalla-y-asedio-de-artefactos",
-  "categoria": "pvp",
-  "titulo": "Campo de batalla y asedio de artefactos",
-  "fuente": "https://metaroad.gg/es/aion2/pvp/campo-de-batalla-y-asedio-de-artefactos",
-  "resumen": "El campo de batalla es una cola de escolta que paga 2.000 AP por victoria sin penalización por perder. El asedio de artefactos es miércoles y sábado a las 22:00 y decide quién controla el Abismo. Ninguno es obligatorio para progresar.",
-  "bloques": [
-    {
-      "tipo": "aviso",
-      "texto": "Horarios, número de artefactos, tamaños de equipo y tabla de buffs son **números coreanos**. El horario del asedio cambió al menos dos veces en 2026. Pon la alarma según el primer asedio real de tu servidor."
-    },
-    {
-      "titulo": "Las colas no miran la facción",
-      "tipo": "lista",
-      "items": [
-        "Elyos y Asmodianos no pueden agruparse en el mundo abierto, pero el **campo de batalla** y la **arena 4v4** forman equipos sin mirar la facción.",
-        "Es un cambio coreano tardío: una cola de una sola facción tendría la mitad de jugadores y el doble de espera.",
-        "Las colas pasaron en Corea a **franjas programadas** en 2026, con más recompensa. Nadie ha publicado el horario. Cola en gris = fuera de franja, no un bug."
-      ]
-    },
-    {
-      "titulo": "Arena (resumen)",
-      "tipo": "tabla",
-      "columnas": [
-        "Modo",
-        "Formato",
-        "Recompensa"
-      ],
-      "filas": [
-        [
-          "Arena of Solitude",
-          "1v1, gana quien llega a 3 puntos; tiene clasificación",
-          "100 AP por victoria, sin penalización"
-        ],
-        [
-          "Arena of Cooperation",
-          "4v4, gana quien elimina al otro equipo",
-          "100 AP por victoria, sin penalización"
-        ]
-      ]
-    },
-    {
-      "titulo": "Campo de batalla: los tres artefactos de campo",
-      "tipo": "tabla",
-      "columnas": [
-        "Artefacto",
-        "Qué hace"
-      ],
-      "filas": [
-        [
-          "**Rojo**",
-          "Mata en el acto, da igual equipo o nivel de objeto"
-        ],
-        [
-          "**Amarillo**",
-          "Tu equipo entero es invulnerable **8–9 segundos** (suele decidir la partida en una escolta)"
-        ],
-        [
-          "**Morado**",
-          "Convierte al equipo enemigo en **setas**: control de masas que saca a la defensa del tablero"
-        ]
-      ]
-    },
-    {
-      "titulo": "Campo de batalla: cómo se juega",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Objetivo",
-          "Llevar una **carga de antorcha** a un destino. **No es un deathmatch**: las muertes solo valen si despejan el camino o frenan al portador"
-        ],
-        [
-          "Primer artefacto",
-          "Aparece a los **9:30** de partida; reaparece unos **2 minutos** después de usarse"
-        ],
-        [
-          "Apertura",
-          "Los primeros 9,5 minutos son para **colocarte** de cara al artefacto"
-        ],
-        [
-          "Formato coreano",
-          "8v8"
-        ],
-        [
-          "Formato global (material de preview)",
-          "**10v10 con estadísticas igualadas**: la diferencia de equipo se aplana; buena entrada al PvP para jugadores nuevos"
-        ]
-      ]
-    },
-    {
-      "titulo": "Campo de batalla: lo que paga",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Por victoria",
-          "**2.000 AP** (= 20 victorias de arena)"
-        ],
-        [
-          "Límite",
-          "Se pagan hasta **10 victorias por semana**"
-        ],
-        [
-          "Reinicio",
-          "**Miércoles a las 05:00**"
-        ],
-        [
-          "Al perder",
-          "Sin penalización"
-        ],
-        [
-          "Entrada",
-          "**En solitario o grupo de exactamente 5**; nada intermedio, no se puede meter un equipo completo"
-        ],
-        [
-          "Total posible",
-          "**20.000 AP a la semana** en probablemente menos de 3 horas: el mejor AP por minuto fuera de una noche de asedio"
-        ]
-      ]
-    },
-    {
-      "titulo": "Asedio de artefactos: horario",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Cuándo"
-      ],
-      "filas": [
-        [
-          "Asedio de artefactos",
-          "**Miércoles y sábado a las 22:00**"
-        ],
-        [
-          "Jefe del Abismo",
-          "**22:30**, justo después"
-        ],
-        [
-          "Arranque",
-          "En secuencia **por pareja de servidores**: tu asedio es el de tu pareja"
-        ],
-        [
-          "Lunes, jueves y sábado a las 20:00 y 23:00",
-          "**No es el asedio**: es el concurso de la **Grieta Espacio-Tiempo**"
-        ]
-      ]
-    },
-    {
-      "titulo": "Asedio: formato",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Artefactos",
-          "**6**: 3 en el **Lower Abyss** y 3 en el **Middle Abyss**"
-        ],
-        [
-          "En cada uno",
-          "Aparece un **Dimensional Core**"
-        ],
-        [
-          "Quién gana",
-          "La facción que da el **golpe final** al núcleo se queda el artefacto (sin barra de captura, sin puerta, sin temporizador)"
-        ],
-        [
-          "Duración del control",
-          "Hasta el siguiente asedio, sin desgaste ni mantenimiento"
-        ]
-      ]
-    },
-    {
-      "titulo": "Asedio: qué haces tú",
-      "tipo": "lista",
-      "items": [
-        "Hacer daño al núcleo no basta: puedes hacer el 70% y perderlo en el último segundo.",
-        "**Guarda el burst** para la ventana de remate.",
-        "Mantén a las clases de burst enemigas **lejos del núcleo** cuando va bajo.",
-        "Los últimos 5 segundos de cada artefacto valen más que los 10 minutos anteriores."
-      ]
-    },
-    {
-      "titulo": "Asedio: recompensas",
-      "tipo": "tabla",
-      "columnas": [
-        "Recompensa",
-        "Detalle"
-      ],
-      "filas": [
-        [
-          "**Abyss Corridor**",
-          "Portal donde estaba el artefacto, **solo para la facción dueña**. Farmeo protegido (el enemigo no entra). Tiempo: antes 5 min, ahora **2 min 10 s** con más recompensa. Acceso unas **3 veces por semana**. Si tu facción no ganó nada, te llevas cero"
-        ],
-        [
-          "AP por contribución",
-          "Para un número limitado de participantes del bando que mata el núcleo"
-        ],
-        [
-          "**Silver Fragments of Merit**",
-          "Por contribución en el jefe y en el núcleo, sin importar tu puesto: la parte fiable"
-        ]
-      ]
-    },
-    {
-      "titulo": "Buff de recuperación del bando perdedor",
-      "tipo": "tabla",
-      "columnas": [
-        "Marcador",
-        "Hasta el siguiente asedio",
-        "En cuanto empieza el asedio"
-      ],
-      "filas": [
-        [
-          "0:1",
-          "+5% resistencia al daño PvP",
-          "+10%"
-        ],
-        [
-          "0:2 o 1:2",
-          "+10%",
-          "+20%"
-        ],
-        [
-          "0:3",
-          "+15% resistencia, +10% amplificación",
-          "+35% resistencia, +20% amplificación"
-        ]
-      ]
-    },
-    {
-      "titulo": "Qué significa el buff",
-      "tipo": "lista",
-      "items": [
-        "**Ir por detrás se aguanta**: no rehagas personaje porque tu facción perdió una semana.",
-        "**Arrasar sale caro**: llevarse los tres activa el buff máximo contra ti. Algunos grupos coreanos prefieren dejar escapar un artefacto."
-      ]
-    },
-    {
-      "titulo": "Lo que no se sabe del asedio",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Estado"
-      ],
-      "filas": [
-        [
-          "Jugadores por asedio",
-          "No documentado"
-        ],
-        [
-          "Requisito de entrada propio",
-          "No documentado. Se sabe la puerta de capa: **nivel de objeto 3.000** para el Middle Abyss (3 de los 6 artefactos)"
-        ],
-        [
-          "Legión",
-          "Se describe como **contenido dependiente de la legión**: únete antes del miércoles. No se sabe qué significa a nivel de mecánica"
-        ]
-      ]
-    },
-    {
-      "titulo": "Contienda de la Grieta Espacio-Tiempo (no confundir)",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Qué es",
-          "Invasión de territorio a gran escala"
-        ],
-        [
-          "Cuándo (Corea)",
-          "Lunes, jueves y sábado a las 20:00 y 23:00"
-        ],
-        [
-          "Requisitos",
-          "Los más duros del juego, entre ellos **nivel 50** y **500.000 de poder de combate**"
-        ]
-      ]
-    },
-    {
-      "titulo": "Qué es seguro para la versión global",
-      "tipo": "tabla",
-      "columnas": [
-        "Seguridad",
-        "Qué"
-      ],
-      "filas": [
-        [
-          "Estructuralmente seguro",
-          "PvP instanciado con cola; perder no cuesta nada; campo de batalla de objetivos; asedio por golpe final al núcleo que abre un corredor exclusivo"
-        ],
-        [
-          "No confirmado",
-          "Franjas horarias y todos los tamaños de equipo; emparejamiento entre facciones y franjas son revisiones coreanas de 2026"
-        ],
-        [
-          "Más estable",
-          "Los números de AP"
-        ],
-        [
-          "Más volátil",
-          "Los tamaños de equipo, el horario del asedio (antes: tres grupos escalonados 5 min desde las 21:00)"
-        ],
-        [
-          "Posiblemente ausente al inicio",
-          "El **Middle Abyss**, sus 3 artefactos y el buff del bando perdedor llegaron en un parche coreano de **enero 2026**: la global podría empezar con 3 artefactos y sin buff"
-        ]
-      ]
-    }
-  ]
+ "slug": "pvp__campo-de-batalla-y-asedio-de-artefactos",
+ "categoria": "pvp",
+ "titulo": "Campo de batalla y asedio de artefactos",
+ "resumen": "El campo de batalla es una cola de escolta que paga 2.000 AP por victoria sin penalización por perder. El asedio de artefactos es miércoles y sábado a las 22:00 y decide quién controla el Abismo. Ninguno es obligatorio para progresar.",
+ "bloques": [
+  {
+   "tipo": "aviso",
+   "texto": "Horarios, número de artefactos, tamaños de equipo y tabla de buffs son **números coreanos**. El horario del asedio cambió al menos dos veces en 2026. Pon la alarma según el primer asedio real de tu servidor."
+  },
+  {
+   "titulo": "Las colas no miran la facción",
+   "tipo": "lista",
+   "items": [
+    "Elyos y Asmodianos no pueden agruparse en el mundo abierto, pero el **campo de batalla** y la **arena 4v4** forman equipos sin mirar la facción.",
+    "Es un cambio coreano tardío: una cola de una sola facción tendría la mitad de jugadores y el doble de espera.",
+    "Las colas pasaron en Corea a **franjas programadas** en 2026, con más recompensa. Nadie ha publicado el horario. Cola en gris = fuera de franja, no un bug."
+   ]
+  },
+  {
+   "titulo": "Arena (resumen)",
+   "tipo": "tabla",
+   "columnas": [
+    "Modo",
+    "Formato",
+    "Recompensa"
+   ],
+   "filas": [
+    [
+     "Arena of Solitude",
+     "1v1, gana quien llega a 3 puntos; tiene clasificación",
+     "100 AP por victoria, sin penalización"
+    ],
+    [
+     "Arena of Cooperation",
+     "4v4, gana quien elimina al otro equipo",
+     "100 AP por victoria, sin penalización"
+    ]
+   ]
+  },
+  {
+   "titulo": "Campo de batalla: los tres artefactos de campo",
+   "tipo": "tabla",
+   "columnas": [
+    "Artefacto",
+    "Qué hace"
+   ],
+   "filas": [
+    [
+     "**Rojo**",
+     "Mata en el acto, da igual equipo o nivel de objeto"
+    ],
+    [
+     "**Amarillo**",
+     "Tu equipo entero es invulnerable **8–9 segundos** (suele decidir la partida en una escolta)"
+    ],
+    [
+     "**Morado**",
+     "Convierte al equipo enemigo en **setas**: control de masas que saca a la defensa del tablero"
+    ]
+   ]
+  },
+  {
+   "titulo": "Campo de batalla: cómo se juega",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Objetivo",
+     "Llevar una **carga de antorcha** a un destino. **No es un deathmatch**: las muertes solo valen si despejan el camino o frenan al portador"
+    ],
+    [
+     "Primer artefacto",
+     "Aparece a los **9:30** de partida; reaparece unos **2 minutos** después de usarse"
+    ],
+    [
+     "Apertura",
+     "Los primeros 9,5 minutos son para **colocarte** de cara al artefacto"
+    ],
+    [
+     "Formato coreano",
+     "8v8"
+    ],
+    [
+     "Formato global (material de preview)",
+     "**10v10 con estadísticas igualadas**: la diferencia de equipo se aplana; buena entrada al PvP para jugadores nuevos"
+    ]
+   ]
+  },
+  {
+   "titulo": "Campo de batalla: lo que paga",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Por victoria",
+     "**2.000 AP** (= 20 victorias de arena)"
+    ],
+    [
+     "Límite",
+     "Se pagan hasta **10 victorias por semana**"
+    ],
+    [
+     "Reinicio",
+     "**Miércoles a las 05:00**"
+    ],
+    [
+     "Al perder",
+     "Sin penalización"
+    ],
+    [
+     "Entrada",
+     "**En solitario o grupo de exactamente 5**; nada intermedio, no se puede meter un equipo completo"
+    ],
+    [
+     "Total posible",
+     "**20.000 AP a la semana** en probablemente menos de 3 horas: el mejor AP por minuto fuera de una noche de asedio"
+    ]
+   ]
+  },
+  {
+   "titulo": "Asedio de artefactos: horario",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Cuándo"
+   ],
+   "filas": [
+    [
+     "Asedio de artefactos",
+     "**Miércoles y sábado a las 22:00**"
+    ],
+    [
+     "Jefe del Abismo",
+     "**22:30**, justo después"
+    ],
+    [
+     "Arranque",
+     "En secuencia **por pareja de servidores**: tu asedio es el de tu pareja"
+    ],
+    [
+     "Lunes, jueves y sábado a las 20:00 y 23:00",
+     "**No es el asedio**: es el concurso de la **Grieta Espacio-Tiempo**"
+    ]
+   ]
+  },
+  {
+   "titulo": "Asedio: formato",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Artefactos",
+     "**6**: 3 en el **Lower Abyss** y 3 en el **Middle Abyss**"
+    ],
+    [
+     "En cada uno",
+     "Aparece un **Dimensional Core**"
+    ],
+    [
+     "Quién gana",
+     "La facción que da el **golpe final** al núcleo se queda el artefacto (sin barra de captura, sin puerta, sin temporizador)"
+    ],
+    [
+     "Duración del control",
+     "Hasta el siguiente asedio, sin desgaste ni mantenimiento"
+    ]
+   ]
+  },
+  {
+   "titulo": "Asedio: qué haces tú",
+   "tipo": "lista",
+   "items": [
+    "Hacer daño al núcleo no basta: puedes hacer el 70% y perderlo en el último segundo.",
+    "**Guarda el burst** para la ventana de remate.",
+    "Mantén a las clases de burst enemigas **lejos del núcleo** cuando va bajo.",
+    "Los últimos 5 segundos de cada artefacto valen más que los 10 minutos anteriores."
+   ]
+  },
+  {
+   "titulo": "Asedio: recompensas",
+   "tipo": "tabla",
+   "columnas": [
+    "Recompensa",
+    "Detalle"
+   ],
+   "filas": [
+    [
+     "**Abyss Corridor**",
+     "Portal donde estaba el artefacto, **solo para la facción dueña**. Farmeo protegido (el enemigo no entra). Tiempo: antes 5 min, ahora **2 min 10 s** con más recompensa. Acceso unas **3 veces por semana**. Si tu facción no ganó nada, te llevas cero"
+    ],
+    [
+     "AP por contribución",
+     "Para un número limitado de participantes del bando que mata el núcleo"
+    ],
+    [
+     "**Silver Fragments of Merit**",
+     "Por contribución en el jefe y en el núcleo, sin importar tu puesto: la parte fiable"
+    ]
+   ]
+  },
+  {
+   "titulo": "Buff de recuperación del bando perdedor",
+   "tipo": "tabla",
+   "columnas": [
+    "Marcador",
+    "Hasta el siguiente asedio",
+    "En cuanto empieza el asedio"
+   ],
+   "filas": [
+    [
+     "0:1",
+     "+5% resistencia al daño PvP",
+     "+10%"
+    ],
+    [
+     "0:2 o 1:2",
+     "+10%",
+     "+20%"
+    ],
+    [
+     "0:3",
+     "+15% resistencia, +10% amplificación",
+     "+35% resistencia, +20% amplificación"
+    ]
+   ]
+  },
+  {
+   "titulo": "Qué significa el buff",
+   "tipo": "lista",
+   "items": [
+    "**Ir por detrás se aguanta**: no rehagas personaje porque tu facción perdió una semana.",
+    "**Arrasar sale caro**: llevarse los tres activa el buff máximo contra ti. Algunos grupos coreanos prefieren dejar escapar un artefacto."
+   ]
+  },
+  {
+   "titulo": "Lo que no se sabe del asedio",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Estado"
+   ],
+   "filas": [
+    [
+     "Jugadores por asedio",
+     "No documentado"
+    ],
+    [
+     "Requisito de entrada propio",
+     "No documentado. Se sabe la puerta de capa: **nivel de objeto 3.000** para el Middle Abyss (3 de los 6 artefactos)"
+    ],
+    [
+     "Legión",
+     "Se describe como **contenido dependiente de la legión**: únete antes del miércoles. No se sabe qué significa a nivel de mecánica"
+    ]
+   ]
+  },
+  {
+   "titulo": "Contienda de la Grieta Espacio-Tiempo (no confundir)",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Qué es",
+     "Invasión de territorio a gran escala"
+    ],
+    [
+     "Cuándo (Corea)",
+     "Lunes, jueves y sábado a las 20:00 y 23:00"
+    ],
+    [
+     "Requisitos",
+     "Los más duros del juego, entre ellos **nivel 50** y **500.000 de poder de combate**"
+    ]
+   ]
+  },
+  {
+   "titulo": "Qué es seguro para la versión global",
+   "tipo": "tabla",
+   "columnas": [
+    "Seguridad",
+    "Qué"
+   ],
+   "filas": [
+    [
+     "Estructuralmente seguro",
+     "PvP instanciado con cola; perder no cuesta nada; campo de batalla de objetivos; asedio por golpe final al núcleo que abre un corredor exclusivo"
+    ],
+    [
+     "No confirmado",
+     "Franjas horarias y todos los tamaños de equipo; emparejamiento entre facciones y franjas son revisiones coreanas de 2026"
+    ],
+    [
+     "Más estable",
+     "Los números de AP"
+    ],
+    [
+     "Más volátil",
+     "Los tamaños de equipo, el horario del asedio (antes: tres grupos escalonados 5 min desde las 21:00)"
+    ],
+    [
+     "Posiblemente ausente al inicio",
+     "El **Middle Abyss**, sus 3 artefactos y el buff del bando perdedor llegaron en un parche coreano de **enero 2026**: la global podría empezar con 3 artefactos y sin buff"
+    ]
+   ]
+  }
+ ]
 }

@@ -1,233 +1,232 @@
 {
-  "slug": "pvp__arena-1v1-en-solitude-y-4v4-en-cooperation",
-  "categoria": "pvp",
-  "titulo": "Arena: 1v1 (Solitude) y 4v4 (Cooperation)",
-  "fuente": "https://metaroad.gg/es/aion2/pvp/arena-1v1-en-solitude-y-4v4-en-cooperation",
-  "resumen": "Perder en la arena no cuesta nada: ni puntos ni rango. Úsala para practicar tu clase mientras esperas otra cosa; no es un sitio para farmear AP.",
-  "bloques": [
-    {
-      "tipo": "aviso",
-      "texto": "Todo se midió en los **servidores coreanos**, donde la arena se reajustó varias veces en 2026. Los tamaños de equipo, el ranking y las recompensas **no están confirmados** para la versión global."
-    },
-    {
-      "titulo": "Las tres «arenas» del juego",
-      "tipo": "tabla",
-      "columnas": [
-        "Modo",
-        "Formato",
-        "Cómo se gana"
-      ],
-      "filas": [
-        [
-          "**Arena of Solitude**",
-          "1v1, con clasificación",
-          "Primero en llegar a **3 puntos** (matar 3 veces al rival) dentro del tiempo límite"
-        ],
-        [
-          "**Arena of Cooperation**",
-          "4v4",
-          "Eliminar al equipo rival (no hay carrera de puntos)"
-        ],
-        [
-          "**Arena of Strategy**",
-          "8v8",
-          "Es el **campo de batalla** (mapa de objetivo con carga de antorcha). Si entras en cola de arena y caes ahí, no es un bug"
-        ]
-      ]
-    },
-    {
-      "titulo": "Datos básicos",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Desbloqueo",
-          "**Nivel 45**, a la vez que Transcendence, Nightmare, el Abismo, la Ascension Trial y Subjugation"
-        ],
-        [
-          "Recompensa por victoria",
-          "**100 Abyss Points** (en los dos modos)"
-        ],
-        [
-          "Penalización por perder",
-          "**Ninguna**"
-        ],
-        [
-          "Tiempo límite de partida",
-          "No publicado"
-        ],
-        [
-          "Límite de entradas",
-          "No publicado (el del campo de batalla sí lo está)"
-        ]
-      ]
-    },
-    {
-      "titulo": "Cambios del parche coreano del 24 dic 2025",
-      "tipo": "tabla",
-      "columnas": [
-        "Cambio",
-        "Qué significa para ti"
-      ],
-      "filas": [
-        [
-          "Reaparición de **10 s a 5 s** (los dos modos)",
-          "Vuelves antes a la pelea"
-        ],
-        [
-          "**Buff de resistencia al daño** al reaparecer (solo Solitude)",
-          "Perder el primer intercambio ya no decide la partida: tienes que ganar 3"
-        ],
-        [
-          "Los **tiempos de reutilización se reinician** al entrar y al salir",
-          "Tus habilidades largas están listas en cada partida; no guardes nada"
-        ]
-      ]
-    },
-    {
-      "titulo": "Arena of Cooperation (4v4): qué tener en cuenta",
-      "tipo": "lista",
-      "items": [
-        "Un tiempo de reutilización desperdiciado o una **interrupción fallada** puede costar la partida.",
-        "La composición pesa mucho: un equipo sin **disipación** o sin forma de quitarle un cuerpo a cuerpo de encima a un caster pierde peleas que podía ganar.",
-        "La cola forma equipos **sin mirar la facción** (cambio coreano de 2026): un Asmodiano puede ser tu healer.",
-        "Emparejar solo dentro de una facción usaría la mitad de jugadores, con el doble de espera."
-      ]
-    },
-    {
-      "titulo": "Por qué no es para farmear AP",
-      "tipo": "tabla",
-      "columnas": [
-        "Fuente de AP",
-        "Cuánto"
-      ],
-      "filas": [
-        [
-          "Victoria en arena",
-          "100 AP"
-        ],
-        [
-          "Victoria en campo de batalla",
-          "2.000 AP (= 20 victorias de arena)"
-        ],
-        [
-          "Tope semanal por muertes de monstruos",
-          "200.000 AP"
-        ],
-        [
-          "Tope semanal por muertes de jugadores",
-          "200.000 AP"
-        ]
-      ]
-    },
-    {
-      "titulo": "Cuándo meterte en cola",
-      "tipo": "lista",
-      "items": [
-        "En **tiempos muertos**: mientras se forma la raid, mientras entra un amigo, antes del reinicio.",
-        "Lo peor que pasa es quedarte igual, sin los 100 AP de la victoria.",
-        "Es el único sitio donde pruebas tu clase **sin un grupo que te cubra**: útil si aún decides tu build."
-      ]
-    },
-    {
-      "titulo": "Clasificación de temporada (Corea)",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Cómo puntúa",
-          "Pasó de puntuación acumulada a **mejor registro**: una buena noche te puede subir aunque empieces tarde"
-        ],
-        [
-          "Reparto",
-          "Según la clasificación **por clase**"
-        ],
-        [
-          "Tramos de recompensa (lista del 3 ene 2026)",
-          "1.º, 2.º–3.º, 4.º–10.º, 11.º–50.º, 51.º–100.º y 101.º–300.º"
-        ],
-        [
-          "Recompensa de la arena",
-          "Una **apariencia de alas** (cosmético)"
-        ],
-        [
-          "Season 3 (abril 2026)",
-          "Las recompensas de temporada dejan de dar poder: pasan a objetos de honor y cosméticos"
-        ]
-      ]
-    },
-    {
-      "tipo": "aviso",
-      "texto": "No está claro si el **4v4 tiene clasificación propia**: una web de terceros solo muestra la 1v1; la página oficial coreana parece mostrar las dos. La que todo el mundo cita es la 1v1. Además, hubo un aviso oficial por recompensas de la Season 1 entregadas por error: el sistema se sigue ajustando."
-    },
-    {
-      "titulo": "Horario de la cola",
-      "tipo": "tabla",
-      "columnas": [
-        "Qué",
-        "Dato"
-      ],
-      "filas": [
-        [
-          "Season 3 (retransmisión coreana 7 abr 2026)",
-          "Arena y campo de batalla pasan de estar siempre abiertos a **franjas programadas**, con más recompensas"
-        ],
-        [
-          "Horario exacto",
-          "**Nadie lo ha publicado**"
-        ],
-        [
-          "Arena en gris a las tres de la tarde",
-          "No es un bug: está fuera de franja"
-        ],
-        [
-          "Ojo con la confusión",
-          "Los horarios fijos que circulan suelen ser del **asedio de artefactos** o de la **contienda de la Grieta Espacio-Tiempo**"
-        ]
-      ]
-    },
-    {
-      "titulo": "Qué esperar en el lanzamiento global",
-      "tipo": "tabla",
-      "columnas": [
-        "Seguridad",
-        "Qué"
-      ],
-      "filas": [
-        [
-          "Bastante seguro",
-          "Existe PvP instanciado por cola; perder no cuesta nada; la arena no es de donde sale el AP"
-        ],
-        [
-          "Sin confirmar",
-          "Los tamaños 1v1 y 4v4, el sistema de puntos de clasificación y sus tablas de recompensas"
-        ],
-        [
-          "Casi seguro posterior (Corea 2026)",
-          "Emparejamiento entre facciones, franjas programadas y recompensa de temporada sin poder. La global, al partir de la Season 1, puede tener cola siempre abierta, solo de tu facción y recompensa que sí da poder"
-        ],
-        [
-          "Duración de temporada",
-          "Las temporadas globales durarían unos **3 meses**; no se sabe si la de arena coincide"
-        ]
-      ]
-    },
-    {
-      "titulo": "Cinco cosas que nadie ha publicado",
-      "tipo": "lista",
-      "items": [
-        "El tiempo límite de partida en cualquiera de los dos modos.",
-        "Cualquier límite de entradas (diario, semanal…).",
-        "La duración de la temporada de arena.",
-        "La recompensa de clasificación actual tras la Season 3.",
-        "Si el 4v4 tiene clasificación publicada."
-      ]
-    }
-  ]
+ "slug": "pvp__arena-1v1-en-solitude-y-4v4-en-cooperation",
+ "categoria": "pvp",
+ "titulo": "Arena: 1v1 (Solitude) y 4v4 (Cooperation)",
+ "resumen": "Perder en la arena no cuesta nada: ni puntos ni rango. Úsala para practicar tu clase mientras esperas otra cosa; no es un sitio para farmear AP.",
+ "bloques": [
+  {
+   "tipo": "aviso",
+   "texto": "Todo se midió en los **servidores coreanos**, donde la arena se reajustó varias veces en 2026. Los tamaños de equipo, el ranking y las recompensas **no están confirmados** para la versión global."
+  },
+  {
+   "titulo": "Las tres «arenas» del juego",
+   "tipo": "tabla",
+   "columnas": [
+    "Modo",
+    "Formato",
+    "Cómo se gana"
+   ],
+   "filas": [
+    [
+     "**Arena of Solitude**",
+     "1v1, con clasificación",
+     "Primero en llegar a **3 puntos** (matar 3 veces al rival) dentro del tiempo límite"
+    ],
+    [
+     "**Arena of Cooperation**",
+     "4v4",
+     "Eliminar al equipo rival (no hay carrera de puntos)"
+    ],
+    [
+     "**Arena of Strategy**",
+     "8v8",
+     "Es el **campo de batalla** (mapa de objetivo con carga de antorcha). Si entras en cola de arena y caes ahí, no es un bug"
+    ]
+   ]
+  },
+  {
+   "titulo": "Datos básicos",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Desbloqueo",
+     "**Nivel 45**, a la vez que Transcendence, Nightmare, el Abismo, la Ascension Trial y Subjugation"
+    ],
+    [
+     "Recompensa por victoria",
+     "**100 Abyss Points** (en los dos modos)"
+    ],
+    [
+     "Penalización por perder",
+     "**Ninguna**"
+    ],
+    [
+     "Tiempo límite de partida",
+     "No publicado"
+    ],
+    [
+     "Límite de entradas",
+     "No publicado (el del campo de batalla sí lo está)"
+    ]
+   ]
+  },
+  {
+   "titulo": "Cambios del parche coreano del 24 dic 2025",
+   "tipo": "tabla",
+   "columnas": [
+    "Cambio",
+    "Qué significa para ti"
+   ],
+   "filas": [
+    [
+     "Reaparición de **10 s a 5 s** (los dos modos)",
+     "Vuelves antes a la pelea"
+    ],
+    [
+     "**Buff de resistencia al daño** al reaparecer (solo Solitude)",
+     "Perder el primer intercambio ya no decide la partida: tienes que ganar 3"
+    ],
+    [
+     "Los **tiempos de reutilización se reinician** al entrar y al salir",
+     "Tus habilidades largas están listas en cada partida; no guardes nada"
+    ]
+   ]
+  },
+  {
+   "titulo": "Arena of Cooperation (4v4): qué tener en cuenta",
+   "tipo": "lista",
+   "items": [
+    "Un tiempo de reutilización desperdiciado o una **interrupción fallada** puede costar la partida.",
+    "La composición pesa mucho: un equipo sin **disipación** o sin forma de quitarle un cuerpo a cuerpo de encima a un caster pierde peleas que podía ganar.",
+    "La cola forma equipos **sin mirar la facción** (cambio coreano de 2026): un Asmodiano puede ser tu healer.",
+    "Emparejar solo dentro de una facción usaría la mitad de jugadores, con el doble de espera."
+   ]
+  },
+  {
+   "titulo": "Por qué no es para farmear AP",
+   "tipo": "tabla",
+   "columnas": [
+    "Fuente de AP",
+    "Cuánto"
+   ],
+   "filas": [
+    [
+     "Victoria en arena",
+     "100 AP"
+    ],
+    [
+     "Victoria en campo de batalla",
+     "2.000 AP (= 20 victorias de arena)"
+    ],
+    [
+     "Tope semanal por muertes de monstruos",
+     "200.000 AP"
+    ],
+    [
+     "Tope semanal por muertes de jugadores",
+     "200.000 AP"
+    ]
+   ]
+  },
+  {
+   "titulo": "Cuándo meterte en cola",
+   "tipo": "lista",
+   "items": [
+    "En **tiempos muertos**: mientras se forma la raid, mientras entra un amigo, antes del reinicio.",
+    "Lo peor que pasa es quedarte igual, sin los 100 AP de la victoria.",
+    "Es el único sitio donde pruebas tu clase **sin un grupo que te cubra**: útil si aún decides tu build."
+   ]
+  },
+  {
+   "titulo": "Clasificación de temporada (Corea)",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Cómo puntúa",
+     "Pasó de puntuación acumulada a **mejor registro**: una buena noche te puede subir aunque empieces tarde"
+    ],
+    [
+     "Reparto",
+     "Según la clasificación **por clase**"
+    ],
+    [
+     "Tramos de recompensa (lista del 3 ene 2026)",
+     "1.º, 2.º–3.º, 4.º–10.º, 11.º–50.º, 51.º–100.º y 101.º–300.º"
+    ],
+    [
+     "Recompensa de la arena",
+     "Una **apariencia de alas** (cosmético)"
+    ],
+    [
+     "Season 3 (abril 2026)",
+     "Las recompensas de temporada dejan de dar poder: pasan a objetos de honor y cosméticos"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "No está claro si el **4v4 tiene clasificación propia**: una web de terceros solo muestra la 1v1; la página oficial coreana parece mostrar las dos. La que todo el mundo cita es la 1v1. Además, hubo un aviso oficial por recompensas de la Season 1 entregadas por error: el sistema se sigue ajustando."
+  },
+  {
+   "titulo": "Horario de la cola",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Season 3 (retransmisión coreana 7 abr 2026)",
+     "Arena y campo de batalla pasan de estar siempre abiertos a **franjas programadas**, con más recompensas"
+    ],
+    [
+     "Horario exacto",
+     "**Nadie lo ha publicado**"
+    ],
+    [
+     "Arena en gris a las tres de la tarde",
+     "No es un bug: está fuera de franja"
+    ],
+    [
+     "Ojo con la confusión",
+     "Los horarios fijos que circulan suelen ser del **asedio de artefactos** o de la **contienda de la Grieta Espacio-Tiempo**"
+    ]
+   ]
+  },
+  {
+   "titulo": "Qué esperar en el lanzamiento global",
+   "tipo": "tabla",
+   "columnas": [
+    "Seguridad",
+    "Qué"
+   ],
+   "filas": [
+    [
+     "Bastante seguro",
+     "Existe PvP instanciado por cola; perder no cuesta nada; la arena no es de donde sale el AP"
+    ],
+    [
+     "Sin confirmar",
+     "Los tamaños 1v1 y 4v4, el sistema de puntos de clasificación y sus tablas de recompensas"
+    ],
+    [
+     "Casi seguro posterior (Corea 2026)",
+     "Emparejamiento entre facciones, franjas programadas y recompensa de temporada sin poder. La global, al partir de la Season 1, puede tener cola siempre abierta, solo de tu facción y recompensa que sí da poder"
+    ],
+    [
+     "Duración de temporada",
+     "Las temporadas globales durarían unos **3 meses**; no se sabe si la de arena coincide"
+    ]
+   ]
+  },
+  {
+   "titulo": "Cinco cosas que nadie ha publicado",
+   "tipo": "lista",
+   "items": [
+    "El tiempo límite de partida en cualquiera de los dos modos.",
+    "Cualquier límite de entradas (diario, semanal…).",
+    "La duración de la temporada de arena.",
+    "La recompensa de clasificación actual tras la Season 3.",
+    "Si el 4v4 tiene clasificación publicada."
+   ]
+  }
+ ]
 }
