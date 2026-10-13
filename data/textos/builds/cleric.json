@@ -384,6 +384,51 @@
    {
     "tipo": "aviso",
     "texto": "PvP: Salvation, Voice of Doom y Poder de Yustiel. En JcE sáltate Salvación: no para ciertos golpes fuertes y bloquea 30 s cualquier otra invencibilidad (incluida la del tanque). Sáltate también Atadura y Estigma de agresión."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Los puntos de habilidad solo suben cada habilidad hasta **10**; lo demás sale del equipo. Si te sobran, ponlos en este orden (enfocado a PvE)."
+   },
+   {
+    "titulo": "Puntos que sobran (PvE)",
+    "tipo": "tabla",
+    "columnas": [
+     "Habilidad",
+     "Puntos",
+     "Por qué"
+    ],
+    "filas": [
+     [
+      "Aura divina",
+      "— → 10",
+      "En la prioridad y la build no marca nivel: súbela primero"
+     ],
+     [
+      "Luz de regeneración",
+      "— → 10",
+      "En la prioridad: cura al grupo; sin nivel en la build"
+     ],
+     [
+      "Mejora curativa",
+      "— → 10",
+      "Pasiva de la prioridad: más curación; sin nivel en la build"
+     ],
+     [
+      "Oración de concentración",
+      "1 → 10",
+      "Barrera y más curación con poca vida"
+     ],
+     [
+      "Eliminación de impacto",
+      "8 → 10",
+      "Rompe aturdimientos"
+     ],
+     [
+      "Voluntad de supervivencia",
+      "1 → 10",
+      "Resistencia a efectos (último)"
+     ]
+    ]
    }
   ],
   "estigmas": [

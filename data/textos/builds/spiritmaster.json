@@ -315,6 +315,11 @@
       "Con los tableros basta para PvE"
      ]
     ]
+   },
+   {
+    "titulo": "Puntos que sobran (PvE)",
+    "tipo": "aviso",
+    "texto": "Esta build ya tiene todas las habilidades a **10** con puntos. Si te sobran, guárdalos: no hay otro sitio donde ponerlos."
    }
   ],
   "estigmas": [

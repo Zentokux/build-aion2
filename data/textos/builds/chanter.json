@@ -364,6 +364,76 @@
    {
     "tipo": "aviso",
     "texto": "PvP: desactiva Proclama de esprint, sube Ira de Marchutan a 20 (−70% a la curación recibida) y mira Fracturing Blow (−30% de Defensa) y Fractura impactante a 16. Nadie en global tiene aún una configuración de PvP asentada."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Los puntos de habilidad solo suben cada habilidad hasta **10**; lo demás sale del equipo. Si te sobran, ponlos en este orden (enfocado a PvE)."
+   },
+   {
+    "titulo": "Puntos que sobran (PvE)",
+    "tipo": "tabla",
+    "columnas": [
+     "Habilidad",
+     "Puntos",
+     "Por qué"
+    ],
+    "filas": [
+     [
+      "Golpe incandescente",
+      "8 → 10",
+      "En la prioridad: mucho daño en área"
+     ],
+     [
+      "Fractura impactante",
+      "8 → 10",
+      "En la prioridad: daño y aturdimiento"
+     ],
+     [
+      "Hechizo de recobro",
+      "8 → 10",
+      "En la prioridad: cura al grupo"
+     ],
+     [
+      "Hechizo de furia",
+      "1 → 10",
+      "Daño extra contra objetivo en Impacto/Tambaleo"
+     ],
+     [
+      "Desenfreno de vendaval",
+      "4 → 10",
+      "Daño en la ventana de Tambaleo"
+     ],
+     [
+      "Trituración de acometida",
+      "8 → 10",
+      "Daño en área y Maná"
+     ],
+     [
+      "Golpe de onda abrasadora",
+      "4 → 10",
+      "Daño en área"
+     ],
+     [
+      "Fractura sísmica",
+      "8 → 10",
+      "Daño tras esquiva o en vuelo"
+     ],
+     [
+      "Bendición de vida",
+      "8 → 10",
+      "Más vida"
+     ],
+     [
+      "Voluntad de supervivencia",
+      "4 → 10",
+      "Resistencia a efectos"
+     ],
+     [
+      "Defensa en cruz",
+      "1 → 10",
+      "Bloqueo (último)"
+     ]
+    ]
    }
   ],
   "estigmas": [

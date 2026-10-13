@@ -372,6 +372,46 @@
    {
     "tipo": "aviso",
     "texto": "PvP: combo Espada devastadora, Punzada descendente, Amarre aéreo y Forced Fall; estigmas Armadura de equilibrio, Tenaciousness y Blade Toss. La guía no cubre más PvP."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Los puntos de habilidad solo suben cada habilidad hasta **10**; lo demás sale del equipo. Si te sobran, ponlos en este orden (enfocado a PvE)."
+   },
+   {
+    "titulo": "Puntos que sobran (PvE)",
+    "tipo": "tabla",
+    "columnas": [
+     "Habilidad",
+     "Puntos",
+     "Por qué"
+    ],
+    "filas": [
+     [
+      "Impulso de destrucción",
+      "1 → 10",
+      "Daño extra contra objetivo en Impacto/Tambaleo"
+     ],
+     [
+      "Identificación de debilidades",
+      "8 → 10",
+      "Crítico y Perforación"
+     ],
+     [
+      "Eliminación de impacto",
+      "8 → 10",
+      "Rompe aturdimientos"
+     ],
+     [
+      "Voluntad de supervivencia",
+      "1 → 10",
+      "Resistencia a efectos"
+     ],
+     [
+      "Armadura de protección",
+      "1 → 10",
+      "Bloqueo (último)"
+     ]
+    ]
    }
   ],
   "estigmas": [

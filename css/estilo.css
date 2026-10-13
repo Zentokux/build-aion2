@@ -84,6 +84,9 @@ ol.pasos li::before {
 /* icono + nombre en línea */
 .hab { display: inline-flex; align-items: center; gap: 7px; }
 .hab img { width: 30px; height: 30px; border-radius: 5px; border: 1px solid var(--borde); flex: none; }
+td .hab, strong .hab { vertical-align: middle; gap: 5px; margin-right: 2px; }
+td .hab img { width: 24px; height: 24px; }
+p strong .hab img, li strong .hab img { width: 20px; height: 20px; }
 .tipo { font-size: 12px; padding: 1px 7px; border-radius: 10px; background: var(--panel2); color: var(--suave); white-space: nowrap; }
 .tipo.Estigma { color: #c79bff; }
 .tipo.Pasiva { color: var(--verde); }

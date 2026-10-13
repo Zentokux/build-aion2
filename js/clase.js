@@ -214,6 +214,14 @@ function pintarClase() {
     secciones.map(function (s) { return '<li><a href="#' + s[0] + '">' + esc(s[1]) + "</a></li>"; }).join("") + "</ol></div></aside>";
   main.innerHTML = '<div class="pag">' + lateral + '<div class="contenido">' + h + "</div></div>";
 
+  // icono junto a cada nombre de habilidad en la 1.ª columna de las tablas y en las negritas de los textos
+  var nombresHab = B.habilidades.map(function (x) { return x.nombre; }).sort(function (a, b) { return b.length - a.length; });
+  var reHab = new RegExp(nombresHab.map(function (n) { return n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }).join("|"), "g");
+  main.querySelectorAll(".contenido td:first-child, .contenido strong").forEach(function (el) {
+    if (el.querySelector("img") || el.closest(".hab")) return;
+    el.innerHTML = el.innerHTML.replace(reHab, function (n) { return hab(idPorNombre(n)); });
+  });
+
   pintarDaevanion(B, H);
   pintarColeccionables(C, filasStats);
 }

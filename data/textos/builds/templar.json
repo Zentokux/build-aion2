@@ -279,6 +279,81 @@
       "Defensa, Tenacidad, Puntos de Vida y curación recibida"
      ]
     ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Los puntos de habilidad solo suben cada habilidad hasta **10**; lo demás sale del equipo. Si te sobran, ponlos en este orden (enfocado a PvE)."
+   },
+   {
+    "titulo": "Puntos que sobran (PvE)",
+    "tipo": "tabla",
+    "columnas": [
+     "Habilidad",
+     "Puntos",
+     "Por qué"
+    ],
+    "filas": [
+     [
+      "Golpe de escudo",
+      "8 → 10",
+      "En la prioridad (2.º): daño y aturdimiento"
+     ],
+     [
+      "Embestida decadente",
+      "8 → 10",
+      "En la prioridad: daño al bloquear"
+     ],
+     [
+      "Aniquilación",
+      "8 → 10",
+      "En la prioridad: golpe fuerte al aturdido"
+     ],
+     [
+      "Azotamiento continuo",
+      "8 → 10",
+      "En la prioridad: área y hostilidad"
+     ],
+     [
+      "Restricción de dolor",
+      "1 → 10",
+      "Tanque: −daño recibido en PvE"
+     ],
+     [
+      "Sello de protección",
+      "1 → 10",
+      "Tanque: escudo con poca vida"
+     ],
+     [
+      "Escudo de amparo",
+      "1 → 10",
+      "Bloqueo y vida"
+     ],
+     [
+      "Favor de condena",
+      "1 → 10",
+      "Crítico y daño extra"
+     ],
+     [
+      "Aprisionamiento",
+      "8 → 10",
+      "Atrae enemigos"
+     ],
+     [
+      "Asalto con escudo",
+      "8 → 10",
+      "Daño tras esquiva o en vuelo"
+     ],
+     [
+      "Eliminación de impacto",
+      "4 → 10",
+      "Rompe aturdimientos"
+     ],
+     [
+      "Voluntad de supervivencia",
+      "1 → 10",
+      "Resistencia a efectos (último)"
+     ]
+    ]
    }
   ],
   "estigmas": [
