@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Temporizador · BUILD AION2</title>
+<meta name="description" content="Temporizador de eventos de AION 2 Global: Festival de Shugo, Grieta Espacio-Tiempo, Invasión dimensional, Kaira, asedio de artefactos, Nahma y reinicios.">
+<link rel="stylesheet" href="css/estilo.css?v=4">
+<style>
+.relojes { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.relojes .panel { margin: 0; padding: 8px 14px; }
+.relojes small { display: block; color: var(--suave); font-size: 12px; }
+.relojes b { font-size: 20px; font-variant-numeric: tabular-nums; }
+.region { background: var(--panel2); color: var(--texto); border: 1px solid var(--borde); border-radius: 6px; padding: 6px 8px; font: inherit; }
+.cuenta { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+tr.vivo td { background: rgba(95, 209, 139, .08); }
+tr.vivo .cuenta { color: var(--verde); }
+tr.pronto .cuenta { color: var(--oro); }
+.estado { display: inline-block; font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 10px; margin-left: 6px; }
+.estado.vivo { background: var(--verde); color: #0d1118; }
+.estado.duda { background: var(--panel2); color: var(--oro); border: 1px solid var(--oro); }
+td small { display: block; color: var(--suave); }
+.campana { width: 18px; height: 18px; accent-color: var(--oro); cursor: pointer; }
+.alertas { display: flex; gap: 10px 18px; flex-wrap: wrap; align-items: center; }
+.alertas label { display: flex; gap: 6px; align-items: center; }
+.alertas input[type=checkbox] { width: 17px; height: 17px; accent-color: var(--oro); }
+.alertas input[type=range] { accent-color: var(--oro); width: 110px; }
+.boton { background: var(--panel2); color: var(--texto); border: 1px solid var(--borde); border-radius: 6px; padding: 6px 11px; font: inherit; cursor: pointer; }
+.boton:hover { border-color: var(--oro); }
+.boton.oro { border-color: var(--oro); color: var(--oro); font-weight: 700; }
+#permiso { font-size: 13px; color: var(--suave); }
+#permiso.ok { color: var(--verde); }
+#permiso.mal { color: var(--rojo); }
+#avisos { position: fixed; right: 16px; bottom: 16px; z-index: 60; display: flex; flex-direction: column; gap: 8px; max-width: calc(100vw - 32px); width: 340px; }
+.toast { background: #0b0f15; border: 2px solid var(--oro); border-radius: 10px; padding: 11px 38px 11px 14px; position: relative; box-shadow: 0 6px 24px rgba(0, 0, 0, .5); animation: entra .25s ease-out; }
+.toast.ya { border-color: var(--verde); }
+.toast b { display: block; color: #fff; font-size: 16px; }
+.toast small { color: var(--suave); }
+.toast button { position: absolute; right: 8px; top: 6px; background: none; border: 0; color: var(--suave); font-size: 20px; cursor: pointer; line-height: 1; }
+@keyframes entra { from { transform: translateY(12px); opacity: 0; } to { transform: none; opacity: 1; } }
+</style>
+</head>
+<body>
+<main id="main">
+  <h1>Temporizador de eventos</h1>
+  <p class="sub">AION 2 Global, Season 1. Elige tu región: las horas salen ya pasadas a la hora de tu PC.</p>
+
+  <div class="relojes">
+    <label class="panel"><small>Región del servidor</small>
+      <select id="region" class="region">
+        <option value="na-este">NA Este</option>
+        <option value="na-oeste">NA Oeste</option>
+        <option value="eu">Europa</option>
+        <option value="sa">Sudamérica</option>
+      </select>
+    </label>
+    <div class="panel"><small>Tu hora</small><b id="hora-tuya">--:--:--</b></div>
+    <div class="panel"><small>Hora del servidor</small><b id="hora-server">--:--:--</b></div>
+  </div>
+
+  <h2>Alertas</h2>
+  <div class="panel alertas">
+    <label>Avisar
+      <select id="antes" class="region">
+        <option value="1">1 min</option><option value="3">3 min</option><option value="5">5 min</option>
+        <option value="10">10 min</option><option value="15">15 min</option>
+      </select> antes</label>
+    <label><input type="checkbox" id="al-empezar"> y cuando empiece</label>
+    <label>🔊 <input type="range" id="volumen" min="0" max="100" step="5"></label>
+    <button class="boton" id="todas">Marcar todas</button>
+    <button class="boton" id="ninguna">Quitar todas</button>
+    <button class="boton oro" id="probar">Probar alerta</button>
+    <span id="permiso"></span>
+  </div>
+
+  <h2>Próximos eventos</h2>
+  <div class="tabla-scroll"><table>
+    <thead><tr><th>Evento</th><th>Cuándo (hora servidor)</th><th>Empieza en</th><th>Tu hora</th><th title="Aviso 5 min antes">🔔</th></tr></thead>
+    <tbody id="lista"></tbody>
+  </table></div>
+  <div class="aviso">🔔 = te avisa ese evento: sonido, cartel en la página, título de la pestaña parpadeando y notificación de Windows (aunque estés en el juego o en otra pestaña). La página tiene que estar abierta. <b>SIN CONFIRMAR</b> = las fuentes no coinciden: mira el reloj del minimapa la primera vez.</div>
+  <div class="aviso">NCSOFT no ha publicado los horarios globales; son los que recogen los jugadores (octubre de 2026). El Festival de Shugo pasó de :15/:45 a <b>en punto</b>. Los reinicios van a las 07:00 UTC fijas: con el cambio de hora de EE. UU. (1-nov) y Europa (25-oct) se mueven en tu reloj.</div>
+</main>
+<script src="js/comun.js?v=5"></script>
+<script>
+(function () {
+  var REGIONES = {
+    "na-este": "America/New_York",
+    "na-oeste": "America/Los_Angeles",
+    "eu": "Europe/Berlin",
+    "sa": "America/Sao_Paulo"
+  };
+  var CADA3_02 = [2, 5, 8, 11, 14, 17, 20, 23], CADA3_01 = [1, 4, 7, 10, 13, 16, 19, 22], TODAS = [];
+  for (var i = 0; i < 24; i++) TODAS.push(i);
+  // dias: 0 = domingo … 6 = sábado; zona "UTC" = igual en todas las regiones
+  var EVENTOS = [
+    { id: "shugo", nombre: "Festival de Shugo", nota: "Gasta tus llaves", horas: TODAS, min: 0, dur: 10, cuando: "Cada hora en punto · 10 min" },
+    { id: "invasion", nombre: "Invasión dimensional", nota: "Entra en los 3 primeros min", horas: TODAS, min: 30, dur: 15, cuando: "Cada hora a las :30 · 15 min" },
+    { id: "grieta", nombre: "Grieta Espacio-Tiempo", nota: "Portal abierto 10 min; dentro ~1 h", horas: CADA3_02, min: 0, dur: 10, cuando: "Cada 3 h desde las 02:00" },
+    { id: "kaira", nombre: "Vigilante Kaira", nota: "Abismo (Reshanta inferior), zona JcJ", horas: CADA3_01, min: 0, dur: 30, duda: true, cuando: "Cada 3 h desde las 01:00 (otra fuente: 02:00)" },
+    { id: "asedio", nombre: "Asedio de artefactos", nota: "Abismo", horas: [21], min: 0, dias: [1, 4, 6], dur: 30, cuando: "Lun, jue y sáb 21:00" },
+    { id: "jefes-asedio", nombre: "Jefes del asedio", nota: "Tras el asedio", horas: [21], min: 30, dias: [1, 4, 6], dur: 30, cuando: "Lun, jue y sáb 21:30" },
+    { id: "nahma", nombre: "Señor guardián Nahma", nota: "Abismo", horas: [21], min: 0, dias: [0, 5], dur: 30, duda: true, cuando: "Vie y dom 21:00" },
+    { id: "reinicio-diario", nombre: "Reinicio diario", nota: "Llaves de Shugo, Pesadilla, Missions", horas: [7], min: 0, dur: 0, zona: "UTC", cuando: "Todos los días 07:00 UTC" },
+    { id: "reinicio-semanal", nombre: "Reinicio semanal", nota: "Ascension Trial, Daily Dungeon, Expedition, raids, horas de Abismo", horas: [7], min: 0, dias: [3], dur: 0, zona: "UTC", cuando: "Miércoles 07:00 UTC" }
+  ];
+
+  function leer(k, def) { try { var v = localStorage.getItem(k); return v == null ? def : v; } catch (e) { return def; } }
+  function guardar(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
+  // partes de fecha de un instante en una zona
+  var fmts = {};
+  function partes(t, zona) {
+    var f = fmts[zona] || (fmts[zona] = new Intl.DateTimeFormat("en-US", {
+      timeZone: zona, hourCycle: "h23", year: "numeric", month: "numeric", day: "numeric",
+      hour: "numeric", minute: "numeric", second: "numeric", weekday: "short"
+    }));
+    var o = {};
+    f.formatToParts(new Date(t)).forEach(function (p) { o[p.type] = p.value; });
+    return { y: +o.year, m: +o.month, d: +o.day, h: +o.hour % 24, mi: +o.minute, s: +o.second,
+      dia: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(o.weekday) };
+  }
+  function desfase(t, zona) {
+    var p = partes(t, zona);
+    return Date.UTC(p.y, p.m - 1, p.d, p.h, p.mi, p.s) - Math.floor(t / 1000) * 1000;
+  }
+  // instante UTC de una hora local de la zona
+  function aUTC(y, m, d, h, mi, zona) {
+    var g = Date.UTC(y, m - 1, d, h, mi);
+    var t = g - desfase(g, zona);
+    return g - desfase(t, zona);
+  }
+
+  // evento en curso o el siguiente: { ini, fin }
+  function siguiente(ev, ahora, zona) {
+    var z = ev.zona || zona, mejor = null;
+    for (var k = -1; k <= 8; k++) {
+      var p = partes(ahora + k * 864e5, z);
+      if (ev.dias && ev.dias.indexOf(p.dia) < 0) continue;
+      for (var j = 0; j < ev.horas.length; j++) {
+        var ini = aUTC(p.y, p.m, p.d, ev.horas[j], ev.min, z), fin = ini + ev.dur * 6e4;
+        if (fin < ahora || (ev.dur === 0 && ini <= ahora)) continue;
+        if (!mejor || ini < mejor.ini) mejor = { ini: ini, fin: fin };
+      }
+      if (mejor && k >= 1) break;
+    }
+    return mejor;
+  }
+
+  function dos(n) { return (n < 10 ? "0" : "") + n; }
+  function hhmmss(t, zona) { var p = partes(t, zona); return dos(p.h) + ":" + dos(p.mi) + ":" + dos(p.s); }
+  function cuenta(ms) {
+    var s = Math.max(0, Math.round(ms / 1000)), d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600);
+    var m = Math.floor(s % 3600 / 60), r = s % 60;
+    return (d ? d + " d " : "") + (d || h ? h + " h " : "") + dos(m) + ":" + dos(r);
+  }
+  var DIAS = ["dom", "lun", "mar", "mié", "jue", "vie", "sáb"];
+  var miZona = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  function tuHora(t, ahora) {
+    var p = partes(t, miZona), hoy = partes(ahora, miZona);
+    var mismo = p.y === hoy.y && p.m === hoy.m && p.d === hoy.d;
+    return (mismo ? "hoy " : DIAS[p.dia] + " ") + dos(p.h) + ":" + dos(p.mi);
+  }
+
+  var sel = document.getElementById("region");
+  sel.value = REGIONES[leer("t-region", "na-este")] ? leer("t-region", "na-este") : "na-este";
+  sel.onchange = function () { guardar("t-region", sel.value); avisados = {}; pendiente = {}; pintar(); };
+
+  // ---- alertas ----
+  var antes = document.getElementById("antes"), alEmpezar = document.getElementById("al-empezar"), vol = document.getElementById("volumen");
+  antes.value = leer("t-antes", "5");
+  if (!antes.value) antes.value = "5";
+  alEmpezar.checked = leer("t-al-empezar", "1") === "1";
+  vol.value = leer("t-volumen", "60");
+  antes.onchange = function () { guardar("t-antes", antes.value); };
+  alEmpezar.onchange = function () { guardar("t-al-empezar", alEmpezar.checked ? "1" : "0"); };
+  vol.oninput = function () { guardar("t-volumen", vol.value); };
+  vol.onchange = function () { pitar(); };
+
+  // el navegador solo deja sonar tras un clic en la página
+  var audio = null;
+  function desbloquear() {
+    try {
+      if (!audio) audio = new (window.AudioContext || window.webkitAudioContext)();
+      if (audio.state === "suspended") audio.resume();
+    } catch (e) {}
+    estadoPermiso();
+  }
+  document.addEventListener("pointerdown", desbloquear);
+  document.addEventListener("keydown", desbloquear);
+
+  function pitar() {
+    if (!audio || audio.state !== "running") return;
+    var v = (+vol.value || 0) / 100 * .35, t = audio.currentTime;
+    [880, 880, 1175].forEach(function (f, i) {
+      var o = audio.createOscillator(), g = audio.createGain(), a = t + i * .28;
+      o.type = "triangle"; o.frequency.value = f; o.connect(g); g.connect(audio.destination);
+      g.gain.setValueAtTime(0, a); g.gain.linearRampToValueAtTime(v, a + .02); g.gain.linearRampToValueAtTime(0, a + .22);
+      o.start(a); o.stop(a + .24);
+    });
+  }
+
+  function estadoPermiso() {
+    var el = document.getElementById("permiso"), txt = [], cls = "ok";
+    if (!window.Notification) { txt.push("Este navegador no da notificaciones de Windows"); cls = "mal"; }
+    else if (Notification.permission === "granted") txt.push("✔ Notificaciones de Windows activas");
+    else if (Notification.permission === "denied") { txt.push("✖ Notificaciones bloqueadas: actívalas en el candado de la barra de direcciones"); cls = "mal"; }
+    else { txt.push("Pulsa «Probar alerta» para permitir las notificaciones de Windows"); cls = ""; }
+    if (!audio || audio.state !== "running") { txt.push("🔇 haz clic en la página para activar el sonido"); cls = cls === "ok" ? "" : cls; }
+    el.textContent = txt.join(" · "); el.className = cls;
+  }
+
+  var tituloBase = document.title, parpadeo = "", avisos = document.createElement("div");
+  avisos.id = "avisos"; document.body.appendChild(avisos);
+  avisos.addEventListener("click", function (e) {
+    if (e.target.tagName === "BUTTON") { e.target.parentNode.remove(); if (!avisos.children.length) parpadeo = ""; }
+  });
+  window.addEventListener("focus", function () { parpadeo = ""; document.title = tituloBase; });
+
+  function avisar(ev, texto, ya) {
+    var d = document.createElement("div");
+    d.className = "toast" + (ya ? " ya" : "");
+    d.innerHTML = "<b>" + esc(ev.nombre) + "</b>" + esc(texto) + "<br><small>" + esc(ev.nota) + "</small><button title=\"Cerrar\">×</button>";
+    avisos.insertBefore(d, avisos.firstChild);
+    while (avisos.children.length > 4) avisos.lastChild.remove();
+    if (!document.hasFocus()) parpadeo = "🔔 " + ev.nombre + " " + texto;
+    try {
+      if (window.Notification && Notification.permission === "granted") {
+        var n = new Notification("AION 2 · " + ev.nombre, { body: texto + "\n" + ev.nota, tag: ev.id, requireInteraction: true });
+        n.onclick = function () { window.focus(); n.close(); };
+      }
+    } catch (e) {}
+  }
+
+  var avisados = {}, pendiente = {};
+  // se llama en cada vuelta del reloj; devuelve true si ha saltado alguna alerta
+  function revisarAlertas(ev, s, ahora) {
+    if (leer("t-aviso-" + ev.id, "0") !== "1") { pendiente[ev.id] = s.ini; return false; }
+    var salto = false, min = +antes.value || 5, falta = s.ini - ahora;
+    // aviso previo
+    if (falta > 0 && falta <= min * 6e4 && !avisados[ev.id + s.ini + "a"]) {
+      avisados[ev.id + s.ini + "a"] = 1; salto = true;
+      avisar(ev, "empieza en " + Math.ceil(falta / 6e4) + " min (" + tuHora(s.ini, ahora) + ")");
+    }
+    // aviso al empezar (también sirve para los reinicios, que no tienen duración)
+    var p = pendiente[ev.id];
+    if (alEmpezar.checked && p && p <= ahora && ahora - p < 9e4 && !avisados[ev.id + p + "e"]) {
+      avisados[ev.id + p + "e"] = 1; salto = true;
+      avisar(ev, "¡ya empezó!", true);
+    }
+    pendiente[ev.id] = s.ini;
+    return salto;
+  }
+
+  document.getElementById("probar").onclick = function () {
+    desbloquear();
+    var probar = function () { pitar(); avisar({ id: "prueba", nombre: "Prueba de alerta", nota: "Así te avisará la página" }, "funciona"); estadoPermiso(); };
+    if (window.Notification && Notification.permission === "default") {
+      try { Notification.requestPermission().then(probar, probar); } catch (e) { probar(); }
+    } else probar();
+  };
+  function marcarTodas(v) {
+    EVENTOS.forEach(function (ev) { guardar("t-aviso-" + ev.id, v); });
+    pintar();
+  }
+  document.getElementById("todas").onclick = function () { marcarTodas("1"); };
+  document.getElementById("ninguna").onclick = function () { marcarTodas("0"); };
+
+  document.getElementById("lista").addEventListener("change", function (e) {
+    if (!e.target.classList.contains("campana")) return;
+    guardar("t-aviso-" + e.target.dataset.id, e.target.checked ? "1" : "0");
+    if (e.target.checked && window.Notification && Notification.permission === "default") {
+      try { Notification.requestPermission().then(estadoPermiso); } catch (er) {}
+    }
+  });
+
+  function pintar() {
+    var ahora = Date.now(), zona = REGIONES[sel.value];
+    document.getElementById("hora-tuya").textContent = hhmmss(ahora, miZona);
+    document.getElementById("hora-server").textContent = hhmmss(ahora, zona);
+    var filas = EVENTOS.map(function (ev) { return { ev: ev, s: siguiente(ev, ahora, zona) }; })
+      .filter(function (x) { return x.s; })
+      .sort(function (a, b) {
+        var va = a.s.ini <= ahora ? 0 : 1, vb = b.s.ini <= ahora ? 0 : 1;
+        return va - vb || a.s.ini - b.s.ini;
+      });
+    var tb = document.getElementById("lista"), html = "", sono = false;
+    filas.forEach(function (x) {
+      var ev = x.ev, s = x.s, vivo = s.ini <= ahora, falta = s.ini - ahora;
+      var on = leer("t-aviso-" + ev.id, "0") === "1";
+      if (revisarAlertas(ev, s, ahora)) sono = true;
+      html += '<tr class="' + (vivo ? "vivo" : falta <= 15 * 6e4 ? "pronto" : "") + '"><td><b>' + esc(ev.nombre) + "</b>" +
+        (vivo ? '<span class="estado vivo">EN CURSO</span>' : "") +
+        (ev.duda ? '<span class="estado duda">SIN CONFIRMAR</span>' : "") +
+        "<small>" + esc(ev.nota) + "</small></td><td>" + esc(ev.cuando) + "</td>" +
+        '<td class="cuenta">' + (vivo ? "termina en " + cuenta(s.fin - ahora) : cuenta(falta)) + "</td>" +
+        "<td>" + tuHora(s.ini, ahora) + "</td>" +
+        '<td><input type="checkbox" class="campana" data-id="' + ev.id + '"' + (on ? " checked" : "") + "></td></tr>";
+    });
+    if (sono) pitar();
+    // título de la pestaña parpadeando mientras no la mires
+    document.title = parpadeo && !document.hasFocus() && Math.floor(ahora / 1000) % 2 ? parpadeo : tituloBase;
+    // no rehacer la tabla si el usuario está tocando una casilla
+    if (document.activeElement && document.activeElement.classList.contains("campana")) {
+      var vals = tb.querySelectorAll(".cuenta");
+      var tmp = document.createElement("tbody"); tmp.innerHTML = html;
+      if (vals.length === tmp.querySelectorAll(".cuenta").length) {
+        tmp.querySelectorAll(".cuenta").forEach(function (c, i) { vals[i].textContent = c.textContent; });
+        return;
+      }
+    }
+    tb.innerHTML = html;
+  }
+
+  cabecera("temporizador");
+  estadoPermiso();
+  pintar();
+  setInterval(pintar, 1000);
+})();
+</script>
+</body>
+</html>

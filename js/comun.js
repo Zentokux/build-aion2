@@ -52,7 +52,7 @@ function bloquesHTML(bloques) {
 function cabecera(activa) {
   var links = [["index.html", "Inicio", "inicio"]].concat(
     CLASES.map(function (c) { return ["clase.html?c=" + c.id, c.nombre, c.id]; }),
-    [["index.html#guias", "Guías", "guias"]]
+    [["index.html#guias", "Guías", "guias"], ["temporizador.html", "Temporizador", "temporizador"]]
   );
   document.body.insertAdjacentHTML("afterbegin",
     '<header class="top"><div class="in"><a class="logo" href="index.html">BUILD <span>AION2</span></a><nav>' +
