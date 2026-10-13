@@ -138,10 +138,10 @@ details.rot .dentro { padding: 0 12px 12px; font-size: 13px; }
 .pestana.on { background: #232a36; color: #fff; }
 .panel-col { display: grid; grid-template-columns: 1fr 260px; gap: 14px; background: #232a36; border: 1px solid var(--borde); border-radius: 0 8px 8px 8px; padding: 12px; }
 @media (max-width: 760px) { .panel-col { grid-template-columns: 1fr; } }
-.items-col { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 6px; align-content: start; }
+.items-col { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px; align-content: start; }
 .item-col { display: flex; gap: 8px; align-items: center; background: #1a1f29; border: 1px solid #2c3442; border-radius: 4px; padding: 6px; font-size: 12px; min-width: 0; }
-.item-col img { width: 32px; height: 32px; border-radius: 3px; border: 1px solid #b2541c; flex: none; }
-.item-col .n { color: var(--oro); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+.item-col img { width: 45px; height: 45px; border-radius: 3px; border: 1px solid #b2541c; flex: none; }
+.item-col .n { color: var(--oro); display: block; line-height: 1.25; }
 .item-col small { color: var(--suave); }
 .equipado { font-size: 9px; color: #6ea8ff; border: 1px solid #2c5bb3; border-radius: 3px; padding: 1px 4px; margin-left: auto; flex: none; }
 .cat-titulo { border: 1px solid #b2541c; background: #2b2118; border-radius: 4px; padding: 6px 8px; font-size: 11px; }
@@ -159,7 +159,7 @@ details.rot .dentro { padding: 0 12px 12px; font-size: 13px; }
 @media (max-width: 600px) { .genus { grid-template-columns: 1fr; } }
 .gen { background: #1a1f29; border: 1px solid #2d4f8f; border-radius: 6px; padding: 10px; font-size: 12px; }
 .gen .cab { display: flex; gap: 8px; align-items: center; }
-.gen .cab img { width: 26px; height: 26px; }
+.gen .cab img { width: 36px; height: 36px; }
 .gen .cab b { color: #fff; }
 .gen .pos { color: var(--suave); margin: 6px 0; }
 .gen .ran { font-size: 10px; letter-spacing: 1px; color: #7c869a; text-transform: uppercase; display: flex; justify-content: space-between; margin: 8px 0 4px; }
