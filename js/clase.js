@@ -1,5 +1,5 @@
 // Página de clase: lee window.BUILD (data/builds/<clase>.js) y la pinta
-var TECLA_TXT = { LMB: "Clic izq.", RMB: "Clic der.", Otra: "Otra" };
+var TECLA_TXT = { LMB: "Clic izq.", RMB: "Clic der.", Espacio: "Espacio", Otra: "Otra" };
 var PRESET_DAEV = { "Launch priority": "Prioridad de lanzamiento", "Full PvE": "JcE completo" };
 var IZQ = [["MainHand", "SubHand"], ["Helmet", "Shoulder"], ["Torso", "Pants"], ["Gloves", "Boots"], ["Cape"]];
 var DER = [["Necklace", "Amulet"], ["Earring1", "Earring2"], ["Ring1", "Ring2"], ["Bracelet1", "Bracelet2"],
@@ -233,7 +233,7 @@ function barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) {
   var macro = B.macros[0];
   var enMacro = {};
   if (macro) macro.pasos.forEach(function (p) { enMacro[p.id] = true; });
-  var grupos = [["1", "2", "3", "4"], ["5", "6", "7", "8"], ["Q", "E"], ["LMB", "RMB"]];
+  var grupos = [["1", "2", "3", "4"], ["5", "6", "7", "8"], ["Q", "E"], ["Espacio"], ["LMB", "RMB"]];
   if (porTecla.Otra) grupos.push(porTecla.Otra.map(function (_, i) { return "Otra#" + i; }));
   var filas = 4;
   B.barra.forEach(function (c) { filas = Math.max(filas, c.pila.length); });
@@ -261,7 +261,7 @@ function barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) {
   }).join("") + "</div>";
 
   var out = '<div class="barra-box"><h3 style="margin-top:0">Barra nivel ' + B.nivel + " (orden del juego)</h3>" + barra +
-    '<div class="barra-pie">Orden del juego: 1-8, Q, E, clic izquierdo, clic derecho. Las doradas son las que pulsa la macro. ' +
+    '<div class="barra-pie">Orden del juego: 1-8, Q, E, barra espaciadora, clic izquierdo, clic derecho. Ordenadas por la rotación: lo que más usas, más a mano. Las doradas son las que pulsa la macro. ' +
     "En una línea apilada sale primero la de abajo (el número pequeño es el orden).</div>" +
     (porTecla.Otra ? '<p class="notas-barra">«Otra»: esta clase lleva una 9.ª habilidad en la barra; como Q ya está ocupada, ponla en cualquier tecla libre.</p>' : "") + "</div>";
   if (macro) {
