@@ -8,4 +8,3 @@ Guía en español de AION 2 Global (temporada 1, nivel 45):
 
 Web: https://zentokux.github.io/build-aion2/
 
-AION 2 es una marca de NCSOFT.

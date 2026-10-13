@@ -60,8 +60,7 @@ function cabecera(activa) {
       return '<a href="' + l[0] + '"' + (l[2] === activa ? ' class="on"' : "") + ">" + esc(l[1]) + "</a>";
     }).join("") + "</nav></div></header>");
   document.body.insertAdjacentHTML("beforeend",
-    '<footer>BUILD AION2 · guía en español de AION 2 Global. ' +
-    'AION 2 es una marca de NCSOFT.</footer><div id="tip"></div>');
+    '<footer>BUILD AION2 · guía en español de AION 2 Global.</footer><div id="tip"></div>');
   activarTips();
 }
 
