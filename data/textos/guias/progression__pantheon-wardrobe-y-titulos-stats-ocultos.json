@@ -1,0 +1,193 @@
+{
+  "slug": "progression__pantheon-wardrobe-y-titulos-stats-ocultos",
+  "categoria": "progression",
+  "titulo": "Pantheon, Wardrobe y títulos",
+  "fuente": "https://metaroad.gg/es/aion2/progression/pantheon-wardrobe-y-titulos-stats-ocultos",
+  "resumen": "Los tres parecen decoración pero dan stats permanentes. Llena los tres huecos de títulos, no vendas equipo de misión (se extrae al 100%) y mejora el Pantheon cuando caiga una decoración de mejor grado.",
+  "bloques": [
+    {
+      "titulo": "Los tres sistemas",
+      "tipo": "tabla",
+      "columnas": ["Sistema", "Qué es", "Qué te da"],
+      "filas": [
+        ["**Pantheon**", "Sala personal de trofeos (lo más parecido a housing)", "Puntos permanentes en 10 stats de dios por cada decoración colocada"],
+        ["**Wardrobe**", "Armario de apariencias (transmog)", "Bonus permanente por parte del cuerpo solo por **tener** la apariencia"],
+        ["**Títulos**", "3 huecos equipables", "Algo por tenerlos y más por equiparlos"]
+      ]
+    },
+    {
+      "titulo": "Pantheon: 17 huecos y qué alimenta cada tipo",
+      "tipo": "tabla",
+      "columnas": ["Tipo", "Huecos", "Stats que da"],
+      "filas": [
+        ["**Large Colossus** (coloso)", "1", "Justice, Time, Destruction; algunos añaden Wisdom"],
+        ["**Small Statue** (estatua)", "4", "Freedom, Death, Space"],
+        ["**Artwork** (cuadro)", "12", "Illusion, Wisdom, Destiny, Life"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Colosos con Wisdom (junto a Time y Destruction): Colossus: Kaisinel's Illusion, Colossus: Tyrant Tassin y Colossus: Ascended Atheron. Illusion, Destiny y Life solo están en cuadros."
+    },
+    {
+      "titulo": "Los 10 stats de dios",
+      "tipo": "tabla",
+      "columnas": ["Stat", "Tipo", "Efectos"],
+      "filas": [
+        ["Justice [Nezekan]", "Coloso", "Defensa + Perforación"],
+        ["Time [Siel]", "Coloso", "Velocidad de Hechizo + Resistencia a Golpe"],
+        ["Destruction [Zikel]", "Coloso", "Ataque + Resistencia a Perforación"],
+        ["Freedom [Vaizel]", "Estatua", "Precisión y Evasión"],
+        ["Death [Triniel]", "Estatua", "Crítico + Penetración de Recuperación"],
+        ["Space [Israphel]", "Estatua", "Velocidad de Movimiento + probabilidad de bloqueo"],
+        ["Illusion [Kaisinel]", "Cuadro", "Reducción de Tiempo de Enfriamiento + Penetración de Tenacidad"],
+        ["Wisdom [Lumiel]", "Cuadro (y 3 colosos)", "Reducción de Consumo de Puntos de Maná + Golpe"],
+        ["Destiny [Marchutan]", "Cuadro", "MP + probabilidad de activar Tenacidad"],
+        ["Life [Yustiel]", "Cuadro", "HP + probabilidad de Recuperación"]
+      ]
+    },
+    {
+      "titulo": "Qué buscar según tu rol (lectura de metaroad, no recomendación coreana)",
+      "tipo": "tabla",
+      "columnas": ["Rol", "Busca"],
+      "filas": [
+        ["DPS", "Death (estatuas) y Destruction (coloso)"],
+        ["Caster", "Illusion (cuadros)"],
+        ["Tanque", "Justice (coloso) y Life (cuadros)"]
+      ]
+    },
+    {
+      "titulo": "Valor por grado de decoración",
+      "tipo": "tabla",
+      "columnas": ["Tipo", "Grado", "Líneas × puntos"],
+      "filas": [
+        ["Cuadro", "Raro", "2 × 2"],
+        ["Cuadro", "Legendario", "2 × 3 (6)"],
+        ["Cuadro", "Único", "3 × 4 (12)"],
+        ["Cuadro", "Épico", "3 × 5 (15); un par dan 4 líneas"],
+        ["Estatua", "Común", "1 × 6"],
+        ["Estatua", "Raro", "2 × 8"],
+        ["Estatua", "Legendario", "2 × 10"],
+        ["Estatua", "Único", "3 × 12"],
+        ["Coloso", "Raro", "2 × 35"],
+        ["Coloso", "Único", "3 × 45"],
+        ["Coloso", "Épico", "3 × 55 (165: más que 10 cuadros Épicos)"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Busca **grado**, no cantidad. No se sabe cómo se desbloquea el Pantheon ni qué contenido suelta las decoraciones (se consiguen jugando, no en tienda)."
+    },
+    {
+      "titulo": "Wardrobe: cómo funciona",
+      "tipo": "lista",
+      "items": [
+        "**Transmog**: extraes la apariencia de una pieza que no hayas extraído antes y la pones encima de cualquier cosa; tus stats son los de la pieza equipada.",
+        "**Colección**: cada apariencia guardada da bonus permanente por parte del cuerpo. 1 punto de colección = **0,2%**; los puntos dependen de la rareza. Ej.: skin de arma Única = +0,8% de potencia (Corea).",
+        "Solo cuenta para stats el arma de **tu clase** (las demás cuentan para el título de colección).",
+        "Las apariencias se comparten en **toda la cuenta**.",
+        "El **teñido** se hace sobre la apariencia guardada: color, patrón, transparencia y brillo por parte. Precio sin publicar (la comunidad coreana dice que es caro)."
+      ]
+    },
+    {
+      "titulo": "Tasas de extracción (Corea)",
+      "tipo": "tabla",
+      "columnas": ["Origen de la pieza", "Éxito"],
+      "filas": [
+        ["Misión, tienda y Abyss Points", "**100%**"],
+        ["Equipo normal", "25%"],
+        ["Fabricado", "20%"],
+        ["Drop de jefe", "10%"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Ruta coreana: comprar las piezas al 100% más baratas y extraerlas en masa. Deja de vender el equipo de misión por reflejo."
+    },
+    {
+      "titulo": "Tamaño de la colección (catalogación coreana)",
+      "tipo": "lista",
+      "items": [
+        "125 apariencias de accesorio: 63 pendientes y 62 collares (Silver Bloom solo existe como pendiente).",
+        "59 apariencias de arma.",
+        "Sets de armadura: sin total.",
+        "La prensa del global habla de «más de 800 prendas» y Collection Effects: no confirmado.",
+        "Título de colección a las **700 apariencias**: sus stats están en disputa (dos lecturas que no cuadran). Coste coreano: un jugador dice ~50 millones de Kina en mercado; no presupuestes con eso."
+      ]
+    },
+    {
+      "titulo": "Títulos: huecos y grados",
+      "tipo": "lista",
+      "items": [
+        "3 huecos: **ataque**, **defensa** y **otros**; cada título pertenece a una categoría (nombres de huecos traducidos por metaroad).",
+        "Tener un título ya da algo aunque no lo equipes: desbloquea todos los que puedas.",
+        "Escala: Común, Raro, Legendario, Único, Épico (Legendario = el antiguo «Legacy», nada que ver con Transfer).",
+        "Líneas de stat: Común y Raro suelen 1, Legendario 2, Único (fuera de rankings) 3.",
+        "Los **Épicos** son todos recompensas de ranking de temporada: el techo realista es **Único**, muy por encima del resto."
+      ]
+    },
+    {
+      "titulo": "Recuento de títulos (con copias de ambas facciones)",
+      "tipo": "tabla",
+      "columnas": ["Grado", "Cantidad"],
+      "filas": [
+        ["Común", "274"],
+        ["Raro", "540"],
+        ["Legendario", "300"],
+        ["Único", "166"],
+        ["Épico", "164 (rangos de Transcendence, Nightmare, Ascension Trial, Subjugation, las dos arenas y oficial del Abismo; Season 1, 2, 3 o Chapter 1)"],
+        ["Especial", "50 (fuera de la escala)"],
+        ["Total", "1.494"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "El lanzamiento coreano tenía 345 títulos (noviembre de 2025). Úsalo solo como escala: ni es la cifra actual de Corea ni está verificada para el global."
+    },
+    {
+      "titulo": "De dónde salen los títulos",
+      "tipo": "lista",
+      "items": [
+        "Logros (por zona y por jefe): el cajón más grande.",
+        "Completar contenido, por umbrales.",
+        "Hitos del Wardrobe (la caza de 700 apariencias también es de títulos).",
+        "Hitos de mejora de alas (hay un título de ataque)."
+      ]
+    },
+    {
+      "titulo": "Stats de títulos",
+      "tipo": "tabla",
+      "columnas": ["Dato", "Valor"],
+      "filas": [
+        ["Títulos con stats al equipar", "994 de 1.494; 838 dan además una línea menor solo por tenerlos"],
+        ["Líneas más comunes", "Amplificación de Daño JcJ (80), Tolerancia a Daño JcJ (76), Tolerancia a Daño JcE (62), Amplificación de Daño de JcE (60), Tolerancia a Daño de Jefe (48), HP plano (47)"],
+        ["Librarse de las ataduras de raza (Único, ataque)", "Equipado: Crítico +68, Ataque Adicional +34, Amplificación de Daño de JcE +4,5%. Tenerlo: Amplificación de Daño de JcE +1%"],
+        ["Arena of Solitude [Season 2] Challenger 1 (Épico)", "Amplificación de Daño JcJ +10% y Tolerancia a Daño JcJ +10%"],
+        ["Recompensas de logros aparte de títulos", "Sin mapear"]
+      ]
+    },
+    {
+      "titulo": "¿Están en el global?",
+      "tipo": "tabla",
+      "columnas": ["Sistema", "Probabilidad"],
+      "filas": [
+        ["Títulos", "Casi seguro (Season 1); cambiará el contenido, no la estructura"],
+        ["Pantheon", "Probablemente (Season 1); lo confirman las notas del parche"],
+        ["Wardrobe", "El menú sí; el bonus de colección sin confirmar"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Todos los números se midieron en Corea, ~10,5 meses por delante del global. Fíate de las estructuras y comprueba los valores en tu cliente la primera semana."
+    },
+    {
+      "titulo": "Tu primera hora",
+      "tipo": "pasos",
+      "items": [
+        "Abre la ventana de títulos y llena los tres huecos; revísalos tras cada parche de contenido.",
+        "Deja de vender el equipo de misión: se extrae al 100%.",
+        "Mejora el Pantheon cada vez que aparezca una decoración de mejor grado, sin sesiones dedicadas."
+      ]
+    }
+  ]
+}

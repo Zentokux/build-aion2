@@ -1,0 +1,370 @@
+{
+  "slug": "pvp__el-abismo-horas-puntos-y-rango",
+  "categoria": "pvp",
+  "titulo": "El Abismo: horas, puntos y rango",
+  "fuente": "https://metaroad.gg/es/aion2/pvp/el-abismo-horas-puntos-y-rango",
+  "resumen": "El Abismo es PvP abierto con un presupuesto de horas semanal (7 h, 14 h con Membership) que se recarga el miércoles a las 05:00. La mayoría de los Abyss Points no salen de matar jugadores: puedes sacar 110.000–380.000 AP a la semana sin pelear.",
+  "bloques": [
+    {
+      "tipo": "aviso",
+      "texto": "Casi todo se midió en **servidores coreanos a septiembre de 2026**. La capa Middle, el nivel de objeto 3.000 y las rift stones llegaron en parches de 2026; la global parte de antes y puede no traerlos. Comprueba cada número en tu servidor."
+    },
+    {
+      "titulo": "Horas del Abismo",
+      "tipo": "tabla",
+      "columnas": [
+        "Qué",
+        "Dato"
+      ],
+      "filas": [
+        [
+          "Cuenta básica",
+          "**7 horas por semana**"
+        ],
+        [
+          "Con Membership",
+          "**14 horas por semana**"
+        ],
+        [
+          "Reinicio",
+          "**Miércoles a las 05:00**"
+        ],
+        [
+          "Cómo corre",
+          "Solo mientras estás dentro; gástalo como quieras entre reinicios"
+        ],
+        [
+          "Al llegar a cero",
+          "Fuera hasta el miércoles siguiente"
+        ]
+      ]
+    },
+    {
+      "titulo": "Capas",
+      "tipo": "tabla",
+      "columnas": [
+        "Capa",
+        "Requisito",
+        "Qué ofrece"
+      ],
+      "filas": [
+        [
+          "**Lower Abyss**",
+          "Circula un mínimo de **~1.000 de poder de combate** para el Abismo (asociarlo a Lower es deducción, no confirmado)",
+          "Capa base, para aprender la zona"
+        ],
+        [
+          "**Middle Abyss**",
+          "**Nivel de objeto 3.000**",
+          "Mejor farmeo, más AP por hora, más riesgo. Llegó en enero 2026 (Corea)"
+        ],
+        [
+          "Capa superior",
+          "Aún no abierta",
+          "Ya existe la **Upper Abyss Rift Stone** (7 y 30 días)"
+        ]
+      ]
+    },
+    {
+      "titulo": "Abyss Rift Stone (más horas)",
+      "tipo": "tabla",
+      "columnas": [
+        "Versión",
+        "Cómo se consigue"
+      ],
+      "filas": [
+        [
+          "Capa Lower",
+          "Fácil de conseguir"
+        ],
+        [
+          "Capa Middle",
+          "Fabricación: ~**20% de éxito** normal, o **garantizada con 5x materiales** (fragmentos de la capa Lower, esencia de Ereshkigal y mineral)"
+        ],
+        [
+          "Consejo",
+          "Planifica con las 7 h gratis; guarda las rift stones para noche de asedio o una sesión muy buena"
+        ]
+      ]
+    },
+    {
+      "titulo": "PvP abierto: reglas",
+      "tipo": "lista",
+      "items": [
+        "Nada es instanciado: sin flag, sin canal JcE.",
+        "**Morir a manos de un enemigo le transfiere tus Abyss Points.**",
+        "Los demás jugadores son un recurso, y tú lo eres para ellos.",
+        "**Asegura tus puntos antes de ponerte codicioso.**"
+      ]
+    },
+    {
+      "titulo": "Otras ganancias de las horas",
+      "tipo": "tabla",
+      "columnas": [
+        "Qué",
+        "Detalle"
+      ],
+      "filas": [
+        [
+          "**Kina**",
+          "La capa Middle es de los mejores sitios de ingresos directos"
+        ],
+        [
+          "**Medals of Merit**",
+          "Gold y Silver Medal of Merit + Silver Fragment of Merit. Las piezas de facción altas piden AP y medallas. Salen de **jefes del Abismo** y **misiones semanales** (farmear AP más rápido no da más)"
+        ],
+        [
+          "**Jefes del Abismo**",
+          "**Señor guardián Nahma**, **Agro** y **Kaira**. Sueltan materiales para cajas de medallas y equipo de jefe. Ojo: sitio típico de emboscadas"
+        ]
+      ]
+    },
+    {
+      "titulo": "Topes de AP por semana",
+      "tipo": "tabla",
+      "columnas": [
+        "Fuente",
+        "Tope"
+      ],
+      "filas": [
+        [
+          "Matar mobs en el Abismo",
+          "**200.000 AP**"
+        ],
+        [
+          "Matar jugadores enemigos",
+          "**200.000 AP**"
+        ],
+        [
+          "Por temporada",
+          "Existe un tope, sin valor publicado"
+        ]
+      ]
+    },
+    {
+      "titulo": "Otras fuentes de AP",
+      "tipo": "tabla",
+      "columnas": [
+        "Actividad",
+        "Cuánto paga"
+      ],
+      "filas": [
+        [
+          "Victorias en **Battleground**",
+          "2.000 cada una, hasta 10 por semana (mejor tasa por hora)"
+        ],
+        [
+          "**Requisas de suministros**",
+          "~10–20k al día + 30–50k a la semana; también dan Enhance Stones"
+        ],
+        [
+          "Partidas de **Abyss Corridor**",
+          "Excelente si tu facción gana el asedio; cero si no"
+        ],
+        [
+          "Misiones diarias del diario",
+          "500 AP cada una, 5 al día"
+        ],
+        [
+          "Pergaminos de encargo de aldea",
+          "500 + bonificación aleatoria, 12 a la semana"
+        ],
+        [
+          "Pergaminos de encargo del Abismo",
+          "Mismo formato, 20 a la semana"
+        ],
+        [
+          "**Festival de Shugo**",
+          "Unos cientos por partida con tiradas de bonificación; mejor con Membership"
+        ],
+        [
+          "Misiones semanales de temporada",
+          "Unos pocos miles"
+        ],
+        [
+          "Victorias en **Arena**",
+          "100 cada una, sin penalización"
+        ]
+      ]
+    },
+    {
+      "titulo": "Reinicios",
+      "tipo": "tabla",
+      "columnas": [
+        "Contador",
+        "Hora"
+      ],
+      "filas": [
+        [
+          "Diario",
+          "**05:00**"
+        ],
+        [
+          "Semanal (y horas del Abismo)",
+          "**Miércoles 05:00**"
+        ]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Sumando solo lo que no es PvP salen unos **110.000 a 380.000 AP por semana** (Corea, semana normal). Supera el tope de PK de 200.000 para casi todos, y a tu ritmo."
+    },
+    {
+      "titulo": "Lo que pierdes al morir",
+      "tipo": "tabla",
+      "columnas": [
+        "Muerte",
+        "Qué pierdes"
+      ],
+      "filas": [
+        [
+          "Contra un jugador enemigo",
+          "Le transfieres **AP**"
+        ],
+        [
+          "Cualquier muerte (PvP)",
+          "Pierdes **puntos de clasificación**, contador separado que usa el rango militar"
+        ],
+        [
+          "Contra un mob (JcE)",
+          "Nada registrado, solo tiempo"
+        ]
+      ]
+    },
+    {
+      "titulo": "Tienda de AP: equipo de facción",
+      "tipo": "tabla",
+      "columnas": [
+        "Nivel (de menor a mayor)",
+        "Coste"
+      ],
+      "filas": [
+        [
+          "**Decanus**",
+          "Mejor valor. **Anillo Decanus** (Guardian Decanus Ring en Elyos): Único, nivel 62, **30.000 AP** (dos semanas de misiones)"
+        ],
+        [
+          "**Centurion**",
+          "~**100.000 a 400.000 AP** por pieza"
+        ],
+        [
+          "**Tribunus**",
+          "Bastante más; también pide **Medals of Merit**"
+        ],
+        [
+          "**High Commander**",
+          "El más alto; también pide medallas"
+        ]
+      ]
+    },
+    {
+      "titulo": "Orden de compra",
+      "tipo": "tabla",
+      "columnas": [
+        "Qué",
+        "1.ª opción",
+        "Opcional"
+      ],
+      "filas": [
+        [
+          "Set Decanus",
+          "**Anillo → pendiente → collar**",
+          "—"
+        ],
+        [
+          "Seguir gastando",
+          "No en anillos: la diferencia entre grado alto y bajo es la menor",
+          "El anillo Decanus es solo una ganga puntual"
+        ]
+      ]
+    },
+    {
+      "titulo": "Resto de la tienda de AP",
+      "tipo": "lista",
+      "items": [
+        "**Fragmentos de stigma adicionales: solo se consiguen con AP.** Son habilidades reales de tu barra, también para PvE.",
+        "Alas, consumibles de progreso y objetos de puntos de habilidad."
+      ]
+    },
+    {
+      "titulo": "Rango militar",
+      "tipo": "tabla",
+      "columnas": [
+        "Qué",
+        "Dato"
+      ],
+      "filas": [
+        [
+          "Cómo funciona",
+          "Por **posición relativa** frente a tu bando, no por umbral"
+        ],
+        [
+          "Escala",
+          "Soldado del **grado 9 al grado 1**, y por encima **rangos de oficial con estrellas**"
+        ],
+        [
+          "Tope de AP",
+          "Los puntos de clasificación **siguen sumando** pasado el tope de 200.000"
+        ],
+        [
+          "Bajada",
+          "Morir resta, y quedarte quieto mientras otros suben también te baja"
+        ],
+        [
+          "Nombres de oficial",
+          "No confirmados: Decanus, Centurion, Tribunus y High Commander solo están confirmados como **niveles de equipo**"
+        ]
+      ]
+    },
+    {
+      "titulo": "Cómo gastar las 7 horas",
+      "tipo": "pasos",
+      "items": [
+        "No abras la zona para echar un vistazo: el reloj corre dentro.",
+        "Ve con gente: morir solo regala puntos. Los buffs de eficiencia son de **legión**.",
+        "Guarda horas para la **noche de asedio** (jefe del Abismo + Artifact Siege pagan muy por encima).",
+        "Gasta la última hora en el sitio más denso donde sobrevivas, no en el más seguro.",
+        "Haz primero el circuito aburrido: requisas, pergaminos de encargo y misiones del diario."
+      ]
+    },
+    {
+      "titulo": "Qué comprobar en tu servidor (de más a menos probable que cambie)",
+      "tipo": "tabla",
+      "columnas": [
+        "Orden",
+        "Qué"
+      ],
+      "filas": [
+        [
+          "1",
+          "Número de horas y si Membership las sigue duplicando"
+        ],
+        [
+          "2",
+          "Capas y sus requisitos de entrada"
+        ],
+        [
+          "3",
+          "Receta de la rift stone"
+        ],
+        [
+          "4",
+          "Topes semanales de AP"
+        ],
+        [
+          "5",
+          "Precios de la tienda, anillo Decanus incluido"
+        ]
+      ]
+    },
+    {
+      "titulo": "Seguro para el lanzamiento",
+      "tipo": "lista",
+      "items": [
+        "El Abismo existe, es PvP de facciones abierto y no instanciado.",
+        "El PvP es opcional para progresar.",
+        "El AP se gana sin PvP y es la llave de los fragmentos de stigma."
+      ]
+    }
+  ]
+}

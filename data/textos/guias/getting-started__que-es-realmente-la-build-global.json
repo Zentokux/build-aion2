@@ -1,0 +1,133 @@
+{
+  "slug": "getting-started__que-es-realmente-la-build-global",
+  "categoria": "getting-started",
+  "titulo": "Qué es realmente la build global",
+  "fuente": "https://metaroad.gg/es/aion2/getting-started/que-es-realmente-la-build-global",
+  "resumen": "La global es la Season 1 coreana (noviembre de 2025) modificada, con los tamaños de grupo del Chapter 1: grupo de 5, raid de Sanctuary de 10, Force de 20. Las guías que dicen 4 y 8 están desfasadas.",
+  "bloques": [
+    {
+      "titulo": "Tamaños de grupo",
+      "tipo": "tabla",
+      "columnas": ["Contenido", "Antes (Corea hasta julio de 2026)", "Global"],
+      "filas": [
+        ["Expedition y Transcendence", "4", "**5**"],
+        ["Sanctuary (raid)", "8", "**10** (dos grupos de 5)"],
+        ["Force (mundo abierto)", "16", "**20**"]
+      ]
+    },
+    {
+      "titulo": "Qué es la build global",
+      "tipo": "lista",
+      "items": [
+        "«Season 1, modificada»: la temporada de lanzamiento con las mejoras de calidad de vida, balance y progresión del primer año coreano.",
+        "Hay más o menos un año de contenido en reserva que saldrá según avancen los jugadores.",
+        "Si una fuente coreana y una web global no coinciden, suelen tener razón las dos: hablan de puntos distintos de la misma línea temporal."
+      ]
+    },
+    {
+      "titulo": "Composición de una raid de 10 (referencias coreanas)",
+      "tipo": "tabla",
+      "columnas": ["Versión", "Composición"],
+      "filas": [
+        ["Clear publicado con clases", "2 healers, 2 supports, 1 tanque para toda la raid, 5 de daño"],
+        ["Plantilla de reclutamiento coreana", "Por grupo: 1 que aguanta aggro y 1 healer; 6 puestos de daño en total"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "No está zanjado si va un tanque compartido o uno por grupo, ni está confirmado para global. Lo seguro: dos grupos de 5, cada uno con su healer."
+    },
+    {
+      "titulo": "Botín en Sanctuary",
+      "tipo": "lista",
+      "items": [
+        "Individual: cada jefe con nombre da su cofre a cada jugador. Sin need/greed ni master looter.",
+        "El cupo semanal solo se gasta en el **jefe final**: los jefes anteriores dan cofre sin gastar el contador.",
+        "Si estás muerto cuando cae el botín, lo pierdes: levántate antes de abrir el cofre.",
+        "Hace falta una contribución mínima de daño: bajó del **3% al 1%** (control anti-leech)."
+      ]
+    },
+    {
+      "titulo": "Cambios que llegaron con el grupo más grande (también en global)",
+      "tipo": "tabla",
+      "columnas": ["Qué", "Antes", "Ahora"],
+      "filas": [
+        ["Muertes del jefe final de Sanctuary por semana", "2", "1, con la recompensa doblada"],
+        ["Límite de tiempo de la raid", "—", "2 horas"],
+        ["Odyle Energy por run de Sanctuary", "40", "80"],
+        ["Tickets de Expedition y Transcendence", "Sí", "Eliminados; pagas en Odyle Energy"],
+        ["Odyle Energy de un jefe de Expedition en Conquest", "—", "15 en total, recalculado para 5"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "No se sabe si las mecánicas de jefes anteriores al cambio (un debuff en 4, una bomba en 8…) se renumeraron para 10. Da por hecha la forma, no la cifra: «todos menos el tanque» ahora son 9, no 7."
+    },
+    {
+      "titulo": "Exclusivo de global (primer stream de desarrolladores)",
+      "tipo": "lista",
+      "items": [
+        "Campo de batalla **10v10** con stats normalizados.",
+        "Bandera de PvP disponible desde el principio en todas partes menos el Abismo.",
+        "Más de **200** mascotas y monturas; nivel mínimo de mascota bajado de 5 a 3.",
+        "Cambio de Quna a Kina más limitado que en KR/TW para bajar el pay-to-win (límite exacto no publicado).",
+        "Los tres niveles del Founder's Pack incluyen **30 días** de Special Quai Membership.",
+        "Cinco regiones: NA West, NA East, South America, Central Europe y Japan. Sin servidor de Oceanía (confirmado por NC).",
+        "Comercio directo entre jugadores desactivado (antibots); todo pasa por el Market."
+      ]
+    },
+    {
+      "titulo": "Nivel máximo",
+      "tipo": "tabla",
+      "columnas": ["Número", "De dónde sale"],
+      "filas": [
+        ["37", "Tope del Launch Scale Test (borrado, no se transfiere)"],
+        ["45", "Máximo de la Season 1 en Corea: la expectativa razonable"],
+        ["50", "Corea desde el 1 de julio de 2026: no es tu versión"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "NC nunca ha publicado el nivel máximo global. Las notas del 30 de septiembre deberían resolverlo, junto con la lista de mazmorras y raids y los sistemas de progresión activos."
+    },
+    {
+      "titulo": "Sistemas: qué esperar en tus menús",
+      "tipo": "tabla",
+      "columnas": ["Estado", "Sistemas"],
+      "filas": [
+        ["Casi seguro que están (Season 1)", "Stigma (quizá con 4 huecos, el 5.º llegó después), Enhancement, Daevanion, Arcana, Pantheon"],
+        ["Probablemente no (enero-septiembre de 2026)", "Transfer, Soul Binding, Potential Enhancement, hueco Brooch, mejora de alas, hueco Seal"],
+        ["Seguro que no el primer día", "Nivel 50, Luchador (9.ª clase), regiones Eltnen y Morheim, Chalice of Muspel, Snowfield of Sorrow, contenido Trial, capas superior y media del Abismo"]
+      ]
+    },
+    {
+      "titulo": "Por qué importa",
+      "tipo": "lista",
+      "items": [
+        "Sin Transfer, mejorar una pieza que vas a sustituir es mucho peor idea: la inversión no se viene contigo.",
+        "Sin Brooch ni Seal, los objetivos de nivel de objeto coreanos («necesitas 4.500») son inalcanzables.",
+        "Clases globales (8): Templario, Gladiador, Sicario, Ranger, Hechicero, Espiritualista, Clérigo y Conjurador."
+      ]
+    },
+    {
+      "titulo": "Cómo fechar otra guía",
+      "tipo": "tabla",
+      "columnas": ["Si dice…", "Describe…"],
+      "filas": [
+        ["Grupo de 4 / raid de 8", "Corea antes de julio de 2026 (desconfía del resto de sus números)"],
+        ["Transfer y Soul Binding", "Corea después de febrero de 2026"],
+        ["Ruta hasta nivel 50", "Corea después de julio de 2026"]
+      ]
+    },
+    {
+      "titulo": "Qué hacer antes del lanzamiento",
+      "tipo": "pasos",
+      "items": [
+        "Recluta de cinco en cinco; una raid son dos grupos. Pon primero un healer en cada grupo y alguien que aguante aggro en cada uno.",
+        "Prepárate para la Season 1: Enhancement sí, Transfer no; cuatro huecos de Stigma; nivel 45 a confirmar.",
+        "Mete a toda la static en la misma oleada (Advance Access 30 de septiembre – 4 de octubre en Early Access; servidores Launch el 5 de octubre).",
+        "No des por hecho que habrá cuatro raids: la lista de contenido no está publicada."
+      ]
+    }
+  ]
+}

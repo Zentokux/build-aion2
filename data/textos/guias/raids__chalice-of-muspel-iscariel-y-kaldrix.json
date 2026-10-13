@@ -1,0 +1,153 @@
+{
+  "slug": "raids__chalice-of-muspel-iscariel-y-kaldrix",
+  "categoria": "raids",
+  "titulo": "Chalice of Muspel: Iscariel y Kaldrix",
+  "fuente": "https://metaroad.gg/es/aion2/raids/chalice-of-muspel-iscariel-y-kaldrix",
+  "resumen": "Raid de **dos jefes** (Iscariel y Kaldrix, el final) con entrada a **nivel de objeto 4.500**. Solo paga Kaldrix: una noche que acaba en Iscariel no suma nada.",
+  "bloques": [
+    {
+      "tipo": "aviso",
+      "texto": "Contenido de la Temporada 3 coreana (mayo de 2026). Nada de NCSOFT lo sitúa en el cliente global y su requisito está muy por encima de un personaje de la semana de lanzamiento. Tómalo como un adelanto."
+    },
+    {
+      "titulo": "Requisitos y reglas",
+      "tipo": "tabla",
+      "columnas": ["Qué", "Dato"],
+      "filas": [
+        ["Entrada", "**Nivel de objeto 4.500** (anuncio de NCSOFT del 27-may-2026)"],
+        ["Jefes con nombre", "2: **Iscariel, Guardian of the Chalice** y **Kaldrix, Calamity of the Depths** (final)"],
+        ["Intentos", "**Ilimitados**"],
+        ["Recompensa", "Tope de **2 clears por semana**"],
+        ["Iscariel", "No da botín: solo paga la muerte de Kaldrix"],
+        ["Enrage de Kaldrix", "Existe, pero nadie ha publicado el temporizador"]
+      ]
+    },
+    {
+      "titulo": "Por qué se dice «tres jefes» (y es falso)",
+      "tipo": "lista",
+      "items": [
+        "Los coreanos numeran igual la instancia (Chalice of Muspel es el 3.er Sanctuary) y los jefes (1.º, 2.º).",
+        "En un título de vídeo, el número junto a la palabra de instancia es el Sanctuary; el número junto a «jefe con nombre» es el jefe.",
+        "«3» y «2» juntos = 2.º jefe del 3.er Sanctuary = **Kaldrix**, el final.",
+        "Casi todas las mazmorras tienen 3 jefes; las únicas raids con 2 registradas son esta y Snowfield of Sorrow."
+      ]
+    },
+    {
+      "titulo": "Diferencia con Abyssal Forge",
+      "tipo": "tabla",
+      "columnas": ["Raid", "Jefes intermedios", "Qué haces tú"],
+      "filas": [
+        ["Abyssal Forge", "Cada jefe da un cofre que no cuenta en el límite semanal", "Merece la pena farmearlos"],
+        ["Chalice of Muspel", "Iscariel no da nada", "Planifica la noche para llegar a matar a Kaldrix"]
+      ]
+    },
+    {
+      "titulo": "Botín de Kaldrix",
+      "tipo": "tabla",
+      "columnas": ["Tipo", "Qué"],
+      "filas": [
+        ["Anuncio de NCSOFT", "Lava Heart Weapon (Extend), Barrera de corazón de lava, Broche de Kaldrix"],
+        ["Prensa coreana", "Materiales de fabricación Changryong y Myeollyong; equipo de tres tipos: broche, Neulmu y liga"],
+        ["Primer clear (una sola vez)", "Título y Mascota: Dragón rojo"],
+        ["Garantizado por clear (tabla de la comunidad)", "16 Sync Stones Únicas, 9-13 Amplify Stone Fragments Épicos y 9-13 Únicos, 40 Silentium, 5.000.000 Kina"],
+        ["Probabilidad del broche", "5% por clear"],
+        ["Compensación", "Lesser Gear Change Voucher: Kaldrix tras 4 clears"],
+        ["Tirada Única", "Armas Nathara, armadura Awakened Alturadon, joyería Scattered Radiance"],
+        ["Tirada Épica (más rara)", "Set Faded Shadow"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "La tabla de la comunidad incluye drops para Iscariel, pero la guía coreana de líderes de raid y la cobertura del primer clear dicen que no da nada. No está aclarado: planifica como si solo pagara Kaldrix. Nada de este equipo existe aún fuera de Corea."
+    },
+    {
+      "titulo": "Primer clear de Corea",
+      "tipo": "lista",
+      "items": [
+        "Abrió el 27-may-2026; primera muerte poco antes de la 01:00 del 28, tras unas **17 horas** de intentos.",
+        "Terminaron a **45 segundos** del enrage."
+      ]
+    },
+    {
+      "titulo": "Jefe 1: Iscariel, Guardian of the Chalice",
+      "tipo": "tabla",
+      "columnas": ["Ataque", "Qué hace", "Qué haces tú"],
+      "filas": [
+        ["Cadena de apertura", "Abanico, luego círculos, luego donut, seguidos", "Trátala como un solo patrón y cántala así"],
+        ["Tirón", "Arrastra jugadores hacia él; casi siempre le sigue un charco o un láser (suelen alternarse)", "Prepárate para lo siguiente, no para el tirón. Suele venir tras el teletransporte con charco de bloqueo o la dispersión final de la apertura"],
+        ["Láser", "Alcance de **29 metros** exactos", "Ponte a **30 m**. Si te toca un charco, camina a 30 m y suéltalo allí"],
+        ["Tornado", "Siempre encadena un láser (deja de hacerlo tras la mecánica posterior)", "30 m, o lee el marcador trasero del jefe y espera el rayo"],
+        ["Teletransporte", "Deja una zona donde aterriza", "Asume que el destino es peligroso antes de seguirlo"],
+        ["Juicio de colores (75% y 50%)", "Emparejar colores con orbes; al 50% hay más orbes", "Grupo 1: lado izquierdo y **rojo**. Grupo 2: lado derecho y **verde**. Acordadlo antes del pull"],
+        ["Agujeros negros (70% y 30%)", "Esquivar agujeros negros mientras colocas orbes de colores", "Esquiva y coloca tu orbe"],
+        ["Mejoras al 50%", "El teletransporte con charco suelta más charcos y la dispersión lanza a más gente", "Se activan por **vida del jefe**, no por haber hecho la mecánica: pueden llegar antes de ella"]
+      ]
+    },
+    {
+      "titulo": "Kaldrix: orden del combate",
+      "tipo": "pasos",
+      "items": [
+        "Apertura.",
+        "Primer semáforo (75%).",
+        "Alas.",
+        "Segundo semáforo (30%).",
+        "Fase aleatoria.",
+        "Esencias (5%) y oleadas.",
+        "Ventana de groggy: golpe de gracia."
+      ]
+    },
+    {
+      "titulo": "Jefe 2 (final): Kaldrix, Calamity of the Depths",
+      "tipo": "tabla",
+      "columnas": ["Ataque", "Qué hace", "Qué haces tú"],
+      "filas": [
+        ["Zonas rojas / estigmas", "Dos zonas rojas seguidas; el atrapado recibe estigma. Si te pillan otra vez con estigma, **wipe**. Orden: objetivo del aggro y luego el más cercano", "Divididos delante y detrás. Rotación fijada antes del pull: el tanque lleva la 1.ª marca, los demás entran cuando sale el anterior. **Sicarios fuera de la rotación**"],
+        ["Stack", "La cabeza se pone roja y se forma una zona", "Todos en un punto, sea cual sea la forma"],
+        ["Números y donuts", "Marcas numeradas, cada una con un donut", "Los números del medio, separados. El último lo suelta pensando en el patrón siguiente"],
+        ["Barrido", "Marca interior y exterior, luego ataque amplio; lado seguro aleatorio", "No memorices el lado. Es la señal de que llega una mecánica gorda"],
+        ["Aliento", "Gira en horario o antihorario según el aviso", "Lee el aviso y gira con él"],
+        ["Pizza", "Porciones que no deben solaparse", "Sepárate sin solapar y reagrúpate al instante para el stack. No sale en la fase aleatoria"],
+        ["Semáforo (75% y 30%)", "Proyectiles de colores en orden **rojo, verde, azul**; el 2.º tiene más líneas", "Posiciones fijadas antes del pull (algunas llevan dos líneas). El marcador trasero fijado del jefe marca **las 6**; el suelo tiene flechas en 12, 3, 6 y 9"],
+        ["Llama (tras el 1.er semáforo)", "Patrón de llama seguro y charco de llamas", "Stack a **16 m detrás** del jefe: quien tiene el aggro se queda quieto y todos se ponen detrás. Dash al caer el charco (puedes esperar al sonido). Suelta la llama **fuera de la arena**"],
+        ["Fase de alas", "Desde que se retuerce en el centro hasta abrir alas recibe menos daño. En el aire: 3 alientos; al aterrizar: 3 charcos", "Guarda cooldowns largos para cuando estés en el aire. Esquiva charcos en diagonal adelante/atrás"],
+        ["Fase aleatoria (tras el 2.º semáforo)", "Usa todo sin orden", "Reacciona tú; cantar ya no sirve. Entra con vida alta: morir aquí es wipe"],
+        ["Dispersión-stack-dispersión", "Charco que se expande, anillo de fuego en cada jugador, zonas de delante y detrás, stack", "Ver pasos abajo"],
+        ["Esencias (5%)", "Esencias de la veta de fuego de Muspel; hay que destruirlas en ~42 s mientras oleadas de lava barren el mapa", "Primero sobrevive, luego elige objetivo. Salta al ritmo de las oleadas"],
+        ["Oleadas", "Fase que termina en ventana de groggy", "Momento para el sprint superior si lo guardasteis. Mata en el groggy: si no, carga a una esquina y vuelve al ciclo aleatorio"],
+        ["Quemadura", "Acumula stacks todo el combate", "Límpiatelos siempre"]
+      ]
+    },
+    {
+      "titulo": "Dispersión-stack-dispersión paso a paso",
+      "tipo": "pasos",
+      "items": [
+        "Sale un charco que se expande: dispérsate a sitios que también sirvan para el delante-y-detrás.",
+        "Se convierte en un anillo de fuego en cada jugador (como en la fase de alas): mantén distancia.",
+        "Aparecen zonas delante y detrás: el lado marcado lleva al grueso de la raid; el contrario, un puñado (suelen ser melés).",
+        "Stack: espera a que desaparezcan los anillos y entra andando; ni esprintes desde lejos ni te quedes fuera."
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Los mínimos de gente por lado publicados son de cuando el Sanctuary era de 8. Cuenta lo que necesita tu grupo y cántalo: los dos lados deben llenarse."
+    },
+    {
+      "titulo": "Qué te da mejorar el equipo",
+      "tipo": "lista",
+      "items": [
+        "Entre la apertura y el 1.er semáforo mueren la mayoría de intentos; con daño suficiente te saltas ese tramo.",
+        "Ir sobrado del mínimo elimina el riesgo en vez de gestionarlo.",
+        "Objetivo en Difícil (servidores asiáticos, aprox., no confirmado en global): **2.800 de Precisión** y **3.150 de Crítico**, contando todas las fuentes (Precisión JcE y Penetración de Bloqueo incluidas). En Normal no hay cifras.",
+        "Contra un enrage superado por 45 s, cada fallo o no crítico es tiempo perdido."
+      ]
+    },
+    {
+      "titulo": "Qué viene después",
+      "tipo": "lista",
+      "items": [
+        "Global: tu primera raid será Abyssal Forge: Rahu, Ketu y Ludra.",
+        "Corea: por debajo está Corroded Decontamination Facility y por encima Snowfield of Sorrow."
+      ]
+    }
+  ]
+}

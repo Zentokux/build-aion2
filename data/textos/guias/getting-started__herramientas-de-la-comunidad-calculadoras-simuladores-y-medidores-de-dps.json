@@ -1,0 +1,97 @@
+{
+  "slug": "getting-started__herramientas-de-la-comunidad-calculadoras-simuladores-y-medidores-de-dps",
+  "categoria": "getting-started",
+  "titulo": "Herramientas de la comunidad",
+  "fuente": "https://metaroad.gg/es/aion2/getting-started/herramientas-de-la-comunidad-calculadoras-simuladores-y-medidores-de-dps",
+  "resumen": "Las mejores herramientas son coreanas y usan números coreanos: fíate de su mecánica, no de sus precios. Usa una calculadora de mejora y un registro semanal; los medidores de DPS no están autorizados y NC no tiene política publicada.",
+  "bloques": [
+    {
+      "titulo": "Qué usar",
+      "tipo": "tabla",
+      "columnas": ["Qué", "1.ª opción", "Opcional"],
+      "filas": [
+        ["Probabilidades de mejora", "Calculadora de aion2tool.com (Atool)", "—"],
+        ["Registro de tareas semanales", "Odyle Helper (aion2od.com)", "AIONS (aions.kr), página de tareas de Atool, aion2.space"],
+        ["Cubos y pity", "Simulador de aion2cube.com", "—"],
+        ["Habilidades y builds", "Simulador de habilidades de Inven", "Arcana Skill Simulator"],
+        ["Medidor de DPS", "Ninguno (no autorizados)", "—"]
+      ]
+    },
+    {
+      "titulo": "Herramientas coreanas: ¿te sirven?",
+      "tipo": "tabla",
+      "columnas": ["Herramienta", "Qué hace", "Idioma", "¿Sirve fuera de Corea?"],
+      "filas": [
+        ["aion2tool.com (Atool) – mejora", "Pones grado, categoría, nivel y mejora objetivo: te da probabilidad por paso, acumulada, intentos esperados y coste en Kina y piedras. Usa las probabilidades que publica NC; avisa de que puede no estar al día", "Coreano y chino tradicional", "La mecánica sí; el coste en Kina es del mercado coreano. Compara tasas con tu cliente"],
+        ["aion2cube.com", "Tabla de probabilidades y simulador de cajas de cubos de Sanctuary, calculadora de probabilidad genérica, calculadora de sellos, enciclopedia de objetos. Muestra el método de cálculo", "Solo coreano", "En parte: la estructura del cubo sí; las tasas son coreanas y cubre raids muy posteriores a la global"],
+        ["buson2.com", "9 calculadoras: eficiencia de estadísticas, beneficios de carries de pago, carry con alt frente a farmear, Kina por hora de mazmorras, denuncias de estafa, organizador automático de grupos de Sanctuary", "Solo coreano", "Casi nada salvo la de estadísticas: precios de una economía coreana. Sin fecha de actualización"],
+        ["Odyle Helper (aion2od.com)", "Versión 0.8.5 (7 de julio de 2026). Sin login, guardado local. Cuenta Odyle Energy y tickets de varias cuentas, recarga automática, Normal/Hard, deshacer con clic derecho", "Solo coreano", "Sí como registro"],
+        ["Atool – tareas", "Lista de la semana coreana: diarias, encargos, membresía, Festival de Shugo, Expedition y Transcendence, Nightmare, Ascension Trial, Abyss Corridor (reinicio martes, jueves y sábados 9 p. m.)", "Coreano y chino tradicional", "Los horarios son coreanos; NC no ha publicado el reloj de reinicio global"],
+        ["AIONS (aions.kr)", "Tareas, búsqueda de personajes, ranking de poder de combate, planificador con avisos, búsqueda de grupos fijos de raid", "Solo coreano", "—"],
+        ["aion2.space", "Gestor de personajes sin login", "—", "Solo visto descrito, no probado"],
+        ["Simulador de habilidades de Inven", "Cada build guardada tiene URL propia: es la biblioteca de builds coreana", "Solo coreano", "Sirve para ver qué juegan los coreanos"],
+        ["Arcana Skill Simulator", "Reparto de cartas de Arcana para llevar una habilidad a nivel 20. Versión 1.6.8-beta (18 de abril de 2026), ocho clases", "—", "Sí; fórmula: base 10 + 4 de Daevanion + 2 de anillo + 4 de Arcana = 20"]
+      ]
+    },
+    {
+      "titulo": "Cómo fiarte de una herramienta",
+      "tipo": "lista",
+      "items": [
+        "Antes de creerte un coste o una tasa, mira qué versión del juego describe (selector de región o apartado KR/TW).",
+        "Si un planificador muestra **nueve clases**, está desfasado: la novena es el **Luchador** (armas de puño, Corea, julio de 2026). Global sale con ocho.",
+        "Desconfía de quien dice usar «API oficial» o extracción del cliente sin enseñarlo. **No existe API pública oficial**; las herramientas leen las páginas de personajes y rankings de NC.",
+        "Las herramientas coreanas usan nombres de fans: «Guardian» = Templario, «Warrior» = Gladiador.",
+        "No hay extensiones de navegador para AION 2."
+      ]
+    },
+    {
+      "titulo": "Mapas y temporizadores",
+      "tipo": "lista",
+      "items": [
+        "El mapa interactivo de referencia en Corea (Empyrean Traces, cubos ocultos, filtros por facción) es **taiwanés**.",
+        "Inven ya incluye ubicaciones, temporizadores y ciclo oficial de reaparición de jefes de campo.",
+        "Hay un mapa interactivo en inglés, pero está en una web que vende Kina: no se recomienda."
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "No existe ningún solucionador de mecánicas de raid en ningún idioma. Abyssal Forge: Ludra lo pediría: bomba con temporizador que se pasa entre jugadores y, al 50% de vida del jefe final, una cuadrícula de bingo 6×6 donde hay que encontrar la casilla azul segura."
+    },
+    {
+      "titulo": "Medidores de daño: los hechos",
+      "tipo": "lista",
+      "items": [
+        "Hay **seis**. Todos leen el tráfico de red del cliente; ninguno tiene permiso de NC.",
+        "Según se describen, no inyectan código ni leen memoria ni automatizan: decodifican paquetes y dibujan un overlay. Aun así, NC puede tratarlos como no autorizados.",
+        "Uno es comercial: gratis con overlay de los 5 primeros, vida del jefe, récords y reinicio tras wipe; de pago con los 10 de la raid, desgloses, uptime de pasivas y línea temporal.",
+        "**Aletheia** (Taiwán): interfaz en inglés, suma invocaciones al invocador, separa curación, unas tres docenas de servidores, línea temporal de habilidades. Su propia documentación se desentiende de restricciones de cuenta.",
+        "Uno coreano de licencia abierta se discontinuó el 19 de junio de 2026.",
+        "No todos son compatibles con NA y EU."
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "NC no ha publicado ninguna política sobre herramientas de terceros en AION 2. El silencio no es permiso: puede sancionar según los términos generales. Nadie puede decirte que un medidor es seguro. Además, las copias reempaquetadas en foros son un riesgo extra."
+    },
+    {
+      "titulo": "Lo que puedes medir sin medidor",
+      "tipo": "tabla",
+      "columnas": ["Qué", "Cómo"],
+      "filas": [
+        ["Poder de combate", "Te dice si tu equipo está donde debe; los requisitos de entrada se expresan con él"],
+        ["Tiempo de clear", "Misma mazmorra, grupo y dificultad con cronómetro. Un cambio del 10% se nota; uno del 2% no te cambia la semana"],
+        ["Comportamiento de la clase", "Si el daño entra de golpe o con el tiempo, si un buff aguanta un cambio de fase, si tu apertura falla cuando el jefe es inseleccionable"],
+        ["Composición y mecánicas", "Muchos wipes no son de daño: revisa primero los puestos de la raid"]
+      ]
+    },
+    {
+      "titulo": "Qué hacer ahora",
+      "tipo": "pasos",
+      "items": [
+        "Elige dos herramientas: una calculadora de mejora y un registro semanal.",
+        "Hasta tener datos globales, trata tasas, precios y horarios de reinicio coreanos como referencia, no como tu calendario.",
+        "Si quieres un medidor, antes haz lo básico: poder de combate, composición y clears cronometrados. Si aún lo quieres, lee los términos de NC y decide sabiendo el riesgo."
+      ]
+    }
+  ]
+}

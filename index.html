@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BUILD AION2</title>
+<meta name="description" content="Builds JcE de las 8 clases de AION 2 Global con barra y macro visual, y guías de mazmorras, raids y progresión. Basado en metaroad.gg.">
+<link rel="stylesheet" href="css/estilo.css?v=1">
+</head>
+<body>
+<main id="main">
+  <h1>BUILD <span style="color:var(--oro)">AION2</span></h1>
+  <p class="sub">Builds JcE nivel 45 de las 8 clases (Global, temporada 1) con la barra y la macro en imagen, y todas las guías de metaroad.gg resumidas en tablas.</p>
+  <h2 id="clases">Clases</h2>
+  <div class="rejilla" id="clases-lista"></div>
+  <h2 id="guias">Guías</h2>
+  <div id="guias-lista"></div>
+</main>
+<script src="js/comun.js?v=1"></script>
+<script src="data/indice.js?v=1"></script>
+<script>
+cabecera("inicio");
+document.getElementById("clases-lista").innerHTML = CLASES.map(function (c) {
+  return '<a class="tarjeta" href="clase.html?c=' + c.id + '"><img src="icons/clases/' + c.id + '.webp" alt=""><span><b>' +
+    esc(c.nombre) + "</b><small>" + esc(c.rol) + "</small></span></a>";
+}).join("");
+document.getElementById("guias-lista").innerHTML = Object.keys(CATEGORIAS).map(function (k) {
+  var l = (window.INDICE || []).filter(function (x) { return x.categoria === k; });
+  if (!l.length) return "";
+  return '<h3 id="' + k + '">' + esc(CATEGORIAS[k]) + " <small class=\"tipo\">" + l.length + '</small></h3><div class="rejilla">' + l.map(function (x) {
+    return '<a class="guia-link" href="guia.html?g=' + x.slug + '">' + md(x.titulo) + "<small>" + md(x.resumen) + "</small></a>";
+  }).join("") + "</div>";
+}).join("");
+</script>
+</body>
+</html>

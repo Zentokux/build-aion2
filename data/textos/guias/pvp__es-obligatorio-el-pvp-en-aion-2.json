@@ -1,0 +1,144 @@
+{
+  "slug": "pvp__es-obligatorio-el-pvp-en-aion-2",
+  "categoria": "pvp",
+  "titulo": "¿Es obligatorio el PvP?",
+  "fuente": "https://metaroad.gg/es/aion2/pvp/es-obligatorio-el-pvp-en-aion-2",
+  "resumen": "No: puedes subir, equiparte, hacer mazmorras y raids sin pelear nunca contra otro jugador. Pero el PvE necesita AP (fragmentos de stigma) y el PvP necesita nivel de objeto y poder de combate que se ganan en PvE.",
+  "bloques": [
+    {
+      "tipo": "aviso",
+      "texto": "Números medidos en **servidores coreanos a septiembre de 2026**. Seguro para el lanzamiento: PvP opcional, AP sin PvP, fragmentos de stigma con AP y Abismo con PvP abierto. Comprueba los umbrales y si la contienda de la Grieta Espacio-Tiempo existe siquiera en global."
+    },
+    {
+      "titulo": "Si solo quieres PvE: lo que te ata al lado de facción",
+      "tipo": "tabla",
+      "columnas": [
+        "Qué",
+        "Por qué importa",
+        "Qué haces tú"
+      ],
+      "filas": [
+        [
+          "**Fragmentos de estigma**",
+          "Más allá del cupo base **solo se compran con AP**. Son habilidades reales para mazmorras",
+          "No ignores los AP"
+        ],
+        [
+          "**AP sin PvP**",
+          "Se sacan **110.000–380.000 AP por semana** sin matar a nadie (tope de PK: 200.000)",
+          "Misiones diarias/semanales, requisiciones del Abismo, pergaminos de orden, misiones del Journal, Festival de Shugo y misiones de temporada"
+        ],
+        [
+          "**Campo de batalla**",
+          "**2.000 AP por victoria**, hasta 10 a la semana, sin penalización; en global sería **10v10 con stats igualados**",
+          "La ruta más rápida: ~20.000 AP/semana"
+        ],
+        [
+          "**Ir al Abismo ≠ hacer PvP**",
+          "Mucho AP y Kina están en zona donde te pueden matar; morir le da parte de tus AP al enemigo",
+          "Trata a los jugadores como el clima: ve acompañado y guarda tus puntos"
+        ],
+        [
+          "**Equipo de facción**",
+          "Las piezas **Decanus** allanan el camino a las mazmorras superiores del Abismo (PvE en zona PvP)",
+          "Cómpralas poco a poco; destaca el **anillo Decanus**: Único, nivel 62, **30.000 AP**"
+        ]
+      ]
+    },
+    {
+      "titulo": "Si solo quieres PvP: las barreras (todas se ganan en PvE)",
+      "tipo": "tabla",
+      "columnas": [
+        "Contenido",
+        "Requisito"
+      ],
+      "filas": [
+        [
+          "Estar en el Abismo",
+          "**~1.000 de poder de combate**"
+        ],
+        [
+          "**Middle Abyss** (mejor farmeo y 3 de los 6 artefactos de asedio)",
+          "**Nivel de objeto 3.000**"
+        ],
+        [
+          "Competición de la **Grieta Espacio-Tiempo**",
+          "**Nivel 50**, **nivel de objeto 4.500**, **500.000 de poder de combate** y todos los puestos avanzados del territorio completados"
+        ]
+      ]
+    },
+    {
+      "titulo": "De dónde sale cada equipo",
+      "tipo": "tabla",
+      "columnas": [
+        "Equipo",
+        "Fuente",
+        "Moneda"
+      ],
+      "filas": [
+        [
+          "PvP",
+          "El Abismo (niveles de facción)",
+          "AP y **Medals of Merit**"
+        ],
+        [
+          "PvE",
+          "**Sanctuary** y crafteo",
+          "La suya propia"
+        ]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Las guías coreanas de itemización dicen que **ignorar por completo el otro lado es un error**, estés en el lado que estés."
+    },
+    {
+      "titulo": "Orden de prioridad del equipo PvP",
+      "tipo": "tabla",
+      "columnas": [
+        "Orden",
+        "Qué"
+      ],
+      "filas": [
+        [
+          "1",
+          "**Set de armadura completo**"
+        ],
+        [
+          "2",
+          "**Pendiente y collar**"
+        ],
+        [
+          "3",
+          "**Anillos** (la diferencia entre grado alto y bajo es la menor; el anillo Decanus barato es buena compra temprana, mal sitio para seguir gastando)"
+        ]
+      ]
+    },
+    {
+      "titulo": "Los dos cruces entre PvE y PvP",
+      "tipo": "tabla",
+      "columnas": [
+        "Dirección",
+        "Qué"
+      ],
+      "filas": [
+        [
+          "PvP → PvE",
+          "**Fragmentos de estigma** (con AP)"
+        ],
+        [
+          "PvE → PvP",
+          "**Nivel de objeto** (y poder de combate)"
+        ]
+      ]
+    },
+    {
+      "titulo": "Resumen",
+      "tipo": "lista",
+      "items": [
+        "Jugador de PvE: tu obligación es un circuito de misiones en zona con riesgo a cambio de una moneda que necesitas de vez en cuando.",
+        "Jugador de PvP: tu obligación es mayor; los requisitos de entrada al mejor PvP son números de PvE."
+      ]
+    }
+  ]
+}

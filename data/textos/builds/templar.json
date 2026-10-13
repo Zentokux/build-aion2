@@ -1,0 +1,191 @@
+{
+  "clase": "templar",
+  "nombre": "Templario",
+  "fuente": "https://metaroad.gg/es/aion2/build-guides/build-pve-de-templario-tanque",
+  "resumen": "Tanque de PvE que aguanta al jefe con Provocación y, al bloquear, da Amplificación de Daño de JcE a todo el grupo con Arrebato. Tu daño es **Juicio**: cada habilidad de escudo (Golpe de escudo, Estacazo de amparo, Asalto con escudo: 2 s; Escudo de perdición: 3 s) abre una ventana para pulsarlo, y toda la build busca pulsarlo más a menudo.",
+  "pros": [
+    "Todos los grupos necesitan tank: encuentras grupo enseguida.",
+    "Juicio no gasta maná y pierde el enfriamiento a nivel 16.",
+    "Arrebato potencia el daño PvE de todo el grupo cada vez que bloqueas.",
+    "Escudo de protección y Estacazo de amparo dejan casi cualquier golpe de jefe en nada.",
+    "El equipo crafteado conserva sus líneas de Soul Binding al subirlo de tier.",
+    "Provocación encoge al jefe: menos Precisión y menos Ataque contra tu grupo."
+  ],
+  "contras": [
+    "Tu daño depende de meter Juicio en una ventana de 2-3 segundos.",
+    "Flojo hasta que acumulas Reducción de Tiempo de Enfriamiento: los escudos limitan a Juicio.",
+    "El ping alto duele más que en la mayoría de clases por lo mismo.",
+    "Solo 4 ranuras de estigma en el lanzamiento: cambias de configuración entre mazmorras.",
+    "Maná justo mientras subes de nivel, hasta que Estacazo impetuoso está alto para recargarlo."
+  ],
+  "presets": [
+    {"nombre_en": "Stagger dungeons", "nombre": "Mazmorras de Stagger", "uso": "Mazmorras con comprobaciones de Stagger (Expedition, Transcendence...)."},
+    {"nombre_en": "Daily and no-stagger runs", "nombre": "Diarias y partidas sin Stagger", "uso": "Diarias, farmeo del Abyss y mazmorras sin Stagger."},
+    {"nombre_en": "Solo and open world", "nombre": "Solitario y mundo abierto", "uso": "Jugar solo y mundo abierto."}
+  ],
+  "tecla_macro": "",
+  "macros_por_preset": [
+    {"preset_en": "Stagger dungeons", "pasos": ["Golpe de escudo", "Juicio", "Estacazo de amparo", "Juicio", "Embestida decadente"], "retardo_ms": 10, "nota": "Es la macro que guarda el planificador."},
+    {"preset_en": "Daily and no-stagger runs", "pasos": ["Golpe de escudo", "Juicio", "Escudo de perdición", "Juicio", "Estacazo de amparo", "Juicio"], "retardo_ms": 10, "nota": ""},
+    {"preset_en": "Solo and open world", "pasos": ["Escudo de perdición", "Juicio", "Golpe de escudo", "Juicio", "Estacazo de amparo", "Juicio"], "retardo_ms": 10, "nota": ""}
+  ],
+  "secciones": {
+    "equipo": [
+      {"titulo": "Ruta de espada y guarda", "tipo": "tabla", "columnas": ["Etapa", "Pieza", "Notas"], "filas": [
+        ["1.ª mejora a 45", "Aulamus Longsword (Urugugu Canyon) + Vakron Guard (Vakron Sky Island)", "Nivel de objeto 70"],
+        ["Fire Temple", "Enraged Kromede Sword + armadura Nuakum (Nuakum Helm y resto)", "Nivel de objeto 86"],
+        ["Objetivo crafteado", "White Dragon Lord Longsword + White Dragon Lord Guard (Elyos) / Dark Dragon Lord (Asmodian)", "Primero la espada, luego la guarda, luego accesorios"]
+      ]},
+      {"tipo": "aviso", "texto": "White Dragon Lord es nivel de objeto 78 (menos que Kromede), pero lleva **5 líneas** frente a 4 del equipo de mazmorra y las conserva al subir a Splendent (86), Wise (94) y Splendent Wise (102). Al principio no hay equipo Heroic: no lo esperes."},
+      {"titulo": "Soul Binding: reglas", "tipo": "lista", "items": [
+        "Líneas de valor variable en las primeras ranuras (ahí rerolleas).",
+        "Vigila **Golpe**: en un casco White Dragon Lord sale entre ~1,6% y ~1,9%; vale la pena arreglar una tirada baja.",
+        "Crítico topa en 50% y la Resistencia Crítica del jefe baja tu tasa real. Juicio ya critea siempre: el Crítico solo ayuda al resto. Cerca del tope, Precisión en las ranuras «Crítico o Precisión».",
+        "La línea morada extra de Piedra filosofal («fusión») no se conserva al transferir o subir de tier; todo lo demás sí."
+      ]},
+      {"titulo": "Manastones", "tipo": "pasos", "items": [
+        "Front Attack Damage Boost (luchas de cara al jefe; Arrebato y Rugido agravante dependen de golpes frontales).",
+        "Weapon Damage Boost y Critical Damage Boost.",
+        "Ataque a secas."
+      ]},
+      {"tipo": "aviso", "texto": "Las manastones se pierden al transferir una pieza: no gastes las caras en equipo que vas a cambiar pronto."},
+      {"titulo": "Accesorios", "tipo": "tabla", "columnas": ["Qué", "1.ª opción", "Notas"], "filas": [
+        ["Brazaletes", "Abyssal Bracelet con Destrucción, Tiempo, Sabiduría y Fantasía", "Sabiduría (Golpe) y Fantasía (Reducción de Tiempo de Enfriamiento) son las que más importan"],
+        ["Amuleto", "Revelation Amulet (Amplificación de Daño de Arma)", "Fierce Battle Amulet para PvP"],
+        ["Cinturón y runas", "Noble Belt + 2 Clash Rune", "—"]
+      ]},
+      {"titulo": "Arcana", "tipo": "lista", "items": [
+        "Caen en Transcendence. Cada carta da su stat de dios + hasta 4 líneas de su pool: buscas una carta cuyas líneas caigan en tus habilidades.",
+        "Sin bonus de 4 piezas a propósito (al principio valen más los stats sueltos), pero sí dos de 2 piezas: +60 de Ataque JcE con vida ≥70% (3 Vitalidad primordial) y 1.500 de maná al bajar del 20%, una vez cada 30 s (2 Armadura mágica).",
+        "El planificador anota una habilidad por carta: toma sus niveles como mínimo.",
+        "Chalice of Vigor (saca cualquier activa o pasiva) se craftea la última, como comodín."
+      ]}
+    ],
+    "habilidades": [
+      {"tipo": "aviso", "texto": "Consigue fragmentos de punto de habilidad cuanto antes (plumas, tienda de Nightmare, tienda del Shugo Festival): los niveles son, con diferencia, tu mayor palanca de daño."},
+      {"titulo": "Activas clave", "tipo": "tabla", "columnas": ["Habilidad", "Para qué", "Ojo con"], "filas": [
+        ["Juicio", "Daño y aggro principal; Crítico garantizado; sin enfriamiento a 16", "Solo tras una habilidad de escudo"],
+        ["Estacazo impetuoso", "Ataque básico; espec. 4: −2 s a Estacazo de amparo por golpe; espec. 5 encadena Threatening Blow", "A 20 (Arcana): 3.ª ranura espec. 3, o 2 (absorción) si necesitas aguante"],
+        ["Castigo", "Cargado al máximo: daño fuerte, Stagger y Executor (+200 Precisión, +20% Amplificación de Daño de JcE 20 s)", "Cárgalo a mano en momentos seguros"],
+        ["Estacazo de amparo", "−5 s de enfriamiento y +10% Tolerancia a Daño JcE al grupo", "Activa Juicio; es también tu reducción de daño"],
+        ["Golpe de escudo", "50% de lanzar Embestida decadente gratis, −2 s de enfriamiento", "Activa Juicio"],
+        ["Embestida decadente", "Debilitate más largo (−25% Defensa) e ignora Bloqueo y Evasión", "Buen relleno"],
+        ["Asalto con escudo", "Doble alcance, −10 s de enfriamiento", "Para acortar distancias; activa Juicio"],
+        ["Aniquilación", "Daño doble contra jefes con Incapacitated Immunity, −10 s", "—"],
+        ["Azotamiento continuo", "Autosuficiencia y −1 s a Castigo por golpe", "Sácalo cuando vayas sobrado de curación"],
+        ["Aprisionamiento", "Buen opener; espec. 2 baja la Resistencia a Efectos de Estado", "Especializaciones 1, 2 o 1, 4"],
+        ["Eliminación de impacto", "Rompe aturdimientos y devuelve 20% de vida", "—"]
+      ]},
+      {"titulo": "Cómo llega Juicio a 20", "tipo": "pasos", "items": [
+        "Puntos de habilidad: 10.",
+        "+4 de los cuatro tableros de Daevanion.",
+        "+2 de las líneas de los dos anillos.",
+        "+4 de una línea de Pergamino de grado máximo = 20 (abre la 3.ª especialización).",
+        "Estacazo impetuoso se queda en 16 (dos especializaciones) hasta que una línea de Arcana lo lleve a 20."
+      ]},
+      {"titulo": "Pasivas", "tipo": "tabla", "columnas": ["Pasiva", "Nivel objetivo", "Por qué"], "filas": [
+        ["Arrebato", "20+", "Amplificación de Daño Frontal para ti y Amplificación de Daño de JcE al grupo 20 s al bloquear. Máxima prioridad"],
+        ["Rugido agravante", "18", "Duplica el aggro y sube el Ataque tras un golpe frontal: por eso miras de frente al jefe"],
+        ["Acierto de impacto", "16+", "Probabilidad de tipo Impact y algo de Golpe"],
+        ["Defensa de tenacidad / Mejora física", "12+", "Defensa, Tenacidad, Puntos de Vida y curación recibida"]
+      ]}
+    ],
+    "estigmas": [
+      {"tipo": "aviso", "texto": "4 ranuras en el lanzamiento. Súbelos con la tienda del Shugo Festival, la tienda del Abyss o transformando Unstable Stigma Shards (usa **Kina ligada**, no la comerciable). Objetivo: 20 en Escudo de protección, Armadura de nobleza y Provocación."},
+      {"titulo": "Qué lleva cada preset", "tipo": "tabla", "columnas": ["Preset", "Estigmas", "Por qué"], "filas": [
+        ["Mazmorras de Stagger", "Escudo de protección, Armadura de nobleza, Provocación, Castigo empíreo", "Castigo empíreo hace un daño de Stagger enorme"],
+        ["Diarias y partidas sin Stagger", "Escudo de protección, Armadura de nobleza, Provocación, Escudo de perdición", "Escudo de perdición es otro activador de Juicio"],
+        ["Solitario y mundo abierto", "Escudo de perdición, Estandarte del campo de batalla, Castigo empíreo, Escudo de protección", "Dos activadores de Juicio extra (Escudo de perdición) y Estandarte del campo de batalla para daño"]
+      ]},
+      {"titulo": "Qué hace cada estigma", "tipo": "tabla", "columnas": ["Estigma", "Efecto", "Niveles clave"], "filas": [
+        ["Escudo de protección", "Bloqueo garantizado con 100% de reducción; activa Arrebato", "5: segundo uso consecutivo. A 20 cuanto antes"],
+        ["Armadura de nobleza", "El mejor de PvE: Puntos de Vida y Defensa; dura 120 s con 120 s de enfriamiento (siempre activa)", "10 y 15: Rugido agravante y Arrebato ×1,5; 20: +10% curación recibida"],
+        ["Provocación", "Encogimiento: −200 Precisión y −10% Ataque al jefe", "5: −10% Tolerancia a Daño JcE al jefe (todo el grupo pega más); 15: −5 s. Imprescindible en Expedition, Transcendence y Sanctuary"],
+        ["Castigo empíreo", "Daño de Stagger enorme", "15: +10% Amplificación de Daño de JcE"],
+        ["Escudo de perdición", "Activa Juicio (ventana de 3 s)", "15: se resetea al morir el objetivo"],
+        ["Estandarte del campo de batalla", "Ataque escalado con tu Defensa (elección a largo plazo)", "5 y 10: Multi-Hit y Amplificación de Daño de Arma"]
+      ]},
+      {"tipo": "aviso", "texto": "PvP: mete Executing Blade (−30% Defensa) y Nezekan's Shield, y sube Aniquilación a 16 para su versión en área. El Encogimiento de Provocación también obliga a los jugadores a atacarte 3 s (50% de probabilidad)."}
+    ],
+    "daevanion": [
+      {"titulo": "Desbloqueo de tableros", "tipo": "lista", "items": [
+        "Nezekan a 12, Zikel a 20, Vaizel a 30, Triniel a 40 y Azphel a 45.",
+        "Los cuatro primeros comparten puntos; Azphel tiene los suyos y solo da PvP: déjalo para después."
+      ]},
+      {"titulo": "Orden", "tipo": "pasos", "items": [
+        "Nodos azules en los 4 tableros: Juicio, Estacazo impetuoso, Castigo, Estacazo de amparo, Golpe de escudo y Azotamiento continuo (Juicio y Estacazo impetuoso de 10 a 14).",
+        "Naranjas (1,5% por 4 puntos): Reducción de Tiempo de Enfriamiento y Velocidad de Hechizo en Nezekan, Amplificación de Daño y Tolerancia a Daño en Zikel, Amplificación de Daño Crítico en Vaizel, Acierto de Multigolpe en Triniel.",
+        "Verdes: Arrebato, Rugido agravante y Acierto de impacto.",
+        "Ataque y lo demás de camino."
+      ]},
+      {"titulo": "Qué saltarte", "tipo": "lista", "items": [
+        "Puntos de Maná máximos: al principio no los necesitas.",
+        "Desenfreno de destello: 3 puntos por nodo para una habilidad que no usas.",
+        "Verdes de Escudo de amparo y Sello de protección, salvo que te sobren puntos.",
+        "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): inútiles en PvE."
+      ]},
+      {"tipo": "aviso", "texto": "Dos presets: **Prioridad de lanzamiento** (336 puntos, pasos 1-3) y **PvE completo** (497). No se sabe cuántos puntos tendrá un nivel 45 en el lanzamiento: sigue el primero y para donde se acaben. Resetear es barato."}
+    ],
+    "rotacion": [
+      {"titulo": "Antes de empezar", "tipo": "lista", "items": [
+        "Activa **Skill Queue**: hace mucho más fluida la cadena escudo → Juicio.",
+        "Puedes apilar hasta 3 habilidades sobre una ranura rápida.",
+        "La idea: habilidad de escudo, Juicio, repetir; lo demás rellena."
+      ]},
+      {"titulo": "Opener", "tipo": "pasos", "items": [
+        "Provocación (Encogimiento sobre el jefe).",
+        "Entra con Asalto con escudo o Aprisionamiento.",
+        "Empieza a spamear la tecla de Juicio o la macro."
+      ]},
+      {"titulo": "Durante el combate", "tipo": "pasos", "items": [
+        "Cada habilidad de escudo que vuelve es otro Juicio.",
+        "Mantén Estacazo impetuoso entre medias: su espec. 4 acorta Estacazo de amparo.",
+        "Guarda Estacazo de amparo, si puedes, para justo antes de un golpe fuerte (es tu reducción de daño).",
+        "Carga Castigo en momentos tranquilos para mantener Executor.",
+        "Escudo de protección en los golpes fuertes del jefe (el bloqueo alimenta Arrebato)."
+      ]},
+      {"tipo": "aviso", "texto": "Castigo nunca va en la macro: cárgalo a mano en momentos seguros."},
+      {"tipo": "aviso", "texto": "Si vas bien de aguante, saca Azotamiento continuo de la pila de relleno: la reducción de Estacazo impetuoso sobre Estacazo de amparo vale más que su curación."}
+    ],
+    "coleccionables": [
+      {"titulo": "Alas", "tipo": "tabla", "columnas": ["Qué", "Alas", "Por qué"], "filas": [
+        ["1.ª opción", "Talisra Wings", "4% Reducción de Tiempo de Enfriamiento = más Juicio"],
+        ["Alternativa fuerte", "Nightmare Wings", "Amplificación de Daño de Jefe"],
+        ["Temprana", "Dark Veil Wings", "—"]
+      ]},
+      {"tipo": "aviso", "texto": "Colecciona todas las alas: dan stats aunque no las lleves, y el poder de vuelo ayuda a farmear el Abyss."},
+      {"titulo": "Títulos", "tipo": "tabla", "columnas": ["Tipo", "Título", "Qué da"], "filas": [
+        ["Ofensivo", "Creación del cielo y la tierra", "Golpe y Amplificación de Daño de JcE"],
+        ["Defensivo", "Dominador del espacio", "Tolerancia a Daño JcE"],
+        ["Otro", "Ay, no tengo nada que ponerme", "Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento"]
+      ]},
+      {"titulo": "Panteón", "tipo": "lista", "items": [
+        "Prioriza Sabiduría (Golpe) y Fantasía (Reducción de Tiempo de Enfriamiento).",
+        "Sin prisa con los retratos: salen jugando.",
+        "La pieza a perseguir: **Obra maestra: Draupnir** (marco Unique con Sabiduría, Fantasía y Vida), por los logros de la mazmorra de Draupnir."
+      ]}
+    ],
+    "mascotas": [
+      {"titulo": "Reglas", "tipo": "lista", "items": [
+        "El género es tu primer gran gasto de Kina.",
+        "Sube cada género a 10 antes de bloquear nada.",
+        "Bloquea solo tiradas Unique cerca del máximo de su rango.",
+        "Cuando se abra Odylium Repository, gasta ahí los tickets semanales: es lo más rápido para arreglar géneros y juntar cristales."
+      ]},
+      {"titulo": "Prioridad de ranuras", "tipo": "pasos", "items": ["Ranura 4.", "Ranura 7.", "Ranuras 2 y 8.", "El resto: ataque y Precisión o Crítico."]},
+      {"titulo": "Ranuras 4 y 7 por género", "tipo": "tabla", "columnas": ["Género", "Ranura 4", "Ranura 7"], "filas": [
+        ["Cogni", "Amplificación de Daño Crítico", "Tolerancia a Daño"],
+        ["Fera", "Amplificación de Daño de Arma", "Tolerancia a Daño"],
+        ["Natura", "Perforación", "Tenacidad"],
+        ["Varian", "Amplificación de Daño Frontal", "Tenacidad"],
+        ["Special", "Golpe", "Tolerancia a Daño"]
+      ]},
+      {"titulo": "Resto de ranuras", "tipo": "tabla", "columnas": ["Ranuras", "Qué buscar"], "filas": [
+        ["1 y 5", "Ataque Máximo, luego Ataque Adicional"],
+        ["2 y 8", "Aumento de Puntos de Vida"],
+        ["3, 6 y 9", "Crítico o Precisión (tope de Crítico 50%: tira a Precisión cerca del tope)"]
+      ]},
+      {"tipo": "aviso", "texto": "Plan B si la ranura 4 de Cogni o Fera no sale: Amplificación de Daño de JcE (sale de 1,5% a 3%) o Amplificación de Daño a secas (1% a 2%). En la ranura 7, Tolerancia a Daño JcE sale más alta que Tolerancia a Daño y rinde igual en mazmorras."}
+    ]
+  }
+}

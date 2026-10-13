@@ -1,0 +1,165 @@
+{
+  "slug": "progression__alas-atributos-skins-y-costes-de-enhancement",
+  "categoria": "progression",
+  "titulo": "Alas: atributos, skins y Enhancement",
+  "fuente": "https://metaroad.gg/es/aion2/progression/alas-atributos-skins-y-costes-de-enhancement",
+  "resumen": "El **objeto de alas** da atributos de combate; la **skin de alas** de la tienda solo cambia el aspecto. Haz la cadena Daeva's Wings, sube todas tus alas a +5 y deja el +10 para después del Amplify del equipo.",
+  "bloques": [
+    {
+      "titulo": "Objeto de alas vs. skin de alas",
+      "tipo": "tabla",
+      "columnas": ["Qué", "Qué es", "Qué te da", "De dónde sale"],
+      "filas": [
+        ["**Objeto de alas**", "Equipo: ocupa ranura y tiene grado", "Atributos de combate", "Contenido: misiones, mazmorras, Abismo, tiendas de temporada"],
+        ["**Skin de alas**", "Capa de apariencia", "Nada, solo aspecto (p. ej. Alas de éxtasis, grado Especial: bloque de atributos vacío)", "Tienda de NC"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Que la skin de tienda no da atributos lo dice la prensa que leyó la build global, no NC. Tómalo como sólido pero no definitivo. Si tener una apariencia da algo vía Wardrobe es otra pregunta abierta."
+    },
+    {
+      "titulo": "Por qué las fuentes antiguas parecen contradecirse",
+      "tipo": "tabla",
+      "columnas": ["Fecha (Corea)", "Qué pasó"],
+      "filas": [
+        ["Noviembre 2025 (lanzamiento)", "Alas solo cosméticas, sin atributos, intercambiables libremente"],
+        ["27 de mayo de 2026", "Llega el **Wing Enhancement** junto con un nuevo Sanctuary: mejorar alas da atributos"],
+        ["Julio de 2026", "La comunidad coreana cataloga 31 alas con atributos ligados al nivel de Enhancement"],
+        ["Build global", "Ya trae el Wing Enhancement de +0 a +10; la nota del parche del 30 de septiembre confirma que está activado"]
+      ]
+    },
+    {
+      "titulo": "Qué atributos puede tener un objeto de alas",
+      "tipo": "lista",
+      "items": [
+        "Ataque Adicional",
+        "Amplificación de Daño Crítico y Crítico",
+        "Amplificación de Daño de Jefe",
+        "Opciones defensivas",
+        "**Energía de Vuelo**: la única línea que tiene que ver con volar; trata las alas como una ranura de combate más"
+      ]
+    },
+    {
+      "titulo": "Alas Únicas más nombradas (build global)",
+      "tipo": "tabla",
+      "columnas": ["Alas", "Atributos", "Para quién"],
+      "filas": [
+        ["**Talisra Wings**", "Reducción de Tiempo de Enfriamiento, Defensa Adicional, Precisión Adicional, Ataque Adicional", "Casters. Ojo: la Reducción de Tiempo de Enfriamiento tiene tope del **60%** en total; no la acumules si ya te acercas"],
+        ["**Nightmare Wings**", "Amplificación de Daño de Jefe, Crítico, Precisión Adicional, Ataque Adicional", "Raid. Según jugadores, en la tienda de Pesadilla"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "La **Energía de Vuelo** crece con cada ala distinta que coleccionas, aunque no la lleves equipada. Ningún par de alas sobra."
+    },
+    {
+      "titulo": "De dónde salen las alas",
+      "tipo": "tabla",
+      "columnas": ["Fuente", "Detalle"],
+      "filas": [
+        ["Cadena de misiones de episodio **Daeva's Wings** (1.ª opción)", "Gratis hasta nivel máximo. En global da 4: Alas inferiores de Daeva (Común), intermedias (Raro), superiores (Legendario) y Alas supremas de Daeva (Único)"],
+        ["Tiendas de temporada", "Unas alas: 210.000 Monedas de voto (precio coreano, 2026)"],
+        ["Abismo", "Unas alas: 800.000 Puntos de Abismo (precio coreano, 2026)"],
+        ["Mazmorras selladas", "—"],
+        ["Expediciones", "—"],
+        ["Hidden Cubes al recolectar", "—"]
+      ]
+    },
+    {
+      "titulo": "Energía de Vuelo del set Daeva (subida del 9 de octubre)",
+      "tipo": "tabla",
+      "columnas": ["Alas", "Antes", "Ahora"],
+      "filas": [
+        ["Daeva's Lesser Wings (inferiores)", "2.000", "2.500"],
+        ["Daeva's Intermediate Wings", "500", "1.000"],
+        ["Daeva's Superior Wings", "500", "1.000"],
+        ["Daeva's Ultimate Wings (supremas)", "500", "1.000"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Los precios en moneda son coreanos y lo primero que se reajusta en otra región. Úsalos como orden de magnitud: las alas de gama alta son objetivo de toda la temporada."
+    },
+    {
+      "titulo": "Tasas de éxito del Wing Enhancement (tope +10)",
+      "tipo": "tabla",
+      "columnas": ["Nivel", "Éxito"],
+      "filas": [
+        ["+1, +2, +3", "100% (garantizado)"],
+        ["+4", "90%"],
+        ["+5", "80%"],
+        ["+6, +7, +8", "50% cada uno"],
+        ["+9", "40%"],
+        ["+10", "30%"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Tasas y costes: análisis de un solo jugador coreano sobre la build coreana (junio de 2026). El tope y lo que da cada nivel se comprobaron con la build global; si no coinciden, manda la global. Los tres pasos al 50% cuestan de media unos 6 intentos, casi lo mismo que +9 y +10 juntos."
+    },
+    {
+      "titulo": "Coste por intento (build coreana)",
+      "tipo": "tabla",
+      "columnas": ["Material", "En +1", "En +9 / +10"],
+      "filas": [
+        ["Enhance Stones", "800", "6.000"],
+        ["Sync Stones (grado Único)", "2", "12"],
+        ["Kina", "240.000", "1.500.000"]
+      ]
+    },
+    {
+      "titulo": "Lo que da cada éxito (build global)",
+      "tipo": "tabla",
+      "columnas": ["Grado de alas", "Qué sube"],
+      "filas": [
+        ["Todas", "Energía de Vuelo; el análisis coreano añade +1 de nivel de objeto por nivel"],
+        ["**Únicas** (Talisra, Nightmare, Forest Spirit Wings…)", "Solo Energía de Vuelo. Sus líneas de combate están desde +0 y no cambian hasta +10"],
+        ["**Legendarias y Raras**", "Una línea extra se activa en +1 y llega a 10 veces su primer valor en +10"]
+      ]
+    },
+    {
+      "titulo": "Línea extra de alas Legendarias/Raras",
+      "tipo": "tabla",
+      "columnas": ["Alas", "Línea que crece"],
+      "filas": [
+        ["Superior Daeva Wings", "Resistencia Crítica"],
+        ["Sealing Wings", "Bloqueo"],
+        ["Glorious Wings", "Curación Recibida"],
+        ["Spirit Wings", "Defensa JcE"],
+        ["Conqueror Wings", "Evasión Adicional"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "La lectura coreana dice que las alas Únicas suman combate en cada éxito; la global, que no. No subas unas Únicas más allá de +5 buscando combate: mira el tooltip en el primer nivel para saber qué versión tiene tu servidor."
+    },
+    {
+      "titulo": "Estrategia",
+      "tipo": "tabla",
+      "columnas": ["Qué", "1.ª opción", "Opcional"],
+      "filas": [
+        ["Alas que vas a conservar", "Súbelas a **+3** (sin riesgo)", "—"],
+        ["Reparto", "Todas tus alas a **+5** antes de llevar unas a +10", "+6 a +10 cuando sobre material"],
+        ["Orden", "Termina primero el **Amplify del equipo**", "Después, alas por encima de +5"],
+        ["Logro de Wing Enhancement", "No vayas a por él", "Da un título de ataque (4% en un atributo de golpe, según jugadores coreanos)"]
+      ]
+    },
+    {
+      "titulo": "Comprobaciones antes de gastar (día 1, ~2 minutos)",
+      "tipo": "pasos",
+      "items": [
+        "Abre la ranura de alas: si ves Ataque Adicional o Crítico, la capa de objeto está activa.",
+        "Abre las alas de la tienda: si no muestran líneas, es una skin y pagas solo el aspecto.",
+        "Haz la cadena de misiones de episodio: 4 alas con atributos gratis.",
+        "Busca el botón de Enhancement en las alas; si no está activado, las tasas y costes no te afectan aún.",
+        "Mira qué añade el primer nivel: en unas Únicas global solo sube Energía de Vuelo; si crece una línea de combate, tu servidor va con la versión coreana.",
+        "Mira la tasa en +1: si los tres primeros niveles no son garantizados, olvida el «gratis hasta +3»."
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Si el Wing Enhancement no estuviera activado, las alas siguen importando (atributos del objeto y alas gratis de la cadena), pero la Kina va a otras mejoras."
+    }
+  ]
+}

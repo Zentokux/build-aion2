@@ -1,0 +1,217 @@
+{
+  "slug": "raids__raids-de-sanctuary-tamano-de-grupo-composicion-y-equipo-minimo",
+  "categoria": "raids",
+  "titulo": "Raids de Sanctuary: grupo, composición y equipo mínimo",
+  "fuente": "https://metaroad.gg/es/aion2/raids/raids-de-sanctuary-tamano-de-grupo-composicion-y-equipo-minimo",
+  "resumen": "Un Sanctuary es de **10 jugadores** (2 grupos de 5) y cada grupo necesita su propio aggro y su propia curación. Intentos ilimitados; solo cuenta la recompensa, que cuesta **80 de Odyle Energy**.",
+  "bloques": [
+    {
+      "titulo": "Tamaños de grupo",
+      "tipo": "tabla",
+      "columnas": ["Contenido", "Jugadores"],
+      "filas": [
+        ["Expedition", "5"],
+        ["Transcendence", "5"],
+        ["Sanctuary (raid)", "**10** (2 grupos de 5)"],
+        ["Tropa", "20"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Muchas guías en inglés dicen 8 jugadores (2 grupos de 4): están desfasadas. La actualización coreana del Capítulo 1 subió el grupo a 5 y el Sanctuary a 10, y la versión global sale así desde el primer día. El reparto «grupo 1 hace X, grupo 2 hace Y» de esas guías sigue valiendo; sus cifras no."
+    },
+    {
+      "titulo": "Composición: plantilla para reclutar",
+      "tipo": "tabla",
+      "columnas": ["Hueco", "Grupo 1", "Grupo 2", "Por qué"],
+      "filas": [
+        ["Aggro", "**Templario** (tanque dedicado)", "**Gladiador** (nunca un 2.º Templario)", "La Provocación del Templario además baja ataque y resistencia al daño del jefe para toda la raid: el hueco no se negocia"],
+        ["Curación", "**Clérigo** o **Conjurador**", "El otro de la pareja", "Clérigo: curas, escudos y limpieza. Conjurador: buffs, curas de apoyo y daño"],
+        ["Daño", "3 huecos", "3 huecos", "Flexibles; llena primero los de Sicario"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Regla de oro: cada **grupo** (no la raid) se sostiene solo. Los dos grupos suelen estar en extremos opuestos de la arena, así que un healer del otro grupo no te sirve."
+    },
+    {
+      "titulo": "Única composición publicada con clases (1.er clear de Snowfield of Sorrow en Difícil, solo Corea)",
+      "tipo": "tabla",
+      "columnas": ["Grupo", "Clases"],
+      "filas": [
+        ["Grupo 1", "Conjurador, Templario, Sicario, Ranger, Clérigo"],
+        ["Grupo 2", "Conjurador, Gladiador, Sicario, Ranger, Clérigo"]
+      ]
+    },
+    {
+      "titulo": "Qué enseña esa composición",
+      "tipo": "lista",
+      "items": [
+        "Llevó Clérigo **y** Conjurador en cada grupo: los grupos punteros doblan el apoyo. La plantilla repartida es para llenar rápido.",
+        "1 Templario + 1 Gladiador, 2 Clérigos, 2 Conjuradores y 4 huecos de daño (Sicario o a distancia).",
+        "Ni Hechicero ni Espiritualista; el daño tira a distancia."
+      ]
+    },
+    {
+      "titulo": "Clases difíciles de sustituir",
+      "tipo": "tabla",
+      "columnas": ["Clase", "Valoración", "Qué haces tú"],
+      "filas": [
+        ["Sicario", "Referencia de daño, arriba en todas las valoraciones coreanas", "Llena sus huecos primero; un Ranger o Hechicero en su lugar pierde mucho daño"],
+        ["Clérigo y Conjurador", "Imprescindibles en grupo, por utilidad", "Uno de cada como mínimo"],
+        ["Hechicero", "El más flojo o casi en tres lecturas coreanas", "No lo rechaces, pero no montes el daño a su alrededor; ajusta su loadout para que sobreviva"]
+      ]
+    },
+    {
+      "titulo": "Notas de rol por combate",
+      "tipo": "lista",
+      "items": [
+        "**Ludra** fase 2: el cuerpo a cuerpo lo pasa mal; se prefiere daño a distancia. Una raid muy melé puede pasar, pero pierde más gente.",
+        "**Rahu** (1.er jefe de Abyssal Forge): se puede hacer con un Conjurador sin Clérigo dedicado.",
+        "Del 2.º jefe en adelante el **Clérigo es obligatorio**: las piedras de resurrección no funcionan en un Sanctuary y su Resurrección de invocación es la única forma de levantar a alguien."
+      ]
+    },
+    {
+      "titulo": "Los cuatro Sanctuaries (orden de progresión, por nivel de objeto)",
+      "tipo": "tabla",
+      "columnas": ["Sanctuary", "Requisito de entrada", "Lo que piden los grupos", "Jefes", "Botín destacado"],
+      "filas": [
+        ["Abyssal Forge: Ludra", "2.700 a nivel 45 (dato de la comunidad; no hay cifra oficial en inglés y la etiqueta varía: nivel de objeto, gear score o poder de combate)", "**3.200+**", "3 con nombre", "Armas de Ludra (Ludra's Blade of Extinction y 8 más) y set Abyssal con brazalete"],
+        ["Corroded Decontamination Facility", "Nivel de objeto 3.700 (anuncio 11-mar-2026), bajado según informes a 3.500", "—", "3 con nombre; termina en Bargott", "Armas y brazaletes Épicos y Únicos"],
+        ["Chalice of Muspel", "Nivel de objeto 4.500 (anuncio 27-may-2026)", "—", "—", "Armas Lava Heart y Broche de Kaldrix"],
+        ["Snowfield of Sorrow", "5.800 / 6.000 / 6.200 según dificultad + nivel de personaje 50", "—", "—", "Deltras's Seal y armas White Night"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Solo Abyssal Forge está confirmado para el lanzamiento global. NC lo retiró con la versión del 5 de octubre para rehacer el combate y su vuelta está prevista como muy tarde el **16 de octubre**. Los otros tres son, por ahora, solo de Corea."
+    },
+    {
+      "titulo": "Dificultades",
+      "tipo": "lista",
+      "items": [
+        "Los Sanctuaries tienen Fácil, Normal y Difícil.",
+        "En el más nuevo (Snowfield of Sorrow) cada dificultad tiene su propio requisito de nivel de objeto."
+      ]
+    },
+    {
+      "titulo": "Precisión y Crítico objetivo (aprox., servidores asiáticos; no confirmado en global)",
+      "tipo": "tabla",
+      "columnas": ["Raid", "Precisión", "Crítico"],
+      "filas": [
+        ["Abyssal Forge: Ludra", "1.500", "1.600"],
+        ["Corroded Decontamination Facility", "2.350", "2.500"],
+        ["Chalice of Muspel Normal", "sin datos", "sin datos"],
+        ["Chalice of Muspel Difícil", "2.800", "3.150"]
+      ]
+    },
+    {
+      "titulo": "Precisión en Ludra: lo que de verdad manda",
+      "tipo": "lista",
+      "items": [
+        "Franja coreana: **1.000-1.100 de precisión base**, unos **1.450** con buffs y título (1.500 es ese total con margen).",
+        "Los totales cuentan todas las fuentes, incluidas Precisión JcE y Penetración de Bloqueo; tu hoja principal puede marcar menos.",
+        "Por debajo, el jefe hace **Bloqueo con Arma** a parte de tus golpes y parece que «falta tiempo» cuando falta precisión.",
+        "De dónde sacarla: mascota de fabricación, reparto de estadísticas, título y buffs de raid coordinados.",
+        "Gear score orientativo (tracker de terceros): grupo cómodo ~30.000; clear estable con aleatorios ~35.000."
+      ]
+    },
+    {
+      "titulo": "Economía semanal",
+      "tipo": "tabla",
+      "columnas": ["Qué", "Dato"],
+      "filas": [
+        ["Intentos", "**Ilimitados** (desde el 27-may-2026, empezó en Chalice of Muspel y se extiende al resto)"],
+        ["Kills pagadas del jefe final", "**1 por semana** con recompensa doblada (antes 2)"],
+        ["Límite de tiempo de la sesión", "2 horas"],
+        ["Coste de la recompensa", "**80 de Odyle Energy** (antes 40)"],
+        ["Cofres de los primeros jefes", "No cuentan para el límite semanal: farméalos"],
+        ["Reinicio semanal", "Miércoles 05:00 hora del servidor (las entradas diarias, a la misma hora)"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Las guías coreanas que dicen «4 intentos y 2 recogidas a la semana» en Abyssal Forge describen el juego de antes de mayo de 2026. La versión global usa las reglas nuevas."
+    },
+    {
+      "titulo": "Usa los intentos gratis",
+      "tipo": "lista",
+      "items": [
+        "Haz wipe en el primer jefe toda la noche si hace falta: no gastas nada.",
+        "Ensaya la fase donde muere tu grupo.",
+        "Enseña el combate a gente nueva o lleva a un amigo.",
+        "Farmea los cofres de los primeros jefes."
+      ]
+    },
+    {
+      "titulo": "Odyle Energy",
+      "tipo": "tabla",
+      "columnas": ["Qué", "Sin Membership", "Con Membership"],
+      "filas": [
+        ["Regeneración", "10 cada 3 h", "15 cada 3 h"],
+        ["Por día", "80", "120"],
+        ["Por semana", "560", "840"],
+        ["Tope", "560", "840"]
+      ]
+    },
+    {
+      "titulo": "Cómo gastarla",
+      "tipo": "lista",
+      "items": [
+        "No hace falta para entrar; hace falta para **abrir la recompensa**. Si no puedes pagarla, la run no te da nada.",
+        "Una recompensa de Sanctuary (80) es ~1/7 de tu semana base: planifica primero el Sanctuary y rellena con Expedition y Transcendence.",
+        "No te quedes con la barra llena: pierdes recuperación.",
+        "Extras pequeños: compra semanal en el vendedor de membresía (700.000 Kina la unidad), conversión semanal de materiales por personaje y drops en misiones con nombre y órdenes del Abismo."
+      ]
+    },
+    {
+      "titulo": "Botín",
+      "tipo": "tabla",
+      "columnas": ["Regla", "Qué significa para ti"],
+      "filas": [
+        ["Cofre individual por jefe", "Sin dados ni need/greed; nadie compite contigo (dato de grupos coreanos, NC no lo ha confirmado)"],
+        ["Abyssal Forge", "Jefes 1 y 2 dan cada uno su Abyssal Chest; el contador semanal solo baja al cobrar a Ludra"],
+        ["Morir anula el botín", "Levántate antes de abrir nada; en el Sanctuary solo te levanta un Clérigo"],
+        ["Contribución mínima", "Tienes que aportar al menos un **1%** a la kill (antes 3%) para cobrar"]
+      ]
+    },
+    {
+      "titulo": "Cómo funcionan los combates",
+      "tipo": "lista",
+      "items": [
+        "Un **jugador ancla** sobre el que el grupo se junta o del que se separa.",
+        "Mecánicas **por persona**: un marcador, una bomba o una posición para cada uno.",
+        "Juntarse y dispersarse se alternan en casi todos los jefes."
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Las cifras por persona de las guías antiguas («hay ocho bombas») se midieron con raids de 8. Nadie ha documentado si cambiaron con 10. Cuenta lo que ves en pantalla y quédate con el requisito, no con el número."
+    },
+    {
+      "titulo": "Preparativos para que te vuelvan a invitar",
+      "tipo": "tabla",
+      "columnas": ["Qué", "Por qué"],
+      "filas": [
+        ["Planta el **quiosco de grupo** antes de la sala del jefe final", "Sin piedras de resurrección, es tu único punto de reaparición"],
+        ["Calidad de **batallas a gran escala** en alta", "Si no ves a los aliados lejanos, no ves al ancla"],
+        ["**Resistencia al daño** en las piezas de armadura de abajo", "Recomendación concreta para la fase 2 de Ludra"],
+        ["**Pociones de curación superiores**", "Quitan las acumulaciones de quemadura"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "No hay publicada una lista completa de consumibles para ningún Sanctuary."
+    },
+    {
+      "titulo": "Qué arreglar primero",
+      "tipo": "pasos",
+      "items": [
+        "Precisión y Crítico según los objetivos de la tabla (antes que el gear score).",
+        "Los dos huecos de aggro y los dos de curación.",
+        "Los huecos de daño, que son los flexibles.",
+        "Ve a por los combates en orden empezando por Abyssal Forge: Rahu, Ketu y Ludra."
+      ]
+    }
+  ]
+}

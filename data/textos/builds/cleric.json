@@ -1,0 +1,228 @@
+{
+  "clase": "cleric",
+  "nombre": "Clérigo",
+  "fuente": "https://metaroad.gg/es/aion2/build-guides/build-pve-de-clerigo-sanador",
+  "resumen": "Clérigo sanador JcE a nivel 45: cura por adelantado, deja lo pequeño a **Favor radiante** y dedica cada segundo libre a **Condena**, que se reinicia con cada crítico sobre un objetivo con **Enlace de dolor**. Tu otro trabajo es **Luz de protección**, el buff de grupo por el que te juzgan. Te equipas como un DPS: el Ataque también sube tu curación.",
+  "pros": [
+    "Todos los grupos necesitan sanador: nunca esperas mucho",
+    "Luz de protección hace que todo el grupo pegue más y reciba menos",
+    "Condena se reinicia con un crítico: haces más daño del que la gente espera",
+    "El Ataque también sube tu curación: un solo set sirve para todo",
+    "Favor radiante cura al grupo gratis mientras pegas",
+    "Resurrección de invocación salva intentos que acabarían en wipe"
+  ],
+  "contras": [
+    "Condena necesita Enlace de dolor en el objetivo y críticos para reiniciarse",
+    "El Maná va justo en combates largos hasta que aprendes a recuperarlo",
+    "Solo 4 ranuras de stigma: curación y daño compiten",
+    "Luz de protección no se acumula con el mantra de un Conjurador",
+    "Cuando el grupo sufre, tu daño es lo primero que se sacrifica"
+  ],
+  "presets": [
+    {"nombre_en": "Party dungeons (no Chanter)", "nombre": "Grupo normal, sin Conjurador", "uso": "Tu configuración por defecto en mazmorras de grupo."},
+    {"nombre_en": "New dungeon or struggling party", "nombre": "Mazmorra nueva o grupo que muere", "uso": "Cuando la gente muere: más curación, limpieza y resurrección."},
+    {"nombre_en": "Chanter in the party", "nombre": "Conjurador en el grupo", "uso": "Si el mantra del Conjurador ya cubre Luz de protección: entra Absolución."}
+  ],
+  "tecla_macro": "",
+  "macros_por_preset": [
+    {"preset_en": "Party dungeons (no Chanter)", "pasos": ["Retribución terrestre", "Rayo del juicio", "Relámpagos sin puntería", "Condena", "Relámpagos sin puntería", "Condena", "Condena"], "retardo_ms": 10, "nota": "Con mucho ping, prueba 40-50 ms. Relámpagos sin puntería solo sale con el jefe en stagger; si no, la macro se la salta."},
+    {"preset_en": "New dungeon or struggling party", "pasos": ["Retribución terrestre", "Condena", "Rayo del juicio", "Condena"], "retardo_ms": 10, "nota": "Con mucho ping, prueba 40-50 ms."},
+    {"preset_en": "Chanter in the party", "pasos": ["Retribución terrestre", "Rayo del juicio", "Relámpagos sin puntería", "Condena", "Relámpagos sin puntería", "Condena", "Condena"], "retardo_ms": 10, "nota": "Igual que en grupo normal. Condena va tres veces a propósito para aprovechar cada reinicio."}
+  ],
+  "secciones": {
+    "equipo": [
+      {"titulo": "Ruta del arma", "tipo": "tabla", "columnas": ["Etapa", "Maza", "Escudo", "Nota"], "filas": [
+        ["Historia", "", "Spiritforged Guard", "Sin líneas de Soul Binding: cámbiala cuanto antes"],
+        ["Inicio (nivel de objeto 70)", "Aulamus Mace (Urugugu Canyon)", "Vakron Guard (Vakron Sky Island)", "La armadura de Vakron es la que lleva la mayoría en global"],
+        ["Fire Temple (86)", "Enraged Kromede Warhammer", "Nuakum Guard", "El Warhammer solo tiene 3 líneas: paso intermedio. Abyssal Mace es la alternativa de 4"],
+        ["Objetivo crafteado (78)", "White Dragon Lord Mace (Elyos) / Dark Dragon Lord (Asmodian)", "White Dragon Lord Guard / Dark Dragon Lord", "5 líneas que se conservan al subir de tier"]
+      ]},
+      {"titulo": "Claves del equipo", "tipo": "lista", "items": [
+        "Termina historia y secundarias; luego pasa de mazmorra a crafteado. Casi todos mezclan.",
+        "Orden de crafteo: maza, escudo y después anillos.",
+        "El crafteado (78) sube de tier a Splendent (86), Wise (94) y Splendent Wise (102). Vincular pronto ahorra materiales.",
+        "Tus stats de daño son tus stats de curación: Mejora curativa convierte Ataque en Amplificación de Curación, y nada en el juego da Amplificación de Curación directa. Equípate como un DPS."
+      ]},
+      {"tipo": "aviso", "texto": "El ratio exacto de Ataque a curación no aparece en el juego: nadie sabe todavía cuánta curación da un punto de Ataque."},
+      {"titulo": "La regla del Crítico", "tipo": "lista", "items": [
+        "Condena solo se reinicia con crítico, pero el crítico tiene tope del 50% y la Resistencia Crítica del jefe lo baja.",
+        "**Castigo terrestre** hace que Condena sea crítico siempre sobre ese objetivo.",
+        "Usa Crítico como última línea de armadura solo hasta que Castigo terrestre cubra todo el combate (nivel 20 y ~un tercio menos de enfriamiento).",
+        "Después cambia esas líneas, pieza a pieza, por Gracia terrestre o Gracia empírea (salen en toda la armadura, pendientes y collar).",
+        "Anillos: Condena, Resplandor de recobro y Centella; +1 por anillo, 16 antes de Arcana.",
+        "Las líneas de valor variable en las primeras ranuras, para rerollear."
+      ]},
+      {"tipo": "aviso", "texto": "La línea extra de la Piedra filosofal (la morada de «fusión») se pierde al transferir o subir de tier. Todo lo demás se conserva."},
+      {"titulo": "Manastones", "tipo": "tabla", "columnas": ["Pieza", "1.ª opción", "Nota"], "filas": [
+        ["Arma", "Weapon Damage Boost, Critical Damage Boost y Damage Boost, luego Ataque", ""],
+        ["Armadura", "1 de Amplificación de Daño Crítico y el resto Ataque", "El Ataque también es tu curación"],
+        ["Ataque Frontal", "No", "Lanzas a distancia y rara vez estás delante del jefe"]
+      ]},
+      {"tipo": "aviso", "texto": "Las manastones se pierden al transferir: no gastes las caras en equipo que vas a cambiar."},
+      {"titulo": "Accesorios", "tipo": "tabla", "columnas": ["Qué", "1.ª opción", "Nota"], "filas": [
+        ["Brazaletes", "Abyssal Bracelet: Destrucción, Sabiduría y Fantasía en los dos; 4.ª línea Tiempo en uno y Death [Triniel] en otro", "Crítico mientras Castigo terrestre tenga huecos; cerca del 50% vale menos (reparto de metaroad)"],
+        ["Amuleto", "Revelation Amulet a +10 pronto", "Fierce Battle Amulet es el de PvP"],
+        ["Cinturón y runas", "Noble Belt + 2 Clash Rune", ""]
+      ]},
+      {"titulo": "Arcana", "tipo": "tabla", "columnas": ["Carta", "Stat de dios", "Líneas a pescar"], "filas": [
+        ["Chalice of Vigor", "Tiempo: Velocidad de Hechizo", "Rayo del juicio, Luz de regeneración o lo que no llegue a su objetivo"],
+        ["Parchment of Magic", "Destino: Puntos de Maná", "Condena, Resplandor de recobro, Centella, Enlace de dolor"],
+        ["Compass of Magic", "Muerte: Crítico", "Aura divina, Rayo del juicio, Luz de regeneración, Luz de curación"],
+        ["Bell of Magic", "Destrucción: Ataque", "Gracia empírea, Favor cálido, Velo inmortal"],
+        ["Mirror of Magic", "Sabiduría: Golpe", "Gracia terrestre, Mejora curativa, Favor radiante"]
+      ]},
+      {"titulo": "Consejos de Arcana", "tipo": "lista", "items": [
+        "Es el set de la mayoría de Clérigos de alto nivel; sin bonus de 4 piezas a propósito.",
+        "Alternativas válidas: Pergamino de vitalidad (Vida) o Espejo de vitalidad (Fantasía).",
+        "Si vas corto de Precisión: Brújula de vitalidad (Libertad).",
+        "El Cáliz es la única carta que saca cualquier habilidad: tu comodín."
+      ]}
+    ],
+    "habilidades": [
+      {"titulo": "Cómo suben los niveles", "tipo": "pasos", "items": [
+        "Puntos de habilidad: hasta 10.",
+        "4 tableros de Daevanion: +4.",
+        "2 anillos: +2 (16 para Condena, Resplandor de recobro y Centella).",
+        "Arcana: Condena a 20; Aura divina y Rayo del juicio a 18.",
+        "Specs: 1.ª ranura a 8, 2.ª a 12, 3.ª a 20."
+      ]},
+      {"tipo": "aviso", "texto": "En cifras: Condena pasa de 2.010 de daño fijo (nv 14) a 2.517 (nv 20). Resplandor de recobro cura 1.497-1.647 a 14 y 1.669-1.836 a 16."},
+      {"titulo": "Daño: por qué y cuándo cambiar", "tipo": "tabla", "columnas": ["Habilidad", "Por qué importa", "Cambio posible"], "filas": [
+        ["Condena", "Tu daño principal: más daño a pocos objetivos, reinicio con crítico y Multigolpe. Necesita Enlace de dolor", ""],
+        ["Centella", "Más daño a pocos objetivos y crítico garantizado. Cárgala del todo en el stagger", "A 20, spec 3 (carga más rápida)"],
+        ["Aura divina", "Daño gratis que corre solo; ticks más rápidos y +3 s", "A 20, spec 5 (−10 s)"],
+        ["Rayo del juicio", "Más daño a pocos objetivos y un Divine Punishment extra", "A 20, spec 1 (−20% de Maná)"],
+        ["Enlace de dolor", "La llave de Condena; spec 4 baja otro 10% la Tolerancia a Daño JcE del jefe para el grupo", ""],
+        ["Estigma debilitante", "−15% de Defensa al objetivo y −10% a su Amplificación de Daño de JcE", ""],
+        ["Retribución terrestre", "Ataque básico; más Discharge y cada uno quita 7 s a Centella", "Spec 1 (+20% de Maná recuperado) si te quedas seco"],
+        ["Relámpagos sin puntería", "Solo contra objetivo en stagger; spec 4 da Multigolpe", "A 16, spec 5: −1 s a todo por golpe"]
+      ]},
+      {"titulo": "Curación: por qué y cuándo cambiar", "tipo": "tabla", "columnas": ["Habilidad", "Por qué importa", "Cambio posible"], "filas": [
+        ["Resplandor de recobro", "Curación de grupo y limpieza; segundo uso y −3 s", "A 20, spec 5 (+5%). Con muchos debuffs, spec 1 en vez de la 2 (quita dos)"],
+        ["Luz de curación", "Te cura a ti y al aliado con menos vida a 40 m, 6 s de enfriamiento; dos usos. Súbela a 14 antes de ir en grupo", "Spec 5 (−2 s) con la 3.ª ranura a 20"],
+        ["Luz de regeneración", "Curación en el tiempo de 30 s al grupo, Defensa y velocidad", "A 16, spec 5 (Tolerancia a Daño JcE) en lugar de la 1; a 20 añade spec 1 o 3"],
+        ["Eliminación de impacto", "Rompe aturdimientos; spec 1 añade Blessing of Regeneration (cura y devuelve 40% de Maná)", ""]
+      ]},
+      {"titulo": "Pasivas", "tipo": "tabla", "columnas": ["Pasiva", "Qué te da", "Prioridad"], "filas": [
+        ["Gracia empírea", "Crítico, Golpe y un golpe extra en cada ataque", "Máxima: tu mejor pasiva de daño"],
+        ["Gracia terrestre", "Amplificación de Daño Crítico y Precisión", "Alta"],
+        ["Mejora curativa", "Convierte Ataque en Amplificación de Curación", "Pronto si tus grupos necesitan mucha curación"],
+        ["Favor radiante", "Cura al grupo cuando aciertas un golpe", "Alta"],
+        ["Favor cálido / Velo inmortal", "+19% de vida máxima y +28% de Defensa a 14, y Resistencia Crítica", "El arreglo barato si te matan de un golpe"]
+      ]},
+      {"tipo": "aviso", "texto": "PvP: Salvation, Voice of Doom y Poder de Yustiel. En JcE sáltate Salvación: no para ciertos golpes fuertes y bloquea 30 s cualquier otra invencibilidad (incluida la del tanque). Sáltate también Atadura y Estigma de agresión."}
+    ],
+    "estigmas": [
+      {"titulo": "Qué stigmas lleva cada preset", "tipo": "tabla", "columnas": ["Preset", "Stigmas", "Por qué"], "filas": [
+        ["Grupo normal, sin Conjurador", "Luz de protección, Castigo terrestre, Aura noble, Oración de amplificación", "Buff de grupo más tus tres stigmas de daño"],
+        ["Mazmorra nueva o grupo que muere", "Luz de protección, Absolución, Poder de Yustiel, Resurrección de invocación", "Limpieza, mitigación antes del golpe y resurrección"],
+        ["Conjurador en el grupo", "Absolución, Castigo terrestre, Aura noble, Oración de amplificación", "Luz de protección no se acumula con el mantra del Conjurador"]
+      ]},
+      {"tipo": "aviso", "texto": "Con Conjurador solo cuenta el buff de más nivel y, si empatan, gana el mantra. Pregúntale y, si el mantra lo cubre, pon Absolución. En mazmorra nueva con debuffs todo el combate, Poder de vida a 20 sustituye a Resurrección de invocación."},
+      {"titulo": "Para qué sirve cada uno", "tipo": "tabla", "columnas": ["Stigma", "Qué hace", "Nivel objetivo"], "filas": [
+        ["Luz de protección", "Amplificación de Daño de JcE y Tolerancia a Daño JcE al grupo (15% a 10, 17% a 14, 20% a 20). Nv 5: Curación Recibida; nv 10: Precisión", "10 primero, 20 al final"],
+        ["Castigo terrestre", "Nv 5: Condena siempre crítico sobre el objetivo. Nv 10: +10% de Golpe (5% al grupo). Nv 15: +10% de Ataque y Defensa (5% al grupo). Nv 20: 20 s con 30 s de enfriamiento", "20: con ~34% de Reducción de Tiempo de Enfriamiento nunca se cae"],
+        ["Aura noble", "Aura de 5 min que golpea cada 2 s; a 20 cada segundo (doble daño)", "20"],
+        ["Oración de amplificación", "+20% de Ataque (16,5 s a 14, 20 s a 20, +15% más a 20) y +20% de Amplificación de Daño de JcE desde nv 5. A 10 y 15, Gracia empírea y Gracia terrestre x1,5", "Alinéala con Centella y el stagger"],
+        ["Absolución", "Quita debuffs y cura al grupo; a 10 quita todos", "Mínimo 15 antes de depender de ella"],
+        ["Poder de Yustiel", "+20% de Tolerancia a Daño JcE al grupo; antes del golpe, no después", ""],
+        ["Resurrección de invocación", "Resucita a un aliado a 40 m; nv 5 acorta el lanzamiento", "1 al principio"],
+        ["Poder de vida", "Curación en el tiempo de 20 s a 40 m, 90 s de enfriamiento; nv 10 da Vigor y a 20 purifica cada 5 s", "20 si lo llevas"]
+      ]},
+      {"titulo": "Orden de fragmentos", "tipo": "pasos", "items": [
+        "Luz de protección a 10.",
+        "Castigo terrestre a 15.",
+        "Los otros dos a 5.",
+        "Castigo terrestre a 20 (cambia la frecuencia de críticos de Condena).",
+        "Luz de protección a 20 (solo +5 puntos a un buff que ya tienes)."
+      ]},
+      {"tipo": "aviso", "texto": "Por debajo de 20, Castigo terrestre solo cubre un tercio del combate. Suma tu Reducción de Tiempo de Enfriamiento: Alas de Talisra del vacío, Fantasía, Ay, no tengo nada que ponerme y el nodo de Nezekan. Las 4 ranuras se abren a los niveles 22, 27, 32 y 37."}
+    ],
+    "daevanion": [
+      {"titulo": "Tableros", "tipo": "lista", "items": [
+        "Nezekan nv 12, Zikel nv 20, Vaizel nv 30, Triniel nv 40, Azphel nv 45.",
+        "Los cuatro primeros comparten puntos. Azphel tiene los suyos y solo da PvP: déjalo para después."
+      ]},
+      {"titulo": "Orden de puntos", "tipo": "pasos", "items": [
+        "Nodos azules en los cuatro tableros (de 10 a 14): Condena, Resplandor de recobro, Centella, Aura divina, Rayo del juicio y Luz de curación.",
+        "Naranjas: Reducción de Tiempo de Enfriamiento y Velocidad de Hechizo (Nezekan), Amplificación de Daño y Tolerancia a Daño (Zikel), Amplificación de Daño Crítico (Vaizel), Acierto de Multigolpe (Triniel).",
+        "Verdes: Gracia empírea y Mejora curativa (Nezekan), Gracia terrestre y Favor radiante (Zikel), los cuatro en Vaizel y Triniel.",
+        "Ataque, Crítico y el resto de nodos de habilidad de camino."
+      ]},
+      {"titulo": "Qué saltarse", "tipo": "lista", "items": [
+        "**Favor empíreo**: se parece a Gracia empírea pero es una pasiva de Bloqueo para PvP. No las confundas.",
+        "Bloqueo de recuperación: PvP.",
+        "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): nada en JcE."
+      ]},
+      {"tipo": "aviso", "texto": "A diferencia de un tanque, el tablero completo mantiene los nodos de Puntos de Maná máximos: el sanador se queda seco antes que nadie. Es decisión de metaroad; no hay respuesta firme publicada."},
+      {"tipo": "aviso", "texto": "Prioridad de lanzamiento gasta 306 puntos (pasos 1 a 3); JcE completo gasta 534. No se sabe cuántos puntos tiene un nivel 45 en el lanzamiento: sigue el primer preset. Reasignar es barato."}
+    ],
+    "rotacion": [
+      {"titulo": "Prioridad de curas", "tipo": "tabla", "columnas": ["Situación", "Qué haces"], "filas": [
+        ["Golpe fuerte que conoces", "Cura por adelantado; Poder de Yustiel justo antes"],
+        ["Daño normal sobre el grupo", "Resplandor de recobro primero, Luz de regeneración para mantener la cura en el tiempo, Luz de curación para quien vaya más bajo"],
+        ["Un aliado en apuros", "Luz de curación (la reutilización más corta)"],
+        ["Emergencia o debuff feo", "Absolución"],
+        ["Entre curas", "Deja el daño pequeño a Favor radiante y vuelve a Condena"]
+      ]},
+      {"titulo": "Combate contra jefe", "tipo": "pasos", "items": [
+        "Luz de protección activa antes del pull.",
+        "Abre con Estigma debilitante y Enlace de dolor, luego Castigo terrestre.",
+        "Mantén la tecla de Condena o la macro: cada crítico es otra Condena.",
+        "En el stagger: Centella cargada del todo con Oración de amplificación activa. Suelta la tecla de Condena para que salga Relámpagos sin puntería.",
+        "Vigila al jefe: cura antes de su golpe fuerte y vuelve al paso 3.",
+        "Renueva Enlace de dolor y Castigo terrestre cuando se caigan."
+      ]},
+      {"tipo": "aviso", "texto": "Nunca en la macro: curas de emergencia, limpiezas, Eliminación de impacto ni Resurrección de invocación. Centella se carga a mano. Activa Skill Queue en las opciones."},
+      {"titulo": "Puntos de Maná", "tipo": "lista", "items": [
+        "Retribución terrestre y su cadena de Discharge recuperan Maná con cada golpe: intercala básicos si vas bajo.",
+        "La cadena de Eliminación de impacto devuelve un 40% del Maná.",
+        "Alas de gloria y el Pergamino de Destino también ayudan.",
+        "Si aún te quedas seco: spec 1 de Retribución terrestre (+20% de Maná recuperado)."
+      ]}
+    ],
+    "coleccionables": [
+      {"titulo": "Alas", "tipo": "tabla", "columnas": ["Alas", "Qué dan", "Cuándo"], "filas": [
+        ["Talisra Wings", "4% de Reducción de Tiempo de Enfriamiento, Precisión y Ataque", "1.ª opción"],
+        ["Nightmare Wings / Forest Spirit Wings", "Amplificación de Daño de Jefe", "Alternativas fuertes"],
+        ["Dark Veil Wings", "", "Opción temprana"],
+        ["Glorious Wings", "−3% al coste de Maná", "Vale la pena tenerlas en un sanador"],
+        ["Sealing Wings", "Curación Recibida solo para ti", "Sáltatelas"]
+      ]},
+      {"tipo": "aviso", "texto": "Colecciona todas las alas: dan stats sin llevarlas puestas."},
+      {"titulo": "Títulos", "tipo": "tabla", "columnas": ["Tipo", "1.ª opción", "Opcional"], "filas": [
+        ["Ofensivo", "Creación del cielo y la tierra (Golpe, Amplificación de Daño de JcE)", "Librarse de las ataduras de raza (añade Crítico)"],
+        ["Defensivo", "Dominador del espacio (Tolerancia a Daño JcE)", ""],
+        ["Otro", "Ay, no tengo nada que ponerme (Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento)", ""]
+      ]},
+      {"titulo": "Panteón", "tipo": "lista", "items": [
+        "Primero Destrucción (Ataque), Sabiduría (Golpe) y Fantasía (Reducción de Tiempo de Enfriamiento); luego Tiempo y Libertad.",
+        "Muerte si vas corto de Crítico.",
+        "Los Clérigos persiguen las piezas de Kromede y de Zikel.",
+        "Sin prisa con los retratos: salen jugando."
+      ]}
+    ],
+    "mascotas": [
+      {"titulo": "Reglas", "tipo": "lista", "items": [
+        "El genus es tu primer gran gasto de Kina.",
+        "Sube cada genus a 10 antes de bloquear nada.",
+        "Bloquea solo tiradas Unique cerca del máximo.",
+        "Prioridad: ranura 4, luego 7, luego 2 y 8.",
+        "Gasta los tickets semanales en Odylium Repository en cuanto abra."
+      ]},
+      {"titulo": "Ranuras 4 y 7 por genus", "tipo": "tabla", "columnas": ["Genus", "Ranura 4", "Ranura 7"], "filas": [
+        ["Cogni", "Amplificación de Daño Crítico", "Crítico"],
+        ["Fera", "Amplificación de Daño de Arma", "Crítico"],
+        ["Natura", "Perforación", "Crítico"],
+        ["Varian", "Amplificación de Daño por la Espalda", "Crítico"],
+        ["Special", "Golpe", "Crítico"]
+      ]},
+      {"titulo": "Resto de ranuras", "tipo": "tabla", "columnas": ["Ranuras", "1.ª opción", "Opcional"], "filas": [
+        ["1 y 5", "Ataque Máximo, luego Ataque Adicional", ""],
+        ["2 y 8", "Aumento de Puntos de Vida", ""],
+        ["3, 6 y 9", "Crítico", "Precisión si fallas golpes"]
+      ]},
+      {"tipo": "aviso", "texto": "Ranura 7 en Crítico porque Condena vive de críticos. Pero con el tope del 50% y Castigo terrestre activo todo el combate, Tolerancia a Daño pasa a ser mejor tirada. Varian lleva Espalda y no Frontal: estás al lado o detrás del jefe."}
+    ]
+  }
+}

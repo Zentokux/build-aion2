@@ -1,0 +1,242 @@
+{
+  "clase": "chanter",
+  "nombre": "Conjurador",
+  "fuente": "https://metaroad.gg/es/aion2/build-guides/build-pve-de-conjurador-soporte",
+  "resumen": "Conjurador de soporte JcE a nivel 45: tu valor está en los buffs de grupo (**Proclama del invicto**, **Poder de vendaval**) y en mantener abierta la ventana de **Fractura sombría**. Activa los mantras una vez y nunca los metas en una macro: si los vuelves a pulsar, se desactivan.",
+  "pros": [
+    "Proclama del invicto da daño y resistencia JcE a todo el grupo con 100% de uptime",
+    "Poder de vendaval da Velocidad de Hechizo y enfriamientos más cortos al grupo cuando quieras",
+    "Fractura sombría pierde el enfriamiento a nivel 16 y se spamea dentro de su ventana",
+    "Círculo de protección mantiene una barrera sobre el grupo solo con atacar",
+    "Curación y limpieza de reserva: un grupo sin Clérigo sigue funcionando",
+    "Cuerpo a cuerpo con guarda: sobrevives a los errores mejor que otros soportes"
+  ],
+  "contras": [
+    "Poco daño propio comparado con las clases de daño, por diseño",
+    "Fractura sombría solo sale en una ventana de 2-3 s: un abridor fallado cuesta daño",
+    "Hasta que Fractura sombría llega a 16, su enfriamiento rompe la rotación",
+    "Solo 4 ranuras de stigma y cada buff de grupo quiere una",
+    "Los mantras se desactivan si los vuelves a pulsar (fácil en una macro)",
+    "Tus buffs se solapan con algunos del Clérigo: dos soportes deben organizarse"
+  ],
+  "presets": [
+    {"nombre_en": "Party with a Cleric", "nombre": "Grupo con Clérigo", "uso": "El Clérigo cura: llevas Ira de Marchutan y Defensa concentrada."},
+    {"nombre_en": "No Cleric in the party", "nombre": "Sin Clérigo en el grupo", "uso": "Eres la curación de reserva: Proclama de esprint y Toque de recobro."},
+    {"nombre_en": "Dailies and farming", "nombre": "Diarias y farmeo", "uso": "Contenido diario: Proclama de esprint e Ira de Marchutan."}
+  ],
+  "tecla_macro": "Una tecla que mantengas pulsada (no dice cuál). Mouse1 es Fractura trituradora y Mouse2 la línea de Fractura sombría.",
+  "macros_por_preset": [
+    {"preset_en": "Party with a Cleric", "pasos": ["Fractura sombría", "Fractura trituradora"], "retardo_ms": 10, "nota": "El paso 1 es la línea de Fractura sombría (con Golpe giratorio, Fractura impactante y Golpe incandescente apilados encima)."},
+    {"preset_en": "No Cleric in the party", "pasos": ["Fractura sombría", "Fractura trituradora"], "retardo_ms": 10, "nota": "Misma macro en todos los presets."},
+    {"preset_en": "Dailies and farming", "pasos": ["Fractura sombría", "Fractura trituradora"], "retardo_ms": 10, "nota": "Misma macro en todos los presets."}
+  ],
+  "secciones": {
+    "equipo": [
+      {"titulo": "Ruta del arma", "tipo": "tabla", "columnas": ["Etapa", "Bastón", "Guarda", "Nota"], "filas": [
+        ["Inicio (nivel de objeto 70)", "Aulamus Staff (Urugugu Canyon)", "Vakron Guard (Vakron Sky Island)", "Ve primero a Vakron: única guarda temprana y buena armadura. El bastón puede esperar"],
+        ["Fire Temple (86)", "Enraged Kromede Rod", "Nuakum Guard", "La vara solo tiene 3 líneas: paso intermedio"],
+        ["Objetivo crafteado (78)", "White Dragon Lord Staff (Elyos) / Bastón de rey dragón oscuro (Asmodian)", "White Dragon Lord Guard / Guard", "5 líneas que se conservan al subir de tier"]
+      ]},
+      {"titulo": "Claves del equipo", "tipo": "lista", "items": [
+        "Termina historia y secundarias; luego pasa de mazmorra a crafteado. Casi todos mezclan.",
+        "Orden de crafteo: bastón, guarda y después accesorios.",
+        "El crafteado (78) sube de tier a Splendent (86), Wise (94) y Splendent Wise (102). Vincular pronto ahorra materiales."
+      ]},
+      {"titulo": "Reglas de Soul Binding", "tipo": "lista", "items": [
+        "Las líneas de valor variable en las primeras ranuras, para rerollear.",
+        "Nada de líneas de habilidad en bastón ni guarda: ahí valen más Amplificación de Daño y Velocidad de Hechizo.",
+        "Activas en los anillos; pasivas en casco, capa y joyería.",
+        "Si sale **Acierto de Multigolpe** en bastón o guarda, quédatelo antes que Fuerza o Precisión: Fractura trituradora es lo que más golpea.",
+        "En global el equipo ya saca Fuerza, Precisión y Velocidad de Hechizo, así que tienes menos líneas pasivas: gástalas en Promesa de viento, Preparación de ataque, Hechizo de inspiración y Acierto de impacto.",
+        "Ranuras «Crítico o Precisión»: elige Precisión cuando tu ficha esté cerca del tope de crítico."
+      ]},
+      {"tipo": "aviso", "texto": "El crítico tiene tope del 50% y la Resistencia Crítica del jefe lo baja. Fractura sombría y Golpe giratorio ya son crítico siempre con sus specs."},
+      {"tipo": "aviso", "texto": "La línea extra de la Piedra filosofal (la morada de «fuse») se pierde al transferir o subir de tier. Todo lo demás se conserva."},
+      {"titulo": "Manastones", "tipo": "tabla", "columnas": ["Pieza", "1.ª opción", "Opcional"], "filas": [
+        ["Pieza definitiva", "Back Attack Damage Boost, luego Weapon Damage Boost y Ataque, con 1 Accuracy Bonus por pieza", "Ataque, Crítico y Precisión mientras cambias piezas"],
+        ["Pieza que vas a cambiar", "Piedras baratas", "Las manastones se pierden al transferir"]
+      ]},
+      {"tipo": "aviso", "texto": "Las manastones son recomendación de metaroad; ajústalas a tu grupo. Critical Damage vale algo menos porque Promesa de viento ya da mucha Amplificación de Daño Crítico. La Precisión importa: una Fractura sombría fallada desperdicia la ventana."},
+      {"titulo": "Accesorios", "tipo": "tabla", "columnas": ["Qué", "1.ª opción", "Nota"], "filas": [
+        ["Brazaletes", "Abyssal Bracelet: Fantasía, Sabiduría, Destrucción, Tiempo", "Fantasía = más Poder de vendaval y Golpe giratorio; Sabiduría = Golpe y habilidades más baratas"],
+        ["Amuleto", "Revelation Amulet", "Amplificación de Daño de Arma. Fierce Battle Amulet es el de PvP"],
+        ["Cinturón y runas", "Noble Belt + 2 Clash Rune", ""]
+      ]},
+      {"titulo": "Arcana", "tipo": "tabla", "columnas": ["Carta", "Estadística de dios", "Líneas a pescar"], "filas": [
+        ["Chalice of Vigor", "Tiempo: Velocidad de Hechizo", "Cualquiera que no llegue a su objetivo, Fractura trituradora primero"],
+        ["Parchment of Vigor", "Vida: Puntos de Vida", "Fractura sombría, Fractura trituradora, Golpe giratorio"],
+        ["Compass of Vigor", "Libertad: Precisión", "Golpe incandescente, Hechizo de recobro, Eliminación de impacto"],
+        ["Bell of Magic", "Destrucción: Ataque", "Preparación de ataque, Círculo de protección"],
+        ["Mirror of Magic", "Sabiduría: Golpe", "Promesa de viento, Acierto de impacto, Hechizo de inspiración"]
+      ]},
+      {"titulo": "Consejos de Arcana", "tipo": "lista", "items": [
+        "Caen en Transcendence. Una carta suele dar unos +2 a lo que quieres, +4 como mucho: no lo inviertas todo en el lanzamiento.",
+        "Bonus de 2 piezas de los dos sets y ningún bonus de 4, a propósito.",
+        "Cambio: Mirror of Vigor (Fantasía) en vez del Espejo de magia para una build totalmente de apoyo.",
+        "Cambio: Compass of Magic (Muerte, Crítico) en vez de la Brújula de vitalidad si vas holgado de Precisión y lejos del 50% de crítico.",
+        "El Cáliz es la única carta que saca cualquier habilidad: tapa con él la que vaya corta."
+      ]}
+    ],
+    "habilidades": [
+      {"tipo": "aviso", "texto": "Consigue todos los fragmentos de puntos de habilidad cuanto antes: los niveles mueven tanto tu daño como tus buffs."},
+      {"titulo": "Activas: por qué y cuándo cambiar", "tipo": "tabla", "columnas": ["Habilidad", "Por qué importa", "Cambio posible"], "filas": [
+        ["Fractura sombría", "Tu daño principal: crítico garantizado, cadena de Fractura perforadora y sin enfriamiento a 16", ""],
+        ["Fractura trituradora", "Ataque básico y Maná. Spec 2 absorbe vida, spec 4 quita 1 s a Golpe giratorio por golpe, spec 5 añade Fractura de tormenta", "Con más Reducción de Tiempo de Enfriamiento: 2, 3, 5 (Multigolpe en vez del recorte)"],
+        ["Golpe giratorio", "Abre la ventana de Fractura sombría; cada golpe da +15% de Amplificación de Daño Crítico 30 s (x2). Spec 1: −5 s; a 16 siempre crítico", "Spec 3 como tercera al llegar a 20"],
+        ["Hechizo de recobro", "Curación y limpieza de grupo a 40 m; spec 1 da segundo uso, spec 4 +5% de vida", "Spec 5 (−3 s) a 20, solo si eres el único sanador"],
+        ["Golpe incandescente", "Tu relleno; a 16 ignora Bloqueo/Evasión y es Multigolpe", ""],
+        ["Eliminación de impacto", "Rompe aturdimientos; spec 4 da +2 s de Robustez", "Spec 5 a 16: +50% de Tolerancia a Daño JcE"],
+        ["Golpe ondulatorio", "Spec 4 baja un 15% la Amplificación de Daño de JcE del jefe 10 s; úsala entre animaciones", "A 16, spec 5 (−5 s) en lugar de la 2: el debuff pasa de ~50% a ~67%"],
+        ["Fractura impactante", "Se usa en movimiento, +30% de velocidad de habilidad y abre la ventana", "Nivel 16 (Stun) es para PvP"],
+        ["Trituración de acometida", "50% de lanzar Golpe de onda abrasadora gratis; se reinicia al matar. Para grupos de enemigos", "Nunca la spec 2: la convierte en carga"],
+        ["Fractura sísmica", "Vigor al golpear y +10 m de alcance; para grupos de enemigos", ""],
+        ["Desenfreno de vendaval / Golpe de onda abrasadora", "Déjalas bajas: Desenfreno solo va contra objetivo en stagger (2-3 veces por combate)", "En Corea suben Desenfreno a 16 por la spec 5; vuelve a ella al final"]
+      ]},
+      {"titulo": "Cómo llega Fractura sombría a 20", "tipo": "pasos", "items": [
+        "Puntos de habilidad: hasta 10.",
+        "4 tableros de Daevanion: +4.",
+        "2 anillos: +2 (16 para Fractura sombría, Fractura trituradora y Golpe giratorio).",
+        "Pergamino lleva Fractura sombría a 20; el Cáliz hace lo mismo con Fractura trituradora. Golpe giratorio se queda en 16 (por eso dos specs)."
+      ]},
+      {"titulo": "Pasivas", "tipo": "tabla", "columnas": ["Pasiva", "Qué te da", "Prioridad"], "filas": [
+        ["Preparación de ataque", "Amplificación de Daño de JcE (14,5% a 19), Defensa y +100 de Precisión", "Máxima"],
+        ["Hechizo de inspiración", "Crítico y Perforación; da los críticos que necesita Promesa de viento. Cerca del tope solo paga en Perforación", "Segunda"],
+        ["Promesa de viento", "Amplificación de Daño Crítico y 50% de golpe extra al critear", "Alta (en Corea va primera)"],
+        ["Acierto de impacto", "Acierto de Tipo Impacto y Golpe; combina con el +5% de Golpe de Proclama del invicto a 20", "Media"],
+        ["Círculo de protección", "Con 10 stacks, Barrera divina al grupo 10 s, renovada mientras golpeas", "Media"],
+        ["Promesa terrestre", "Baja la Tolerancia a Daño JcE del objetivo 5 s de cada 10", "Media"],
+        ["Bendición de vida / Voluntad de supervivencia", "Vida y Resistencia a Efectos de Estado. Bendición convierte Ataque en Amplificación de Curación", "Sube Bendición si sueles ir sin Clérigo"],
+        ["Defensa en cruz / Hechizo de furia", "Nada útil en JcE", "Sáltatelas"]
+      ]},
+      {"tipo": "aviso", "texto": "Los números son los de global; algunos valores coreanos son más altos. Cuenta con que cambien con los parches."},
+      {"tipo": "aviso", "texto": "PvP: desactiva Proclama de esprint, sube Ira de Marchutan a 20 (−70% a la curación recibida) y mira Fracturing Blow (−30% de Defensa) y Fractura impactante a 16. Nadie en global tiene aún una configuración de PvP asentada."}
+    ],
+    "estigmas": [
+      {"titulo": "Qué stigmas lleva cada preset", "tipo": "tabla", "columnas": ["Preset", "Stigmas", "Por qué"], "filas": [
+        ["Grupo con Clérigo", "Proclama del invicto, Poder de vendaval, Ira de Marchutan, Defensa concentrada", "El Clérigo cura: tú reabres la ventana y aguantas los golpes fuertes"],
+        ["Sin Clérigo en el grupo", "Proclama del invicto, Poder de vendaval, Proclama de esprint, Toque de recobro", "Eres la curación: esprint cura al golpear y Toque es curación de grupo"],
+        ["Diarias y farmeo", "Proclama del invicto, Poder de vendaval, Proclama de esprint, Ira de Marchutan", "Velocidad de movimiento y reapertura de ventana"]
+      ]},
+      {"titulo": "Para qué sirve cada uno", "tipo": "tabla", "columnas": ["Stigma", "Qué hace", "Nivel objetivo"], "filas": [
+        ["Proclama del invicto", "Amplificación de Daño de JcE y Tolerancia a Daño JcE para ti y el grupo (17% a 14, 20% a 20). Specs: Crítico (5), Precisión (10), Amplificación de Daño Crítico (15), Golpe (20). Nunca la quites", "20"],
+        ["Poder de vendaval", "+20% de Velocidad de Hechizo y −20% de enfriamientos para ti; +20% y −10% para el grupo a 40 m. 16,5 s a 14 y 20 s a 20. Nv 5: enfriamiento de 120 a 90 s; nv 20: +20% de Ataque para ti y +10% para el grupo", "20"],
+        ["Ira de Marchutan", "Abre la ventana de Fractura sombría 3 s. Nv 5: hasta +20% contra pocos objetivos. 10/15/20 son para PvP", "Último en fragmentos; nv 1 ya abre la ventana"],
+        ["Defensa concentrada", "Bloqueo garantizado con 100% de reducción; nv 5 da un segundo uso. Para los golpes fuertes del jefe", "5"],
+        ["Proclama de esprint", "Interruptor: Velocidad de Movimiento al grupo y 15% por golpe de curar a los cercanos. Desactívala en PvP", "10"],
+        ["Toque de recobro", "Curación de grupo a 40 m; nv 15 añade limpieza. Para grupos sin Clérigo", "15"],
+        ["Obliterate", "3 golpes con mucho daño de stagger", "Cambio por Ira de Marchutan en jefes con chequeo de stagger"],
+        ["Guardian Blessing", "Dura 120 s con 120 s de enfriamiento; a 15 Promesa de viento x1,5", "Cuarto stigma a largo plazo"]
+      ]},
+      {"titulo": "Orden de fragmentos", "tipo": "pasos", "items": [
+        "Proclama del invicto a 5.",
+        "Poder de vendaval a 5.",
+        "Proclama del invicto a 20.",
+        "Poder de vendaval a 20.",
+        "Después Proclama de esprint y Toque de recobro."
+      ]},
+      {"tipo": "aviso", "texto": "4 ranuras que se abren a los niveles 22, 27, 32 y 37. Se suben con fragmentos hasta 20 y las specs se desbloquean a 5, 10, 15 y 20."}
+    ],
+    "daevanion": [
+      {"titulo": "Tableros", "tipo": "lista", "items": [
+        "Nezekan nv 12, Zikel nv 20, Vaizel nv 30, Triniel nv 40, Azphel nv 45.",
+        "Los cuatro primeros comparten puntos. Azphel tiene los suyos y solo da PvP: déjalo para después.",
+        "El nodo de Trituración de acometida aparece como **Charging Smash** en el tablero: es la misma habilidad."
+      ]},
+      {"titulo": "Orden de puntos", "tipo": "pasos", "items": [
+        "Nodos azules (+1 en cada tablero, +4 en total): Fractura sombría, Fractura trituradora, Golpe giratorio, Golpe incandescente y Hechizo de recobro.",
+        "Naranjas: Reducción de Tiempo de Enfriamiento y Velocidad de Hechizo (Nezekan), Amplificación de Daño (Zikel), Amplificación de Daño Crítico (Vaizel), Acierto de Multigolpe (Triniel).",
+        "Verdes: Preparación de ataque, Hechizo de inspiración y Círculo de protección (Nezekan); Promesa de viento, Acierto de impacto y Promesa terrestre (Zikel); las seis otra vez en Vaizel y Triniel.",
+        "Después Fractura impactante, Golpe ondulatorio, nodos defensivos, Ataque y lo que pille."
+      ]},
+      {"titulo": "Qué saltarse", "tipo": "lista", "items": [
+        "Puntos de Maná máximos: Fractura trituradora ya te rellena el Maná.",
+        "Azules de Golpe de onda abrasadora y Desenfreno de vendaval.",
+        "Verdes de Defensa en cruz y Hechizo de furia.",
+        "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): nada en JcE."
+      ]},
+      {"tipo": "aviso", "texto": "Prioridad de lanzamiento gasta 319 puntos (pasos 1 a 3); JcE completo gasta 462. No se sabe cuántos puntos tiene un nivel 45 en el lanzamiento: sigue el primer preset. Reasignar es barato."}
+    ],
+    "rotacion": [
+      {"titulo": "Antes de empezar", "tipo": "lista", "items": [
+        "**Desactiva Skill Queue**: estorba al cancel del Conjurador (mantén Mouse1 y toca Mouse2 para cortar el final de Fractura trituradora con la línea de Fractura sombría). Si aún no usas el cancel, dejarlo activo no molesta.",
+        "Activa Proclama del invicto y Proclama de esprint a mano, una vez, antes del pull.",
+        "Fractura sombría solo se puede usar 2 s tras Golpe giratorio o Fractura impactante, y 3 s tras Ira de Marchutan.",
+        "Fractura trituradora golpea 4 veces (el 4.º es Storm Chain) y cada golpe debe llegar a menos de 3 s del anterior."
+      ]},
+      {"titulo": "Mantenimiento de buffs", "tipo": "tabla", "columnas": ["Buff", "Uptime", "Cómo"], "filas": [
+        ["Proclama del invicto", "100%", "Interruptor: actívalo una vez"],
+        ["Proclama de esprint", "100%", "Interruptor: actívalo una vez"],
+        ["Poder de vendaval", "~22% a nivel 20", "20 s cada 90; justo antes del stagger del jefe"],
+        ["Stacks de Golpe giratorio", "100%", "2 stacks 30 s; relánzalo en cuanto vuelva (25 s)"],
+        ["Promesa terrestre", "~50%", "Pasiva, 5 s de cada 10 mientras pegas"],
+        ["Debuff de Golpe ondulatorio", "~50%, 67% con spec 5", "10 s de cada 20 (de cada 15 con spec 5 a 16)"],
+        ["Círculo de protección", "Casi constante", "Barrera cada 10 golpes mientras atacas"]
+      ]},
+      {"titulo": "Combate contra jefe", "tipo": "pasos", "items": [
+        "Mantras activos antes del pull. Abre con Poder de vendaval.",
+        "Entra con Trituración de acometida y luego Golpe giratorio para abrir la ventana y acumular Daño Crítico.",
+        "Mantén la macro y spamea la línea: cada abridor que vuelve es otra ventana de Fractura sombría.",
+        "¿Ventana cerrada y abridores en enfriamiento? Ira de Marchutan da 3 s más.",
+        "Golpe ondulatorio entre animaciones; Hechizo de recobro cuando el grupo lo necesite (una Evasión urgente cancela su pequeño retraso).",
+        "Defensa concentrada en los golpes fuertes; Eliminación de impacto si te aturden.",
+        "Poder de vendaval otra vez justo antes del siguiente stagger (avisa al grupo) y Desenfreno de vendaval con el jefe en stagger."
+      ]},
+      {"titulo": "Otros objetivos", "tipo": "tabla", "columnas": ["Situación", "Secuencia"], "filas": [
+        ["Grupos de enemigos", "Trituración de acometida (se reinicia al matar), Extinción ígnea si la llevas, luego la línea y Fractura trituradora"],
+        ["Élites", "Fractura impactante, Fractura sombría, Golpe ondulatorio, Golpe giratorio, Fractura sombría"]
+      ]},
+      {"tipo": "aviso", "texto": "NUNCA metas un mantra en una macro: la segunda pulsación lo desactiva. A mano también: Ira de Marchutan, Defensa concentrada, Hechizo de recobro, Golpe ondulatorio y los acercamientos."},
+      {"tipo": "aviso", "texto": "Antes de que Fractura sombría llegue a 16, su enfriamiento rompe la línea: pon un abridor de ventana en su propia tecla y púlsalo en cuanto Fractura sombría vuelva."},
+      {"titulo": "Solapes con un Clérigo", "tipo": "lista", "items": [
+        "Proclama del invicto no se acumula con Luz de protección: gana el de más nivel y, si empatan, el tuyo.",
+        "Poder de vendaval no se aplica a quien tenga Earth's Blessing.",
+        "Promesa terrestre no se aplica junto a Enlace de dolor; el debuff de Golpe ondulatorio no se acumula con Estigma debilitante.",
+        "Dos Conjuradores en el grupo: solo cuenta el mantra de más nivel."
+      ]}
+    ],
+    "coleccionables": [
+      {"titulo": "Alas", "tipo": "tabla", "columnas": ["Alas", "Qué dan", "Cuándo"], "filas": [
+        ["Talisra Wings", "Reducción de Tiempo de Enfriamiento, Precisión y Ataque", "1.ª opción: más Poder de vendaval y Golpe giratorio"],
+        ["Nightmare Wings", "Amplificación de Daño de Jefe", "Alternativa fuerte"],
+        ["Dark Veil Wings", "Amplificación de Daño", "Opción temprana"]
+      ]},
+      {"tipo": "aviso", "texto": "Colecciona todas las alas: dan estadísticas sin llevarlas puestas, y el poder de vuelo ayuda al farmear el Abismo."},
+      {"titulo": "Títulos", "tipo": "tabla", "columnas": ["Tipo", "1.ª opción", "Opcional"], "filas": [
+        ["Ofensivo", "Creación del cielo y la tierra (Precisión, Golpe, Amplificación de Daño de JcE)", "Familiarizado con Draupnir (Ataque por la Espalda) si vives a la espalda del jefe"],
+        ["Defensivo", "Dominador del espacio (Tolerancia a Daño JcE)", ""],
+        ["Otros", "Ay, no tengo nada que ponerme (Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento)", ""]
+      ]},
+      {"tipo": "aviso", "texto": "Ningún título de global mejora la curación: se eligen igual que en una build de daño."},
+      {"titulo": "Panteón", "tipo": "lista", "items": [
+        "Primero Sabiduría (Golpe y habilidades más baratas) y Fantasía (Reducción de Tiempo de Enfriamiento), luego Destrucción (Ataque).",
+        "Sin prisa con los retratos: salen jugando."
+      ]}
+    ],
+    "mascotas": [
+      {"titulo": "Reglas", "tipo": "lista", "items": [
+        "El genus es tu primer gran gasto de Kina.",
+        "Sube cada genus a 10 antes de bloquear nada.",
+        "Bloquea solo tiradas Unique cerca del máximo.",
+        "Prioridad: ranura 4, luego 7, luego 2 y 8. Empieza por Special y Varian.",
+        "Gasta los tickets semanales en Odylium Repository en cuanto abra: la forma más rápida de arreglar genus y juntar cristales."
+      ]},
+      {"titulo": "Ranuras 4 y 7 por genus", "tipo": "tabla", "columnas": ["Genus", "Ranura 4", "Ranura 7"], "filas": [
+        ["Cogni", "Amplificación de Daño Crítico", "Tolerancia a Daño"],
+        ["Fera", "Amplificación de Daño de Arma", "Tolerancia a Daño"],
+        ["Natura", "Perforación", "Tenacidad"],
+        ["Varian", "Amplificación de Daño por la Espalda", "Tenacidad"],
+        ["Special", "Golpe", "Tolerancia a Daño"]
+      ]},
+      {"titulo": "Resto de ranuras", "tipo": "tabla", "columnas": ["Ranuras", "1.ª opción", "Opcional"], "filas": [
+        ["1 y 5", "Ataque Máximo, luego Ataque Adicional", ""],
+        ["2 y 8", "Aumento de Puntos de Vida", ""],
+        ["3, 6 y 9", "Crítico o Precisión", ""]
+      ]},
+      {"titulo": "Tiradas que merecen conservarse", "tipo": "lista", "items": [
+        "Si la ranura 4 de Cogni o Fera no sale: Amplificación de Daño es buen plan B.",
+        "En todos menos Special, la ranura 4 puede sacar Amplificación de Daño de JcE y la 7 Tolerancia a Daño JcE, con máximo más alto que las genéricas.",
+        "La ranura 4 de Natura puede sacar Acierto de Multigolpe. Cualquiera de estas en Unique, guárdala."
+      ]}
+    ]
+  }
+}

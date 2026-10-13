@@ -1,0 +1,107 @@
+{
+  "slug": "getting-started__missions-tareas-diarias-semanales-y-de-temporada",
+  "categoria": "getting-started",
+  "titulo": "Missions: tareas diarias, semanales y de temporada",
+  "fuente": "https://metaroad.gg/es/aion2/getting-started/missions-tareas-diarias-semanales-y-de-temporada",
+  "resumen": "El Journal tiene tres familias: Missions diarias (haz las cinco siempre), Commands semanales que compras y misiones de temporada. Missions y Commands comparten cinco huecos: no dejes nada aparcado.",
+  "bloques": [
+    {
+      "titulo": "Las tres familias",
+      "tipo": "tabla",
+      "columnas": ["Familia", "Cómo llega", "Reloj", "¿Gasta hueco de misión?"],
+      "filas": [
+        ["Missions diarias", "Aparecen cada mañana en el Journal", "Diario (05:00 en Corea)", "Sí"],
+        ["Commands", "Pergaminos que compras a un mercader de aldea (Command: Verteron / Command: Altgard); el Abismo tiene su propio surtido", "Semanal", "Sí"],
+        ["Misiones de temporada", "Pestaña propia; siguen contenido que ya haces", "Liquidación semanal (reinicio del miércoles), temporada de unos 2 meses", "No"]
+      ]
+    },
+    {
+      "titulo": "Missions diarias (datos coreanos)",
+      "tipo": "lista",
+      "items": [
+        "Cupo: **5 al día**.",
+        "Cada una paga **500 Abyss Points**: 2.500 al día.",
+        "Además: Kina, Enhance Stones, material de recolección, posibilidad de equipo Único y Small Odyle Energy (10 cada una).",
+        "La **orden de recompensa** es una Mission con la tirada de equipo Único: si te la ofrecen, es prioridad dentro de las cinco."
+      ]
+    },
+    {
+      "titulo": "Reroll de la lista con Kina",
+      "tipo": "lista",
+      "items": [
+        "Puedes pagar Kina para renovar las Missions ofrecidas.",
+        "No todas llevan tirada de Odyle Energy: haz reroll hasta que salgan las que sí (consejo de Inven, 22 de noviembre de 2025).",
+        "Compensa al principio: la Kina vuelve sola, la Odyle Energy es el techo de tu equipo."
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "No se ha publicado el precio del reroll ni está confirmado que exista en global."
+    },
+    {
+      "titulo": "Los dos límites que frenan las Missions",
+      "tipo": "tabla",
+      "columnas": ["Límite", "Qué hacer"],
+      "filas": [
+        ["5 huecos de misión compartidos entre Missions, Commands de campo y Commands del Abismo", "Termina o rechaza cualquier Command atascado: dos atascados = solo 3 Missions"],
+        ["Selector de recompensas: 5 huecos con probabilidad decreciente", "Coge el hueco 1, el único garantizado"]
+      ]
+    },
+    {
+      "titulo": "Commands",
+      "tipo": "tabla",
+      "columnas": ["Tipo", "Paga", "Cantidad semanal (Corea)"],
+      "filas": [
+        ["Orden de aldea", "500 Abyss Points + bonus aleatorio", "12"],
+        ["Orden del Abismo", "Misma forma, surtido propio", "20 o 25 según la fuente (no coinciden)"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Un Command que no puedes terminar: recházalo. No cuesta nada (el pergamino vuelve a salir) y guardarlo te cuesta una Mission al día."
+    },
+    {
+      "titulo": "Misiones de temporada",
+      "tipo": "lista",
+      "items": [
+        "Una temporada dura unos **2 meses** (Season 2 abrió el 21 de enero de 2026; checklist de Season 3 a principios de abril).",
+        "Tope de recompensa semanal: **15.000 puntos**. Lo que pase de ahí se pierde: no acumules por encima.",
+        "Fuentes de puntos: Abismo, Arena, Transcendence, Nightmare y contenido de desafío. Tramos intermedios con piedras de resurrección y Odyle Energy.",
+        "Un parche coreano bajó el requisito para que las misiones de temporada solas lleguen a la recompensa semanal."
+      ]
+    },
+    {
+      "titulo": "Lo que caduca al cambiar de temporada",
+      "tipo": "tabla",
+      "columnas": ["Qué", "Regla"],
+      "filas": [
+        ["Oath Coin (tienda de temporada)", "No sirve en la siguiente temporada y la tienda cierra al abrir la nueva: gástala"],
+        ["Moneda del Daeva Pass", "Por temporada; algunas tiendas de la Season 1 siguieron abiertas un poco más"],
+        ["Ornamento de Pantheon Épico (por grado alto en Abismo, Transcendence o Nightmare)", "Da stat, pero el de la Season 1 solo vale hasta que acaba la Season 2"]
+      ]
+    },
+    {
+      "titulo": "Por cuenta o por personaje (según aion2od.com)",
+      "tipo": "tabla",
+      "columnas": ["Alcance", "Tareas"],
+      "filas": [
+        ["Compartido por cuenta", "Missions, Daily Dungeon, tickets del Festival de Shugo e Invasion"],
+        ["Por personaje", "Abyss Corridor, Ascension Trial, Nightmare, Sacred Hall"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Lo de cuenta/personaje es lectura de un tracker coreano, no de NC: si es cierto, un alt no duplica tus Missions. Tampoco se sabe la hora de reinicio global, los tramos por debajo de 15.000 puntos ni si global empieza dentro de una temporada. «Command» es el nombre del juego; los demás nombres pueden variar en tu menú."
+    },
+    {
+      "titulo": "Qué hacer tu primera tarde",
+      "tipo": "pasos",
+      "items": [
+        "Abre el Journal y cuenta los huecos libres antes de aceptar nada.",
+        "Coge las cinco Missions y la orden de recompensa si sale.",
+        "Si ninguna lleva Odyle Energy y te sobra Kina, haz reroll.",
+        "Cierra o rechaza los Commands que no vayas a terminar."
+      ]
+    }
+  ]
+}

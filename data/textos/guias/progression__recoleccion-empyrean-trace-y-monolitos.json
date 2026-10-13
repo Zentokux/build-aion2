@@ -1,0 +1,129 @@
+{
+  "slug": "progression__recoleccion-empyrean-trace-y-monolitos",
+  "categoria": "progression",
+  "titulo": "Recolección, Empyrean Trace y monolitos",
+  "fuente": "https://metaroad.gg/es/aion2/progression/recoleccion-empyrean-trace-y-monolitos",
+  "resumen": "Recolecta y recoge Empyrean Traces en la ruta que ya haces, sin sesiones dedicadas. El Odyle sostiene ~20% de tu techo semanal de equipo y Monolith Resonance a 30 da 112 puntos de skill y stats permanentes.",
+  "bloques": [
+    {
+      "titulo": "Por qué recolectar: la cadena del Odyle",
+      "tipo": "pasos",
+      "items": [
+        "La recompensa de una mazmorra se paga con **Odyle Energy**: sin energía, sales sin nada.",
+        "De un presupuesto semanal de ~1.400 (con Membership), **280** salen de fabricarla tú: 7 producciones a la semana, reinicio el miércoles.",
+        "Fabricar Odyle Energy consume **Odyle** y sus formas refinadas.",
+        "El Odyle solo sale de recolectar: quien no recolecta pierde ~**20%** de su techo semanal (cuenta de metaroad, no cifra publicada; más para quien juega gratis)."
+      ]
+    },
+    {
+      "titulo": "Essence Extraction en un vistazo",
+      "tipo": "tabla",
+      "columnas": ["Qué", "Detalle"],
+      "filas": [
+        ["Competencia", "**Una sola barra** para todo: nada es «lo equivocado»"],
+        ["Recursos", "Mineral, gemas, madera, hierbas, ingredientes de cocina y **Odyle**"],
+        ["Etapas", "Principiante hasta 50 → misión de ascenso → especialista hasta 50 (el mejor material)"],
+        ["Skills", "Generales de recolección y de extracción especializadas"],
+        ["Minijuego", "Al pulsar F se llenan una barra de éxito y una de fallo; gana la primera. Un fallo no da nada"]
+      ]
+    },
+    {
+      "titulo": "Cómo subirla",
+      "tipo": "tabla",
+      "columnas": ["Qué", "1.ª opción", "Opcional"],
+      "filas": [
+        ["Dónde recolectar", "Todo nodo en la ruta de la **misión principal**", "Mientras esperas grupo"],
+        ["Puntos de skill de especialista", "En lo que recolectas de verdad (sube éxito y material avanzado)", "No repartas a partes iguales"],
+        ["Sesión de farmeo dedicada", "No hace falta", "—"]
+      ]
+    },
+    {
+      "titulo": "Qué más alimenta la recolección",
+      "tipo": "lista",
+      "items": [
+        "Objetos fabricados para el mercado: uno de los ingresos de Kina más estables según la cobertura coreana.",
+        "Materiales especializados de fabricación de equipo (etapa de especialista).",
+        "Entregas de recompensas semanales.",
+        "Qué fabricación es más rentable: desconocido (la fuente coreana ya no está en línea)."
+      ]
+    },
+    {
+      "titulo": "Monolith Resonance a nivel 30",
+      "tipo": "tabla",
+      "columnas": ["Recompensa", "Cantidad"],
+      "filas": [
+        ["Puntos de skill (Wisdom Stones)", "**112**"],
+        ["Poder de acción", "320"],
+        ["Pergaminos de refinado del Revelation Amulet", "30"],
+        ["Llaves de Hidden Cube", "11"],
+        ["Objetos de reinicio de vinculación de alma", "20"],
+        ["Life, Destiny, Freedom, Death", "~+20 cada uno"],
+        ["Justice, Destruction, Illusion, Wisdom", "+12 a +18 cada uno"]
+      ]
+    },
+    {
+      "titulo": "Qué dan los bloques de atributos",
+      "tipo": "tabla",
+      "columnas": ["Atributo (~+20)", "Efecto"],
+      "filas": [
+        ["Life", "+4% HP, +4% regeneración"],
+        ["Destiny", "+4% poder mental, +4% fortaleza"],
+        ["Freedom", "+4% precisión, +4% evasión"],
+        ["Death", "+4% crítico, +4% regeneración de perforación"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Con la colección completa llevas el **Amuleto de la revelación** a Único +10: +10% de amplificación de daño de arma y +40 de daño adicional de tu piedra de sello."
+    },
+    {
+      "titulo": "Totales de Empyrean Trace (Corea)",
+      "tipo": "tabla",
+      "columnas": ["Región", "Trazas"],
+      "filas": [
+        ["Verteron (Elyos)", "560"],
+        ["Altgard (Asmodianos)", "560"],
+        ["Capa inferior del Abismo", "200"],
+        ["Total del juego", "1.320"],
+        ["Realista por personaje (lectura de metaroad)", "~760 (su región + Abismo)"]
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Sin verificar: un informe coreano dice que el requisito se relajó y bastarían unas 140 trazas para lo esencial. Sea cual sea la cifra, recoge las que estén en tu ruta."
+    },
+    {
+      "titulo": "Cómo recoger trazas sin quemarte",
+      "tipo": "lista",
+      "items": [
+        "No las farmees: recoge las de tu camino (misión principal, misiones de región, mazmorras selladas, campo).",
+        "Desviarte 3 minutos está bien; una ruta de barrido de 2 horas es como la gente abandona al 40%."
+      ]
+    },
+    {
+      "titulo": "Hidden Cubes",
+      "tipo": "lista",
+      "items": [
+        "Cubo amarillo brillante que flota; aparece la etiqueta al acercarte. **No salen en el mapa**.",
+        "Están en paredes de acantilados, grietas, bajo el agua y encima de estructuras: mira hacia arriba y usa el vuelo (plegar alas).",
+        "**Nunca abras uno sin llave**: la llave sube el grado de lo que sale. Si no tienes, vuelve luego.",
+        "Llaves: misiones, mazmorras y 11 de la línea de Empyrean Trace."
+      ]
+    },
+    {
+      "titulo": "Orden coreano de los «internos»",
+      "tipo": "pasos",
+      "items": [
+        "Misiones de región (también suben el Awakening Gauge).",
+        "Mazmorras selladas.",
+        "Guarniciones (suben el **Noble Belt**).",
+        "Empyrean Trace (sube el **Revelation Amulet** vía Monolith Resonance).",
+        "Por encima de todo: Hidden Cubes y contenido de la Grieta Espacio-Tiempo."
+      ]
+    },
+    {
+      "tipo": "aviso",
+      "texto": "Todo sale de la versión coreana. Comprueba en tu cliente los costes y producciones semanales de Odyle Energy y los totales de trazas por región."
+    }
+  ]
+}
