@@ -74,19 +74,22 @@ td small { display: block; color: var(--suave); }
     <span id="permiso"></span>
   </div>
 
-  <h2>Próximos eventos</h2>
+  <h2>Eventos por tiempo limitado</h2>
+  <p class="sub">Eventos y ofertas que solo están unas semanas. Desaparecen solos de la lista cuando terminan.</p>
+  <div class="tabla-scroll"><table>
+    <thead><tr><th>Evento u oferta</th><th>Qué hacer</th><th>Hasta</th><th>Quedan</th></tr></thead>
+    <tbody id="temporada"></tbody>
+  </table></div>
+  <div class="aviso">Terminan con el mantenimiento de ese día (parche del 14 de octubre de 2026). Las fechas cambian según la región: NA y Sudamérica un día antes que Europa.</div>
+
+  <h2>Contenido normal del juego</h2>
+  <p class="sub">Lo que se repite siempre: cada hora, cada día o cada semana.</p>
   <div class="tabla-scroll"><table>
     <thead><tr><th>Evento</th><th>Cuándo (hora servidor)</th><th>Empieza en</th><th>Tu hora</th><th title="Aviso 5 min antes">🔔</th></tr></thead>
     <tbody id="lista"></tbody>
   </table></div>
   <div class="aviso">🔔 = te avisa ese evento: sonido, cartel en la página, título de la pestaña parpadeando y notificación de Windows (aunque estés en el juego o en otra pestaña). La página tiene que estar abierta. <b>SIN CONFIRMAR</b> = las fuentes no coinciden: mira el reloj del minimapa la primera vez.</div>
   <div class="aviso">NCSOFT no ha publicado los horarios globales; son los que recogen los jugadores (octubre de 2026). El Festival de Shugo pasó de :15/:45 a <b>en punto</b>. Los reinicios van a las 07:00 UTC fijas: con el cambio de hora de EE. UU. (1-nov) y Europa (25-oct) se mueven en tu reloj.</div>
-  <h2>Por tiempo limitado</h2>
-  <div class="tabla-scroll"><table>
-    <thead><tr><th>Evento u oferta</th><th>Qué hacer</th><th>Hasta</th><th>Quedan</th></tr></thead>
-    <tbody id="temporada"></tbody>
-  </table></div>
-  <div class="aviso">Terminan con el mantenimiento de ese día (parche del 14 de octubre de 2026). Las fechas cambian según la región: NA y Sudamérica un día antes que Europa.</div>
 </main>
 <script src="js/comun.js?v=6"></script>
 <script>
@@ -294,7 +297,7 @@ td small { display: block; color: var(--suave); }
       var f = sel.value === "eu" ? t.eu : t.na, dias = Math.round((Date.UTC(f[0], f[1] - 1, f[2]) - hoy) / 864e5);
       if (dias < 0) return;
       html += "<tr><td><b>" + esc(t.nombre) + "</b><small>" + esc(t.nota) + "</small></td><td>" + esc(t.que) + "</td>" +
-        "<td>" + f[2] + "-" + MESES[f[1] - 1] + "</td><td>" + (dias === 0 ? "termina hoy" : dias === 1 ? "1 día" : dias + " días") + "</td></tr>";
+        "<td style=\"white-space:nowrap\">" + f[2] + "-" + MESES[f[1] - 1] + "</td><td style=\"white-space:nowrap\">" + (dias === 0 ? "termina hoy" : dias === 1 ? "1 día" : dias + " días") + "</td></tr>";
     });
     html = html || '<tr><td colspan="4">Nada por ahora.</td></tr>';
     if (html !== ultimaTemporada) { document.getElementById("temporada").innerHTML = html; ultimaTemporada = html; }
