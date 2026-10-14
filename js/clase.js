@@ -256,7 +256,7 @@ function barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) {
   var macro = B.macros[0];
   var enMacro = {};
   if (macro) macro.pasos.forEach(function (p) { enMacro[p.tecla] = true; });
-  var grupos = [["1", "2", "3", "4"], ["5", "6", "7", "8"], ["Q", "E", "R", "T"], ["Espacio"], ["LMB", "RMB"]];
+  var grupos = [["1", "2", "3", "4"], ["5", "6", "7", "8"], ["Q", "E"], ["Espacio"], ["LMB", "RMB"]];
   var filas = 4;
   B.barra.forEach(function (c) { filas = Math.max(filas, c.pila.length); });
   function txt(t) { return TECLA_TXT[t] || t; }
@@ -275,11 +275,11 @@ function barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) {
   }).join("") + "</div>";
 
   var out = '<div class="barra-box"><h3 style="margin-top:0">Barra nivel ' + B.nivel + "</h3>" + barra +
-    '<div class="barra-pie">Doradas: lo que pulsa la macro (en Clic der.). Letras (Q, E, R, T): pilas que pulsa la macro; números: lo que pulsas tú. ' +
+    '<div class="barra-pie">Doradas: lo que pulsa la macro (en Clic der.). El resto lo pulsas tú. ' +
     "En cada pila sale primero la de abajo (el número pequeño es la prioridad).</div></div>";
 
   // tabla de pilas
-  var orden = ["LMB", "Q", "E", "R", "T", "1", "2", "3", "4", "5", "6", "7", "8", "Espacio"];
+  var orden = ["LMB", "Q", "E", "1", "2", "3", "4", "5", "6", "7", "8", "Espacio"];
   var cols = B.barra.slice().sort(function (a, b) { return orden.indexOf(a.tecla) - orden.indexOf(b.tecla); });
   out += '<h3>Qué va en cada tecla</h3><div class="tabla-scroll"><table class="pilas"><thead><tr><th>Tecla</th><th>Para qué</th><th>Pila (1 = abajo, sale primero)</th><th>La pulsa</th></tr></thead><tbody>' +
     cols.map(function (c) {
@@ -430,7 +430,7 @@ function pintarColeccionables(C, filasStats) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  cargarScript("data/builds/" + c + ".js?v=5", pintarClase, function () {
+  cargarScript("data/builds/" + c + ".js?v=6", pintarClase, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
 })();
