@@ -13,6 +13,24 @@ say_ok()    { printf "%s✓%s %s\n" "$GREEN" "$NC" "$1"; }
 say_fail()  { printf "%s✗%s %s\n" "$RED" "$NC" "$1"; FAIL=$((FAIL+1)); }
 say_warn()  { printf "%s!%s %s\n" "$YELLOW" "$NC" "$1"; }
 
+# Windows: node recién instalado puede no estar aún en el PATH de esta consola
+if ! command -v node >/dev/null 2>&1 && [ -x "/c/Program Files/nodejs/node.exe" ]; then
+  PATH="/c/Program Files/nodejs:$PATH"
+fi
+# Windows: "python3" suele ser el alias de la Microsoft Store; probar cuál funciona de verdad
+PY=""
+for cand in python3 python py; do
+  if command -v "$cand" >/dev/null 2>&1 && "$cand" -c "import json" >/dev/null 2>&1; then
+    PY="$cand"; break
+  fi
+done
+if ! command -v node >/dev/null 2>&1; then
+  printf "%sFalta Node.js%s (https://nodejs.org)\n" "$RED" "$NC"; exit 1
+fi
+if [ -z "$PY" ]; then
+  printf "%sFalta Python%s (https://python.org)\n" "$RED" "$NC"; exit 1
+fi
+
 printf "\n== Sintaxis JS ==\n"
 JS_FILES=$(find js data -type f -name "*.js")
 for f in $JS_FILES; do
@@ -26,7 +44,7 @@ done
 printf "\n== JSON valido ==\n"
 JSON_FILES=$(find data -type f -name "*.json")
 for f in $JSON_FILES; do
-  if python3 -c "import json,sys; json.load(open('$f'))" 2>/tmp/validate_json_err; then
+  if "$PY" -c "import json,sys; json.load(open(sys.argv[1], encoding='utf-8'))" "$f" 2>/tmp/validate_json_err; then
     say_ok "$f"
   else
     say_fail "$f  —  $(cat /tmp/validate_json_err | tr '\n' ' ')"
