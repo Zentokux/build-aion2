@@ -542,8 +542,8 @@
     "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
     "tipo": "lista",
     "items": [
-     "Macro «E, E, E, Q» (la medida: 26k frente a 22k con una E menos) o solo «E».",
-     "Que Condena salga al menos tantas veces como Rayo del juicio; si no, añade otra E."
+     "Macro «E → Q» o «E, E, E, Q» (con Condena a 12 o más: la E tres veces por cada Q).",
+     "Que Condena salga al menos tantas veces como Rayo del juicio."
     ]
    },
    {

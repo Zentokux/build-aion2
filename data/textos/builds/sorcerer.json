@@ -452,8 +452,8 @@
     "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
     "tipo": "lista",
     "items": [
-     "Tormenta helada y Barrera de fuego a mano (3) o dentro de la macro.",
-     "4.ª casilla de la Q: Voto de concentración o Atadura invernal."
+     "Buffs (E y Q) dentro de la macro, o a mano para abrir el burst cuando tengas reducción de enfriamiento.",
+     "Mismo retardo en todos los pasos: 10 ms (o 40-50 ms con ping alto)."
     ]
    },
    {
@@ -461,8 +461,8 @@
     "titulo": "Otros presets",
     "tipo": "lista",
     "items": [
-     "Preset «Comprobaciones de Stagger»: quita Tormenta helada (tecla 3) y pon **Explosión de divinidad** en la 5, a mano.",
-     "Preset «Leveling y solitario»: quita Tormenta helada (tecla 3) y pon **Barrera de acero** en la 5, a mano.",
+     "Preset «Comprobaciones de Stagger»: quita Tormenta helada (tecla Q) y pon **Explosión de divinidad** en la 6, a mano.",
+     "Preset «Leveling y solitario»: quita Tormenta helada (tecla Q) y pon **Barrera de acero** en la 6, a mano.",
      "La macro es la misma: pulsa las mismas teclas."
     ]
    },
@@ -484,7 +484,7 @@
      "Explosión retrasada.",
      "Llamas del infierno con la carga al máximo.",
      "Barrera de fuego y Tormenta helada sobre el jefe.",
-     "Mantén Clic izq. (Flecha en llamas) junto a la macro: rellena entre los hechizos caros y te devuelve Maná. Apertura a mano: pila E (Mejora elemental y Explosión retrasada), tecla 3 (Tormenta helada y Barrera de fuego bajo el jefe), Llamas del infierno cargada (1) y la macro."
+     "Mantén Clic izq. (Flecha en llamas) junto a la macro: la macro también la lanza entre los hechizos caros y te devuelve Maná. La macro pulsa E (buffs), Q (Voto y los dos suelos bajo el jefe), 1 (fuego), 2 (hielo) y 3 (Llamas sin puntería, sale sola en el stagger). A mano solo Llamas del infierno cargada (4)."
     ]
    },
    {

@@ -524,7 +524,7 @@
     "tipo": "lista",
     "items": [
      "Emboscada dentro de la pila E o fuera (algunos la quitan: ~3 % del daño).",
-     "Desenfreno de tormenta a mano o como 2.º paso de la macro (meta coreana, para cancelar animaciones)."
+     "Entre ventanas: guarda Pacto de celeridad y Colmillo salvaje para el siguiente Clon ilusorio (más burst) o úsalos al salir (daño más estable). En combates cortos, guárdalos."
     ]
    },
    {
@@ -532,8 +532,8 @@
     "titulo": "Otros presets",
     "tipo": "lista",
     "items": [
-     "Preset «Progresión y combates nuevos»: quita Puñal de Triniel (tecla 1) y pon **Postura de evasión** en la 5, a mano.",
-     "Preset «Farmeo y subida de nivel»: quita Puñal de Triniel (tecla 1) y pon **Tiro de daga sombría** en la 5, a mano.",
+     "Preset «Progresión y combates nuevos»: quita Puñal de Triniel (tecla 1) y pon **Postura de evasión** en la 6, a mano.",
+     "Preset «Farmeo y subida de nivel»: quita Puñal de Triniel (tecla 1) y pon **Tiro de daga sombría** en la 6, a mano.",
      "La macro es la misma: pulsa las mismas teclas."
     ]
    },
@@ -552,11 +552,11 @@
     "titulo": "Ventana de burst",
     "tipo": "pasos",
     "items": [
-     "Ponte a la espalda del jefe con el 4 (Ataque sigiloso; si el objetivo queda aturdido, otra pulsación del 4 lanza Caída sombría).",
-     "Pulsa la pila del 1 varias veces: Pacto de celeridad, Clon ilusorio y Colmillo salvaje (pone las 5 Insignias de golpe).",
+     "Ponte a la espalda del jefe con el 2 (Ataque sigiloso). Para moverte, la pila del 4 (Corte torbellino, Infiltración y Caída sombría); para acercarte, Corte de destello (3).",
+     "Pulsa la pila del 1 varias veces: Clon ilusorio, Pacto de celeridad y Colmillo salvaje (pone las 5 Insignias de golpe).",
      "Una pulsación más del 1 y sale Puñal de Triniel, por el −10% a todos tus enfriamientos.",
      "Mantén la macro: Estocada al corazón sale en cada pulsación y Corte rápido acorta Explosión de insignia.",
-     "Si el jefe entra en stagger: Desenfreno de tormenta (tecla 2)."
+     "Si el jefe entra en stagger: Desenfreno de tormenta (tecla 5), metiendo Corte rápido entre medias."
     ]
    },
    {
@@ -571,7 +571,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Nunca en la macro: los cuatro estigmas (pila del 1, a mano; Pacto de celeridad sale primero y su velocidad acorta la animación de Clon ilusorio). Rugido bestial va arriba del todo en la línea de daño: solo sale cuando todo lo demás está en enfriamiento. Pulsa tú también Clic izq. (Corte rápido): cada golpe acorta Explosión de insignia."
+    "texto": "Nunca en la macro: los cuatro estigmas (pila del 1, a mano; desde la macro los buffs se desincronizan). Rugido bestial va arriba del todo en la línea de daño: solo sale cuando todo lo demás está en enfriamiento. Pulsa tú también Clic izq. (Corte rápido): cada golpe acorta Explosión de insignia."
    },
    {
     "tipo": "aviso",

@@ -444,8 +444,8 @@
     "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
     "tipo": "lista",
     "items": [
-     "Pila Q con Embestida decadente abajo o con Aniquilación abajo.",
-     "Estacazo de amparo en la macro o guardado para golpes fuertes."
+     "Escudo de perdición abajo de la pila E: abre el combate y da más daño (está en el preset «Solitario y mundo abierto»).",
+     "Pila Q con Embestida decadente abajo o con Aniquilación abajo."
     ]
    },
    {
@@ -453,8 +453,8 @@
     "titulo": "Otros presets",
     "tipo": "lista",
     "items": [
-     "Preset «Diarias y partidas sin Stagger»: quita Castigo empíreo (tecla 3) y pon **Escudo de perdición** en la 3, a mano.",
-     "Preset «Solitario y mundo abierto»: quita Provocación (tecla 2), Armadura de nobleza (tecla 5) y pon **Escudo de perdición** en la 2, **Estandarte del campo de batalla** en la 5, a mano.",
+     "Preset «Diarias y partidas sin Stagger»: quita Castigo empíreo (tecla 2) y pon **Escudo de perdición** en la 7, a mano.",
+     "Preset «Solitario y mundo abierto»: quita Provocación (tecla 5), Armadura de nobleza (tecla 4) y pon **Escudo de perdición** en la 5, **Estandarte del campo de batalla** en la 4, a mano.",
      "La macro es la misma: pulsa las mismas teclas."
     ]
    },

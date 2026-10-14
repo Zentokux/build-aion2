@@ -553,7 +553,7 @@
     "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
     "tipo": "lista",
     "items": [
-     "Macro «E → Clic izq.» o solo «E» con Clic izq. mantenido.",
+     "Macro «E → Q» (Golpe incandescente en su propia pila) o «E → Clic izq.» con Golpe incandescente arriba de la E e Ira de Marchutan suelta en una tecla.",
      "Skill Queue activado o desactivado (choca con el cancel de Fractura trituradora)."
     ]
    },
@@ -562,8 +562,8 @@
     "titulo": "Otros presets",
     "tipo": "lista",
     "items": [
-     "Preset «Sin Clérigo en el grupo»: quita Defensa concentrada (tecla 6), Ira de Marchutan (tecla 2) y pon **Proclama de esprint** en la 6, **Toque de recobro** en la 2, a mano.",
-     "Preset «Diarias y farmeo»: quita Defensa concentrada (tecla 6) y pon **Proclama de esprint** en la 6, a mano.",
+     "Preset «Sin Clérigo en el grupo»: quita Defensa concentrada (tecla 5), Ira de Marchutan (tecla E) y pon **Proclama de esprint** en la 5, **Toque de recobro** en la 7, a mano.",
+     "Preset «Diarias y farmeo»: quita Defensa concentrada (tecla 5) y pon **Proclama de esprint** en la 5, a mano.",
      "La macro es la misma: pulsa las mismas teclas."
     ]
    },
@@ -656,7 +656,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "NUNCA metas un mantra en una macro: la segunda pulsación lo desactiva. A mano también: Ira de Marchutan, Defensa concentrada, Hechizo de recobro, Golpe ondulatorio y los acercamientos."
+    "texto": "NUNCA metas un mantra en una macro: la segunda pulsación lo desactiva. A mano también: Defensa concentrada, Hechizo de recobro, Golpe ondulatorio y los acercamientos. Ira de Marchutan va dentro de la pila E (3.ª), como abridor de reserva."
    },
    {
     "tipo": "aviso",

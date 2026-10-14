@@ -430,7 +430,7 @@ function pintarColeccionables(C, filasStats) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  cargarScript("data/builds/" + c + ".js?v=6", pintarClase, function () {
+  cargarScript("data/builds/" + c + ".js?v=7", pintarClase, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
 })();
