@@ -1,15 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap");
 :root {
-  --fondo: #0d1118;
-  --panel: #151b26;
-  --panel2: #1b2230;
-  --borde: #263042;
-  --texto: #dfe5ee;
-  --suave: #8f9bb0;
-  --oro: #e6b440;
-  --oro-suave: rgba(230, 180, 64, .14);
-  --azul: #5aa9ff;
+  --fondo: #080b13;
+  --panel: rgba(15, 20, 33, .80);
+  --panel2: rgba(30, 36, 58, .86);
+  --borde: rgba(196, 160, 98, .20);
+  --texto: #e4e8f1;
+  --suave: #9ba6bd;
+  --oro: #ecb94f;
+  --oro2: #f8dc94;
+  --oro-suave: rgba(236, 185, 79, .13);
+  --azul: #6cc6ff;
+  --violeta: #a985ff;
   --rojo: #ff7a6b;
   --verde: #5fd18b;
+  --img: none;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -142,3 +146,77 @@ table.pilas td small { color: var(--suave); }
 
 footer { border-top: 1px solid var(--borde); color: var(--suave); font-size: 13px; text-align: center; padding: 20px 16px; }
 table.pilas .item { white-space: nowrap; display: inline-block; margin: 2px 8px 2px 0; }
+
+/* ===== tema AION: fondo del juego por sección, cristal y oro ===== */
+body { background: var(--fondo); position: relative; min-height: 100vh; }
+body::before {
+  content: ""; position: fixed; inset: 0; z-index: -2;
+  background: var(--img) center 30% / cover no-repeat;
+  filter: saturate(1.1);
+}
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: -1;
+  background:
+    radial-gradient(ellipse at 15% 0%, rgba(108, 198, 255, .14), transparent 55%),
+    radial-gradient(ellipse at 90% 10%, rgba(169, 133, 255, .14), transparent 50%),
+    linear-gradient(180deg, rgba(8, 11, 19, .55) 0%, rgba(8, 11, 19, .80) 380px, rgba(8, 11, 19, .87) 100%);
+}
+header.top {
+  background: linear-gradient(90deg, rgba(10, 14, 26, .92), rgba(22, 18, 40, .92));
+  border-bottom: 1px solid rgba(236, 185, 79, .35);
+  box-shadow: 0 2px 18px rgba(0, 0, 0, .45);
+}
+header.top .logo { font-family: Cinzel, Georgia, serif; font-size: 17px; letter-spacing: 1px; }
+header.top .logo span, h1 span {
+  background: linear-gradient(180deg, var(--oro2), var(--oro) 55%, #b9822a);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+header.top nav a:hover, header.top nav a.on {
+  background: linear-gradient(180deg, rgba(236, 185, 79, .22), rgba(236, 185, 79, .08));
+  color: var(--oro2); box-shadow: inset 0 -2px 0 var(--oro);
+}
+h1 {
+  font-family: Cinzel, Georgia, serif; font-size: 34px; letter-spacing: .5px; color: #fff;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, .8), 0 0 26px rgba(236, 185, 79, .25);
+}
+h2 {
+  font-family: Cinzel, Georgia, serif; letter-spacing: .4px; color: var(--oro2);
+  border-bottom: 0; position: relative; text-shadow: 0 2px 10px rgba(0, 0, 0, .7);
+}
+h2::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
+  background: linear-gradient(90deg, var(--oro), rgba(169, 133, 255, .5) 45%, transparent);
+}
+h3 { color: #fff; }
+.sub { color: #b9c2d6; text-shadow: 0 1px 6px rgba(0, 0, 0, .8); }
+.panel, .tarjeta, .guia-link, .tabla-scroll, .barra-box, .tarjeta-build {
+  backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px);
+}
+.panel, .tarjeta, .guia-link { box-shadow: 0 4px 18px rgba(0, 0, 0, .35); }
+.tarjeta, .guia-link { transition: border-color .2s, transform .2s, box-shadow .2s; }
+.tarjeta:hover, .guia-link:hover {
+  border-color: var(--oro); transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, .5), 0 0 0 1px rgba(236, 185, 79, .35), 0 0 22px rgba(236, 185, 79, .18);
+}
+.tarjeta img { box-shadow: 0 0 0 1px rgba(236, 185, 79, .35); }
+table { background: var(--panel); border-radius: 8px; overflow: hidden; }
+th { background: linear-gradient(180deg, rgba(48, 44, 82, .95), rgba(30, 32, 56, .95)); color: var(--oro2); border-bottom: 1px solid rgba(236, 185, 79, .35); }
+tr:hover td { background: rgba(236, 185, 79, .05); }
+.aviso { background: linear-gradient(90deg, rgba(236, 185, 79, .16), rgba(15, 20, 33, .80)); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.chip, .tipo { background: rgba(30, 36, 58, .9); }
+footer { background: rgba(8, 11, 19, .85); }
+
+/* portada del inicio */
+.portada {
+  position: relative; margin: 0 0 18px; padding: 54px 26px 30px; border-radius: 14px; overflow: hidden;
+  border: 1px solid rgba(236, 185, 79, .35); box-shadow: 0 10px 40px rgba(0, 0, 0, .55);
+  background: linear-gradient(90deg, rgba(8, 11, 19, .88) 0%, rgba(8, 11, 19, .55) 55%, rgba(8, 11, 19, .1) 100%), url("../img/fondos/cielo.webp") center 35% / cover;
+}
+.portada h1 { font-size: 46px; margin: 0 0 8px; }
+.portada .sub { max-width: 620px; font-size: 16px; margin: 0; }
+.accesos { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; margin-bottom: 6px; }
+@media (max-width: 600px) {
+  .portada { padding: 34px 16px 20px; }
+  .portada h1 { font-size: 32px; }
+  h1 { font-size: 27px; }
+}

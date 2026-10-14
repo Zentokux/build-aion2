@@ -49,10 +49,24 @@ function bloquesHTML(bloques) {
   }).join("");
 }
 
+// fondo del juego según la sección (img/fondos)
+var FONDOS = {
+  inicio: "catedral", temporizador: "atreia", mapa: "bosque", guias: "cielo",
+  assassin: "magia-hielo", gladiator: "golem", templar: "raid", ranger: "selva",
+  sorcerer: "alas-fuego", spiritmaster: "abismo-agua", cleric: "clerigo", chanter: "hechizo",
+  "getting-started": "cielo", progression: "selva", dungeons: "gruta", raids: "raid", pvp: "alas-fuego", economy: "catedral"
+};
+function ponerFondo(activa) {
+  var g = new URLSearchParams(location.search).get("g");
+  var k = activa === "guias" && g ? g.split("__")[0] : activa;
+  document.documentElement.style.setProperty("--img", 'url("../img/fondos/' + (FONDOS[k] || "cielo") + '.webp")');
+}
+
 function cabecera(activa) {
+  ponerFondo(activa);
   var links = [["index.html", "Inicio", "inicio"]].concat(
     CLASES.map(function (c) { return ["clase.html?c=" + c.id, c.nombre, c.id]; }),
-    [["index.html#guias", "Guías", "guias"], ["temporizador.html?v=7", "Temporizador", "temporizador"], ["mapa-cubos.html", "Mapa de cubos", "mapa"]]
+    [["index.html#guias", "Guías", "guias"], ["temporizador.html?v=8", "Temporizador", "temporizador"], ["mapa-cubos.html", "Mapa de cubos", "mapa"]]
   );
   document.body.insertAdjacentHTML("afterbegin",
     '<header class="top"><div class="in"><a class="logo" href="index.html">BUILD <span>AION2</span></a><nav>' +
