@@ -2,3 +2,5 @@
 tools/
 respaldo/
 __pycache__/
+.claude/
+CLAUDE.md
