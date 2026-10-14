@@ -81,6 +81,12 @@ td small { display: block; color: var(--suave); }
   </table></div>
   <div class="aviso">🔔 = te avisa ese evento: sonido, cartel en la página, título de la pestaña parpadeando y notificación de Windows (aunque estés en el juego o en otra pestaña). La página tiene que estar abierta. <b>SIN CONFIRMAR</b> = las fuentes no coinciden: mira el reloj del minimapa la primera vez.</div>
   <div class="aviso">NCSOFT no ha publicado los horarios globales; son los que recogen los jugadores (octubre de 2026). El Festival de Shugo pasó de :15/:45 a <b>en punto</b>. Los reinicios van a las 07:00 UTC fijas: con el cambio de hora de EE. UU. (1-nov) y Europa (25-oct) se mueven en tu reloj.</div>
+  <h2>Por tiempo limitado</h2>
+  <div class="tabla-scroll"><table>
+    <thead><tr><th>Evento u oferta</th><th>Qué hacer</th><th>Hasta</th><th>Quedan</th></tr></thead>
+    <tbody id="temporada"></tbody>
+  </table></div>
+  <div class="aviso">Terminan con el mantenimiento de ese día (parche del 14 de octubre de 2026). Las fechas cambian según la región: NA y Sudamérica un día antes que Europa.</div>
 </main>
 <script src="js/comun.js?v=6"></script>
 <script>
@@ -275,8 +281,28 @@ td small { display: block; color: var(--suave); }
     }
   });
 
+  // eventos y ofertas por tiempo limitado: fin = día del mantenimiento (NA / EU)
+  var TEMPORADA = [
+    { nombre: "Trick or Treat (Halloween)", nota: "Evento", que: "Entra cada día: monedas de calabaza (más los días 7 y 14). Pestaña «Evento» en las misiones de temporada. El mercader de monedas de cada ciudad vende Odyle Energy, piedras de grieta, tickets de Pesadilla y cristales de vida. Fabrica llaves de caramelo con la transformación de sustancias del evento y ábrelas.", na: [2026, 11, 3], eu: [2026, 11, 4] },
+    { nombre: "Conquistadores del Abismo", nota: "Oferta · nivel 45+", que: "Piedras de grieta del Abismo (evento) a 50.000 kina, máx. 7 por personaje a la semana.", na: [2026, 10, 27], eu: [2026, 10, 28] },
+    { nombre: "Piedra de grieta del Abismo inferior (Bound)", nota: "Oferta", que: "En Tienda → Mercaderes del viento → Especial, durante dos semanas.", na: [2026, 10, 27], eu: [2026, 10, 28] }
+  ];
+  var ultimaTemporada = "", MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+  function pintarTemporada(ahora, zona) {
+    var p = partes(ahora, zona), hoy = Date.UTC(p.y, p.m - 1, p.d), html = "";
+    TEMPORADA.forEach(function (t) {
+      var f = sel.value === "eu" ? t.eu : t.na, dias = Math.round((Date.UTC(f[0], f[1] - 1, f[2]) - hoy) / 864e5);
+      if (dias < 0) return;
+      html += "<tr><td><b>" + esc(t.nombre) + "</b><small>" + esc(t.nota) + "</small></td><td>" + esc(t.que) + "</td>" +
+        "<td>" + f[2] + "-" + MESES[f[1] - 1] + "</td><td>" + (dias === 0 ? "termina hoy" : dias === 1 ? "1 día" : dias + " días") + "</td></tr>";
+    });
+    html = html || '<tr><td colspan="4">Nada por ahora.</td></tr>';
+    if (html !== ultimaTemporada) { document.getElementById("temporada").innerHTML = html; ultimaTemporada = html; }
+  }
+
   function pintar() {
     var ahora = Date.now(), zona = REGIONES[sel.value];
+    pintarTemporada(ahora, zona);
     document.getElementById("hora-tuya").textContent = hhmmss(ahora, miZona);
     document.getElementById("hora-server").textContent = hhmmss(ahora, zona);
     var filas = EVENTOS.map(function (ev) { return { ev: ev, s: siguiente(ev, ahora, zona) }; })

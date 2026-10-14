@@ -15,7 +15,7 @@
 (function () {
   var g = param("g");
   cabecera("guias");
-  cargarScript("data/guias/" + g + ".js?v=3", function () {
+  cargarScript("data/guias/" + g + ".js?v=4", function () {
     var G = window.GUIA, main = document.getElementById("main");
     document.title = G.titulo + " · BUILD AION2";
     var misma = (window.INDICE || []).filter(function (x) { return x.categoria === G.categoria && x.slug !== G.slug; });
