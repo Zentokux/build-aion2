@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ajustes de objetivo · BUILD AION2</title>
+<meta name="description" content="Cómo configurar en PC el fijado y la selección de enemigos en AION 2 Global, para clases cuerpo a cuerpo y a distancia, con dibujos.">
+<link rel="stylesheet" href="css/estilo.css?v=7">
+<style>
+.modo { position: sticky; top: 0; z-index: 5; display: flex; gap: 8px; padding: 10px 0; margin: 6px 0 4px; background: linear-gradient(rgba(10, 13, 22, .92), rgba(10, 13, 22, .80)); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.modo button { flex: 1 1 0; background: var(--panel2); color: var(--texto); border: 1px solid var(--borde); border-radius: 8px; padding: 9px 12px; font: inherit; font-weight: 700; cursor: pointer; text-align: left; }
+.modo button:hover, .modo button.activa { border-color: var(--oro); }
+.modo button.activa { color: var(--oro); background: var(--oro-suave); }
+.modo .ics { display: flex; gap: 4px; margin-top: 5px; flex-wrap: wrap; align-items: center; }
+.modo .ics img { width: 26px; height: 26px; border-radius: 5px; }
+.modo .ics small { font-weight: 400; color: var(--suave); font-size: 12px; margin-left: 4px; }
+@media (max-width: 600px) { .modo .ics small { display: none; } .modo button { padding: 7px 8px; font-size: 14px; } }
+
+.ruta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 4px 0 10px; font-size: 14px; }
+.ruta span { background: var(--panel2); border: 1px solid var(--borde); border-radius: 6px; padding: 3px 10px; }
+.ruta span:last-child { border-color: var(--oro); color: var(--oro); font-weight: 700; }
+.ruta i { color: var(--suave); font-style: normal; }
+
+.menu { background: linear-gradient(180deg, rgba(20, 24, 40, .92), rgba(12, 15, 26, .92)); border: 1px solid rgba(236, 185, 79, .35); border-radius: 10px; overflow: hidden; box-shadow: 0 6px 24px rgba(0, 0, 0, .45); margin: 8px 0 16px; }
+.fila { display: grid; grid-template-columns: minmax(200px, 1.1fr) auto minmax(220px, 1.6fr); gap: 14px; align-items: center; padding: 11px 14px; border-bottom: 1px solid var(--borde); }
+.fila:last-child { border-bottom: 0; }
+.fila .nom b { display: block; color: #fff; }
+.fila .nom small { color: var(--suave); font-size: 12px; }
+.fila .por { color: #c6cde0; font-size: 14px; line-height: 1.4; }
+.fila .ctl { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+.fila.dif { background: linear-gradient(90deg, rgba(236, 185, 79, .10), transparent 60%); }
+.etq { display: inline-block; font-size: 11px; font-weight: 700; border-radius: 4px; padding: 0 6px; margin-left: 6px; vertical-align: 1px; background: rgba(236, 185, 79, .18); color: var(--oro); }
+.etq.opc { background: rgba(108, 198, 255, .15); color: var(--azul); }
+.fila.flash { animation: flash .9s ease; }
+@keyframes flash { 0% { background: rgba(236, 185, 79, .35); } 100% { background: transparent; } }
+@media (max-width: 760px) {
+  .fila { grid-template-columns: 1fr; gap: 6px; }
+  .seg { max-width: 100%; }
+  .seg span { white-space: normal; text-align: center; }
+}
+
+.sw { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: 13px; }
+.sw i { position: relative; width: 46px; height: 24px; border-radius: 12px; background: #3a4058; border: 1px solid #555d7a; transition: background .3s; }
+.sw i::after { content: ""; position: absolute; top: 2px; left: 2px; width: 18px; height: 18px; border-radius: 50%; background: #aab2c8; transition: left .3s, background .3s; }
+.sw.on i { background: linear-gradient(90deg, #b8862e, var(--oro)); border-color: var(--oro2); }
+.sw.on i::after { left: 24px; background: #fff; }
+.sw.on { color: var(--oro); }
+.sw.off { color: var(--suave); }
+.sub-sw { display: flex; flex-direction: column; gap: 4px; padding-left: 10px; border-left: 2px solid var(--borde); font-size: 12px; }
+.sub-sw .sw { font-size: 12px; }
+.sub-sw .sw i { width: 34px; height: 18px; }
+.sub-sw .sw i::after { width: 12px; height: 12px; }
+.sub-sw .sw.on i::after { left: 18px; }
+.seg { display: inline-flex; border: 1px solid #555d7a; border-radius: 7px; overflow: hidden; }
+.seg span { padding: 4px 10px; font-size: 13px; color: var(--suave); background: #23283d; white-space: nowrap; }
+.seg span + span { border-left: 1px solid #555d7a; }
+.seg span.on { background: linear-gradient(180deg, #f2c665, #c08d2f); color: #1a1408; font-weight: 800; }
+
+.dibujos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 12px; margin: 10px 0 16px; }
+.dib { background: var(--panel); border: 1px solid var(--borde); border-radius: 10px; padding: 10px; backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px); }
+.dib.bien { border-color: rgba(95, 209, 139, .6); }
+.dib.mal { border-color: rgba(255, 122, 107, .5); }
+.dib h4 { margin: 2px 4px 6px; font-size: 15px; }
+.dib.bien h4 { color: var(--verde); }
+.dib.mal h4 { color: var(--rojo); }
+.dib svg { display: block; width: 100%; height: auto; }
+.dib p { margin: 6px 4px 2px; font-size: 14px; color: #c6cde0; }
+svg text { font-family: "Segoe UI", system-ui, sans-serif; }
+
+.solo-m, .solo-r { display: none; }
+body.m .solo-m, body.r .solo-r { display: block; }
+.solo-m-i, .solo-r-i { display: none; }
+body.m .solo-m-i, body.r .solo-r-i { display: inline; }
+ol.pasos-juego.solo-m, ol.pasos-juego.solo-r { display: none; }
+body.m ol.pasos-juego.solo-m, body.r ol.pasos-juego.solo-r { display: grid; }
+.pasos-juego { counter-reset: p; list-style: none; padding: 0; margin: 8px 0 16px; display: grid; gap: 8px; }
+.pasos-juego li { counter-increment: p; position: relative; background: var(--panel); border: 1px solid var(--borde); border-radius: 8px; padding: 9px 12px 9px 46px; margin: 0; }
+.pasos-juego li::before { content: counter(p); position: absolute; left: 10px; top: 8px; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: var(--oro-suave); border: 1px solid var(--oro); color: var(--oro); font-weight: 800; }
+.prio { list-style: none; padding: 0; margin: 6px 0; display: grid; gap: 5px; max-width: 460px; }
+.prio li { display: flex; gap: 10px; align-items: center; background: var(--panel2); border: 1px solid var(--borde); border-radius: 6px; padding: 6px 10px; margin: 0; }
+.prio li b { width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; background: var(--oro-suave); color: var(--oro); flex: none; font-size: 13px; }
+.prio li.top { border-color: var(--oro); }
+.prio li.abajo { opacity: .8; border-style: dashed; }
+.prio li.puntos { background: none; border: 0; color: var(--suave); padding: 0 10px; }
+.orient { display: flex; gap: 10px; flex-wrap: wrap; margin: 8px 0 16px; }
+.orient > div { display: flex; gap: 10px; align-items: center; background: var(--panel); border: 1px solid var(--borde); border-radius: 8px; padding: 8px 12px; flex: 1 1 180px; }
+.orient img { width: 40px; height: 40px; border-radius: 6px; }
+.orient b { display: block; color: #fff; }
+.orient span { color: var(--oro); font-weight: 800; }
+</style>
+</head>
+<body class="m">
+<main id="main">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<marker id="fr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ff7a6b"/></marker>
+<marker id="fv" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5fd18b"/></marker>
+<marker id="fo" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#ecb94f"/></marker>
+<marker id="fm" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#a985ff"/></marker>
+</defs></svg>
+  <h1>Ajustes de objetivo (PC)</h1>
+  <p class="sub">Lo que viene por defecto te deja el objetivo pegado y el Tab elige mobs que tienes detrás. Así se arregla. Elige tu tipo de clase: lo dorado es lo que tienes que poner.</p>
+
+  <div class="modo" id="modo">
+    <button data-m="m">⚔ Cuerpo a cuerpo<div class="ics" id="ics-m"></div></button>
+    <button data-m="r">🏹 A distancia<div class="ics" id="ics-r"></div></button>
+  </div>
+
+  <h2 id="controles">1. Controles</h2>
+  <div class="ruta"><span>Esc</span><i>›</i><span>Configuración</span><i>›</i><span>Combate</span><i>›</i><span>Controles</span></div>
+  <div class="menu" id="menu-controles"></div>
+
+  <div class="solo-m">
+    <h3>Por qué apagar «Fijar objetivo al atacar» en cuerpo a cuerpo</h3>
+    <div class="dibujos">
+      <div class="dib mal"><h4>✗ Encendido (por defecto)</h4>
+        <svg viewBox="0 0 320 190" role="img" aria-label="Encendido: el objetivo se queda en el primer mob aunque gires la cámara">
+          <path d="M160 160 L95 40 A130 130 0 0 1 225 40 Z" fill="rgba(169,133,255,.13)" stroke="rgba(169,133,255,.45)"/>
+          <g fill="#c94a3c"><circle cx="70" cy="70" r="13"/><circle cx="165" cy="48" r="13"/><circle cx="250" cy="78" r="13"/></g>
+          <ellipse cx="70" cy="82" rx="20" ry="7" fill="none" stroke="#ecb94f" stroke-width="3"/>
+          <path d="M57 58 l-8 -8 M83 58 l8 -8" stroke="#ecb94f" stroke-width="3"/>
+          <circle cx="160" cy="160" r="12" fill="#ecb94f"/><text x="160" y="185" fill="#e4e8f1" font-size="12" text-anchor="middle">Tú</text>
+          <path d="M150 152 Q110 120 80 88" fill="none" stroke="#ff7a6b" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#fr)"/>
+          <text x="165" y="22" fill="#9ba6bd" font-size="12" text-anchor="middle">Miras aquí…</text>
+          <text x="8" y="112" fill="#ff7a6b" font-size="12">…pero pegas aquí</text>
+        </svg>
+        <p>El primer golpe lo deja fijado. Aunque gires la cámara, sigues pegándole a ese.</p>
+      </div>
+      <div class="dib bien"><h4>✓ Apagado</h4>
+        <svg viewBox="0 0 320 190" role="img" aria-label="Apagado: pegas al mob que tienes delante de la cámara">
+          <path d="M160 160 L95 40 A130 130 0 0 1 225 40 Z" fill="rgba(169,133,255,.13)" stroke="rgba(169,133,255,.45)"/>
+          <g fill="#c94a3c"><circle cx="70" cy="70" r="13"/><circle cx="165" cy="48" r="13"/><circle cx="250" cy="78" r="13"/></g>
+          <ellipse cx="165" cy="60" rx="20" ry="7" fill="none" stroke="#fff" stroke-width="2.5" stroke-dasharray="4 3"/>
+          <circle cx="160" cy="160" r="12" fill="#ecb94f"/><text x="160" y="185" fill="#e4e8f1" font-size="12" text-anchor="middle">Tú</text>
+          <path d="M160 146 L164 72" stroke="#5fd18b" stroke-width="3" marker-end="url(#fv)"/>
+          <text x="165" y="22" fill="#5fd18b" font-size="12" text-anchor="middle">Miras aquí y pegas aquí</text>
+          <path d="M215 150 Q270 135 262 100" fill="none" stroke="#9ba6bd" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#fo)"/>
+          <text x="196" y="172" fill="#9ba6bd" font-size="11">giras → cambias de mob</text>
+        </svg>
+        <p>Pegas al que tienes delante. Giras la cámara y pasas al siguiente sin parar. Al jefe lo fijas con <b>Tab</b>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="solo-r">
+    <h3>Por qué apagar «Perseguir objetivo» a distancia</h3>
+    <div class="dibujos">
+      <div class="dib mal"><h4>✗ Encendido</h4>
+        <svg viewBox="0 0 320 170" role="img" aria-label="Encendido: el personaje corre hacia el mob y se mete en el grupo">
+          <g fill="#c94a3c"><circle cx="262" cy="60" r="12"/><circle cx="285" cy="95" r="12"/><circle cx="250" cy="110" r="12"/></g>
+          <circle cx="262" cy="60" r="62" fill="rgba(255,122,107,.08)" stroke="rgba(255,122,107,.4)" stroke-dasharray="5 4"/>
+          <circle cx="40" cy="120" r="12" fill="#ecb94f" opacity=".35"/><text x="40" y="150" fill="#9ba6bd" font-size="11" text-anchor="middle">estabas aquí</text>
+          <path d="M55 116 L196 80" stroke="#ff7a6b" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#fr)"/>
+          <circle cx="210" cy="76" r="12" fill="#ecb94f"/>
+          <text x="120" y="78" fill="#ff7a6b" font-size="12" text-anchor="middle" transform="rotate(-14 120 78)">corre solo</text>
+          <text x="232" y="160" fill="#ff7a6b" font-size="12" text-anchor="middle">te pegan todos</text>
+        </svg>
+        <p>Si lanzas una habilidad fuera de rango, el personaje corre hacia el mob y se mete en el grupo.</p>
+      </div>
+      <div class="dib bien"><h4>✓ Apagado</h4>
+        <svg viewBox="0 0 320 170" role="img" aria-label="Apagado: te quedas lejos y disparas">
+          <g fill="#c94a3c"><circle cx="262" cy="60" r="12"/><circle cx="285" cy="95" r="12"/><circle cx="250" cy="110" r="12"/></g>
+          <circle cx="40" cy="120" r="12" fill="#ecb94f"/><text x="40" y="150" fill="#e4e8f1" font-size="12" text-anchor="middle">Tú</text>
+          <path d="M55 116 L246 66" stroke="#5fd18b" stroke-width="3" marker-end="url(#fv)"/>
+          <rect x="112" y="72" width="60" height="20" rx="4" fill="#23283d" stroke="#5fd18b"/><text x="142" y="86" fill="#5fd18b" font-size="12" text-anchor="middle">22 m</text>
+          <text x="160" y="150" fill="#5fd18b" font-size="12" text-anchor="middle">te quedas lejos y disparas</text>
+        </svg>
+        <p>Te quedas donde estás. Si sale «fuera de rango», das un paso tú. Los metros salen sobre el objetivo (Mostrar distancia).</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="busqueda">2. Búsqueda de objetivo (Tab)</h2>
+  <div class="ruta"><span>Esc</span><i>›</i><span>Configuración</span><i>›</i><span>Combate</span><i>›</i><span>Búsqueda de objetivo</span></div>
+  <div class="menu" id="menu-busqueda"></div>
+
+  <div class="dibujos">
+    <div class="dib mal"><h4>✗ Ninguna (por defecto)</h4>
+      <svg viewBox="0 0 320 200" role="img" aria-label="Por defecto el Tab elige el mob más cercano aunque esté detrás">
+        <path d="M160 120 L100 20 A120 120 0 0 1 220 20 Z" fill="rgba(169,133,255,.13)" stroke="rgba(169,133,255,.45)"/>
+        <text x="160" y="16" fill="#9ba6bd" font-size="12" text-anchor="middle">cámara</text>
+        <circle cx="168" cy="45" r="13" fill="#c94a3c"/><text x="190" y="49" fill="#e4e8f1" font-size="12">el que miras</text>
+        <circle cx="140" cy="168" r="13" fill="#c94a3c"/>
+        <ellipse cx="140" cy="180" rx="20" ry="7" fill="none" stroke="#ecb94f" stroke-width="3"/>
+        <circle cx="160" cy="120" r="12" fill="#ecb94f"/><text x="180" y="124" fill="#e4e8f1" font-size="12">Tú</text>
+        <path d="M156 133 L146 152" stroke="#ff7a6b" stroke-width="3" marker-end="url(#fr)"/>
+        <text x="20" y="160" fill="#ff7a6b" font-size="12">Tab: el de atrás</text>
+        <text x="20" y="175" fill="#ff7a6b" font-size="12">(solo por estar</text>
+        <text x="20" y="190" fill="#ff7a6b" font-size="12">más cerca)</text>
+      </svg>
+    </div>
+    <div class="dib bien"><h4>✓ Delante de la cámara</h4>
+      <svg viewBox="0 0 320 200" role="img" aria-label="Delante de la cámara: el Tab elige el mob que miras">
+        <path d="M160 120 L100 20 A120 120 0 0 1 220 20 Z" fill="rgba(169,133,255,.13)" stroke="rgba(169,133,255,.45)"/>
+        <text x="160" y="16" fill="#9ba6bd" font-size="12" text-anchor="middle">cámara</text>
+        <circle cx="168" cy="45" r="13" fill="#c94a3c"/>
+        <ellipse cx="168" cy="57" rx="20" ry="7" fill="none" stroke="#ecb94f" stroke-width="3"/>
+        <circle cx="140" cy="168" r="13" fill="#c94a3c" opacity=".6"/>
+        <circle cx="160" cy="120" r="12" fill="#ecb94f"/><text x="180" y="124" fill="#e4e8f1" font-size="12">Tú</text>
+        <path d="M162 106 L167 66" stroke="#5fd18b" stroke-width="3" marker-end="url(#fv)"/>
+        <text x="196" y="49" fill="#5fd18b" font-size="12">Tab: el que miras</text>
+        <text x="20" y="185" fill="#9ba6bd" font-size="12">el de atrás no cuenta</text>
+      </svg>
+    </div>
+  </div>
+
+  <h3>Orden de prioridad (Configuración detallada)</h3>
+  <div class="dibujos">
+    <div class="dib"><h4>JcE: farmeo, mazmorras, jefes</h4>
+      <p>Déjalo en <b>Más cercano primero</b> (viene así). Con «Delante de la cámara» ya basta.</p>
+    </div>
+    <div class="dib"><h4>JcJ: Abismo, Grieta, asedio</h4>
+      <p>Elige <b>Orden de prioridad</b> y mueve con las flechas:</p>
+      <ol class="prio">
+        <li class="top"><b>1</b>Jugadores hostiles</li>
+        <li class="top"><b>2</b>Jugadores que me atacan</li>
+        <li class="puntos">… el resto como viene …</li>
+        <li class="abajo"><b>⤓</b>Espíritus de jugadores (abajo del todo)</li>
+      </ol>
+      <p>En global los espíritus vienen en 4.º y 6.º lugar: el Tab se queda en ellos en vez de en el jugador.</p>
+    </div>
+  </div>
+
+  <h2 id="teclas">3. Teclas</h2>
+  <div class="ruta"><span>Esc</span><i>›</i><span>Configuración</span><i>›</i><span>Configuración de teclas</span><i>›</i><span>General</span></div>
+  <div class="dibujos">
+    <div class="dib">
+      <svg viewBox="0 0 340 190" role="img" aria-label="Tab fija al jefe, botón central para jugador hostil y clic derecho para la macro">
+        <rect x="14" y="58" width="92" height="56" rx="9" fill="#2a3048" stroke="#ecb94f" stroke-width="2.5"/>
+        <rect x="14" y="58" width="92" height="50" rx="9" fill="#353c5a"/>
+        <text x="60" y="90" fill="#fff" font-size="20" font-weight="700" text-anchor="middle">Tab</text>
+        <text x="60" y="140" fill="#ecb94f" font-size="13" font-weight="700" text-anchor="middle">Fijar jefe</text>
+        <text x="60" y="157" fill="#9ba6bd" font-size="11" text-anchor="middle">(ya viene así)</text>
+        <path d="M200 20 h80 a40 40 0 0 1 40 40 v70 a50 50 0 0 1 -50 50 h-60 a50 50 0 0 1 -50 -50 v-70 a40 40 0 0 1 40 -40z" fill="#2a3048" stroke="#555d7a" stroke-width="2"/>
+        <path d="M240 20 v62 M160 82 h160" stroke="#555d7a" stroke-width="2"/>
+        <path d="M240 20 h40 a40 40 0 0 1 40 40 v22 h-80z" fill="rgba(236,185,79,.35)"/>
+        <rect x="231" y="34" width="18" height="34" rx="9" fill="#a985ff" stroke="#fff" stroke-width="2"/>
+        <text x="282" y="58" fill="#fff" font-size="12" text-anchor="middle">Macro</text>
+        <text x="200" y="58" fill="#9ba6bd" font-size="11" text-anchor="middle">pegar</text>
+        <path d="M240 51 L150 30" stroke="#a985ff" stroke-width="2" marker-end="url(#fm)"/>
+        <text x="148" y="20" fill="#a985ff" font-size="12" font-weight="700" text-anchor="end">Botón central:</text>
+        <text x="148" y="34" fill="#a985ff" font-size="12" text-anchor="end">jugador hostil (JcJ)</text>
+      </svg>
+    </div>
+    <div class="dib">
+      <h4>Qué poner</h4>
+      <div class="tabla-scroll"><table>
+        <tr><th>Acción</th><th>Tecla</th></tr>
+        <tr><td>Seleccionar jugador hostil <small style="color:var(--suave)">(Target Hostile Players)</small></td><td><b>Botón central</b> (viene sin tecla)</td></tr>
+        <tr><td>Macro</td><td><b>Clic derecho</b> (viene sin tecla)</td></tr>
+        <tr><td>Cambiar al enemigo más cercano</td><td><b>Tab</b> (ya viene así)</td></tr>
+      </table></div>
+    </div>
+  </div>
+
+  <h2 id="fijado">4. Cómo saber si está fijado</h2>
+  <div class="dibujos">
+    <div class="dib">
+      <h4>Suave: círculo blanco</h4>
+      <svg viewBox="0 0 300 150" role="img" aria-label="Fijado suave: círculo blanco bajo el enemigo">
+        <rect x="70" y="10" width="160" height="16" rx="3" fill="#23283d" stroke="#555d7a"/>
+        <rect x="72" y="12" width="110" height="12" rx="2" fill="#c94a3c"/>
+        <text x="150" y="44" fill="#e4e8f1" font-size="12" text-anchor="middle">Mob</text>
+        <circle cx="150" cy="70" r="13" fill="#c94a3c"/><rect x="136" y="84" width="28" height="34" rx="9" fill="#c94a3c"/>
+        <ellipse cx="150" cy="122" rx="38" ry="11" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="6 4"/>
+        <text x="150" y="145" fill="#9ba6bd" font-size="12" text-anchor="middle">cambia si giras la cámara</text>
+      </svg>
+    </div>
+    <div class="dib">
+      <h4>Fijado: dos flechas en la barra de vida</h4>
+      <svg viewBox="0 0 300 150" role="img" aria-label="Fijado duro: dos flechas a los lados de la barra de vida">
+        <rect x="70" y="10" width="160" height="16" rx="3" fill="#23283d" stroke="#ecb94f"/>
+        <rect x="72" y="12" width="110" height="12" rx="2" fill="#c94a3c"/>
+        <path d="M48 8 L64 18 L48 28 Z" fill="#ecb94f"/><path d="M252 8 L236 18 L252 28 Z" fill="#ecb94f"/>
+        <text x="150" y="44" fill="#e4e8f1" font-size="12" text-anchor="middle">Jefe</text>
+        <circle cx="150" cy="70" r="13" fill="#c94a3c"/><rect x="136" y="84" width="28" height="34" rx="9" fill="#c94a3c"/>
+        <ellipse cx="150" cy="122" rx="38" ry="11" fill="none" stroke="#ecb94f" stroke-width="3"/>
+        <text x="150" y="145" fill="#ecb94f" font-size="12" text-anchor="middle">se queda hasta que pulses Tab</text>
+      </svg>
+    </div>
+  </div>
+
+  <h2 id="jugar">5. Cómo se juega así</h2>
+  <ol class="pasos-juego solo-m">
+    <li><b>Grupos de mobs:</b> gira la cámara y pega. Cambias de mob solo con la cámara.</li>
+    <li><b>Jefe:</b> pulsa <b>Tab</b> una vez y ya no se suelta.</li>
+    <li><b>Adds del jefe:</b> Tab otra vez para cambiar; Tab de nuevo para volver al jefe.</li>
+  </ol>
+  <ol class="pasos-juego solo-r">
+    <li><b>Farmeo:</b> dispara sin marcar nada: la habilidad va al mob más cercano (Objetivo automático).</li>
+    <li><b>Jefe:</b> pulsa <b>Tab</b> una vez y ya no se suelta.</li>
+    <li><b>Distancia:</b> mira los metros sobre el objetivo; si sale «fuera de rango», acércate tú un paso.</li>
+  </ol>
+
+  <div class="solo-m">
+    <h3>Info en pantalla → Combate → Indicador de orientación del jefe</h3>
+    <div class="orient" id="orient"></div>
+  </div>
+
+  <div class="aviso"><b>Probar en el muñeco:</b> <span class="solo-r-i">a distancia, si te molesta que el objetivo salte de mob en mob, deja «Fijar objetivo al atacar» como está aquí; si prefieres cambiar con la cámara, apágalo como en cuerpo a cuerpo.</span><span class="solo-m-i">en cuerpo a cuerpo, «Perseguir objetivo» encendido te acerca solo al mob; pruébalo para farmear, pero en jefes apágalo para ponerte tú en la espalda.</span></div>
+  <p class="fuente">Los nombres del menú van en español con el nombre en inglés debajo, en gris, por si tu cliente lo dice distinto. Global, PC, modo de control AION 2.</p>
+</main>
+<script src="js/comun.js?v=13"></script>
+<script>
+cabecera("ajustes");
+var MELEE = ["assassin", "gladiator", "templar", "chanter"], RANGO = ["ranger", "sorcerer", "spiritmaster", "cleric"];
+// v: valor para cuerpo a cuerpo (m) y a distancia (r); true/false = interruptor, texto = opción elegida
+var CONTROLES = [
+  { es: "Modo de control", en: "Control Mode", ops: ["AION 1", "AION 2"], m: "AION 2", r: "AION 2",
+    por: "Apuntas con la cámara y puedes poner la macro en el clic derecho (en AION 1 no)." },
+  { es: "Objetivo apuntable", en: "Select Aimable Target", ops: ["Todos", "Hostil"], m: "Hostil", r: "Hostil",
+    por: "Que la mira no se quede en aliados ni en tu grupo." },
+  { es: "Mostrar distancia al objetivo", en: "Display Distance to Aimed Target", m: true, r: true,
+    por: "Sale a cuántos metros está el objetivo." },
+  { es: "Fijar objetivo principal al atacar", en: "Set Main Target Upon Attack", m: false, r: true,
+    sub: { r: [["Clic izquierdo", true], ["Clic derecho", false]] },
+    por: { m: "Apagado: pegas al que miras y pasas de mob en mob con la cámara. Al jefe, Tab.",
+           r: "Encendido solo con el clic izquierdo: el objetivo no salta mientras disparas y la macro (clic derecho) no lo cambia." } },
+  { es: "Objetivo automático al usar habilidad", en: "Auto Target Upon Skill Use", m: true, r: true,
+    por: "Sin nadie marcado, la habilidad va al más cercano: farmeas sin pulsar Tab. Apágalo en JcJ." },
+  { es: "Perseguir objetivo al usar habilidad", en: "Pursue Targets with Skill Activation", m: false, r: false, opc: "m",
+    por: { m: "Opcional. Apagado eliges tú dónde ponerte (la espalda del jefe).",
+           r: "Siempre apagado: si no, una habilidad fuera de rango te lleva corriendo al mob." } },
+  { es: "Cola de habilidades", en: "Skill Queue", m: true, r: true,
+    por: "Guarda la siguiente habilidad mientras acaba la actual. La macro va mejor." }
+];
+var BUSQUEDA = [
+  { es: "Dirección de búsqueda preferida", en: "Preferred Search Direction", ops: ["Ninguna", "Delante de la cámara"], m: "Delante de la cámara", r: "Delante de la cámara",
+    por: "El Tab elige al que miras, no al que tienes detrás. Es el cambio que más se nota." },
+  { es: "Orden de búsqueda", en: "Priority Ranking", ops: ["Más cercano primero", "Orden de prioridad"], m: "Más cercano primero", r: "Más cercano primero",
+    por: "En JcE déjalo así. Para JcJ, mira la lista de abajo." }
+];
+function sw(v) { return '<span class="sw ' + (v ? "on" : "off") + '"><i></i>' + (v ? "ON" : "OFF") + "</span>"; }
+function fila(f, modo) {
+  var v = f[modo], dif = JSON.stringify(f.m) !== JSON.stringify(f.r) || typeof f.por === "object";
+  var ctl = typeof v === "boolean" ? sw(v) :
+    '<span class="seg">' + f.ops.map(function (o) { return "<span" + (o === v ? ' class="on"' : "") + ">" + esc(o) + "</span>"; }).join("") + "</span>";
+  var sub = f.sub && f.sub[modo] ? '<div class="sub-sw">' + f.sub[modo].map(function (s) { return "<div>" + sw(s[1]) + " " + esc(s[0]) + "</div>"; }).join("") + "</div>" : "";
+  var etq = (f.opc === modo ? '<span class="etq opc">opcional</span>' : "") + (dif && f.m !== f.r ? '<span class="etq">cambia según clase</span>' : "");
+  return '<div class="fila' + (dif && f.m !== f.r ? " dif" : "") + '"><div class="nom"><b>' + esc(f.es) + etq + "</b><small>" + esc(f.en) + "</small></div>" +
+    '<div class="ctl">' + ctl + sub + '</div><div class="por">' + esc(typeof f.por === "object" ? f.por[modo] : f.por) + "</div></div>";
+}
+function iconos(ids) {
+  return ids.map(function (id) {
+    var c = CLASES.filter(function (x) { return x.id === id; })[0];
+    return '<img src="icons/clases/' + id + '.webp" alt="' + esc(c.nombre) + '" title="' + esc(c.nombre) + '">';
+  }).join("");
+}
+document.getElementById("ics-m").innerHTML = iconos(MELEE) + "<small>Sicario, Gladiador, Templario, Conjurador</small>";
+document.getElementById("ics-r").innerHTML = iconos(RANGO) + "<small>Ranger, Hechicero, Espiritualista, Clérigo</small>";
+document.getElementById("orient").innerHTML = [["assassin", "Espalda", "pegas por detrás"], ["gladiator", "Frente", ""], ["templar", "Frente", "tanque"], ["chanter", "Como quieras", ""]].map(function (o) {
+  var c = CLASES.filter(function (x) { return x.id === o[0]; })[0];
+  return '<div><img src="icons/clases/' + o[0] + '.webp" alt=""><div><b>' + esc(c.nombre) + "</b><span>" + esc(o[1]) + "</span>" + (o[2] ? ' <small style="color:var(--suave)">' + esc(o[2]) + "</small>" : "") + "</div></div>";
+}).join("");
+function guardar(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+function leer(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+function poner(modo, animar) {
+  if (modo !== "m" && modo !== "r") modo = "m";
+  document.body.className = modo;
+  document.getElementById("menu-controles").innerHTML = CONTROLES.map(function (f) { return fila(f, modo); }).join("");
+  document.getElementById("menu-busqueda").innerHTML = BUSQUEDA.map(function (f) { return fila(f, modo); }).join("");
+  document.querySelectorAll("#modo button").forEach(function (b) { b.classList.toggle("activa", b.dataset.m === modo); });
+  if (animar) document.querySelectorAll(".fila.dif").forEach(function (f) { f.classList.add("flash"); });
+  guardar("ajustes-modo", modo);
+  var h = modo === "m" ? "#melee" : "#rango";
+  if (location.hash !== h) history.replaceState(null, "", h);
+}
+function fijar() { var h = document.querySelector("header.top"); document.getElementById("modo").style.top = (h ? h.offsetHeight : 0) + "px"; }
+fijar();
+window.addEventListener("resize", fijar);
+document.querySelectorAll("#modo button").forEach(function (b) { b.onclick = function () { poner(b.dataset.m, true); }; });
+var h0 = location.hash === "#rango" ? "r" : location.hash === "#melee" ? "m" : leer("ajustes-modo");
+poner(h0 || "m", false);
+</script>
+</body>
+</html>

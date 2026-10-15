@@ -100,7 +100,7 @@ for html in *.html; do
 done
 
 printf "\n== Cache-buster en index.html ==\n"
-MISSING_V=$(grep -oE '(href|src)="[^"]*\.(js|css)"' index.html guia.html clase.html mapa-cubos.html temporizador.html 2>/dev/null | grep -v "\?v=" || true)
+MISSING_V=$(grep -oE '(href|src)="[^"]*\.(js|css)"' index.html guia.html clase.html mapa-cubos.html temporizador.html ajustes.html 2>/dev/null | grep -v "\?v=" || true)
 if [ -z "$MISSING_V" ]; then
   say_ok "todos los <script>/<link> locales tienen ?v="
 else
