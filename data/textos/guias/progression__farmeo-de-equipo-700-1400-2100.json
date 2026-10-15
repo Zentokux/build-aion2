@@ -1,0 +1,186 @@
+{
+ "slug": "progression__farmeo-de-equipo-700-1400-2100",
+ "categoria": "progression",
+ "titulo": "Farmeo de equipo: 700 → 1.400 → 2.100 → 2.800",
+ "resumen": "Plan exacto del servidor **global** (nivel 45): qué objetivos hacer, a qué jefes matar, qué pieza buscar y **en qué gastar cada punto de Odyle**. Resumen: de 700 a 1.400 casi todo es gratis (misiones y mapa); de 1.400 a 2.100, Vakron → Arcana → Urugugu; de 2.100 a 2.800, Horn Den, Fire Temple y Arcana dorada.",
+ "bloques": [
+  {
+   "tipo": "aviso",
+   "texto": "Cifras del global contadas por jugadores (octubre de 2026). Las guías de cada mazmorra de esta web traen cifras de Corea (1.600, 2.200…): para el global vale esta. Si la pantalla de entrada dice otra cosa, manda la pantalla."
+  },
+  {
+   "titulo": "Tu energía Odyle: las cuentas",
+   "tipo": "tabla",
+   "columnas": ["Qué", "Dato"],
+   "filas": [
+    ["Cuánta sale", "**+15 cada 3 h = 120 al día** (también desconectado)"],
+    ["Cuánto cuesta un cofre", "**40** (abrir el cubo al final). Terminar la mazmorra sin abrirlo no cuesta nada"],
+    ["Cofres al día", "**3**"],
+    ["Tope", "**560** (840 con membresía). Lleno = lo que regenera se pierde: no la dejes en el tope más de 4 días"],
+    ["Membresía", "Deja abrir el cofre final 2 veces por partida (cada vez cuesta 40): mismas cuentas, la mitad de partidas"],
+    ["Conseguir más", "Substance Morph: 25 Odyle + 5 Odyle fina + 1 Odyle pura + 50.000 Kina = 40. Con membresía, el mercader de Brisa de viento vende cada semana"],
+    ["Cuánto tarda cada pity", "Exploration 3 cofres = **1 día** · 14 cofres = ~5 días · 21 = **7 días** · 28 = ~9 días"],
+    ["Límite semanal", "Conquest y Transcendence comparten **10 partidas sin cofre** por semana y servidor: no hagas partidas «de paseo» sin necesidad"]
+   ]
+  },
+  {
+   "titulo": "Qué se abre con cada nivel de objeto",
+   "tipo": "tabla",
+   "columnas": ["Nivel", "Se abre"],
+   "filas": [
+    ["**700**", "Draupnir (Exploration y Conquest) · Krao Cave (Conquest)"],
+    ["**1.000**", "El Abismo (Reshanta inferior) y el final de la historia · Prueba de Ascensión Fácil"],
+    ["**1.400**", "**Vakron Sky Island** (Exploration y Conquest) · **Urugugu Canyon** (Exploration y Conquest)"],
+    ["**1.600**", "**Transcendence fase 1** (Deus Research Base y Shattered Arkanis)"],
+    ["**1.900**", "Transcendence fase 2"],
+    ["**2.000**", "Prueba de Ascensión Difícil"],
+    ["**2.100**", "**Ferocious Horn Den** (Exploration y Conquest) · **Fire Temple** (Conquest)"],
+    ["**2.200** / **2.500**", "Transcendence fase 3 / fase 4"],
+    ["**2.800**", "Sanctuary (raid), cuando vuelva al global"]
+   ]
+  },
+  {
+   "titulo": "Reglas del cofre (valen en todas)",
+   "tipo": "lista",
+   "items": [
+    "Mata **siempre a los 3 jefes**: el cofre final mejora con cada jefe con nombre muerto (aunque Conquest deje saltarse alguno).",
+    "Estate **vivo** cuando cae el cofre y haz al menos el **1 %** del daño.",
+    "**Pity de Exploration:** 3 cofres = una pieza **a elegir**. Guárdala y úsala al final en el hueco que no te caiga.",
+    "**Pity de Conquest:** cada 14 / 21 / 28 cofres (según la mazmorra) eliges una pieza o un vale. **No da armas**: el arma sale por botín o fabricando."
+   ]
+  },
+  {
+   "titulo": "Cada día, gratis (sin gastar Odyle)",
+   "tipo": "tabla",
+   "columnas": ["Qué", "Qué hacer", "Para qué"],
+   "filas": [
+    ["**Festival de Shugo** (cada hora)", "Gasta llaves: tienes 7 y sale 1 al día. Elige tu minijuego y busca el 1.º o 2.º puesto (4 y 3 cartas)", "Tokens → **Daevanion Crystal** en su tienda (50, 100, 200 y 400)"],
+    ["**Invasión** (cada media hora)", "Pega al jefe para tener contribución", "Cartas del festival"],
+    ["**Pesadilla** (jefe en solitario)", "14 intentos + 2 al día; solo gasta al matar. Orden: jefes grises → verdes → último jefe, los 10 niveles de cada uno", "Fragmentos (1.er clear 500, repetir 100) → tienda Crecimiento: Daevanion Crystal (300), Clash Rune (500)"],
+    ["**Contratos diarios**", "Coge los de llave dorada de los huecos 1-4; si no hay, el que dé más piedras de mejora", "Piedras de mejora"],
+    ["**Grieta Espacio-Tiempo**", "Entra a la facción contraria: sus mazmorras selladas y fortalezas", "Piedras de mejora"]
+   ]
+  },
+  {
+   "titulo": "Tramo 1 (700 → 1.400): objetivos en orden",
+   "tipo": "tabla",
+   "columnas": ["#", "Objetivo", "Qué te da"],
+   "filas": [
+    ["1", "**Misión principal** hasta el final (el último paso, en el Abismo, pide ~1.000)", "**Arma dorada** de tu clase, **Brazalete de Ascensión** y alas. En Reshanta inferior, al entregar en tu base: **Guarda Spiritforged**"],
+    ["2", "**Misiones de región** (todas las verdes del mapa)", "2 anillos, 2 pendientes, collar azul y las **2 runas Clash** (+40 a +60 cada una), títulos y cofres de Theostone"],
+    ["3", "**Mazmorras selladas** (la «?» del mapa), todas", "Cada una: **2 Daevanion Crystal** y 2 puntos de habilidad"],
+    ["4", "**Fortalezas** de tu facción, todas", "Cada una: **2 pergaminos de Noble Belt** (el cinturón)"],
+    ["5", "**Empyrean Traces** → Monolito", "Altgard: nivel 11 (95 Traces) = **amuleto** azul. Abismo: las 200 Traces (~1 h 30 min) = cristales Azphel"],
+    ["6", "Gasta **todos** los Daevanion Crystal en el tablero", "**+1** de nivel por punto. Guardados no suman"],
+    ["7", "**Draupnir Exploration**: 3 cofres (120 de Odyle, 1 día)", "Pieza dorada **Bakarma** (nivel 54) a elegir: coge la **pechera**"],
+    ["8", "**Cinturón y amuleto**: +10 → desequipar → Substance Morph a azul → +10 → Único", "**Noble Belt** y **Revelation Amulet** (nivel 65): de los saltos más grandes del tramo"],
+    ["9", "**Mejora** (tabla de abajo) y piedras en todos los huecos", "+1 por nivel de mejora; piedra gris +1, verde +2, azul +3, amarilla +4"]
+   ]
+  },
+  {
+   "titulo": "Tramo 1: hasta dónde mejorar cada pieza",
+   "tipo": "tabla",
+   "columnas": ["Pieza", "1.ª opción", "Opcional"],
+   "filas": [
+    ["Arma dorada y Brazalete de Ascensión", "**+10** y 1 Manastone superior", "Theostone verde en el arma"],
+    ["2.º brazalete", "El de la misión de tu facción (nivel 43)", "Súbelo solo si te faltan puntos"],
+    ["Pieza Bakarma de Draupnir", "**+10** y Manastone intermedia", "—"],
+    ["Armadura azul, collar, pendientes, anillos", "**+5** y Manastone menor", "—"],
+    ["Cinturón y amuleto Únicos", "**+3**", "—"],
+    ["Runas Clash", "**+1** (siempre sale)", "Nunca +2 sin repuesto: si falla, la runa desaparece"]
+   ]
+  },
+  {
+   "titulo": "Tramo 1: en qué gastar la Odyle",
+   "tipo": "tabla",
+   "columnas": ["Cuándo", "Dónde", "A quién matar", "Qué buscar"],
+   "filas": [
+    ["**Día 1**", "**Draupnir Exploration** ×3 cofres", "Lakshmi fantasmal → Saraswati depredadora → **Bakarma trascendente**", "Pieza Bakarma a elegir (pechera)"],
+    ["**Después: guárdala**", "Para Vakron al llegar a 1.400 (con 560 llenas = 14 cofres el primer día)", "—", "—"],
+    ["Solo si llegas al tope antes de 1.400", "**Draupnir Conquest**", "Los mismos 3", "Armadura Bakarma (pity 14)"],
+    ["…o si lo más flojo es arma/accesorios", "**Krao Cave Conquest**", "Gadioton descuidado + Harcon mejorado (las 2 ramas) → **Berk definitivo**", "Armas Rupture y accesorios Berk (pity 14: accesorio Berk o vale)"]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Con solo misiones, mapa y piedras se llega a ~1.400 sin farmear. Hasta +10 la mejora sale siempre; desde +10 puede fallar y el coste se dispara: no subas a +11 nada de este tramo."
+  },
+  {
+   "titulo": "Tramo 2 (1.400 → 2.100): el plan de Odyle, en orden",
+   "tipo": "tabla",
+   "columnas": ["#", "Qué abrir", "A quién matar", "Qué buscar", "Odyle"],
+   "filas": [
+    ["1", "**Vakron Sky Island Exploration**", "Tiere → Thamon → **Vakron**", "Pieza a elegir al 3.er cofre: **guárdala** para el final", "120 (1 día)"],
+    ["2", "**Vakron Sky Island Conquest**", "Tiere (veneno) → Thamon (no le pegues con el daño que lo cura) → Vakron (rompe la roca roja, salta los anillos)", "**Armadura Única nivel 70** y **Vakron Guard**. Orden: pechera → guantes (velocidad de ataque) → botas (velocidad de movimiento) → capa (un hueco de piedra más)", "21 cofres = 840 (7 días)"],
+    ["3", "**Transcendence fase 1** (al llegar a **1.600**, aunque no hayas terminado Vakron)", "Deus Research Base y Shattered Arkanis, con nota **S**", "Llenar los **5 huecos de Arcana** (+20 cada gris, +40 cada verde). Deus: Cáliz, Brújula, Campana. Arkanis: Cáliz, Pergamino, Espejo", "Hasta llenar los 5"],
+    ["4", "Vuelve a **Vakron Conquest** hasta el pity 21", "Los mismos", "Las piezas que falten", "—"],
+    ["5", "**Urugugu Canyon** (primero 1 Exploration: abre la Conquest)", "Capitán guardián Raur → Juez Urahum → **Auldor divino**", "**Collar, 2 pendientes, 2 anillos** y el arma **Aulamus** (cae poco)", "21 cofres = 840 (7 días)"],
+    ["6", "**Transcendence fase 2** (desde **1.900**)", "Las mismas dos, más difíciles (~30 min)", "Arcanas **azules** (+60) o épicas para cambiar las verdes", "Hasta tener 5 azules"],
+    ["7", "Usa la pieza a elegir de Exploration", "—", "En el hueco de armadura que no te cayó", "—"]
+   ]
+  },
+  {
+   "titulo": "Tramo 2: la Arcana, lo que más sube",
+   "tipo": "tabla",
+   "columnas": ["Qué", "Cuánto"],
+   "filas": [
+    ["Arcana gris / verde / azul / Única", "+20 / +40 / +60 / +80 cada una (5 huecos; la nueva sustituye a la vieja)"],
+    ["5 verdes", "**+200** (1.600 → ~1.800)"],
+    ["Pasar las 5 a azul", "**+100** más"],
+    ["Lo mejor que cae en fase 1 / fase 2", "Raro (Cáliz: Común) / Épico (Cáliz: Raro)"],
+    ["**Cáliz del Vigor Único** (+80)", "Arcana → Transmutar con 5 **Cristales misteriosos**: 3 de la **Prueba de Ascensión** (premios de 1.000, 3.000 y 4.000 puntos; el de 4.000 pide Difícil, ~2.000), 1 de la tienda de temporada (25.000 monedas) y 1 extrayendo Arcanas que sobren"]
+   ]
+  },
+  {
+   "titulo": "Tramo 2: cómo mejorar",
+   "tipo": "tabla",
+   "columnas": ["Pieza", "1.ª opción", "Opcional"],
+   "filas": [
+    ["Cada pieza nueva de nivel 70", "**+5** al conseguirla", "—"],
+    ["Set de Vakron completo", "Todo a **+7**", "+10 en lo que te quedas"],
+    ["Arma y guarda", "Theostone", "—"],
+    ["Piedras", "Menores; intermedias si hacen falta", "Superiores solo en lo que te quedas"],
+    ["Azules que te queden", "Cámbialas por dorado de nivel 70", "Subirlas a +11 cuesta ~1 millón por pieza: no"]
+   ]
+  },
+  {
+   "titulo": "Plan B: fabricar los accesorios",
+   "tipo": "lista",
+   "items": [
+    "Si Urugugu no te da accesorios: fabrícalos en este orden: **collar → 2 pendientes → 2 anillos → arma**.",
+    "Primer nivel: **Señor Dragón Verdadero** (Elyos) o **Señor Dragón Estelar** (Asmodianos), nivel 62. Se mejoran sin cambiar de pieza: 62 → 70 → 78 → 86 → 94 → 102.",
+    "Con alts: haz las Expeditions bajas con ellos y pasa Kina y materiales al principal por el almacén del servidor."
+   ]
+  },
+  {
+   "titulo": "Tramo 3 (2.100 → 2.800): el plan, en orden",
+   "tipo": "tabla",
+   "columnas": ["#", "Qué abrir", "A quién matar", "Qué buscar", "Odyle"],
+   "filas": [
+    ["1", "**Ferocious Horn Den Exploration**", "Kuhapu el Perro guardián → Duanka el Nigromante → **Nuakum**", "Pieza a elegir: guárdala hasta que solo te falte una", "120 (1 día)"],
+    ["2", "**Ferocious Horn Den Conquest**", "Los mismos (turnaos para bloquear a Nuakum: el marcado no repite)", "**Armadura de Nuakum** (nivel 86) y **Nuakum Guard**", "28 cofres = 1.120 (~9 días)"],
+    ["3", "**Transcendence fase 3** (desde **2.200**)", "Deus Research Base y Shattered Arkanis", "Arcanas **Únicas** (Cáliz: Épico). Una partida de Arkanis para azules ya ayuda a pasar 2.500", "Hasta cambiar las azules"],
+    ["4", "**Fire Temple Conquest**", "Murute el Humo negro → Ignus el Fulgor rojo → **Kromede**", "**Arma de Kromede enfurecida** y collar, pendientes y anillos de nivel 86", "28 cofres = 1.120 (~9 días)"],
+    ["5", "**Transcendence fase 4** (desde **2.500**)", "Las mismas", "Arcanas **doradas** (Únicas) en los 5 huecos, Cáliz incluido", "—"],
+    ["6", "**Fabricación** 94 y 102", "—", "Mejor que lo de 86: es lo que merece +15 y Amplify", "—"]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "El mercader de Nube negra vende a veces Theostones (una verde ≈ +3). Objetivo realista: 2.800 al terminar el primer mes."
+  },
+  {
+   "titulo": "Resumen en 7 líneas",
+   "tipo": "pasos",
+   "items": [
+    "**700 → 1.000:** misión principal, misiones verdes, mazmorras selladas, fortalezas, gastar cristales y **Draupnir Exploration ×3** (pechera).",
+    "**1.000 → 1.400:** final de la historia en el Abismo, Traces, cinturón y amuleto a Único, runas a +1, arma y brazalete a +10, piedras en todo. **Guarda la Odyle.**",
+    "**1.400 → 1.600:** toda la Odyle a **Vakron** (Exploration ×3 y luego Conquest): armadura 70.",
+    "**1.600 → 1.900:** **Transcendence fase 1** hasta 5 Arcanas verdes; termina el pity de Vakron; set a +7.",
+    "**1.900 → 2.100:** **Urugugu** (accesorios), **Transcendence fase 2** (Arcanas azules) y el Cáliz Único.",
+    "**2.100 → 2.500:** **Horn Den** (armadura 86) y **Transcendence fase 3**.",
+    "**2.500 → 2.800:** **Fire Temple** (arma y accesorios 86), Arcanas doradas y accesorios fabricados de 94/102."
+   ]
+  }
+ ]
+}

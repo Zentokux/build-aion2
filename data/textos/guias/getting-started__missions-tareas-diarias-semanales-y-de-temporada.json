@@ -111,6 +111,28 @@
    ]
   },
   {
+   "titulo": "Piedras de entrada al Abismo (parche del 14-oct-2026)",
+   "tipo": "tabla",
+   "columnas": [
+    "Misión semanal de temporada",
+    "Premio"
+   ],
+   "filas": [
+    [
+     "Pasa 1 hora en el Abismo",
+     "Piedra de entrada al Abismo"
+    ],
+    [
+     "Derrota una vez al señor guardián Nahma",
+     "Piedra de entrada al Abismo"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "El tiempo de Abismo acumulado tiene ahora un tope de **7 horas**: si llegas al tope, lo que sobra se pierde, así que gástalo antes."
+  },
+  {
    "titulo": "Lo que caduca al cambiar de temporada",
    "tipo": "tabla",
    "columnas": [

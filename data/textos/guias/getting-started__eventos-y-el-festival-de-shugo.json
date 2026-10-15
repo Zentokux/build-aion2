@@ -174,6 +174,58 @@
    ]
   },
   {
+   "titulo": "Halloween: Trick or Treat (parche del 14-oct-2026)",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Qué hacer"
+   ],
+   "filas": [
+    [
+     "Fechas",
+     "Del mantenimiento del 13-oct al del 3-nov (NA); en Europa, del 14-oct al 4-nov"
+    ],
+    [
+     "Asistencia",
+     "Entra cada día: pagan monedas de calabaza; los días 7 y 14 pagan más"
+    ],
+    [
+     "Misiones de temporada",
+     "Pestaña nueva «Evento»: más monedas por actividades normales"
+    ],
+    [
+     "Mercader de monedas (en cada ciudad)",
+     "Compra Odyle Energy, piedras de grieta del Abismo inferior, tickets de Pesadilla y cristales de vida"
+    ],
+    [
+     "Llaves de caramelo",
+     "Fabrícalas con la transformación de sustancias del evento y ábrelas para premios"
+    ]
+   ]
+  },
+  {
+   "titulo": "Ofertas con fecha (parche del 14-oct-2026)",
+   "tipo": "tabla",
+   "columnas": [
+    "Oferta",
+    "Hasta"
+   ],
+   "filas": [
+    [
+     "Conquistadores del Abismo: piedras de grieta del Abismo (evento) a 50.000 kina, máx. 7 por personaje a la semana, nivel 45+",
+     "Mantenimiento del 27-oct (NA) / 28-oct (Europa)"
+    ],
+    [
+     "Piedra de grieta del Abismo inferior (Bound) en Tienda → Mercaderes del viento → Especial",
+     "Dos semanas"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "El mercader de monedas dice 4 Odyle Energy por servidor a la semana, pero las notas del parche suben el tope de la Odyle Energy (Bound) a 20 por personaje. Míralo en el juego antes de comprar. Las fechas de fin también están en el Temporizador."
+  },
+  {
    "tipo": "aviso",
    "texto": "Ningún evento coreano está anunciado para global. Además, los eventos alteran números (p. ej. en diciembre de 2025 un evento acortó la reaparición de jefes de campo y hay dos tablas circulando). Si una fuente no dice cuándo midió, no tomes su cifra como base."
   },

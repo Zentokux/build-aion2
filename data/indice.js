@@ -108,6 +108,12 @@ window.INDICE = [
   "resumen": "Hay cinco profesiones y tu arma decide la tuya. El equipo fabricado saca opciones PvE que el botín de mazmorra no tiene, así que sube la barra mientras subes de nivel, sin obsesionarte el primer mes."
  },
  {
+  "slug": "progression__farmeo-de-equipo-700-1400-2100",
+  "categoria": "progression",
+  "titulo": "Farmeo de equipo: 700 → 1.400 → 2.100 → 2.800",
+  "resumen": "Plan exacto del servidor **global** (nivel 45): qué objetivos hacer, a qué jefes matar, qué pieza buscar y **en qué gastar cada punto de Odyle**. Resumen: de 700 a 1.400 casi todo es gratis (misiones y mapa); de 1.400 a 2.100, Vakron → Arcana → Urugugu; de 2.100 a 2.800, Horn Den, Fire Temple y Arcana dorada."
+ },
+ {
   "slug": "progression__grados-de-equipo-de-comun-a-epico-y-de-donde-sale-cada-uno",
   "categoria": "progression",
   "titulo": "Grados de equipo y de dónde sale cada uno",
