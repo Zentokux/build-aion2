@@ -2,11 +2,11 @@
  "slug": "progression__farmeo-de-equipo-700-1400-2100",
  "categoria": "progression",
  "titulo": "Farmeo de equipo: de 700 a 2.800",
- "resumen": "Plan del servidor **global** (nivel 45): qué objetivos hacer, a qué jefes matar, qué pieza buscar y **en qué gastar la energía Odyle**. De 700 a 1.400 casi todo es gratis (misiones y mapa). De 1.400 a 2.100: Vakron, Arcana y Urugugu. De 2.100 a 2.800: Horn Den, Fire Temple y Arcana dorada.",
+ "resumen": "Plan del servidor **global** (nivel 45): qué objetivos hacer, a qué jefes matar, qué pieza buscar y **en qué gastar la energía Od**. De 700 a 1.400 casi todo es gratis (misiones, mapa y mejorar lo que tienes). De 1.400 a 2.100: Isla Aérea de Vakron, Arcana y Cañón de Urugugu. De 2.100 a 2.800: Caverna del Cuerno Feroz, Templo de Fuego y Arcana dorada.",
  "bloques": [
   {
    "tipo": "aviso",
-   "texto": "Cifras del global contadas por jugadores (octubre de 2026). Las guías de cada mazmorra de esta web traen cifras de Corea (1.600, 2.200...); para el global vale esta. Si la pantalla de entrada del juego dice otra cosa, manda la pantalla."
+   "texto": "Cifras del global (octubre de 2026) y nombres como salen en el juego en español. Las guías de cada mazmorra de esta web traen cifras de Corea (1.600, 2.200...); para el global vale esta. Si la pantalla de entrada del juego dice otra cosa, manda la pantalla."
   },
   {
    "titulo": "El camino completo",
@@ -14,7 +14,7 @@
    "items": [
     {
      "nivel": "700",
-     "texto": "Llegas a nivel 45. Abre **Draupnir** y **Krao Cave**. Haz misiones, mapa y la historia.",
+     "texto": "Llegas a nivel 45. Se abren **Draupnir** y la **Cueva de Krao** en Conquista. Haz misiones, mapa y la historia.",
      "objetos": [
       {
        "i": "Icon_Acc_Bracelet_R_027",
@@ -45,11 +45,11 @@
     },
     {
      "nivel": "1.000",
-     "texto": "Abre **el Abismo** (final de la historia) y la **Prueba de Ascensión** Fácil."
+     "texto": "Se abre **el Abismo** (final de la historia) y la **Prueba de Ascensión** Fácil."
     },
     {
      "nivel": "1.400",
-     "texto": "Abre **Vakron Sky Island** (armadura y guarda) y **Urugugu Canyon** (accesorios y arma). Aquí empiezas a gastar la Odyle.",
+     "texto": "Se abren la **Isla Aérea de Vakron** (armadura y guarda) y el **Cañón de Urugugu** en Conquista (accesorios y arma). Aquí empiezas a gastar la Od.",
      "objetos": [
       {
        "i": "Icon_Weapon_Guarder_U_003",
@@ -65,7 +65,7 @@
     },
     {
      "nivel": "1.600",
-     "texto": "Abre **Transcendence fase 1**: las 5 cartas de **Arcana**, lo que más sube.",
+     "texto": "Se abre la **Trascendencia 1**: las 5 cartas de **Arcana**, lo que más sube.",
      "objetos": [
       {
        "i": "Icon_Arcana_Card_Grail_u_PveSet2",
@@ -96,11 +96,11 @@
     },
     {
      "nivel": "1.900",
-     "texto": "Abre **Transcendence fase 2**: Arcanas azules."
+     "texto": "Se abre la **Trascendencia 2**: Arcanas azules."
     },
     {
      "nivel": "2.100",
-     "texto": "Abre **Ferocious Horn Den** (armadura y guarda de nivel 86) y **Fire Temple** (arma y accesorios de nivel 86).",
+     "texto": "Se abren la **Caverna del Cuerno Feroz** (armadura y guarda de nivel 86) y el **Templo de Fuego** en Conquista (arma y accesorios de nivel 86).",
      "objetos": [
       {
        "i": "Icon_Weapon_Guarder_L_012",
@@ -126,11 +126,11 @@
     },
     {
      "nivel": "2.200",
-     "texto": "Abre **Transcendence fase 3** (Arcanas Únicas). En 2.500, la fase 4."
+     "texto": "Se abre la **Trascendencia 3** (Arcanas Únicas). En 2.500, la 4."
     },
     {
      "nivel": "2.800",
-     "texto": "Meta del primer mes. Aquí entra la raid (Sanctuary) cuando vuelva al global."
+     "texto": "Meta del primer mes. Aquí entra la raid (Santuario) cuando vuelva al global."
     }
    ]
   },
@@ -144,12 +144,12 @@
    "items": [
     "La **Guarda** es la pieza de la **mano secundaria**: el hueco que va al lado del arma. La llevan las 8 clases (en el Sicario sale como Arma de Puño).",
     "La **Spiritforged Guard** te la regala la historia: en el Abismo (Reshanta inferior), cuando entregas la misión en la base de tu facción.",
-    "No tiene líneas de Soul Binding: súbela solo si te faltan puntos y cámbiala en cuanto puedas.",
-    "Las siguientes son la **Vakron Guard** (Vakron Sky Island, desde 1.400) y la **Nuakum Guard** (Ferocious Horn Den, desde 2.100)."
+    "No tiene líneas de Soul Binding, pero subirla a +10 es seguro y suma 10: hazlo si te faltan puntos para 1.400.",
+    "Las siguientes son la **Vakron Guard** (Isla Aérea de Vakron, desde 1.400) y la **Nuakum Guard** (Caverna del Cuerno Feroz, desde 2.100)."
    ]
   },
   {
-   "titulo": "Tu energía Odyle: las cuentas",
+   "titulo": "Tu energía Od y el contador de cubos",
    "tipo": "tabla",
    "columnas": [
     "Qué",
@@ -157,52 +157,51 @@
    ],
    "filas": [
     [
-     "Cuánta sale",
-     "**15 cada 3 horas: 120 al día** (también desconectado)"
+     "Cuánta Od sale",
+     "**15 cada 3 horas: 120 al día** (también desconectado). Tope 560 (840 con membresía)"
     ],
     [
-     "Cuánto cuesta un cofre",
-     "**40** (es abrir el cubo del final). Terminar la mazmorra sin abrirlo no cuesta nada"
+     "Cuánto cuesta un cubo",
+     "**40 de Od** (es abrir el cubo del final). Terminar sin abrirlo no cuesta nada"
     ],
     [
-     "Cofres al día",
-     "**3**"
+     "Cuántos cubos de Conquista puedes cobrar",
+     "Lo dice la pantalla de entrada: **Número de recompensas de cubo**. Se recargan **2 al día** y se guardan hasta 14 (en el juego: Número de recompensas de cubo). Se reinicia el miércoles"
     ],
     [
-     "Tope",
-     "**560** (840 con membresía). Si se llena, lo que regenera se pierde: no la dejes llena más de 4 días"
+     "Exploración",
+     "Su propio límite: **7 por semana**. En la Cueva de Krao y el Cañón de Urugugu el cubo cuesta 20; en el Templo de Fuego, 30"
     ],
     [
-     "Membresía",
-     "Deja abrir el cofre final 2 veces por partida (cada vez cuesta 40). Mismos cofres, la mitad de partidas"
+     "Trascendencia",
+     "Se recargan **2 al día** y se guardan hasta 4. Cubo de 40"
     ],
     [
-     "Conseguir más",
-     "En Substance Morph: 25 Odyle, 5 Odyle fina, 1 Odyle pura y 50.000 Kina te dan 40. Con membresía, el mercader de Brisa de viento vende cada semana"
+     "Resumen",
+     "Al día: **2 cubos de Conquista** (80 de Od) y con los 40 que sobran, 1 de Exploración o de Trascendencia"
     ],
     [
-     "Cuánto tarda cada pieza garantizada",
-     "3 cofres: **1 día**. 14 cofres: unos 5 días. 21 cofres: **7 días**. 28 cofres: unos 9 días"
+     "Cuánto tarda la recompensa garantizada",
+     "Exploración 3 cubos: 1 o 2 días. Conquista: 14 cubos, unos 7 días. 21 cubos, unos 11 días. 28 cubos, unos 14 días"
     ],
     [
-     "Límite semanal",
-     "Conquest y Transcendence comparten **10 partidas sin abrir cofre** por semana y servidor: no hagas partidas de paseo"
+     "Conseguir más Od",
+     "En Substance Morph: 25 Od, 5 Od fina, 1 Od pura y 50.000 Kinah te dan 40. Con membresía, el mercader de Brisa de viento vende cada semana"
     ]
    ]
   },
   {
-   "titulo": "Reglas del cofre (valen en todas)",
+   "titulo": "Reglas del cubo (valen en todas)",
    "tipo": "lista",
    "items": [
-    "Mata **siempre a los 3 jefes**: el cofre final mejora con cada jefe con nombre muerto (aunque Conquest deje saltarse alguno).",
-    "Estate **vivo** cuando cae el cofre y haz al menos el 1 por ciento del daño.",
-    "**Exploration:** cada 3 cofres eliges una pieza. Guárdala y úsala al final en el hueco que no te caiga.",
-    "**Conquest:** cada 14, 21 o 28 cofres (según la mazmorra) eliges una pieza o un vale. **No da armas**: el arma sale por suerte o fabricando.",
-    "En los dibujos de abajo, cada cuadro morado es un cofre de 40 de Odyle y el dorado es el que te da la pieza a elegir. Cada grupo de 3 es un día."
+    "Mata **siempre a los 3 jefes**: el cubo final mejora con cada jefe con nombre muerto.",
+    "Estate **vivo** cuando cae el cubo y haz al menos el 1 por ciento del daño.",
+    "**Recompensa garantizada** (la barra 0/21 de la pantalla): al llenarla eliges una pieza o un vale. En Exploración se llena con 3 cubos. **No da armas**: el arma sale por suerte o fabricando.",
+    "Guarda la pieza a elegir de Exploración y úsala al final en el hueco que no te caiga."
    ]
   },
   {
-   "titulo": "Cada día, gratis (sin gastar Odyle)",
+   "titulo": "Cada día, gratis (sin gastar Od)",
    "tipo": "tabla",
    "columnas": [
     "Qué",
@@ -278,7 +277,7 @@
     ],
     [
      "7",
-     "**Draupnir Exploration**: 3 cofres (120 de Odyle, 1 día)",
+     "**Draupnir en Exploración**: 3 cubos (tarjeta de abajo)",
      "Una pieza dorada **Bakarma** (nivel 54) a elegir: coge la **pechera**"
     ],
     [
@@ -308,29 +307,24 @@
      "Theostone verde en el arma"
     ],
     [
-     "Segundo brazalete",
-     "El de la misión de tu facción (nivel 43)",
-     "Súbelo solo si te faltan puntos"
-    ],
-    [
-     "Spiritforged Guard",
-     "Déjala como está",
-     "+10 solo si te faltan puntos"
-    ],
-    [
-     "Pieza Bakarma de Draupnir",
+     "**Todas las piezas doradas** (armadura de Draupnir, Spiritforged Guard, amuleto, anillo dorado...)",
      "**+10** y Manastone intermedia",
-     "Nada más"
+     "Hasta +10 nunca falla"
     ],
     [
-     "Armadura azul, collar, pendientes, anillos",
+     "Segundo brazalete",
+     "El de la misión de tu facción (nivel 43): **+5**",
+     "+10 si te faltan puntos"
+    ],
+    [
+     "Armadura azul, collar, pendientes, anillos azules",
      "**+5** y Manastone menor",
-     "Nada más"
+     "Nada más: los vas a cambiar"
     ],
     [
      "Cinturón noble y Amuleto de la revelación",
      "**+3**",
-     "Nada más"
+     "Hasta +10 si te faltan puntos"
     ],
     [
      "Runas de enfrentamiento",
@@ -340,51 +334,156 @@
    ]
   },
   {
-   "titulo": "Tramo 1: en qué gastar la Odyle",
-   "tipo": "ruta",
-   "rutas": [
+   "titulo": "¿Ya hiciste todo y vas por 1.300? Así llegas a 1.400",
+   "tipo": "tabla",
+   "columnas": [
+    "Mira esto en tu equipo",
+    "Qué hacer",
+    "Cuánto suma"
+   ],
+   "filas": [
+    [
+     "**Piezas doradas sin número** (están a +0)",
+     "Súbelas a **+10**: hasta +10 no falla",
+     "**10 por pieza**. Con 6 o 7 piezas doradas a +0 ya tienes los 100 que faltan"
+    ],
+    [
+     "Arma a +5",
+     "Súbela a **+10**",
+     "5"
+    ],
+    [
+     "Cinturón o amuleto a +0, +2 o +3",
+     "Súbelos a +10",
+     "Hasta 10 cada uno"
+    ],
+    [
+     "Piezas azules sin número",
+     "Súbelas a **+5**",
+     "5 cada una"
+    ],
+    [
+     "Huecos de piedra vacíos",
+     "Pon una Manastone en cada uno (las baratas valen)",
+     "De 1 a 4 por hueco"
+    ],
+    [
+     "Daevanion Crystal en la mochila",
+     "Gástalos en el tablero",
+     "1 por punto"
+    ],
+    [
+     "Mazmorras selladas y fortalezas que falten",
+     "Revisa el mapa de tu facción",
+     "Cristales y pergaminos"
+    ],
+    [
+     "La pieza garantizada de Draupnir",
+     "Si no la cogiste: 3 cubos de Exploración",
+     "Una pieza dorada nueva"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Lo más rápido casi siempre es la **mejora**: cada nivel de mejora suma 1 de poder. Las piedras de mejora salen de contratos, fortalezas y la Grieta. Desde +10 la mejora puede fallar y el precio se dispara: en este tramo no subas nada a +11."
+  },
+  {
+   "titulo": "Tramo 1: en qué gastar la Od",
+   "tipo": "expedicion",
+   "mazmorras": [
     {
      "paso": "1",
-     "abrir": "Draupnir Exploration",
-     "modo": "El primer día, 3 cofres",
-     "nivel": "700",
-     "jefes": [
-      "Lakshmi fantasmal",
-      "Saraswati depredadora",
-      "Bakarma trascendente"
+     "fondo": "draupnir_001",
+     "estrellas": 1,
+     "nombre": "Draupnir",
+     "modos": [
+      "Exploración",
+      "Conquista"
      ],
-     "buscar": "Una pieza dorada **Bakarma** (nivel 54) a elegir al tercer cofre. Coge la **pechera**.",
-     "cofres": 3,
-     "odyle": "120 de Odyle: 1 día."
-    },
-    {
-     "paso": "2",
-     "abrir": "Guarda la Odyle",
-     "modo": "Hasta llegar a 1.400",
-     "buscar": "Llega a 1.400 con la Odyle llena (560): son **14 cofres** listos para Vakron el primer día.",
-     "nota": "Si se te llena antes de 1.400, gasta solo lo que sobre en uno de estos dos:"
-    },
-    {
-     "abrir": "Draupnir Conquest",
-     "modo": "Si lo más flojo es la armadura",
-     "nivel": "700",
+     "modo": "Exploración",
+     "poder": "700",
+     "jugadores": "1 a 5",
+     "limite": "**7 por semana**.",
+     "od": 40,
+     "garantizada": 3,
      "jefes": [
-      "Lakshmi fantasmal",
-      "Saraswati depredadora",
-      "Bakarma trascendente"
+      {
+       "n": "Lakshmi de ensueño",
+       "img": "nagaelite_01"
+      },
+      {
+       "n": "Saraswati depredador",
+       "img": "nagaelite_02"
+      },
+      {
+       "n": "Bakarma trascendido",
+       "img": "bakarma_02"
+      }
      ],
-     "buscar": "Armadura **Bakarma**. A los 14 cofres eliges una pieza.",
-     "cofres": 14,
-     "odyle": "560 de Odyle: unos 5 días."
+     "buscar": "Una pieza dorada **Bakarma** (nivel 54) a elegir al tercer cubo. Coge la **pechera**.",
+     "plan": "Hazlo el primer día: 3 cubos. Después **guarda la Od** para la Isla Aérea de Vakron."
     },
     {
-     "abrir": "Krao Cave Conquest",
-     "modo": "Si lo más flojo es el arma o los accesorios",
-     "nivel": "700",
+     "fondo": "draupnir_001",
+     "estrellas": 1,
+     "nombre": "Draupnir",
+     "modos": [
+      "Exploración",
+      "Conquista"
+     ],
+     "modo": "Conquista",
+     "poder": "700",
+     "jugadores": "1 a 5",
+     "limite": "Se recargan **2 al día** y se guardan hasta 14 (en el juego: Número de recompensas de cubo).",
+     "od": 40,
+     "garantizada": 14,
      "jefes": [
-      "Gadioton descuidado (rama izquierda)",
-      "Harcon mejorado (rama derecha)",
-      "Berk definitivo"
+      {
+       "n": "Lakshmi de ensueño",
+       "img": "nagaelite_01"
+      },
+      {
+       "n": "Saraswati depredador",
+       "img": "nagaelite_02"
+      },
+      {
+       "n": "Bakarma trascendido",
+       "img": "bakarma_02"
+      }
+     ],
+     "buscar": "Armadura **Bakarma**. A los 14 cubos eliges una pieza.",
+     "plan": "**Solo si la Od se te llena** antes de 1.400 y lo más flojo es la armadura."
+    },
+    {
+     "fondo": "kraocave_001",
+     "estrellas": 1,
+     "nombre": "Cueva de Krao",
+     "modos": [
+      "Exploración",
+      "Conquista"
+     ],
+     "modo": "Conquista",
+     "poder": "700",
+     "jugadores": "1 a 5",
+     "limite": "Se recargan **2 al día** y se guardan hasta 14 (en el juego: Número de recompensas de cubo).",
+     "od": 40,
+     "garantizada": 14,
+     "jefes": [
+      {
+       "n": "Gadioton descuidado",
+       "img": "kraoelite_03_v01",
+       "nota": "Rama izquierda"
+      },
+      {
+       "n": "Harcon mejorado",
+       "img": "kraoelite_03",
+       "nota": "Rama derecha"
+      },
+      {
+       "n": "Berk definitivo",
+       "img": "berc_01"
+      }
      ],
      "objetos": [
       {
@@ -408,50 +507,44 @@
        "n": "Anillo Berk"
       }
      ],
-     "buscar": "Armas **Rupture** y accesorios **Berk**. A los 14 cofres eliges un accesorio Berk o un vale.",
-     "cofres": 14,
-     "odyle": "560 de Odyle: unos 5 días."
+     "buscar": "Armas **Rupture** y accesorios **Berk**. A los 14 cubos eliges un accesorio Berk o un vale.",
+     "plan": "**Solo si la Od se te llena** y lo más flojo es el arma o los accesorios. Mata a los dos de las ramas antes de Berk.",
+     "nota": "Berk definitivo: escóndete detrás de un pilar cuando salte al centro, y al 50 por ciento vaciad su barra de aturdimiento en 8 segundos."
     }
    ]
   },
   {
-   "tipo": "aviso",
-   "texto": "Con solo misiones, mapa y piedras se llega a unos 1.400 sin farmear. Hasta +10 la mejora sale siempre bien; desde +10 puede fallar y el precio se dispara: no subas a +11 nada de este tramo."
-  },
-  {
-   "titulo": "Tramo 2, de 1.400 a 2.100: el plan de Odyle en orden",
-   "tipo": "ruta",
-   "rutas": [
+   "titulo": "Tramo 2, de 1.400 a 2.100: el plan de Od en orden",
+   "tipo": "expedicion",
+   "mazmorras": [
     {
      "paso": "1",
-     "abrir": "Vakron Sky Island Exploration",
-     "modo": "Primero esto: 3 cofres",
-     "nivel": "1.400",
-     "jefes": [
-      "Tiere",
-      "Thamon",
-      "Vakron"
+     "fondo": "bakronisland_001",
+     "estrellas": 2,
+     "nombre": "Isla Aérea de Vakron",
+     "modos": [
+      "Exploración",
+      "Conquista"
      ],
-     "objetos": [
+     "modo": "Conquista",
+     "poder": "1.400",
+     "jugadores": "2 a 5",
+     "limite": "Se recargan **2 al día** y se guardan hasta 14 (en el juego: Número de recompensas de cubo).",
+     "od": 40,
+     "garantizada": 21,
+     "jefes": [
       {
-       "i": "Icon_Weapon_Guarder_U_003",
-       "g": "Unique",
-       "n": "Vakron Guard"
+       "n": "Tiere",
+       "img": "tie_01"
+      },
+      {
+       "n": "Thamon",
+       "img": "tamon_01"
+      },
+      {
+       "n": "Vakron",
+       "img": "eleking_01"
       }
-     ],
-     "buscar": "Pieza a elegir al tercer cofre: **guárdala** y úsala al final en lo que no te caiga.",
-     "cofres": 3,
-     "odyle": "120 de Odyle: 1 día."
-    },
-    {
-     "paso": "2",
-     "abrir": "Vakron Sky Island Conquest",
-     "modo": "Toda la Odyle aquí",
-     "nivel": "1.400",
-     "jefes": [
-      "Tiere (veneno: sal de los charcos)",
-      "Thamon (si brilla, no le pegues con tu tipo de daño)",
-      "Vakron (rompe la roca roja y salta los anillos)"
      ],
      "objetos": [
       {
@@ -461,19 +554,36 @@
       }
      ],
      "buscar": "**Armadura Única de nivel 70** y la **Vakron Guard**. Orden: pechera, guantes (velocidad de ataque), botas (velocidad de movimiento) y capa (trae un hueco de piedra más).",
-     "cofres": 21,
-     "odyle": "840 de Odyle: 7 días (11 partidas con membresía)."
+     "plan": "Primero **3 cubos en Exploración** (misma mazmorra, pestaña Exploración) y guarda esa pieza a elegir. Luego **los 2 cubos de Conquista de cada día** aquí. Tiere: sal de los charcos de veneno. Thamon: cuando brille, para si tu daño es del tipo que lo cura. Vakron: rompe la roca roja y salta los anillos."
     },
     {
-     "paso": "3",
-     "abrir": "Transcendence fase 1",
-     "modo": "En cuanto llegues a 1.600, aunque no hayas terminado Vakron",
-     "nivel": "1.600",
-     "jefes": [
-      "Deus Research Base",
-      "Shattered Arkanis"
+     "paso": "2",
+     "nombre": "Base de Investigación Deus",
+     "modos": [
+      "Trascendencia 1",
+      "Trascendencia 2"
      ],
-     "lugares": true,
+     "modo": "Trascendencia 1",
+     "poder": "1.600",
+     "jugadores": "2 a 5",
+     "limite": "Se recargan **2 al día** y se guardan hasta 4.",
+     "od": 40,
+     "jefes": [
+      {
+       "n": "Gelcos",
+       "img": "gelcos_01"
+      },
+      {
+       "n": "Nazmun",
+       "img": "lepharist_m_03_v01"
+      },
+      {
+       "n": "Atiel",
+       "img": "atiel_01",
+       "nota": "Jefe final"
+      }
+     ],
+     "sinorden": true,
      "objetos": [
       {
        "i": "Icon_Arcana_Card_Grail_u_PveSet2",
@@ -489,6 +599,44 @@
        "i": "Icon_Arcana_Card_Bell_u_DefenceSet2",
        "g": "Unique",
        "n": "Campana"
+      }
+     ],
+     "buscar": "Cartas de **Arcana**: Cáliz, Brújula y Campana. Cada gris suma 20 y cada verde 40.",
+     "plan": "En cuanto llegues a **1.600**, aunque no hayas terminado Vakron: haz esta y Arkanis Fragmentado hasta llenar los **5 huecos de Arcana**. Saca nota **S**. Desde 1.900, Trascendencia 2 para Arcanas azules (60)."
+    },
+    {
+     "paso": "3",
+     "nombre": "Arkanis Fragmentado",
+     "modos": [
+      "Trascendencia 1",
+      "Trascendencia 2"
+     ],
+     "modo": "Trascendencia 1",
+     "poder": "1.600",
+     "jugadores": "2 a 5",
+     "limite": "Se recargan **2 al día** y se guardan hasta 4.",
+     "od": 40,
+     "jefes": [
+      {
+       "n": "Siliator de falsedad",
+       "img": "nagaelite_01_v01"
+      },
+      {
+       "n": "Ruthilis del dolor",
+       "img": "nagaelite_02_v01"
+      },
+      {
+       "n": "Talisra del vacío",
+       "img": "thalythra_01",
+       "nota": "Jefe final"
+      }
+     ],
+     "sinorden": true,
+     "objetos": [
+      {
+       "i": "Icon_Arcana_Card_Grail_u_PveSet2",
+       "g": "Unique",
+       "n": "Cáliz"
       },
       {
        "i": "Icon_Arcana_Card_Parchment_u_PveSet2",
@@ -501,18 +649,37 @@
        "n": "Espejo"
       }
      ],
-     "buscar": "Llena los **5 huecos de Arcana**: cada gris suma 20 y cada verde 40. Deus da Cáliz, Brújula y Campana; Arkanis da Cáliz, Pergamino y Espejo. Saca nota **S**.",
-     "nota": "Cuando tengas los 5 huecos llenos, vuelve a Vakron hasta tu pieza 21."
+     "buscar": "Cartas de **Arcana**: Cáliz, Pergamino y Espejo.",
+     "plan": "Junto con la Base de Investigación Deus: entre las dos tienes las 5 cartas. Cuando estén llenas, vuelve a Vakron hasta tu pieza 21."
     },
     {
      "paso": "4",
-     "abrir": "Urugugu Canyon",
-     "modo": "Una Exploration (abre la Conquest) y luego Conquest",
-     "nivel": "1.400",
+     "fondo": "urugugucanyon_001",
+     "estrellas": 2,
+     "nombre": "Cañón de Urugugu",
+     "modos": [
+      "Exploración",
+      "Conquista"
+     ],
+     "modo": "Conquista",
+     "poder": "1.400",
+     "jugadores": "2 a 5",
+     "limite": "Se recargan **2 al día** y se guardan hasta 14 (en el juego: Número de recompensas de cubo).",
+     "od": 40,
+     "garantizada": 21,
      "jefes": [
-      "Capitán guardián Raur",
-      "Juez Urahum",
-      "Auldor divino"
+      {
+       "n": "Capitán de la Guardia Raur",
+       "img": "owlcom_01"
+      },
+      {
+       "n": "Juez Urahum",
+       "img": "owlac_01_v01"
+      },
+      {
+       "n": "Auldor sagrado",
+       "img": "owltros_01_v01"
+      }
      ],
      "objetos": [
       {
@@ -521,62 +688,8 @@
        "n": "Arma Aulamus"
       }
      ],
-     "buscar": "**Collar, 2 pendientes y 2 anillos** de nivel 70, y el arma **Aulamus** (cae poco y muchas veces es de otra clase).",
-     "cofres": 21,
-     "odyle": "840 de Odyle: 7 días."
-    },
-    {
-     "paso": "5",
-     "abrir": "Transcendence fase 2",
-     "modo": "Desde 1.900, unos 30 minutos por partida",
-     "nivel": "1.900",
-     "jefes": [
-      "Deus Research Base",
-      "Shattered Arkanis"
-     ],
-     "lugares": true,
-     "objetos": [
-      {
-       "i": "Icon_Arcana_Card_Grail_u_PveSet2",
-       "g": "Unique",
-       "n": "Cáliz"
-      },
-      {
-       "i": "Icon_Arcana_Card_Compass_u_PveSet2",
-       "g": "Unique",
-       "n": "Brújula"
-      },
-      {
-       "i": "Icon_Arcana_Card_Bell_u_DefenceSet2",
-       "g": "Unique",
-       "n": "Campana"
-      },
-      {
-       "i": "Icon_Arcana_Card_Parchment_u_PveSet2",
-       "g": "Unique",
-       "n": "Pergamino"
-      },
-      {
-       "i": "Icon_Arcana_Card_Mirror_u_PveSet2",
-       "g": "Unique",
-       "n": "Espejo"
-      }
-     ],
-     "buscar": "Arcanas **azules** (60 cada una) o épicas para cambiar las verdes."
-    },
-    {
-     "paso": "6",
-     "abrir": "Prueba de Ascensión",
-     "modo": "3 entradas por semana. Difícil desde 2.000",
-     "nivel": "1.000",
-     "objetos": [
-      {
-       "i": "Icon_Arcana_Card_Grail_u_PveSet2",
-       "g": "Unique",
-       "n": "Cáliz"
-      }
-     ],
-     "buscar": "Los premios de 1.000, 3.000 y 4.000 puntos dan 3 **Cristales misteriosos** (el de 4.000 pide Difícil). Con 5 fabricas el **Cáliz del Vigor Único** (80)."
+     "buscar": "**Collar, 2 pendientes y 2 anillos** de nivel 70, y el arma **Aulamus** (cae poco y muchas veces es de otra clase). A los 21 cubos eliges un accesorio o un vale.",
+     "plan": "Cuando tengas 6 o 7 piezas de Vakron, pasa aquí los 2 cubos de Conquista de cada día."
     }
    ]
   },
@@ -602,11 +715,11 @@
     ],
     [
      "Lo mejor que cae",
-     "En la fase 1, Rara (el Cáliz solo Común). En la fase 2, Épica (el Cáliz, Rara)"
+     "En Trascendencia 1, Rara (el Cáliz solo Común). En Trascendencia 2, Épica (el Cáliz, Rara)"
     ],
     [
      "**Cáliz del Vigor Único** (80)",
-     "En Arcana, opción Transmutar, con 5 **Cristales misteriosos**: 3 de la Prueba de Ascensión, 1 de la tienda de temporada (25.000 monedas) y 1 extrayendo Arcanas que te sobren"
+     "En Arcana, opción Transmutar, con 5 **Cristales misteriosos**: 3 de la **Prueba de Ascensión** (premios de 1.000, 3.000 y 4.000 puntos; el de 4.000 pide Difícil, desde 2.000), 1 de la tienda de temporada (25.000 monedas) y 1 extrayendo Arcanas que te sobren"
     ]
    ]
   },
@@ -642,7 +755,7 @@
     [
      "Piezas azules que te queden",
      "Cámbialas por doradas de nivel 70",
-     "Subirlas a +11 cuesta casi 1 millón de Kina por pieza: no"
+     "Subirlas a +11 cuesta casi 1 millón de Kinah por pieza: no"
     ]
    ]
   },
@@ -650,50 +763,43 @@
    "titulo": "Plan B: fabricar los accesorios",
    "tipo": "lista",
    "items": [
-    "Si Urugugu no te da accesorios, fabrícalos en este orden: **collar, los 2 pendientes, los 2 anillos y por último el arma**.",
+    "Si el Cañón de Urugugu no te da accesorios, fabrícalos en este orden: **collar, los 2 pendientes, los 2 anillos y por último el arma**.",
     "El primer nivel es **True Dragon Lord** (Elyos) o **Star Dragon Lord** (Asmodianos), nivel 62. Se mejoran sin cambiar de pieza: 62, 70, 78, 86, 94 y 102.",
-    "Si tienes alts, haz con ellos las Expeditions bajas y pasa Kina y materiales al principal por el almacén del servidor."
+    "Si tienes alts, haz con ellos las Expediciones bajas y pasa Kinah y materiales al principal por el almacén del servidor."
    ]
   },
   {
    "titulo": "Tramo 3, de 2.100 a 2.800: el plan en orden",
-   "tipo": "ruta",
-   "rutas": [
+   "tipo": "expedicion",
+   "mazmorras": [
     {
      "paso": "1",
-     "abrir": "Ferocious Horn Den Exploration",
-     "modo": "3 cofres",
-     "nivel": "2.100",
-     "jefes": [
-      "Kuhapu el Perro guardián",
-      "Duanka el Nigromante",
-      "Nuakum"
+     "fondo": "horncave_001",
+     "estrellas": 3,
+     "nombre": "Caverna del Cuerno Feroz",
+     "modos": [
+      "Exploración",
+      "Conquista"
      ],
-     "objetos": [
+     "modo": "Conquista",
+     "poder": "2.100",
+     "jugadores": "1 a 5",
+     "limite": "Se recargan **2 al día** y se guardan hasta 14 (en el juego: Número de recompensas de cubo).",
+     "od": 40,
+     "garantizada": 28,
+     "jefes": [
       {
-       "i": "Icon_Weapon_Guarder_L_012",
-       "g": "Unique",
-       "n": "Nuakum Guard"
+       "n": "Perro guardián Kwapo",
+       "img": "kalnifelite_01_v02"
       },
       {
-       "i": "Icon_GM_Idris_01_Helmet",
-       "g": "Unique",
-       "n": "Yelmo de Nuakum"
+       "n": "Duanka nigromante",
+       "img": "lycan_04_v01"
+      },
+      {
+       "n": "Nuakum del Cuerno Feroz",
+       "img": "ferk_01_v01"
       }
-     ],
-     "buscar": "Pieza a elegir: **guárdala** hasta que solo te falte una.",
-     "cofres": 3,
-     "odyle": "120 de Odyle: 1 día."
-    },
-    {
-     "paso": "2",
-     "abrir": "Ferocious Horn Den Conquest",
-     "modo": "Toda la Odyle aquí",
-     "nivel": "2.100",
-     "jefes": [
-      "Kuhapu el Perro guardián",
-      "Duanka el Nigromante",
-      "Nuakum (turnaos para bloquear: el marcado no repite)"
      ],
      "objetos": [
       {
@@ -708,57 +814,37 @@
       }
      ],
      "buscar": "**Armadura de Nuakum** (nivel 86) y la **Nuakum Guard**.",
-     "cofres": 28,
-     "odyle": "1.120 de Odyle: unos 9 días."
+     "plan": "Primero **3 cubos en Exploración** y guarda la pieza a elegir hasta que solo te falte una. Luego los 2 cubos de Conquista de cada día. Nuakum: turnaos para bloquear, el que tiene la marca no repite.",
+     "nota": "Antes de Duanka hay un tótem (Tótem de Mau brillante) que saca oleadas: rómpelo con las bombas de las escaleras."
     },
     {
-     "paso": "3",
-     "abrir": "Transcendence fase 3",
-     "modo": "Desde 2.200",
-     "nivel": "2.200",
-     "jefes": [
-      "Deus Research Base",
-      "Shattered Arkanis"
+     "paso": "2",
+     "fondo": "firetemple_001",
+     "estrellas": 3,
+     "nombre": "Templo de Fuego",
+     "modos": [
+      "Exploración",
+      "Conquista"
      ],
-     "lugares": true,
-     "objetos": [
+     "modo": "Conquista",
+     "poder": "2.100",
+     "jugadores": "1 a 5",
+     "limite": "Se recargan **2 al día** y se guardan hasta 14 (en el juego: Número de recompensas de cubo).",
+     "od": 40,
+     "garantizada": 28,
+     "jefes": [
       {
-       "i": "Icon_Arcana_Card_Grail_u_PveSet2",
-       "g": "Unique",
-       "n": "Cáliz"
+       "n": "Humo negro Murute",
+       "img": "ashguard_01"
       },
       {
-       "i": "Icon_Arcana_Card_Compass_u_PveSet2",
-       "g": "Unique",
-       "n": "Brújula"
+       "n": "Fulgor rojo Ignus",
+       "img": "fireguard_01"
       },
       {
-       "i": "Icon_Arcana_Card_Bell_u_DefenceSet2",
-       "g": "Unique",
-       "n": "Campana"
-      },
-      {
-       "i": "Icon_Arcana_Card_Parchment_u_PveSet2",
-       "g": "Unique",
-       "n": "Pergamino"
-      },
-      {
-       "i": "Icon_Arcana_Card_Mirror_u_PveSet2",
-       "g": "Unique",
-       "n": "Espejo"
+       "n": "Ambición de Kromede",
+       "img": "cromede_01"
       }
-     ],
-     "buscar": "Arcanas **Únicas** (el Cáliz, Épico). Con una partida de Arkanis para azules ya se pasa de 2.500."
-    },
-    {
-     "paso": "4",
-     "abrir": "Fire Temple Conquest",
-     "modo": "Arma y accesorios",
-     "nivel": "2.100",
-     "jefes": [
-      "Murute el Humo negro",
-      "Ignus el Fulgor rojo",
-      "Kromede"
      ],
      "objetos": [
       {
@@ -777,20 +863,21 @@
        "n": "Pendientes de Kromede"
       }
      ],
-     "buscar": "**Arma de Kromede enfurecida** y collar, pendientes y anillos de nivel 86.",
-     "cofres": 28,
-     "odyle": "1.120 de Odyle: unos 9 días."
-    },
+     "buscar": "**Arma de Kromede enfurecida** y collar, pendientes y anillos de nivel 86. A los 28 cubos eliges un accesorio o un vale.",
+     "plan": "Cuando tengas la armadura de Nuakum, pasa aquí los 2 cubos de Conquista de cada día.",
+     "nota": "En Conquista también sale Rotan de la cuchilla de plata: mátalo también."
+    }
+   ]
+  },
+  {
+   "titulo": "Tramo 3: lo demás",
+   "tipo": "ruta",
+   "rutas": [
     {
-     "paso": "5",
-     "abrir": "Transcendence fase 4",
-     "modo": "Desde 2.500",
-     "nivel": "2.500",
-     "jefes": [
-      "Deus Research Base",
-      "Shattered Arkanis"
-     ],
-     "lugares": true,
+     "paso": "3",
+     "abrir": "Trascendencia 3 y 4",
+     "modo": "Desde 2.200 y 2.500, en la Base de Investigación Deus y Arkanis Fragmentado",
+     "nivel": "2.200",
      "objetos": [
       {
        "i": "Icon_Arcana_Card_Grail_u_PveSet2",
@@ -818,10 +905,10 @@
        "n": "Espejo"
       }
      ],
-     "buscar": "Arcanas **doradas** (Únicas) en los 5 huecos, Cáliz incluido."
+     "buscar": "Arcanas **Únicas** (doradas) en los 5 huecos, Cáliz incluido. Una partida de Arkanis para azules ya ayuda a pasar de 2.500."
     },
     {
-     "paso": "6",
+     "paso": "4",
      "abrir": "Fabricación de nivel 94 y 102",
      "modo": "El remate",
      "buscar": "Es mejor que lo de nivel 86: es lo que merece la pena subir a +15 y Amplify."
@@ -836,13 +923,13 @@
    "titulo": "Resumen en 7 líneas",
    "tipo": "pasos",
    "items": [
-    "**De 700 a 1.000:** misión principal, misiones verdes, mazmorras selladas, fortalezas, gastar cristales y **3 cofres de Draupnir Exploration** (pechera).",
-    "**De 1.000 a 1.400:** final de la historia en el Abismo, Traces, cinturón y amuleto a Único, runas a +1, arma y brazalete a +10 y piedras en todo. **Guarda la Odyle.**",
-    "**De 1.400 a 1.600:** toda la Odyle a **Vakron** (primero 3 cofres de Exploration, luego Conquest): armadura de nivel 70.",
-    "**De 1.600 a 1.900:** **Transcendence fase 1** hasta tener 5 Arcanas verdes; termina Vakron; set a +7.",
-    "**De 1.900 a 2.100:** **Urugugu** (accesorios), **Transcendence fase 2** (Arcanas azules) y el Cáliz Único.",
-    "**De 2.100 a 2.500:** **Horn Den** (armadura de nivel 86) y **Transcendence fase 3**.",
-    "**De 2.500 a 2.800:** **Fire Temple** (arma y accesorios de nivel 86), Arcanas doradas y accesorios fabricados de nivel 94 y 102."
+    "**De 700 a 1.000:** misión principal, misiones verdes, mazmorras selladas, fortalezas, gastar cristales y **3 cubos de Draupnir en Exploración** (pechera).",
+    "**De 1.000 a 1.400:** final de la historia en el Abismo, Traces, cinturón y amuleto a Único, runas a +1 y **todo lo dorado a +10**. Guarda la Od.",
+    "**De 1.400 a 1.600:** **Isla Aérea de Vakron** (3 cubos de Exploración y luego 2 de Conquista al día): armadura de nivel 70.",
+    "**De 1.600 a 1.900:** **Trascendencia 1** hasta tener 5 Arcanas verdes; termina Vakron; set a +7.",
+    "**De 1.900 a 2.100:** **Cañón de Urugugu** (accesorios), **Trascendencia 2** (Arcanas azules) y el Cáliz Único.",
+    "**De 2.100 a 2.500:** **Caverna del Cuerno Feroz** (armadura de nivel 86) y **Trascendencia 3**.",
+    "**De 2.500 a 2.800:** **Templo de Fuego** (arma y accesorios de nivel 86), Arcanas doradas y accesorios fabricados de nivel 94 y 102."
    ]
   }
  ],

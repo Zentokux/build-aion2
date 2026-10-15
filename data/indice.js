@@ -111,7 +111,7 @@ window.INDICE = [
   "slug": "progression__farmeo-de-equipo-700-1400-2100",
   "categoria": "progression",
   "titulo": "Farmeo de equipo: de 700 a 2.800",
-  "resumen": "Plan del servidor **global** (nivel 45): qué objetivos hacer, a qué jefes matar, qué pieza buscar y **en qué gastar la energía Odyle**. De 700 a 1.400 casi todo es gratis (misiones y mapa). De 1.400 a 2.100: Vakron, Arcana y Urugugu. De 2.100 a 2.800: Horn Den, Fire Temple y Arcana dorada."
+  "resumen": "Plan del servidor **global** (nivel 45): qué objetivos hacer, a qué jefes matar, qué pieza buscar y **en qué gastar la energía Od**. De 700 a 1.400 casi todo es gratis (misiones, mapa y mejorar lo que tienes). De 1.400 a 2.100: Isla Aérea de Vakron, Arcana y Cañón de Urugugu. De 2.100 a 2.800: Caverna del Cuerno Feroz, Templo de Fuego y Arcana dorada."
  },
  {
   "slug": "progression__grados-de-equipo-de-comun-a-epico-y-de-donde-sale-cada-uno",

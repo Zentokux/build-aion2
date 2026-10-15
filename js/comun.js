@@ -77,11 +77,41 @@ function bloquesHTML(bloques) {
             '<div class="ru-btexto">' + md(r.odyle || "") + "</div></div></div>" : "") +
           (r.nota ? '<div class="ru-nota">' + md(r.nota) + "</div>" : "") + "</div>";
       }).join("");
+    } else if (b.tipo === "expedicion") {
+      h += (b.mazmorras || []).map(expHTML).join("");
     } else if (b.texto) {
       h += "<p>" + md(b.texto) + "</p>";
     }
     return h;
   }).join("");
+}
+
+// tarjeta de mazmorra con el aspecto de la pantalla de entrada del juego
+var ESTRELLA = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.2l7.1-.6z"/></svg>';
+function expHTML(m) {
+  var est = "";
+  for (var i = 0; i < (m.estrellas || 0); i++) est += ESTRELLA;
+  var pity = m.garantizada ? '<div class="exp-sec">Recompensa garantizada</div><div class="exp-pity"><div class="barra"><i></i></div><span>0 / ' + esc(m.garantizada) + "</span></div>" : "";
+  return '<div class="exp">' +
+    '<div class="exp-arte' + (m.fondo ? '" style="background-image:url(img/mazmorras/' + esc(m.fondo) + '.webp)">' : ' sinfondo">') +
+    (m.modos ? '<div class="exp-tabs">' + m.modos.map(function (x) { return "<span" + (x === m.modo ? ' class="on"' : "") + ">" + esc(x) + "</span>"; }).join("") + "</div>" : "") +
+    '<div class="exp-panel">' + (m.paso ? '<span class="ru-paso">' + esc(m.paso) + "</span>" : "") +
+    (est ? '<div class="exp-est">' + est + "</div>" : "") +
+    '<div class="exp-nombre">' + esc(m.nombre) + "</div>" +
+    '<div class="exp-sec">Condiciones de entrada</div><div class="exp-cond">Nv. ' + esc(m.nivel || 45) +
+    ' <i>|</i> <b class="poder">' + esc(m.poder) + "</b> <i>|</i> " + esc(m.jugadores || "1 a 5") + "</div>" +
+    (m.limite ? '<div class="exp-sec">Recompensas de cubo</div><div class="exp-txt">' + md(m.limite) + "</div>" : "") +
+    '<div class="exp-sec">Recompensa de cubo <b class="od">' + esc(m.od || 40) + " Od</b></div>" +
+    (m.objetos ? '<div class="es-obj">' + m.objetos.map(function (o) { return objHTML(o); }).join("") + "</div>" : "") +
+    pity + "</div></div>" +
+    (m.jefes ? '<div class="exp-jefes' + (m.sinorden ? " sinorden" : "") + '">' + m.jefes.map(function (j, n) {
+      var fin = !m.sinorden && n === m.jefes.length - 1;
+      return '<div class="exp-jefe' + (fin ? " final" : "") + '">' + (j.img ? '<img src="img/jefes/' + esc(j.img) + '.webp" alt="" loading="lazy">' : '<span class="sinimg"></span>') +
+        '<div>' + (m.sinorden ? "" : '<span class="num">' + (n + 1) + "</span>") + "<b>" + esc(j.n) + "</b>" + (fin ? "<small>Jefe final</small>" : (j.nota ? "<small>" + esc(j.nota) + "</small>" : "")) + "</div></div>";
+    }).join("") + "</div>" : "") +
+    (m.buscar ? '<div class="ru-fila"><span class="ru-et">Qué buscar</span><div class="ru-btexto">' + md(m.buscar) + "</div></div>" : "") +
+    (m.plan ? '<div class="ru-fila"><span class="ru-et">Cómo hacerlo</span><div class="ru-btexto">' + md(m.plan) + "</div></div>" : "") +
+    (m.nota ? '<div class="ru-nota">' + md(m.nota) + "</div>" : "") + "</div>";
 }
 
 // fondo del juego según la sección (img/fondos)

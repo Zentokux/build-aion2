@@ -273,3 +273,55 @@ footer { background: rgba(8, 11, 19, .85); }
 .ru-jefes.lugares { gap: 8px; }
 .ru-jefes.lugares .jefe { padding: 5px 12px; }
 .ru-jefes.lugares .jefe::after { display: none; }
+
+/* tarjeta de mazmorra al estilo de la pantalla de entrada del juego */
+.exp { background: var(--panel); border: 1px solid var(--borde); border-radius: 12px; margin: 14px 0 20px; overflow: hidden; }
+.exp-arte { position: relative; min-height: 330px; background: #0b0f18 center 35% / cover no-repeat; }
+.exp-arte::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5, 8, 14, .92) 0%, rgba(5, 8, 14, .75) 38%, rgba(5, 8, 14, .05) 75%); }
+.exp-tabs { position: absolute; right: 18px; top: 12px; display: flex; gap: 22px; z-index: 1; }
+.exp-tabs span { color: rgba(255, 255, 255, .55); font-weight: 700; font-size: 15px; text-shadow: 0 1px 4px #000; }
+.exp-tabs span.on { color: #fff; border-bottom: 2px solid var(--azul); padding-bottom: 3px; }
+.exp-panel { position: relative; z-index: 1; max-width: 430px; padding: 16px 18px 18px; }
+.exp-panel .ru-paso { float: right; }
+.exp-est { display: flex; gap: 2px; }
+.exp-est svg { width: 20px; height: 20px; fill: #f3d27a; filter: drop-shadow(0 0 3px rgba(243, 210, 122, .6)); }
+.exp-nombre { font: 700 26px/1.2 Cinzel, Georgia, serif; color: #fff; text-shadow: 0 2px 6px #000; margin: 2px 0 6px; }
+.exp-sec { margin: 10px 0 4px; padding-left: 14px; position: relative; color: #9fe3ff; font-weight: 700; font-size: 14px; background: linear-gradient(90deg, rgba(108, 198, 255, .16), transparent); border-radius: 3px; }
+.exp-sec::before { content: ""; position: absolute; left: 3px; top: 50%; width: 6px; height: 6px; background: #9fe3ff; transform: translateY(-50%) rotate(45deg); }
+.exp-sec .od { color: #fff; margin-left: 6px; }
+.exp-cond { font-weight: 700; color: #fff; }
+.exp-cond i { color: rgba(255, 255, 255, .35); font-style: normal; margin: 0 4px; }
+.exp-cond .poder { color: var(--oro2); }
+.exp-txt { font-size: 14px; color: #e4e8f1; }
+.exp .es-obj .obj figcaption { color: #cfd6e4; text-shadow: 0 1px 3px #000; }
+.exp-pity { display: flex; align-items: center; gap: 10px; }
+.exp-pity .barra { flex: 1; height: 8px; border-radius: 4px; background: rgba(255, 255, 255, .15); overflow: hidden; }
+.exp-pity .barra i { display: block; width: 2%; height: 100%; background: var(--azul); }
+.exp-pity span { font-size: 13px; color: var(--suave); white-space: nowrap; }
+.exp-jefes { display: flex; flex-wrap: wrap; gap: 10px 26px; padding: 14px 16px; background: var(--panel2); border-bottom: 1px solid var(--borde); }
+.exp-jefe { position: relative; display: flex; align-items: center; gap: 10px; }
+.exp-jefes:not(.sinorden) .exp-jefe:not(:last-child)::after { content: ""; position: absolute; right: -18px; top: 50%; border: 6px solid transparent; border-left-color: var(--oro); transform: translateY(-50%); }
+.exp-jefe img, .exp-jefe .sinimg { width: 64px; height: 64px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, .15); background: #111723; object-fit: cover; flex: none; }
+.exp-jefe.final img { border: 2px solid var(--oro); box-shadow: 0 0 10px rgba(236, 185, 79, .45); }
+.exp-jefe b { display: block; font-size: 14px; line-height: 1.25; max-width: 150px; }
+.exp-jefe small { display: block; color: var(--oro); font-size: 12px; }
+.exp-jefe .num { display: inline-flex; width: 20px; height: 20px; border-radius: 50%; background: #2a3344; color: #fff; font-size: 12px; font-weight: 700; align-items: center; justify-content: center; margin-bottom: 3px; }
+.exp-jefe.final .num { background: var(--oro); color: #1a1407; }
+@media (max-width: 600px) {
+  .exp-arte { min-height: 0; background-position: center 30%; }
+  .exp-arte::before { background: linear-gradient(180deg, rgba(5, 8, 14, .35) 0%, rgba(5, 8, 14, .85) 45%, rgba(5, 8, 14, .95) 100%); }
+  .exp-panel { padding-top: 120px; max-width: none; }
+  .exp-tabs { left: 14px; right: auto; }
+  .exp-nombre { font-size: 22px; }
+  .exp-jefes { gap: 10px 22px; }
+  .exp-jefe img, .exp-jefe .sinimg { width: 52px; height: 52px; }
+}
+.exp-arte.sinfondo { min-height: 0; background: radial-gradient(circle at 85% 30%, rgba(169, 133, 255, .35), transparent 55%), linear-gradient(120deg, #141a2c, #241a3d); }
+.exp-arte.sinfondo::before { display: none; }
+@media (max-width: 600px) { .exp-arte.sinfondo .exp-panel { padding-top: 46px; } }
+@media (max-width: 600px) {
+  .ru-fila > .ru-btexto, .ru-buscar .ru-btexto, .ru-odyle .ru-btexto { flex: 0 0 auto; }
+  .exp-jefes { flex-direction: column; gap: 8px; }
+  .exp-jefes .exp-jefe::after { display: none; }
+  .exp-jefe b { max-width: none; }
+}
