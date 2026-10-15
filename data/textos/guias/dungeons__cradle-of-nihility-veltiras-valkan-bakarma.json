@@ -74,7 +74,7 @@
      "Lleva tu círculo hasta un orbe para destruirlo; unos dos orbes por persona."
     ],
     [
-     "Marca de color (~40%)",
+     "Marca de color (cerca de 40%)",
      "Cada jugador recibe rojo, amarillo, verde o azul y aparecen 4 barreras de esos colores en el borde.",
      "Métete en la barrera de tu color. Fallar es **muerte instantánea**. Esquiva los círculos pequeños del suelo."
     ],
@@ -172,7 +172,7 @@
    "filas": [
     [
      "Rotación de espadas",
-     "Va al centro, 4 espadas giran y lanzan ~320 grados cuatro veces; zonas seguras azules a izquierda o derecha.",
+     "Va al centro, 4 espadas giran y lanzan cerca de 320 grados cuatro veces; zonas seguras azules a izquierda o derecha.",
      "**Antihorario = lado derecho, horario = izquierdo**. La primera se evita detrás del jefe. Los jugadores chocan: elige lado pronto y no vayas al mismo hueco."
     ],
     [

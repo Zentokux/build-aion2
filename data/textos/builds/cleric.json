@@ -94,7 +94,7 @@
     "items": [
      "Condena solo se reinicia con crítico, pero el crítico tiene tope del 50% y la Resistencia Crítica del jefe lo baja.",
      "**Castigo terrestre** hace que Condena sea crítico siempre sobre ese objetivo.",
-     "Usa Crítico como última línea de armadura solo hasta que Castigo terrestre cubra todo el combate (nivel 20 y ~un tercio menos de enfriamiento).",
+     "Usa Crítico como última línea de armadura solo hasta que Castigo terrestre cubra todo el combate (nivel 20 y cerca de un tercio menos de enfriamiento).",
      "Después cambia esas líneas, pieza a pieza, por Gracia terrestre o Gracia empírea (salen en toda la armadura, pendientes y collar).",
      "Anillos: Condena, Resplandor de recobro y Centella; +1 por anillo, 16 antes de Arcana.",
      "Las líneas de valor variable en las primeras ranuras, para rerollear."
@@ -439,7 +439,7 @@
      [
       "Castigo terrestre",
       "Nv 5: Condena siempre crítico sobre el objetivo. Nv 10: +10% de Golpe (5% al grupo). Nv 15: +10% de Ataque y Defensa (5% al grupo). Nv 20: 20 s con 30 s de enfriamiento",
-      "20: con ~34% de Reducción de Tiempo de Enfriamiento nunca se cae"
+      "20: con cerca de 34% de Reducción de Tiempo de Enfriamiento nunca se cae"
      ],
      [
       "Aura noble",

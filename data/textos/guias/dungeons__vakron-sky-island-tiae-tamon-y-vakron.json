@@ -74,7 +74,7 @@
    ],
    "filas": [
     [
-     "Fase de la flor (~75 % y ~25 %)",
+     "Fase de la flor (cerca de 75 % y cerca de 25 %)",
      "Va al centro, llena de veneno todo fuera de un círculo e invoca una flor",
      "Mata la flor"
     ],
@@ -104,12 +104,12 @@
    ],
    "filas": [
     [
-     "Brillo rojo (~85 % y ~15 %)",
+     "Brillo rojo (cerca de 85 % y cerca de 15 %)",
      "El daño **físico** lo cura",
      "Paran: Templario, Gladiador, Ranger y Sicario"
     ],
     [
-     "Brillo morado (~85 % y ~15 %)",
+     "Brillo morado (cerca de 85 % y cerca de 15 %)",
      "El daño **mágico** lo cura",
      "Paran: Hechicero, Clérigo, Conjurador y Espiritualista"
     ],

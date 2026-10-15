@@ -141,7 +141,7 @@
      "Caen en Transcendence. Cada carta da su stat de dios + hasta 4 líneas de su propio grupo: buscas una carta cuyas líneas caigan en tus habilidades.",
      "El set se salta a propósito el bonus de 4 piezas: al principio valen más los stats sueltos.",
      "Compass of Magic antes que la de vitalidad: te falta mucho más Crítico que Precisión (pero el crítico topa en 50%).",
-     "Mirror of Vigor da Reducción de Tiempo de Enfriamiento; cuando pases de ~35% sin ella, cámbiala por Mirror of Magic (Golpe).",
+     "Mirror of Vigor da Reducción de Tiempo de Enfriamiento; cuando pases de cerca de 35% sin ella, cámbiala por Mirror of Magic (Golpe).",
      "Bell of Magic apenas importa en PvE: va por su Ataque.",
      "El planificador anota una habilidad por carta: toma sus niveles como mínimo. Chalice of Vigor (saca cualquier habilidad) se craftea la última."
     ]
@@ -184,7 +184,7 @@
      ],
      [
       "Explosión de llama",
-      "Daño extra (espec. 3: ~35% más)",
+      "Daño extra (espec. 3: cerca de 35% más)",
       "Solo contra objetivo con Marca ígnea. La espec. 5 (−3 s a Voto por golpe) es imprescindible"
      ],
      [
@@ -205,7 +205,7 @@
      [
       "Atadura invernal",
       "Espec. 3: +20% Amplificación de Daño de JcE 5 s",
-      "Quitar la espec. 3 cuesta ~3% de daño"
+      "Quitar la espec. 3 cuesta cerca de 3% de daño"
      ],
      [
       "Llamas sin puntería",
@@ -255,7 +255,7 @@
      [
       "Merced de mejora",
       "16",
-      "+20% Amplificación de Daño de JcE con maná ≥25%. Otros ponen Vaporización de viveza o Marca ígnea"
+      "+20% Amplificación de Daño de JcE con maná desde 25%. Otros ponen Vaporización de viveza o Marca ígnea"
      ],
      [
       "Marca ígnea",
@@ -265,7 +265,7 @@
      [
       "Toga terrestre / Vaporización de viveza",
       "14",
-      "Maná y Crítico con maná ≥50% / daño extra a objetivos >70% de vida; nivel base + tableros"
+      "Maná y Crítico con maná desde 50% / daño extra a objetivos >70% de vida; nivel base + tableros"
      ]
     ]
    },

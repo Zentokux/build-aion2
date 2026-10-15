@@ -110,8 +110,8 @@ window.INDICE = [
  {
   "slug": "progression__farmeo-de-equipo-700-1400-2100",
   "categoria": "progression",
-  "titulo": "Farmeo de equipo: 700 → 1.400 → 2.100 → 2.800",
-  "resumen": "Plan exacto del servidor **global** (nivel 45): qué objetivos hacer, a qué jefes matar, qué pieza buscar y **en qué gastar cada punto de Odyle**. Resumen: de 700 a 1.400 casi todo es gratis (misiones y mapa); de 1.400 a 2.100, Vakron → Arcana → Urugugu; de 2.100 a 2.800, Horn Den, Fire Temple y Arcana dorada."
+  "titulo": "Farmeo de equipo: de 700 a 2.800",
+  "resumen": "Plan del servidor **global** (nivel 45): qué objetivos hacer, a qué jefes matar, qué pieza buscar y **en qué gastar la energía Odyle**. De 700 a 1.400 casi todo es gratis (misiones y mapa). De 1.400 a 2.100: Vakron, Arcana y Urugugu. De 2.100 a 2.800: Horn Den, Fire Temple y Arcana dorada."
  },
  {
   "slug": "progression__grados-de-equipo-de-comun-a-epico-y-de-donde-sale-cada-uno",
@@ -141,7 +141,7 @@ window.INDICE = [
   "slug": "progression__recoleccion-empyrean-trace-y-monolitos",
   "categoria": "progression",
   "titulo": "Recolección, Empyrean Trace y monolitos",
-  "resumen": "Recolecta y recoge Empyrean Traces en la ruta que ya haces, sin sesiones dedicadas. El Odyle sostiene ~20% de tu techo semanal de equipo y Monolith Resonance a 30 da 112 puntos de skill y stats permanentes."
+  "resumen": "Recolecta y recoge Empyrean Traces en la ruta que ya haces, sin sesiones dedicadas. El Odyle sostiene cerca de 20% de tu techo semanal de equipo y Monolith Resonance a 30 da 112 puntos de skill y stats permanentes."
  },
  {
   "slug": "progression__stigma-y-especializacion-donde-se-hace-la-build",
@@ -309,7 +309,7 @@ window.INDICE = [
   "slug": "economy__farmear-kina-tope-diario-rutas-y-comisiones-del-mercado",
   "categoria": "economy",
   "titulo": "Farmear Kina: tope, rutas y comisiones",
-  "resumen": "En Corea la caza en campo tiene un tope de 1.000.000 de Kina por personaje y día, y al llegar se cortan también los drops. Caza hasta el tope y pasa a mazmorras, mercado y alts. Vender cuesta 10% en tu servidor, 20% entre servidores y ~35% convertir Kina en Quna."
+  "resumen": "En Corea la caza en campo tiene un tope de 1.000.000 de Kina por personaje y día, y al llegar se cortan también los drops. Caza hasta el tope y pasa a mazmorras, mercado y alts. Vender cuesta 10% en tu servidor, 20% entre servidores y cerca de 35% convertir Kina en Quna."
  },
  {
   "slug": "economy__founders-packs-y-el-filtro-de-la-membership",

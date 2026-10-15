@@ -13,7 +13,7 @@
  "contras": [
   "Un orden descuidado castiga: un espíritu invocado antes de los buffs queda más débil.",
   "Hay que mantener 5 acumulaciones de Earth Tremor todo el combate.",
-  "Pide 65%+ de Velocidad de Hechizo y poco ping (menos de ~60 ms) para encadenar bien.",
+  "Pide 65%+ de Velocidad de Hechizo y poco ping (menos de cerca de 60 ms) para encadenar bien.",
   "Invocación: Espíritu ancestral y Golpe conjunto: Corrosión solo brillan con niveles altos de stigma.",
   "Maná justo mientras subes de nivel, hasta que el equipo se pone al día.",
   "Ráfaga continua solo funciona sobre un objetivo en stagger."
@@ -67,7 +67,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "White Dragon Lord es nivel de objeto 78 (menos que Kromede), pero lleva **5 líneas de Soul Binding y 4 engarces**, y las líneas se conservan al subir a Splendent (86), Wise (94) y Splendent Wise (102). Mientras subes de nivel, llevar el arma a ~+10 es el mayor salto que puedes dar."
+    "texto": "White Dragon Lord es nivel de objeto 78 (menos que Kromede), pero lleva **5 líneas de Soul Binding y 4 engarces**, y las líneas se conservan al subir a Splendent (86), Wise (94) y Splendent Wise (102). Mientras subes de nivel, llevar el arma a cerca de +10 es el mayor salto que puedes dar."
    },
    {
     "titulo": "Soul Binding: reglas",
@@ -135,7 +135,7 @@
      ],
      [
       "Cooldown Reduction",
-      "20% para empezar (Espíritu ancestral cada 72 s en vez de 90); ~33% para tener Golpe conjunto: Corrosión siempre activo"
+      "20% para empezar (Espíritu ancestral cada 72 s en vez de 90); cerca de 33% para tener Golpe conjunto: Corrosión siempre activo"
      ],
      [
       "Precisión",
@@ -349,7 +349,7 @@
      [
       "Golpe conjunto: Corrosión",
       "El jefe recibe más daño de tu espíritu + daño en el tiempo 20 s",
-      "5: daño extra del 10% al 25%; 20: +10 s, y con ~33% de Reducción queda siempre activo"
+      "5: daño extra del 10% al 25%; 20: +10 s, y con cerca de 33% de Reducción queda siempre activo"
      ],
      [
       "Drenaje",

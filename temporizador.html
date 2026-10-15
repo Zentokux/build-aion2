@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Temporizador · BUILD AION2</title>
 <meta name="description" content="Temporizador de eventos de AION 2 Global: Festival de Shugo, Grieta Espacio-Tiempo, Invasión dimensional, Kaira, asedio de artefactos, Nahma y reinicios.">
-<link rel="stylesheet" href="css/estilo.css?v=5">
+<link rel="stylesheet" href="css/estilo.css?v=6">
 <style>
 .relojes { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
 .relojes .panel { margin: 0; padding: 8px 14px; }
@@ -91,7 +91,7 @@ td small { display: block; color: var(--suave); }
   <div class="aviso">🔔 = te avisa ese evento: sonido, cartel en la página, título de la pestaña parpadeando y notificación de Windows (aunque estés en el juego o en otra pestaña). La página tiene que estar abierta. <b>SIN CONFIRMAR</b> = las fuentes no coinciden: mira el reloj del minimapa la primera vez.</div>
   <div class="aviso">NCSOFT no ha publicado los horarios globales; son los que recogen los jugadores (octubre de 2026). El Festival de Shugo pasó de :15/:45 a <b>en punto</b>. Los reinicios van a las 07:00 UTC fijas: con el cambio de hora de EE. UU. (1-nov) y Europa (25-oct) se mueven en tu reloj.</div>
 </main>
-<script src="js/comun.js?v=9"></script>
+<script src="js/comun.js?v=10"></script>
 <script>
 (function () {
   var REGIONES = {
@@ -106,7 +106,7 @@ td small { display: block; color: var(--suave); }
   var EVENTOS = [
     { id: "shugo", nombre: "Festival de Shugo", nota: "Gasta tus llaves", horas: TODAS, min: 0, dur: 10, cuando: "Cada hora en punto · 10 min" },
     { id: "invasion", nombre: "Invasión dimensional", nota: "Entra en los 3 primeros min", horas: TODAS, min: 30, dur: 15, cuando: "Cada hora a las :30 · 15 min" },
-    { id: "grieta", nombre: "Grieta Espacio-Tiempo", nota: "Portal abierto 10 min; dentro ~1 h", horas: CADA3_02, min: 0, dur: 10, cuando: "Cada 3 h desde las 02:00" },
+    { id: "grieta", nombre: "Grieta Espacio-Tiempo", nota: "Portal abierto 10 min; dentro cerca de 1 h", horas: CADA3_02, min: 0, dur: 10, cuando: "Cada 3 h desde las 02:00" },
     { id: "kaira", nombre: "Vigilante Kaira", nota: "Abismo (Reshanta inferior), zona JcJ", horas: CADA3_01, min: 0, dur: 30, duda: true, cuando: "Cada 3 h desde las 01:00 (otra fuente: 02:00)" },
     { id: "asedio", nombre: "Asedio de artefactos", nota: "Abismo", horas: [21], min: 0, dias: [1, 4, 6], dur: 30, cuando: "Lun, jue y sáb 21:00" },
     { id: "jefes-asedio", nombre: "Jefes del asedio", nota: "Tras el asedio", horas: [21], min: 30, dias: [1, 4, 6], dur: 30, cuando: "Lun, jue y sáb 21:30" },

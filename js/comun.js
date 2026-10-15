@@ -26,6 +26,15 @@ function esc(s) {
 // solo **negrita**
 function md(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"); }
 
+// icono de objeto con el fondo de su grado: {i: icono, g: grado, n: nombre}
+function objHTML(o, grande) {
+  var g = o.g || o.grado || "Unique", i = o.i || o.icono;
+  return '<figure class="obj' + (grande ? " grande" : "") + '"><span class="ranura-g g-' + esc(g) + '"' +
+    (g !== "Special" ? ' style="background-image:url(icons/ui/SlotGrade_' + esc(g) + '.webp)"' : "") +
+    '><img src="icons/objetos/' + esc(i) + '.webp" alt="" loading="lazy"></span>' +
+    (grande || !o.n ? "" : "<figcaption>" + esc(o.n) + "</figcaption>") + "</figure>";
+}
+
 function bloquesHTML(bloques) {
   return (bloques || []).map(function (b) {
     var h = b.titulo ? "<h3>" + md(b.titulo) + "</h3>" : "";
@@ -42,6 +51,32 @@ function bloquesHTML(bloques) {
       h += '<ol class="pasos">' + (b.items || []).map(function (i) { return "<li>" + md(i) + "</li>"; }).join("") + "</ol>";
     } else if (b.tipo === "aviso") {
       h += '<div class="aviso">' + md(b.texto) + "</div>";
+    } else if (b.tipo === "objeto") {
+      h += '<div class="ficha-obj">' + objHTML(b, true) + '<div><div class="fo-nombre">' + md(b.nombre) + "</div>" +
+        (b.sub ? '<div class="fo-sub">' + md(b.sub) + "</div>" : "") +
+        "<ul>" + (b.items || []).map(function (i) { return "<li>" + md(i) + "</li>"; }).join("") + "</ul></div></div>";
+    } else if (b.tipo === "escalera") {
+      h += '<ol class="escalera">' + (b.items || []).map(function (s) {
+        return '<li><div class="es-nivel">' + esc(s.nivel) + '</div><div class="es-cuerpo"><div class="es-texto">' + md(s.texto) + "</div>" +
+          (s.objetos ? '<div class="es-obj">' + s.objetos.map(function (o) { return objHTML(o); }).join("") + "</div>" : "") + "</div></li>";
+      }).join("") + "</ol>";
+    } else if (b.tipo === "ruta") {
+      h += (b.rutas || []).map(function (r) {
+        var cof = "";
+        for (var i = 1; i <= (r.cofres || 0); i++) cof += '<i class="' + (i === r.cofres ? "fin" : "") + (i % 3 === 0 ? " dia" : "") + '"></i>';
+        return '<div class="ruta">' +
+          '<div class="ru-cab">' + (r.paso ? '<span class="ru-paso">' + esc(r.paso) + "</span>" : "") +
+          '<div class="ru-tit"><div class="ru-nombre">' + md(r.abrir) + "</div>" + (r.modo ? '<div class="ru-modo">' + md(r.modo) + "</div>" : "") + "</div>" +
+          (r.nivel ? '<span class="ru-nivel">' + esc(r.nivel) + "</span>" : "") + "</div>" +
+          (r.jefes ? '<div class="ru-fila"><span class="ru-et">' + (r.lugares ? "Dónde (haz las dos)" : "Matar, en orden") + '</span><div class="ru-jefes' + (r.lugares ? " lugares" : "") + '">' + r.jefes.map(function (j, n) {
+            return '<div class="jefe' + (!r.lugares && n === r.jefes.length - 1 ? " final" : "") + '">' + (r.lugares ? "" : '<span class="num">' + (n + 1) + "</span>") + "<span>" + md(j) + "</span></div>";
+          }).join("") + "</div></div>" : "") +
+          (r.buscar ? '<div class="ru-fila"><span class="ru-et">Qué buscar</span><div class="ru-buscar">' +
+            (r.objetos || []).map(function (o) { return objHTML(o); }).join("") + '<div class="ru-btexto">' + md(r.buscar) + "</div></div></div>" : "") +
+          (r.cofres ? '<div class="ru-fila"><span class="ru-et">Odyle</span><div class="ru-odyle"><div class="cofres" title="Cada cuadro es un cofre de 40 de Odyle">' + cof + "</div>" +
+            '<div class="ru-btexto">' + md(r.odyle || "") + "</div></div></div>" : "") +
+          (r.nota ? '<div class="ru-nota">' + md(r.nota) + "</div>" : "") + "</div>";
+      }).join("");
     } else if (b.texto) {
       h += "<p>" + md(b.texto) + "</p>";
     }
@@ -66,7 +101,7 @@ function cabecera(activa) {
   ponerFondo(activa);
   var links = [["index.html", "Inicio", "inicio"]].concat(
     CLASES.map(function (c) { return ["clase.html?c=" + c.id, c.nombre, c.id]; }),
-    [["index.html#guias", "Guías", "guias"], ["temporizador.html?v=8", "Temporizador", "temporizador"], ["mapa-cubos.html", "Mapa de cubos", "mapa"], ["guia.html?g=progression__farmeo-de-equipo-700-1400-2100", "Farmeo de equipo", "farmeo"]]
+    [["index.html#guias", "Guías", "guias"], ["temporizador.html?v=9", "Temporizador", "temporizador"], ["mapa-cubos.html", "Mapa de cubos", "mapa"], ["guia.html?g=progression__farmeo-de-equipo-700-1400-2100", "Farmeo de equipo", "farmeo"]]
   );
   document.body.insertAdjacentHTML("afterbegin",
     '<header class="top"><div class="in"><a class="logo" href="index.html">BUILD <span>AION2</span></a><nav>' +

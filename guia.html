@@ -5,17 +5,17 @@
 <link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Guía · BUILD AION2</title>
-<link rel="stylesheet" href="css/estilo.css?v=5">
+<link rel="stylesheet" href="css/estilo.css?v=6">
 </head>
 <body>
 <main id="main"><p>Cargando…</p></main>
-<script src="js/comun.js?v=9"></script>
-<script src="data/indice.js?v=3"></script>
+<script src="js/comun.js?v=10"></script>
+<script src="data/indice.js?v=4"></script>
 <script>
 (function () {
   var g = param("g");
   cabecera("guias");
-  cargarScript("data/guias/" + g + ".js?v=6", function () {
+  cargarScript("data/guias/" + g + ".js?v=7", function () {
     var G = window.GUIA, main = document.getElementById("main");
     document.title = G.titulo + " · BUILD AION2";
     var misma = (window.INDICE || []).filter(function (x) { return x.categoria === G.categoria && x.slug !== G.slug; });
@@ -27,12 +27,18 @@
       }).join("") + "</div>" : "");
     // icono de las habilidades de clase que nombran las guías
     var ICONOS = { "Resurrección de invocación": "ICON_CL_SKILL_039", "Provocación": "ICON_TE_SKILL_012" };
-    var re = new RegExp("(" + Object.keys(ICONOS).join("|") + ")", "g"), lista = [], w = document.createTreeWalker(main, NodeFilter.SHOW_TEXT), n;
-    while ((n = w.nextNode())) if (!n.parentElement.closest("h1, h2, .hab") && n.textContent.match(re)) lista.push(n);
+    // y de los objetos que la guía declare en "iconos" (nombre: [icono, grado])
+    var OBJ = G.iconos || {};
+    Object.keys(OBJ).forEach(function (k) { ICONOS[k] = OBJ[k]; });
+    var claves = Object.keys(ICONOS).sort(function (a, b) { return b.length - a.length; });
+    var re = new RegExp("(" + claves.join("|") + ")", "g"), lista = [], w = document.createTreeWalker(main, NodeFilter.SHOW_TEXT), n;
+    while ((n = w.nextNode())) if (!n.parentElement.closest("h1, h2, h3, .hab, .ficha-obj, .obj, .ruta, .escalera") && n.textContent.match(re)) lista.push(n);
     lista.forEach(function (n) {
       var span = document.createElement("span");
       span.innerHTML = esc(n.textContent).replace(re, function (x) {
-        return '<span class="hab"><img src="icons/habilidades/' + ICONOS[x] + '.webp" alt="">' + x + "</span>";
+        var v = ICONOS[x], hab = typeof v === "string";
+        return '<span class="hab"><img src="icons/' + (hab ? "habilidades/" + v : "objetos/" + v[0]) + '.webp" alt=""' +
+          (hab ? "" : ' class="ico-obj g-' + v[1] + '"') + ">" + x + "</span>";
       });
       n.replaceWith.apply(n, Array.prototype.slice.call(span.childNodes));
     });

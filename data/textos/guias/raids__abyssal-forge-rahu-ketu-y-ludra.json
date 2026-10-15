@@ -26,7 +26,7 @@
     ],
     [
      "Entrada",
-     "~**2.700** a nivel de personaje 45 (cifra de la comunidad; no hay número oficial en inglés y la etiqueta varía: nivel de objeto, gear score o poder de combate)"
+     "Cerca de **2.700** a nivel de personaje 45 (cifra de la comunidad; no hay número oficial en inglés y la etiqueta varía: nivel de objeto, gear score o poder de combate)"
     ],
     [
      "Lo que piden los grupos",
@@ -34,11 +34,11 @@
     ],
     [
      "Gear score orientativo (tracker de terceros)",
-     "Grupo cómodo ~30.000; clear estable con aleatorios ~35.000"
+     "Grupo cómodo cerca de 30.000; clear estable con aleatorios cerca de 35.000"
     ],
     [
      "Precisión objetivo",
-     "Base **1.000-1.100**, ~**1.450** con buffs y título; total con margen **1.500**"
+     "Base **1.000-1.100**, cerca de **1.450** con buffs y título; total con margen **1.500**"
     ],
     [
      "Crítico objetivo",
@@ -145,12 +145,12 @@
    "filas": [
     [
      "Fixed Gaze / barrido de 350°",
-     "Marca a un jugador con un ojo; ~350° de la arena se vuelven letales salvo una cuña; un rayo recto sigue al marcado ~7 s",
-     "Los demás, apretados en la cuña. El marcado va al borde opuesto y **gira el cuerpo** para que el rayo no apunte a la raid. Con ~2 s de debuff, entra en la cuña"
+     "Marca a un jugador con un ojo; cerca de 350° de la arena se vuelven letales salvo una cuña; un rayo recto sigue al marcado cerca de 7 s",
+     "Los demás, apretados en la cuña. El marcado va al borde opuesto y **gira el cuerpo** para que el rayo no apunte a la raid. Con cerca de 2 s de debuff, entra en la cuña"
     ],
     [
      "Pasar la bomba",
-     "Rayo morado marca a un jugador con temporizador; a los ~20 s se vuelve zona permanente = **agujero negro**",
+     "Rayo morado marca a un jugador con temporizador; a los cerca de 20 s se vuelve zona permanente = **agujero negro**",
      "Toca a un aliado para pasarle la marca y seguid moviéndola. Nunca te la quedes"
     ],
     [
@@ -159,12 +159,12 @@
      "**Todos apilados** en el ancla: los círculos se fusionan en una zona segura. Dispersarse mata"
     ],
     [
-     "Wheel of Suffering (~50%)",
+     "Wheel of Suffering (cerca de 50%)",
      "Lanza a la raid a las 12, 3, 6 y 9; contador de 15 s; dos abanicos giratorios y zona circular en el jefe",
      "Reagrupaos en el ancla al aterrizar y girad en **sentido horario** por delante de los abanicos. Dentro del grupo recibes menos daño"
     ],
     [
-     "La Cruz (~33%)",
+     "La Cruz (cerca de 33%)",
      "Zona segura en cruz; salto en área del jefe; caen proyectiles de veneno que dejan zonas permanentes; arena dividida en cuartos",
      "Reagrupaos en la intersección con el tanque delante absorbiendo el salto. Lleva tu veneno **al borde**. Cuidado con caerte"
     ],
@@ -214,13 +214,13 @@
      "**Rómpelas**, no las kitees"
     ],
     [
-     "Orbes de orientación (desde ~50%)",
+     "Orbes de orientación (desde cerca de 50%)",
      "Orbe que explota; primero uno solo, luego tres seguidos; tras los tres aparece zona segura",
      "**Rojo: míralo. Azul: dale la espalda.** Cuenta la orientación del personaje, no la cámara. Tras la tanda de tres, entra en la zona segura (un orbe suelto no la genera). Pueden llegar en mitad del escondite"
     ],
     [
      "Estallido de poder («la hora del tronco»)",
-     "Abanicos rojos según la posición de cada jugador; brotan Mortal's Soulstones; al final ~6 s de daño inevitable",
+     "Abanicos rojos según la posición de cada jugador; brotan Mortal's Soulstones; al final cerca de 6 s de daño inevitable",
      "Ver pasos abajo"
     ]
    ]
@@ -244,9 +244,9 @@
    "tipo": "pasos",
    "items": [
     "Apilaos en una dirección mientras cargan los abanicos (así se estrechan y quedan más soulstones fuera).",
-    "A ~5 s, los abanicos se fijan: sal de ellos.",
-    "A ~3,5 s impacta y destruye las soulstones dentro de los abanicos.",
-    "En cero empiezan ~6 s de daño continuo: rompe una soulstone (~4 s de invulnerabilidad) y encadena otra.",
+    "A cerca de 5 s, los abanicos se fijan: sal de ellos.",
+    "A cerca de 3,5 s impacta y destruye las soulstones dentro de los abanicos.",
+    "En cero empiezan cerca de 6 s de daño continuo: rompe una soulstone (cerca de 4 s de invulnerabilidad) y encadena otra.",
     "No le quites la piedra al Clérigo: si él sobrevive, Ketu muere igual."
    ]
   },
@@ -296,7 +296,7 @@
     ],
     [
      "Tail Swipe",
-     "Ataque trasero con derribo que quita ~80% de vida",
+     "Ataque trasero con derribo que quita cerca de 80% de vida",
      "**No te pongas detrás** del jefe"
     ],
     [
@@ -310,7 +310,7 @@
      "Tras verla dos veces, colócate antes para el aliento y mete daño"
     ],
     [
-     "Bingo (~50%, cambio de fase)",
+     "Bingo (cerca de 50%, cambio de fase)",
      "Suelo en cuadrícula **6×6** (36 casillas); las seguras (azules) solo se revelan al absorber el golpe que cae en ellas; láser imposible de esquivar que solo bloquea una casilla segura",
      "Cada grupo un carril, avanzando casilla a casilla, hasta quedar las 4 centrales; luego cada uno a la más cercana. Asignad carriles en voz alta antes. Sin huecos"
     ]
@@ -375,13 +375,13 @@
      "Rojo a la **izquierda**, azul a la **derecha**; no cambies de lado porque el jefe gire. Mira tu color cada ciclo"
     ],
     [
-     "Segundo Bingo (~25%)",
+     "Segundo Bingo (cerca de 25%)",
      "Mismo Bingo, solapado con saltos de onion rings",
      "Mismo método, con menos margen"
     ],
     [
      "Casillas de colores (15%, cierre)",
-     "Casillas en el suelo; ventana de ~**1,5 s**",
+     "Casillas en el suelo; ventana de cerca de **1,5 s**",
      "Ve a la casilla de **tu color**, un jugador por casilla, **healers primero**. Cuenta las casillas en el primer intento y cántalo"
     ]
    ]
@@ -404,7 +404,7 @@
    ]
   },
   {
-   "titulo": "Armas de Ludra (Únicas, ~0,56% por clear cada una)",
+   "titulo": "Armas de Ludra (Únicas, cerca de 0,56% por clear cada una)",
    "tipo": "tabla",
    "columnas": [
     "Arma",
@@ -463,7 +463,7 @@
     ],
     [
      "Tier Legendario",
-     "Set Lunatic (Lunatic Greatsword, Lunatic Bow y resto), ~0,4%-1,1% por pieza"
+     "Set Lunatic (Lunatic Greatsword, Lunatic Bow y resto), cerca de 0,4%-1,1% por pieza"
     ],
     [
      "Garantizado por clear",

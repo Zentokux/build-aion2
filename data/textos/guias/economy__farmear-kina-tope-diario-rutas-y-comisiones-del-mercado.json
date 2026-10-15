@@ -2,7 +2,7 @@
  "slug": "economy__farmear-kina-tope-diario-rutas-y-comisiones-del-mercado",
  "categoria": "economy",
  "titulo": "Farmear Kina: tope, rutas y comisiones",
- "resumen": "En Corea la caza en campo tiene un tope de 1.000.000 de Kina por personaje y día, y al llegar se cortan también los drops. Caza hasta el tope y pasa a mazmorras, mercado y alts. Vender cuesta 10% en tu servidor, 20% entre servidores y ~35% convertir Kina en Quna.",
+ "resumen": "En Corea la caza en campo tiene un tope de 1.000.000 de Kina por personaje y día, y al llegar se cortan también los drops. Caza hasta el tope y pasa a mazmorras, mercado y alts. Vender cuesta 10% en tu servidor, 20% entre servidores y cerca de 35% convertir Kina en Quna.",
  "bloques": [
   {
    "tipo": "aviso",
@@ -109,7 +109,7 @@
     ],
     [
      "**Draupnir** en Conquest",
-     "La partida más eficiente: ~**600.000** en Normal y algo más de **1.000.000** en Hard (medido 1 jul 2026); también materiales y piezas Únicas",
+     "La partida más eficiente: cerca de **600.000** en Normal y algo más de **1.000.000** en Hard (medido 1 jul 2026); también materiales y piezas Únicas",
      "La entrada está dentro del **Abismo** (PvP abierto)"
     ],
     [
@@ -142,7 +142,7 @@
     ],
     [
      "Estimación coreana (dic 2025)",
-     "**4 personajes** en Expedition Conquest ≈ **7.200.000 Kina/día** (calculado, no reportado)"
+     "**4 personajes** en Expedition Conquest, cerca de **7.200.000 Kina/día** (calculado, no reportado)"
     ],
     [
      "Consejo coreano",
@@ -154,7 +154,7 @@
     ],
     [
      "Umbral Expedition Conquest (dic 2025)",
-     "**84 partidas a la semana** a pago completo (≈ 4 personajes × 3/día × 7 días). Pasado eso baja poco a poco"
+     "**84 partidas a la semana** a pago completo (cerca de 4 personajes × 3/día × 7 días). Pasado eso baja poco a poco"
     ],
     [
      "Umbral Transcendence",
@@ -197,7 +197,7 @@
      "Lo mismo con todos los servidores de tu facción"
     ],
     [
-     "**Kina↔Quna Exchange**",
+     "**Kina y Quna Exchange**",
      "Casa de cambio entre jugadores: unos venden Kina, otros pagan Quna"
     ]
    ]
@@ -241,7 +241,7 @@
    "items": [
     "Hasta **10 objetos** a la venta a la vez en cada mercado.",
     "El impuesto se descuenta de la venta; la **comisión de publicación** es aparte y es igual en los dos.",
-    "Compensa el mercado entre servidores cuando su precio es ~**12,5% más alto** (cuenta propia sobre tasas coreanas).",
+    "Compensa el mercado entre servidores cuando su precio es cerca de **12,5% más alto** (cuenta propia sobre tasas coreanas).",
     "Suposición: los objetos raros suelen superar ese listón; los materiales baratos a granel, no."
    ]
   },
@@ -267,7 +267,7 @@
     ],
     [
      "Total medido",
-     "~**35%**: 1.000.000 de Kina ≈ **650.000** en Quna"
+     "Cerca de **35%**: 1.000.000 de Kina, cerca de **650.000** en Quna"
     ]
    ]
   },
@@ -297,7 +297,7 @@
      "Impuesto del mercado del servidor"
     ],
     [
-     "~35%",
+     "Cerca de 35%",
      "Coste total de convertir Kina en Quna (no es un impuesto de mercado)"
     ],
     [
@@ -305,7 +305,7 @@
      "Sin fuente rastreable"
     ],
     [
-     "~5%",
+     "Cerca de 5%",
      "Suposición de un jugador coreano; coincide con una comisión de publicación medida"
     ],
     [
@@ -319,7 +319,7 @@
    "tipo": "pasos",
    "items": [
     "Confirma que tu **Membership** está activa.",
-    "Elige mercado por precio: el del servidor por defecto, el entre servidores si la diferencia supera ~12,5%.",
+    "Elige mercado por precio: el del servidor por defecto, el entre servidores si la diferencia supera cerca de 12,5%.",
     "Pon precio a las cajas para venderlas.",
     "Descuenta **un tercio** de la Kina que pienses convertir en Quna hasta ver las tasas globales."
    ]

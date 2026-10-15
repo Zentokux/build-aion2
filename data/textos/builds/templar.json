@@ -73,7 +73,7 @@
     "tipo": "lista",
     "items": [
      "Líneas de valor variable en las primeras ranuras (ahí rerolleas).",
-     "Vigila **Golpe**: en un casco White Dragon Lord sale entre ~1,6% y ~1,9%; vale la pena arreglar una tirada baja.",
+     "Vigila **Golpe**: en un casco White Dragon Lord sale entre cerca de 1,6% y cerca de 1,9%; vale la pena arreglar una tirada baja.",
      "Crítico topa en 50% y la Resistencia Crítica del jefe baja tu tasa real. Juicio ya critea siempre: el Crítico solo ayuda al resto. Cerca del tope, Precisión en las ranuras «Crítico o Precisión».",
      "La línea morada extra de Piedra filosofal («fusión») no se conserva al transferir o subir de tier; todo lo demás sí."
     ]
@@ -122,7 +122,7 @@
     "tipo": "lista",
     "items": [
      "Caen en Transcendence. Cada carta da su stat de dios + hasta 4 líneas de su pool: buscas una carta cuyas líneas caigan en tus habilidades.",
-     "Sin bonus de 4 piezas a propósito (al principio valen más los stats sueltos), pero sí dos de 2 piezas: +60 de Ataque JcE con vida ≥70% (3 Vitalidad primordial) y 1.500 de maná al bajar del 20%, una vez cada 30 s (2 Armadura mágica).",
+     "Sin bonus de 4 piezas a propósito (al principio valen más los stats sueltos), pero sí dos de 2 piezas: +60 de Ataque JcE con vida desde 70% (3 Vitalidad primordial) y 1.500 de maná al bajar del 20%, una vez cada 30 s (2 Armadura mágica).",
      "El planificador anota una habilidad por carta: toma sus niveles como mínimo.",
      "Chalice of Vigor (saca cualquier activa o pasiva) se craftea la última, como comodín."
     ]
