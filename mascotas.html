@@ -5,86 +5,108 @@
 <link rel="icon" href="data:,">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mascotas · BUILD AION2</title>
-<meta name="description" content="Qué mascotas subir primero a nivel 3 en AION 2 Global para ganar daño: las Cognis, por orden de facilidad.">
+<meta name="description" content="Qué mascotas subir a nivel 3 en AION 2 Global para ganar daño en PvE (las Cognis), ordenadas por nivel del monstruo, y qué atributos dan más daño contra jefes.">
 <link rel="stylesheet" href="css/estilo.css?v=7">
 <style>
 .niveles { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 4px; }
 .niveles div { background: var(--panel); border: 1px solid var(--borde); border-radius: 8px; padding: 8px 12px; flex: 1 1 140px; }
 .niveles b { color: var(--oro); display: block; }
 .niveles small { display: block; color: var(--suave); }
-.masc { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; margin: 10px 0 18px; }
-.mc { display: flex; gap: 10px; align-items: center; background: var(--panel); border: 1px solid var(--borde); border-radius: 8px; padding: 8px; }
+.filtro { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+.boton { background: var(--panel2); color: var(--texto); border: 1px solid var(--borde); border-radius: 6px; padding: 7px 13px; font: inherit; cursor: pointer; }
+.boton:hover, .boton.activa { border-color: var(--oro); }
+.boton.activa { color: var(--oro); font-weight: 700; }
+.masc { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 10px; margin: 10px 0 18px; }
+.mc { display: flex; gap: 10px; align-items: flex-start; background: var(--panel); border: 1px solid var(--borde); border-radius: 8px; padding: 8px; }
+.mc.segura { border-color: rgba(111, 220, 140, .55); }
 .mc img { width: 72px; height: 72px; flex: none; border-radius: 8px; background: radial-gradient(circle, rgba(170,120,255,.25), transparent 70%); object-fit: contain; }
-.mc .n { font-size: 12px; color: var(--oro); font-weight: 700; }
-.mc b { display: block; }
-.mc small { display: block; color: var(--suave); line-height: 1.35; }
-.mc .ok { color: #6fdc8c; font-weight: 700; }
+.mc b { display: block; margin-bottom: 2px; }
+.mc small { display: block; color: var(--suave); line-height: 1.35; margin-top: 2px; }
+.mc small i { font-style: normal; color: var(--texto); }
+.ok { color: #6fdc8c; font-weight: 700; }
 </style>
 </head>
 <body>
 <main id="main">
-  <h1>Mascotas: cuáles subir primero a nivel 3</h1>
-  <p class="sub">Solo las que te dan <b>más daño en PvE</b>: las <b>Cognis</b> (Crítico y Fuerza). Todas las Cognis dan lo mismo, así que manda la que te cueste menos subir. Global, nivel 45.</p>
+  <h1>Mascotas: cuáles subir a nivel 3</h1>
+  <p class="sub">Solo las que te dan <b>más daño en PvE</b>: las <b>Cognis</b> (Crítico y Fuerza). Todas las Cognis dan lo mismo. Global, nivel 45.</p>
 
   <div class="niveles">
     <div><b>Nivel 1</b>5 almas<small>PV +10</small></div>
     <div><b>Nivel 2</b>+25 almas<small>PV +20, Crítico +1</small></div>
     <div><b>Nivel 3 (máximo)</b>+75 almas<small>PV +30, <b>Crítico +2, Fuerza +1</b></small></div>
   </div>
-  <div class="aviso">105 almas por mascota. Cada Cognis a nivel 3 suma su Crítico y su Fuerza: mejor muchas a nivel 3 que pocas.</div>
+  <div class="aviso">105 almas por mascota. Mejor muchas Cognis a nivel 3 que pocas. Las de borde verde sueltan <span class="ok">1 alma por muerte</span> seguro; en el resto la probabilidad no está publicada.</div>
 
-  <h2>1. Primero: almas seguras (1 alma por muerte)</h2>
-  <div class="masc" id="g1"></div>
+  <h2>Dónde farmear, de nivel más bajo a más alto</h2>
+  <div class="filtro" id="filtro">
+    <button class="boton" data-f="todos">Todos</button>
+    <button class="boton" data-f="Elyos">Elyos (Verteron)</button>
+    <button class="boton" data-f="Asmodianos">Asmodianos (Altgard)</button>
+  </div>
+  <div id="tramos"></div>
 
-  <h2>2. Elyos (Verteron)</h2>
-  <div class="masc" id="g2"></div>
-
-  <h2>2. Asmodianos (Altgard)</h2>
-  <div class="masc" id="g3"></div>
+  <h2 id="atributos">Atributos para más daño en PvE</h2>
+  <table>
+    <tr><th>Orden</th><th>Atributo</th><th>Por qué</th></tr>
+    <tr><td>1</td><td><b>Amplificación de daño de arma</b></td><td>La subida de daño más estable en PvE. A menudo rinde más que el Ataque.</td></tr>
+    <tr><td>2</td><td><b>Golpe</b></td><td>En PvE duplica el golpe final. Cuanto más, mejor.</td></tr>
+    <tr><td>3</td><td><b>Crítico</b> y <b>Amplificación de daño crítico</b></td><td>Crítico con tope en 50%. En PvE el crítico hace 1,5 veces el daño y la amplificación lo sube más.</td></tr>
+    <tr><td>4</td><td><b>Amplificación de daño</b>, <b>JcE</b> y <b>a jefes</b></td><td>Se suman entre sí. La Tolerancia del jefe te las resta.</td></tr>
+    <tr><td>5</td><td><b>Ataque</b> y <b>Fuerza</b></td><td>La base. Cada punto de Fuerza da +0,1% de ataque.</td></tr>
+    <tr><td>6</td><td><b>Perforación</b></td><td>Ignora la defensa del jefe.</td></tr>
+    <tr><td>7</td><td><b>Precisión</b></td><td>Solo hasta dejar de fallar (mira abajo).</td></tr>
+    <tr><td>8</td><td><b>Velocidad de combate</b></td><td>Más golpes por segundo.</td></tr>
+    <tr><td>Melé</td><td><b>Daño por la espalda</b></td><td>Sobre todo el Sicario.</td></tr>
+    <tr><td>Último</td><td>Golpe perfecto</td><td>Poco valor.</td></tr>
+  </table>
+  <table>
+    <tr><th>Duda</th><th>Respuesta</th></tr>
+    <tr><td>¿PV y Defensa?</td><td>Solo lo justo para no morir. No suben tu daño.</td></tr>
+    <tr><td>¿Precisión da más daño?</td><td>Sí, hasta dejar de fallar: si el jefe esquiva o bloquea, pierdes daño (un bloqueo deja el golpe en un tercio). Después, ya no suma.</td></tr>
+    <tr><td>¿Cómo sé si me falta?</td><td>Análisis de combate contra el jefe: si salen esquivas o bloqueos, sube Precisión (las mascotas Feras dan Precisión adicional). Si no, no.</td></tr>
+    <tr><td>¿Por la espalda?</td><td>Te saltas esquiva y bloqueo: el Sicario necesita poca Precisión.</td></tr>
+  </table>
 
   <h2>Atajos</h2>
   <table>
     <tr><th>Qué</th><th>Cómo</th></tr>
     <tr><td>Mercaderes de la Nube negra</td><td>Pestaña Mascotas: compra almas de Cognis solo al 50%. Se renueva cada hora en punto.</td></tr>
-    <tr><td>Cofre de mascota: Cognis</td><td>Ábrelo: siempre sale una Cognis (o su alma si ya la tienes).</td></tr>
+    <tr><td>Cofre de mascota: Cognis</td><td>Siempre sale una Cognis (o su alma si ya la tienes).</td></tr>
     <tr><td>Analizar la especie</td><td>No bloquees ranuras mientras la Comprensión de raza siga subiendo.</td></tr>
   </table>
-  <p class="sub">Lo que no da daño (Feras, Naturas, Varians) queda para después.</p>
 </main>
 <script src="js/comun.js?v=12"></script>
 <script>
 cabecera("mascotas");
-var G = {
-  g1: [
-    ["phantasmal-lakshmi", "Lakshmi de ensueño", "Draupnir (expedición)", "Héroe nivel 45. Ya pasas por ella al farmear Draupnir."],
-    ["predator-saraswati", "Saraswati depredador", "Draupnir (expedición)", "Héroe nivel 45, en la misma expedición."],
-    ["nagarant-guardian-warrior", "Guardián guerrero Nagarant", "Reshanta Inferior del Caos (Abismo)", "Nagarant contendiente o guerrero del Abismo, nivel 48."],
-    ["naga-elite-priest", "Naga sacerdotisa élite", "Reshanta Inferior del Caos (Abismo)", "Naga mago tenebroso del Abismo, nivel 48."],
-    ["klaw", "Klaw", "Reshanta Inferior del Caos (Abismo)", "Mutación de Klaw del Abismo, nivel 46."],
-    ["klaw-scout", "Klaw explorador", "Reshanta Inferior del Caos (Abismo)", "Klaw del Abismo y Klaw mutante del Abismo, nivel 45."],
-    ["elite-klaw", "Klaw élite", "Verteron (jefe de campo)", "Guardia Teegant, nivel 45."]
-  ],
-  g2: [
-    ["modified-lupyllini", "Lupyllini modificado", "Verteron", "Sujeto de prueba de Lupyllini (40) y Lupyllini de eternidad (49). Muchas zonas."],
-    ["manduri-trebuchet-worker", "Lanzapiedras Manduri", "Verteron", "Manduri de la colina (39) y Lanzapiedras Manduri de rubí (48)."],
-    ["krall-warrior", "Krall guerrero", "Verteron", "Krall guerrero modificado (41) y Sujeto de prueba de Krall (43)."],
-    ["krall-laborer", "Krall obrero", "Verteron", "Krall obrero mutado (41)."],
-    ["krall-warshaman", "Krall chamán", "Verteron", "Krall sanador modificado (41)."]
-  ],
-  g3: [
-    ["mumu-warrior", "Mumu guerrero", "Altgard", "Mumu guerrero de Gribade (40) y Mumu celador (41). Muchas zonas."],
-    ["drakan-watcher", "Drakan celador", "Altgard", "Drakan velador de unidad de patrulla (40). Muchas zonas."],
-    ["varg-berserker", "Varg berserker", "Altgard", "Guardia de la Unidad Directa del Jefe (42)."],
-    ["elite-manduri-fighter", "Manduri luchador élite", "Altgard", "Manduri luchador de la Garra Negra (41)."],
-    ["manduri-fighter", "Manduri luchador", "Altgard", "Manduri combatiente de la Garra Negra (42)."]
-  ]
-};
-Object.keys(G).forEach(function (id) {
-  document.getElementById(id).innerHTML = G[id].map(function (m, i) {
-    return '<div class="mc"><img src="img/mascotas/' + m[0] + '.webp" alt="" loading="lazy"><div><span class="n">' + "Prioridad " + (i + 1) + '</span><b>' +
-      esc(m[1]) + "</b><small>" + (id === "g1" ? '<span class="ok">1 alma por muerte</span>, ' : "") + esc(m[2]) + "</small><small>" + esc(m[3]) + "</small></div></div>";
+var MASC = [["decomposed-lupyllini", "Lupyllini podrido", [["Lupyllini podrido", 10, "Altgard (Asmodianos)", 0], ["Lupyllini podrido", 32, "Altgard (Asmodianos)", 0], ["Lupyllini feroz", 33, "Altgard (Asmodianos)", 0], ["Lupyllini contaminado de la Meseta", 35, "Verteron (Elyos)", 0]]], ["biruta", "Biruta", [["Biruta errante", 17, "Altgard (Asmodianos)", 0], ["Biruta errante", 26, "Verteron (Elyos)", 0]]], ["biruta-herbalist", "Biruta herbolario", [["Biruta herbolario", 17, "Altgard (Asmodianos)", 0]]], ["dratona", "Dratona", [["Dratona peón", 19, "Altgard (Asmodianos)", 0], ["Dratona soldado de apoyo", 20, "Altgard (Asmodianos)", 0], ["Dratona", 32, "Altgard (Asmodianos)", 0]]], ["klaw", "Klaw", [["Klaw deambulante", 19, "Verteron (Elyos)", 0], ["Mutación de Klaw del Abismo", 46, "Abismo (Reshanta Inferior del Caos)", 1]]], ["krall-warshaman", "Krall chamán", [["Krall chamán", 21, "Verteron (Elyos)", 0], ["Krall sanador modificado", 41, "Verteron (Elyos)", 0]]], ["krall-warrior", "Krall guerrero", [["Krall soldado de asalto", 21, "Verteron (Elyos)", 0], ["Krall guerrero modificado", 41, "Verteron (Elyos)", 0], ["Sujeto de prueba de Krall", 43, "Verteron (Elyos)", 0]]], ["krall-laborer", "Krall obrero", [["Krall soldado armado", 21, "Verteron (Elyos)", 0], ["Krall centinela", 21, "Verteron (Elyos)", 0], ["Krall obrero mutado", 41, "Verteron (Elyos)", 0]]], ["enhanced-krall-combatant", "Krall combatiente mejorado", [["Krall combatiente mejorado", 22, "Verteron (Elyos)", 0]]], ["enhanced-krall-sentry", "Krall vigilante mejorado", [["Krall vigilante mejorado", 22, "Verteron (Elyos)", 0]]], ["kuru-tinkerer", "Kuru peón", [["Kuru peón de Tolbas", 26, "Verteron (Elyos)", 0], ["Kuru peón de eternidad", 50, "Verteron (Elyos)", 0], ["Kuru peón", 50, "Altgard (Asmodianos)", 0]]], ["kuru-worker", "Kuru trabajador", [["Kuru trabajador de Tolbas", 26, "Verteron (Elyos)", 0], ["Kuru peón fiero", 28, "Verteron (Elyos)", 0], ["Kuru trabajador de eternidad", 50, "Verteron (Elyos)", 0], ["Kuru trabajador", 50, "Altgard (Asmodianos)", 0]]], ["aullaeu-shaman", "Aullaeu brujo", [["Aullaeu aprendiz de brujo", 27, "Verteron (Elyos)", 0]]], ["elite-manduri-fighter", "Manduri luchador élite", [["Manduri luchador deambulante", 27, "Verteron (Elyos)", 0], ["Manduri luchador de la Garra Negra", 41, "Altgard (Asmodianos)", 0]]], ["klaw-scout", "Klaw explorador", [["Klaw infestado", 30, "Altgard (Asmodianos)", 0], ["Klaw del Abismo", 45, "Abismo (Reshanta Inferior del Caos)", 1], ["Klaw mutante del Abismo", 45, "Abismo (Reshanta Inferior del Caos)", 1]]], ["drakan-watcher", "Drakan celador", [["Drakan administrador", 32, "Altgard (Asmodianos)", 0], ["Drakan velador de unidad de patrulla", 40, "Altgard (Asmodianos)", 0], ["Drakan explorador de la zona de procesamiento", 42, "Verteron (Elyos)", 0]]], ["mumu-warrior", "Mumu guerrero", [["Mumu celador", 32, "Altgard (Asmodianos)", 0], ["Mumu guerrero de Gribade", 40, "Altgard (Asmodianos)", 0], ["Mumu celador", 41, "Altgard (Asmodianos)", 0]]], ["mumu-worker", "Mumu trabajador", [["Mumu trabajador", 32, "Altgard (Asmodianos)", 0], ["Mumu trabajador fugitivo", 33, "Altgard (Asmodianos)", 0]]], ["varg-berserker", "Varg berserker", [["Varg berserker", 32, "Altgard (Asmodianos)", 0], ["Guardia de la Unidad Directa del Jefe", 42, "Altgard (Asmodianos)", 0]]], ["addicted-shulak-cart-worker", "Shulak carretero envenenado", [["Shulak carretero impetuoso", 36, "Altgard (Asmodianos)", 0]]], ["manduri-trebuchet-worker", "Lanzapiedras Manduri", [["Manduri de la colina", 39, "Verteron (Elyos)", 0], ["Explorador Manduri de la Garra Negra", 41, "Altgard (Asmodianos)", 0], ["Lanzapiedras Manduri de rubí", 48, "Verteron (Elyos)", 0]]], ["modified-lupyllini", "Lupyllini modificado", [["Sujeto de prueba de Lupyllini", 40, "Verteron (Elyos)", 0], ["Lupyllini de eternidad", 49, "Verteron (Elyos)", 0], ["Lupyllini modificado", 49, "Altgard (Asmodianos)", 0]]], ["dracuni-herbalist", "Dracuni herbolario", [["Dracuni obrero de procesamiento", 41, "Verteron (Elyos)", 0], ["Recolector de sangre venenosa", 47, "Altgard (Asmodianos)", 0]]], ["manduri-fighter", "Manduri luchador", [["Manduri combatiente de la Garra Negra", 42, "Altgard (Asmodianos)", 0], ["Manduri luchador rubí", 48, "Verteron (Elyos)", 0]]], ["elite-klaw", "Klaw élite", [["Guardia Teegant", 45, "Verteron (Elyos) jefe de campo", 1]]], ["phantasmal-lakshmi", "Lakshmi de ensueño", [["Lakshmi de ensueño", 45, "Draupnir (expedición)", 1]]], ["predator-saraswati", "Saraswati depredador", [["Saraswati depredador", 45, "Draupnir (expedición)", 1]]], ["nagarant-guardian-warrior", "Guardián guerrero Nagarant", [["Nagarant contendiente del Abismo", 48, "Abismo (Reshanta Inferior del Caos)", 1], ["Nagarant guerrero del Abismo", 48, "Abismo (Reshanta Inferior del Caos)", 1]]], ["naga-elite-priest", "Naga sacerdotisa élite", [["Naga mago tenebroso del Abismo", 48, "Abismo (Reshanta Inferior del Caos)", 1]]], ["kerubar", "Kerubar", [["Kerubar eterno", 49, "Verteron (Elyos)", 0], ["Kerubar", 49, "Altgard (Asmodianos)", 0]]], ["kerubian", "Kerubian", [["Kerubian de eternidad", 49, "Verteron (Elyos)", 0], ["Kerubian", 49, "Altgard (Asmodianos)", 0]]], ["kerubiel", "Kerubiel", [["Kerubiel de eternidad", 49, "Verteron (Elyos)", 0], ["Kerubiel", 49, "Altgard (Asmodianos)", 0]]], ["kuru-overseer", "Kuru supervisor", [["Kuru supervisor de eternidad", 50, "Verteron (Elyos)", 0], ["Kuru supervisor", 50, "Altgard (Asmodianos)", 0]]]];
+var TRAMOS = [[1, 20, "Nivel 10 a 20"], [21, 30, "Nivel 21 a 30"], [31, 40, "Nivel 31 a 40"], [41, 45, "Nivel 41 a 45"], [46, 99, "Nivel 46 a 50 (zonas altas y Abismo)"]];
+function deFaccion(x, f) {
+  var propia = x[2].indexOf("(Elyos") >= 0 || x[2].indexOf("(Asmodianos") >= 0;
+  return f === "todos" || !propia || x[2].indexOf(f) >= 0;
+}
+function pintar(f) {
+  document.getElementById("tramos").innerHTML = TRAMOS.map(function (t) {
+    var l = MASC.map(function (m) {
+      var ms = m[2].filter(function (x) { return deFaccion(x, f); });
+      return ms.length ? [m[0], m[1], ms] : null;
+    }).filter(function (m) { return m && m[2][0][1] >= t[0] && m[2][0][1] <= t[1]; });
+    if (!l.length) return "";
+    return "<h3>" + esc(t[2]) + '</h3><div class="masc">' + l.map(function (m) {
+      var segura = m[2].some(function (x) { return x[3]; });
+      return '<div class="mc' + (segura ? " segura" : "") + '"><img src="img/mascotas/' + m[0] + '.webp" alt="" loading="lazy"><div><b>' + esc(m[1]) + "</b>" +
+        m[2].map(function (x) {
+          return "<small><i>" + esc(x[0]) + "</i> nivel " + x[1] + ", " + esc(x[2]) + (x[3] ? ', <span class="ok">1 alma por muerte</span>' : "") + "</small>";
+        }).join("") + "</div></div>";
+    }).join("") + "</div>";
   }).join("");
-});
+  document.querySelectorAll("#filtro button").forEach(function (b) { b.classList.toggle("activa", b.dataset.f === f); });
+  try { localStorage.setItem("mascotas-faccion", f); } catch (e) {}
+}
+document.querySelectorAll("#filtro button").forEach(function (b) { b.onclick = function () { pintar(b.dataset.f); }; });
+var f0 = "todos";
+try { f0 = localStorage.getItem("mascotas-faccion") || f0; } catch (e) {}
+pintar(["todos", "Elyos", "Asmodianos"].indexOf(f0) >= 0 ? f0 : "todos");
 </script>
 </body>
 </html>
