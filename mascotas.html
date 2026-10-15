@@ -16,7 +16,7 @@
 .boton { background: var(--panel2); color: var(--texto); border: 1px solid var(--borde); border-radius: 6px; padding: 7px 13px; font: inherit; cursor: pointer; }
 .boton:hover, .boton.activa { border-color: var(--oro); }
 .boton.activa { color: var(--oro); font-weight: 700; }
-.masc { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 10px; margin: 10px 0 18px; }
+.masc { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); gap: 10px; margin: 10px 0 18px; }
 .mc { display: flex; gap: 10px; align-items: flex-start; background: var(--panel); border: 1px solid var(--borde); border-radius: 8px; padding: 8px; }
 .mc.segura { border-color: rgba(111, 220, 140, .55); }
 .mc img { width: 72px; height: 72px; flex: none; border-radius: 8px; background: radial-gradient(circle, rgba(170,120,255,.25), transparent 70%); object-fit: contain; }
@@ -24,6 +24,13 @@
 .mc small { display: block; color: var(--suave); line-height: 1.35; margin-top: 2px; }
 .mc small i { font-style: normal; color: var(--texto); }
 .ok { color: #6fdc8c; font-weight: 700; }
+.mc > div { flex: 1; min-width: 0; }
+.nv { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.nv span { font-size: 11px; background: var(--panel2); border: 1px solid var(--borde); border-radius: 4px; padding: 1px 6px; color: var(--suave); }
+.nv span b { display: inline; color: var(--oro); margin: 0; }
+.btns { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.btns a { font-size: 12px; background: var(--panel2); border: 1px solid var(--borde); border-radius: 6px; padding: 3px 9px; color: var(--texto); text-decoration: none; }
+.btns a:hover { border-color: var(--oro); color: var(--oro); }
 </style>
 </head>
 <body>
@@ -68,6 +75,26 @@
     <tr><td>¿Por la espalda?</td><td>Te saltas esquiva y bloqueo: el Sicario necesita poca Precisión.</td></tr>
   </table>
 
+  <h2 id="sobrevivir">Sobrevivir en PvE y jefes</h2>
+  <div class="aviso"><b>Tolerancia a daño = reducción del daño que recibes.</b> Es lo contrario de la Amplificación de daño: la del monstruo sube su golpe y tu Tolerancia se lo resta.</div>
+  <table>
+    <tr><th>Orden</th><th>Atributo</th><th>Por qué</th></tr>
+    <tr><td>1</td><td><b>Tolerancia a daño JcE</b></td><td>Reduce el daño de todos los monstruos y jefes. La mejor defensa para PvE.</td></tr>
+    <tr><td>2</td><td><b>Tolerancia a daño de jefe</b></td><td>Lo mismo, solo contra jefes.</td></tr>
+    <tr><td>3</td><td><b>Tolerancia a daño</b></td><td>Reduce todo el daño (PvE y PvP), pero cada punto rinde menos que la de JcE en PvE.</td></tr>
+    <tr><td>4</td><td><b>PV</b> y <b>Aumento de PV</b></td><td>Aguantas más golpes y las pociones curan más (curan según tu PV máximo).</td></tr>
+    <tr><td>5</td><td><b>Tolerancia a daño crítico</b> y <b>Resistencia a crítico</b></td><td>Los críticos del jefe te hacen menos daño.</td></tr>
+    <tr><td>6</td><td><b>Defensa</b></td><td>La que menos rinde: la Perforación del jefe te la resta.</td></tr>
+    <tr><td>Curar al golpear</td><td><b>Robo de vida</b></td><td>Sale sobre todo en habilidades de clase, casi nunca en el equipo. Mira el texto de tu habilidad en el juego.</td></tr>
+  </table>
+  <table>
+    <tr><th>Qué</th><th>Cómo</th></tr>
+    <tr><td>Regla</td><td>Defensa justa para dejar de morir; el resto, a daño.</td></tr>
+    <tr><td>Qué te mata</td><td>Análisis de combate, apartado de daño recibido.</td></tr>
+    <tr><td>Gratis</td><td>Pega por la espalda y sal de las áreas marcadas del jefe: la mayoría de muertes son por no esquivar.</td></tr>
+    <tr><td>Mascotas</td><td>Cognis ya dan PV +30 cada una. Después, Naturas: Resistencia a crítico +2 y, al analizar su especie, líneas de Tolerancia a daño JcE (1,5% a 3%).</td></tr>
+  </table>
+
   <h2>Atajos</h2>
   <table>
     <tr><th>Qué</th><th>Cómo</th></tr>
@@ -80,10 +107,22 @@
 <script>
 cabecera("mascotas");
 var MASC = [["decomposed-lupyllini", "Lupyllini podrido", [["Lupyllini podrido", 10, "Altgard (Asmodianos)", 0], ["Lupyllini podrido", 32, "Altgard (Asmodianos)", 0], ["Lupyllini feroz", 33, "Altgard (Asmodianos)", 0], ["Lupyllini contaminado de la Meseta", 35, "Verteron (Elyos)", 0]]], ["biruta", "Biruta", [["Biruta errante", 17, "Altgard (Asmodianos)", 0], ["Biruta errante", 26, "Verteron (Elyos)", 0]]], ["biruta-herbalist", "Biruta herbolario", [["Biruta herbolario", 17, "Altgard (Asmodianos)", 0]]], ["dratona", "Dratona", [["Dratona peón", 19, "Altgard (Asmodianos)", 0], ["Dratona soldado de apoyo", 20, "Altgard (Asmodianos)", 0], ["Dratona", 32, "Altgard (Asmodianos)", 0]]], ["klaw", "Klaw", [["Klaw deambulante", 19, "Verteron (Elyos)", 0], ["Mutación de Klaw del Abismo", 46, "Abismo (Reshanta Inferior del Caos)", 1]]], ["krall-warshaman", "Krall chamán", [["Krall chamán", 21, "Verteron (Elyos)", 0], ["Krall sanador modificado", 41, "Verteron (Elyos)", 0]]], ["krall-warrior", "Krall guerrero", [["Krall soldado de asalto", 21, "Verteron (Elyos)", 0], ["Krall guerrero modificado", 41, "Verteron (Elyos)", 0], ["Sujeto de prueba de Krall", 43, "Verteron (Elyos)", 0]]], ["krall-laborer", "Krall obrero", [["Krall soldado armado", 21, "Verteron (Elyos)", 0], ["Krall centinela", 21, "Verteron (Elyos)", 0], ["Krall obrero mutado", 41, "Verteron (Elyos)", 0]]], ["enhanced-krall-combatant", "Krall combatiente mejorado", [["Krall combatiente mejorado", 22, "Verteron (Elyos)", 0]]], ["enhanced-krall-sentry", "Krall vigilante mejorado", [["Krall vigilante mejorado", 22, "Verteron (Elyos)", 0]]], ["kuru-tinkerer", "Kuru peón", [["Kuru peón de Tolbas", 26, "Verteron (Elyos)", 0], ["Kuru peón de eternidad", 50, "Verteron (Elyos)", 0], ["Kuru peón", 50, "Altgard (Asmodianos)", 0]]], ["kuru-worker", "Kuru trabajador", [["Kuru trabajador de Tolbas", 26, "Verteron (Elyos)", 0], ["Kuru peón fiero", 28, "Verteron (Elyos)", 0], ["Kuru trabajador de eternidad", 50, "Verteron (Elyos)", 0], ["Kuru trabajador", 50, "Altgard (Asmodianos)", 0]]], ["aullaeu-shaman", "Aullaeu brujo", [["Aullaeu aprendiz de brujo", 27, "Verteron (Elyos)", 0]]], ["elite-manduri-fighter", "Manduri luchador élite", [["Manduri luchador deambulante", 27, "Verteron (Elyos)", 0], ["Manduri luchador de la Garra Negra", 41, "Altgard (Asmodianos)", 0]]], ["klaw-scout", "Klaw explorador", [["Klaw infestado", 30, "Altgard (Asmodianos)", 0], ["Klaw del Abismo", 45, "Abismo (Reshanta Inferior del Caos)", 1], ["Klaw mutante del Abismo", 45, "Abismo (Reshanta Inferior del Caos)", 1]]], ["drakan-watcher", "Drakan celador", [["Drakan administrador", 32, "Altgard (Asmodianos)", 0], ["Drakan velador de unidad de patrulla", 40, "Altgard (Asmodianos)", 0], ["Drakan explorador de la zona de procesamiento", 42, "Verteron (Elyos)", 0]]], ["mumu-warrior", "Mumu guerrero", [["Mumu celador", 32, "Altgard (Asmodianos)", 0], ["Mumu guerrero de Gribade", 40, "Altgard (Asmodianos)", 0], ["Mumu celador", 41, "Altgard (Asmodianos)", 0]]], ["mumu-worker", "Mumu trabajador", [["Mumu trabajador", 32, "Altgard (Asmodianos)", 0], ["Mumu trabajador fugitivo", 33, "Altgard (Asmodianos)", 0]]], ["varg-berserker", "Varg berserker", [["Varg berserker", 32, "Altgard (Asmodianos)", 0], ["Guardia de la Unidad Directa del Jefe", 42, "Altgard (Asmodianos)", 0]]], ["addicted-shulak-cart-worker", "Shulak carretero envenenado", [["Shulak carretero impetuoso", 36, "Altgard (Asmodianos)", 0]]], ["manduri-trebuchet-worker", "Lanzapiedras Manduri", [["Manduri de la colina", 39, "Verteron (Elyos)", 0], ["Explorador Manduri de la Garra Negra", 41, "Altgard (Asmodianos)", 0], ["Lanzapiedras Manduri de rubí", 48, "Verteron (Elyos)", 0]]], ["modified-lupyllini", "Lupyllini modificado", [["Sujeto de prueba de Lupyllini", 40, "Verteron (Elyos)", 0], ["Lupyllini de eternidad", 49, "Verteron (Elyos)", 0], ["Lupyllini modificado", 49, "Altgard (Asmodianos)", 0]]], ["dracuni-herbalist", "Dracuni herbolario", [["Dracuni obrero de procesamiento", 41, "Verteron (Elyos)", 0], ["Recolector de sangre venenosa", 47, "Altgard (Asmodianos)", 0]]], ["manduri-fighter", "Manduri luchador", [["Manduri combatiente de la Garra Negra", 42, "Altgard (Asmodianos)", 0], ["Manduri luchador rubí", 48, "Verteron (Elyos)", 0]]], ["elite-klaw", "Klaw élite", [["Guardia Teegant", 45, "Verteron (Elyos) jefe de campo", 1]]], ["phantasmal-lakshmi", "Lakshmi de ensueño", [["Lakshmi de ensueño", 45, "Draupnir (expedición)", 1]]], ["predator-saraswati", "Saraswati depredador", [["Saraswati depredador", 45, "Draupnir (expedición)", 1]]], ["nagarant-guardian-warrior", "Guardián guerrero Nagarant", [["Nagarant contendiente del Abismo", 48, "Abismo (Reshanta Inferior del Caos)", 1], ["Nagarant guerrero del Abismo", 48, "Abismo (Reshanta Inferior del Caos)", 1]]], ["naga-elite-priest", "Naga sacerdotisa élite", [["Naga mago tenebroso del Abismo", 48, "Abismo (Reshanta Inferior del Caos)", 1]]], ["kerubar", "Kerubar", [["Kerubar eterno", 49, "Verteron (Elyos)", 0], ["Kerubar", 49, "Altgard (Asmodianos)", 0]]], ["kerubian", "Kerubian", [["Kerubian de eternidad", 49, "Verteron (Elyos)", 0], ["Kerubian", 49, "Altgard (Asmodianos)", 0]]], ["kerubiel", "Kerubiel", [["Kerubiel de eternidad", 49, "Verteron (Elyos)", 0], ["Kerubiel", 49, "Altgard (Asmodianos)", 0]]], ["kuru-overseer", "Kuru supervisor", [["Kuru supervisor de eternidad", 50, "Verteron (Elyos)", 0], ["Kuru supervisor", 50, "Altgard (Asmodianos)", 0]]]];
+var MAPA = {"addicted-shulak-cart-worker": [["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Rampaging%20Shulak%20Cart%20Worker"]], "aullaeu-shaman": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Aullaeu%20Shaman"]], "biruta-herbalist": [["Ficha (Altgard)", "https://wikily.gg/es/aion-2/pets/biruta-herbalist"]], "biruta": [["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Biruta"], ["Ficha (Verteron)", "https://wikily.gg/es/aion-2/pets/biruta"]], "decomposed-lupyllini": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Decomposed%20Lupyllini"], ["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Decomposed%20Lupyllini"]], "dracuni-herbalist": [["Ficha (Verteron y Altgard)", "https://wikily.gg/es/aion-2/pets/dracuni-herbalist"]], "drakan-watcher": [["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Drakan%20Watcher"], ["Ficha (Verteron)", "https://wikily.gg/es/aion-2/pets/drakan-watcher"]], "dratona": [["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Dratona"]], "elite-klaw": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Elite%20Klaw"]], "elite-manduri-fighter": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Elite%20Manduri%20Fighter"], ["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Elite%20Manduri%20Fighter"]], "enhanced-krall-combatant": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Enhanced%20Krall%20Combatant"]], "enhanced-krall-sentry": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Enhanced%20Krall%20Sentry"]], "kerubar": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Kerubar"], ["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Kerubar"]], "kerubian": [["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Kerubian"], ["Ficha (Verteron)", "https://wikily.gg/es/aion-2/pets/kerubian"]], "kerubiel": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Eternal%20Kerubiel"], ["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Kerubiel"]], "klaw-scout": [["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Consumed%20Klaw"], ["Abismo", "https://wikily.gg/es/aion-2/interactive-map/chaotic-lower-reshanta"]], "klaw": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Klaw"], ["Abismo", "https://wikily.gg/es/aion-2/interactive-map/chaotic-lower-reshanta"]], "krall-laborer": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Krall%20Laborer"]], "krall-warrior": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Krall%20Warrior"]], "krall-warshaman": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Krall%20Warshaman"]], "kuru-overseer": [["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Kuru%20Overseer"], ["Ficha (Verteron)", "https://wikily.gg/es/aion-2/pets/kuru-overseer"]], "kuru-tinkerer": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Kuru%20Tinkerer"], ["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Kuru%20Tinkerer"]], "kuru-worker": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Kuru%20Worker"], ["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Kuru%20Worker"]], "manduri-fighter": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Manduri%20Fighter"], ["Ficha (Altgard)", "https://wikily.gg/es/aion-2/pets/manduri-fighter"]], "manduri-trebuchet-worker": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Manduri%20Trebuchet%20Worker"], ["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Manduri%20Trebuchet%20Worker"]], "modified-lupyllini": [["Verteron", "https://aion2atlas.app/map/verteron/pet/?q=Modified%20Lupyllini"], ["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Modified%20Lupyllini"]], "mumu-warrior": [["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Mumu%20Warrior"]], "mumu-worker": [["Altgard", "https://aion2atlas.app/map/altgard/pet/?q=Mumu%20Worker"]], "naga-elite-priest": [["Abismo", "https://wikily.gg/es/aion-2/interactive-map/chaotic-lower-reshanta"]], "nagarant-guardian-warrior": [["Abismo", "https://wikily.gg/es/aion-2/interactive-map/chaotic-lower-reshanta"]], "phantasmal-lakshmi": [["Draupnir", "https://wikily.gg/es/aion-2/dungeon-maps/draupnir"]], "predator-saraswati": [["Draupnir", "https://wikily.gg/es/aion-2/dungeon-maps/draupnir"]], "varg-berserker": [["Ficha (Altgard)", "https://wikily.gg/es/aion-2/pets/varg-berserker"]]};
 var TRAMOS = [[1, 20, "Nivel 10 a 20"], [21, 30, "Nivel 21 a 30"], [31, 40, "Nivel 31 a 40"], [41, 45, "Nivel 41 a 45"], [46, 99, "Nivel 46 a 50 (zonas altas y Abismo)"]];
 function deFaccion(x, f) {
   var propia = x[2].indexOf("(Elyos") >= 0 || x[2].indexOf("(Asmodianos") >= 0;
   return f === "todos" || !propia || x[2].indexOf(f) >= 0;
+}
+var NIVELES = '<div class="nv"><span><b>Nv 1</b> PV +10</span><span><b>Nv 2</b> PV +20, Crítico +1</span><span><b>Nv 3</b> PV +30, Crítico +2, Fuerza +1</span></div>';
+function botones(slug, f) {
+  var l = (MAPA[slug] || []).filter(function (x) {
+    var v = x[0].indexOf("Verteron") >= 0, a = x[0].indexOf("Altgard") >= 0;
+    return f === "todos" || !(v && !a && f === "Asmodianos" || a && !v && f === "Elyos");
+  });
+  return l.length ? '<div class="btns">' + l.map(function (x) {
+    var txt = x[0].indexOf("Ficha") === 0 ? "Ficha y mapa" : "Mapa " + x[0];
+    return '<a href="' + x[1] + '" target="_blank" rel="noopener">🗺 ' + esc(txt) + "</a>";
+  }).join("") + "</div>" : "";
 }
 function pintar(f) {
   document.getElementById("tramos").innerHTML = TRAMOS.map(function (t) {
@@ -97,7 +136,7 @@ function pintar(f) {
       return '<div class="mc' + (segura ? " segura" : "") + '"><img src="img/mascotas/' + m[0] + '.webp" alt="" loading="lazy"><div><b>' + esc(m[1]) + "</b>" +
         m[2].map(function (x) {
           return "<small><i>" + esc(x[0]) + "</i> nivel " + x[1] + ", " + esc(x[2]) + (x[3] ? ', <span class="ok">1 alma por muerte</span>' : "") + "</small>";
-        }).join("") + "</div></div>";
+        }).join("") + NIVELES + botones(m[0], f) + "</div></div>";
     }).join("") + "</div>";
   }).join("");
   document.querySelectorAll("#filtro button").forEach(function (b) { b.classList.toggle("activa", b.dataset.f === f); });
