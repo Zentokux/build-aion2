@@ -135,106 +135,8 @@
    ]
   },
   {
-   "titulo": "Qué es la Guarda que te da la historia",
-   "tipo": "objeto",
-   "i": "Icon_Weapon_Guarder_L_001",
-   "g": "Unique",
-   "nombre": "Spiritforged Guard",
-   "sub": "Guarda Única de la historia",
-   "items": [
-    "La **Guarda** es la pieza de la **mano secundaria**: el hueco que va al lado del arma. La llevan las 8 clases (en el Sicario sale como Arma de Puño).",
-    "La **Spiritforged Guard** te la regala la historia: en el Abismo (Reshanta inferior), cuando entregas la misión en la base de tu facción.",
-    "No tiene líneas de Soul Binding, pero subirla a +10 es seguro y suma 10: hazlo si te faltan puntos para 1.400.",
-    "Las siguientes son la **Vakron Guard** (Isla Aérea de Vakron, desde 1.400) y la **Nuakum Guard** (Caverna del Cuerno Feroz, desde 2.100)."
-   ]
-  },
-  {
-   "titulo": "Tu energía Od y el contador de cubos",
-   "tipo": "tabla",
-   "columnas": [
-    "Qué",
-    "Dato"
-   ],
-   "filas": [
-    [
-     "Cuánta Od sale",
-     "**15 cada 3 horas: 120 al día** (también desconectado). Tope 560 (840 con membresía)"
-    ],
-    [
-     "Cuánto cuesta un cubo",
-     "**40 de Od** (es abrir el cubo del final). Terminar sin abrirlo no cuesta nada"
-    ],
-    [
-     "Cuántos cubos de Conquista puedes cobrar",
-     "Lo dice la pantalla de entrada: **Número de recompensas de cubo**. Se recargan **2 al día** y se guardan hasta 14 (en el juego: Número de recompensas de cubo). Se reinicia el miércoles"
-    ],
-    [
-     "Exploración",
-     "Su propio límite: **7 por semana**. En la Cueva de Krao y el Cañón de Urugugu el cubo cuesta 20; en el Templo de Fuego, 30"
-    ],
-    [
-     "Trascendencia",
-     "Se recargan **2 al día** y se guardan hasta 4. Cubo de 40"
-    ],
-    [
-     "Resumen",
-     "Al día: **2 cubos de Conquista** (80 de Od) y con los 40 que sobran, 1 de Exploración o de Trascendencia"
-    ],
-    [
-     "Cuánto tarda la recompensa garantizada",
-     "Exploración 3 cubos: 1 o 2 días. Conquista: 14 cubos, unos 7 días. 21 cubos, unos 11 días. 28 cubos, unos 14 días"
-    ],
-    [
-     "Conseguir más Od",
-     "En Substance Morph: 25 Od, 5 Od fina, 1 Od pura y 50.000 Kinah te dan 40. Con membresía, el mercader de Brisa de viento vende cada semana"
-    ]
-   ]
-  },
-  {
-   "titulo": "Reglas del cubo (valen en todas)",
-   "tipo": "lista",
-   "items": [
-    "Mata **siempre a los 3 jefes**: el cubo final mejora con cada jefe con nombre muerto.",
-    "Estate **vivo** cuando cae el cubo y haz al menos el 1 por ciento del daño.",
-    "**Recompensa garantizada** (la barra 0/21 de la pantalla): al llenarla eliges una pieza o un vale. En Exploración se llena con 3 cubos. **No da armas**: el arma sale por suerte o fabricando.",
-    "Guarda la pieza a elegir de Exploración y úsala al final en el hueco que no te caiga."
-   ]
-  },
-  {
-   "titulo": "Cada día, gratis (sin gastar Od)",
-   "tipo": "tabla",
-   "columnas": [
-    "Qué",
-    "Qué hacer",
-    "Para qué"
-   ],
-   "filas": [
-    [
-     "**Festival de Shugo** (cada hora)",
-     "Gasta llaves: empiezas con 7 y sale 1 al día. Elige tu minijuego y busca quedar primero o segundo (4 y 3 cartas)",
-     "Sus fichas compran **Daevanion Crystal** en su tienda (50, 100, 200 y 400)"
-    ],
-    [
-     "**Invasión** (cada media hora)",
-     "Pega al jefe para tener contribución",
-     "Cartas del festival"
-    ],
-    [
-     "**Pesadilla** (jefe en solitario)",
-     "14 intentos y 2 más cada día; solo se gastan si matas. Orden: jefes grises, luego verdes, luego el último jefe, los 10 niveles de cada uno",
-     "Fragmentos (500 la primera vez, 100 al repetir). Tienda, pestaña Crecimiento: Daevanion Crystal (300) y Runa de enfrentamiento (500)"
-    ],
-    [
-     "**Contratos diarios**",
-     "Coge los de llave dorada de los huecos 1 a 4; si no hay, el que dé más piedras de mejora",
-     "Piedras de mejora"
-    ],
-    [
-     "**Grieta Espacio-Tiempo**",
-     "Pasa a la facción contraria: sus mazmorras selladas y fortalezas",
-     "Piedras de mejora"
-    ]
-   ]
+   "tipo": "aviso",
+   "texto": "**La regla de la Od:** cada cubo cuesta 40. Al día puedes cobrar **2 cubos de Conquista**; con los 40 de Od que sobran, 1 de Exploración o de Trascendencia. Mata siempre a los 3 jefes."
   },
   {
    "titulo": "Tramo 1, de 700 a 1.400: objetivos en orden",
@@ -760,12 +662,44 @@
    ]
   },
   {
-   "titulo": "Plan B: fabricar los accesorios",
-   "tipo": "lista",
+   "titulo": "De 1.400 a 2.800: ¿farmear o fabricar?",
+   "tipo": "tabla",
+   "columnas": [
+    "Tramo",
+    "Lo farmeas",
+    "Lo pagas con Kinah",
+    "¿Fabricar?"
+   ],
+   "filas": [
+    [
+     "**1.400 a 2.100**",
+     "Armadura y guarda 70 (Vakron), accesorios 70 (Urugugu) y Arcanas",
+     "Mejora y el Cáliz Único",
+     "**No.** Solo si Urugugu no te da accesorios"
+    ],
+    [
+     "**2.100 a 2.500**",
+     "Armadura 86 (Cuerno Feroz), arma y accesorios 86 (Templo de Fuego) y Arcanas",
+     "Mejora",
+     "No"
+    ],
+    [
+     "**2.500 a 2.800**",
+     "Arcanas doradas",
+     "**Accesorios y arma fabricados de nivel 94 y 102**",
+     "**Sí**: superan a los de 86 y son los que se suben a +15 con Amplify"
+    ]
+   ]
+  },
+  {
+   "titulo": "En qué gastar la Kinah, por orden",
+   "tipo": "pasos",
    "items": [
-    "Si el Cañón de Urugugu no te da accesorios, fabrícalos en este orden: **collar, los 2 pendientes, los 2 anillos y por último el arma**.",
-    "El primer nivel es **True Dragon Lord** (Elyos) o **Star Dragon Lord** (Asmodianos), nivel 62. Se mejoran sin cambiar de pieza: 62, 70, 78, 86, 94 y 102.",
-    "Si tienes alts, haz con ellos las Expediciones bajas y pasa Kinah y materiales al principal por el almacén del servidor."
+    "**Mejora a +10** de lo que llevas: barata y nunca falla.",
+    "**Manastones** en todos los huecos.",
+    "**Fabricar accesorios** solo si Urugugu no te los da: collar, 2 pendientes, 2 anillos y luego arma. La pieza fabricada se sube de nivel sin cambiarla (62, 70, 78, 86, 94 y 102), así que te sirve hasta el final.",
+    "**Subir los fabricados a 94 y 102** y a +15 con Amplify, de 2.500 en adelante.",
+    "**No gastes** en subir a +11 lo azul ni lo de nivel 70: lo vas a cambiar."
    ]
   },
   {
