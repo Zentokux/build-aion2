@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mascotas · BUILD AION2</title>
+<meta name="description" content="Qué mascotas subir primero a nivel 3 en AION 2 Global para ganar daño: las Cognis, por orden de facilidad.">
+<link rel="stylesheet" href="css/estilo.css?v=7">
+<style>
+.niveles { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 4px; }
+.niveles div { background: var(--panel); border: 1px solid var(--borde); border-radius: 8px; padding: 8px 12px; flex: 1 1 140px; }
+.niveles b { color: var(--oro); display: block; }
+.niveles small { display: block; color: var(--suave); }
+.masc { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; margin: 10px 0 18px; }
+.mc { display: flex; gap: 10px; align-items: center; background: var(--panel); border: 1px solid var(--borde); border-radius: 8px; padding: 8px; }
+.mc img { width: 72px; height: 72px; flex: none; border-radius: 8px; background: radial-gradient(circle, rgba(170,120,255,.25), transparent 70%); object-fit: contain; }
+.mc .n { font-size: 12px; color: var(--oro); font-weight: 700; }
+.mc b { display: block; }
+.mc small { display: block; color: var(--suave); line-height: 1.35; }
+.mc .ok { color: #6fdc8c; font-weight: 700; }
+</style>
+</head>
+<body>
+<main id="main">
+  <h1>Mascotas: cuáles subir primero a nivel 3</h1>
+  <p class="sub">Solo las que te dan <b>más daño en PvE</b>: las <b>Cognis</b> (Crítico y Fuerza). Todas las Cognis dan lo mismo, así que manda la que te cueste menos subir. Global, nivel 45.</p>
+
+  <div class="niveles">
+    <div><b>Nivel 1</b>5 almas<small>PV +10</small></div>
+    <div><b>Nivel 2</b>+25 almas<small>PV +20, Crítico +1</small></div>
+    <div><b>Nivel 3 (máximo)</b>+75 almas<small>PV +30, <b>Crítico +2, Fuerza +1</b></small></div>
+  </div>
+  <div class="aviso">105 almas por mascota. Cada Cognis a nivel 3 suma su Crítico y su Fuerza: mejor muchas a nivel 3 que pocas.</div>
+
+  <h2>1. Primero: almas seguras (1 alma por muerte)</h2>
+  <div class="masc" id="g1"></div>
+
+  <h2>2. Elyos (Verteron)</h2>
+  <div class="masc" id="g2"></div>
+
+  <h2>2. Asmodianos (Altgard)</h2>
+  <div class="masc" id="g3"></div>
+
+  <h2>Atajos</h2>
+  <table>
+    <tr><th>Qué</th><th>Cómo</th></tr>
+    <tr><td>Mercaderes de la Nube negra</td><td>Pestaña Mascotas: compra almas de Cognis solo al 50%. Se renueva cada hora en punto.</td></tr>
+    <tr><td>Cofre de mascota: Cognis</td><td>Ábrelo: siempre sale una Cognis (o su alma si ya la tienes).</td></tr>
+    <tr><td>Analizar la especie</td><td>No bloquees ranuras mientras la Comprensión de raza siga subiendo.</td></tr>
+  </table>
+  <p class="sub">Lo que no da daño (Feras, Naturas, Varians) queda para después.</p>
+</main>
+<script src="js/comun.js?v=12"></script>
+<script>
+cabecera("mascotas");
+var G = {
+  g1: [
+    ["phantasmal-lakshmi", "Lakshmi de ensueño", "Draupnir (expedición)", "Héroe nivel 45. Ya pasas por ella al farmear Draupnir."],
+    ["predator-saraswati", "Saraswati depredador", "Draupnir (expedición)", "Héroe nivel 45, en la misma expedición."],
+    ["nagarant-guardian-warrior", "Guardián guerrero Nagarant", "Reshanta Inferior del Caos (Abismo)", "Nagarant contendiente o guerrero del Abismo, nivel 48."],
+    ["naga-elite-priest", "Naga sacerdotisa élite", "Reshanta Inferior del Caos (Abismo)", "Naga mago tenebroso del Abismo, nivel 48."],
+    ["klaw", "Klaw", "Reshanta Inferior del Caos (Abismo)", "Mutación de Klaw del Abismo, nivel 46."],
+    ["klaw-scout", "Klaw explorador", "Reshanta Inferior del Caos (Abismo)", "Klaw del Abismo y Klaw mutante del Abismo, nivel 45."],
+    ["elite-klaw", "Klaw élite", "Verteron (jefe de campo)", "Guardia Teegant, nivel 45."]
+  ],
+  g2: [
+    ["modified-lupyllini", "Lupyllini modificado", "Verteron", "Sujeto de prueba de Lupyllini (40) y Lupyllini de eternidad (49). Muchas zonas."],
+    ["manduri-trebuchet-worker", "Lanzapiedras Manduri", "Verteron", "Manduri de la colina (39) y Lanzapiedras Manduri de rubí (48)."],
+    ["krall-warrior", "Krall guerrero", "Verteron", "Krall guerrero modificado (41) y Sujeto de prueba de Krall (43)."],
+    ["krall-laborer", "Krall obrero", "Verteron", "Krall obrero mutado (41)."],
+    ["krall-warshaman", "Krall chamán", "Verteron", "Krall sanador modificado (41)."]
+  ],
+  g3: [
+    ["mumu-warrior", "Mumu guerrero", "Altgard", "Mumu guerrero de Gribade (40) y Mumu celador (41). Muchas zonas."],
+    ["drakan-watcher", "Drakan celador", "Altgard", "Drakan velador de unidad de patrulla (40). Muchas zonas."],
+    ["varg-berserker", "Varg berserker", "Altgard", "Guardia de la Unidad Directa del Jefe (42)."],
+    ["elite-manduri-fighter", "Manduri luchador élite", "Altgard", "Manduri luchador de la Garra Negra (41)."],
+    ["manduri-fighter", "Manduri luchador", "Altgard", "Manduri combatiente de la Garra Negra (42)."]
+  ]
+};
+Object.keys(G).forEach(function (id) {
+  document.getElementById(id).innerHTML = G[id].map(function (m, i) {
+    return '<div class="mc"><img src="img/mascotas/' + m[0] + '.webp" alt="" loading="lazy"><div><span class="n">' + "Prioridad " + (i + 1) + '</span><b>' +
+      esc(m[1]) + "</b><small>" + (id === "g1" ? '<span class="ok">1 alma por muerte</span>, ' : "") + esc(m[2]) + "</small><small>" + esc(m[3]) + "</small></div></div>";
+  }).join("");
+});
+</script>
+</body>
+</html>

@@ -131,7 +131,7 @@ function cabecera(activa) {
   ponerFondo(activa);
   var links = [["index.html", "Inicio", "inicio"]].concat(
     CLASES.map(function (c) { return ["clase.html?c=" + c.id, c.nombre, c.id]; }),
-    [["index.html#guias", "Guías", "guias"], ["temporizador.html?v=9", "Temporizador", "temporizador"], ["mapa-cubos.html", "Mapa de cubos", "mapa"], ["guia.html?g=progression__farmeo-de-equipo-700-1400-2100", "Farmeo de equipo", "farmeo"]]
+    [["index.html#guias", "Guías", "guias"], ["temporizador.html?v=9", "Temporizador", "temporizador"], ["mapa-cubos.html", "Mapa de cubos", "mapa"], ["mascotas.html", "Mascotas", "mascotas"], ["guia.html?g=progression__farmeo-de-equipo-700-1400-2100", "Farmeo de equipo", "farmeo"]]
   );
   document.body.insertAdjacentHTML("afterbegin",
     '<header class="top"><div class="in"><a class="logo" href="index.html">BUILD <span>AION2</span></a><nav>' +
