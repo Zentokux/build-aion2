@@ -12,12 +12,16 @@ from pathlib import Path
 
 IS_WINDOWS = os.name == "nt"
 VALIDATOR_TIMEOUT = 300
+# Seconds a hook keeps for itself on top of the validator (snapshot, git,
+# output). install.py sets each hook's timeout to validator_timeout + this.
+HOOK_MARGIN = 30
 OUTPUT_TAIL_LINES = 30
 DEFAULT_CONFIG = {
     # "auto": run the project validator after each edit only while it is fast
     # (<= slow_seconds); slower validators run once, when Claude finishes.
     "validator_on_edit": "auto",  # auto | always | never
     "slow_seconds": 3,
+    "validator_timeout": VALIDATOR_TIMEOUT,
 }
 
 
@@ -164,25 +168,59 @@ def find_validator(proj):
     return None
 
 
-def run_validator(proj):
+def run_validator(proj, timeout=VALIDATOR_TIMEOUT, phase="stop", changed=()):
     """Run the project validator. Returns (ok, name, output). ok=True if none exists.
 
+    ok is None when it did not finish within `timeout`: that is not a code
+    error, but the changes are unvalidated and the caller must say so.
+    The validator gets ORIA_PHASE ("edit" or "stop") and ORIA_CHANGED_FILES
+    (absolute paths, one per line) so it can check the changed files first;
+    at "stop" it is expected to check everything.
     Also records how long it took (used by the "auto" mode).
     """
     cmd = find_validator(proj)
     if cmd is None:
         return True, None, ""
     name = Path(cmd[-1]).name
+    timeout = max(1, int(timeout))
+    env = dict(os.environ, ORIA_PHASE=phase, ORIA_CHANGED_FILES="\n".join(changed))
     start = time.monotonic()
     try:
-        r = run(cmd, cwd=proj, timeout=VALIDATOR_TIMEOUT)
+        r = run(cmd, cwd=proj, env=env, timeout=timeout)
     except subprocess.TimeoutExpired:
-        update_cache(proj, validator_seconds=VALIDATOR_TIMEOUT)
-        return False, name, f"{name} did not finish in {VALIDATOR_TIMEOUT}s"
+        update_cache(proj, validator_seconds=timeout)
+        return None, name, f"{name} did not finish in {timeout}s"
     except OSError as e:
         return True, name, f"could not run {name}: {e}"  # broken runner is not a code error
     update_cache(proj, validator_seconds=round(time.monotonic() - start, 2))
     return r.returncode == 0, name, tail((r.stdout or "") + "\n" + (r.stderr or ""))
+
+
+def hook_timeout(proj, script, default):
+    """The timeout Claude Code gives this hook, read from the installed settings.
+
+    Claude Code kills a hook that exceeds it, silently for Claude, so every
+    hook budgets its work against the real value, not an assumed one.
+    """
+    try:
+        settings = json.loads((Path(proj) / ".claude" / "settings.local.json").read_text(encoding="utf-8-sig"))
+        for entries in (settings.get("hooks") or {}).values():
+            for entry in entries:
+                for h in entry.get("hooks") or []:
+                    args = " ".join(str(a) for a in (h.get("args") or [])).replace("\\", "/")
+                    if f"/oria/{script}" in args and h.get("timeout"):
+                        return float(h["timeout"])
+    except (OSError, ValueError, AttributeError, TypeError):
+        pass
+    return float(default)
+
+
+def validator_budget(proj, cfg, script, started):
+    """Seconds the validator may use so the hook ends before Claude Code kills it."""
+    wanted = float(cfg.get("validator_timeout") or VALIDATOR_TIMEOUT)
+    hook = hook_timeout(proj, script, wanted + HOOK_MARGIN)
+    left = hook - (time.monotonic() - started) - HOOK_MARGIN / 2
+    return min(wanted, left)
 
 
 # ---- per-project config and cache ------------------------------------------------
@@ -221,8 +259,23 @@ def update_cache(proj, **values):
         pass  # a cache we cannot write only costs speed, never correctness
 
 
+# Values that change on every run even when the errors are the same.
+VOLATILE_RE = re.compile(
+    r"\b\d+(?:[.,]\d+)?\s?(?:ms|s|secs?|seconds?|min|minutes?)\b"  # durations: 2.31s, 120 ms
+    r"|\b\d{4}-\d{2}-\d{2}(?:[T ]\d{2}:\d{2}(?::\d{2})?(?:[.,]\d+)?)?"  # dates / ISO stamps
+    r"|\b\d{1,2}:\d{2}:\d{2}(?:[.,]\d+)?\b"  # clock times
+    r"|\b0x[0-9a-fA-F]{6,}\b",  # memory addresses
+    re.I)
+
+
 def fingerprint(text):
-    return hashlib.sha1((text or "").encode("utf-8")).hexdigest()
+    """Identity of a failure, used to tell "same errors again" from progress.
+
+    Clock values are blanked (only for this comparison; the output Claude
+    gets is untouched), so "Done in 2.31s" vs "2.40s" with the same errors
+    counts as the same failure. Files, lines and messages all still count.
+    """
+    return hashlib.sha1(VOLATILE_RE.sub("#", text or "").encode("utf-8")).hexdigest()
 
 
 def main_guard(fn):

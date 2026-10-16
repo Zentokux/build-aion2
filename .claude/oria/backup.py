@@ -9,6 +9,8 @@ pushed by `git push` or `git push --tags`.
 
 import json
 import os
+import shutil
+import subprocess
 import tempfile
 import time
 from pathlib import Path
@@ -18,14 +20,16 @@ from common import run
 REF_PREFIX = "refs/oria/backups/"
 KEEP = 10
 STATE_FILE = Path(".claude") / "oria-state.json"
+HEAVY_FILE = 50 * 1024 * 1024  # a backed-up file this big is reported to the user
+HEAVY_TOTAL = 200 * 1024 * 1024
 
 
 class GitError(Exception):
     pass
 
 
-def git(repo, *args, env=None, check=True, timeout=120):
-    r = run(["git", *args], cwd=repo, env=env, timeout=timeout)
+def git(repo, *args, env=None, check=True, timeout=120, input_text=None):
+    r = run(["git", *args], cwd=repo, env=env, timeout=timeout, input_text=input_text)
     if check and r.returncode != 0:
         raise GitError(f"git {' '.join(args)}: {r.stderr.strip() or r.stdout.strip()}")
     return r
@@ -56,22 +60,43 @@ def _identity_env(extra=None):
     return env
 
 
+def _real_index(repo):
+    r = git(repo, "rev-parse", "--git-path", "index", check=False)
+    p = r.stdout.strip()
+    if r.returncode != 0 or not p:
+        return None
+    p = Path(p) if os.path.isabs(p) else Path(repo) / p
+    return p if p.is_file() else None
+
+
 def snapshot_tree(repo, base):
-    """Write a tree object of the current working tree without touching the real index."""
-    fd, idx = tempfile.mkstemp(prefix="oria-index-")
-    os.close(fd)
-    os.unlink(idx)  # git creates it
+    """Write a tree object of the current working tree without touching the real index.
+
+    The temporary index starts as a copy of the real one, so git reuses its
+    file-stat cache and only re-reads files that changed: the cost follows
+    the size of the change, not of the project. Every file is still
+    included. If the copy cannot be used, it falls back to reading HEAD's
+    tree (same result, it just re-reads every file).
+    """
+    tmp = tempfile.mkdtemp(prefix="oria-index-")
+    idx = os.path.join(tmp, "index")
     env = _identity_env({"GIT_INDEX_FILE": idx})
     try:
+        real = _real_index(repo)
+        if real:
+            try:
+                shutil.copy2(real, idx)  # copy2 keeps the mtime git's racy-file check relies on
+                git(repo, "add", "-A", "--", ".", env=env, timeout=600)
+                return git(repo, "write-tree", env=env).stdout.strip()
+            except (OSError, GitError):
+                for name in os.listdir(tmp):
+                    os.unlink(os.path.join(tmp, name))
         if base:
             git(repo, "read-tree", base, env=env)
         git(repo, "add", "-A", "--", ".", env=env, timeout=600)
         return git(repo, "write-tree", env=env).stdout.strip()
     finally:
-        try:
-            os.unlink(idx)
-        except OSError:
-            pass
+        shutil.rmtree(tmp, ignore_errors=True)
 
 
 def _state_path(repo):
@@ -89,6 +114,18 @@ def load_state(repo):
         return json.loads(_state_path(repo).read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return {}
+
+
+def clear_state(repo):
+    """Forget the previous session's backup before making the new one.
+
+    If the new backup then fails (or the hook is killed), restore.py finds no
+    backup instead of silently going back to an older session.
+    """
+    try:
+        _state_path(repo).unlink()
+    except OSError:
+        pass
 
 
 def list_backups(repo):
@@ -119,8 +156,65 @@ def create(repo, label="session", remember=True):
     if remember:
         save_state(repo, ref)
     rotate(repo)
+    collect_garbage(repo)
     dirty = git(repo, "rev-parse", f"{base}^{{tree}}").stdout.strip() != tree
-    return ref, ("backup created" + (" (includes uncommitted changes)" if dirty else ""))
+    msg = "backup created" + (" (includes uncommitted changes)" if dirty else "")
+    heavy = heavy_files(repo, base, tree)
+    if heavy:
+        msg += "\n" + heavy
+    return ref, msg
+
+
+def collect_garbage(repo):
+    """Let git reclaim objects only rotated-out backups used.
+
+    `gc --auto` does nothing unless the repo needs it, runs in the background
+    by default, and keeps git's safety delay before deleting anything.
+    """
+    try:
+        git(repo, "gc", "--auto", "--quiet", check=False, timeout=60)
+    except (OSError, subprocess.TimeoutExpired):
+        pass
+
+
+def _fmt_mb(n):
+    return f"{n / (1024 * 1024):.0f} MB"
+
+
+def heavy_files(repo, base, tree):
+    """Warning text when the backup holds big uncommitted files, else ''.
+
+    They are backed up like everything else; the user is only told, because
+    each session keeps a copy of them inside .git.
+    """
+    r = git(repo, "diff-tree", "-r", "--no-renames", "--diff-filter=AM", base, tree, check=False)
+    entries = []
+    for line in r.stdout.splitlines():
+        meta, _, path = line.partition("\t")
+        parts = meta.split()
+        if len(parts) >= 4 and path:
+            entries.append((parts[3], path))
+    if not entries:
+        return ""
+    sizes = git(repo, "cat-file", "--batch-check=%(objectsize)", check=False,
+                input_text="\n".join(sha for sha, _ in entries) + "\n").stdout.split()
+    files = [(int(s), p) for s, (_, p) in zip(sizes, entries) if s.isdigit()]
+    total = sum(s for s, _ in files)
+    big = sorted((f for f in files if f[0] >= HEAVY_FILE), reverse=True)
+    if not big and total < HEAVY_TOTAL:
+        return ""
+    lines = [f"⚠ the backup includes {_fmt_mb(total)} of uncommitted files "
+             "(all backed up; each session keeps a copy in .git):"]
+    lines += [f"  {_fmt_mb(s)}  {p}" for s, p in big[:5]]
+    if len(big) > 5:
+        lines.append(f"  ... and {len(big) - 5} more")
+    return "\n".join(lines)
+
+
+def changed_files(repo, before, after):
+    """Absolute paths of files that differ between two trees."""
+    r = git(repo, "diff", "--name-only", "--no-renames", before, after, check=False)
+    return [os.path.join(repo, p) for p in r.stdout.splitlines() if p.strip()]
 
 
 def current_tree(repo):

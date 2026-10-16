@@ -5,7 +5,12 @@ is making progress (the failure output changes between rounds). It is allowed
 to stop only when it is stuck (identical failure twice in a row) or after
 MAX_ROUNDS, and then the user is warned. Big failures get fixed batch by
 batch; a failure Claude cannot fix never loops forever.
+The validator always checks everything here (ORIA_PHASE=stop) and gets the
+time left before Claude Code's hook timeout; if it cannot finish, the user
+is told the changes are unvalidated.
 """
+
+import time
 
 import common
 import backup
@@ -37,7 +42,20 @@ def tree_of(repo):
         return None
 
 
+def session_changes(repo, proj, tree):
+    """Files changed since the session backup (any tool, not only edits)."""
+    ref = backup.load_state(repo).get("ref") if repo else None
+    if ref and tree:
+        try:
+            before = backup.git(repo, "rev-parse", f"{ref}^{{tree}}").stdout.strip()
+            return backup.changed_files(repo, before, tree)
+        except backup.GitError:
+            pass
+    return list(common.load_cache(proj).get("session_files") or [])
+
+
 def main():
+    started = time.monotonic()
     payload = common.read_payload()
     proj = common.project_dir(payload)
     repo = backup.repo_root(proj)
@@ -48,11 +66,18 @@ def main():
         # answer): skip it, it would give the same result
         ok, name, output = True, None, ""
     else:
-        ok, name, output = common.run_validator(proj)
+        budget = common.validator_budget(proj, common.load_config(proj), "stop_check.py", started)
+        ok, name, output = common.run_validator(
+            proj, timeout=budget, phase="stop", changed=session_changes(repo, proj, tree))
         common.update_cache(proj, last_pass_tree=tree if ok else None)
     messages = []
 
-    if ok:
+    if ok is None:
+        # out of time: not a code error Claude can fix, but never a silent pass
+        messages.append(f"[oria] ⚠ VALIDACIÓN NO TERMINADA: {output}. Los cambios de esta sesión "
+                        "no están validados. Sube \"validator_timeout\" en .claude/oria.json y vuelve "
+                        "a correr install.py para ampliar el límite.")
+    elif ok:
         common.update_cache(proj, stop_rounds=0, last_stop_failure=None)
     else:
         cache = common.load_cache(proj)
