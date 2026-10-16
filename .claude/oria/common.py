@@ -139,14 +139,20 @@ def tail(text, n=OUTPUT_TAIL_LINES):
 def find_validator(proj):
     """Return the command that runs the project's own validator, or None.
 
-    Looked up in this order: validate.py (works everywhere), validate.ps1
-    (Windows / pwsh), validate.sh (macOS, Linux, Git Bash on Windows).
+    Looked up in this order: validate.py and validate.mjs / validate.js (work
+    everywhere), validate.ps1 (Windows / pwsh), validate.sh (macOS, Linux,
+    Git Bash on Windows).
     """
     from checkers import find_bash, find_powershell  # local import: same folder
 
     p = Path(proj)
     if (p / "validate.py").is_file():
         return [sys.executable, str(p / "validate.py")]
+    for name in ("validate.mjs", "validate.js"):
+        if (p / name).is_file():
+            node = shutil.which("node")
+            if node:
+                return [node, str(p / name)]
     if (p / "validate.ps1").is_file():
         ps = find_powershell()
         if ps:
