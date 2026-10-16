@@ -212,9 +212,9 @@ def heavy_files(repo, base, tree):
 
 
 def changed_files(repo, before, after):
-    """Absolute paths of files that differ between two trees."""
+    """Absolute real paths of files that differ between two trees."""
     r = git(repo, "diff", "--name-only", "--no-renames", before, after, check=False)
-    return [os.path.join(repo, p) for p in r.stdout.splitlines() if p.strip()]
+    return [os.path.realpath(os.path.join(repo, p)) for p in r.stdout.splitlines() if p.strip()]
 
 
 def current_tree(repo):

@@ -45,7 +45,7 @@ def remember_edit(proj, path):
     """Files Claude edited this session (reset at session start), for the validator."""
     files = list(common.load_cache(proj).get("session_files") or [])
     if path:
-        path = os.path.abspath(path)
+        path = os.path.realpath(path)  # one spelling per file (Windows 8.3 names, symlinks)
         if path not in files:
             files.append(path)
             common.update_cache(proj, session_files=files)
