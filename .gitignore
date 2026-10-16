@@ -2,5 +2,9 @@
 tools/
 respaldo/
 __pycache__/
-.claude/
-CLAUDE.md
+/CLAUDE.md
+/.claude/oria-state.json
+/.claude/oria-cache.json
+/.claude/*.bak-oria
+/.claude/settings.local.json
+/.claude/oria/__pycache__/
