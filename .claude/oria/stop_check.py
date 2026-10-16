@@ -28,10 +28,28 @@ def format_summary(s, py):
     return "\n".join(lines)
 
 
+def tree_of(repo):
+    if not repo:
+        return None
+    try:
+        return backup.current_tree(repo)
+    except backup.GitError:
+        return None
+
+
 def main():
     payload = common.read_payload()
     proj = common.project_dir(payload)
-    ok, name, output = common.run_validator(proj)
+    repo = backup.repo_root(proj)
+    tree = tree_of(repo)
+
+    if tree and common.load_cache(proj).get("last_pass_tree") == tree:
+        # nothing changed since the validator last passed (e.g. a text-only
+        # answer): skip it, it would give the same result
+        ok, name, output = True, None, ""
+    else:
+        ok, name, output = common.run_validator(proj)
+        common.update_cache(proj, last_pass_tree=tree if ok else None)
     messages = []
 
     if ok:
@@ -55,9 +73,8 @@ def main():
         messages.append(f"[oria] ⚠ {name} sigue fallando {why} — revisa antes de aceptar los cambios:\n{output}")
         common.update_cache(proj, stop_rounds=0, last_stop_failure=None)
 
-    repo = backup.repo_root(proj)
     if repo:
-        s = backup.summary(repo)
+        s = backup.summary(repo, after=tree)
         if s:
             messages.append(format_summary(s, common.python_hint()))
     if messages:

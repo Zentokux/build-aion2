@@ -123,15 +123,22 @@ def create(repo, label="session", remember=True):
     return ref, ("backup created" + (" (includes uncommitted changes)" if dirty else ""))
 
 
-def summary(repo):
-    """Changes since the session backup, or None if there is no backup / no change."""
+def current_tree(repo):
+    """Tree id of the working tree right now (identical content = identical id)."""
+    return snapshot_tree(repo, head(repo))
+
+
+def summary(repo, after=None):
+    """Changes since the session backup, or None if there is no backup / no change.
+
+    `after` is the current tree id when the caller already computed it.
+    """
     ref = load_state(repo).get("ref")
     if not ref or git(repo, "rev-parse", "--verify", "-q", ref, check=False).returncode != 0:
         return None
     base = git(repo, "rev-parse", f"{ref}^").stdout.strip()
     before = git(repo, "rev-parse", f"{ref}^{{tree}}").stdout.strip()
-    now_head = head(repo)
-    after = snapshot_tree(repo, now_head)
+    after = after or current_tree(repo)
     commits = git(repo, "log", "--oneline", f"{base}..HEAD", check=False).stdout.strip()
     files = git(repo, "diff", "--name-status", before, after, check=False).stdout.strip()
     if not commits and not files:
