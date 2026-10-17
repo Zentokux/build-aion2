@@ -22,6 +22,10 @@ KEEP = 10
 STATE_FILE = Path(".claude") / "oria-state.json"
 HEAVY_FILE = 50 * 1024 * 1024  # a backed-up file this big is reported to the user
 HEAVY_TOTAL = 200 * 1024 * 1024
+# A backup is a byte-exact copy: no line-ending conversion when it is written
+# or restored (Git for Windows ships core.autocrlf=true, which would turn an
+# uncommitted LF file into CRLF on restore).
+RAW = ("-c", "core.autocrlf=false")
 
 
 class GitError(Exception):
@@ -86,14 +90,14 @@ def snapshot_tree(repo, base):
         if real:
             try:
                 shutil.copy2(real, idx)  # copy2 keeps the mtime git's racy-file check relies on
-                git(repo, "add", "-A", "--", ".", env=env, timeout=600)
+                git(repo, *RAW, "add", "-A", "--", ".", env=env, timeout=600)
                 return git(repo, "write-tree", env=env).stdout.strip()
             except (OSError, GitError):
                 for name in os.listdir(tmp):
                     os.unlink(os.path.join(tmp, name))
         if base:
             git(repo, "read-tree", base, env=env)
-        git(repo, "add", "-A", "--", ".", env=env, timeout=600)
+        git(repo, *RAW, "add", "-A", "--", ".", env=env, timeout=600)
         return git(repo, "write-tree", env=env).stdout.strip()
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
@@ -251,8 +255,13 @@ def restore(repo, ref):
     git(repo, "reset", "-q", "--hard", base)
     git(repo, "clean", "-q", "-fd")
     deleted = git(repo, "diff", "--name-only", "--no-renames", "--diff-filter=D", base, ref).stdout.splitlines()
-    if git(repo, "diff", "--quiet", base, ref, check=False).returncode != 0:
-        git(repo, "checkout", ref, "--", ".")
+    # Only the files the backup changed: the rest were just written by reset
+    # --hard with the user's own line-ending settings, like any checkout.
+    changed = git(repo, "diff", "-z", "--name-only", "--no-renames", "--diff-filter=d", base, ref).stdout
+    if changed or deleted:
+        if changed:
+            git(repo, *RAW, "--literal-pathspecs", "checkout", ref, "--pathspec-from-file=-",
+                "--pathspec-file-nul", input_text=changed, timeout=600)
         for rel in deleted:
             try:
                 (Path(repo) / rel).unlink()
