@@ -6,40 +6,22 @@ window.INDICE = [
   "resumen": "Ninguna facción es más fuerte: clases, stats y habilidades son iguales. Decide con tu grupo facción, región y oleada de servidores; solo el servidor se puede cambiar, una vez y gratis."
  },
  {
-  "slug": "getting-started__dia-uno-tus-dos-primeras-horas",
-  "categoria": "getting-started",
-  "titulo": "Día uno: tus dos primeras horas",
-  "resumen": "Antes de entrar: quita la Playtest App e instala AION 2 aparte. Dentro: haz las misiones de región, coge siempre la ranura de recompensa 1, no dejes misiones aparcadas y recoge los nodos de tu ruta."
- },
- {
-  "slug": "getting-started__empieza-aqui-que-guia-necesitas",
-  "categoria": "getting-started",
-  "titulo": "Empieza aquí: qué guía necesitas",
-  "resumen": "Mapa de todas las guías según tu situación. Antes de nada: la versión global es la Season 1 coreana con partes del Chapter 1 injertadas, y Corea va unos diez meses y medio por delante."
- },
- {
   "slug": "getting-started__eventos-y-el-festival-de-shugo",
   "categoria": "getting-started",
   "titulo": "Eventos y el Festival de Shugo",
   "resumen": "El Festival de Shugo abre a las :15 y :45 de cada hora unos cinco minutos; gasta tus llaves diarias y usa sus tokens en Wisdom Stones y Daevanion Crystals. Los eventos con fecha siguen siempre la misma forma."
  },
  {
+  "slug": "getting-started__que-es-realmente-la-build-global",
+  "categoria": "getting-started",
+  "titulo": "Global frente a Corea: qué tienes y qué no",
+  "resumen": "La global es la Temporada 1 coreana (noviembre de 2025) modificada: nivel máximo 45, grupo de 5, Santuario de 10 y Tropa de 20, más cuatro sistemas posteriores (Transferencia, Vincular Alma, mejora de Potencial y mejora de alas). Nivel 50, Luchador, Broche, Sellado y los Santuarios altos son solo de Corea. Situación a 14 de octubre de 2026."
+ },
+ {
   "slug": "getting-started__herramientas-de-la-comunidad-calculadoras-simuladores-y-medidores-de-dps",
   "categoria": "getting-started",
   "titulo": "Herramientas de la comunidad",
   "resumen": "Las mejores herramientas son coreanas y usan números coreanos: fíate de su mecánica, no de sus precios. Usa una calculadora de mejora y un registro semanal; los medidores de DPS no están autorizados y NC no tiene política publicada."
- },
- {
-  "slug": "getting-started__housing-navegacion-y-pesca-anunciados-no-lanzados",
-  "categoria": "getting-started",
-  "titulo": "Housing, navegación y pesca: anunciados, no lanzados",
-  "resumen": "Ninguno de los tres existe, ni en global ni en Corea. Lo más parecido a una casa es el Pantheon, que además da stats."
- },
- {
-  "slug": "getting-started__la-cronologia-coreana-y-lo-que-hereda-la-version-global",
-  "categoria": "getting-started",
-  "titulo": "La cronología coreana y lo que hereda la global",
-  "resumen": "Corea parcheó casi cada miércoles durante 45 semanas. La global es la Season 1 (noviembre de 2025) con los tamaños de grupo del Chapter 1 injertados; casi todo lo demás posterior es un «quizá»."
  },
  {
   "slug": "getting-started__las-regiones-y-como-moverte-por-ellas",
@@ -54,16 +36,10 @@ window.INDICE = [
   "resumen": "No hay pestaña de monturas: tu mascota es tu montura. Junta 10 almas de un monstruo para tenerlo, sube Pet Insight y Genus Insight, y no bloquees ranuras de Analysis hasta especie nivel 9."
  },
  {
-  "slug": "getting-started__missions-tareas-diarias-semanales-y-de-temporada",
+  "slug": "getting-started__tu-semana-planificada-alrededor-de-la-odyle-energy",
   "categoria": "getting-started",
-  "titulo": "Missions: tareas diarias, semanales y de temporada",
-  "resumen": "El Journal tiene tres familias: Missions diarias (haz las cinco siempre), Commands semanales que compras y misiones de temporada. Missions y Commands comparten cinco huecos: no dejes nada aparcado."
- },
- {
-  "slug": "getting-started__que-es-realmente-la-build-global",
-  "categoria": "getting-started",
-  "titulo": "Qué es realmente la build global",
-  "resumen": "La global es la Season 1 coreana (noviembre de 2025) modificada, con los tamaños de grupo del Chapter 1: grupo de 5, raid de Sanctuary de 10, Force de 20. Las guías que dicen 4 y 8 están desfasadas."
+  "titulo": "Rutina de principiante: primer día, tu semana y las Misiones",
+  "resumen": "La Energía de Od no limita cuánto juegas sino cuánto botín cobras: unas 16 partidas dobles a la semana con Membresía (hasta 24 durante la ventana de traslados). Haz los encargos de región, las cinco Misiones diarias, no te quedes en el tope y vigila los reinicios de las 07:00 UTC y del miércoles."
  },
  {
   "slug": "getting-started__subir-al-nivel-maximo-el-awakening-gauge",
@@ -74,14 +50,8 @@ window.INDICE = [
  {
   "slug": "getting-started__aion-2-tier-list-de-clases-antes-del-lanzamiento-global-las-mejores-clases-para-pve-y-pvp",
   "categoria": "getting-started",
-  "titulo": "Tier list de clases por contenido (PvE y PvP)",
-  "resumen": "No hay una clase mejor para todo: el valor de cada clase cambia según el contenido. Mira la tabla de tu modo favorito y recuerda que se basa en el meta coreano."
- },
- {
-  "slug": "getting-started__tu-semana-planificada-alrededor-de-la-odyle-energy",
-  "categoria": "getting-started",
-  "titulo": "Tu semana alrededor de la Odyle Energy",
-  "resumen": "La Odyle Energy no limita cuánto juegas, sino cuántas recompensas cobras: unas 17-18 partidas con recompensa a la semana con Membership y unas 14 sin ella. No te quedes en el tope, recolecta y vigila tres reinicios: diario, miércoles y domingo."
+  "titulo": "Tier list de clases por contenido",
+  "resumen": "Cada contenido tiene su propio ranking: elige la tabla del modo que más vas a jugar. Los tiers salen del meta coreano (un año de juego) y se ajustarán con datos del global."
  },
  {
   "slug": "progression__alas-atributos-skins-y-costes-de-enhancement",
@@ -300,27 +270,15 @@ window.INDICE = [
   "resumen": "No: puedes subir, equiparte, hacer mazmorras y raids sin pelear nunca contra otro jugador. Pero el PvE necesita AP (fragmentos de stigma) y el PvP necesita nivel de objeto y poder de combate que se ganan en PvE."
  },
  {
-  "slug": "economy__cosmeticos-la-style-shop-y-lo-que-cuesta",
-  "categoria": "economy",
-  "titulo": "Cosméticos: Style Shop y Wardrobe",
-  "resumen": "La Style Shop es un mercado de presets de cara y cuerpo entre jugadores (solo apariencia). El único asterisco: en Corea, la colección del Wardrobe da atributos permanentes pequeños (+0,8% de Potency por una skin de arma Única), y no se sabe si las skins de tienda cuentan en global."
- },
- {
   "slug": "economy__farmear-kina-tope-diario-rutas-y-comisiones-del-mercado",
   "categoria": "economy",
   "titulo": "Farmear Kina: tope, rutas y comisiones",
   "resumen": "En Corea la caza en campo tiene un tope de 1.000.000 de Kina por personaje y día, y al llegar se cortan también los drops. Caza hasta el tope y pasa a mazmorras, mercado y alts. Vender cuesta 10% en tu servidor, 20% entre servidores y cerca de 35% convertir Kina en Quna."
  },
  {
-  "slug": "economy__founders-packs-y-el-filtro-de-la-membership",
-  "categoria": "economy",
-  "titulo": "Founder's Packs y la Membership",
-  "resumen": "Compra el pack Standard (24,99 US$) si quieres jugar el 30 de septiembre o ibas a pagar la Membership: lo de encima es solo cosmético. La Membership (15 US$/30 días) no es necesaria para jugar, pero sí para tocar la economía."
- },
- {
   "slug": "economy__el-modelo-de-pago-corea-frente-a-la-version-global",
   "categoria": "economy",
-  "titulo": "Modelo de pago: Corea vs global",
-  "resumen": "Corea salió con tres suscripciones (hasta 45.000 wones) y en julio de 2026 las fusionó en una de 25.000 wones. La global vende un solo nivel, la Special Quai Membership a 15 US$ por 30 días, con una lista de ventajas más corta que la coreana."
+  "titulo": "Pagos: paquetes, Membresía y Tienda de estilos",
+  "resumen": "En global el poder de pago es un interruptor: la Membresía de 15 US$ por 30 días abre el Mercado, el intercambio de Kinah y Quna y más recompensas por semana. Lo demás (paquetes por encima de Standard, apariencias, Halloween, Tienda de estilos) es aspecto, con un pequeño asterisco en el Armario."
  }
 ];

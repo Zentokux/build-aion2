@@ -445,15 +445,15 @@
    {
     "id": "macro",
     "tipo": "aviso",
-    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso a 10 ms; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
+    "texto": "Esta clase va **sin macro**: lo pulsas todo tú (hace más daño que con macro) y Clic der. queda libre. Mantén **Clic izq.** de relleno entre habilidades."
    },
    {
     "id": "pruebas",
     "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
     "tipo": "lista",
     "items": [
-     "Buffs (E y Q) dentro de la macro, o a mano para abrir el burst cuando tengas reducción de enfriamiento.",
-     "Mismo retardo en todos los pasos: 10 ms (o 40-50 ms con ping alto)."
+     "Pilas a mano frente a la macro fácil (en la rotación): 1 min cada una; la macro suele dar cerca de un 10 % menos.",
+     "Cadena gélida, Explosión de Congelación y Congelación (5): en jefes no hacen falta; úsalas en grupos de monstruos."
     ]
    },
    {
@@ -461,9 +461,8 @@
     "titulo": "Otros presets",
     "tipo": "lista",
     "items": [
-     "Preset «Comprobaciones de Stagger»: quita Tormenta helada (tecla Q) y pon **Explosión de divinidad** en la 6, a mano.",
-     "Preset «Leveling y solitario»: quita Tormenta helada (tecla Q) y pon **Barrera de acero** en la 6, a mano.",
-     "La macro es la misma: pulsa las mismas teclas."
+     "Preset «Comprobaciones de Stagger»: quita Tormenta helada (tecla 1) y pon **Explosión de divinidad** en la 6, a mano.",
+     "Preset «Leveling y solitario»: quita Tormenta helada (tecla 1) y pon **Barrera de acero** en la 6, a mano."
     ]
    },
    {
@@ -484,7 +483,7 @@
      "Explosión retrasada.",
      "Llamas del infierno con la carga al máximo.",
      "Barrera de fuego y Tormenta helada sobre el jefe.",
-     "Mantén Clic izq. (Flecha en llamas) junto a la macro: la macro también la lanza entre los hechizos caros y te devuelve Maná. La macro pulsa E (buffs), Q (Voto y los dos suelos bajo el jefe), 1 (fuego), 2 (hielo) y 3 (Llamas sin puntería, sale sola en el stagger). A mano solo Llamas del infierno cargada (4)."
+     "Sin macro, todo a mano. Mantén Clic izq. (Flecha en llamas) de relleno: te devuelve Maná. Abre con Mejora elemental (2), la Q (Explosión retrasada y Atadura invernal) y la 1 (Barrera de fuego y Tormenta helada bajo el jefe); luego machaca la E (Viento helado, Explosión de llama, Quebrantamiento en llamas y Voto de concentración, en ese orden de prioridad). Llamas del infierno (3) cargada a 3/3 y Llamas sin puntería (4) en el stagger."
     ]
    },
    {
@@ -499,11 +498,11 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Llamas del infierno nunca va en la macro: cárgala a mano."
+    "texto": "Llamas del infierno: cárgala siempre a mano hasta 3/3."
    },
    {
     "tipo": "aviso",
-    "texto": "Retardo de la macro: ping < 50 → 10 ms; ping de 80-100 o más → 40-50 ms. Si ves «sombras» detrás del personaje, la macro está cancelando animaciones: el retardo va bien. Si aun así te quedas sin Maná, suelta la macro, lanza unas Flechas en llamas y sigue."
+    "texto": "¿Prefieres macro? Hay una versión fácil que hace cerca de un 10 % menos de daño: cada habilidad en su propia tecla y la macro (10 ms por paso) pulsa Mejora elemental, Explosión retrasada, Atadura invernal, Barrera de fuego, Tormenta helada, Viento helado, Quebrantamiento en llamas y Flecha en llamas. Fuera de ella, a mano: Llamas del infierno, Explosión de llama, Llamas sin puntería y Voto de concentración al final."
    },
    {
     "titulo": "A qué apuntar",

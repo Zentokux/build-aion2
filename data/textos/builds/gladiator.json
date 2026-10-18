@@ -513,7 +513,7 @@
    {
     "id": "macro",
     "tipo": "aviso",
-    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso a 10 ms; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
+    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
    },
    {
     "id": "pruebas",
@@ -521,7 +521,7 @@
     "tipo": "lista",
     "items": [
      "Buffs (1) dentro de la macro o a mano justo antes del jefe o de un grupo grande (al principio de la temporada los enfriamientos son lentos).",
-     "Desenfreno de aura de espada a mano (2) o debajo de Embestida desgarradora en otra pila de la macro."
+     "Embestida desgarradora arriba de la Q (así no corta la animación de Punzada descendente) o arriba de la E."
     ]
    },
    {
@@ -529,8 +529,8 @@
     "titulo": "Otros presets",
     "tipo": "lista",
     "items": [
-     "Preset «Off-tank o sin Templario»: quita Bendición de Zikel (tecla 1), Blindaje de onda (tecla 6) y pon **Bloqueo concentrado** en la 6, **Espada de drenaje de sangre** en la 7, a mano.",
-     "Preset «Solitario y mundo abierto»: quita Bendición de Zikel (tecla 1) y pon **Espada de drenaje de sangre** en la 7, a mano.",
+     "Preset «Off-tank o sin Templario»: quita Bendición de Zikel (tecla 1), Blindaje de onda (tecla 1) y pon **Bloqueo concentrado** en la 6, **Espada de drenaje de sangre** en la 7, a mano.",
+     "Preset «Solitario y mundo abierto»: quita Bendición de Zikel (tecla 1) y pon **Espada de drenaje de sangre** en la 6, a mano.",
      "La macro es la misma: pulsa las mismas teclas."
     ]
    },
@@ -549,7 +549,7 @@
     "items": [
      "Antes del pull: Bendición de Zikel.",
      "Entra con Perforación con salto y luego Embestida de perdición (20 s de Prepare for Battle).",
-     "Mantén la macro: pulsa la E (Explosión de furia abajo, sale en cuanto está lista), la Q (Embestida de perdición) y la 1 (Postura de asalto y Bendición de Zikel); luego Punzada descendente y Upward Strike los 10 s completos. Aquí Postura de asalto recibe más críticos.",
+     "Mantén la macro: pulsa la E (Explosión de furia abajo, sale en cuanto está lista, y Punzada descendente), la Q (Embestida de perdición; en el stagger, Desenfreno de aura de espada; Embestida desgarradora de relleno) y la 1 (Bendición de Zikel, Postura de asalto y Blindaje de onda); luego Punzada descendente y Upward Strike los 10 s completos. Aquí Postura de asalto recibe más críticos.",
      "Rellena con Embestida desgarradora y Estacazo punzante hasta que vuelva Explosión de furia (los dos devuelven Maná).",
      "Con Explosión de furia en enfriamiento: Espada devastadora, su Knockdown abre Punzada descendente.",
      "Si tanqueas: Bloqueo concentrado en el primer golpe fuerte para tener el buff de grupo desde el principio."
@@ -565,7 +565,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Nunca en la macro: Bloqueo concentrado ni las habilidades para acortar distancias. Postura de asalto y Bendición de Zikel sí van en la macro (pila del 1); si prefieres lanzarlas tú justo antes del jefe, sácalas."
+    "texto": "Nunca en la macro: Bloqueo concentrado ni las habilidades para acortar distancias. Bendición de Zikel, Postura de asalto y Blindaje de onda sí van en la macro (pila del 1); en Season 1 puedes sacarlas y lanzarlas tú justo antes del jefe."
    }
   ],
   "coleccionables": [

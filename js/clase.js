@@ -275,7 +275,7 @@ function barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) {
   }).join("") + "</div>";
 
   var out = '<div class="barra-box"><h3 style="margin-top:0">Barra nivel ' + B.nivel + "</h3>" + barra +
-    '<div class="barra-pie">Doradas: lo que pulsa la macro (en Clic der.). El resto lo pulsas tú. ' +
+    '<div class="barra-pie">' + (macro ? "Doradas: lo que pulsa la macro (en Clic der.). El resto lo pulsas tú. " : "Sin macro: todo lo pulsas tú. ") +
     "En cada pila sale primero la de abajo (el número pequeño es la prioridad).</div></div>";
 
   // tabla de pilas
@@ -430,7 +430,7 @@ function pintarColeccionables(C, filasStats) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  cargarScript("data/builds/" + c + ".js?v=8", pintarClase, function () {
+  cargarScript("data/builds/" + c + ".js?v=9", pintarClase, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
 })();

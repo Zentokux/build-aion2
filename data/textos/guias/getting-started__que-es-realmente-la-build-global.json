@@ -1,216 +1,330 @@
 {
  "slug": "getting-started__que-es-realmente-la-build-global",
  "categoria": "getting-started",
- "titulo": "Qué es realmente la build global",
- "resumen": "La global es la Season 1 coreana (noviembre de 2025) modificada, con los tamaños de grupo del Chapter 1: grupo de 5, raid de Sanctuary de 10, Force de 20. Las guías que dicen 4 y 8 están desfasadas.",
+ "titulo": "Global frente a Corea: qué tienes y qué no",
+ "fuente": "https://metaroad.gg/es/aion2/getting-started/que-es-realmente-la-build-global",
+ "resumen": "La global es la Temporada 1 coreana (noviembre de 2025) modificada: nivel máximo 45, grupo de 5, Santuario de 10 y Tropa de 20, más cuatro sistemas posteriores (Transferencia, Vincular Alma, mejora de Potencial y mejora de alas). Nivel 50, Luchador, Broche, Sellado y los Santuarios altos son solo de Corea. Situación a 14 de octubre de 2026.",
  "bloques": [
   {
-   "titulo": "Tamaños de grupo",
+   "titulo": "Ya en global: con esto puedes contar",
    "tipo": "tabla",
-   "columnas": [
-    "Contenido",
-    "Antes (Corea hasta julio de 2026)",
-    "Global"
-   ],
+   "columnas": ["Qué", "Detalle"],
    "filas": [
-    [
-     "Expedition y Transcendence",
-     "4",
-     "**5**"
-    ],
-    [
-     "Sanctuary (raid)",
-     "8",
-     "**10** (dos grupos de 5)"
-    ],
-    [
-     "Force (mundo abierto)",
-     "16",
-     "**20**"
-    ]
+    ["Tamaños de grupo", "Grupo de **5**, Santuario de **10** (dos grupos de 5), Tropa de **20**"],
+    ["Nivel máximo", "**45**, confirmado por NC en un directo antes del lanzamiento. Las Duties, la energía y las Rift Stones de la tienda de Halloween y el evento Conquerors of the Abyss piden nivel 45"],
+    ["Clases (8)", "Templario, Gladiador, Sicario, Ranger, Hechicero, Espiritualista, Clérigo y Conjurador. «Elementalist» es el nombre interno del Espiritualista, no una 9.ª clase"],
+    ["Regiones (5)", "Europa, NA East, NA West, Sudamérica y Asia (antes la llamaban Japón). Sin servidor de Oceanía, lo dijo NC"],
+    ["Servidores", "Una raza por servidor. Cada servidor Elyos va emparejado un tiempo con uno Asmodian (p. ej. Siel con Israphel); el contenido instanciado, mazmorras incluidas, es entre servidores"],
+    ["Servidores nuevos", "Nathara (Elyos) y Tassin (Asmodian) en Europa el 8 de octubre; Hithanya y Nemon en NA East el 9 de octubre"],
+    ["Dos oleadas", "Advance Access en servidores Early Access desde el 30 de septiembre; lanzamiento gratis en servidores Launch, aparte, desde el 5 de octubre"],
+    ["Contenido de la Temporada 1", "Expedición, Trascendencia, Santuario, Pesadilla, Subyugación, Prueba de ascenso (en solitario), el Abismo, vuelo y fabricación"],
+    ["Sistemas de la Temporada 1", "Estigma, Mejora, Daevanion, Arcanas y Panteón"],
+    ["Sistemas coreanos posteriores que sí llegaron", "**Transferencia**, **Vincular Alma**, **mejora de Potencial** y **mejora de alas**, con sus materiales: Transfer Stones, Códice de alma, Potential Stones y la ruta de mejora de alas"],
+    ["El Abismo", "Capa Inferior con nivel de objeto 1.000 y Media con 3.000, ambas a nivel 45. **7 horas** de Abismo por semana; desde el parche del 13 de octubre puedes acumular hasta 7 horas"],
+    ["Trascendencia", "Base de Investigación Deus y Arkanis Fragmentado, abiertas a nivel 45"],
+    ["Primeras mazmorras (puntuación de equipo)", "Cueva de Krao (te lleva la historia) y Draupnir (una puerta, dos dificultades): **700**. Cañón de Urugugu, primera que comprueba tu equipo: **1.400**. Templo de Fuego y Caverna del Cuerno Feroz: **2.100**"],
+    ["Evento de temporada", "«Truco o trato» de Halloween: del 13 de octubre (PDT; 14 CEST) al mantenimiento del 3 de noviembre (PST; 4 de noviembre CET)"]
    ]
   },
   {
-   "titulo": "Qué es la build global",
+   "titulo": "Cambios hechos solo para la global",
    "tipo": "lista",
    "items": [
-    "«Season 1, modificada»: la temporada de lanzamiento con las mejoras de calidad de vida, balance y progresión del primer año coreano.",
-    "Hay más o menos un año de contenido en reserva que saldrá según avancen los jugadores.",
-    "Si una fuente coreana y una web global no coinciden, suelen tener razón las dos: hablan de puntos distintos de la misma línea temporal."
+    "Campo de batalla **10 contra 10** con estadísticas normalizadas: equipo y progresión se igualan dentro del modo.",
+    "Marca de PvP disponible desde el principio en todas partes menos en el Abismo.",
+    "Más de **200** mascotas y monturas de salida; nivel mínimo para usar mascota bajado de 5 a **3**.",
+    "Cambio de Quna a Kinah más limitado que en Corea y Taiwán para bajar el pay-to-win. El límite exacto no está publicado.",
+    "Los tres niveles del Paquete de Fundadores traen **30 días** de Membresía especial Quai.",
+    "Comercio directo entre jugadores desactivado (antibots): todo pasa por el Mercado. No puedes pasarle materiales a un compañero de legión."
    ]
+  },
+  {
+   "titulo": "Traslado de servidor gratis (una vez por cuenta)",
+   "tipo": "tabla",
+   "columnas": ["Oleada", "Ventana"],
+   "filas": [
+    ["Early Access", "Del mantenimiento del 13 de octubre (PDT; 14 CEST) al del 20 de octubre (21 CEST)"],
+    ["Launch", "Del mantenimiento del 20 de octubre al del 27 de octubre (28 CEST)"],
+    ["Condiciones", "Misma raza, misma región y misma oleada: Early Access con Early Access, Launch con Launch. Sin coste"]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "**Ludra, retirada por ahora.** La Abyssal Forge (raid con Ludra como jefa final) estaba en el Advance Access, pero NC la quitó en la versión del 5 de octubre para rehacer el combate. En global pedirá nivel de objeto 2.800 y nivel 45. El equipo de Ludra de Early Access se retiró y vuelve con la raid; los materiales se reembolsaron. Quien la completó en el Early Access europeo recibe un título, y habrá un evento First Clear con Salón de la Fama desde cero. La fecha de regreso debía anunciarse antes del 16 de octubre; a 14 de octubre aún no estaba."
+  },
+  {
+   "titulo": "Solo en Corea por ahora (sin fecha global)",
+   "tipo": "tabla",
+   "columnas": ["Qué", "Detalle"],
+   "filas": [
+    ["Nivel 50", "Corea desde el 1 de julio de 2026, con todo lo que va detrás"],
+    ["Luchador", "9.ª clase, armas de puño. Corea desde julio de 2026"],
+    ["Eltnen y Morheim", "Dos regiones añadidas en Corea en julio de 2026"],
+    ["Santuarios posteriores", "Purificatorio de Erosión, Cáliz de Muspel y Snowfield of Sorrow, con su equipo de raid"],
+    ["Expedition Trial", "El nivel Trial coreano. No existe en global. No es la Prueba de ascenso (en solitario), que sí tienes"],
+    ["Expediciones altas", "Sin confirmar en global: Isla Aérea de Vakron, Nido del Dramata Muerto, Cuna de la Nada, Corredor de la Ilusión, Isla del Aliento Azul y Citadel of the Fallen Daeva (nivel 50)"],
+    ["Abismo Superior", "Global tiene Inferior y Medio; el Superior no ha abierto"],
+    ["Trascendencias altas", "Templo Divino de Vida Hundido, Espejo de Deseo Rojo y Caverna del Cuerno Abismal, aún sin abrir en global"],
+    ["Broche y Sellado", "Probablemente ausentes: global tiene hueco para broche pero ningún broche que poner, y ningún hueco de Sellado"],
+    ["Transfer Flame", "Nota coreana del 14 de octubre: las Transfer Stones por hueco se fusionan en Transfer Flame (Único/Épico) y las viejas pasan a Faded Transfer Stones. Global sigue con Transfer Stones"],
+    ["Viviendas, navegación y pesca", "No existen en ningún sitio, ni en Corea (ver más abajo)"]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "**Nota de equilibrio coreana del 14 de octubre de 2026, solo Corea por ahora:** daño PvP bajado alrededor de un 30%; la habilidad de asalto de cada clase da hasta +80% de Defensa y de todas las resistencias elementales; Hechicero, Espiritualista y Clérigo ganan daño elemental en sus ataques. Snowfield of Sorrow recibió recompensa de primera victoria."
+  },
+  {
+   "titulo": "Por qué una guía coreana y una global pueden tener razón las dos",
+   "tipo": "lista",
+   "items": [
+    "La global no empieza al final de la línea coreana, sino cerca del principio, con unas pocas reglas posteriores injertadas.",
+    "NC la llama **«Temporada 1, modificada»**: la temporada de lanzamiento con las mejoras de calidad de vida, equilibrio y progresión del primer año coreano.",
+    "Hay cerca de **un año de contenido en reserva** que saldrá según progresen los jugadores, no de golpe.",
+    "Las mecánicas suelen sobrevivir al salto a Occidente; precios, límites y tasas de drop, a menudo no."
+   ]
+  },
+  {
+   "titulo": "Tamaños de grupo",
+   "tipo": "tabla",
+   "columnas": ["Contenido", "Corea antes del 1 de julio de 2026", "Global"],
+   "filas": [
+    ["Expedición y Trascendencia", "4", "**5**"],
+    ["Santuario (raid)", "8", "**10** (dos grupos de 5)"],
+    ["Tropa (mundo abierto)", "16", "**20**"]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Las guías en inglés que dicen 4 y 8 no mienten: citan fuentes coreanas de antes del Capítulo 1. Para ti están desfasadas."
   },
   {
    "titulo": "Composición de una raid de 10 (referencias coreanas)",
    "tipo": "tabla",
-   "columnas": [
-    "Versión",
-    "Composición"
-   ],
+   "columnas": ["Versión", "Composición"],
    "filas": [
-    [
-     "Clear publicado con clases",
-     "2 healers, 2 supports, 1 tanque para toda la raid, 5 de daño"
-    ],
-    [
-     "Plantilla de reclutamiento coreana",
-     "Por grupo: 1 que aguanta aggro y 1 healer; 6 puestos de daño en total"
-    ]
+    ["Única victoria publicada con clases", "2 sanadores, 2 apoyos, 1 tanque para toda la raid y 5 de daño"],
+    ["Plantilla de reclutamiento coreana", "Por grupo: 1 tanque que aguanta el aggro y 1 sanador; quedan 6 plazas de daño"]
    ]
   },
   {
    "tipo": "aviso",
-   "texto": "No está zanjado si va un tanque compartido o uno por grupo, ni está confirmado para global. Lo seguro: dos grupos de 5, cada uno con su healer."
+   "texto": "No está resuelto si va un tanque compartido o uno por grupo. Lo seguro: dos grupos de 5 autosuficientes, cada uno con su sanador."
   },
   {
-   "titulo": "Botín en Sanctuary",
+   "titulo": "Botín en Santuario",
    "tipo": "lista",
    "items": [
-    "Individual: cada jefe con nombre da su cofre a cada jugador. Sin need/greed ni master looter.",
-    "El cupo semanal solo se gasta en el **jefe final**: los jefes anteriores dan cofre sin gastar el contador.",
-    "Si estás muerto cuando cae el botín, lo pierdes: levántate antes de abrir el cofre.",
-    "Hace falta una contribución mínima de daño: bajó del **3% al 1%** (control anti-leech)."
+    "Individual: cada jefe con nombre da su cofre a cada jugador. Sin tiradas de necesidad/codicia ni maestro despojador.",
+    "La cuota semanal solo se gasta con el **jefe final**; los jefes anteriores dan cofre sin gastar el contador (por eso se farmean más).",
+    "Si estás muerto cuando cae el botín, lo pierdes.",
+    "Contribución mínima de daño para tener derecho: bajó del **3% al 1%** (control antiparásitos, no un listón de DPS)."
    ]
   },
   {
-   "titulo": "Cambios que llegaron con el grupo más grande (también en global)",
+   "titulo": "Cambios que llegaron con el grupo grande (también en global)",
    "tipo": "tabla",
-   "columnas": [
-    "Qué",
-    "Antes",
-    "Ahora"
-   ],
+   "columnas": ["Qué", "Antes", "Ahora"],
    "filas": [
-    [
-     "Muertes del jefe final de Sanctuary por semana",
-     "2",
-     "1, con la recompensa doblada"
-    ],
-    [
-     "Límite de tiempo de la raid",
-     "—",
-     "2 horas"
-    ],
-    [
-     "Odyle Energy por run de Sanctuary",
-     "40",
-     "80"
-    ],
-    [
-     "Tickets de Expedition y Transcendence",
-     "Sí",
-     "Eliminados; pagas en Odyle Energy"
-    ],
-    [
-     "Odyle Energy de un jefe de Expedition en Conquest",
-     "—",
-     "15 en total, recalculado para 5"
-    ]
+    ["Muertes del jefe final de Santuario por semana", "2", "1, con la recompensa duplicada"],
+    ["Límite de tiempo de Santuario", "Sin límite fijado", "2 horas"],
+    ["Energía de Od por partida de Santuario", "40", "80"],
+    ["Tickets de Expedición y Trascendencia", "Sí", "Eliminados: gastas Energía de Od para cobrar la recompensa"],
+    ["Energía de Od de un jefe de Expedición en Conquista", "Otro cálculo", "15 en total, recalculado para 5"]
    ]
   },
   {
    "tipo": "aviso",
-   "texto": "No se sabe si las mecánicas de jefes anteriores al cambio (un debuff en 4, una bomba en 8…) se renumeraron para 10. Da por hecha la forma, no la cifra: «todos menos el tanque» ahora son 9, no 7."
+   "texto": "No se sabe si las mecánicas de jefes anteriores al cambio (un debuff en 4 personas, una bomba en 8) se rehicieron para 10. Da por hecha la forma, no la cifra: «todos menos el tanque» ahora son 9, no 7."
   },
   {
-   "titulo": "Exclusivo de global (primer stream de desarrolladores)",
-   "tipo": "lista",
-   "items": [
-    "Campo de batalla **10v10** con stats normalizados.",
-    "Bandera de PvP disponible desde el principio en todas partes menos el Abismo.",
-    "Más de **200** mascotas y monturas; nivel mínimo de mascota bajado de 5 a 3.",
-    "Cambio de Quna a Kina más limitado que en KR/TW para bajar el pay-to-win (límite exacto no publicado).",
-    "Los tres niveles del Founder's Pack incluyen **30 días** de Special Quai Membership.",
-    "Cinco regiones: NA West, NA East, South America, Central Europe y Japan. Sin servidor de Oceanía (confirmado por NC).",
-    "Comercio directo entre jugadores desactivado (antibots); todo pasa por el Market."
+   "titulo": "Sistemas: qué hay en tus menús",
+   "tipo": "tabla",
+   "columnas": ["Sistema", "En global", "Nota"],
+   "filas": [
+    ["Estigma, Mejora, Daevanion, Arcanas, Panteón", "Sí", "Temporada 1"],
+    ["Transferencia", "Sí", "Llegó a Corea el 21 de enero de 2026. Mejorar una pieza que vas a cambiar ya no es tirar recursos: la inversión se va contigo"],
+    ["Vincular Alma", "Sí", "En el Launch Scale Test ya funcionaba en equipo de mazmorra y de fabricación"],
+    ["Mejora de Potencial", "Sí", "En equipo de mazmorra"],
+    ["Mejora de alas", "Sí", "Llegó a Corea en mayo de 2026"],
+    ["Huecos de Estigma", "4", "El 5.º llegó después en Corea; las builds coreanas actuales muestran 6"],
+    ["Broche y Sellado", "Probablemente no", "Sin ellos, objetivos coreanos como «necesitas 4.500 de nivel de objeto» son inalcanzables"]
    ]
   },
   {
-   "titulo": "Nivel máximo",
+   "titulo": "Publicado frente a deducido",
    "tipo": "tabla",
-   "columnas": [
-    "Número",
-    "De dónde sale"
-   ],
+   "columnas": ["Afirmación", "Estado"],
    "filas": [
-    [
-     "37",
-     "Tope del Launch Scale Test (borrado, no se transfiere)"
-    ],
-    [
-     "45",
-     "Máximo de la Season 1 en Corea: la expectativa razonable"
-    ],
-    [
-     "50",
-     "Corea desde el 1 de julio de 2026: no es tu versión"
-    ]
+    ["Fechas coreanas de esta guía", "Publicado (notas oficiales, NC o prensa coreana)"],
+    ["Global recibe los tamaños de grupo del Capítulo 1", "Publicado por NC"],
+    ["Global es la temporada de lanzamiento modificada con un año de contenido en reserva", "Publicado por NC"],
+    ["Nivel máximo 45", "Publicado (directo de NC)"],
+    ["Pasaron los arreglos de economía de diciembre y la separación de coeficientes de marzo", "Deducción, sin confirmar"],
+    ["Lista objeto por objeto de qué hereda global de cada parche", "No existe"],
+    ["Nivel 37 del Launch Scale Test", "Solo un tope de prueba; no significaba nada para el lanzamiento"]
+   ]
+  },
+  {
+   "titulo": "Cronología coreana: datos clave",
+   "tipo": "lista",
+   "items": [
+    "Lanzamiento coreano y taiwanés: **19 de noviembre de 2025**. Global: **5 de octubre de 2026**. Entre medias: 320 días y 45 miércoles (unos diez meses y medio).",
+    "4 parches abrieron temporada; los otros 41 movieron números (drops, coeficientes de clase, tiendas, topes de ganancias) sin resumen oficial.",
+    "Lectura del 25 de septiembre de 2026: 19 notas semanales seguidas hasta el 27 de mayo, solo una movida a jueves.",
+    "Ante un número coreano no preguntes si es verdad, sino **de hace cuántos miércoles** es.",
+    "Temporada 1 (tu cliente): 8 clases, nivel máximo 45, raid de lanzamiento Abyssal Forge con Ludra. Entonces el grupo era de 4 y el Santuario de 8."
+   ]
+  },
+  {
+   "titulo": "Las tres primeras semanas en Corea",
+   "tipo": "tabla",
+   "columnas": ["Fecha", "Qué pasó"],
+   "filas": [
+    ["19 de noviembre de 2025", "NC retiró cuatro paquetes de Quna que regalaban 100 Battle Enhance Scrolls y 50 Códices de alma (prometidos como objetos de juego, no de tienda) y dio esos mismos 100 + 50 a todos"],
+    ["26 de noviembre de 2025", "Sanciones: 1.098 cuentas farmeando mazmorra sin matar al jefe (450 millones de Kinah recuperados); 2.440 cuentas abusando de entradas ilimitadas al Corredor del Abismo (7 días de suspensión y todo recuperado); 170 transferencias ilícitas de Kinah y 50 bots (ban permanente). Kinah diaria limitada a 2.000.000 por personaje y compras del mercado detrás de suscripción"],
+    ["10 de diciembre de 2025", "World Trading Post (comercio entre servidores): doble impuesto de venta que el mercado del servidor, misma tarifa de publicación, 10 anuncios activos por mercado. Tope diario de caza bajado de 2.000.000 a 1.000.000; al llegar se cortan también los drops de objetos"]
    ]
   },
   {
    "tipo": "aviso",
-   "texto": "NC nunca ha publicado el nivel máximo global. Las notas del 30 de septiembre deberían resolverlo, junto con la lista de mazmorras y raids y los sistemas de progresión activos."
+   "texto": "Cualquier dato de economía coreana escrito después de diciembre de 2025 ya es la versión parcheada, no la del lanzamiento."
   },
   {
-   "titulo": "Sistemas: qué esperar en tus menús",
+   "titulo": "Temporadas 2 y 3 en Corea",
    "tipo": "tabla",
-   "columnas": [
-    "Estado",
-    "Sistemas"
-   ],
+   "columnas": ["Fecha", "Contenido"],
    "filas": [
-    [
-     "Casi seguro que están (Season 1)",
-     "Stigma (quizá con 4 huecos, el 5.º llegó después), Enhancement, Daevanion, Arcana, Pantheon"
-    ],
-    [
-     "Probablemente no (enero-septiembre de 2026)",
-     "Transfer, Soul Binding, Potential Enhancement, hueco Brooch, mejora de alas, hueco Seal"
-    ],
-    [
-     "Seguro que no el primer día",
-     "Nivel 50, Luchador (9.ª clase), regiones Eltnen y Morheim, Chalice of Muspel, Snowfield of Sorrow, contenido Trial, capas superior y media del Abismo"
-    ]
+    ["7 de enero de 2026", "Hoja de ruta de la Temporada 2 con fechas: todo llegó unas dos semanas tarde"],
+    ["21 de enero de 2026", "Abre la Temporada 2: nuevas Expedición, Subyugación y Prueba de ascenso; debut de **Transferencia**"],
+    ["11 de febrero de 2026", "**Vincular Alma** y Cuna de la Nada (prometida para el 28 de enero)"],
+    ["25 de febrero de 2026", "Templo Divino de Vida Hundido, diez escalones de dificultad (prometido para el 4 de febrero)"],
+    ["4 de marzo de 2026", "**Mejora de Potencial** en equipo de mazmorra"],
+    ["11 de marzo de 2026", "Purificatorio de Erosión, segundo Santuario (prometido para el 25 de febrero)"],
+    ["8 de abril de 2026", "Temporada 3: Expedición Corredor de la Ilusión, Transferencia avanzada y Abismo rehecho"],
+    ["27 de mayo de 2026", "Cáliz de Muspel (el PvE más difícil hasta entonces); hueco **Broche** (más de 200 de nivel de objeto en dos piezas); mejora de alas; desaparece el límite de intentos de Santuario"]
    ]
   },
   {
-   "titulo": "Por qué importa",
+   "titulo": "25 de marzo de 2026: el parche que cambió las clases",
    "tipo": "lista",
    "items": [
-    "Sin Transfer, mejorar una pieza que vas a sustituir es mucho peor idea: la inversión no se viene contigo.",
-    "Sin Brooch ni Seal, los objetivos de nivel de objeto coreanos («necesitas 4.500») son inalcanzables.",
-    "Clases globales (8): Templario, Gladiador, Sicario, Ranger, Hechicero, Espiritualista, Clérigo y Conjurador."
+    "Coeficientes de PvE y PvP separados: una habilidad se puede ajustar en uno sin tocar el otro.",
+    "Una 13.ª habilidad de Estigma por clase (ocho nuevas, una por clase).",
+    "Huecos de Estigma equipados de 4 a 5; Estigma y maestría comparten huecos libremente.",
+    "Kinah vinculada separada de la comerciable: la de encargos, misiones, ventas a NPC, mazmorras selladas y puestos avanzados se gasta primero y no se puede mover.",
+    "Cualquier ranking de clases coreano anterior a esta fecha está desfasado."
    ]
   },
   {
-   "titulo": "Cómo fechar otra guía",
+   "titulo": "Capítulo 1 (1 de julio de 2026): lo único que toma prestado global",
    "tipo": "tabla",
-   "columnas": [
-    "Si dice…",
-    "Describe…"
-   ],
+   "columnas": ["Cambio", "En global"],
    "filas": [
-    [
-     "Grupo de 4 / raid de 8",
-     "Corea antes de julio de 2026 (desconfía del resto de sus números)"
-    ],
-    [
-     "Transfer y Soul Binding",
-     "Corea después de febrero de 2026"
-    ],
-    [
-     "Ruta hasta nivel 50",
-     "Corea después de julio de 2026"
-    ]
+    ["Tamaños de grupo: 4 a 5, 8 a 10, 16 a 20", "**Sí**"],
+    ["Nivel máximo de 45 a 50; Estigma hasta nivel 25", "No"],
+    ["Luchador y dos regiones nuevas (una por raza)", "No"],
+    ["Energía de Od sustituye a los tickets de entrada", "Sí (ver tabla de cambios con el grupo grande)"],
+    ["Huecos de Colgante y de Arcanas", "No consta"],
+    ["Tres suscripciones coreanas fusionadas en una", "La Membresía global hereda la versión de una sola"]
    ]
   },
   {
-   "titulo": "Qué hacer antes del lanzamiento",
+   "titulo": "Después del Capítulo 1: solo Corea",
+   "tipo": "tabla",
+   "columnas": ["Fecha", "Contenido"],
+   "filas": [
+    ["15 de julio de 2026", "Nivel Trial con Isla Aérea de Vakron (nivel de objeto 4.800) y Abyss Rift de 300 contra 300"],
+    ["12 de agosto de 2026", "Rediseño de curación: producción recortada entre un 20 y un 50%, radio a 40 metros; dos mazmorras nuevas"],
+    ["2 de septiembre de 2026", "Grieta Espacio-Tiempo: Contienda, asedio de 60 a 200 jugadores; días después, de 25 a 500"],
+    ["9 de septiembre de 2026", "Snowfield of Sorrow, cuarto Santuario: nivel de objeto 5.800 (6.200 en la dificultad máxima); hueco **Sellado**"],
+    ["23 de septiembre de 2026", "Rota el Trial: cierra Vakron y entra Templo de Fuego (nivel 50, nivel de objeto 4.800). Vincular Alma con ajuste automático"],
+    ["14 de octubre de 2026", "Recorte de daño PvP, Transfer Flame y recompensa de primera victoria en Snowfield of Sorrow"]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Suma de Corea hoy: nivel 50, nueve clases, seis regiones, cuatro Santuarios, nivel Trial y dos huecos de equipo que tu cliente no tiene por qué tener."
+  },
+  {
+   "titulo": "Viviendas, navegación y pesca: anunciados, no lanzados",
+   "tipo": "tabla",
+   "columnas": ["Sistema", "Qué se anunció", "Estado"],
+   "filas": [
+    ["Viviendas", "14 de junio de 2026 (presentación coreana), primer contenido de vida: primero casa personal (una por jugador), luego parcelas en una isla flotante; podrías soltar tus mascotas dentro. Objetivo: antes de acabar el Capítulo 1", "No lanzado ni en Corea"],
+    ["Navegación", "Contenido de legión: sales en barco con tu legión, con caza, pesca y combates durante el viaje. Señalada como lo siguiente tras las viviendas", "Una frase; sin mecánicas, costes, interfaz ni fecha"],
+    ["Pesca", "Recolección submarina, con reliquias antiguas entre lo que sacas", "Una frase; sin mecánicas, costes, interfaz ni fecha"]
+   ]
+  },
+  {
+   "titulo": "Cronología de las viviendas",
+   "tipo": "tabla",
+   "columnas": ["Fecha", "Qué pasó"],
+   "filas": [
+    ["14 de junio de 2026", "Anuncio, unos siete meses después del lanzamiento coreano"],
+    ["1 de julio de 2026", "Llega el Capítulo 1 a Corea, sin viviendas"],
+    ["11 de agosto de 2026", "La prensa coreana las vuelve a presentar como «lo siguiente», sin fecha ni mecánicas"],
+    ["Septiembre de 2026", "Corea recibe Snowfield of Sorrow (combate), sin viviendas"]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "La conclusión sale de las fechas y de la falta de aviso de entrega, no de una nota que diga «se retrasa». Si salieron discretamente en Corea en agosto o septiembre, aun así no estarían en un cliente montado sobre la Temporada 1. Ningún aviso global las nombra todavía."
+  },
+  {
+   "titulo": "Lo que puedes usar a cambio",
+   "tipo": "tabla",
+   "columnas": ["Si buscabas…", "Usa…", "Por qué"],
+   "filas": [
+    ["Una casa que decorar", "**Panteón**", "Sala personal con trofeos que dan estadísticas permanentes"],
+    ["Pesca relajante", "**Recolección**", "No es una profesión aparte: alimenta directamente a tu personaje"],
+    ["Viajar en barco", "**Vuelo**", "Alas y Energía de Vuelo para cruzar el mapa"]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Cualquier guía con costes, muebles o tamaños de parcela de viviendas de AION 2 es inventada: nadie lo ha jugado. La cobertura en inglés rellena huecos con AION 1 (pasó con la rareza de objetos y con la fabricación, que tiene cinco profesiones, Cocina y Armadura incluidas)."
+  },
+  {
+   "titulo": "Cómo fechar cualquier guía",
+   "tipo": "tabla",
+   "columnas": ["Si ves…", "Es de…"],
+   "filas": [
+    ["Grupo de 4, raid de 8", "Corea antes del 1 de julio de 2026: desconfía del resto de sus números"],
+    ["Broche o Sellado como algo normal", "Corea después de mayo de 2026 (Broche) o septiembre de 2026 (Sellado): probablemente no para ti"],
+    ["Transferencia, Vincular Alma o mejora de Potencial", "Ya no sirve como pista: global los tiene"],
+    ["Ruta a nivel 50, Luchador u objetivos de nivel de objeto por encima de unos 4.000", "Corea después del 1 de julio de 2026"],
+    ["Número coreano sin fecha", "Infechable: casi igual de inútil que uno erróneo"]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Si una guía nombra un sistema que no encuentras, mira la fecha de la guía antes de revisar tu instalación: el contenido coreano de 2026 se traduce al inglés sin fecha."
+  },
+  {
+   "titulo": "Qué hacer",
    "tipo": "pasos",
    "items": [
-    "Recluta de cinco en cinco; una raid son dos grupos. Pon primero un healer en cada grupo y alguien que aguante aggro en cada uno.",
-    "Prepárate para la Season 1: Enhancement sí, Transfer no; cuatro huecos de Stigma; nivel 45 a confirmar.",
-    "Mete a toda la static en la misma oleada (Advance Access 30 de septiembre – 4 de octubre en Early Access; servidores Launch el 5 de octubre).",
-    "No des por hecho que habrá cuatro raids: la lista de contenido no está publicada."
+    "Recluta de cinco en cinco; una raid son dos grupos. Pon primero un sanador en cada grupo y alguien que aguante el aggro en cada uno; decidid ya si vais con uno o dos tanques.",
+    "Deja de prepararte contra el endgame coreano: cuenta con Mejora, Transferencia y Vincular Alma, sin Broche ni Sellado, con cuatro huecos de Estigma y nivel máximo 45.",
+    "Mantén a tu grupo fijo en un solo servidor: el traslado gratis no cruza de Early Access a Launch, así que un grupo dividido entre oleadas se queda dividido."
+   ]
+  },
+  {
+   "titulo": "Datos rápidos de otras guías",
+   "tipo": "tabla",
+   "columnas": ["Tema", "Dato"],
+   "filas": [
+    ["Trascendencia", "40 de Energía de Od por partida, 3 partidas al día con la Membresía; en global, contador de recompensas: 1 cada 12 horas, hasta 14 acumulados"],
+    ["Santuario en Corea", "Entradas ilimitadas desde el 27 de mayo de 2026; solo se racionan las recompensas. Cáliz de Muspel abre con 4.500 de puntuación de equipo (solo Corea)"],
+    ["Grados de equipo", "Común, Raro, Legendario, Único y Épico. Mítico existe como nombre sin objetos; Fabled y Eternal de AION 1 no están"],
+    ["Vincular Alma", "El único clic irreversible de toda la mejora de equipo"],
+    ["Recolección", "Saltártela cuesta alrededor de una quinta parte de tu techo semanal de equipo. Una pieza fabricada supera a una de mazmorra del mismo nivel"],
+    ["Asedio de artefacto", "Lunes, jueves y sábados a las 12:00 UTC"],
+    ["Legión", "Se abre a nivel 10"],
+    ["Mascotas", "Tu mascota es tu montura: no hay pestaña de monturas"],
+    ["Daevanion", "Toma el relevo a nivel de habilidad 10, donde dejan de servir los puntos de habilidad"],
+    ["Monedas", "Kinah (en inglés Kina) es la normal; Quna, la premium; Membresía especial Quai, la suscripción"]
    ]
   }
  ]

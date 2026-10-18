@@ -516,14 +516,14 @@
    {
     "id": "macro",
     "tipo": "aviso",
-    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso a 10 ms; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
+    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
    },
    {
     "id": "pruebas",
     "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
     "tipo": "lista",
     "items": [
-     "Emboscada dentro de la pila E o fuera (algunos la quitan: cerca de 3 % del daño).",
+     "Emboscada dentro de la pila E o fuera (algunos la quitan: ~3 % del daño).",
      "Entre ventanas: guarda Pacto de celeridad y Colmillo salvaje para el siguiente Clon ilusorio (más burst) o úsalos al salir (daño más estable). En combates cortos, guárdalos."
     ]
    },
@@ -555,7 +555,7 @@
      "Ponte a la espalda del jefe con el 2 (Ataque sigiloso). Para moverte, la pila del 4 (Corte torbellino, Infiltración y Caída sombría); para acercarte, Corte de destello (3).",
      "Pulsa la pila del 1 varias veces: Clon ilusorio, Pacto de celeridad y Colmillo salvaje (pone las 5 Insignias de golpe).",
      "Una pulsación más del 1 y sale Puñal de Triniel, por el −10% a todos tus enfriamientos.",
-     "Mantén la macro: Estocada al corazón sale en cada pulsación y Corte rápido acorta Explosión de insignia.",
+     "Mantén la macro (solo pulsa la E: Estocada al corazón sale en cada pulsación) y, aparte, Clic izq. (Corte rápido): cada golpe acorta Explosión de insignia.",
      "Si el jefe entra en stagger: Desenfreno de tormenta (tecla 5), metiendo Corte rápido entre medias."
     ]
    },

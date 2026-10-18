@@ -1,26 +1,285 @@
 {
  "slug": "getting-started__tu-semana-planificada-alrededor-de-la-odyle-energy",
  "categoria": "getting-started",
- "titulo": "Tu semana alrededor de la Odyle Energy",
- "resumen": "La Odyle Energy no limita cuánto juegas, sino cuántas recompensas cobras: unas 17-18 partidas con recompensa a la semana con Membership y unas 14 sin ella. No te quedes en el tope, recolecta y vigila tres reinicios: diario, miércoles y domingo.",
+ "titulo": "Rutina de principiante: primer día, tu semana y las Misiones",
+ "fuente": "https://metaroad.gg/es/aion2/getting-started/tu-semana-planificada-alrededor-de-la-odyle-energy",
+ "resumen": "La Energía de Od no limita cuánto juegas sino cuánto botín cobras: unas 16 partidas dobles a la semana con Membresía (hasta 24 durante la ventana de traslados). Haz los encargos de región, las cinco Misiones diarias, no te quedes en el tope y vigila los reinicios de las 07:00 UTC y del miércoles.",
  "bloques": [
   {
-   "titulo": "Cómo funciona",
+   "titulo": "La idea clave: la Energía de Od",
    "tipo": "lista",
    "items": [
-    "La Odyle Energy se gasta al **abrir el cofre** de recompensa, no al entrar. Sin energía completas la mazmorra pero no te llevas nada.",
-    "Se recupera sola, también desconectado.",
-    "El tope de almacenamiento es exactamente una semana de recuperación: cada hora en el tope es energía perdida.",
-    "Gastar con regularidad es mejor que gastar perfecto. Antes de irte unos días, vacía la barra."
+    "La **Energía de Od** no se gasta al entrar: se gasta al **abrir el cofre de recompensa**. Sin energía completas la mazmorra, ves el cofre y no te llevas nada.",
+    "Puedes jugar todo lo que quieras; lo que se raciona es cuánto botín cobras. Se te premia por **no perderte los reinicios**, no por jugar más horas.",
+    "Techo semanal: unas **16 partidas de doble recompensa** con Membresía al límite de la tienda del lanzamiento, y hasta **24** mientras dure la ventana de traslados de servidor.",
+    "Orden de esta guía: primer día, presupuesto de energía, rutina diaria y semanal, Misiones y Misiones de temporada."
    ]
   },
   {
-   "titulo": "Recuperación",
+   "titulo": "Primer día: los cuatro hábitos",
+   "tipo": "tabla",
+   "columnas": [
+    "Hábito",
+    "Por qué"
+   ],
+   "filas": [
+    [
+     "Haz los **encargos de región** de tu zona, no solo el rombo amarillo",
+     "Son la ruta de progresión, no contenido secundario"
+    ],
+    [
+     "Elige la **ranura de recompensa 1** en cada encargo de región",
+     "Es la única garantizada"
+    ],
+    [
+     "Mantén vacío el **registro de encargos**",
+     "Hay un tope de 5 encargos activos para todo; uno aparcado te cuesta diarias"
+    ],
+    [
+     "Recolecta cada nodo de tu ruta",
+     "Alimenta el recurso que acaba limitando tu equipo"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Ninguno de los cuatro te hace más fuerte hoy. Lo que deciden es si tu cuarto día es progreso o una tarde arreglando el primero."
+  },
+  {
+   "titulo": "Requisitos de PC",
+   "tipo": "tabla",
+   "columnas": [
+    "Nivel",
+    "CPU",
+    "RAM",
+    "GPU",
+    "Rinde"
+   ],
+   "filas": [
+    [
+     "Mínimos",
+     "Ryzen 5 2600 o Core i5-10500",
+     "8 GB",
+     "GTX 1050 Ti (4 GB) o RX 470 (4 GB)",
+     "Preajuste Muy bajo a 1080p"
+    ],
+    [
+     "Recomendados",
+     "Ryzen 7 3700X o Core i7-11700",
+     "16 GB",
+     "RTX 2070 (8 GB) o RX 5700 XT (8 GB)",
+     "Preajuste Bajo a 1080p"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Los dos niveles: Windows 10/11 de 64 bits, DirectX 12, **100 GB** y SSD recomendado. No hay datos publicados para preajustes medio o alto ni para más de 1080p."
+  },
+  {
+   "titulo": "Servidores: dos oleadas que no se mezclan",
+   "tipo": "tabla",
+   "columnas": [
+    "Oleada",
+    "Fecha",
+    "Qué saber"
+   ],
+   "filas": [
+    [
+     "Servidores de Early Access",
+     "Abrieron el 30 de septiembre",
+     "Advance Access para el Paquete de Fundadores Deluxe del 30 de septiembre al 4 de octubre"
+    ],
+    [
+     "Servidores de lanzamiento",
+     "5 de octubre",
+     "Gratis para todos. Si empiezas ahora, estás aquí"
+    ]
+   ]
+  },
+  {
+   "titulo": "Regiones y servidores",
+   "tipo": "lista",
+   "items": [
+    "Cinco regiones: **Europa, NA East, NA West, Sudamérica y Asia**.",
+    "Cada servidor es de una raza y está emparejado con uno de la otra. Las mazmorras y el resto del contenido instanciado son entre servidores.",
+    "Servidores nuevos: **Nathara** (Elyos) y **Tassin** (Asmodianos) en Europa el 8 de octubre; **Hithanya** (Elyos) y **Nemon** (Asmodianos) en NA East el 9 de octubre.",
+    "La AION 2 Playtest App es un producto distinto de AION 2."
+   ]
+  },
+  {
+   "titulo": "Traslados de servidor",
+   "tipo": "tabla",
+   "columnas": [
+    "Personaje",
+    "Ventana de traslado"
+   ],
+   "filas": [
+    [
+     "De Early Access",
+     "Del mantenimiento del 13 de octubre (14 en Europa) al del 20 de octubre (21 en Europa)"
+    ],
+    [
+     "De lanzamiento",
+     "Desde ahí hasta el mantenimiento del 27 de octubre (28 en Europa)"
+    ]
+   ]
+  },
+  {
+   "titulo": "Reglas de traslado, colas y comercio",
+   "tipo": "lista",
+   "items": [
+    "El traslado es **gratis**, **uno por cuenta** en todo el periodo, y siempre dentro de la misma raza, región y oleada. Muévete con tu grupo.",
+    "Servidor lleno: los miembros con la cuenta en regla van a una **cola prioritaria**. Las dos colas avanzan; no te saltas la cola ni tienes hueco reservado. Las cuentas con sanciones pueden perderla.",
+    "No hay límites de población ni número de servidores por región publicados.",
+    "Paquete de Fundadores: **uno por cuenta**. Para subir de nivel de paquete: mejóralo en PURPLE o, en Steam, compra el superior y pide a Atención al Cliente el reembolso del inferior (sin pasos exactos publicados).",
+    "**Comercio directo entre jugadores desactivado** (medida antibots). Todo pasa por el **Mercado**, que va con la suscripción.",
+    "Nivel máximo global: **45**. Corea está en 50 desde el Chapter 1 de julio."
+   ]
+  },
+  {
+   "titulo": "Teclas y movimiento",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Cómo"
+   ],
+   "filas": [
+    [
+     "Ir al encargo principal (encargos de Episodio, rombo amarillo)",
+     "**Alt+1**"
+    ],
+    [
+     "Vuelo",
+     "**V** lo activa y desactiva; **W + Shift** acelera. Gasta un indicador; si se vacía, caes"
+    ],
+    [
+     "Truco del Vuelo",
+     "En altura pliega las alas, déjate caer con la inercia y vuelve a activarlas: de 2 a 3 veces más alcance con el mismo indicador, y más rápido. Aunque lo hagas mal, sale mejor que volar recto"
+    ],
+    [
+     "Teletransporte",
+     "Obeliscos **Kibelisk**; los morados son puntos de Teletransporte"
+    ],
+    [
+     "Caminar a un punto",
+     "Clic derecho en un punto vacío del mapa"
+    ],
+    [
+     "Atajo a un encargo de región",
+     "Diario, selecciona el encargo, icono del mapa junto a «moverse»: te deja en el Kibelisk más cercano (10 segundos en vez de 3 minutos)"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "El Vuelo no funciona dentro de mazmorras. No está confirmado si hay zonas sin vuelo en el mundo abierto."
+  },
+  {
+   "titulo": "Encargos de región: por qué no son opcionales",
+   "tipo": "lista",
+   "items": [
+    "Subes de nivel con encargos y mazmorras, no grindeando el campo. Matar en el mundo abierto es para moneda y materiales.",
+    "Dan un **cristal de Daevanion garantizado**.",
+    "Rellenan **ranuras de accesorio** vacías: el poder de combate temprano más rápido.",
+    "Suben el **Awakening Gauge**: si no está lleno, el encargo principal se para aunque tengas nivel. No van con reloj de reinicio, por eso la gente se los salta.",
+    "Hazlos antes de cerrar el encargo principal de cada zona."
+   ]
+  },
+  {
+   "titulo": "Ranuras de recompensa (encargos de región y Misiones)",
+   "tipo": "tabla",
+   "columnas": [
+    "Ranura",
+    "Probabilidad"
+   ],
+   "filas": [
+    [
+     "1",
+     "100%"
+    ],
+    [
+     "2",
+     "Más o menos la mitad"
+    ],
+    [
+     "3",
+     "Más o menos un tercio"
+    ],
+    [
+     "4 y 5",
+     "Menos todavía"
+    ]
+   ]
+  },
+  {
+   "titulo": "Recolección y coleccionables",
+   "tipo": "tabla",
+   "columnas": [
+    "Sistema",
+    "Qué saber"
+   ],
+   "filas": [
+    [
+     "Extracción de esencia",
+     "Una sola línea de habilidad para 6 recursos: mineral, gemas, madera, hierbas, ingredientes de cocina y **Od** (materia prima de la Energía de Od). Dos etapas, principiante y especialista, hasta nivel 50 cada una. Da experiencia y materiales de Fabricación. Minijuego: barra de éxito contra barra de fallo; los puntos de habilidad suben el éxito. Coge lo del camino, no te desvíes"
+    ],
+    [
+     "Rastros empíreos",
+     "Coleccionables que alimentan la **Resonance del Monolito** (puntos de habilidad, estadísticas y materiales de mejora). Más de mil entre las regiones de las dos razas y el Abismo inferior: actividad de fondo de meses"
+    ],
+    [
+     "Cubos ocultos",
+     "Cubo amarillo brillante, flotando, metido en rocas, barrancos o bajo el agua; nunca en el mapa. Llaves de encargos y mazmorras. Ábrelo siempre con llave (el grado de la recompensa sube mucho); sin llave, déjalo para luego"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Un informe coreano sugiere que bastan muchos menos Rastros empíreos para las recompensas principales. No está confirmado."
+  },
+  {
+   "titulo": "La trampa más cara: 5 huecos de encargo",
+   "tipo": "lista",
+   "items": [
+    "Misiones diarias, Comandos de campo y Comandos del Abismo comparten **un solo tope de 5 encargos activos**. Cinco en total, no de cada.",
+    "Dos encargos atascados = solo 3 diarias: pierdes un **40%** sin darte cuenta.",
+    "Termínalos ya o recházalos. No los acumules."
+   ]
+  },
+  {
+   "titulo": "Mascotas",
+   "tipo": "lista",
+   "items": [
+    "Boletín de la web oficial: mascota **Pagati** más una a elegir entre **Konutin trabajador, Paphis, Humo negro Murute y Rotan de la cuchilla de plata**. Reclámalas en tu primera sesión.",
+    "NC dio esas dos mascotas y el cofre de la lista de deseos de Steam a todos los que se conecten antes del **mantenimiento del 1 de diciembre**, por correo.",
+    "El código de lanzamiento caducó el 13 de octubre y los Twitch Drops acabaron el 16 de octubre.",
+    "En global no hubo reserva de nombre ni de servidor: el nombre se reclama al crear el personaje.",
+    "Nivel mínimo para usar mascota: **3**. Más de 200 mascotas y monturas en el lanzamiento (las mascotas se transforman en monturas).",
+    "La caravana de vendedores ambulantes repone cada hora y vende mascotas por Kinah: compra una pronto."
+   ]
+  },
+  {
+   "titulo": "Checklist al acabar el primer día",
+   "tipo": "lista",
+   "items": [
+    "PC que cumple el preajuste al que quieres jugar y 100 GB libres en SSD.",
+    "Sabes la región y el servidor de tu grupo, y que los traslados no cruzan de oleada.",
+    "Alt+1 y V en la memoria; has plegado las alas al menos una vez.",
+    "Mascotas gratis reclamadas.",
+    "Encargos de región de la zona inicial hechos, siempre con la ranura 1.",
+    "Recolección por encima de cero, solo con los nodos de tu ruta.",
+    "Registro de encargos sin peso muerto.",
+    "Sabes reconocer un Cubo oculto."
+   ]
+  },
+  {
+   "titulo": "Recuperación de la Energía de Od",
    "tipo": "tabla",
    "columnas": [
     "",
-    "Sin Membership",
-    "Con Membership (+50%)"
+    "Sin Membresía",
+    "Con Membresía (+50%)"
    ],
    "filas": [
     [
@@ -44,133 +303,209 @@
      "840"
     ],
     [
-     "Partidas de Expedition/Transcendence al día (40 c/u)",
+     "Partidas de 40 al día",
      "2",
      "3"
     ]
    ]
   },
   {
-   "titulo": "Costes (Corea, tras el Chapter 1)",
+   "titulo": "Por qué el tope es la correa",
+   "tipo": "lista",
+   "items": [
+    "Se recupera sola, también desconectado, y **deja de recuperarse en el tope**.",
+    "El tope es exactamente **una semana** de recuperación: te deja saltarte días, pero cada día en el tope es un día entero perdido (80 o 120).",
+    "**Gastar con regularidad es mejor que gastar bien**: una partida mediocre hoy vale más que la partida perfecta para la que ahorras con la barra llena.",
+    "¿Te vas unos días? Vacía la barra antes. ¿Entras en el tope? Lo primero es gastar, no planificar."
+   ]
+  },
+  {
+   "titulo": "Contadores de recompensa propios (global)",
    "tipo": "tabla",
    "columnas": [
-    "Qué",
-    "Coste"
+    "Contenido",
+    "Recupera",
+    "Acumula hasta"
    ],
    "filas": [
     [
-     "Recompensa estándar (Expedition, Transcendence)",
-     "40"
+     "Expediciones de Conquista",
+     "1 recompensa cada 8 horas",
+     "21"
     ],
     [
-     "Doble recompensa (con membresía: abres el cofre dos veces)",
-     "80"
-    ],
-    [
-     "Sanctuary",
-     "80 (antes del Chapter 1 era 40)"
-    ],
-    [
-     "Dos lockouts de Sanctuary",
-     "160 de golpe"
+     "Trascendencia",
+     "1 recompensa cada 12 horas",
+     "14"
     ]
    ]
   },
   {
    "tipo": "aviso",
-   "texto": "El jefe de Expedition Conquest suelta 15 de Odyle Energy en total (reajustado para grupo de 5): te devuelve algo, pero no cambia las cuentas."
+   "texto": "Son dos límites independientes: puedes llegar al tope de recompensas con energía en la barra, o quedarte sin energía con partidas de sobra. Revisa los dos antes de planear la noche."
   },
   {
-   "titulo": "Fuentes extra de energía",
+   "titulo": "Lo que cuesta cada cobro (Corea, tras el Chapter 1)",
    "tipo": "tabla",
    "columnas": [
-    "Fuente",
-    "Por semana",
-    "Coste / condición"
+    "Qué",
+    "Energía de Od"
    ],
    "filas": [
     [
-     "Tienda especial",
-     "7 compras × 40 = 280",
-     "700.000 Kina cada una (casi 5 millones a la semana). Se reinicia el **domingo**"
+     "Recompensa estándar (Expedición, Trascendencia)",
+     "40"
     ],
     [
-     "Fabricación (conversión de materiales)",
-     "7 producciones × 40 = 280",
-     "Por personaje. Cada una: Odyle, Pure Odyle, un grado superior de Odyle (en coreano «Pristine») + 50.000 Kina. El Odyle sale de Essence Extraction"
+     "Doble recompensa (con Membresía abres el cofre dos veces; es lo normal para quien la tiene)",
+     "80"
     ],
     [
-     "Goteo de misiones",
-     "Pequeño",
-     "Mission quests y órdenes de suministro del Abismo dan Small Odyle Energy de 10; Daeva Pass premium suma 10"
+     "Santuario",
+     "80 (antes del Chapter 1 eran 40; la misma actualización hizo las raids de 10 jugadores)"
+    ],
+    [
+     "Dos bloqueos de Santuario",
+     "160 de un presupuesto de 560, antes de tocar una Expedición"
     ]
    ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Ahora mismo en global el gasto de raid es menor: NC retiró **Ludra**, la raid de Abyssal Forge, para rehacerla; prometía volver antes del 16 de octubre y a 14 de octubre aún no había vuelto. Por otro lado, el jefe de la Conquista de Expedición suelta **15 de Energía de Od** en total (reajustado para grupo de 5, medido en Corea): devuelve algo, no cambia las cuentas."
+  },
+  {
+   "titulo": "Fuentes extra de Energía de Od",
+   "tipo": "tabla",
+   "columnas": [
+    "Fuente",
+    "Cantidad",
+    "Condiciones"
+   ],
+   "filas": [
+    [
+     "Tienda especial (pestaña Especial del Gremio de la Brisa), lanzamiento",
+     "4 compras por personaje a la semana, techo de 16 por servidor",
+     "Energía de Od (vinculada)"
+    ],
+    [
+     "Tienda especial durante la ventana de traslados",
+     "**20 por personaje a la semana, sin techo por servidor**",
+     "Desde el parche del 13 de octubre (14 en Europa) hasta el mantenimiento del 27 de octubre (28 en Europa). NC no ha dicho a qué vuelve después"
+    ],
+    [
+     "Fabricación por conversión de materiales",
+     "7 producciones por semana y personaje, 280",
+     "Cada una: Od, Od puro, un grado superior de Od (en coreano «Pristine») y 50.000 Kinah. El Od sale de la Extracción de esencia"
+    ],
+    [
+     "Halloween Coin Merchant (tiendas de las ciudades de tu región inicial)",
+     "4 por servidor a la semana",
+     "10 monedas de calabaza cada una, desde nivel 45. Hasta el 3 de noviembre (4 en Europa)"
+    ],
+    [
+     "Caramelo azul (con la Llave de caramelo azul del evento)",
+     "4 más a la semana",
+     "La llave se fabrica una vez por servidor a la semana"
+    ],
+    [
+     "Goteo de encargos",
+     "Pequeña energía de Od, 10 cada una",
+     "Encargos de Misión y pedidos de suministro del Abismo; el Pase Daeva premium suma 10"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "NC no publica cuánta energía trae cada compra de la tienda ni su precio. En Corea son **40 de energía por 700.000 Kinah**, 7 veces a la semana (280 por algo menos de 5 millones). Las 8 de Halloween son **por servidor**, no por personaje: guárdalas para tu principal. Si vas justo de Kinah, piénsalo; si te sobra, la tienda extra es la mayor palanca mientras dure la ventana."
   },
   {
    "titulo": "Presupuesto semanal",
    "tipo": "tabla",
    "columnas": [
-    "",
-    "Con Membership",
-    "Sin Membership"
+    "Caso",
+    "Recuperación",
+    "Fabricación",
+    "Tienda",
+    "Total",
+    "Partidas"
    ],
    "filas": [
     [
-     "Recuperación",
+     "Con Membresía, tienda de lanzamiento (4)",
      "840",
-     "560"
-    ],
-    [
-     "Tienda",
      "280",
-     "280"
+     "160",
+     "1.280",
+     "16 dobles (80)"
     ],
     [
-     "Fabricación",
+     "Con Membresía, ventana de traslados (20)",
+     "840",
      "280",
-     "280"
+     "800",
+     "1.920",
+     "24 dobles"
     ],
     [
-     "Total",
-     "1.400",
-     "Cerca de 1.120"
+     "Con Membresía, ventana y Halloween (1 personaje por servidor)",
+     "840",
+     "280",
+     "1.120",
+     "2.240",
+     "28 dobles"
     ],
     [
-     "Partidas con recompensa",
-     "17-18 (a 80)",
-     "Cerca de 14"
+     "Sin Membresía, tienda de lanzamiento",
+     "560",
+     "280",
+     "160",
+     "1.000",
+     "25 de un cofre (40)"
+    ],
+    [
+     "Sin Membresía, ventana de traslados",
+     "560",
+     "280",
+     "800",
+     "1.640",
+     "41 de un cofre, si puedes pagar las 20"
     ]
    ]
   },
   {
    "tipo": "aviso",
-   "texto": "Los totales son sumas de esta guía sobre cifras coreanas: tómalos como orden de magnitud, no como tope exacto."
+   "texto": "Los totales son cuentas propias: cifras de tienda de NC y, para lo demás, mediciones coreanas, contando cada compra como 40. Tómalos como orden de magnitud, no como tope exacto. Si un personaje sin suscripción puede comprarlas todas, compruébalo en tu pestaña de la tienda. La recuperación y el stock de horas de Abismo son dos de las cuatro cosas que compra la suscripción."
   },
   {
-   "titulo": "Los tres relojes",
+   "titulo": "Los relojes",
    "tipo": "tabla",
    "columnas": [
     "Reinicio",
-    "Cuándo (Corea)",
+    "Cuándo",
     "Qué recarga"
    ],
    "filas": [
     [
      "Diario",
-     "05:00",
+     "07:00 UTC",
      "Todo lo diario"
     ],
     [
      "Semanal",
-     "Miércoles 05:00",
-     "Todo lo semanal: lo no gastado el martes por la noche se pierde"
+     "**Miércoles 07:00 UTC**",
+     "Todo lo semanal; lo que no gastes se pierde"
     ],
     [
      "Tienda especial",
-     "**Domingo** a medianoche",
-     "Piedras de resurrección y energía, entre otras"
+     "En Corea, domingo a medianoche. En global, sin publicar",
+     "Compras de energía y piedras de resurrección, entre otras"
     ]
    ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Error de rutina más común en Corea: creer que todo reinicia el miércoles y perder cada semana la tienda especial. Pasa las 07:00 UTC a tu hora una vez y mira el temporizador de tu pestaña de la tienda: si pone domingo, apúntalo aparte."
   },
   {
    "titulo": "En qué gastar la energía",
@@ -183,29 +518,29 @@
    "filas": [
     [
      "1",
-     "Expedition (doble recompensa si tienes membresía)",
-     "Canal directo de equipo y nivel de objeto"
+     "Expedición (doble recompensa si tienes Membresía)",
+     "Vía directa de equipo y nivel de objeto"
     ],
     [
      "2",
-     "Transcendence",
-     "Única fuente de Arcana, el mayor salto de nivel de objeto. Arcana avanzado desde la fase 3; a +2 sube cuatro niveles de habilidad"
+     "Trascendencia",
+     "Única fuente de **Arcanas**, el mayor salto de nivel de objeto. Arcanas avanzadas desde la fase 3; a +2 suben cuatro niveles de habilidad a la vez"
     ],
     [
      "3",
-     "Sanctuary",
-     "Solo con noche de raid programada; es lo más caro (80)"
+     "Santuario",
+     "Solo con noche de raid programada: 80 por partida, lo más caro. Si tu grupo no lo va a terminar, gastas energía en wipes"
     ],
     [
      "No",
-     "Refinado",
-     "Solo +1 de nivel de objeto por nivel: mal retorno"
+     "Refinamiento",
+     "Solo +1 de nivel de objeto por grado: mal retorno para lo que cuesta"
     ]
    ]
   },
   {
    "tipo": "aviso",
-   "texto": "Cada contenido tiene además su propio límite semanal de partidas con recompensa, independiente de la energía. Revisa los dos antes de planificar. El orden de gasto es práctica coreana; la lista global de mazmorras no está publicada."
+   "texto": "Este orden es práctica coreana con la lista de mazmorras coreana; nadie lo ha confirmado con la global. La lógica sí se mantiene: las Arcanas superan de lejos al refinamiento."
   },
   {
    "titulo": "Bloque diario (por lo que más duele saltarse)",
@@ -217,49 +552,267 @@
    ],
    "filas": [
     [
-     "Mission quests",
+     "Misiones",
      "5 al día",
-     "2.500 Abyss Points entre las cinco (Corea) y otras cuatro monedas"
+     "La mejor hora del día; si haces una sola cosa, esta"
     ],
     [
-     "Emergency Abyss Supply",
+     "Solicitudes urgentes de suministro del Abismo",
      "Diario",
-     "Abyss Points según el grado entregado; haz solo lo barato"
+     "Puntos de Abismo según el grado entregado. Entregarlo todo no es realista: haz lo barato"
     ],
     [
      "Festival de Shugo",
-     ":15 y :45 de cada hora; 2 llaves (4 con membresía)",
-     "Puntos de habilidad y de Daevanion"
+     "Cada hora en punto (temporizador en el minimapa). 3 llaves al día, acumulan hasta 12 (21 con Membresía); llaves por servidor",
+     "Puntos de habilidad y puntos de Daevanion en 5 minutos"
     ],
     [
-     "Expeditions",
-     "Lo que pague tu energía (40 u 80)",
+     "Expediciones",
+     "Lo que pague tu energía (40, u 80 doble). Conquista: 1 recompensa cada 8 h, hasta 21",
      "Equipo Único y Legendario"
     ],
     [
-     "Transcendence",
-     "Misma barra: 2/día sin suscripción, 3 con ella",
-     "Arcana"
+     "Trascendencia",
+     "Misma barra y mismo precio. 1 recompensa cada 12 h, hasta 14",
+     "Arcanas. Saltarte un día no cuesta nada si la barra no está llena"
     ],
     [
-     "Nightmare",
-     "2 al día, acumulables hasta 14",
-     "Fragmentos para material de progreso; se puede saltar al principio"
+     "Pesadilla",
+     "2 al día por personaje, acumulan hasta 14; solo se descuenta al completar",
+     "Fragmentos para material de crecimiento. Prescindible al principio"
     ],
     [
      "Black Cloud Traders",
-     "Repone cada hora",
-     "Mascotas y cosméticos por Kina; la mascota merece la pena"
+     "Repone cada hora, sin límite",
+     "Mascotas y cosméticos por Kinah; la mascota merece la pena"
     ],
     [
      "Recolección",
      "En tu ruta",
-     "Odyle y materiales"
+     "Od y materiales"
     ]
    ]
   },
   {
-   "titulo": "Bloque semanal (antes del miércoles)",
+   "titulo": "Misiones: un Diario, tres familias",
+   "tipo": "tabla",
+   "columnas": [
+    "Familia",
+    "Cómo llega",
+    "Reloj",
+    "Gasta hueco de encargo"
+   ],
+   "filas": [
+    [
+     "Misiones diarias",
+     "Aparecen cada mañana en el Diario",
+     "Diario (07:00 UTC)",
+     "Sí"
+    ],
+    [
+     "Comandos",
+     "Pergaminos que compras a un mercader de las Aldeas (en la bolsa: **Comando: Verteron** o **Comando: Altgard**); el Abismo tiene stock aparte. El mercader cuesta encontrarlo",
+     "Semanal",
+     "Sí"
+    ],
+    [
+     "Misiones de temporada",
+     "Pestaña propia; siguen contenido que ya haces",
+     "Liquidación semanal en el reinicio del miércoles; temporada de meses",
+     "No"
+    ]
+   ]
+  },
+  {
+   "titulo": "Misiones diarias",
+   "tipo": "lista",
+   "items": [
+    "**5 al día**, se recargan a las 07:00 UTC.",
+    "Cada una paga **500 Puntos de Abismo** (medido en Corea): 2.500 al día.",
+    "Además: Kinah, Piedras de mejora, material de recolección, probabilidad de equipo **Único** y Pequeña energía de Od (10 cada una).",
+    "La **orden de recompensa** es una Misión del Diario con la tirada de equipo Único: si sale, es una de tus prioridades dentro de las cinco, no una sexta.",
+    "Recompensas con el mismo selector de 5 ranuras: coge la 1."
+   ]
+  },
+  {
+   "titulo": "Reroll de la lista con Kinah",
+   "tipo": "lista",
+   "items": [
+    "Puedes pagar Kinah para renovar las Misiones ofrecidas.",
+    "No todas llevan tirada de Energía de Od: renueva hasta que salgan las que sí.",
+    "Al principio casi siempre compensa: el Kinah vuelve solo y la Energía de Od es el techo de tu equipo."
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "No se ha publicado el precio del reroll ni está confirmado que exista en global (viene de Corea)."
+  },
+  {
+   "titulo": "Comandos",
+   "tipo": "tabla",
+   "columnas": [
+    "Tipo",
+    "Paga",
+    "Cantidad semanal (Corea)"
+   ],
+   "filas": [
+    [
+     "Pergamino de orden de las Aldeas",
+     "500 Puntos de Abismo y un bonus aleatorio",
+     "12"
+    ],
+    [
+     "Pergamino de orden del Abismo",
+     "Misma forma, stock propio",
+     "20 o 25 según la fuente (no coinciden)"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Un Comando que no puedes terminar: recházalo. No cuesta nada (el pergamino vuelve a salir) y guardarlo te cuesta una Misión al día."
+  },
+  {
+   "titulo": "Piedras de entrada al Abismo (parche del 14-oct-2026)",
+   "tipo": "tabla",
+   "columnas": [
+    "Misión semanal de temporada",
+    "Premio"
+   ],
+   "filas": [
+    [
+     "Pasa 1 hora en el Abismo",
+     "Piedra de entrada al Abismo"
+    ],
+    [
+     "Derrota una vez al señor guardián Nahma",
+     "Piedra de entrada al Abismo"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "El tiempo de Abismo acumulado tiene ahora un tope de **7 horas**: si llegas al tope, lo que sobra se pierde, así que gástalo antes."
+  },
+  {
+   "titulo": "Misiones de temporada",
+   "tipo": "lista",
+   "items": [
+    "Global está en su propia **Season 1**, con la pestaña activa. La tienda especial tiene una Piedra espiritual de resurrección de Season 1 del 6 de octubre al 15 de diciembre. NC no ha publicado cuándo acaba la temporada global.",
+    "Tu progreso de Misiones de temporada y tus Puntos de rango de temporada se vienen contigo si te trasladas.",
+    "Liquidación semanal en el reinicio del miércoles. Recompensa semanal máxima: **15.000 puntos** (Corea). Lo que pase de ahí se pierde: no acumules por encima.",
+    "Puntos de: Abismo, Arena, Trascendencia, Pesadilla y contenido de desafío. Franjas intermedias con piedras de resurrección y Energía de Od.",
+    "Un parche coreano bajó el requisito para que las Misiones de temporada solas lleguen a la recompensa semanal."
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Solo Corea: allí una temporada dura unos 2 meses (la Season 2 abrió el 21 de enero de 2026 y la checklist de la Season 3 salió a principios de abril). No sirve para calcular la fecha de cierre global."
+  },
+  {
+   "titulo": "Pestaña Evento de Halloween «Truco o trato» (hasta el mantenimiento del 3 de noviembre, 4 en Europa)",
+   "tipo": "tabla",
+   "columnas": [
+    "Misión (una vez a la semana por servidor)",
+    "Monedas de calabaza"
+   ],
+   "filas": [
+    [
+     "Caza 10 monstruos en el Abismo",
+     "25"
+    ],
+    [
+     "Completa 1 Trascendencia",
+     "25"
+    ],
+    [
+     "Completa 1 Conquista de Expedición",
+     "25"
+    ],
+    [
+     "Completa 1 Prueba de ascenso",
+     "25"
+    ],
+    [
+     "Completa Pesadilla en cualquier fase",
+     "25"
+    ],
+    [
+     "Conéctate 3 veces",
+     "30"
+    ],
+    [
+     "Consigue 1 pieza Única",
+     "20"
+    ],
+    [
+     "Usa 5 pergaminos",
+     "20"
+    ],
+    [
+     "Haz 1 Invasión dimensional",
+     "20"
+    ],
+    [
+     "Haz 1 Festival de Shugo",
+     "20"
+    ],
+    [
+     "**Total a la semana**",
+     "**235**"
+    ]
+   ]
+  },
+  {
+   "titulo": "Lo que caduca al cambiar de temporada (Corea)",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Regla"
+   ],
+   "filas": [
+    [
+     "Moneda de voto (tienda de temporada)",
+     "La de una temporada no compra nada en la siguiente y la tienda cierra al abrir la nueva: gástala"
+    ],
+    [
+     "Moneda de tienda del Pase Daeva",
+     "Por temporada; algunas tiendas de la Season 1 siguieron abiertas un poco más"
+    ],
+    [
+     "Adorno de Panteón Heroic (grado alto en Abismo, Trascendencia o Pesadilla)",
+     "Da estadística, pero el de la Season 1 solo vale hasta que acaba la Season 2"
+    ]
+   ]
+  },
+  {
+   "titulo": "Compartido por servidor o por personaje (global)",
+   "tipo": "tabla",
+   "columnas": [
+    "Alcance",
+    "Tareas"
+   ],
+   "filas": [
+    [
+     "Todo el servidor (según NC)",
+     "Mazmorras diarias, Festival de Shugo e Invasión dimensional"
+    ],
+    [
+     "Por personaje",
+     "Pesadilla, Prueba de ascenso, Subyugación y horas de Abismo"
+    ],
+    [
+     "Sin aclarar",
+     "Misiones: la mayoría de jugadores globales dice que se comparten en el servidor; unos pocos, que son por personaje. Un rastreador coreano también las pone como compartidas"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Si las Misiones se confirman como compartidas, un segundo personaje no duplica tus Misiones y los alts valen menos de lo que parece."
+  },
+  {
+   "titulo": "Bloque semanal (antes del miércoles 07:00 UTC)",
    "tipo": "tabla",
    "columnas": [
     "Tarea",
@@ -268,74 +821,130 @@
    ],
    "filas": [
     [
-     "Daily Dungeon",
-     "**7 por semana** (no es diaria)",
-     "Enhance Stones; más con mejor nota"
+     "Mazmorras diarias (Fisura desconocida)",
+     "**14 a la semana**, compartidas en el servidor",
+     "Piedras de mejora; más cuanto mejor completas"
     ],
     [
-     "Ascension Trial",
-     "3 por semana (antes 7)",
-     "Silentium, cajas de manastones, Daevanion crystals. Entrada cerca de 1.000 de poder de combate"
+     "Prueba de ascenso",
+     "3 a la semana",
+     "Silentium, cajas de piedras de maná y cristales de Daevanion. Entrada nominal cerca de 1.000 de poder de combate"
     ],
     [
-     "Subjugation",
-     "3 por semana (antes 7)",
-     "Enhance Stones, Daevanion crystals, Amplify Stone Fragments"
+     "Subyugación",
+     "3 a la semana",
+     "Piedras de mejora, cristales de Daevanion y Fragmentos de piedra de superación"
     ],
     [
-     "Fabricación de Odyle Energy",
+     "Fabricación de Energía de Od",
      "7 producciones",
      "280 de energía"
     ],
     [
-     "Tienda especial",
-     "7 compras (antes del **domingo**)",
-     "280 de energía"
+     "Compras de energía de la tienda especial",
+     "4 (lanzamiento) o 20 (ventana de traslados)",
+     "Antes del reinicio propio de la tienda"
     ],
     [
-     "Sanctuary",
-     "Intentos ilimitados, 2 kills con recompensa",
-     "Equipo de raid"
+     "Santuario",
+     "Intentos ilimitados, 2 muertes pagadas",
+     "Lo que cuenta es la muerte que cobras"
     ],
     [
      "Abismo",
-     "7 horas (14 con membresía)",
-     "Reserva de horas: corre mientras estás dentro"
+     "Stock de **7 horas** a la semana; acumulas como mucho 7",
+     "El reloj corre mientras estás dentro de la zona"
     ],
     [
      "Otros",
-     "—",
-     "Pergaminos de Abyss Command y de Command de campo, peticiones de suministro semanales, victorias en campo de batalla"
+     "Semanal",
+     "Pergaminos de Comando del Abismo y de campo, solicitudes de suministro semanales y victorias en campo de batalla"
     ]
    ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Trampa del nombre: las **Mazmorras diarias son semanales**. 14 entradas por semana (2 al día de media) que caducan el miércoles sin aviso, y un alt gasta del mismo fondo. Los textos coreanos dicen 7, pero global usa 14. Prueba de ascenso y Subyugación empezaron con 7 en Corea y bajaron a 3. En Corea la Membresía duplicaba el Abismo a 14 horas; en global NC no ha dicho nada."
   },
   {
    "titulo": "Qué saltarte la primera semana",
    "tipo": "lista",
    "items": [
-    "**El Abismo**: con un personaje nuevo no vale sus horas.",
-    "**Farmear campos de batalla**: 10 victorias por semana a 2.000 AP cada una; opcional, el PvE da suficientes Abyss Points.",
-    "**Mazmorras selladas** (marcadores de interrogación, cerca de 10 minutos, piedras de mejora y Daevanion crystals): escalan con tu nivel; guárdalas para el tope. Más de sesenta por facción.",
-    "Asedio de artefactos: el horario global no se conoce; averígualo la primera semana y planifícalo en la segunda."
+    "**El Abismo**: se paga en horas y con un personaje nuevo no las vale; además en global no abre hasta el **nivel 45**. Vuelve con poder de combate decente.",
+    "**Grindear el campo de batalla** (Arena de Estrategia): en global las recompensas semanales salen con solo **3 victorias y 3 participaciones**. En Corea pagaba 2.000 AP por victoria; el global no está publicado. Es opcional: el PvE da Puntos de Abismo de sobra.",
+    "**Mazmorras selladas** (marcadores de interrogación, unos 10 minutos, piedras de mejora y cristales de Daevanion): escalan con tu nivel, guárdalas para el nivel máximo. Hay bastante más de 60 por raza.",
+    "**Asedio de artefacto**: paga muchísimos Puntos de Abismo al bando ganador. En global, **lunes, jueves y sábados a las 12:00 UTC** (21:00 hora del servidor). Apúntalo la primera semana y organízate la segunda."
    ]
   },
   {
    "tipo": "aviso",
-   "texto": "Saltarte la recolección te quita una quinta parte de tu techo de equipo (los 280 de energía fabricada). Y nada de esta página sube el Awakening Gauge: si tu historia se atasca, haz misiones de región."
+   "texto": "Saltarte la recolección te quita **una quinta parte** de tu techo de equipo (los 280 de energía fabricada, con la tienda de lanzamiento; algo menos durante la ventana de traslados)."
   },
   {
-   "titulo": "Cuatro hábitos",
+   "titulo": "Cuatro hábitos para no desperdiciar la barra",
    "tipo": "pasos",
    "items": [
-    "Si entras con más de **400** (sin suscripción) o **650** (con ella), gasta antes de nada.",
-    "Recolecta en tu ruta.",
-    "No gastes en contenido por debajo de tu nivel que paga poco: cuesta lo mismo. Una partida fallida no cuesta energía (se gasta al abrir el cofre).",
-    "Quema la barra antes del miércoles por la mañana y la tienda antes del domingo."
+    "Si entras por encima de **400** (sin suscripción) o **650** (con ella), gasta antes de nada.",
+    "Recolecta: parece secundario y es una quinta parte de tu techo.",
+    "No gastes con un grupo que va a hacer wipe en algo que no paga: la energía se va al abrir el cofre, así que una partida fallida no cuesta nada, pero una que sale justa en contenido flojo cuesta los mismos 80.",
+    "Vacía la barra antes del miércoles y la tienda antes de su propio reinicio."
    ]
   },
   {
    "tipo": "aviso",
-   "texto": "Todas las cifras son coreanas (mayoría tras el Chapter 1). NC no ha publicado tasas, costes, topes ni horas de reinicio globales. Quédate con la estructura (diario, miércoles, domingo) y comprueba la hora en tu servidor. Si las notas globales dicen otra cosa, mandan las notas."
+   "texto": "De dónde salen las cifras: casi todo es medición coreana (sobre todo tras el Chapter 1 de julio de 2026), lo más cercano que hay porque global hereda el Chapter 1. Son de NC: tienda, Halloween, cambios del Abismo del 13 de octubre, nivel máximo, fechas de servidores y traslados, horas de reinicio y los recuentos semanales de Mazmorras diarias, Pesadilla, llaves de Shugo, Prueba de ascenso y Subyugación. NC no ha publicado tasas de recuperación, costes ni día de reinicio de la tienda especial en global. «Comando» y «Misiones de temporada» son nombres del juego; «Misión» y «orden de recompensa» pueden llamarse algo distinto en tu menú. Si las notas de parche dicen otra cosa, mandan las notas."
+  },
+  {
+   "titulo": "Qué hacer ahora",
+   "tipo": "pasos",
+   "items": [
+    "Entra y mira la barra. Por encima de 400 (o 650 con Membresía), lo primero es gastar.",
+    "Abre el Diario, cuenta los huecos libres, coge las cinco Misiones y la orden de recompensa si sale.",
+    "Si ninguna lleva Energía de Od y te sobra Kinah, haz reroll. Cierra o rechaza los Comandos que no vayas a terminar.",
+    "Apunta tus fechas: miércoles 07:00 UTC y el reinicio aparte de la tienda. Haz el bloque diario sin pensarlo cada tarde."
+   ]
+  },
+  {
+   "titulo": "Guías relacionadas",
+   "tipo": "tabla",
+   "columnas": [
+    "Guía",
+    "Para qué"
+   ],
+   "filas": [
+    [
+     "Subir al nivel máximo: el Awakening Gauge",
+     "Por qué se para tu historia y cómo mantener libres los 5 huecos"
+    ],
+    [
+     "Recompensas de mazmorra: el cubo y el contador de pity",
+     "Qué compra de verdad tu energía"
+    ],
+    [
+     "Tipos de mazmorra: Expedición, Trascendencia, Santuario",
+     "Qué es cada contenido"
+    ],
+    [
+     "El Abismo: horas, puntos y rango",
+     "Puntos de Abismo y el stock de horas"
+    ],
+    [
+     "Cómo elegir facción y servidor",
+     "Qué servidor le conviene a tu grupo"
+    ],
+    [
+     "Eventos y el Festival de Shugo",
+     "Horario de Shugo y tienda de Halloween"
+    ],
+    [
+     "Recolección, Empyrean Trace y monolitos",
+     "Por qué la recolección es progresión"
+    ],
+    [
+     "El modelo de pago y Founders Packs",
+     "Si la Membresía te compensa"
+    ]
+   ]
   }
  ]
 }

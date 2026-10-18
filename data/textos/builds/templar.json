@@ -437,7 +437,7 @@
    {
     "id": "macro",
     "tipo": "aviso",
-    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso a 10 ms; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
+    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
    },
    {
     "id": "pruebas",
@@ -445,7 +445,8 @@
     "tipo": "lista",
     "items": [
      "Escudo de perdición abajo de la pila E: abre el combate y da más daño (está en el preset «Solitario y mundo abierto»).",
-     "Pila Q con Embestida decadente abajo o con Aniquilación abajo."
+     "Pila Q con Embestida decadente abajo o con Aniquilación abajo.",
+     "Estandarte del campo de batalla debajo de Armadura de nobleza en la 4 (los dos están en el preset «Solitario y mundo abierto»)."
     ]
    },
    {
