@@ -139,7 +139,7 @@
    "items": [
     "Fija y ajusta las opciones de una pieza, con listas distintas por hueco: casco, pechera, piernas, pies, capa, guantes, hombreras, anillos, pendientes, collar, arma, escudo.",
     "Recomendaciones coreanas en tres grupos (esenciales, opcionales y pasivas), pensadas para PvE; el PvP prioriza distinto.",
-    "No publicado: coste en materiales, coste en Kina, tasa de éxito ni límite de intentos.",
+    "Cada intento **quema una pieza legendaria** (las que sueltan monstruos y mascotas). No publicado: coste en Kina ni límite de intentos.",
     "Sync en arma, guarda o brazalete cuesta mucho más que en armadura: no hagas Transfer a un arma que luego no puedas ajustar."
    ]
   },
@@ -168,6 +168,76 @@
      "Velocidad de movimiento + perfección"
     ]
    ]
+  },
+  {
+   "titulo": "Sync en global: qué línea buscar en cada pieza (PvE)",
+   "tipo": "tabla",
+   "columnas": [
+    "Hueco",
+    "1.ª opción",
+    "Opcional"
+   ],
+   "filas": [
+    [
+     "Arma y guarda",
+     "**Velocidad de combate**",
+     "Amplificación de daño de arma, amplificación de daño"
+    ],
+    [
+     "Casco",
+     "**Doble golpe**",
+     "Poder de ataque"
+    ],
+    [
+     "Hombreras",
+     "**Amplificación de daño crítico**",
+     "Doble golpe"
+    ],
+    [
+     "Pechera",
+     "**Amplificación de daño**",
+     "Perfección"
+    ],
+    [
+     "Piernas",
+     "**Poder de ataque**",
+     "Perfección, resistencia al daño"
+    ],
+    [
+     "Guantes",
+     "**Velocidad de combate**",
+     "Perfección"
+    ],
+    [
+     "Pies",
+     "**Velocidad de movimiento**",
+     "Perfección"
+    ],
+    [
+     "Capa",
+     "**Doble golpe**",
+     "Poder de ataque"
+    ],
+    [
+     "Pendientes",
+     "**Velocidad de movimiento**",
+     "—"
+    ],
+    [
+     "Collar",
+     "**Velocidad de combate**",
+     "—"
+    ],
+    [
+     "Anillos",
+     "**Habilidades**",
+     "—"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "**Cómo:** en la ventana de Soul Binding pulsa **Sync**, elige la pieza legendaria que vas a quemar y la línea que quieres; la ventana te enseña la probabilidad y la pieza se gasta. Ataque, Fuerza y Precisión salen en todas las piezas: la tabla es para el resto de líneas."
   }
  ]
 }
