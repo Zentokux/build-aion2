@@ -180,64 +180,64 @@
    "filas": [
     [
      "Arma y guarda",
-     "**Velocidad de combate**",
-     "Amplificación de daño de arma, amplificación de daño"
+     "**Velocidad de Hechizo**",
+     "Amplificación de Daño de Arma, Amplificación de Daño"
     ],
     [
      "Casco",
-     "**Doble golpe**",
-     "Poder de ataque"
+     "**Golpe**",
+     "Aumento de Ataque"
     ],
     [
      "Hombreras",
-     "**Amplificación de daño crítico**",
-     "Doble golpe"
+     "**Amplificación de Daño Crítico**",
+     "Golpe"
     ],
     [
-     "Pechera",
-     "**Amplificación de daño**",
-     "Perfección"
+     "Peto",
+     "**Amplificación de Daño**",
+     "Perforación"
     ],
     [
-     "Piernas",
-     "**Poder de ataque**",
-     "Perfección, resistencia al daño"
+     "Grebas",
+     "**Aumento de Ataque**",
+     "Perforación, Tolerancia a Daño"
     ],
     [
      "Guantes",
-     "**Velocidad de combate**",
-     "Perfección"
+     "**Velocidad de Hechizo**",
+     "Perforación"
     ],
     [
-     "Pies",
-     "**Velocidad de movimiento**",
-     "Perfección"
+     "Botas",
+     "**Velocidad de Movimiento**",
+     "Perforación"
     ],
     [
      "Capa",
-     "**Doble golpe**",
-     "Poder de ataque"
+     "**Golpe**",
+     "Aumento de Ataque"
     ],
     [
      "Pendientes",
-     "**Velocidad de movimiento**",
+     "**Velocidad de Movimiento**",
      "—"
     ],
     [
      "Collar",
-     "**Velocidad de combate**",
+     "**Velocidad de Hechizo**",
      "—"
     ],
     [
      "Anillos",
-     "**Habilidades**",
+     "**+ habilidad** (las líneas «+ nombre de habilidad»)",
      "—"
     ]
    ]
   },
   {
    "tipo": "aviso",
-   "texto": "**Cómo:** en la ventana de Soul Binding pulsa **Sync**, elige la pieza legendaria que vas a quemar y la línea que quieres; la ventana te enseña la probabilidad y la pieza se gasta. Ataque, Fuerza y Precisión salen en todas las piezas: la tabla es para el resto de líneas."
+   "texto": "**Cómo:** en la ventana de Soul Binding pulsa **Sync**, elige la pieza legendaria que vas a quemar y la línea que quieres; la ventana te enseña la probabilidad y la pieza se gasta. Ataque, Fuerza, Precisión y Crítico salen en casi todas las piezas: la tabla es para el resto. Son las mismas líneas que trae el equipo de cada build (pasa el ratón por cada pieza en la página de tu clase)."
   }
  ]
 }
