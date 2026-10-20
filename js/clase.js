@@ -75,11 +75,15 @@ function pintarClase() {
 
   // ---------- equipo ----------
   function tipEquipo(e) {
-    return "<div class='tt-nombre'>" + esc(e.nombre) + (e.mejora ? " +" + e.mejora : "") + "</div><div class='tt-sub'>" + esc(e.ranura) +
+    // ficha ancha: stats en dos columnas y Soul Binding junto a Manastones, para que quepa en la pantalla
+    var filas = Math.ceil(e.stats.length / 2);
+    return "<div class='tt-ancho'><div class='tt-nombre'>" + esc(e.nombre) + (e.mejora ? " +" + e.mejora : "") + "</div><div class='tt-sub'>" + esc(e.ranura) +
       " · " + esc(e.grado_es || "") + (e.nivel ? " · Nv. de objeto " + e.nivel : "") + "</div>" +
-      (e.stats.length ? "<table class='tt-tabla'>" + e.stats.map(function (s) { return "<tr><td>" + esc(s[0]) + "</td><td>" + esc(s[1]) + "</td></tr>"; }).join("") + "</table>" : "") +
-      (e.vinculos.length ? "<div class='tt-sec'>Soul Binding</div>" + e.vinculos.map(esc).join("<br>") : "") +
-      (e.piedras.length ? "<div class='tt-sec'>Manastones</div>" + e.piedras.map(esc).join("<br>") : "");
+      (e.stats.length ? "<div class='tt-grid' style='grid-template-rows:repeat(" + filas + ",auto)'>" + e.stats.map(function (s) { return "<div><span>" + esc(s[0]) + "</span><b>" + esc(s[1]) + "</b></div>"; }).join("") + "</div>" : "") +
+      "<div class='tt-pie'>" +
+      (e.vinculos.length ? "<div><div class='tt-sec'>Soul Binding</div>" + e.vinculos.map(esc).join("<br>") + "</div>" : "") +
+      (e.piedras.length ? "<div><div class='tt-sec'>Manastones</div>" + e.piedras.map(esc).join("<br>") + "</div>" : "") +
+      "</div></div>";
   }
   function ranura(k) {
     var e = B.equipo[k];

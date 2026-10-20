@@ -149,13 +149,17 @@ function activarTips() {
     var t = e.target.closest && e.target.closest("[data-tip]");
     if (!t) { tip.style.display = "none"; return; }
     tip.innerHTML = t.getAttribute("data-tip");
+    tip.classList.toggle("ancho", !!tip.querySelector(".tt-ancho"));
     tip.style.display = "block";
   });
   document.addEventListener("mousemove", function (e) {
     if (tip.style.display !== "block") return;
-    var x = Math.min(e.clientX + 14, window.innerWidth - tip.offsetWidth - 8);
-    var y = e.clientY + 16;
-    if (y + tip.offsetHeight > window.innerHeight) y = e.clientY - tip.offsetHeight - 10;
+    var w = tip.offsetWidth, h = tip.offsetHeight, W = window.innerWidth, H = window.innerHeight;
+    // al lado del ratón (a la derecha, o a la izquierda si no cabe) y siempre dentro de la pantalla
+    var x = e.clientX + 18;
+    if (x + w > W - 8) x = Math.max(8, e.clientX - w - 18);
+    var y = h > H * 0.5 ? e.clientY - h / 2 : e.clientY + 16;
+    y = Math.max(8, Math.min(y, H - h - 8));
     tip.style.left = x + "px"; tip.style.top = y + "px";
   });
 }
