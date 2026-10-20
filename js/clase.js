@@ -214,18 +214,26 @@ function pintarClase() {
   h += seccion("coleccionables", "Coleccionables", tc);
 
   // ---------- mascotas ----------
-  var M = B.mascotas || [];
-  var tm = "";
+  var M = B.mascotas || [], P = B.mascotas_plan || {};
+  var bloqM = S.mascotas || [];
+  var tm = bloquesHTML(bloqM.filter(function (x) { return x.id === "minimo"; }));
   if (M.length) {
+    // cada ranura sale al azar: se pinta qué buscar, qué vale si no sale y la prioridad (no una tirada fija)
+    var ESTR = { 3: "★★★", 2: "★★", 1: "★" };
     tm += '<div class="pestanas"><span class="pestana on">Comprensión de raza<span>' + M.length + '</span></span></div><div class="panel-col"><div class="genus">' +
       M.map(function (g) {
+        var rango = {};
+        g.lineas.forEach(function (l) { rango[l[0]] = l[1]; });
+        var filas = P[g.genus] ? P[g.genus].map(function (r) {
+          return '<li class="p' + r.prio + '"><span><i>' + r.n + ".</i> " + esc(r.op) + (rango[r.op] ? " <em>" + esc(rango[r.op]) + "</em>" : "") +
+            (r.alt && r.alt !== "—" ? "<br><small>si no sale: " + esc(r.alt) + "</small>" : "") + "</span><b>" + ESTR[r.prio] + "</b></li>";
+        }).join("") : g.lineas.map(function (l) { return "<li><span>" + esc(l[0]) + " " + esc(l[1]) + "</span><small>" + esc(l[2]) + "</small></li>"; }).join("");
         return '<div class="gen"><div class="cab"><img src="icons/ui/' + g.icono + '.webp" alt=""><b>' + esc(g.nombre) + "</b></div>" +
           '<div class="pos">' + g.posesion.map(function (s) { return esc(s[0]) + " " + esc(s[1]); }).join(" · ") + "</div>" +
-          '<div class="ran"><span>Ranuras de comprensión</span><span>' + g.lineas.length + "/" + g.ranuras + "</span></div><ol>" +
-          g.lineas.map(function (l) { return "<li><span>" + esc(l[0]) + " " + esc(l[1]) + "</span><small>" + esc(l[2]) + "</small></li>"; }).join("") + "</ol></div>";
-      }).join("") + '</div><div class="otorgado"><div class="t">Otorgado</div>' + filasStats(B.mascotas_total) + "</div></div>";
+          '<div class="ran"><span>Ranuras: qué buscar</span><span>' + g.ranuras + " al azar</span></div><ol class=\"plan\">" + filas + "</ol></div>";
+      }).join("") + '</div><div class="otorgado"><div class="t">Si todo saliera perfecto</div>' + filasStats(B.mascotas_total) + "</div></div>";
   }
-  tm += bloquesHTML(S.mascotas);
+  tm += bloquesHTML(bloqM.filter(function (x) { return x.id !== "minimo"; }));
   h += seccion("mascotas", "Mascotas", tm);
 
 
@@ -443,7 +451,7 @@ function pintarColeccionables(C, filasStats) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  cargarScript("data/builds/" + c + ".js?v=11", pintarClase, function () {
+  cargarScript("data/builds/" + c + ".js?v=12", pintarClase, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
 })();

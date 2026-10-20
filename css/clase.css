@@ -176,3 +176,11 @@ details.rot .dentro { padding: 0 12px 12px; font-size: 13px; }
 .gen li { margin: 3px 0; display: flex; justify-content: space-between; gap: 6px; }
 .gen li small { color: var(--suave); flex: none; }
 .ranura.g-Special { background: #1b1726; border-color: #9a4bd6; }
+.gen ol.plan { padding-left: 0; list-style: none; }
+.gen ol.plan li { align-items: flex-start; border-bottom: 1px solid #ffffff0d; padding: 2px 0; }
+.gen ol.plan li i { color: var(--suave); font-style: normal; }
+.gen ol.plan li em { color: var(--suave); font-style: normal; }
+.gen ol.plan li small { display: inline; }
+.gen ol.plan li b { color: var(--oro); font-weight: 400; white-space: nowrap; font-size: 11px; }
+.gen ol.plan li.p3 > span { color: #fff; font-weight: 600; }
+.gen ol.plan li.p1 > span { color: #c9cfdb; }

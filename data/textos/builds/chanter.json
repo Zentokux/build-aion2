@@ -790,6 +790,28 @@
   ],
   "mascotas": [
    {
+    "id": "minimo",
+    "titulo": "Lo mínimo, sí o sí (al menos 1 vez)",
+    "tipo": "pasos",
+    "items": [
+     "**Golpe** en la ranura 4 de Special: es la única del juego que lo saca. Vale la Kinah extra.",
+     "La línea de daño de la **ranura 4** en cada genus: Cogni: **Amplificación de Daño Crítico**, Fera: **Amplificación de Daño de Arma**, Natura: **Perforación**, Varian: **Amplificación de Daño por la Espalda**. Si no sale, el plan B de la ficha.",
+     "Un **Ataque Máximo** (o Ataque Adicional) en la ranura 1 o la 5 de cada genus.",
+     "El resto (vida, Precisión, Crítico, Tolerancia) mejora poco a poco: no gastes Kinah persiguiendo tiradas perfectas ahí."
+    ]
+   },
+   {
+    "id": "como-tirar",
+    "titulo": "Cómo tirar sin tirar la Kinah",
+    "tipo": "lista",
+    "items": [
+     "Sube cada genus a **10** antes de bloquear nada: los niveles de las mascotas lo llevan a 8–9; el resto, con cristales (unos 30–40 cubos para todos).",
+     "Tira con **Auto Analyze**: marca las líneas que quieres, pon el grado en Único o Heroico y deja que tire hasta que salga una.",
+     "**Bloquea** una línea solo cuando esté cerca del máximo de su rango (una de daño al 2,3 % sí; un Ataque de 10 sobre 16, no).",
+     "Las ★★★ primero, luego las ★★ y al final las ★. Las 9 líneas de la ficha son la tirada perfecta: casi nadie la tiene completa."
+    ]
+   },
+   {
     "titulo": "Reglas",
     "tipo": "lista",
     "items": [
