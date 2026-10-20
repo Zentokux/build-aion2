@@ -39,6 +39,56 @@
  "secciones": {
   "equipo": [
    {
+    "titulo": "Atributos que priorizar (PvE)",
+    "tipo": "tabla",
+    "columnas": [
+     "#",
+     "Atributo",
+     "Dónde / por qué"
+    ],
+    "filas": [
+     [
+      "1",
+      "**Velocidad de Hechizo**, Amplificación de Daño de Arma, Amplificación de Daño",
+      "Arma y guarda. Nunca habilidades ahí"
+     ],
+     [
+      "2",
+      "**Crítico**",
+      "Más que en otras clases: Estocada al corazón solo se reinicia con un crítico"
+     ],
+     [
+      "3",
+      "La línea clave de cada pieza",
+      "Golpe, Aumento de Ataque, Perforación, Amplificación de Daño Crítico (orden en la ficha de cada pieza)"
+     ],
+     [
+      "4",
+      "**Impacto trasero**",
+      "La mejor pasiva en equipo; después Explotar debilidades o Postura de agresión"
+     ],
+     [
+      "5",
+      "Ataque",
+      "Relleno en todas las piezas"
+     ],
+     [
+      "6",
+      "Fuerza y Precisión",
+      "Collar, pendientes y anillos"
+     ],
+     [
+      "7",
+      "Estocada al corazón, Corte rápido, Explosión de insignia",
+      "Solo en anillos: las suben de 14 a 16"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "En global cada pieza saca **4 o 5 líneas al azar** de su lista (5 en lo crafteado de rey dragón), no todas. En la ficha de cada pieza las líneas van **en orden**: si te salen las primeras, quédatela. Manastones: Ataque, Crítico, Precisión."
+   },
+   {
     "titulo": "Ruta del arma",
     "tipo": "tabla",
     "columnas": [

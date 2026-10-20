@@ -39,6 +39,56 @@
  "secciones": {
   "equipo": [
    {
+    "titulo": "Atributos que priorizar (PvE)",
+    "tipo": "tabla",
+    "columnas": [
+     "#",
+     "Atributo",
+     "Dónde / por qué"
+    ],
+    "filas": [
+     [
+      "1",
+      "**Amplificación de Daño de Arma** > Velocidad de Hechizo > Amplificación de Daño > Fuerza",
+      "Arma y guarda, en ese orden"
+     ],
+     [
+      "2",
+      "La línea clave de cada pieza",
+      "Golpe, Aumento de Ataque, Perforación, Amplificación de Daño Crítico"
+     ],
+     [
+      "3",
+      "Crítico y Ataque",
+      "Cualquier línea que diga daño antes que defensa"
+     ],
+     [
+      "4",
+      "**Preparación de ataque**",
+      "Pasiva n.º 1: daño JcE, defensa y precisión sin condiciones; después Contraataque experimentado"
+     ],
+     [
+      "5",
+      "Precisión total",
+      "Los jefes bloquean a un Gladiador corto de precisión"
+     ],
+     [
+      "6",
+      "Brazaletes: Sabiduría, Tiempo, Destrucción",
+      "Golpe, velocidad y daño"
+     ],
+     [
+      "7",
+      "Punzada descendente, Embestida desgarradora, Embestida de perdición",
+      "Solo en anillos"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "En global cada pieza saca **4 o 5 líneas al azar** de su lista (5 en lo crafteado de rey dragón), no todas. En la ficha de cada pieza las líneas van **en orden**: si te salen las primeras, quédatela. Manastones: Ataque, Crítico, Precisión."
+   },
+   {
     "titulo": "Ruta del arma",
     "tipo": "tabla",
     "columnas": [

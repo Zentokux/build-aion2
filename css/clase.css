@@ -80,11 +80,13 @@ h2.mr {
 .tt-sec { color: var(--morado); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-top: 6px; }
 #tip { z-index: 1000; }
 #tip.ancho { max-width: min(620px, calc(100vw - 16px)); }
-.tt-grid { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; column-gap: 18px; font-size: 12px; margin-top: 4px; }
-.tt-grid div { display: flex; justify-content: space-between; gap: 10px; padding: 1px 0; border-bottom: 1px solid #ffffff0d; }
-.tt-grid b { color: #fff; font-weight: 400; white-space: nowrap; }
-.tt-pie { display: grid; grid-template-columns: 1fr 1fr; column-gap: 18px; }
-@media (max-width: 560px) { .tt-grid { grid-auto-flow: row; grid-template-rows: none !important; } .tt-pie { grid-template-columns: 1fr; } }
+.tt-lista { font-size: 12px; margin-top: 2px; }
+.tt-lista div { display: flex; justify-content: space-between; gap: 10px; padding: 1px 0; border-bottom: 1px solid #ffffff0d; }
+.tt-lista b { color: #fff; font-weight: 400; white-space: nowrap; }
+.tt-lista i { color: var(--oro); font-style: normal; }
+.tt-pie { display: grid; grid-template-columns: 1fr 1.25fr; column-gap: 18px; }
+.tt-nota { color: var(--suave); font-size: 11px; margin-top: 6px; }
+@media (max-width: 560px) { .tt-pie { grid-template-columns: 1fr; } }
 
 /* visor de Daevanion */
 .daev { background: #0f131b; border: 1px solid var(--borde); border-radius: 10px; padding: 14px; }

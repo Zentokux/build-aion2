@@ -39,6 +39,51 @@
  "secciones": {
   "equipo": [
    {
+    "titulo": "Atributos que priorizar (PvE)",
+    "tipo": "tabla",
+    "columnas": [
+     "#",
+     "Atributo",
+     "Dónde / por qué"
+    ],
+    "filas": [
+     [
+      "1",
+      "**Velocidad de Hechizo** + Amplificación de Daño de Arma",
+      "Arma y guarda; después Fuerza y Acierto de Multigolpe (Precisión si no llegas)"
+     ],
+     [
+      "2",
+      "La línea clave de cada pieza",
+      "Amplificación de Daño Crítico en hombreras, Amplificación de Daño en peto, Velocidad de Hechizo en guantes, Perforación y Tolerancia a Daño en grebas"
+     ],
+     [
+      "3",
+      "Ataque, Fuerza, Crítico",
+      "Relleno"
+     ],
+     [
+      "4",
+      "**Arrebato**",
+      "La pasiva de la build en casco, capa, collar y pendientes"
+     ],
+     [
+      "5",
+      "Bloqueo + Evasión + Destreza",
+      "Al principio; más adelante Bloqueo + Resistencia"
+     ],
+     [
+      "6",
+      "Estacazo impetuoso, Juicio, Castigo",
+      "Solo en anillos"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "En global cada pieza saca **4 o 5 líneas al azar** de su lista (5 en lo crafteado de rey dragón), no todas. En la ficha de cada pieza las líneas van **en orden**: si te salen las primeras, quédatela. Manastones: Ataque, Crítico, Precisión."
+   },
+   {
     "titulo": "Ruta de espada y guarda",
     "tipo": "tabla",
     "columnas": [

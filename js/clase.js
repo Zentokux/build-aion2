@@ -75,15 +75,22 @@ function pintarClase() {
 
   // ---------- equipo ----------
   function tipEquipo(e) {
-    // ficha ancha: stats en dos columnas y Soul Binding junto a Manastones, para que quepa en la pantalla
-    var filas = Math.ceil(e.stats.length / 2);
+    // fijas = sin rango; las que llevan rango son la lista de líneas que PUEDEN salir (solo se usa para poner el rango)
+    var fijas = e.stats.filter(function (s) { return String(s[1]).indexOf("–") < 0; });
+    var rango = {};
+    e.stats.forEach(function (s) { if (String(s[1]).indexOf("–") >= 0 && !(s[0] in rango)) rango[s[0]] = s[1]; });
+    var posibles = Object.keys(rango).length;
+    var col = function (titulo, filas) { return "<div><div class='tt-sec'>" + titulo + "</div><div class='tt-lista'>" + filas.join("") + "</div></div>"; };
+    var izq = fijas.length ? col("Fijas", fijas.map(function (s) { return "<div><span>" + esc(s[0]) + "</span><b>" + esc(s[1]) + "</b></div>"; })) : "";
+    var der = e.vinculos.length ? col("Soul Binding · busca estas, en orden", e.vinculos.map(function (v, i) {
+      return "<div><span><i>" + (i + 1) + ".</i> " + esc(v) + "</span><b>" + esc(rango[v] || "") + "</b></div>";
+    })) : "";
     return "<div class='tt-ancho'><div class='tt-nombre'>" + esc(e.nombre) + (e.mejora ? " +" + e.mejora : "") + "</div><div class='tt-sub'>" + esc(e.ranura) +
       " · " + esc(e.grado_es || "") + (e.nivel ? " · Nv. de objeto " + e.nivel : "") + "</div>" +
-      (e.stats.length ? "<div class='tt-grid' style='grid-template-rows:repeat(" + filas + ",auto)'>" + e.stats.map(function (s) { return "<div><span>" + esc(s[0]) + "</span><b>" + esc(s[1]) + "</b></div>"; }).join("") + "</div>" : "") +
-      "<div class='tt-pie'>" +
-      (e.vinculos.length ? "<div><div class='tt-sec'>Soul Binding</div>" + e.vinculos.map(esc).join("<br>") + "</div>" : "") +
-      (e.piedras.length ? "<div><div class='tt-sec'>Manastones</div>" + e.piedras.map(esc).join("<br>") + "</div>" : "") +
-      "</div></div>";
+      "<div class='tt-pie'>" + izq + der + "</div>" +
+      (e.vinculos.length && posibles ? "<div class='tt-nota'>Al azar salen " + (e.vinculos.length >= 5 ? "4 o 5" : e.vinculos.length) + " de " + posibles + " líneas posibles: si te salen las primeras, quédatela.</div>" : "") +
+      (e.piedras.length ? "<div class='tt-sec'>Manastones</div>" + e.piedras.map(esc).join(" · ") : "") +
+      "</div>";
   }
   function ranura(k) {
     var e = B.equipo[k];
@@ -113,7 +120,9 @@ function pintarClase() {
   var tablaSB = filasSB.length ? "<h3>Líneas de Soul Binding</h3><div class=\"tabla-scroll\"><table><thead><tr><th>Ranura</th><th>Líneas a buscar</th></tr></thead><tbody>" +
     filasSB.map(function (f) { return "<tr><td>" + esc(f[0]) + "</td><td>" + esc(f[1]) + "</td></tr>"; }).join("") + "</tbody></table></div>" : "";
   var bloqEq = S.equipo || [];
-  te += bloquesHTML(bloqEq.slice(0, 1)) + tablaSB + bloquesHTML(bloqEq.slice(1));
+  // prioridad de atributos (tabla + aviso) y ruta del arma antes de la tabla de Soul Binding
+  var antes = bloqEq.length && bloqEq[0].titulo === "Atributos que priorizar (PvE)" ? 3 : 1;
+  te += bloquesHTML(bloqEq.slice(0, antes)) + tablaSB + bloquesHTML(bloqEq.slice(antes));
   h += seccion("equipo", "Equipo", te);
 
   // ---------- Daevanion ----------
@@ -434,7 +443,7 @@ function pintarColeccionables(C, filasStats) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  cargarScript("data/builds/" + c + ".js?v=9", pintarClase, function () {
+  cargarScript("data/builds/" + c + ".js?v=10", pintarClase, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
 })();

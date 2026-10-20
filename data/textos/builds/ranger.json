@@ -39,6 +39,46 @@
  "secciones": {
   "equipo": [
    {
+    "titulo": "Atributos que priorizar (PvE)",
+    "tipo": "tabla",
+    "columnas": [
+     "#",
+     "Atributo",
+     "Dónde / por qué"
+    ],
+    "filas": [
+     [
+      "1",
+      "**Velocidad de Hechizo**, Amplificación de Daño de Arma, Amplificación de Daño, Fuerza",
+      "Arco y guarda (+ Acierto de Multigolpe si es crafteado)"
+     ],
+     [
+      "2",
+      "**Precisión total** 1.100–1.200",
+      "2.º atributo: un golpe bloqueado pierde más de la mitad del daño"
+     ],
+     [
+      "3",
+      "La línea clave de cada pieza",
+      "Golpe y Aumento de Ataque (casco, capa), Amplificación de Daño Crítico (hombreras), Amplificación de Daño (peto)"
+     ],
+     [
+      "4",
+      "Ataque, Crítico u Ojo concentrado",
+      "En los huecos libres, el que te salga primero. El Crítico topa en 50 % en global"
+     ],
+     [
+      "5",
+      "Flecha al objetivo, Huracán de flechas, Flecha punzante",
+      "En anillos; si no, Fuerza"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "En global cada pieza saca **4 o 5 líneas al azar** de su lista (5 en lo crafteado de rey dragón), no todas. En la ficha de cada pieza las líneas van **en orden**: si te salen las primeras, quédatela. Manastones: una línea amarilla de Ataque basta en Season 1."
+   },
+   {
     "titulo": "Camino de equipo (arco + escudo)",
     "tipo": "tabla",
     "columnas": [

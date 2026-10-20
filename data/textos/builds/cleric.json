@@ -39,6 +39,51 @@
  "secciones": {
   "equipo": [
    {
+    "titulo": "Atributos que priorizar (PvE)",
+    "tipo": "tabla",
+    "columnas": [
+     "#",
+     "Atributo",
+     "Dónde / por qué"
+    ],
+    "filas": [
+     [
+      "1",
+      "**Amplificación de Daño de Arma** > Fuerza > Velocidad de Hechizo > Precisión",
+      "Arma y guarda, en ese orden"
+     ],
+     [
+      "2",
+      "**Fuerza**, Velocidad de Hechizo, Amplificación de Daño",
+      "En el resto: la Fuerza sube el ataque y la curación"
+     ],
+     [
+      "3",
+      "**Crítico**",
+      "Al Clérigo siempre le falta. Para Ludra: 1.000 de Crítico y 1.000 de Precisión"
+     ],
+     [
+      "4",
+      "Gracia terrestre",
+      "La pasiva de la build en capa, collar y pendientes"
+     ],
+     [
+      "5",
+      "Condena, Resplandor de recobro, Centella",
+      "Todas las líneas de los anillos con activas (los crafteados tienen una más)"
+     ],
+     [
+      "6",
+      "Nada de resistencias, Evasión ni defensa",
+      "No sirven en PvE"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "En global cada pieza saca **4 o 5 líneas al azar** de su lista (5 en lo crafteado de rey dragón), no todas. En la ficha de cada pieza las líneas van **en orden**: si te salen las primeras, quédatela. Manastones: Ataque, Crítico, Precisión."
+   },
+   {
     "titulo": "Ruta del arma",
     "tipo": "tabla",
     "columnas": [
