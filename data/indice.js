@@ -60,6 +60,12 @@ window.INDICE = [
   "resumen": "El **objeto de alas** da atributos de combate; la **skin de alas** de la tienda solo cambia el aspecto. Haz la cadena Daeva's Wings, sube todas tus alas a +5 y deja el +10 para después del Amplify del equipo."
  },
  {
+  "slug": "progression__arma-fabricada-de-cero-a-rey-dragon",
+  "categoria": "progression",
+  "titulo": "Arma fabricada: de cero a la dorada de rey dragón",
+  "resumen": "La cadena completa para fabricar tu arma: de gris a dorada (rey dragón blanco, nivel de objeto 78) y cómo subirla luego a 86, 94 y 102 por transferencia, que no falla. Materiales de cada paso, nivel de profesión y dónde farmear lo caro."
+ },
+ {
   "slug": "progression__daevanion-y-arcana-mas-alla-del-techo-de-habilidad",
   "categoria": "progression",
   "titulo": "Daevanion y Arcana",
