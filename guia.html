@@ -10,12 +10,12 @@
 <body>
 <main id="main"><p>Cargando…</p></main>
 <script src="js/comun.js?v=14"></script>
-<script src="data/indice.js?v=7"></script>
+<script src="data/indice.js?v=8"></script>
 <script>
 (function () {
   var g = param("g");
   cabecera("guias");
-  cargarScript("data/guias/" + g + ".js?v=12", function () {
+  cargarScript("data/guias/" + g + ".js?v=13", function () {
     var G = window.GUIA, main = document.getElementById("main");
     document.title = G.titulo + " · BUILD AION2";
     var misma = (window.INDICE || []).filter(function (x) { return x.categoria === G.categoria && x.slug !== G.slug; });

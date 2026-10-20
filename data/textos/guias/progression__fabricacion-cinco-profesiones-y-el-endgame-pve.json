@@ -2,7 +2,7 @@
  "slug": "progression__fabricacion-cinco-profesiones-y-el-endgame-pve",
  "categoria": "progression",
  "titulo": "Fabricación: cinco profesiones",
- "resumen": "Hay cinco profesiones y tu arma decide la tuya. El equipo fabricado saca opciones PvE que el botín de mazmorra no tiene, así que sube la barra mientras subes de nivel, sin obsesionarte el primer mes.",
+ "resumen": "Hay cinco profesiones y tu arma decide la tuya. Suben del 1 al 50, pasas una prueba y llegan a 100: qué fabricar en cada tramo de cada profesión, lo que cuesta y dónde poner los puntos de recolección.",
  "bloques": [
   {
    "titulo": "Recolección y fabricación: dos barras distintas",
@@ -15,12 +15,12 @@
    "filas": [
     [
      "**Essence Extraction** (recolección)",
-     "Dos etapas, tope 50 cada una",
+     "Principiante 1–50, prueba y Profesional 1–50",
      "Essence Extraction Upgrade"
     ],
     [
-     "**Fabricación**",
-     "Principiante 1-49 y especialista 1-70 (medido en Corea, 2026)",
+     "**Fabricación** (cada profesión)",
+     "Principiante 1–50, prueba y Profesional 51–100 (máximo actual)",
      "p. ej. Blacksmithing Upgrade"
     ]
    ]
@@ -39,29 +39,29 @@
    ],
    "filas": [
     [
-     "**Blacksmithing**",
+     "**Blacksmithing** (herrería)",
      "Blacksmith's Hammer",
-     "Espadas largas, mandobles, dagas y bastones"
+     "Espadas, mandobles, dagas, mazas y guardas"
     ],
     [
-     "**Armorsmithing**",
+     "**Armorsmithing** (armería)",
      "Armorsmith's Fabric",
-     "—"
+     "Casco, hombreras, peto, grebas, guantes, botas y capa"
     ],
     [
-     "**Handicrafting**",
+     "**Handicrafting** (artesanía)",
      "Handicrafter's Magnifying Glass",
-     "Arcos y bastones mágicos"
+     "Arcos, bastones, anillos, pendientes, collares y brazaletes"
     ],
     [
-     "**Alchemy**",
+     "**Alchemy** (alquimia)",
      "Alchemist's Scale",
-     "Libros mágicos y orbes"
+     "Grimorios, orbes, piedras de maná y de alma"
     ],
     [
-     "**Cooking**",
+     "**Cooking** (cocina)",
      "Chef's Seasoning",
-     "Comida de buff (Artisan's Fruit Salad, Artisan's Curry Meat Stirfry)"
+     "Comida de buff"
     ]
    ]
   },
@@ -76,11 +76,11 @@
    ]
   },
   {
-   "titulo": "Qué profesión elegir según tu clase (consenso coreano)",
+   "titulo": "Qué profesión elegir según tu clase (global)",
    "tipo": "tabla",
    "columnas": [
     "Clase",
-    "Profesión",
+    "1.ª opción (tu arma)",
     "Recolección a juego"
    ],
    "filas": [
@@ -90,25 +90,278 @@
      "Mineral + Odyle"
     ],
     [
+     "Ranger, Conjurador",
+     "**Handicrafting**",
+     "Madera + Odyle"
+    ],
+    [
      "Hechicero, Espiritualista",
      "**Alchemy**",
-     "Gemas + Odyle"
+     "Hierbas + Odyle"
     ],
     [
-     "Ranger",
-     "No nombrado (Handicrafting hace arcos: deducción, no dato)",
-     "—"
-    ],
-    [
-     "Conjurador",
-     "No nombrado",
-     "—"
+     "Todas, después",
+     "Armorsmithing (armadura) o Handicrafting (accesorios)",
+     "Mineral o gemas"
     ]
    ]
   },
   {
    "tipo": "aviso",
-   "texto": "Ranger y Conjurador no aparecen en la recomendación coreana: compara tu arma con la lista de profesiones el primer día. El **Odyle** se recolecta siempre: se convierte en Odyle Energy, que limita tus recompensas de mazmorra."
+   "texto": "La fabricación **no tiene puntos que repartir**: solo sube de nivel y abre recetas. Los puntos están en la recolección (Essence Extraction), más abajo."
+  },
+  {
+   "titulo": "Niveles y prueba de ascenso",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Dato"
+   ],
+   "filas": [
+    [
+     "Tope",
+     "Al llegar a **50** deja de subir hasta que pasas la prueba; luego sigue hasta **100**"
+    ],
+    [
+     "Experiencia (herrería)",
+     "Unos **8.800** del 1 al 50 y unos **82.700** del 51 al 100: la segunda mitad es casi 10 veces más larga"
+    ],
+    [
+     "La prueba",
+     "La misión «[Upgrade] … Specialty Skill» empieza sola en el 50: fabricas el objeto de la tabla y lo entregas al maestro de la profesión en Verteron o Altgard"
+    ],
+    [
+     "Recompensa",
+     "«… Upgrade: Professional» (sube el tope) y un cuadro para el Panteón"
+    ]
+   ]
+  },
+  {
+   "titulo": "Qué fabricar para subir: Blacksmithing",
+   "tipo": "tabla",
+   "columnas": [
+    "Tramo",
+    "Qué fabricar (de uno en uno)",
+    "Coste"
+   ],
+   "filas": [
+    [
+     "1–50",
+     "**Orichalcum Ingot**: 2 Orichalcum Ore + 1 Orichalcum Solvent",
+     "400 Kinah"
+    ],
+    [
+     "Si tienes Refining Stones",
+     "Orichalcum Longsword (3); Expert's a 15 y Artisan's a 30 con la pieza Splendent de antes",
+     "Piedras y Odyle"
+    ],
+    [
+     "Prueba (50)",
+     "**Novice Blacksmith's Hammer**: 6 Orichalcum Ingot + 3 Odyle",
+     "Guárdalos antes del 50"
+    ],
+    [
+     "51–64",
+     "Fine Thick Balaur Horn: 2 Balaur's Essence + Zircon Hammer",
+     "4.650 Kinah"
+    ],
+    [
+     "65–79",
+     "Fine Hard Balaur Horn: 2 Balaur's Essence + Lazuli Hammer",
+     "5.600 Kinah"
+    ],
+    [
+     "80–100",
+     "Fine Durable Balaur Horn: 2 Balaur's Essence + Moonstone Hammer",
+     "6.550 Kinah"
+    ]
+   ]
+  },
+  {
+   "titulo": "Qué fabricar para subir: Armorsmithing",
+   "tipo": "tabla",
+   "columnas": [
+    "Tramo",
+    "Qué fabricar (de uno en uno)",
+    "Coste"
+   ],
+   "filas": [
+    [
+     "1–50",
+     "**Strong Leather**: 2 Raw Leather (botín de monstruos)",
+     "Gratis"
+    ],
+    [
+     "1–50 (alternativa)",
+     "Orichalcum Ingot: 2 Orichalcum Ore + 1 Orichalcum Solvent",
+     "400 Kinah"
+    ],
+    [
+     "Si tienes Refining Stones",
+     "Orichalcum Helm (3): 1 Ingot + 3 Strong Leather + 2 Refining Stone + 1 Odyle",
+     "—"
+    ],
+    [
+     "Prueba (50)",
+     "**Novice Armorsmith's Fabric**: 6 Orichalcum Ingot + 3 Odyle",
+     "—"
+    ],
+    [
+     "51–64 / 65–79 / 80–100",
+     "Tanned Thick / Hard / Durable Balaur Leather: 2 Balaur's Essence + Dragon Leather Softener",
+     "4.650 / 5.600 / 6.550 Kinah"
+    ]
+   ]
+  },
+  {
+   "titulo": "Qué fabricar para subir: Handicrafting",
+   "tipo": "tabla",
+   "columnas": [
+    "Tramo",
+    "Qué fabricar (de uno en uno)",
+    "Coste"
+   ],
+   "filas": [
+    [
+     "1–50",
+     "**Sapphire Decoration**: 2 Sapphire Gemstone + 1 Abrasive",
+     "400 Kinah"
+    ],
+    [
+     "Para la prueba",
+     "Yggdrasil Wood (Asmodianos: Asvata Wood): 2 troncos + 1 Sandpaper",
+     "400 Kinah"
+    ],
+    [
+     "Si tienes Refining Stones",
+     "Sapphire Ring (3); Expert's a 15 y Artisan's a 30 con la Splendent de antes",
+     "—"
+    ],
+    [
+     "Prueba (50)",
+     "**Novice Handicrafter's Magnifying Glass**: 4 Yggdrasil Wood + 2 Sapphire Decoration + 3 Odyle",
+     "—"
+    ],
+    [
+     "51–64 / 65–79 / 80–100",
+     "Enhanced Thick / Hard / Durable Balaur Scale: 2 Balaur's Essence + Dragon Scale Hardener",
+     "4.650 / 5.600 / 6.550 Kinah"
+    ]
+   ]
+  },
+  {
+   "titulo": "Qué fabricar para subir: Alchemy",
+   "tipo": "tabla",
+   "columnas": [
+    "Tramo",
+    "Qué fabricar (de uno en uno)",
+    "Coste"
+   ],
+   "filas": [
+    [
+     "1–4",
+     "**Magic Crystal**: 2 Spiritstone (botín) + 1 Catalyst",
+     "400 Kinah"
+    ],
+    [
+     "5–19",
+     "**Spiritstone Powder** (1 Spiritstone da 3) o **Yggdrasil Paper** (1 tronco da 3)",
+     "Gratis"
+    ],
+    [
+     "20–50",
+     "Sapphire, Diamond o Ruby Powder (1 gema da 3), del material que tengas",
+     "Gratis"
+    ],
+    [
+     "Si tienes las menores",
+     "Intermediate Manastone (20) / Soulstone (25): 5 menores + 3 Spiritstone Powder + 2 Professional Ink",
+     "2.400 Kinah"
+    ],
+    [
+     "Prueba (50)",
+     "**Novice Alchemist's Scale**: 6 Magic Crystal + 2 Spiritstone Powder + 3 Odyle",
+     "—"
+    ],
+    [
+     "51–64 / 65–79 / 80–100",
+     "Enhanced Thick / Hard / Durable Balaur Scale: 2 Balaur's Essence + Dragon Scale Hardener",
+     "4.650 / 5.600 / 6.550 Kinah"
+    ]
+   ]
+  },
+  {
+   "titulo": "Qué fabricar para subir: Cooking",
+   "tipo": "tabla",
+   "columnas": [
+    "Tramo",
+    "Qué fabricar (de uno en uno)",
+    "Coste"
+   ],
+   "filas": [
+    [
+     "1–29",
+     "El plato del que tengas ingredientes: Curry Meat Stirfry o Fruit Salad (1), Kukuru Fried Meat (10)",
+     "880 Kinah"
+    ],
+    [
+     "30–50",
+     "Las versiones Artisan's (Fruit Salad, Curry Meat Stirfry…)",
+     "1.760–4.400 Kinah"
+    ],
+    [
+     "Prueba (50)",
+     "**Novice Chef's Seasoning**: 10 Fresh Raw Meat + 6 Fresh Fruit + 4 Inina (Asmodianos: Conide)",
+     "—"
+    ],
+    [
+     "51–100",
+     "Sigue con los Artisan's mientras den experiencia; los White Dragon's (60, 75, 90) piden Soft Balaur Meat, que es raro",
+     "880–4.400 Kinah"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Del 21 en adelante cada nivel pide muchos más materiales: es el tramo largo. Guarda los materiales de la prueba antes del 50 y gasta las Refining Stones y las piezas Splendent en equipo cuando las tengas."
+  },
+  {
+   "titulo": "Recolección: dónde poner los puntos",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "1.ª opción",
+    "Opcional"
+   ],
+   "filas": [
+    [
+     "Comunes (95 en total)",
+     "**Proficient Handling** (barra de éxito más rápida) y **Delicate Touch** (menos fallos) al máximo: 5 de principiante, 10 de profesional",
+     "Lady Luck solo con lo que sobre"
+    ],
+    [
+     "Especialidad (14 en total)",
+     "**Odyle** completo (7 puntos)",
+     "El recurso de lo que fabricas (7): mineral, gemas, madera o hierbas"
+    ],
+    [
+     "Coste",
+     "Subir una común a 10 cuesta 40 puntos; una rama completa, 7",
+     "Reiniciar: 50.000 Kinah"
+    ]
+   ]
+  },
+  {
+   "titulo": "Recolección: subir rápido",
+   "tipo": "pasos",
+   "items": [
+    "Recolecta todo lo que pilles en tu ruta de misiones: aunque falles, da experiencia.",
+    "Para llegar al 50: vetas de **Sapphire Gemstone** (40–60 vetas bastan).",
+    "En el 50: recolecta 1 **Splendent Ruby** y entrégalo a Korius (Verteron) o Alzirr (Altgard) para pasar a Profesional.",
+    "Si el Odyle está más barato en el mercado que el recurso que necesitas, cómpralo y conviértelo con **Substance Morph** (sale del mismo grado).",
+    "Las mazmorras de Conquista dejan nodos de Odyle gratis tras el último jefe.",
+    "Responde la comprobación antibots cuando salga en sesiones largas."
+   ]
   },
   {
    "titulo": "Tasa de éxito (Corea, cerca de 1.000 intentos, principios de 2026)",

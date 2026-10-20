@@ -75,7 +75,7 @@ window.INDICE = [
   "slug": "progression__fabricacion-cinco-profesiones-y-el-endgame-pve",
   "categoria": "progression",
   "titulo": "Fabricación: cinco profesiones",
-  "resumen": "Hay cinco profesiones y tu arma decide la tuya. El equipo fabricado saca opciones PvE que el botín de mazmorra no tiene, así que sube la barra mientras subes de nivel, sin obsesionarte el primer mes."
+  "resumen": "Hay cinco profesiones y tu arma decide la tuya. Suben del 1 al 50, pasas una prueba y llegan a 100: qué fabricar en cada tramo de cada profesión, lo que cuesta y dónde poner los puntos de recolección."
  },
  {
   "slug": "progression__farmeo-de-equipo-700-1400-2100",
