@@ -567,8 +567,9 @@
     "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
     "tipo": "lista",
     "items": [
-     "Retardo 15 ms (10 o 20 también valen; 40-50 ms con ping alto).",
-     "Versión cómoda para mundo abierto: Estallido de flechas abajo de la pila del 1 y esa pila dentro de la macro (los buffs salen solos). A mano hace más daño."
+     "Retardo 10 ms (15 o 20 también valen; 40-50 ms con ping alto).",
+     "Versión cómoda: Estallido de flechas abajo de la pila del 2 (buffs) y macro Q → E → 2 → E. La macro lo hace todo, pero da menos daño que los buffs a mano.",
+     "Antes de Flecha de grifo a 15: Flecha explosiva a 5 en su lugar, si la tienes en los estigmas."
     ]
    },
    {
@@ -576,8 +577,8 @@
     "titulo": "Otros presets",
     "tipo": "lista",
     "items": [
-     "Preset «Grupos y comprobaciones de stagger»: quita Disparos de apoyo (tecla 1) y pon **Tormenta de flechas (o Flecha explosiva)** en la 8, a mano.",
-     "Preset «Solo y progresión difícil»: quita Flecha de grifo (tecla Q) y pon **Respiro de Madre Naturaleza** en la 8, a mano.",
+     "Preset «Grupos y comprobaciones de stagger»: quita Disparos de apoyo (tecla 2) y pon **Tormenta de flechas (o Flecha explosiva)** en la 6, a mano.",
+     "Preset «Solo y progresión difícil»: quita Flecha de grifo (tecla Q) y pon **Respiro de Madre Naturaleza** en la 6, a mano.",
      "La macro es la misma: pulsa las mismas teclas."
     ]
    },
@@ -594,21 +595,21 @@
     "titulo": "Apertura / ventana de burst",
     "tipo": "pasos",
     "items": [
-     "Flecha de bendición.",
-     "Disparos de apoyo y Poder de Vaizel.",
-     "Flecha en el objetivo (Precisión).",
-     "Flecha al objetivo cargada al completo."
+     "Flecha en el objetivo (3).",
+     "La pila de buffs (2), una pulsación por buff: Poder de Vaizel, Flecha de bendición y Disparos de apoyo.",
+     "Flecha al objetivo (4) cargada al completo.",
+     "Mantén Clic izq. (Disparo certero) y la macro (Clic der.) todo el combate: Disparo certero te devuelve el Maná que gasta Tiro rápido."
     ]
    },
    {
     "titulo": "Entre ventanas",
     "tipo": "pasos",
     "items": [
-     "Acierta Flecha de tentáculo (u otra ralentización/inmovilización) antes de usar la macro: su ralentización dura 5 s y tiene 15 s de reutilización.",
+     "La macro pulsa la Q (Huracán de flechas en cuanto está, luego Flecha de grifo, Flecha de tentáculo para ralentizar y Estallido de flechas) y dos veces la E (Flecha punzante; Tiro rápido rellena cada hueco). El segundo paso de la E hace que Tiro rápido salga más: 465 lanzamientos frente a 413.",
      "Mantén Disparo certero (Clic izq.) y la macro (Clic der.). Dale a Flecha al objetivo una 2.ª tecla en un botón lateral del ratón (Configuración de teclas → Ranura rápida) para cargarla sin soltar nada.",
-     "Lanza Flecha al objetivo cada vez que vuelva.",
-     "Renueva Flecha en el objetivo cuando a Precisión le queden menos de 3 s.",
-     "Relanza cada buff al terminar su reutilización: Poder de Vaizel cada minuto, Flecha de bendición cada dos; Disparos de apoyo a nivel 15 coincide con cada Vaizel."
+     "Lanza Flecha al objetivo (4) cada vez que vuelva, siempre cargada del todo: soltarla antes pierde daño. Con Poder de Vaizel a 20, cada crítico le quita 1 s de reutilización.",
+     "Renueva Flecha en el objetivo (3) cuando a Precisión le quede cerca de 1 s: dura más que su reutilización y relanzarla antes pierde daño.",
+     "Relanza los buffs (2) cuando vuelvan, salvo que el jefe esté a punto de irse o morir: entonces guárdalos para la siguiente ventana."
     ]
    },
    {
@@ -623,7 +624,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Nunca en la macro: habilidades cargadas, trampas, Eliminación de impacto y Flecha sin puntería. Necesitan que tú decidas cuándo."
+    "texto": "Nunca en la macro: habilidades cargadas, trampas, Eliminación de impacto, Flecha sin puntería ni los buffs. Flecha sin puntería no compensa en un jefe en stagger: sigue con la rotación normal."
    },
    {
     "tipo": "aviso",
