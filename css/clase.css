@@ -162,6 +162,15 @@ details.rot .dentro { padding: 0 12px 12px; font-size: 13px; }
 .otorgado .fila { display: flex; justify-content: space-between; gap: 8px; padding: 2px 0; }
 .otorgado .fila span:first-child { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .otorgado .fila b { color: #fff; white-space: nowrap; }
+.arc-guia { grid-column: 1 / -1; min-width: 0; }
+.arc-guia h3 { font-size: 14px; color: var(--oro); margin: 6px 0 2px; }
+.arc-tabla { font-size: 13px; }
+.arc-tabla td { vertical-align: middle; }
+.arc-lineas { display: flex; flex-wrap: wrap; gap: 4px 6px; }
+.arc-lineas > span { border: 1px solid #2c3442; border-radius: 4px; padding: 2px 6px 2px 2px; background: #1a1f29; }
+.arc-lineas > span.clave { border-color: #b2841c; }
+.arc-nota { display: block; color: var(--suave); margin-top: 4px; }
+@media (max-width: 600px) { .arc-tabla th:nth-child(2), .arc-tabla td:nth-child(2) { display: none; } }
 
 /* mascotas */
 .genus { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; align-content: start; }

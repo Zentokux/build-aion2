@@ -267,7 +267,10 @@ function pintarClase() {
   });
 
   pintarDaevanion(B, H);
-  pintarColeccionables(C, filasStats);
+  // habilidad por nombre (las líneas de Arcana vienen por nombre)
+  var PN = {};
+  Object.keys(H).forEach(function (id) { PN[H[id].nombre] = id; });
+  pintarColeccionables(C, filasStats, function (n) { return PN[n] ? hab(PN[n]) : '<span class="hab">' + esc(n) + "</span>"; });
 }
 
 // ===== barra estilo juego (la que pidió el usuario) =====
@@ -398,7 +401,20 @@ function pintarDaevanion(B, H) {
 }
 
 // ===== coleccionables con pestañas =====
-function pintarColeccionables(C, filasStats) {
+// cómo priorizar las Arcanas (igual para todas las clases)
+var ARC_PRIO = [
+  ["1", "Las líneas de habilidad", "El atributo (Vida, Muerte…) viene fijo con la carta; lo que eliges son las líneas"],
+  ["2", "Solo los niveles 12, 16 y 20", "Abren especializaciones; un +1 que no te lleva a uno de ellos casi no suma"],
+  ["3", "Primero las clave a 16", "Las 2 primeras de cada carta (borde dorado)"],
+  ["4", "Luego las 2 que más daño hacen, a 20", "Mira la tabla de Habilidades de tu clase"],
+  ["5", "El resto, a 12 o 16", "Brújula, Espejo y Campana"],
+  ["6", "Pergamino: 2 de 4 ya vale", "Es la carta difícil; al subirla los +1 caen al azar en sus líneas"],
+  ["7", "Cáliz, la última", "Comodín: tapa lo que no llegue a su nivel"],
+  ["8", "No persigas el set de 4", "Vale más el atributo suelto (Crítico, Golpe)"],
+  ["Parar", "Cuando las clave estén a 20 y el resto en su meta", "No gastes más en esa carta"]
+];
+
+function pintarColeccionables(C, filasStats, habN) {
   var panel = document.getElementById("panel-col"), tabs = document.getElementById("tabs-col");
   if (!panel) return;
   function item(img, nombre, sub, equipado, tip) {
@@ -432,6 +448,16 @@ function pintarColeccionables(C, filasStats) {
         return item("icons/objetos/" + a.icono + ".webp", a.nombre, a.ranura + " · Nv. " + (a.nivel || ""), true, tipStats(a.nombre, a.stats,
           a.vinculos.length ? "<div class='tt-sec'>Líneas</div>" + a.vinculos.map(esc).join("<br>") : ""));
       }).join("") + "</div>" + otorgado(Object.keys(tot).map(function (k) { return [k, tot[k]]; }), []);
+      if (C.arcanas.some(function (a) { return a.buscar; })) {
+        h += '<div class="arc-guia"><h3>Qué buscar en cada carta</h3><table class="tabla arc-tabla"><thead><tr><th>Carta</th><th>Atributo (fijo)</th><th>Líneas a pescar, en orden</th></tr></thead><tbody>' +
+          C.arcanas.map(function (a) {
+            var b = a.buscar || { dios: "", lineas: [], nota: "" };
+            return '<tr><td><span class="hab"><img src="icons/objetos/' + a.icono + '.webp" alt="" loading="lazy">' + esc(a.ranura) + "</span></td><td>" + esc(b.dios) +
+              '</td><td><div class="arc-lineas">' + b.lineas.map(function (n, i) { return '<span class="' + (i < 2 ? "clave" : "") + '">' + habN(n) + "</span>"; }).join("") + "</div>" +
+              (b.nota ? '<small class="arc-nota">' + esc(b.nota) + "</small>" : "") + "</td></tr>";
+          }).join("") + '</tbody></table><h3>Cómo priorizar y hasta dónde</h3><table class="tabla arc-tabla"><thead><tr><th>#</th><th>Qué</th><th>Por qué</th></tr></thead><tbody>' +
+          ARC_PRIO.map(function (r) { return "<tr><td>" + esc(r[0]) + "</td><td><b>" + esc(r[1]) + "</b></td><td>" + esc(r[2]) + "</td></tr>"; }).join("") + "</tbody></table></div>";
+      }
     } else if (tab === "alas") {
       h = '<div class="items-col">' + C.alas.map(function (a) {
         return item("icons/objetos/" + a.icono + ".png", a.nombre, "+" + (a.nivel || 0), a.equipado, tipStats(a.nombre, a.stats));
@@ -451,7 +477,7 @@ function pintarColeccionables(C, filasStats) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  cargarScript("data/builds/" + c + ".js?v=12", pintarClase, function () {
+  cargarScript("data/builds/" + c + ".js?v=13", pintarClase, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
 })();
