@@ -444,15 +444,15 @@ function pintarColeccionables(C, filasStats, habN) {
     } else if (tab === "arcanas") {
       var tot = {};
       C.arcanas.forEach(function (a) { a.stats.forEach(function (s) { tot[s[0]] = s[1]; }); });
-      h = '<div class="items-col">' + C.arcanas.map(function (a) {
+      h = '<div class="items-col arc-cartas">' + C.arcanas.map(function (a) {
         return item("icons/objetos/" + a.icono + ".webp", a.nombre, a.ranura + " · Nv. " + (a.nivel || ""), true, tipStats(a.nombre, a.stats,
           a.vinculos.length ? "<div class='tt-sec'>Líneas</div>" + a.vinculos.map(esc).join("<br>") : ""));
       }).join("") + "</div>" + otorgado(Object.keys(tot).map(function (k) { return [k, tot[k]]; }), []);
       if (C.arcanas.some(function (a) { return a.buscar; })) {
-        h += '<div class="arc-guia"><h3>Qué buscar en cada carta</h3><table class="tabla arc-tabla"><thead><tr><th>Carta</th><th>Atributo (fijo)</th><th>Líneas a pescar, en orden</th></tr></thead><tbody>' +
+        h += '<div class="arc-guia"><h3>Qué buscar en cada carta</h3><table class="tabla arc-tabla arc-lin"><thead><tr><th>Carta</th><th>Atributo (fijo)</th><th>Líneas a pescar, en orden</th></tr></thead><tbody>' +
           C.arcanas.map(function (a) {
             var b = a.buscar || { dios: "", lineas: [], nota: "" };
-            return '<tr><td><span class="hab"><img src="icons/objetos/' + a.icono + '.webp" alt="" loading="lazy">' + esc(a.ranura) + "</span></td><td>" + esc(b.dios) +
+            return '<tr><td><span class="hab arc-carta"><img src="icons/objetos/' + a.icono + '.webp" alt="" loading="lazy">' + esc(a.ranura) + "</span></td><td>" + esc(b.dios) +
               '</td><td><div class="arc-lineas">' + b.lineas.map(function (n, i) { return '<span class="' + (i < 2 ? "clave" : "") + '">' + habN(n) + "</span>"; }).join("") + "</div>" +
               (b.nota ? '<small class="arc-nota">' + esc(b.nota) + "</small>" : "") + "</td></tr>";
           }).join("") + '</tbody></table><h3>Cómo priorizar y hasta dónde</h3><table class="tabla arc-tabla"><thead><tr><th>#</th><th>Qué</th><th>Por qué</th></tr></thead><tbody>' +
