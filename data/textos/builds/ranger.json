@@ -14,7 +14,7 @@
   "Una apertura mala se paga cara: el daño vive en ventanas de buff cortas.",
   "La Precisión de Flecha en el objetivo se renueva a mano; sin ella Flecha al objetivo pierde un 35%.",
   "Al principio Precisión y Crítico compiten por las mismas líneas de Soul Binding.",
-  "Las cuatro ranuras de stigma van a daño: llevar supervivencia te cuesta un stigma de daño.",
+  "Las cuatro ranuras de estigma van a daño: llevar supervivencia te cuesta un estigma de daño.",
   "En las tier lists coreanas está a mitad de tabla, no arriba."
  ],
  "presets": [
@@ -161,7 +161,7 @@
      [
       "Armadura",
       "Ataque normal (basta para la 1.ª temporada)",
-      "—"
+      "No"
      ]
     ]
    },
@@ -196,7 +196,7 @@
      [
       "Cinturón y runas",
       "Noble Belt + 2 Clash Rune",
-      "—"
+      "No"
      ]
     ]
    },
@@ -268,7 +268,7 @@
      [
       "Eliminación de impacto",
       "Ruptura de aturdimiento, cura un 20% de Puntos de Vida",
-      "—"
+      "No"
      ],
      [
       "Flecha sin puntería",
@@ -343,12 +343,12 @@
      ],
      [
       "Pacto de resurrección",
-      "—",
+      "No",
       "Segunda vida: al 10% de vida te cura un 35% (54% a nivel 20), una vez por minuto"
      ],
      [
       "Ojo vigilante",
-      "—",
+      "No",
       "Te cura con cada esquiva"
      ]
     ]
@@ -444,7 +444,7 @@
     "tipo": "tabla",
     "columnas": [
      "Preset",
-     "Stigmas",
+     "Estigmas",
      "Por qué"
     ],
     "filas": [
@@ -466,10 +466,10 @@
     ]
    },
    {
-    "titulo": "Qué hace cada stigma",
+    "titulo": "Qué hace cada estigma",
     "tipo": "tabla",
     "columnas": [
-     "Stigma",
+     "Estigma",
      "Efecto",
      "Niveles clave"
     ],
@@ -513,7 +513,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "El preset de solo es recomendación de esta guía, no de un jugador top. Si sigues muriendo, el siguiente arreglo barato es la espec. 1 de Flecha punzante (absorción de vida) en vez de la 3. PvP: mismos stigmas, Respiro de Madre Naturaleza si necesitas sobrevivir, y mira Ambush Kick y Sealing Arrow."
+    "texto": "El preset de solo es recomendación de esta guía, no de un jugador top. Si sigues muriendo, el siguiente arreglo barato es la espec. 1 de Flecha punzante (absorción de vida) en vez de la 3. PvP: mismos estigmas, Respiro de Madre Naturaleza si necesitas sobrevivir, y mira Ambush Kick y Sealing Arrow."
    }
   ],
   "daevanion": [
@@ -672,12 +672,12 @@
      [
       "Defensivo",
       "Dominador del espacio (Tolerancia a Daño JcE)",
-      "—"
+      "No"
      ],
      [
       "Otro",
       "Ay, no tengo nada que ponerme (Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento)",
-      "—"
+      "No"
      ]
     ]
    },

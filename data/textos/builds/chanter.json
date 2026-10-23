@@ -14,7 +14,7 @@
   "Poco daño propio comparado con las clases de daño, por diseño",
   "Fractura sombría solo sale en una ventana de 2-3 s: un abridor fallado cuesta daño",
   "Hasta que Fractura sombría llega a 16, su enfriamiento rompe la rotación",
-  "Solo 4 ranuras de stigma y cada buff de grupo quiere una",
+  "Solo 4 ranuras de estigma y cada buff de grupo quiere una",
   "Los mantras se desactivan si los vuelves a pulsar (fácil en una macro)",
   "Tus buffs se solapan con algunos del Clérigo: dos soportes deben organizarse"
  ],
@@ -438,11 +438,11 @@
   ],
   "estigmas": [
    {
-    "titulo": "Qué stigmas lleva cada preset",
+    "titulo": "Qué estigmas lleva cada preset",
     "tipo": "tabla",
     "columnas": [
      "Preset",
-     "Stigmas",
+     "Estigmas",
      "Por qué"
     ],
     "filas": [
@@ -467,7 +467,7 @@
     "titulo": "Para qué sirve cada uno",
     "tipo": "tabla",
     "columnas": [
-     "Stigma",
+     "Estigma",
      "Qué hace",
      "Nivel objetivo"
     ],
@@ -510,7 +510,7 @@
      [
       "Guardian Blessing",
       "Dura 120 s con 120 s de enfriamiento; a 15 Promesa de viento x1,5",
-      "Cuarto stigma a largo plazo"
+      "Cuarto estigma a largo plazo"
      ]
     ]
    },

@@ -1,4 +1,4 @@
-// Página de clase: dos builds por clase, M1 (window.BUILD, data/builds) y C2 (window.BUILD2, data/couga); pinta la elegida
+// Página de clase: dos builds por clase, Build 1 (window.BUILD, data/builds) y Build 2 (window.BUILD2, data/couga); pinta la elegida
 var TECLA_TXT = { LMB: "Clic izq.", RMB: "Clic der.", Espacio: "Espacio", Otra: "Otra" };
 var PRESET_DAEV = { "Launch priority": "Prioridad de lanzamiento", "Full PvE": "JcE completo", "Guide route": "Ruta de la guía" };
 var IZQ = [["MainHand", "SubHand"], ["Helmet", "Shoulder"], ["Torso", "Pants"], ["Gloves", "Boots"], ["Cape"]];
@@ -6,7 +6,7 @@ var DER = [["Necklace", "Amulet"], ["Earring1", "Earring2"], ["Ring1", "Ring2"],
   ["Belt", "Rune1"], ["Rune2", "Brooch1"], ["Brooch2", "Pendant"]];
 var VACIAS = { Brooch1: "Broche 1", Brooch2: "Broche 2", Pendant: "Colgante", Rune1: "Runa 1", Rune2: "Runa 2", Amulet: "Amuleto", Belt: "Cinturón" };
 
-// cada clase tiene dos builds completas: M1 (data/builds) y C2 (data/couga)
+// cada clase tiene dos builds completas: Build 1 (data/builds) y Build 2 (data/couga)
 function pintarClase(B, guia) {
   var T = B.textos || {}, S = T.secciones || {};
   var H = {};
@@ -494,12 +494,12 @@ function pintarColeccionables(C, filasStats, habN) {
   if (primero) pinta(primero.dataset.tab);
 }
 
-// M1 (metaroad) o C2 (couga): se recuerda la elegida en este navegador y va en la dirección (&g=m1 / &g=c2)
-var GUIAS = { 1: "M1", 2: "C2" };
+// Build 1 o Build 2: se recuerda la elegida en este navegador y va en la dirección (&g=1 / &g=2)
+var GUIAS = { 1: "Build 1", 2: "Build 2" };
 function elegirGuia(g) {
   try { localStorage.setItem("guia-elegida", String(g)); } catch (e) {}
   var u = new URL(location.href);
-  u.searchParams.set("g", GUIAS[g].toLowerCase());
+  u.searchParams.set("g", String(g));
   history.replaceState(null, "", u);
   var y = window.scrollY;
   pintarClase(g === 2 ? window.BUILD2 : window.BUILD, g);
@@ -517,8 +517,8 @@ function elegirGuia(g) {
   });
   function arranca() {
     var g = 1, pg = (param("g") || "").toLowerCase();
-    if (pg === "c2") g = 2;
-    else if (pg !== "m1") try { g = +localStorage.getItem("guia-elegida") || 1; } catch (e) {}
+    if (pg === "2" || pg === "c2") g = 2;          // c2/m1: enlaces de antes
+    else if (pg !== "1" && pg !== "m1") try { g = +localStorage.getItem("guia-elegida") || 1; } catch (e) {}
     if (g === 2 && !window.BUILD2) g = 1;
     pintarClase(g === 2 ? window.BUILD2 : window.BUILD, g);
   }

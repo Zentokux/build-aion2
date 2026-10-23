@@ -13,7 +13,7 @@
  "contras": [
   "Condena necesita Enlace de dolor en el objetivo y críticos para reiniciarse",
   "El Maná va justo en combates largos hasta que aprendes a recuperarlo",
-  "Solo 4 ranuras de stigma: curación y daño compiten",
+  "Solo 4 ranuras de estigma: curación y daño compiten",
   "Luz de protección no se acumula con el mantra de un Conjurador",
   "Cuando el grupo sufre, tu daño es lo primero que se sacrifica"
  ],
@@ -433,18 +433,18 @@
   ],
   "estigmas": [
    {
-    "titulo": "Qué stigmas lleva cada preset",
+    "titulo": "Qué estigmas lleva cada preset",
     "tipo": "tabla",
     "columnas": [
      "Preset",
-     "Stigmas",
+     "Estigmas",
      "Por qué"
     ],
     "filas": [
      [
       "Grupo normal, sin Conjurador",
       "Luz de protección, Castigo terrestre, Aura noble, Oración de amplificación",
-      "Buff de grupo más tus tres stigmas de daño"
+      "Buff de grupo más tus tres estigmas de daño"
      ],
      [
       "Mazmorra nueva o grupo que muere",
@@ -466,7 +466,7 @@
     "titulo": "Para qué sirve cada uno",
     "tipo": "tabla",
     "columnas": [
-     "Stigma",
+     "Estigma",
      "Qué hace",
      "Nivel objetivo"
     ],

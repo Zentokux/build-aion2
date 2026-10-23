@@ -14,7 +14,7 @@
   "Un orden descuidado castiga: un espíritu invocado antes de los buffs queda más débil.",
   "Hay que mantener 5 acumulaciones de Earth Tremor todo el combate.",
   "Pide 65%+ de Velocidad de Hechizo y poco ping (menos de cerca de 60 ms) para encadenar bien.",
-  "Invocación: Espíritu ancestral y Golpe conjunto: Corrosión solo brillan con niveles altos de stigma.",
+  "Invocación: Espíritu ancestral y Golpe conjunto: Corrosión solo brillan con niveles altos de estigma.",
   "Maná justo mientras subes de nivel, hasta que el equipo se pone al día.",
   "Ráfaga continua solo funciona sobre un objetivo en stagger."
  ],
@@ -45,7 +45,7 @@
     "Golpe conjunto: Corrosión"
    ],
    "retardo_ms": 10,
-   "nota": "Mantén Mouse1 (Impacto helado) y el botón derecho a la vez; el resto, a mano."
+   "nota": "Mantén Clic izq. (Impacto helado) y el botón derecho a la vez; el resto, a mano."
   },
   {
    "preset_en": "Solo and leveling",
@@ -207,12 +207,12 @@
      [
       "Combustión",
       "Más daño contra menos objetivos, +20% velocidad y Ashy Call en cadena",
-      "—"
+      "No"
      ],
      [
       "Invocación: Espíritu de fuego",
       "Espíritu base con más daño (+20% daño crítico, +20% stats)",
-      "—"
+      "No"
      ],
      [
       "Impacto helado",
@@ -227,7 +227,7 @@
      [
       "Golpe conjunto: Maldición",
       "+2 s de Maldición, lanzable en movimiento",
-      "—"
+      "No"
      ],
      [
       "Dominio espacial",
@@ -242,7 +242,7 @@
      [
       "Invocación: Espíritu de tierra",
       "+20% Tolerancia a Daño JcE para el espíritu",
-      "—"
+      "No"
      ],
      [
       "Eliminación de impacto",
@@ -332,7 +332,7 @@
     "tipo": "tabla",
     "columnas": [
      "Preset",
-     "Stigmas",
+     "Estigmas",
      "Por qué"
     ],
     "filas": [
@@ -354,17 +354,17 @@
     ]
    },
    {
-    "titulo": "Qué hace cada stigma",
+    "titulo": "Qué hace cada estigma",
     "tipo": "tabla",
     "columnas": [
-     "Stigma",
+     "Estigma",
      "Efecto",
      "Niveles clave"
     ],
     "filas": [
      [
       "Invocación: Espíritu ancestral",
-      "Stigma de daño más fuerte; cada habilidad suya te da Four Elements. 30 s fuera, 90 s de reutilización",
+      "Estigma de daño más fuerte; cada habilidad suya te da Four Elements. 30 s fuera, 90 s de reutilización",
       "15 (el que más importa): habilidad tras 5 básicos en vez de 7; 10: potencia Descenso de Espíritu; 20: +20% stats"
      ],
      [
@@ -541,12 +541,12 @@
      [
       "Defensivo",
       "Gobernar todas las cosas (Tolerancia a Daño de Jefe y por la Espalda; al coleccionar 200 tipos de mascotas)",
-      "—"
+      "No"
      ],
      [
       "Otro",
       "Ay, no tengo nada que ponerme (Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento)",
-      "—"
+      "No"
      ]
     ]
    },

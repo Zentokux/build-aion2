@@ -15,7 +15,7 @@
   "Si pierdes la espalda del jefe, tu daño se hunde",
   "Depende de la tasa de crítico: el equipo temprano se siente flojo",
   "Los combates largos de global dejan tiempo muerto entre Clones",
-  "Solo 4 ranuras de stigma en el lanzamiento y el cuarteto de burst las ocupa todas"
+  "Solo 4 ranuras de estigma en el lanzamiento y el cuarteto de burst las ocupa todas"
  ],
  "presets": [
   {
@@ -352,11 +352,11 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Los niveles de las pasivas y de los stigmas son recomendación de esta guía: ninguna guía publicada los da."
+    "texto": "Los niveles de las pasivas y de los estigmas son recomendación de esta guía: ninguna guía publicada los da."
    },
    {
     "tipo": "aviso",
-    "texto": "PvP: configuración aparte de evasión con Corte torbellino a 20 y stigmas como Evasion Contract, Smoke Bomb y Spiral Slice (quita buffs). La guía no cubre más PvP."
+    "texto": "PvP: configuración aparte de evasión con Corte torbellino a 20 y estigmas como Evasion Contract, Smoke Bomb y Spiral Slice (quita buffs). La guía no cubre más PvP."
    },
    {
     "tipo": "aviso",
@@ -426,11 +426,11 @@
   ],
   "estigmas": [
    {
-    "titulo": "Qué stigmas lleva cada preset",
+    "titulo": "Qué estigmas lleva cada preset",
     "tipo": "tabla",
     "columnas": [
      "Preset",
-     "Stigmas",
+     "Estigmas",
      "Por qué"
     ],
     "filas": [
@@ -455,7 +455,7 @@
     "titulo": "Para qué sirve cada uno",
     "tipo": "tabla",
     "columnas": [
-     "Stigma",
+     "Estigma",
      "Qué hace",
      "Nivel objetivo"
     ],
