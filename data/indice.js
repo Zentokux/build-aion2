@@ -84,12 +84,6 @@ window.INDICE = [
   "resumen": "Hay cinco profesiones y tu arma decide la tuya. Suben del 1 al 50, pasas una prueba y llegan a 100: qué fabricar en cada tramo de cada profesión, lo que cuesta y dónde poner los puntos de recolección."
  },
  {
-  "slug": "progression__farmeo-de-equipo-700-1400-2100",
-  "categoria": "progression",
-  "titulo": "Farmeo de equipo: de 700 a 2.800",
-  "resumen": "Plan del servidor **global** (nivel 45): qué objetivos hacer, a qué jefes matar, qué pieza buscar y **en qué gastar la energía Od**. De 700 a 1.400 casi todo es gratis (misiones, mapa y mejorar lo que tienes). De 1.400 a 2.100: Isla Aérea de Vakron, Arcana y Cañón de Urugugu. De 2.100 a 2.800: Caverna del Cuerno Feroz, Templo de Fuego y Arcana dorada."
- },
- {
   "slug": "progression__grados-de-equipo-de-comun-a-epico-y-de-donde-sale-cada-uno",
   "categoria": "progression",
   "titulo": "Grados de equipo y de dónde sale cada uno",
@@ -106,6 +100,12 @@ window.INDICE = [
   "categoria": "progression",
   "titulo": "Pantheon, Wardrobe y títulos",
   "resumen": "Los tres parecen decoración pero dan stats permanentes. Llena los tres huecos de títulos, no vendas equipo de misión (se extrae al 100%) y mejora el Pantheon cuando caiga una decoración de mejor grado."
+ },
+ {
+  "slug": "progression__farmeo-de-equipo-700-1400-2100",
+  "categoria": "progression",
+  "titulo": "Progresión de equipo: de 700 a 2.100 y más",
+  "resumen": "Qué hacer en cada tramo de **nivel de objeto (GS)** en el servidor **global** (nivel 45), sin malgastar Kinah ni Od: **hasta 1.000** gratis, **1.000 a 1.400** Abismo, **1.400 a 1.600** equipo de nivel 70, **1.600 a 1.900** Arcanas, **1.900 a 2.100** Arcanas azules y **2.100 en adelante** equipo de nivel 86. Al final, cómo subir el **poder de combate (CP)**."
  },
  {
   "slug": "progression__que-mejorar-primero-y-donde-parar",

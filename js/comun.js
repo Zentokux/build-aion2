@@ -79,6 +79,39 @@ function bloquesHTML(bloques) {
       }).join("");
     } else if (b.tipo === "expedicion") {
       h += (b.mazmorras || []).map(expHTML).join("");
+    } else if (b.tipo === "accesos") {
+      // barra fija para saltar a cada tramo + «tu nivel de objeto»
+      h += '<nav class="accesos" id="accesos"><div class="ac-gs"><label for="ac-gs">Tu nivel de objeto</label>' +
+        '<input id="ac-gs" type="number" inputmode="numeric" min="0" max="4000" placeholder="1350"><button type="button" id="ac-ir">Ir a mi tramo</button></div>' +
+        '<div class="ac-tramos">' + (b.items || []).map(function (t) {
+          return '<a href="#' + esc(t.id) + '" data-min="' + esc(t.min) + '"><b>' + esc(t.rango) + "</b><small>" + esc(t.sub) + "</small></a>";
+        }).join("") + "</div></nav>";
+    } else if (b.tipo === "tramo") {
+      // portada del tramo con fondo del juego y barra de avance (escala 0 a 2.500)
+      var ini = Math.min(100, (b.desde || 0) / 25), fin = Math.min(100, (b.hasta || 2500) / 25);
+      h = '<section class="tramo" id="' + esc(b.id) + '" style="background-image:url(img/' + esc(b.fondo) + '.webp)">' +
+        '<div class="tr-in"><div class="tr-num">Tramo ' + esc(b.num) + '</div><div class="tr-rango">' + esc(b.rango) + "</div>" +
+        "<h2>" + md(b.titulo) + "</h2>" + (b.texto ? "<p>" + md(b.texto) + "</p>" : "") +
+        (b.abre ? '<div class="tr-abre"><span>Al llegar a la meta se abre</span>' + md(b.abre) + "</div>" : "") +
+        (b.objetos ? '<div class="es-obj">' + b.objetos.map(function (o) { return objHTML(o); }).join("") + "</div>" : "") +
+        '<div class="tr-barra"><i style="left:' + ini + "%;width:" + (fin - ini) + '%"></i>' +
+        [["1.000", 1000], ["1.400", 1400], ["1.600", 1600], ["1.900", 1900], ["2.100", 2100]].map(function (x) {
+          return '<em style="left:' + x[1] / 25 + '%">' + x[0] + "</em>";
+        }).join("") + "</div></div></section>";
+    } else if (b.tipo === "pasosimg") {
+      // pasos con icono grande: {t, texto, da, objetos, clave}
+      h += '<ol class="pasosimg">' + (b.items || []).map(function (p, n) {
+        return "<li" + (p.clave ? ' class="clave"' : "") + '><span class="pi-num">' + (n + 1) + "</span>" +
+          '<div class="pi-ico">' + (p.objetos || []).map(function (o) { return objHTML(o, true); }).join("") + "</div>" +
+          '<div class="pi-txt"><b>' + md(p.t) + "</b><p>" + md(p.texto) + "</p>" +
+          (p.da ? '<div class="pi-da"><span>Te da</span>' + md(p.da) + "</div>" : "") + "</div></li>";
+      }).join("") + "</ol>";
+    } else if (b.tipo === "gscp") {
+      // dos columnas: GS frente a CP
+      h += '<div class="gscp">' + (b.lados || []).map(function (l) {
+        return '<div class="gc-lado ' + esc(l.clase) + '"><div class="gc-sigla">' + esc(l.sigla) + '</div><div class="gc-nombre">' + md(l.nombre) + "</div>" +
+          "<p>" + md(l.texto) + "</p><ul>" + (l.items || []).map(function (i) { return "<li>" + md(i) + "</li>"; }).join("") + "</ul></div>";
+      }).join("") + "</div>";
     } else if (b.texto) {
       h += "<p>" + md(b.texto) + "</p>";
     }
@@ -131,7 +164,7 @@ function cabecera(activa) {
   ponerFondo(activa);
   var links = [["index.html", "Inicio", "inicio"]].concat(
     CLASES.map(function (c) { return ["clase.html?c=" + c.id, c.nombre, c.id]; }),
-    [["index.html#guias", "Guías", "guias"], ["temporizador.html?v=9", "Temporizador", "temporizador"], ["mapa-cubos.html", "Mapa de cubos", "mapa"], ["mascotas.html", "Mascotas", "mascotas"], ["ajustes.html", "Ajustes", "ajustes"], ["guia.html?g=progression__farmeo-de-equipo-700-1400-2100", "Farmeo de equipo", "farmeo"]]
+    [["index.html#guias", "Guías", "guias"], ["temporizador.html?v=9", "Temporizador", "temporizador"], ["mapa-cubos.html", "Mapa de cubos", "mapa"], ["mascotas.html", "Mascotas", "mascotas"], ["ajustes.html", "Ajustes", "ajustes"], ["guia.html?g=progression__farmeo-de-equipo-700-1400-2100", "Progresión de equipo", "farmeo"]]
   );
   document.body.insertAdjacentHTML("afterbegin",
     '<header class="top"><div class="in"><a class="logo" href="index.html">BUILD <span>AION2</span></a><nav>' +
@@ -162,6 +195,41 @@ function activarTips() {
     y = Math.max(8, Math.min(y, H - h - 8));
     tip.style.left = x + "px"; tip.style.top = y + "px";
   });
+}
+
+// barra de tramos: se pega bajo el menú, marca el tramo que estás leyendo y salta al de tu nivel
+function iniciarAccesos() {
+  var nav = document.getElementById("accesos");
+  if (!nav) return;
+  var cab = document.querySelector("header.top"), links = nav.querySelectorAll(".ac-tramos a");
+  function alto() {
+    var a = cab ? cab.offsetHeight : 0;
+    nav.style.top = a + "px";
+    document.documentElement.style.setProperty("--salto", (a + nav.offsetHeight + 8) + "px");
+  }
+  alto(); window.addEventListener("resize", alto);
+  function marcar() {
+    var lim = (cab ? cab.offsetHeight : 0) + nav.offsetHeight + 40, on = null;
+    links.forEach(function (l) {
+      var s = document.getElementById(l.getAttribute("href").slice(1));
+      if (s && s.getBoundingClientRect().top <= lim) on = l;
+    });
+    links.forEach(function (l) { l.classList.toggle("on", l === on); });
+    var fila = links[0].parentNode;
+    if (on && fila.scrollWidth > fila.clientWidth) fila.scrollLeft = on.offsetLeft - fila.offsetLeft - 12;
+  }
+  window.addEventListener("scroll", marcar, { passive: true }); marcar();
+  var inp = document.getElementById("ac-gs");
+  function ir() {
+    var v = parseInt(String(inp.value).replace(/\D/g, ""), 10), dest = links[0];
+    if (isNaN(v)) return;
+    links.forEach(function (l) { if (v >= +l.dataset.min) dest = l; });
+    try { localStorage.setItem("progresion-gs", v); } catch (e) {}
+    document.getElementById(dest.getAttribute("href").slice(1)).scrollIntoView({ behavior: "smooth" });
+  }
+  document.getElementById("ac-ir").addEventListener("click", ir);
+  inp.addEventListener("keydown", function (e) { if (e.key === "Enter") ir(); });
+  try { var g = localStorage.getItem("progresion-gs"); if (g) inp.value = g; } catch (e) {}
 }
 
 function param(n) { return new URLSearchParams(location.search).get(n); }
