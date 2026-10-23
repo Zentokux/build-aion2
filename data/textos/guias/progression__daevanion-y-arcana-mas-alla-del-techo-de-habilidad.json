@@ -166,7 +166,37 @@
   },
   {
    "tipo": "aviso",
-   "texto": "Varias fuentes de cristales de Ariel y Azphel llegaron a Corea durante 2026; nadie sabe cuáles habrá en global el primer día. No planifiques tu ruta en torno a ellos."
+   "texto": "Eso es Corea. En global, por ahora, los cristales de Ariel salen **solo del modo Difícil** (parche del 21-oct, abajo); las demás fuentes coreanas aún no han llegado. Azphel sigue siendo solo PvP."
+  },
+  {
+   "titulo": "Ariel en global (parche del 21-oct-2026)",
+   "tipo": "tabla",
+   "columnas": [
+    "Qué",
+    "Cómo es"
+   ],
+   "filas": [
+    [
+     "Dónde",
+     "Modo **Difícil** de Cueva de Krao y Draupnir: nivel de objeto **2.600**, frenesí del jefe a los 4 min y 3 resurrecciones por jugador"
+    ],
+    [
+     "Qué sale",
+     "**Fragmento de Ariel** (ligado), distinto en cada mazmorra; además Piedra filosofal: Revelación y más Kinah que en Normal"
+    ],
+    [
+     "Conversión",
+     "100 fragmentos = 1 Cristal de Daevanion: Ariel (Substance Morph), hasta 30 por mazmorra"
+    ],
+    [
+     "Total",
+     "**60 puntos** por personaje, aparte de los puntos de nivel"
+    ],
+    [
+     "Ruta (todas las clases)",
+     "Los 4 nodos de Amplificación de Daño de JcE (+6%), uno de Amplificación de Daño de Jefe (+1%) y Crítico +10; primero los dos del medio (a los 13 y 26 cristales). Está dibujada en la pestaña Ariel del tablero de cada clase"
+    ]
+   ]
   },
   {
    "titulo": "De dónde salen las Arcana",

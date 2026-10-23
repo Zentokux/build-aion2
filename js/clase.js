@@ -354,7 +354,7 @@ function pintarDaevanion(B, H) {
         return '<button class="boton' + (i === estado.tablero ? " on" : "") + '" data-tab="' + i + '">' + esc(t.nombre) + " · " + t.nivel + "</button>";
       }).join("") + "</div>" +
       '<div class="daev-info"><span>' + Math.min(paso, orden.length) + " de " + total + " nodos · " + puntos + " / " + (info.tope || "—") +
-      ' puntos en este tablero</span><button class="boton" data-iconos="1">' + (estado.iconos ? "Ocultar" : "Mostrar") + " iconos de habilidad</button></div>" +
+      (tb.propio ? " cristales de Ariel" : " puntos en este tablero") + '</span><button class="boton" data-iconos="1">' + (estado.iconos ? "Ocultar" : "Mostrar") + " iconos de habilidad</button></div>" +
       '<div class="orden">Orden <button class="boton" data-mov="-1">◀</button><input type="range" min="0" max="' + orden.length + '" value="' + paso +
       '"><button class="boton" data-mov="1">▶</button><span>' + paso + "/" + orden.length + "</span></div>" +
       '<div class="rejilla-daev" style="grid-template-columns:repeat(' + tb.cols + ',1fr)">' + celdas.map(function (n) {
@@ -371,14 +371,20 @@ function pintarDaevanion(B, H) {
       }).join("") + "</div>" +
       '<div class="leyenda-daev"><span>Borde azul = nodo tomado hasta este paso del orden</span><span>Borde blanco = último nodo del paso</span>' +
       "<span>Mueve «Orden» para ver en qué orden se cogen</span></div>" +
+      (tb.propio ? '<div class="aviso" style="margin-top:10px"><strong>Ariel (nuevo, parche del 21-oct):</strong> solo JcE y con cristales propios, no con los puntos de nivel. ' +
+      "Sale <strong>Fragmento de Ariel</strong> en el modo <strong>Difícil</strong> de Cueva de Krao y Draupnir (nivel de objeto <strong>2.600</strong>); 100 fragmentos = 1 Cristal de Daevanion: Ariel " +
+      "(Substance Morph), hasta 30 por mazmorra: <strong>60 en total</strong>. La ruta coge los 4 nodos de Amplificación de Daño de JcE (+6 %), uno de Amplificación de Daño de Jefe (+1 %) y Crítico +10; " +
+      "primero los dos del medio (a los 13 y 26 cristales). Es igual en los dos modos y en todas las clases.</div>" :
       '<div class="aviso" style="margin-top:10px"><strong>Dos modos:</strong> primero rellena <strong>Prioridad de lanzamiento</strong> (lo esencial, ' +
       sumaPuntos(D.presets[0]) + " puntos); cuando la completes, sigue con <strong>JcE completo</strong> hasta " + sumaPuntos(D.presets[D.presets.length - 1]) +
-      " puntos. Los tableros se abren a nivel " + D.tableros.map(function (t) { return t.nivel; }).join(", ") + ".</div>";
+      " puntos. Los tableros se abren a nivel " + D.tableros.filter(function (t) { return !t.propio; }).map(function (t) { return t.nivel; }).join(", ") +
+      "; Ariel va aparte, con sus propios cristales.</div>");
     el.innerHTML = h;
   }
   function sumaPuntos(p) {
-    var s = 0;
-    for (var k in p.tableros) s += p.tableros[k].puntos || 0;
+    var s = 0, propio = {};
+    D.tableros.forEach(function (t) { if (t.propio) propio[t.tablero] = 1; });
+    for (var k in p.tableros) if (!propio[k]) s += p.tableros[k].puntos || 0;
     return s;
   }
   el.addEventListener("click", function (e) {
@@ -477,7 +483,7 @@ function pintarColeccionables(C, filasStats, habN) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  cargarScript("data/builds/" + c + ".js?v=13", pintarClase, function () {
+  cargarScript("data/builds/" + c + ".js?v=14", pintarClase, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
 })();

@@ -549,6 +549,11 @@
   ],
   "daevanion": [
    {
+    "id": "ariel",
+    "tipo": "aviso",
+    "texto": "**Nuevo (parche del 21-oct): tablero Ariel**, solo JcE y con cristales propios (60), no con los puntos de nivel. Salen del modo **Difícil** de Cueva de Krao y Draupnir (nivel de objeto 2.600). Su ruta está en la pestaña **Ariel** del tablero de arriba."
+   },
+   {
     "titulo": "Tableros",
     "tipo": "lista",
     "items": [

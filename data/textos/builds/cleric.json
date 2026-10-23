@@ -250,6 +250,20 @@
      "Si vas corto de Precisión: Brújula de vitalidad (Libertad).",
      "El Cáliz es la única carta que saca cualquier habilidad: tu comodín."
     ]
+   },
+   {
+    "id": "arcana-whelps",
+    "titulo": "Arcana en Season 1",
+    "tipo": "lista",
+    "items": [
+     "**Solo Condena a 20** (hace cerca de la mitad de tu daño): +2 en el Cáliz, +2 en el Pergamino y +2 de un anillo. Una 2.ª habilidad a 20 solo si las cartas te la dan; más no compensa.",
+     "Guarda y sube todo Pergamino con Condena: con +4, un anillo de +2 ya la deja en 20.",
+     "Aura divina +4 es la mejor tirada en cualquier carta (+2 de anillo = 20; con +2 se queda en 16).",
+     "Campana: Gracia empírea alta (busca +3). Espejo: Gracia terrestre alta (Mejora curativa también vale).",
+     "Dos cartas de Vigor (Cáliz y Espejo) bastan; la Brújula y el Pergamino pueden ser de Magia.",
+     "Anillos al final: primero las líneas de Soul Binding del arma, la guarda, la armadura y el resto de accesorios.",
+     "Fijar dos habilidades en el Cáliz cuesta 15 Mysterious Crystals y 5 millones de Kinah: mejor subir las cartas. Con Condena a 20, vuelve a Conquista a farmear Kinah."
+    ]
    }
   ],
   "habilidades": [
@@ -279,13 +293,13 @@
     "filas": [
      [
       "Condena",
-      "Tu daño principal: más daño a pocos objetivos, reinicio con crítico y Multigolpe. Necesita Enlace de dolor",
-      ""
+      "Tu daño principal (cerca de la mitad): más daño a pocos objetivos, reinicio con crítico y Multigolpe. Necesita Enlace de dolor",
+      "A 16: reinicio con crítico y Multigolpe; a 20 añade +12% a un objetivo. Antes de 16: reinicio y +12% (sin Maná, la de Maná)"
      ],
      [
       "Centella",
-      "Más daño a pocos objetivos y crítico garantizado. Cárgala del todo en el stagger",
-      "A 20, spec 3 (carga más rápida)"
+      "Tu golpe más fuerte: ábrelo con ella y úsala cada vez que vuelva, siempre cargada del todo",
+      "A 16: +30% de velocidad y crítico garantizado; a 20, +20% a un objetivo. Con poca Precisión, +300 de Precisión en vez del crítico"
      ],
      [
       "Aura divina",
@@ -294,8 +308,8 @@
      ],
      [
       "Rayo del juicio",
-      "Más daño a pocos objetivos y un Divine Punishment extra",
-      "A 20, spec 1 (−20% de Maná)"
+      "Daño constante y cancela animaciones; arriba de la línea de Debuff",
+      "A 13 con −20% de Maná y +12% a un objetivo. Sale de la macro con Castigo terrestre a 20 (le quita la animación a Condena); para farmear se queda"
      ],
      [
       "Enlace de dolor",
@@ -314,8 +328,55 @@
      ],
      [
       "Relámpagos sin puntería",
-      "Solo contra objetivo en stagger; spec 4 da Multigolpe",
-      "A 16, spec 5: −1 s a todo por golpe"
+      "Solo contra objetivo en stagger; cada golpe quita 1 s a todo",
+      "A 13. Púlsala solo si Condena no está saliendo en el stagger"
+     ]
+    ]
+   },
+   {
+    "id": "niveles-whelps",
+    "titulo": "Niveles finales (Season 1)",
+    "tipo": "tabla",
+    "columnas": [
+     "Habilidad",
+     "Nivel",
+     "Nota"
+    ],
+    "filas": [
+     [
+      "Condena",
+      "20",
+      "La primera: cerca de la mitad de tu daño"
+     ],
+     [
+      "Centella",
+      "18",
+      "Justo detrás de Condena"
+     ],
+     [
+      "Aura divina",
+      "16",
+      "A 20: velocidad de ataque, +3 s y −10 s"
+     ],
+     [
+      "Retribución terrestre y Luz de regeneración",
+      "15",
+      "A 20 Retribución: Discharge, Multigolpe y −7 s a Centella"
+     ],
+     [
+      "Resplandor de recobro y Luz de curación",
+      "16",
+      "A 20 Resplandor: +1 uso, −3 s y +5% de PV"
+     ],
+     [
+      "Rayo del juicio, Relámpagos sin puntería y Estigma debilitante",
+      "13",
+      "Más si farmeas mucho"
+     ],
+     [
+      "Enlace de dolor",
+      "12",
+      "Solo hace falta que marque"
      ]
     ]
    },
@@ -458,8 +519,8 @@
      ],
      [
       "Conjurador en el grupo",
-      "Absolución, Castigo terrestre, Aura noble, Oración de amplificación",
-      "Luz de protección no se acumula con el mantra del Conjurador"
+      "Resurrección de invocación (o Absolución), Castigo terrestre, Aura noble, Oración de amplificación",
+      "Luz de protección no se acumula con el mantra del Conjurador. Aura noble pasa a ser la 3.ª a 20"
      ]
     ]
    },
@@ -522,12 +583,16 @@
     "titulo": "Orden de fragmentos",
     "tipo": "pasos",
     "items": [
-     "Luz de protección a 10.",
-     "Castigo terrestre a 15.",
-     "Los otros dos a 5.",
-     "Castigo terrestre a 20 (cambia la frecuencia de críticos de Condena).",
-     "Luz de protección a 20 (solo +5 puntos a un buff que ya tienes)."
+     "Castigo terrestre a 20, lo primero (Condena siempre crítico y, a 20, activo casi todo el combate).",
+     "Oración de amplificación a 20.",
+     "La 3.ª a 20: Luz de protección sin Conjurador (si hace falta, baja Aura noble para llegar); con Conjurador, Aura noble.",
+     "La 4.ª, lo que sobre."
     ]
+   },
+   {
+    "id": "dos-presets",
+    "tipo": "aviso",
+    "texto": "Usa **dos presets de habilidades**: sin Conjurador (Castigo terrestre, Oración de amplificación, Luz de protección y Aura noble) y con Conjurador (Luz de protección fuera, Resurrección de invocación dentro). Cada preset guarda sus niveles, sus estigmas y su barra: cambia de preset, no de habilidades."
    },
    {
     "tipo": "aviso",
@@ -535,6 +600,11 @@
    }
   ],
   "daevanion": [
+   {
+    "id": "ariel",
+    "tipo": "aviso",
+    "texto": "**Nuevo (parche del 21-oct): tablero Ariel**, solo JcE y con cristales propios (60), no con los puntos de nivel. Salen del modo **Difícil** de Cueva de Krao y Draupnir (nivel de objeto 2.600). Su ruta está en la pestaña **Ariel** del tablero de arriba."
+   },
    {
     "titulo": "Tableros",
     "tipo": "lista",
@@ -587,8 +657,8 @@
     "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
     "tipo": "lista",
     "items": [
-     "Macro «E → Q» o «E, E, E, Q» (con Condena a 12 o más: la E tres veces por cada Q).",
-     "Que Condena salga al menos tantas veces como Rayo del juicio."
+     "Con Castigo terrestre a 20: macro «E, Q» sin Rayo del juicio frente a «E, E, E, Q» con él. Al principio puede dar lo mismo o menos: la diferencia se nota con Condena y Centella a 16.",
+     "En el Análisis de combate, Condena debe salir al menos tantas veces como Rayo del juicio; si sale menos, añade otro paso de E a la macro."
     ]
    },
    {
@@ -636,11 +706,23 @@
     "tipo": "pasos",
     "items": [
      "Luz de protección activa antes del pull.",
-     "Abre con la pila del 1 (Estigma debilitante); la macro ya lanza Enlace de dolor y Castigo terrestre.",
-     "Mantén la macro (Clic der.) y Clic izq.: cada crítico es otra Condena.",
-     "En el stagger: Centella (4) cargada del todo con Oración de amplificación activa, y la pila del 1: con el jefe en stagger sale Relámpagos sin puntería.",
+     "Abre con Centella (4) cargada del todo y mantén la macro: la Q pone Estigma debilitante, Aura divina y Luz de regeneración, y la E lanza Oración de amplificación y Castigo terrestre en cuanto están listos.",
+     "Mantén la macro (Clic der.) y Clic izq. (Retribución terrestre, te devuelve Maná): la macro pulsa E, E, E, Q, tres veces la línea de Oración por cada Debuff, y cada crítico es otra Condena. Rayo del juicio, arriba de la Q, rellena los huecos.",
+     "Centella (4) cargada del todo cada vez que vuelva. En el stagger, Relámpagos sin puntería (1) solo si Condena no está saliendo; si sale, sigue con la macro.",
      "Vigila al jefe: cura antes de su golpe fuerte y vuelve al paso 3.",
-     "Renueva Enlace de dolor y Castigo terrestre cuando se caigan."
+     "Enlace de dolor va arriba de la E: sale cuando lo demás está en enfriamiento y renueva la marca sin que hagas nada."
+    ]
+   },
+   {
+    "id": "castigo20",
+    "titulo": "Cuando Castigo terrestre llegue a 20",
+    "tipo": "pasos",
+    "items": [
+     "Saca Rayo del juicio de la Q y ponlo solo en la 7: le quita la animación a Condena. Si quieres, púlsalo en el hueco de 6-7 s sin Condena que deja Enlace de dolor.",
+     "La macro pasa a E, Q (un solo paso de E, 10 ms cada uno): sin Rayo del juicio ya no hace falta repetir la E.",
+     "Al principio puede parecer igual o peor: se nota cuando Condena y Centella llegan a 16 y tienes más velocidad y Reducción. Sin Rayo del juicio también gastas menos Maná.",
+     "Con Conjurador en el grupo, cambia al preset con Conjurador: Resurrección de invocación en la 5 (en vez de Luz de protección) y Estigma debilitante fuera de la Q, a mano en la 8 (la Promesa terrestre del Conjurador pisa su debuff).",
+     "Para farmear monstruos, vuelve a poner Rayo del juicio arriba de la Q y la macro E, E, E, Q."
     ]
    },
    {
@@ -669,19 +751,24 @@
     ],
     "filas": [
      [
-      "Talisra Wings",
-      "4% de Reducción de Tiempo de Enfriamiento, Precisión y Ataque",
-      "1.ª opción"
+      "Forest Spirit Wings",
+      "Amplificación de Daño de Jefe",
+      "Para empezar: las más baratas y las mejores para jefes"
      ],
      [
-      "Nightmare Wings / Forest Spirit Wings",
+      "Talisra Wings",
+      "4% de Reducción de Tiempo de Enfriamiento, Precisión y Ataque",
+      "La meta: tienda de temporada, cerca de 250.000 puntos (guárdalos)"
+     ],
+     [
+      "Nightmare Wings",
       "Amplificación de Daño de Jefe",
-      "Alternativas fuertes"
+      "También valen"
      ],
      [
       "Dark Veil Wings",
       "",
-      "Opción temprana"
+      "Las únicas que no"
      ],
      [
       "Glorious Wings",
@@ -710,20 +797,25 @@
     "filas": [
      [
       "Ofensivo",
-      "Creación del cielo y la tierra (Golpe, Amplificación de Daño de JcE)",
-      "Librarse de las ataduras de raza (añade Crítico)"
+      "Librarse de las ataduras de raza (cuando tengas todas las ruedas de Genus a 10)",
+      "Mientras tanto, Guardian of Baran o Artguard (Amplificación de Daño de JcE)"
      ],
      [
       "Defensivo",
-      "Dominador del espacio (Tolerancia a Daño JcE)",
-      ""
+      "Santo (Tolerancia a Daño y Defensa)",
+      "Dominador del espacio (Tolerancia a Daño JcE)"
      ],
      [
       "Otro",
-      "Ay, no tengo nada que ponerme (Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento)",
-      ""
+      "Ay, no tengo nada que ponerme (Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento; 700 apariencias)",
+      "Mientras tanto, De ida y vuelta al infierno (Reducción de Tiempo de Enfriamiento)"
      ]
     ]
+   },
+   {
+    "id": "reduccion",
+    "tipo": "aviso",
+    "texto": "Reducción de Tiempo de Enfriamiento: cuanta más, mejor (con cerca de 33% Condena no pararía de reiniciarse), pero en Season 1 lo realista es **10-11%** en total. Para las 700 apariencias del título: extrae equipo azul o peor y combínalo; el armario se comparte con tus alts."
    },
    {
     "titulo": "Panteón",
