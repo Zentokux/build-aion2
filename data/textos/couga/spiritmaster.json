@@ -1,0 +1,109 @@
+{
+ "clase": "spiritmaster",
+ "nombre": "Espiritualista",
+ "resumen": "El único invocador: un espíritu pelea a tu lado, cada habilidad de espíritu te da un elemento y con cuatro elementos Fusión elemental está lista. Casi todo el daño sale de Fusión elemental y de los espíritus, sobre todo de Invocación: Espíritu ancestral e Invocación: Espíritu de fuego. La build en una frase: primero los buffs y luego invocar (un espíritu copia tus estadísticas en el momento en que aparece); mantén las cinco acumulaciones de Ataque de Impacto helado, abre con los buffs y el Espíritu ancestral, y deja que la macro lance Fusión elemental cada vez que esté lista.",
+ "pros": [
+  "Fusión elemental no tiene enfriamiento: sale cada vez que juntas cuatro elementos",
+  "Se hace más fuerte cuanto más dura el combate (buffs y daño en el tiempo)",
+  "Invocación: Espíritu de tierra atrae al enemigo: el jefe pega al espíritu y no a ti",
+  "Las pasivas suben mucho: en un equipo de Season 1 terminado pasan de 30"
+ ],
+ "contras": [
+  "La regla de la copia: un buff lanzado después de invocar no hace nada a ese espíritu",
+  "Perder las acumulaciones de Impacto helado cuesta un 10 % de Ataque a ti y a cada espíritu que invoques",
+  "Es la clase que más pierde si mueres con todo en enfriamiento",
+  "El ritmo depende del ping: el autor pide 65 % de Velocidad de Combate o más y menos de unos 60 ms"
+ ],
+ "presets": [
+  {"nombre_en": "main", "nombre": "Todo el JcE", "uso": "Invocación: Espíritu ancestral, Mejora: Favor de Espíritu, Bendición ardiente y Golpe conjunto: Corrosión. Cursed Cloud es fuerte, pero en Season 1 no hay hueco."}
+ ],
+ "cartas": {
+  "elemental-fusion": {"nivel": "20", "por_que": "Tu golpe más fuerte, sin enfriamiento: sale cada vez que tienes cuatro elementos. Daño retardado, +10 a todas las Amplificaciones de Elemento y un 25 % de probabilidad de conservar los cuatro elementos. aLuckyRO coge la versión cargada (hasta +200 %) el primer día."},
+  "combustion": {"nivel": "20", "por_que": "+12 % a un solo objetivo, +20 % de Velocidad de habilidad y la cadena Ashy Call. Primeros días: −20 % de Maná hasta que el Maná aguante (aLuckyRO)."},
+  "summon-fire-spirit": {"nivel": "20", "por_que": "El espíritu base más fuerte y el que más tiempo está fuera: invócalo el último para que siga fuera mientras los otros recargan."},
+  "cold-shock": {"nivel": "16", "por_que": "Ataque básico: Multigolpe y las acumulaciones de +2 % de Ataque que copia cada invocación. Con 14 vale; 16 es lo mejor al principio, porque los enfriamientos son largos. Primeros días: +20 % de Maná recuperado en vez de Multigolpe."},
+  "summon-water-spirit": {"nivel": "16", "por_que": "El golpe a un objetivo más alto de los espíritus base cuando entra en Golpe conjunto: Corrosión, y tu Maná mientras subes de nivel."},
+  "jointstrike-curse": {"nivel": "16", "por_que": "Daño en el tiempo y debuff: +2 s de Maldición y la de movimiento. Tus espíritus, el Ancestral también, golpean contigo."},
+  "dimensional-control": {"nivel": "16", "por_que": "Sale al invocar; daño retardado y Multigolpe. Sáltate la de atraer y la de ralentizar."},
+  "summon-earth-spirit": {"nivel": "16", "por_que": "Atrae al enemigo hacia sí: el jefe pega al espíritu, no a ti. Útil en solitario."},
+  "rapid-scattershot": {"nivel": "16", "por_que": "Solo contra jefes en stagger. Por debajo de 16, la de movimiento y Multigolpe; a 16, Multigolpe y −1 s a todos los enfriamientos."},
+  "defiance": {"nivel": "16", "por_que": "Rompe aturdimientos; recupera un 20 % de vida y da tolerancia a daño mientras dura la Tenacidad."},
+  "summon-wind-spirit": {"nivel": "No subir", "por_que": "El menor daño de habilidad, y invocarlo quita tiempo a los demás. aLuckyRO lo deja la primera semana para llegar antes a cuatro elementos; quítalo cuando tres espíritus abran Fusión elemental por sí solos."},
+  "souls-cry": {"nivel": "JcJ", "por_que": "Miedo: una habilidad de JcJ."},
+  "summon-ancient-spirit": {"nivel": "20", "por_que": "Tu estigma de más daño: un espíritu extra de 30 s que te da Fusión elemental cada vez que usa su habilidad (a 15, cada cinco ataques básicos). Invócalo siempre con los buffs y las acumulaciones de Impacto helado puestas."},
+  "enhance-spirits-benediction": {"nivel": "20", "por_que": "Amplificación y Tolerancia de Daño para ti y tus espíritus: lánzalo antes de invocar."},
+  "flame-blessing": {"nivel": "20", "por_que": "Precisión y daño extra al golpear; uno de tus buffs más fuertes y sube mucho a 20."},
+  "jointstrike-corrode": {"nivel": "20", "por_que": "Un daño en el tiempo que hace que el objetivo reciba más daño de tus espíritus. A 20 dura 30 s y puede estar siempre activo con cerca de un 33 % de Reducción de Tiempo de Enfriamiento."},
+  "cursed-cloud": {"nivel": "Más adelante", "por_que": "Fuerte en JcE, pero en Season 1 no hay hueco para él."}
+ },
+ "traducciones": {
+  "summon-wind-spirit": {"efecto": "Invoca un Espíritu de viento. El espíritu elige un objetivo en un radio de 20 m y usa una habilidad que inflige daño de viento a un máximo de 4 enemigos en un radio de 5 m del objetivo y te recupera 134-147 de Puntos de Vida. Pelea a tu lado con ataques básicos, con un 10 % de probabilidad de usar su habilidad, y te recupera un 1,5 % de vida con cada golpe. Se retira al seleccionar el icono de invocación. Cada nivel de habilidad sube un 2 % su Precisión y su Crítico. 7 de daño al medidor de stagger; enfriamiento de la habilidad del espíritu: 3 s.", "specs": ["Reducción del 50 % de Consumo de Puntos de Maná", "+20 % de Crítico del Espíritu de viento", "10 % de probabilidad de activar la habilidad cuando el Espíritu de viento acierta un ataque", "5 % de probabilidad de reducir un 30 % la velocidad de ataque del enemigo durante 10 s al acertar el Espíritu de viento", "+20 % de estadísticas del Espíritu de viento"]},
+  "souls-cry": {"efecto": "Inflige daño a un objetivo en un radio de 20 m, con un 70 % de probabilidad de provocar Miedo durante 5 s. Miedo garantizado contra PNJ. 15 de daño al medidor de stagger.", "specs": ["Al acertar, aumento del 50 % de Multigolpe", "Provoca Atadura durante 5 s", "Cambio a habilidad disponible en movimiento", "Reducción de 10 s de Tiempo de Enfriamiento", "+2 s de duración del Miedo"]},
+  "cursed-cloud": {"efecto": "Elige un objetivo en un radio de 20 m, inflige daño a un máximo de 4 enemigos en un radio de 4 m y daño en el tiempo cada segundo durante 10 s. 20 de daño al medidor de stagger.", "specs": ["−1.000 de Vigor máximo del enemigo durante el daño en el tiempo", "−20 % de Puntos de Vida máximos de los objetivos jugador durante el daño en el tiempo", "+10 s de duración del daño en el tiempo", "−30 % de resistencia a efectos de estado durante el daño en el tiempo"]}
+ },
+ "secciones": {
+  "habilidades": [
+   {"titulo": "Tres reglas", "tipo": "lista", "items": [
+    "**La regla de la copia.** El daño de un espíritu depende de tus estadísticas y buffs al invocarlo. Un buff lanzado después no hace nada a ese espíritu: nunca llames al Espíritu ancestral sin tus buffs puestos.",
+    "**Mete el ataque básico.** Impacto helado da +2 % de Ataque por golpe, hasta cinco acumulaciones. Perderlas cuesta un 10 % de Ataque a ti y a cada espíritu que invoques: un ataque básico más vale más que la siguiente invocación.",
+    "**Los combates largos te favorecen.** La clase vive de buffs y daño en el tiempo, así que se hace más fuerte cuanto más dura el combate, y pierde más que ninguna si mueres con todo en enfriamiento."
+   ]},
+   {"tipo": "aviso", "texto": "Tres habilidades tienen que llegar a **20**: Combustión, Invocación: Espíritu de fuego y Fusión elemental. Invocación: Espíritu de agua vale a 16 y está bien a 20; todo lo demás se queda en 16. Los primeros días, con las habilidades a 8-12, coge las especializaciones de Maná que dicen las cartas (aLuckyRO)."},
+   {"tipo": "aviso", "texto": "Las pasivas suben con cada pieza de armadura, los pendientes y el collar, así que van muy por delante de las activas: en un equipo de Season 1 terminado una pasiva pasa de 30."},
+   {"titulo": "Pasivas", "tipo": "tabla", "columnas": ["#", "Pasiva", "Por qué"], "filas": [
+    ["1", "Concentración mental", "Golpe: súbela al máximo (cerca de 32 en Season 1)"],
+    ["2", "Golpe de Espíritu", "Amplificación de Daño de JcE y Perforación para ti y el espíritu. Muy cerca de la primera"],
+    ["3", "Unificación elemental", "Amplificación de Daño Crítico que se acumula cada vez que acierta una habilidad de espíritu"],
+    ["4", "Revitalización de Espíritu", "Enfriamientos de espíritu más cortos: más Fusión elemental"]
+   ]},
+   {"tipo": "aviso", "texto": "Primeros días (aLuckyRO): Golpe de Espíritu primero, luego Descenso de Espíritu y Retroceso continuo. Erosión y Unificación elemental solo compensan cuando el equipo da Crítico: antes casi no críticas."}
+  ],
+  "estigmas": [
+   {"tipo": "aviso", "texto": "Estos cuatro son el juego para todo combate de JcE. Sube los cuatro a 10 primero y luego cada uno a 20 en este orden: Invocación: Espíritu ancestral, Mejora: Favor de Espíritu, Bendición ardiente y Golpe conjunto: Corrosión. Los huecos se abren a los niveles 22, 27, 32 y 37."},
+   {"titulo": "Qué estigmas y a qué nivel", "tipo": "tabla", "columnas": ["Estigma", "Nivel", "Para qué"], "filas": [
+    ["Invocación: Espíritu ancestral", "20", "Tu estigma de más daño; invócalo con los buffs puestos"],
+    ["Mejora: Favor de Espíritu", "20", "Amplificación y Tolerancia de Daño para ti y los espíritus; antes de invocar"],
+    ["Bendición ardiente", "20", "Precisión y daño extra; sube mucho a 20"],
+    ["Golpe conjunto: Corrosión", "20", "Más daño de tus espíritus; a 20 dura 30 s"],
+    ["Cursed Cloud", "Más adelante", "Fuerte, pero sin hueco en Season 1"]
+   ]},
+   {"comun": "fragmentos-estigma"}
+  ],
+  "equipo": [
+   {"titulo": "Equipo, Arcanas y estadísticas", "tipo": "lista", "items": [
+    "**De dónde salen los niveles**: 10 de los puntos de habilidad, 14 con los cuatro primeros tableros de Daevanion, luego +4 de una Arcana y +1 de cada anillo: 20 para las imprescindibles.",
+    "Las activas salen en anillos, arma y guarda; las pasivas en cada pieza de armadura, los pendientes y el collar.",
+    "**Objetivos**: Golpe 25 %, Reducción de Tiempo de Enfriamiento 20 %, Precisión 1.500."
+   ]},
+   {"comun": "soulbind"}
+  ],
+  "daevanion": [
+   {"tipo": "aviso", "texto": "Daevanion lleva tus habilidades de 10 a 14. Cada nodo azul da **+1 nivel** a su habilidad."},
+   {"titulo": "Prioridades", "tipo": "lista", "items": [
+    "Nodos azules de Fusión elemental, Combustión, Invocación: Espíritu de fuego, Impacto helado e Invocación: Espíritu de agua; los verdes de Concentración mental y Golpe de Espíritu; luego los naranja ofensivos.",
+    "**Primeros días**: coge el nodo más barato de cada habilidad; todos los tableros las tienen todas, algunas cerca del inicio (aLuckyRO).",
+    "Azphel (nivel 45) es todo Amplificación y Tolerancia de Daño de JcJ: no cuenta para JcE."
+   ]},
+   {"titulo": "Tableros", "tipo": "tabla", "columnas": ["Tablero", "Nivel", "Nodos naranja"], "filas": [
+    ["Nezekan", "12", "Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento"],
+    ["Zikel", "20", "Amplificación de Daño, Tolerancia a Daño"],
+    ["Vaizel", "30", "Amplificación y Tolerancia de Daño Crítico"],
+    ["Triniel", "40", "Multigolpe y su resistencia"],
+    ["Ariel", "45", "Solo JcE, con cristales propios (abajo)"]
+   ]},
+   {"comun": "ariel"},
+   {"comun": "cristales"}
+  ],
+  "coleccionables": [
+   {"titulo": "Arcanas", "tipo": "lista", "items": [
+    "Tres cartas de **Vitalidad primordial** y dos de **Armadura mágica**: los dos bonus de 2 piezas.",
+    "Una Arcana da +4 a una habilidad: con eso y +1 de cada anillo, las imprescindibles llegan a 20."
+   ]},
+   {"comun": "titulos"},
+   {"comun": "titulos-nota"}
+  ],
+  "mascotas": [
+   {"comun": "mascotas"}
+  ]
+ }
+}

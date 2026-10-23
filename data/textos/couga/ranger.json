@@ -1,0 +1,136 @@
+{
+ "clase": "ranger",
+ "nombre": "Ranger",
+ "resumen": "DPS de arco que pelea a unos **20 metros**, el alcance de casi todas sus habilidades. Su daño es de lo mejor, pero la supervivencia y la utilidad son bajas: colocarse lo es todo. La build en una frase: ponte los buffs, mantén Flecha en el objetivo (Precisión: +300 de Crítico y +35 % de daño de Flecha al objetivo) sobre el objetivo y mantén tres botones: Disparo certero, la macro y una Flecha al objetivo cargada.",
+ "pros": [
+  "Daño de lo mejor del juego",
+  "Pelea desde unos 20 metros, lejos de casi todo",
+  "Llega fácil al tope de Crítico: Flecha en el objetivo da +300",
+  "Equipo sencillo: lo de más nivel de objeto"
+ ],
+ "contras": [
+  "Poca supervivencia y poca utilidad: colocarse lo es todo",
+  "Necesita Precisión: los golpes bloqueados pierden más de la mitad del daño y no siempre puede atacar por la espalda",
+  "Solo unas pocas habilidades llegan a 20 en Season 1"
+ ],
+ "presets": [
+  {"nombre_en": "main", "nombre": "Principal", "uso": "Poder de Vaizel, Flecha de bendición, Disparos de apoyo y Flecha de grifo."},
+  {"nombre_en": "early", "nombre": "Hasta Flecha de grifo 15", "uso": "Flecha explosiva a 5 en lugar de Flecha de grifo: al principio hacen un daño parecido y su enfriamiento es 15 s más corto."},
+  {"nombre_en": "leveling", "nombre": "Subida de nivel", "uso": "Tormenta de flechas para los grupos de monstruos."}
+ ],
+ "cartas": {
+  "deadshot": {"nivel": "20", "por_que": "Golpe cargado: siempre cargado del todo y siempre con Precisión activa. Antes de 20 coge las dos primeras; cambia la de movimiento por la de +50 % de daño si no necesitas moverte mientras cargas. Fubgun (global) prefiere daño a movilidad: +30 % de Velocidad de habilidad y la de daño a 16, y a 20 Ignorar Bloqueo y Evasión (la hoja de JOHNPAL también), o la de movimiento donde el combate la pida."},
+  "gale-arrow": {"nivel": "20", "por_que": "Buff de Velocidad de Hechizo y de daño. Antes de 20 coge la de Velocidad de Hechizo y −10 s de enfriamiento (antes de 16: +5 s de duración). Fubgun no coge movilidad hasta el tercer hueco, porque sin ella el buff está siempre activo."},
+  "drill-dart": {"nivel": "16", "por_que": "Como mínimo 16. Contra un jefe que pide aguantar, coge la absorción de vida en vez de Velocidad de habilidad."},
+  "snipe": {"nivel": "16", "por_que": "Ataque básico: acorta Flecha al objetivo y añade la cadena Tempest Arrow. A 20 añade Multigolpe."},
+  "tempest-shot": {"nivel": "16", "por_que": "De lo que más daño hace, pero con 16 basta: vas a ir con el Crítico al tope de todos modos. ¿Aún no llegas al 50 % de Crítico? Coge +10 % de Crítico de habilidad en vez del +12 % de daño (Fubgun)."},
+  "snare-shot": {"nivel": "12", "por_que": "El 12 sale casi gratis del tablero de Daevanion."},
+  "marking-shot": {"nivel": "12", "por_que": "+5 % de Perforación y +5 s de duración."},
+  "burst-arrow": {"nivel": "12", "por_que": "Movimiento y +20 % a un solo objetivo, como la llevan Whelps y Fubgun; a 20 añade la probabilidad de reiniciar el enfriamiento. Moxsy coge +50 % de Multigolpe en vez de la de movimiento: sumado a su propio 50 %, cada golpe sale como Multigolpe."},
+  "explosion-trap": {"nivel": "12", "por_que": "Solo para juntar monstruos (por ejemplo en Trascendencia)."},
+  "suppressing-arrow": {"nivel": "12", "por_que": "Solo por su aturdimiento: bien mientras subes de nivel, no se usa en el JcE final."},
+  "defiance": {"nivel": "12", "por_que": "A 16: la tercera y la quinta especialización."},
+  "arrow-scattershot": {"nivel": "12 al principio", "por_que": "Solo se puede usar con jefes en stagger. Whelps no la sube: en su rotación final las otras habilidades hacen más. aLuckyRO y LordRobson la llevan a 12 el primer día por el Multigolpe en la ventana de stagger: vale mientras los puntos son baratos y es lo primero que se quita después."},
+  "vaizels-authority": {"nivel": "20", "por_que": "Ojo concentrado y Alma de cazador x1,5; a 20 cada crítico tiene un 50 % de probabilidad de quitar 1 s a todos los enfriamientos: un salto enorme de DPS."},
+  "bow-of-blessing": {"nivel": "15, luego 20", "por_que": "Multigolpe, Ataque según el Crítico, Amplificación de Daño Crítico y Golpe."},
+  "supporting-fire": {"nivel": "10, luego 20", "por_que": "Un orbe que dispara contigo; mismo enfriamiento que Poder de Vaizel, así que pueden compartir tecla."},
+  "griffon-arrow": {"nivel": "15, luego 20", "por_que": "Daño en el tiempo de Crimson Flames; abre la línea de la macro."},
+  "explosive-arrow": {"nivel": "Hasta Flecha de grifo 15", "por_que": "El cuarto hueco antes de que Flecha de grifo llegue a 15: al principio su daño es parecido (LordRobson, JOHNPAL) y a 5 el enfriamiento de Flecha explosiva es 15 s más corto. aLuckyRO la lleva a 5 en lugar de Flecha de grifo el primer día. Fubgun: Flecha explosiva es más fuerte hasta que Flecha de grifo llega a 15, y en global eso tarda."},
+  "arrow-storm": {"nivel": "Subida de nivel", "por_que": "Área para los grupos de monstruos mientras subes de nivel."}
+ },
+ "traducciones": {
+  "explosive-arrow": {"efecto": "Elige un objetivo en un radio de 20 m e inflige daño de fuego a un máximo de 4 enemigos en un radio de 4 m. Un 20 % más de daño contra objetivos con Ralentización o Atadura. 20 de daño al medidor de stagger.", "specs": ["Reducción de 15 s de Tiempo de Enfriamiento", "+10 % de daño adicional contra objetivos con Ralentización o Atadura", "Al acertar, Crítico garantizado", "+20 % de daño adicional contra objetivos con Ralentización o Atadura"]},
+  "arrow-storm": {"efecto": "Elige un objetivo en un radio de 20 m e inflige daño de viento a un máximo de 4 enemigos en un radio de 4 m alrededor del objetivo, con un 50 % de probabilidad de Aturdimiento durante 3 s. Aturdimiento garantizado contra PNJ. 50 de daño al medidor de stagger.", "specs": ["Cuantos más objetivos se acierten, aumento máx. del 20 % de daño", "Al acertar, provoca Ralentización durante 10 s", "+1 s de duración del Aturdimiento", "Aumento del 25 % de probabilidad de Aturdimiento"]}
+ },
+ "secciones": {
+  "habilidades": [
+   {"tipo": "aviso", "texto": "Los huecos de especialización se abren a **8**, **12** y **20** (el 16 añade una opción, no un hueco): cada uno de esos niveles es un salto de poder. Primero las activas; luego las pasivas."},
+   {"tipo": "aviso", "texto": "**Solo unas pocas llegan a 20.** Los puntos de habilidad dan hasta 10; Daevanion añade 4, los anillos 2 y las Arcanas hasta 4. En Season 1 cuenta con Flecha al objetivo y Huracán de flechas a 20, y una tercera si las Arcanas salen bien."},
+   {"titulo": "Pasivas", "tipo": "lista", "items": [
+    "**Ojo concentrado** (Amplificación de Daño) y **Determinación de cazador** (daño crítico) son las únicas que importan de verdad; **Alma de cazador** es la tercera.",
+    "Luego las ofensivas: Fuego concentrado, Ojo de atadura y Disparo cercano.",
+    "Luego Ojo vigilante (Puntos de Vida) y Pacto de resurrección (cura al bajar del 10 %).",
+    "Determinación de resistencia y Vitalidad de viento casi no sirven: súbelas con los puntos que sobren."
+   ]}
+  ],
+  "estigmas": [
+   {"tipo": "aviso", "texto": "Súbelos parejos primero (5, 5, 5 y luego 10) para pasar por cada nivel clave. Cuando tengas los puntos para **Poder de Vaizel a 20**, reinicia y ponlo ahí el primero: es cuando el Ranger despega. Luego Flecha de grifo y Flecha de bendición a 15 (con Flecha de grifo a 15 sustituye a Flecha explosiva), luego Disparos de apoyo, y los cuatro a 20 al final."},
+   {"tipo": "aviso", "texto": "**Cuatro huecos, el último a nivel 37**: no hay un quinto a 45 en Season 1, así que Flecha explosiva es una alternativa para el cuarto, no un extra."},
+   {"titulo": "Cómo los llevan otros", "tipo": "lista", "items": [
+    "Fubgun (global, 15-oct): 20, 15, 15 y 11 (Poder de Vaizel, Flecha de bendición, Flecha de grifo y Disparos de apoyo); Disparos de apoyo el último, después de Flecha de grifo.",
+    "JOHNPAL (global, 17-oct): 20, 15, 15 y 10, en el mismo orden.",
+    "Los dos dejan Flecha explosiva a 5 hasta que Flecha de grifo llega a 15: a 5 su enfriamiento es de 30 s en vez de 45 y el daño es parecido.",
+    "Regla de Fubgun: sube Poder de Vaizel a 20 solo hacia 20, 10, 1 y 1 (Poder de Vaizel, Flecha de bendición, Disparos de apoyo, Flecha explosiva), porque Flecha de bendición a 5 y a 10 da mucho. Poder de Vaizel a 20 solo compensa con Crítico suficiente: pruébalo en el muñeco antes."
+   ]},
+   {"titulo": "Qué estigmas y a qué nivel", "tipo": "tabla", "columnas": ["Estigma", "Nivel", "Para qué"], "filas": [
+    ["Poder de Vaizel", "20", "Ojo concentrado y Alma de cazador x1,5; a 20, −1 s a todo con los críticos"],
+    ["Flecha de bendición", "15, luego 20", "Multigolpe, Ataque, daño crítico y Golpe"],
+    ["Disparos de apoyo", "10, luego 20", "Orbe que dispara contigo"],
+    ["Flecha de grifo", "15, luego 20", "Daño en el tiempo; abre la línea de la macro"],
+    ["Flecha explosiva", "5, hasta Flecha de grifo 15", "El cuarto hueco al principio"],
+    ["Tormenta de flechas", "Subida de nivel", "Área para grupos"]
+   ]},
+   {"comun": "fragmentos-estigma"}
+  ],
+  "equipo": [
+   {"tipo": "aviso", "texto": "El equipo es sencillo: lo de más nivel de objeto. En el final: arma, guarda y accesorios fabricados, brazaletes de Ludra y armadura de mazmorra. **Precisión para la raid**: en Corea el objetivo para Ludra era unos 1.200-1.300 (JOHNPAL: 1.200); úsalo de guía cuando llegues."},
+   {"titulo": "Soul Binding imprescindible", "tipo": "tabla", "columnas": ["Pieza", "Líneas"], "filas": [
+    ["Arma y guarda", "Velocidad de Hechizo, Amplificación de Daño de Arma, Amplificación de Daño, Might (y Multigolpe si es fabricada)"],
+    ["Casco y capa", "Golpe, Aumento de Ataque"],
+    ["Hombreras", "Golpe, Amplificación de Daño Crítico"],
+    ["Peto", "Amplificación de Daño"],
+    ["Grebas", "Aumento de Ataque, Tolerancia a Daño"],
+    ["Guantes / botas", "Velocidad de Hechizo / Velocidad de Movimiento"],
+    ["Pendientes / collar", "Velocidad de Movimiento y Might / Velocidad de Hechizo y Might"],
+    ["Anillos", "Niveles de Flecha al objetivo y Huracán de flechas (luego Flecha punzante o Disparo certero); si no, Might"]
+   ]},
+   {"titulo": "Estadísticas", "tipo": "lista", "items": [
+    "**La Precisión es la segunda estadística.** Los golpes bloqueados pierden más de la mitad del daño y el Ranger no siempre puede atacar por la espalda. Apunta a cerca de 1.100-1.200 (los apoyos añaden +100).",
+    "Huecos que quedan: Ataque, Crítico u Ojo concentrado, el que te salga primero. El Crítico es más fácil de topar para un Ranger (+300 de Flecha en el objetivo).",
+    "**Piedras de maná**: una línea amarilla de Ataque basta en Season 1; no persigas sets de ataque frontal o por la espalda.",
+    "Tira Soul Binding solo en armaduras que ya tengan una de las imprescindibles.",
+    "**Arco y guarda a +10** siempre, y piedras de maná básicas en todas las piezas: estadísticas baratas (Fubgun).",
+    "**Dónde tirar primero** (Fubgun): arma y guarda, luego anillos y collar (niveles de habilidad, Ataque, Might); más adelante, Velocidad de habilidad en guantes y daño crítico en hombreras. El Crítico topa en el 50 % en global: necesitas menos de lo que dicen las guías coreanas."
+   ]}
+  ],
+  "daevanion": [
+   {"tipo": "aviso", "texto": "Al final llenarás casi todos los tableros, así que no lo planees de más. Cada nodo azul da **+1 nivel** a su habilidad. Al final, rodea los nodos de +50 de Maná. Reiniciar un tablero es barato."},
+   {"titulo": "Prioridades", "tipo": "pasos", "items": [
+    "Nodos azules que llevan las activas a 12 (abren su segunda especialización): Flecha al objetivo, Disparo certero, Huracán de flechas, Flecha punzante y Estallido de flechas.",
+    "Nodos naranja ofensivos de las esquinas: Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento. Coge el camino más corto y las habilidades que pillen de paso.",
+    "Nodos de Ataque, Crítico, Ojo concentrado y Determinación de cazador; luego el resto (defensa: Defensa, Puntos de Vida, Resistencia Crítica)."
+   ]},
+   {"titulo": "Tableros", "tipo": "tabla", "columnas": ["Tablero", "Nivel", "Nodos naranja"], "filas": [
+    ["Nezekan", "12", "Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento"],
+    ["Zikel", "20", "Amplificación de Daño, Tolerancia a Daño"],
+    ["Vaizel", "30", "Amplificación y Tolerancia de Daño Crítico"],
+    ["Triniel", "40", "Multigolpe y su resistencia"],
+    ["Ariel", "45", "Solo JcE, con cristales propios (abajo)"]
+   ]},
+   {"comun": "ariel"},
+   {"comun": "cristales"}
+  ],
+  "coleccionables": [
+   {"tipo": "aviso", "texto": "Las Arcanas son la forma de pasar de 16. El objetivo es **+4 en Flecha al objetivo y Huracán de flechas**; un +4 en Disparo certero te da una tercera habilidad a 20."},
+   {"titulo": "Arcanas", "tipo": "tabla", "columnas": ["Carta", "Tipo", "Qué buscar"], "filas": [
+    ["Cáliz", "Vigor", "Flecha al objetivo, Huracán de flechas (comodín: puede sacar cualquiera)"],
+    ["Pergamino", "Vigor", "Disparo certero, Tiro rápido (Flecha punzante y Estallido de flechas de relleno)"],
+    ["Brújula", "Muerte o Libertad", "Flecha al objetivo, Huracán de flechas"],
+    ["Campana", "Destrucción", "Determinación de cazador"],
+    ["Espejo", "Sabiduría", "Ojo concentrado"]
+   ]},
+   {"titulo": "Orden de subida (Fubgun)", "tipo": "lista", "items": [
+    "Arcanas y anillos: Flecha al objetivo a 20 primero; luego Flecha punzante, Tiro rápido y Disparo certero a 16; luego Huracán de flechas a 16 por su −10 s de enfriamiento.",
+    "Ojo concentrado y Determinación de cazador nunca salen en la misma carta.",
+    "El Cáliz se puede transmutar con cinco Mysterious Crystals (de extraer cartas): elige Vitalidad primordial y Flecha al objetivo.",
+    "Con las habilidades principales a 20, las pasivas dan más.",
+    "Las Arcanas salen de la Trascendencia 4 y son pura suerte: no te agobies, seguramente cambien en Season 2."
+   ]},
+   {"comun": "titulos"},
+   {"comun": "titulos-nota"}
+  ],
+  "mascotas": [
+   {"comun": "mascotas"}
+  ]
+ }
+}

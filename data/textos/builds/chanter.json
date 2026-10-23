@@ -35,55 +35,38 @@
    "uso": "Contenido diario: Proclama de esprint e Ira de Marchutan."
   }
  ],
- "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
- "macros_por_preset": [],
+ "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
+ "macros_por_preset": [
+  {
+   "preset_en": "Party with a Cleric",
+   "pasos": [
+    "Fractura sombría",
+    "Fractura trituradora"
+   ],
+   "retardo_ms": 10,
+   "nota": "El paso 1 es la línea de Fractura sombría (con Golpe giratorio, Fractura impactante y Golpe incandescente apilados encima)."
+  },
+  {
+   "preset_en": "No Cleric in the party",
+   "pasos": [
+    "Fractura sombría",
+    "Fractura trituradora"
+   ],
+   "retardo_ms": 10,
+   "nota": "Misma macro en todos los presets."
+  },
+  {
+   "preset_en": "Dailies and farming",
+   "pasos": [
+    "Fractura sombría",
+    "Fractura trituradora"
+   ],
+   "retardo_ms": 10,
+   "nota": "Misma macro en todos los presets."
+  }
+ ],
  "secciones": {
   "equipo": [
-   {
-    "titulo": "Atributos que priorizar (PvE)",
-    "tipo": "tabla",
-    "columnas": [
-     "#",
-     "Atributo",
-     "Dónde / por qué"
-    ],
-    "filas": [
-     [
-      "1",
-      "**Velocidad de Hechizo**, Amplificación de Daño de Arma, Amplificación de Daño, Fuerza",
-      "Arma y guarda. Nunca habilidades ahí"
-     ],
-     [
-      "2",
-      "La línea clave de cada pieza",
-      "Golpe, Aumento de Ataque, Perforación, Amplificación de Daño Crítico"
-     ],
-     [
-      "3",
-      "Ataque y Crítico",
-      "Relleno"
-     ],
-     [
-      "4",
-      "Promesa de viento, Preparación de ataque, Hechizo de inspiración",
-      "Las pasivas de la build (en global saldrán menos que en Taiwán)"
-     ],
-     [
-      "5",
-      "Precisión total",
-      "Te falta al principio: sin ella tienes que pegar por la espalda"
-     ],
-     [
-      "6",
-      "Fractura sombría, Fractura trituradora, Golpe giratorio",
-      "Solo en anillos: las suben de 14 a 16"
-     ]
-    ]
-   },
-   {
-    "tipo": "aviso",
-    "texto": "En global cada pieza saca **4 o 5 líneas al azar** de su lista (5 en lo crafteado de rey dragón), no todas. En la ficha de cada pieza las líneas van **en orden**: si te salen las primeras, quédatela. Manastones: Ataque, Crítico, Precisión."
-   },
    {
     "titulo": "Ruta del arma",
     "tipo": "tabla",
@@ -397,57 +380,57 @@
     "filas": [
      [
       "Golpe incandescente",
-      "8 → 10",
+      "de 8 a 10",
       "En la prioridad: mucho daño en área"
      ],
      [
       "Fractura impactante",
-      "8 → 10",
+      "de 8 a 10",
       "En la prioridad: daño y aturdimiento"
      ],
      [
       "Hechizo de recobro",
-      "8 → 10",
+      "de 8 a 10",
       "En la prioridad: cura al grupo"
      ],
      [
       "Hechizo de furia",
-      "1 → 10",
+      "de 1 a 10",
       "Daño extra contra objetivo en Impacto/Tambaleo"
      ],
      [
       "Desenfreno de vendaval",
-      "4 → 10",
+      "de 4 a 10",
       "Daño en la ventana de Tambaleo"
      ],
      [
       "Trituración de acometida",
-      "8 → 10",
+      "de 8 a 10",
       "Daño en área y Maná"
      ],
      [
       "Golpe de onda abrasadora",
-      "4 → 10",
+      "de 4 a 10",
       "Daño en área"
      ],
      [
       "Fractura sísmica",
-      "8 → 10",
+      "de 8 a 10",
       "Daño tras esquiva o en vuelo"
      ],
      [
       "Bendición de vida",
-      "8 → 10",
+      "de 8 a 10",
       "Más vida"
      ],
      [
       "Voluntad de supervivencia",
-      "4 → 10",
+      "de 4 a 10",
       "Resistencia a efectos"
      ],
      [
       "Defensa en cruz",
-      "1 → 10",
+      "de 1 a 10",
       "Bloqueo (último)"
      ]
     ]
@@ -549,11 +532,6 @@
   ],
   "daevanion": [
    {
-    "id": "ariel",
-    "tipo": "aviso",
-    "texto": "**Nuevo (parche del 21-oct): tablero Ariel**, solo JcE y con cristales propios (60), no con los puntos de nivel. Salen del modo **Difícil** de Cueva de Krao y Draupnir (nivel de objeto 2.600). Su ruta está en la pestaña **Ariel** del tablero de arriba."
-   },
-   {
     "titulo": "Tableros",
     "tipo": "lista",
     "items": [
@@ -596,34 +574,19 @@
    {
     "id": "macro",
     "tipo": "aviso",
-    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
+    "texto": "La tecla de macro no viene asignada: Ajustes, Configuración de teclas, General, Macro: **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
    },
    {
-    "id": "pruebas",
-    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
-    "tipo": "lista",
-    "items": [
-     "Macro «E → Q» (Golpe incandescente en su propia pila) o «E → Clic izq.» con Golpe incandescente arriba de la E e Ira de Marchutan suelta en una tecla.",
-     "Skill Queue activado o desactivado (choca con el cancel de Fractura trituradora)."
-    ]
-   },
-   {
-    "id": "presets",
-    "titulo": "Otros presets",
-    "tipo": "lista",
-    "items": [
-     "Preset «Sin Clérigo en el grupo»: quita Defensa concentrada (tecla 5), Ira de Marchutan (tecla E) y pon **Proclama de esprint** en la 5, **Toque de recobro** en la 7, a mano.",
-     "Preset «Diarias y farmeo»: quita Defensa concentrada (tecla 5) y pon **Proclama de esprint** en la 5, a mano.",
-     "La macro es la misma: pulsa las mismas teclas."
-    ]
+    "tipo": "aviso",
+    "texto": "El Conjurador juega a dos cosas a la vez: mantener los buffs (de poner y olvidarse) y mantener abierta la ventana de Fractura sombría, que es donde va tu atención."
    },
    {
     "titulo": "Antes de empezar",
     "tipo": "lista",
     "items": [
-     "**Desactiva Skill Queue**: estorba al cancel del Conjurador (mantén Clic izq. y toca la E para cortar el final de Fractura trituradora con la línea de Fractura sombría). Si aún no usas el cancel, dejarlo activo no molesta.",
-     "Activa Proclama del invicto y Proclama de esprint a mano, una vez, antes del pull.",
-     "Fractura sombría solo se puede usar 2 s tras Golpe giratorio o Fractura impactante, y 3 s tras Ira de Marchutan.",
+     "**Desactiva Skill Queue**: estorba al mejor truco del Conjurador, cancelar el final de Fractura trituradora con la línea de Fractura sombría (mantén Clic izq. y toca la 4). Si aún no usas el cancel, dejarlo activo no molesta.",
+     "Activa Proclama del invicto (5) y Proclama de esprint a mano, una vez, antes del pull. **Nunca metas un mantra en una macro**: la segunda pulsación lo desactiva.",
+     "En una pila sale primero la fila de abajo.",
      "Fractura trituradora golpea 4 veces (el 4.º es Storm Chain) y cada golpe debe llegar a menos de 3 s del anterior."
     ]
    },
@@ -632,39 +595,39 @@
     "tipo": "tabla",
     "columnas": [
      "Buff",
-     "Uptime",
-     "Cómo"
+     "Tiempo activo",
+     "Cómo lo mantienes"
     ],
     "filas": [
      [
       "Proclama del invicto",
-      "100%",
+      "100 %",
       "Interruptor: actívalo una vez"
      ],
      [
       "Proclama de esprint",
-      "100%",
+      "100 %",
       "Interruptor: actívalo una vez"
      ],
      [
       "Poder de vendaval",
-      "Cerca de 22% a nivel 20",
+      "Cerca del 22 % a nivel 20",
       "20 s cada 90; justo antes del stagger del jefe"
      ],
      [
       "Stacks de Golpe giratorio",
-      "100%",
+      "100 %",
       "2 stacks 30 s; relánzalo en cuanto vuelva (25 s)"
      ],
      [
       "Promesa terrestre",
-      "Cerca de 50%",
+      "Cerca del 50 %",
       "Pasiva, 5 s de cada 10 mientras pegas"
      ],
      [
       "Debuff de Golpe ondulatorio",
-      "Cerca de 50%, 67% con spec 5",
-      "10 s de cada 20 (de cada 15 con spec 5 a 16)"
+      "Cerca del 50 %, 67 % con espec. 5",
+      "10 s de cada 20 (de cada 15 con espec. 5 a 16)"
      ],
      [
       "Círculo de protección",
@@ -674,24 +637,48 @@
     ]
    },
    {
-    "titulo": "Combate contra jefe",
+    "tipo": "aviso",
+    "texto": "Poder de vendaval: abre el combate con él y guarda los siguientes para justo antes de un stagger; la Velocidad de Hechizo acelera tus golpes con el jefe expuesto y el buff sigue al terminar el stagger. Avisa al grupo cuando lo pulses."
+   },
+   {
+    "titulo": "La barra",
+    "tipo": "lista",
+    "items": [
+     "**Clic izq.**: Fractura trituradora, entre todo lo demás.",
+     "**4** (el autor la tiene en Clic der.): línea de Fractura sombría. Fractura sombría abajo; si la ventana no está abierta, Golpe giratorio la reabre, luego Fractura impactante, y Golpe incandescente rellena.",
+     "**1**: Hechizo de recobro. **2**: Golpe ondulatorio. **3**: Trituración de acometida. **Q**: Fractura sísmica. **E**: Desenfreno de vendaval.",
+     "**Estigmas (5-8)**: Proclama del invicto, Poder de vendaval y los dos que cambian según el grupo. Ira de Marchutan (7) en su propia tecla, fuera de la línea: es tu forma de reserva de reabrir la ventana.",
+     "Golpe de onda abrasadora está en la barra del autor (una 9.ª casilla) pero su texto no lo nombra: aquí va encima de la Q."
+    ]
+   },
+   {
+    "titulo": "La macro",
+    "tipo": "lista",
+    "items": [
+     "La misma en todos los presets: dos pasos a 10 ms, la línea de Fractura sombría y luego Fractura trituradora. Con tus teclas: **4** y **Clic izq.** Mantenla y sigue tocando Fractura trituradora y la línea por encima.",
+     "A mano: Ira de Marchutan, Defensa concentrada, Hechizo de recobro, Golpe ondulatorio, los acercamientos y los dos mantras.",
+     "Antes de que Fractura sombría llegue a 16, su enfriamiento rompe la línea: pon un abridor en su propia tecla y púlsalo en cuanto Fractura sombría vuelva."
+    ]
+   },
+   {
+    "titulo": "Momento a momento",
     "tipo": "pasos",
     "items": [
-     "Mantras activos antes del pull. Abre con Poder de vendaval.",
-     "Entra con Trituración de acometida y luego Golpe giratorio para abrir la ventana y acumular Daño Crítico.",
-     "Mantén la macro y spamea la línea: cada abridor que vuelve es otra ventana de Fractura sombría.",
-     "¿Ventana cerrada y abridores en enfriamiento? Ira de Marchutan da 3 s más.",
-     "Golpe ondulatorio entre animaciones; Hechizo de recobro cuando el grupo lo necesite (una Evasión urgente cancela su pequeño retraso).",
-     "Defensa concentrada en los golpes fuertes; Eliminación de impacto si te aturden.",
-     "Poder de vendaval otra vez justo antes del siguiente stagger (avisa al grupo) y Desenfreno de vendaval con el jefe en stagger."
+     "Mantras activos antes del pull. Abre con Poder de vendaval (6).",
+     "Entra con Trituración de acometida (3) y luego Golpe giratorio para abrir la ventana y acumular Daño Crítico.",
+     "Mantén la macro y machaca la línea: cada abridor que vuelve es otra ventana de Fractura sombría.",
+     "¿Ventana cerrada y abridores en enfriamiento? Ira de Marchutan (7) da 3 s más.",
+     "Golpe ondulatorio (2) en los huecos entre animaciones; Hechizo de recobro (1) cuando el grupo lo necesite (una Evasión urgente cancela su pequeño retraso).",
+     "Defensa concentrada (8) en los golpes fuertes; Eliminación de impacto si te aturden.",
+     "Poder de vendaval otra vez justo antes del siguiente stagger y Desenfreno de vendaval (E) con el jefe en stagger."
     ]
    },
    {
     "titulo": "Otros objetivos",
     "tipo": "tabla",
     "columnas": [
-     "Situación",
-     "Secuencia"
+     "Objetivo",
+     "Rotación"
     ],
     "filas": [
      [
@@ -703,14 +690,6 @@
       "Fractura impactante, Fractura sombría, Golpe ondulatorio, Golpe giratorio, Fractura sombría"
      ]
     ]
-   },
-   {
-    "tipo": "aviso",
-    "texto": "NUNCA metas un mantra en una macro: la segunda pulsación lo desactiva. A mano también: Defensa concentrada, Hechizo de recobro, Golpe ondulatorio y los acercamientos. Ira de Marchutan va dentro de la pila E (3.ª), como abridor de reserva."
-   },
-   {
-    "tipo": "aviso",
-    "texto": "Antes de que Fractura sombría llegue a 16, su enfriamiento rompe la línea: pon un abridor de ventana en su propia tecla y púlsalo en cuanto Fractura sombría vuelva."
    },
    {
     "titulo": "Solapes con un Clérigo",
@@ -794,28 +773,6 @@
    }
   ],
   "mascotas": [
-   {
-    "id": "minimo",
-    "titulo": "Lo mínimo, sí o sí (al menos 1 vez)",
-    "tipo": "pasos",
-    "items": [
-     "**Golpe** en la ranura 4 de Special: es la única del juego que lo saca. Vale la Kinah extra.",
-     "La línea de daño de la **ranura 4** en cada genus: Cogni: **Amplificación de Daño Crítico**, Fera: **Amplificación de Daño de Arma**, Natura: **Perforación**, Varian: **Amplificación de Daño por la Espalda**. Si no sale, el plan B de la ficha.",
-     "Un **Ataque Máximo** (o Ataque Adicional) en la ranura 1 o la 5 de cada genus.",
-     "El resto (vida, Precisión, Crítico, Tolerancia) mejora poco a poco: no gastes Kinah persiguiendo tiradas perfectas ahí."
-    ]
-   },
-   {
-    "id": "como-tirar",
-    "titulo": "Cómo tirar sin tirar la Kinah",
-    "tipo": "lista",
-    "items": [
-     "Sube cada genus a **10** antes de bloquear nada: los niveles de las mascotas lo llevan a 8–9; el resto, con cristales (unos 30–40 cubos para todos).",
-     "Tira con **Auto Analyze**: marca las líneas que quieres, pon el grado en Único o Heroico y deja que tire hasta que salga una.",
-     "**Bloquea** una línea solo cuando esté cerca del máximo de su rango (una de daño al 2,3 % sí; un Ataque de 10 sobre 16, no).",
-     "Las ★★★ primero, luego las ★★ y al final las ★. Las 9 líneas de la ficha son la tirada perfecta: casi nadie la tiene completa."
-    ]
-   },
    {
     "titulo": "Reglas",
     "tipo": "lista",

@@ -34,60 +34,43 @@
    "uso": "Juego en solitario y grupos de enemigos."
   }
  ],
- "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
- "macros_por_preset": [],
+ "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
+ "macros_por_preset": [
+  {
+   "preset_en": "Boss dungeons with a Templar",
+   "pasos": [
+    "Explosión de furia",
+    "Punzada descendente",
+    "Embestida desgarradora"
+   ],
+   "retardo_ms": 10,
+   "nota": "Con ping de más de 80 ms, sube cada paso a 40-50 ms o la macro se saltará habilidades."
+  },
+  {
+   "preset_en": "Off-tank or no Templar",
+   "pasos": [
+    "Explosión de furia",
+    "Punzada descendente",
+    "Embestida desgarradora",
+    "Estacazo punzante"
+   ],
+   "retardo_ms": 10,
+   "nota": "Con ping de más de 80 ms, 40-50 ms por paso."
+  },
+  {
+   "preset_en": "Solo and open world",
+   "pasos": [
+    "Embestida de perdición",
+    "Explosión de furia",
+    "Punzada descendente",
+    "Onda pulverizadora"
+   ],
+   "retardo_ms": 10,
+   "nota": "Con ping de más de 80 ms, 40-50 ms por paso."
+  }
+ ],
  "secciones": {
   "equipo": [
-   {
-    "titulo": "Atributos que priorizar (PvE)",
-    "tipo": "tabla",
-    "columnas": [
-     "#",
-     "Atributo",
-     "Dónde / por qué"
-    ],
-    "filas": [
-     [
-      "1",
-      "**Amplificación de Daño de Arma** > Velocidad de Hechizo > Amplificación de Daño > Fuerza",
-      "Arma y guarda, en ese orden"
-     ],
-     [
-      "2",
-      "La línea clave de cada pieza",
-      "Golpe, Aumento de Ataque, Perforación, Amplificación de Daño Crítico"
-     ],
-     [
-      "3",
-      "Crítico y Ataque",
-      "Cualquier línea que diga daño antes que defensa"
-     ],
-     [
-      "4",
-      "**Preparación de ataque**",
-      "Pasiva n.º 1: daño JcE, defensa y precisión sin condiciones; después Contraataque experimentado"
-     ],
-     [
-      "5",
-      "Precisión total",
-      "Los jefes bloquean a un Gladiador corto de precisión"
-     ],
-     [
-      "6",
-      "Brazaletes: Sabiduría, Tiempo, Destrucción",
-      "Golpe, velocidad y daño"
-     ],
-     [
-      "7",
-      "Punzada descendente, Embestida desgarradora, Embestida de perdición",
-      "Solo en anillos"
-     ]
-    ]
-   },
-   {
-    "tipo": "aviso",
-    "texto": "En global cada pieza saca **4 o 5 líneas al azar** de su lista (5 en lo crafteado de rey dragón), no todas. En la ficha de cada pieza las líneas van **en orden**: si te salen las primeras, quédatela. Manastones: Ataque, Crítico, Precisión."
-   },
    {
     "titulo": "Ruta del arma",
     "tipo": "tabla",
@@ -405,27 +388,27 @@
     "filas": [
      [
       "Impulso de destrucción",
-      "1 → 10",
+      "de 1 a 10",
       "Daño extra contra objetivo en Impacto/Tambaleo"
      ],
      [
       "Identificación de debilidades",
-      "8 → 10",
+      "de 8 a 10",
       "Crítico y Perforación"
      ],
      [
       "Eliminación de impacto",
-      "8 → 10",
+      "de 8 a 10",
       "Rompe aturdimientos"
      ],
      [
       "Voluntad de supervivencia",
-      "1 → 10",
+      "de 1 a 10",
       "Resistencia a efectos"
      ],
      [
       "Armadura de protección",
-      "1 → 10",
+      "de 1 a 10",
       "Bloqueo (último)"
      ]
     ]
@@ -523,11 +506,6 @@
   ],
   "daevanion": [
    {
-    "id": "ariel",
-    "tipo": "aviso",
-    "texto": "**Nuevo (parche del 21-oct): tablero Ariel**, solo JcE y con cristales propios (60), no con los puntos de nivel. Salen del modo **Difícil** de Cueva de Krao y Draupnir (nivel de objeto 2.600). Su ruta está en la pestaña **Ariel** del tablero de arriba."
-   },
-   {
     "titulo": "Tableros",
     "tipo": "lista",
     "items": [
@@ -568,59 +546,55 @@
    {
     "id": "macro",
     "tipo": "aviso",
-    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
+    "texto": "La tecla de macro no viene asignada: Ajustes, Configuración de teclas, General, Macro: **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
    },
    {
-    "id": "pruebas",
-    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
-    "tipo": "lista",
-    "items": [
-     "Buffs (1) dentro de la macro o a mano justo antes del jefe o de un grupo grande (al principio de la temporada los enfriamientos son lentos).",
-     "Embestida desgarradora arriba de la Q (así no corta la animación de Punzada descendente) o arriba de la E."
-    ]
-   },
-   {
-    "id": "presets",
-    "titulo": "Otros presets",
-    "tipo": "lista",
-    "items": [
-     "Preset «Off-tank o sin Templario»: quita Bendición de Zikel (tecla 1), Blindaje de onda (tecla 1) y pon **Bloqueo concentrado** en la 6, **Espada de drenaje de sangre** en la 7, a mano.",
-     "Preset «Solitario y mundo abierto»: quita Bendición de Zikel (tecla 1) y pon **Espada de drenaje de sangre** en la 6, a mano.",
-     "La macro es la misma: pulsa las mismas teclas."
-    ]
+    "tipo": "aviso",
+    "texto": "Toda la rotación es una idea: abre Punzada descendente con Explosión de furia, machácala 10 s y rellena con Embestida desgarradora hasta que vuelva Explosión de furia."
    },
    {
     "titulo": "Antes de empezar",
     "tipo": "lista",
     "items": [
-     "**Activa Skill Queue**: hace más fluida la cadena de Explosión de furia a Punzada descendente.",
-     "Punzada descendente solo va sobre objetivo derribado, con un proc del 7% contra jefes que no se derriban, o con Explosión de furia (10 s).",
-     "Si tu ping pasa de 80 ms, sube cada paso de la macro a 40-50 ms."
+     "Activa **Skill Queue**: hace más fluida la cadena de Explosión de furia a Punzada descendente.",
+     "Si tu ping pasa de 80 ms, sube cada paso de la macro a 40-50 ms o se saltará habilidades."
     ]
    },
    {
-    "titulo": "Combate contra jefe",
-    "tipo": "pasos",
-    "items": [
-     "Antes del pull: Bendición de Zikel.",
-     "Entra con Perforación con salto y luego Embestida de perdición (20 s de Prepare for Battle).",
-     "Mantén la macro: pulsa la E (Explosión de furia abajo, sale en cuanto está lista, y Punzada descendente), la Q (Embestida de perdición; en el stagger, Desenfreno de aura de espada; Embestida desgarradora de relleno) y la 1 (Bendición de Zikel, Postura de asalto y Blindaje de onda); luego Punzada descendente y Upward Strike los 10 s completos. Aquí Postura de asalto recibe más críticos.",
-     "Rellena con Embestida desgarradora y Estacazo punzante hasta que vuelva Explosión de furia (los dos devuelven Maná).",
-     "Con Explosión de furia en enfriamiento: Espada devastadora, su Knockdown abre Punzada descendente.",
-     "Si tanqueas: Bloqueo concentrado en el primer golpe fuerte para tener el buff de grupo desde el principio."
-    ]
-   },
-   {
-    "titulo": "Ciclos",
+    "titulo": "La barra",
     "tipo": "lista",
     "items": [
-     "Embestida de perdición y Explosión de furia vuelven con 1-2 s de diferencia: lánzalas juntas como un solo ciclo.",
-     "Postura de asalto (60 s) entra cada dos ciclos de Explosión de furia (30 s), o antes si sus procs la recortan."
+     "**Clic izq.**: Estacazo punzante, ataque básico y Maná.",
+     "**Q** (tecla principal; el autor la tiene en Clic der.): Punzada descendente siempre que se pueda usar; Embestida desgarradora rellena el resto.",
+     "**1**: Embestida de perdición. **2**: Onda pulverizadora, con Desenfreno de aura de espada para jefes en stagger. **3**: Perforación con salto y Estacazo de acometida. **4** (Knockdown): Espada devastadora, Amarre aéreo y Corte de tobillo.",
+     "**Estigmas (5-8)**: Postura de asalto, Explosión de furia y los dos que cambian según la situación."
+    ]
+   },
+   {
+    "titulo": "La macro (cada preset la suya, 10 ms por paso)",
+    "tipo": "lista",
+    "items": [
+     "Mazmorras de jefes con Templario: Explosión de furia, Punzada descendente y Embestida desgarradora. Con tus teclas: **6** y **Q**.",
+     "Off-tank: lo mismo y Estacazo punzante. Con tus teclas: 6, Q y Clic izq.",
+     "Solitario: Embestida de perdición, Explosión de furia, Punzada descendente y Onda pulverizadora. Con tus teclas: 1, 6, Q y 2.",
+     "Nunca en una macro: Postura de asalto, Bendición de Zikel, Bloqueo concentrado ni los acercamientos."
+    ]
+   },
+   {
+    "titulo": "Momento a momento",
+    "tipo": "pasos",
+    "items": [
+     "Antes del pull: Bendición de Zikel (7).",
+     "Entra con Perforación con salto (3) y luego Embestida de perdición (1), por sus 20 s de Prepare for Battle.",
+     "Postura de asalto (5), Explosión de furia y mantén la macro: Punzada descendente y Upward Strike los 10 s completos. Punzada siempre es crítica: aquí Postura de asalto recibe más críticos.",
+     "Rellena con Embestida desgarradora y Estacazo punzante hasta que vuelva Explosión de furia (los dos devuelven Maná).",
+     "Con Explosión de furia en enfriamiento: Espada devastadora (4); su Knockdown abre Punzada descendente.",
+     "Si aguantas el aggro: Bloqueo concentrado en el primer golpe fuerte del jefe, para tener el buff de grupo desde el principio."
     ]
    },
    {
     "tipo": "aviso",
-    "texto": "Nunca en la macro: Bloqueo concentrado ni las habilidades para acortar distancias. Bendición de Zikel, Postura de asalto y Blindaje de onda sí van en la macro (pila del 1); en Season 1 puedes sacarlas y lanzarlas tú justo antes del jefe."
+    "texto": "Embestida de perdición y Explosión de furia vuelven con 1-2 s de diferencia: lánzalas juntas. Postura de asalto (60 s) entra cada dos ciclos de Explosión de furia (30 s), o antes si sus procs la recortan."
    }
   ],
   "coleccionables": [
@@ -691,28 +665,6 @@
    }
   ],
   "mascotas": [
-   {
-    "id": "minimo",
-    "titulo": "Lo mínimo, sí o sí (al menos 1 vez)",
-    "tipo": "pasos",
-    "items": [
-     "**Golpe** en la ranura 4 de Special: es la única del juego que lo saca. Vale la Kinah extra.",
-     "La línea de daño de la **ranura 4** en cada genus: Cogni: **Amplificación de Daño**, Fera: **Amplificación de Daño de Arma**, Natura: **Perforación**, Varian: **Amplificación de Daño Frontal**. Si no sale, el plan B de la ficha.",
-     "Un **Ataque Máximo** (o Ataque Adicional) en la ranura 1 o la 5 de cada genus.",
-     "El resto (vida, Precisión, Crítico, Tolerancia) mejora poco a poco: no gastes Kinah persiguiendo tiradas perfectas ahí."
-    ]
-   },
-   {
-    "id": "como-tirar",
-    "titulo": "Cómo tirar sin tirar la Kinah",
-    "tipo": "lista",
-    "items": [
-     "Sube cada genus a **10** antes de bloquear nada: los niveles de las mascotas lo llevan a 8–9; el resto, con cristales (unos 30–40 cubos para todos).",
-     "Tira con **Auto Analyze**: marca las líneas que quieres, pon el grado en Único o Heroico y deja que tire hasta que salga una.",
-     "**Bloquea** una línea solo cuando esté cerca del máximo de su rango (una de daño al 2,3 % sí; un Ataque de 10 sobre 16, no).",
-     "Las ★★★ primero, luego las ★★ y al final las ★. Las 9 líneas de la ficha son la tirada perfecta: casi nadie la tiene completa."
-    ]
-   },
    {
     "titulo": "Reglas",
     "tipo": "lista",

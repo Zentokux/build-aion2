@@ -34,60 +34,44 @@
    "uso": "Grupos de monstruos y subir de nivel: entra Tiro de daga sombría."
   }
  ],
- "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
- "macros_por_preset": [],
+ "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
+ "macros_por_preset": [
+  {
+   "preset_en": "Boss and dungeons",
+   "pasos": [
+    "Explosión de insignia",
+    "Estocada al corazón",
+    "Emboscada",
+    "Corte rápido"
+   ],
+   "retardo_ms": 10,
+   "nota": "En el juego son 2 pasos: la tecla de daño (Explosión de insignia con Estocada al corazón y Emboscada apiladas debajo) y Corte rápido."
+  },
+  {
+   "preset_en": "Progression and new fights",
+   "pasos": [
+    "Explosión de insignia",
+    "Estocada al corazón",
+    "Emboscada",
+    "Corte rápido"
+   ],
+   "retardo_ms": 10,
+   "nota": "Misma macro que en jefes."
+  },
+  {
+   "preset_en": "Farming and leveling",
+   "pasos": [
+    "Explosión de insignia",
+    "Estocada al corazón",
+    "Rugido bestial",
+    "Corte rápido"
+   ],
+   "retardo_ms": 10,
+   "nota": "Rugido bestial sustituye a Emboscada: en un grupo de monstruos no hay espalda que cuidar."
+  }
+ ],
  "secciones": {
   "equipo": [
-   {
-    "titulo": "Atributos que priorizar (PvE)",
-    "tipo": "tabla",
-    "columnas": [
-     "#",
-     "Atributo",
-     "Dónde / por qué"
-    ],
-    "filas": [
-     [
-      "1",
-      "**Velocidad de Hechizo**, Amplificación de Daño de Arma, Amplificación de Daño",
-      "Arma y guarda. Nunca habilidades ahí"
-     ],
-     [
-      "2",
-      "**Crítico**",
-      "Más que en otras clases: Estocada al corazón solo se reinicia con un crítico"
-     ],
-     [
-      "3",
-      "La línea clave de cada pieza",
-      "Golpe, Aumento de Ataque, Perforación, Amplificación de Daño Crítico (orden en la ficha de cada pieza)"
-     ],
-     [
-      "4",
-      "**Impacto trasero**",
-      "La mejor pasiva en equipo; después Explotar debilidades o Postura de agresión"
-     ],
-     [
-      "5",
-      "Ataque",
-      "Relleno en todas las piezas"
-     ],
-     [
-      "6",
-      "Fuerza y Precisión",
-      "Collar, pendientes y anillos"
-     ],
-     [
-      "7",
-      "Estocada al corazón, Corte rápido, Explosión de insignia",
-      "Solo en anillos: las suben de 14 a 16"
-     ]
-    ]
-   },
-   {
-    "tipo": "aviso",
-    "texto": "En global cada pieza saca **4 o 5 líneas al azar** de su lista (5 en lo crafteado de rey dragón), no todas. En la ficha de cada pieza las líneas van **en orden**: si te salen las primeras, quédatela. Manastones: Ataque, Crítico, Precisión."
-   },
    {
     "titulo": "Ruta del arma",
     "tipo": "tabla",
@@ -389,52 +373,52 @@
     "filas": [
      [
       "Ataque sigiloso",
-      "8 → 10",
+      "de 8 a 10",
       "En tu rotación: +20 % de Amplificación de Daño Crítico"
      ],
      [
       "Grieta defensiva",
-      "1 → 10",
+      "de 1 a 10",
       "−Defensa al objetivo: más daño a jefes"
      ],
      [
       "Postura de emboscada",
-      "1 → 10",
+      "de 1 a 10",
       "Daño extra tras moverte"
      ],
      [
       "Aplicación de veneno",
-      "8 → 10",
+      "de 8 a 10",
       "Daño continuo"
      ],
      [
       "Corte de destello",
-      "8 → 10",
+      "de 8 a 10",
       "Daño en área (hasta 4)"
      ],
      [
       "Caída sombría",
-      "4 → 10",
+      "de 4 a 10",
       "Golpe fuerte al objetivo aturdido"
      ],
      [
       "Corte torbellino",
-      "8 → 10",
+      "de 8 a 10",
       "Daño al esquivar"
      ],
      [
       "Infiltración",
-      "8 → 10",
+      "de 8 a 10",
       "Daño tras esquiva o en vuelo"
      ],
      [
       "Maximización de sexto sentido",
-      "1 → 10",
+      "de 1 a 10",
       "Más vida"
      ],
      [
       "Pacto de resurrección",
-      "1 → 10",
+      "de 1 a 10",
       "Resistencia a efectos (último)"
      ]
     ]
@@ -526,11 +510,6 @@
   ],
   "daevanion": [
    {
-    "id": "ariel",
-    "tipo": "aviso",
-    "texto": "**Nuevo (parche del 21-oct): tablero Ariel**, solo JcE y con cristales propios (60), no con los puntos de nivel. Salen del modo **Difícil** de Cueva de Krao y Draupnir (nivel de objeto 2.600). Su ruta está en la pestaña **Ariel** del tablero de arriba."
-   },
-   {
     "titulo": "Tableros",
     "tipo": "lista",
     "items": [
@@ -571,66 +550,62 @@
    {
     "id": "macro",
     "tipo": "aviso",
-    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
+    "texto": "La tecla de macro no viene asignada: Ajustes, Configuración de teclas, General, Macro: **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
    },
    {
-    "id": "pruebas",
-    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
+    "tipo": "aviso",
+    "texto": "La rotación tiene dos modos: fuera de la ventana, Insignias acumuladas y Explosión de insignia en marcha; dentro de la ventana, Estocada al corazón durante 20 s."
+   },
+   {
+    "titulo": "La barra",
     "tipo": "lista",
     "items": [
-     "Emboscada dentro de la pila E o fuera (algunos la quitan: ~3 % del daño).",
-     "Entre ventanas: guarda Pacto de celeridad y Colmillo salvaje para el siguiente Clon ilusorio (más burst) o úsalos al salir (daño más estable). En combates cortos, guárdalos."
+     "**Clic izq.**: Corte rápido. Púlsalo tú, aparte de la macro: cancela animaciones.",
+     "**E** (tecla de daño): Explosión de insignia, Estocada al corazón y Emboscada. Sale la primera que esté lista, en ese orden.",
+     "**A mano**: Rugido bestial (1, aunque tengas buen ping), Ataque sigiloso (2), Desenfreno de tormenta (3), Corte de destello (4) e Infiltración (Q).",
+     "**Estigmas (5-8)**: Clon ilusorio, Pacto de celeridad, Colmillo salvaje y Puñal de Triniel. A mano, nunca en una macro."
     ]
    },
    {
-    "id": "presets",
-    "titulo": "Otros presets",
+    "titulo": "La macro",
     "tipo": "lista",
     "items": [
-     "Preset «Progresión y combates nuevos»: quita Puñal de Triniel (tecla 1) y pon **Postura de evasión** en la 6, a mano.",
-     "Preset «Farmeo y subida de nivel»: quita Puñal de Triniel (tecla 1) y pon **Tiro de daga sombría** en la 6, a mano.",
-     "La macro es la misma: pulsa las mismas teclas."
-    ]
-   },
-   {
-    "titulo": "Posicionamiento",
-    "tipo": "lista",
-    "items": [
-     "Tu sitio es la **espalda del jefe**: Impacto trasero, Emboscada, Puñal de Triniel y todo lo de Ataque por la Espalda solo rinde ahí. Cuenta con estar detrás entre el 60 y el 80% del combate.",
-     "Ataque sigiloso y Corte de destello te devuelven detrás cuando el jefe se gira.",
-     "Abre desde Sigilo con Emboscada o Ataque sigiloso si el combate lo permite.",
-     "Infiltración necesita una esquiva antes (o vuelo): es para recolocarte, no para abrir.",
-     "Avisa al tanque de que eres Sicario: un jefe mirando al tanque es tu mayor buff."
+     "Dos pasos a 10 ms y mantenla pulsada: la **E** y **Clic izq.** (Corte rápido).",
+     "El preset de farmeo cambia Emboscada por Rugido bestial: en un grupo de monstruos no hay espalda que cuidar.",
+     "Si el primer día te parece mucho, empieza con una macro sencilla: al principio no tienes Velocidad de Hechizo para notar la diferencia."
     ]
    },
    {
     "titulo": "Ventana de burst",
     "tipo": "pasos",
     "items": [
-     "Ponte a la espalda del jefe con el 2 (Ataque sigiloso). Para moverte, la pila del 4 (Corte torbellino, Infiltración y Caída sombría); para acercarte, Corte de destello (3).",
-     "Pulsa la pila del 1 varias veces: Clon ilusorio, Pacto de celeridad y Colmillo salvaje (pone las 5 Insignias de golpe).",
-     "Una pulsación más del 1 y sale Puñal de Triniel, por el −10% a todos tus enfriamientos.",
-     "Mantén la macro (solo pulsa la E: Estocada al corazón sale en cada pulsación) y, aparte, Clic izq. (Corte rápido): cada golpe acorta Explosión de insignia.",
-     "Si el jefe entra en stagger: Desenfreno de tormenta (tecla 5), metiendo Corte rápido entre medias."
+     "Ponte a la espalda del jefe: Ataque sigiloso (2) si no estás.",
+     "Clon ilusorio (5), Pacto de celeridad (6) y Colmillo salvaje (7): Colmillo pone las 5 Insignias de golpe.",
+     "Puñal de Triniel (8) justo después: −10 % a todos tus enfriamientos.",
+     "Mantén la macro: Estocada al corazón sale en cada pulsación y Corte rápido recorta Explosión de insignia.",
+     "Jefe en stagger: Desenfreno de tormenta (3)."
     ]
    },
    {
     "titulo": "Entre ventanas",
-    "tipo": "pasos",
+    "tipo": "lista",
     "items": [
      "Corte rápido para el Maná y para recortar Explosión de insignia.",
-     "Cadena de Rugido bestial y Emboscada para acumular Insignias, luego Explosión de insignia.",
+     "Rugido bestial (1) y Emboscada para acumular Insignias; luego Explosión de insignia.",
      "Estocada al corazón cada vez que un crítico la reinicie.",
-     "Vigila el temporizador de Clon ilusorio: a veces conviene guardar enfriamientos unos segundos para el siguiente Clon."
+     "Vigila el Clon ilusorio: en global los combates son largos y a veces conviene aguantar los enfriamientos unos segundos para el siguiente Clon."
     ]
    },
    {
-    "tipo": "aviso",
-    "texto": "Nunca en la macro: los cuatro estigmas (pila del 1, a mano; desde la macro los buffs se desincronizan). Rugido bestial va arriba del todo en la línea de daño: solo sale cuando todo lo demás está en enfriamiento. Pulsa tú también Clic izq. (Corte rápido): cada golpe acorta Explosión de insignia."
-   },
-   {
-    "tipo": "aviso",
-    "texto": "El primer día, si todo esto te supera, usa una macro sencilla: al principio no tienes Velocidad de Hechizo para notar la versión elaborada."
+    "titulo": "Posicionamiento",
+    "tipo": "lista",
+    "items": [
+     "Tu sitio es la **espalda del jefe**: Impacto trasero, Emboscada, Puñal de Triniel y todo lo de Ataque por la Espalda solo rinde ahí.",
+     "Ataque sigiloso y Corte de destello te ponen detrás o te hacen pasar al objetivo: úsalos cuando el jefe se gire.",
+     "Abre desde Sigilo con Emboscada o Ataque sigiloso si el combate lo permite.",
+     "Infiltración necesita una esquiva antes (o vuelo): es para recolocarte, no para abrir.",
+     "Avisa al tanque de que eres Sicario: un jefe mirando al tanque todo el combate es tu mayor buff."
+    ]
    }
   ],
   "coleccionables": [
@@ -712,28 +687,6 @@
    }
   ],
   "mascotas": [
-   {
-    "id": "minimo",
-    "titulo": "Lo mínimo, sí o sí (al menos 1 vez)",
-    "tipo": "pasos",
-    "items": [
-     "**Golpe** en la ranura 4 de Special: es la única del juego que lo saca. Vale la Kinah extra.",
-     "La línea de daño de la **ranura 4** en cada genus: Cogni: **Amplificación de Daño Crítico**, Fera: **Amplificación de Daño de Arma**, Natura: **Perforación**, Varian: **Amplificación de Daño por la Espalda**. Si no sale, el plan B de la ficha.",
-     "Un **Ataque Máximo** (o Ataque Adicional) en la ranura 1 o la 5 de cada genus.",
-     "El resto (vida, Precisión, Crítico, Tolerancia) mejora poco a poco: no gastes Kinah persiguiendo tiradas perfectas ahí."
-    ]
-   },
-   {
-    "id": "como-tirar",
-    "titulo": "Cómo tirar sin tirar la Kinah",
-    "tipo": "lista",
-    "items": [
-     "Sube cada genus a **10** antes de bloquear nada: los niveles de las mascotas lo llevan a 8–9; el resto, con cristales (unos 30–40 cubos para todos).",
-     "Tira con **Auto Analyze**: marca las líneas que quieres, pon el grado en Único o Heroico y deja que tire hasta que salga una.",
-     "**Bloquea** una línea solo cuando esté cerca del máximo de su rango (una de daño al 2,3 % sí; un Ataque de 10 sobre 16, no).",
-     "Las ★★★ primero, luego las ★★ y al final las ★. Las 9 líneas de la ficha son la tirada perfecta: casi nadie la tiene completa."
-    ]
-   },
    {
     "titulo": "Reglas",
     "tipo": "lista",

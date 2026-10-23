@@ -1,0 +1,144 @@
+{
+ "clase": "templar",
+ "nombre": "Templario",
+ "resumen": "El tanque principal de AION 2, que además hace daño de verdad. Toda la build se apoya en una **santa trinidad** de habilidades que suben a 20 cuanto antes (Juicio, Castigo y Azotamiento continuo) y que usas todo lo que puedas. Lo que limita a un Templario no es la supervivencia, es el daño. La build en una frase: las habilidades de escudo activan Juicio; mantén la macro (abre con Escudo de perdición, mantiene Juicio y rellena con Azotamiento continuo y sus procs), carga Castigo en cuanto vuelva y bloquea los golpes fuertes para mantener Arrebato en el grupo.",
+ "pros": [
+  "Tanque principal que además hace daño de verdad",
+  "Arrebato: cada bloqueo da Amplificación de Daño de JcE a todo el grupo",
+  "Supervivencia de sobra: lo que hay que subir es el daño",
+  "Escudo de perdición se reinicia al matar a 15: muy bueno para farmear mascotas"
+ ],
+ "contras": [
+  "Depende de llevar a 20 cuanto antes Juicio, Castigo y Azotamiento continuo: los Fragmentos de punto de habilidad marcan el ritmo",
+  "Cada cambio de estigma cuesta algo: sin Escudo de perdición pierdes procs de Juicio; sin Castigo empíreo, stagger; sin Estandarte, daño",
+  "Castigo es una carga: hay que cargarlo a mano cada vez que vuelve"
+ ],
+ "presets": [
+  {"nombre_en": "pve", "nombre": "JcE (grupo)", "uso": "Castigo empíreo, Estandarte del campo de batalla, Escudo de perdición y Provocación. Alternativas: Nezekan's Shield, Comrade in Arms."},
+  {"nombre_en": "solo", "nombre": "JcE en solitario", "uso": "Castigo empíreo, Estandarte del campo de batalla, Escudo de perdición y Nezekan's Shield: solo no necesitas aggro ni herramientas de grupo."},
+  {"nombre_en": "survive", "nombre": "Mazmorra con más supervivencia", "uso": "Castigo empíreo, Estandarte del campo de batalla, Provocación y Comrade in Arms. Cuesta los procs de Juicio de Escudo de perdición."},
+  {"nombre_en": "damage", "nombre": "Daño (barra de Leonis)", "uso": "Escudo de perdición, Estandarte del campo de batalla, Castigo empíreo y Armadura de nobleza; es la barra de la rotación. Escudo de protección en lugar de Castigo empíreo si el sanador flojea o el combate es nuevo."}
+ ],
+ "cartas": {
+  "judgment": {"nivel": "20", "por_que": "Tu daño principal: Golpe de escudo, Estacazo de amparo, Asalto con escudo y Escudo de perdición lo activan, y a 16 su enfriamiento desaparece."},
+  "punishment": {"nivel": "20", "por_que": "Burst cargado: daño en el tiempo, crítico garantizado atravesando el Bloqueo y +30 % de Velocidad de habilidad. Nunca cojas las espec. de movimiento ni de absorción de vida: son un cebo cuando ya tienes velocidad de ataque de sobra."},
+  "pummel": {"nivel": "20", "por_que": "Relleno y stagger, y lo que mantiene el buff de Castigo. Espec. de Leonis: +12 % a un solo objetivo y −1 s al enfriamiento de Castigo con cada golpe. Castigo da +20 % de Amplificación de Daño de JcE durante 20 s, y con esta espec. su enfriamiento baja de 20 s, así que el aumento nunca se cae: de cerca de 22.000 a 26.000 DPS en su prueba en el muñeco (trueeevil también la coge). A 20 añade el daño extra de Punishing Strike. Súbela a 20 cuanto antes. SolAshur va por otro lado: todo a Punishing Strike, con la absorción del 3 % en vez de −1 s; cógela solo si necesitas la cura."},
+  "annihilate": {"nivel": "16, luego 20", "por_que": "+100 % de daño a jefes inmunes a control y −10 s de enfriamiento. El tercer hueco se abre a 20: Multigolpe para jefes."},
+  "shield-smite": {"nivel": "16", "por_que": "Activa Juicio; −2 s de enfriamiento y un 50 % de probabilidad de activar Embestida decadente."},
+  "debilitating-smash": {"nivel": "12", "por_que": "Se activa tras un bloqueo o tras Golpe de escudo; ignora Bloqueo y Evasión."},
+  "warding-strike": {"nivel": "12", "por_que": "Activa Juicio; Bloqueo y tolerancia a daño mientras dura su efecto."},
+  "flash-rampage": {"nivel": "12, luego 16", "por_que": "Solo contra objetivos en stagger; −1 s a todos los enfriamientos por golpe. Ya no va en la línea de JcE: Leonis la quitó porque perdía daño, Azotamiento continuo rellena mejor los huecos. Sáltate también sus nodos de Daevanion. La espec. de −1 s necesita 16; a 12 coge Multigolpe y la de Maná."},
+  "shield-rush": {"nivel": "12", "por_que": "Esquiva y embestida, activa Juicio; −10 s de enfriamiento y +10 m de alcance."},
+  "vicious-strike": {"nivel": "10", "por_que": "Ataque básico en Clic izq.; con los 10 de los puntos de habilidad basta."},
+  "empyrean-lords-punishment": {"nivel": "15", "por_que": "Daño en área con mucho stagger (+50 a 10); a 15, +10 % de Amplificación de Daño de JcE. Necesario contra jefes con mecánica de stagger."},
+  "battlefield-banner": {"nivel": "15", "por_que": "Tu buff de daño: Multigolpe, Amplificación de Daño de Arma y Ataque según tu Defensa. Los niveles buenos son el 10 y el 15."},
+  "doom-shield": {"nivel": "15", "por_que": "Tu principal activador de Juicio. A 15 se reinicia al matar: clave para JcJ+JcE y para farmear mascotas."},
+  "taunt": {"nivel": "5", "por_que": "Aggro en contenido de grupo. En solitario, coge Nezekan's Shield."},
+  "nezekans-shield": {"nivel": "Alternativa", "por_que": "Cambio de supervivencia; no vale antes de 15."},
+  "comrade-in-arms": {"nivel": "En grupo", "por_que": "Cambio de supervivencia en mazmorras, en lugar de Escudo de perdición. No sirve en solitario."},
+  "executing-blade": {"nivel": "Solo, al empezar", "por_que": "La elección de JcE del primer día de trueeevil: −30 % de Defensa al objetivo y Exposed a 10. Abre con ella y luego Castigo. Alternativa para solitario y para el principio, en lugar de Castigo empíreo o Provocación."},
+  "shield-of-protection": {"nivel": "Cambio seguro", "por_que": "El cambio de Leonis por Castigo empíreo cuando el sanador flojea o el combate es nuevo: un bloqueo total que anula el daño y cura un poco; a 10 te puedes mover mientras dura."},
+  "noble-armor": {"nivel": "Solo, al empezar", "por_que": "Puntos de Vida y Defensa durante 2 minutos con 2 minutos de enfriamiento: siempre activa. trueeevil la lleva en solitario; en grupo importan más Provocación y el estigma de stagger."}
+ },
+ "traducciones": {
+  "flash-rampage": {"efecto": "Inflige daño a un objetivo en estado de stagger en un radio de 4 m y aumenta la enemistad.", "specs": ["Absorción del 5 % de Puntos de Vida", "Al acertar, recupera 120 de Puntos de Maná", "Cambio a habilidad disponible en movimiento", "Al acertar, Multigolpe", "Al acertar, reducción de 1 s del Tiempo de Enfriamiento de todas las habilidades"]},
+  "battlefield-banner": {"efecto": "Aumenta el Ataque en proporción a la Defensa durante 10 s.", "specs": ["Aumento del 10 % de probabilidad de Multigolpe mientras dura", "Aumento del 10 % de Amplificación de Daño de Arma mientras dura", "Aumento del 20 % del Ataque proporcional a la Defensa", "Reducción de 30 s de Tiempo de Enfriamiento"]},
+  "doom-shield": {"efecto": "Embiste a un objetivo en un radio de 20 m y le inflige daño, con un 75 % de probabilidad de Derribo durante 3 s. Al acertar, da un escudo protector que bloquea daño igual al 5 % de los Puntos de Vida máximos durante 5 s y activa [Juicio] durante 3 s. Derribo garantizado contra PNJ. 20 de daño al medidor de stagger.", "specs": ["Al acertar, restablecimiento del Tiempo de Enfriamiento de [Aniquilación]", "Al acertar, +200 de Bloqueo durante 5 s", "Al derrotar a un enemigo, restablecimiento del Tiempo de Enfriamiento", "Aumento del 25 % de probabilidad de Derribo"]},
+  "nezekans-shield": {"efecto": "Da a ti y a los miembros del grupo en un radio de 40 m un escudo protector que bloquea daño igual al 41 % de los Puntos de Vida máximos durante 3 s.", "specs": ["+20 % de tolerancia a todos los elementos mientras dura el escudo", "+2 s de duración del escudo protector", "+20 % de Tolerancia a Daño JcE y +10 % de tolerancia a daño JcJ mientras dura el escudo", "Al desaparecer el escudo, recupera el 20 % de los Puntos de Vida máximos"]},
+  "comrade-in-arms": {"efecto": "Aumenta un 20 % tu Tolerancia a Daño JcE y un 10 % la de JcJ, y durante 6 s reparte el daño que recibe un miembro del grupo en un radio de 40 m: 50 % para ti y 50 % para él. No le afectan los aumentos de enfriamiento.", "specs": ["Recupera una vez el 25 % de los Puntos de Vida máximos si te golpean durante el efecto con 25 % de vida o menos", "Efecto del escudo de [Sello de protección] x1,5 mientras dura", "Efecto de [Restricción de dolor] x1,5 mientras dura", "Al terminar el efecto, recuperas el 50 % de tus Puntos de Vida máximos"]},
+  "executing-blade": {"efecto": "Inflige daño a un máximo de 4 enemigos en un radio de 4 m y les reduce un 30 % la Defensa durante 5 s. Un 20 % más de daño contra objetivos con estado de tipo impacto. 20 de daño al medidor de stagger.", "specs": ["Reducción de 15 s de Tiempo de Enfriamiento", "Al acertar, provoca Exposed durante 5 s", "Al acertar, Crítico garantizado", "+30 % de daño contra objetivos con estado de tipo impacto"]}
+ },
+ "secciones": {
+  "habilidades": [
+   {"tipo": "aviso", "texto": "La santa trinidad va a **20** primero. Las habilidades llegan a 10 con los puntos de habilidad y a 14 con Daevanion; luego los anillos y las Arcanas suben la trinidad. Las especializaciones son las de SolAshur."},
+   {"titulo": "Consejos", "tipo": "lista", "items": [
+    "**Guarda tres presets de habilidades** (JcE, JcJ y mixto): cambiar de contenido es un clic.",
+    "**Junta pronto los Fragmentos de punto de habilidad**: marcan lo rápido que la trinidad llega a 20."
+   ]},
+   {"titulo": "Pasivas", "tipo": "tabla", "columnas": ["#", "Pasiva", "Por qué"], "filas": [
+    ["1", "Arrebato", "Amplificación de Daño de JcE para ti y el grupo después de cada bloqueo: por esto los grupos quieren un Templario"],
+    ["2", "Favor de condena", "Crítico y un proc de daño extra con cada golpe; lo saca la carta Campana"],
+    ["3", "Rugido agravante", "Enemistad y Ataque en los golpes de frente"],
+    ["4", "Defensa de tenacidad", "Defensa y Tenacidad: la base de la build de Tenacidad. En el personaje de SolAshur (+6 niveles) da +37 % de Defensa y +16 % de Tenacidad"]
+   ]}
+  ],
+  "estigmas": [
+   {"tipo": "aviso", "texto": "**Primero a lo ancho:** 1 punto en los cuatro; luego Castigo empíreo y Estandarte del campo de batalla a 5; luego los niveles clave: Castigo empíreo de 10 a 15, Estandarte de 10 a 15 y Escudo de perdición a 15."},
+   {"titulo": "Qué estigmas y a qué nivel", "tipo": "tabla", "columnas": ["Estigma", "Nivel", "Para qué"], "filas": [
+    ["Castigo empíreo", "15", "Daño en área y stagger; +10 % de Amplificación de Daño de JcE a 15"],
+    ["Estandarte del campo de batalla", "15", "Tu buff de daño"],
+    ["Escudo de perdición", "15", "Activa Juicio; se reinicia al matar a 15"],
+    ["Provocación", "5", "Aggro en grupo"],
+    ["Nezekan's Shield", "Alternativa", "Supervivencia; no antes de 15"],
+    ["Comrade in Arms", "En grupo", "Supervivencia en mazmorras, en lugar de Escudo de perdición"],
+    ["Executing Blade", "Solo, al empezar", "−30 % de Defensa al objetivo"],
+    ["Escudo de protección", "Cambio seguro", "Por Castigo empíreo si el sanador flojea o el combate es nuevo"],
+    ["Armadura de nobleza", "Solo, al empezar", "Puntos de Vida y Defensa siempre activos"]
+   ]},
+   {"titulo": "Juegos de estigmas", "tipo": "tabla", "columnas": ["Perfil", "4 estigmas", "Alternativas"], "filas": [
+    ["JcE", "Castigo empíreo, Estandarte del campo de batalla, Escudo de perdición, Provocación", "Nezekan's Shield, Comrade in Arms"],
+    ["JcE en solitario", "Castigo empíreo, Estandarte del campo de batalla, Escudo de perdición, Nezekan's Shield", "Solo no necesitas aggro ni herramientas de grupo"],
+    ["JcE, mazmorra con más supervivencia", "Castigo empíreo, Estandarte del campo de batalla, Provocación, Comrade in Arms", "Cuesta los procs de Juicio de Escudo de perdición"]
+   ]},
+   {"tipo": "aviso", "texto": "Cada cambio cuesta algo: sin Escudo de perdición pierdes procs de Juicio; sin Castigo empíreo, stagger; sin el Estandarte, daño. Si necesitas supervivencia, el que se va es Escudo de perdición cuando el combate no necesita su movilidad."},
+   {"comun": "fragmentos-estigma"}
+  ],
+  "equipo": [
+   {"titulo": "Ruta del equipo desde el primer día", "tipo": "pasos", "items": [
+    "**Set Holy Spirit** (Holy Spirit Breastplate para Elyos, en Verteron y Eltnen; los Asmodian tienen el mismo equipo como set **Spectral**, en Altgard y Morheim). Farméalo en el Abismo bajo (AP, mascotas y oro por muerte, y jefes que aparecen) o en cualquier parte del mundo abierto. Apunta a unos **1.600 de Poder de Combate**.",
+    "**Sáltate el primer tramo de mazmorras**: Cañón de Urugugu por la Aulamus Longsword (nivel de objeto 76, ataque 308-385, ligada al recogerla) e Isla Aérea de Vakron por la Vakron Guard (nivel de objeto 76) y la armadura de Vakron. Sigue mejorando las piezas de Vakron hasta que puedas con el Templo de Fuego.",
+    "Usa **Trascendencia** para prepararte para el **Templo de Fuego** (Enraged Kromede Sword, nivel de objeto 84, ataque 340-425 y más alcance) y la **Caverna del Cuerno Feroz** (armadura de Nuakum). Nuakum es el farmeo más seguro: casi todas las piezas son mejora, mientras que el cofre de armas puede soltar armas de otras clases.",
+    "**Objetivo final en JcE**: la espada de White Dragon Lord, luego la guarda y los accesorios, con armadura de Nuakum (la armadura completa de White Dragon solo añade tolerancia de JcE y es para quien gasta mucho). La opción mixta, la de la mayoría: espada de Kromede enfurecida, guarda y accesorios de White Dragon, armadura de Nuakum."
+   ]},
+   {"tipo": "aviso", "texto": "**Alas**: Dark Veil al principio (bonus de ataque, Amplificación de Daño) y Talisra al final: Ataque 60, Defensa 400, Precisión 35 y 4 % de Reducción de Tiempo de Enfriamiento. Acumula Reducción de Tiempo de Enfriamiento cuanto antes: enfriamientos de escudo más cortos son más procs de Juicio. Colecciona también el resto de alas: sus efectos de posesión y la energía de vuelo ayudan a farmear el Abismo."},
+   {"titulo": "Dos builds de estadísticas", "tipo": "lista", "items": [
+    "**A · Bloqueo, Evasión y Destreza**: principio y mitad del juego, contra rivales sin mucha Precisión. La Destreza alimenta el Bloqueo y la Evasión. La elección de SolAshur para el lanzamiento.",
+    "**B · Bloqueo, Tenacidad y Defensa de tenacidad**: final del juego; con 100 % de Tenacidad un golpe hace un 50 % menos de daño."
+   ]},
+   {"titulo": "Soul Binding del Templario", "tipo": "tabla", "columnas": ["Pieza", "Línea única", "Luego"], "filas": [
+    ["Arma y guarda", "Velocidad de Hechizo y Amplificación de Daño de Arma", "Might y Multigolpe; Precision si no llegas al tope de Precisión"],
+    ["Casco", "Curación Recibida", "Ataque, Might, Crítico, Precision"],
+    ["Hombreras", "Amplificación de Daño Crítico", "Ataque, Might, Precision, Perforación"],
+    ["Peto", "Amplificación de Daño", "Ataque, Might, Crítico, Físico"],
+    ["Guantes", "Velocidad de Hechizo", "Perforación, Ataque, Might, Multigolpe"],
+    ["Grebas", "Perforación", "Tolerancia a Daño, Ataque, Might, Físico"],
+    ["Botas", "Velocidad de Movimiento", "Perforación, Ataque, Might, Destreza"],
+    ["Capa", "Tolerancia a Daño Crítico", "Perforación, Tolerancia a Daño, Ataque"],
+    ["Anillos, pendientes y collar", "Anillos: tus 4 mejores activas", "Pendientes: tus 4 mejores pasivas; collar: 2 activas y Ataque, Crítico, Amplificación de Daño de Arma"]
+   ]},
+   {"tipo": "aviso", "texto": "**Panteón:** Sabiduría (Golpe) primero y Espacio (Bloqueo); luego Fantasía (Reducción de Tiempo de Enfriamiento) para JcE. No gastes recursos en forzar retratos pronto: se abren jugando."}
+  ],
+  "daevanion": [
+   {"tipo": "aviso", "texto": "Daevanion lleva tus habilidades de 10 a 14 y añade estadísticas. Cada nodo azul da **+1 nivel** a su habilidad."},
+   {"titulo": "Prioridades", "tipo": "lista", "items": [
+    "Primero los nodos azules de Juicio, Castigo y Azotamiento continuo; luego Golpe de escudo y Aniquilación; después los naranja.",
+    "**Sáltate**: los nodos de Maná (pon esos puntos en Ataque), los de Desenfreno de destello y los verdes de Escudo de amparo y Guardian Shield, salvo que te sobren puntos.",
+    "Azphel (nivel 45) es todo Amplificación y Tolerancia de Daño de JcJ: no cuenta para JcE."
+   ]},
+   {"titulo": "Tableros", "tipo": "tabla", "columnas": ["Tablero", "Nivel", "Nodos naranja"], "filas": [
+    ["Nezekan", "12", "Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento"],
+    ["Zikel", "20", "Amplificación de Daño, Tolerancia a Daño"],
+    ["Vaizel", "30", "Amplificación y Tolerancia de Daño Crítico"],
+    ["Triniel", "40", "Multigolpe y su resistencia"],
+    ["Ariel", "45", "Solo JcE, con cristales propios (abajo)"]
+   ]},
+   {"comun": "ariel"},
+   {"comun": "cristales"}
+  ],
+  "coleccionables": [
+   {"titulo": "Arcanas", "tipo": "tabla", "columnas": ["Carta", "Qué buscar"], "filas": [
+    ["Cáliz", "Azotamiento continuo, Castigo"],
+    ["Pergamino", "Juicio, Castigo"],
+    ["Brújula", "Azotamiento continuo, Golpe de escudo"],
+    ["Campana", "Arrebato, Favor de condena"]
+   ]},
+   {"tipo": "aviso", "texto": "Busca los efectos de set de daño antes que los de supervivencia: la supervivencia del Templario ya es suficiente."},
+   {"comun": "titulos"},
+   {"comun": "titulos-nota"}
+  ],
+  "mascotas": [
+   {"tipo": "aviso", "texto": "Las mascotas del Templario son las mismas que las de las clases de daño: qué subir, cómo tirar y qué bloquear en cada rueda, abajo. No te saltes las mascotas."},
+   {"comun": "mascotas"}
+  ]
+ }
+}

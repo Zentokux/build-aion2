@@ -1,0 +1,402 @@
+{
+ "clase": "assassin",
+ "nombre": "Sicario",
+ "resumen": "Clase de burst con dagas que vive de sus buffs. Tus golpes graban **Insignias** en el objetivo, Explosión de insignia las cobra y Estocada al corazón sale con los críticos y se reinicia con el siguiente crítico. La build en una frase: quédate a la espalda del jefe, mete Corte rápido todo el rato, lanza Explosión de insignia en cuanto esté lista y Estocada al corazón con cada crítico, y vuélcalo todo en los 20 s de Clon ilusorio, cuando Estocada al corazón no tiene enfriamiento.",
+ "pros": [
+  "El burst más alto del cuerpo a cuerpo dentro de la ventana de Clon ilusorio",
+  "Estocada al corazón sin enfriamiento durante 20 s con Clon ilusorio a 20",
+  "Mucho daño extra por la espalda (Impacto trasero)",
+  "Clase divertida y con mucho techo de habilidad"
+ ],
+ "contras": [
+  "Burst y luego un hueco: unos 20 s de burst cada 1 min 30 s; entre ventanas, Estocada al corazón depende de la suerte con los críticos",
+  "Los buffs no cuadran: Pacto de celeridad y Colmillo salvaje vuelven al minuto y Clon ilusorio al minuto y medio",
+  "Estar a la espalda es daño: en el muñeco 100 %, en un combate real cuenta con un 60-80 %",
+  "Frágil: sin bloqueo y con poca defensa; errores que un Gladiador aguanta te matan",
+  "Según Arthars, pide varias veces más trabajo que un Gladiador o un Hechicero para el mismo daño o menos: elígelo por cómo se juega, no por los números"
+ ],
+ "presets": [
+  {
+   "nombre_en": "main",
+   "nombre": "Principal (jefes)",
+   "uso": "Clon ilusorio, Pacto de celeridad, Colmillo salvaje y Puñal de Triniel: los cuatro estigmas son buffs."
+  },
+  {
+   "nombre_en": "learn",
+   "nombre": "Aprendiendo un combate",
+   "uso": "Cambia uno de los buffs por Postura de evasión mientras aprendes el jefe: la clase es frágil."
+  },
+  {
+   "nombre_en": "farm",
+   "nombre": "Farmeo",
+   "uso": "Tiro de daga sombría para farmear en mundo abierto, no para jefes."
+  }
+ ],
+ "cartas": {
+  "heart-gore": {
+   "nivel": "16, luego 20",
+   "por_que": "Tu habilidad más importante. Necesita 16: un crítico reinicia su enfriamiento; si no, espera 5 s. La absorción de vida te mantiene vivo; a 20 añade Multigolpe. Si al principio te falta Crítico, la espec. de +20 % de Crítico es una opción en vez de la absorción. XifanGG lo hace al revés a 16: Multigolpe y el reinicio, y la absorción solo a 20."
+  },
+  "insignia-explosion": {
+   "nivel": "16, luego 20",
+   "por_que": "La otra mitad de tu daño. −3 s de enfriamiento y 2 Insignias que se conservan tras cada explosión: púlsala cada vez que esté lista, no esperes a juntar Insignias. A 20 añade Multigolpe."
+  },
+  "quick-slice": {
+   "nivel": "16, luego 20",
+   "por_que": "El ataque básico que metes entre todo: crítico garantizado y −1 s a Explosión de insignia por golpe. A 20 la tercera espec. es a tu gusto: absorción de vida o Multigolpe."
+  },
+  "ambush": {
+   "nivel": "16",
+   "por_que": "Tu primer relleno cuando Estocada al corazón está cerrada: dos usos extra a 16 y 2 Insignias por golpe por la espalda. Si llega a 20, añade la absorción de vida. XifanGG la usa como cura: absorción del 3 % con los dos usos extra, pulsada cuando va bajo de vida."
+  },
+  "storm-rampage": {
+   "nivel": "16",
+   "por_que": "En otras clases se puede saltar; aquí no. Con el jefe en stagger, cada golpe quita 1 s a todos los enfriamientos: te devuelve los buffs, y sin buffs esta clase no hace daño."
+  },
+  "defiance": {
+   "nivel": "12, luego 16",
+   "por_que": "Rompe aturdimientos: la cura y +2 s de Tenacidad a 12; a 16 cambia la cura por la tolerancia a daño. XifanGG coge 1.000 de Vigor en vez de Tenacidad: más esquivas justo después de romper."
+  },
+  "savage-roar": {
+   "nivel": "12",
+   "por_que": "El último relleno de la línea: más rápido, y cada golpe acorta Ataque sigiloso. No vale la pena subirlo de 12-16."
+  },
+  "shadowstrike": {
+   "nivel": "8",
+   "por_que": "Te teletransporta a la espalda del objetivo y da +20 % de Daño Crítico durante 10 s: es un buff y tu mejor forma de llegar a la espalda. Guárdalo para recolocarte en vez de gastarlo en cuanto vuelva; las otras espec. son para JcJ."
+  },
+  "flash-slice": {
+   "nivel": "12",
+   "por_que": "Una segunda forma de ponerte detrás del objetivo: 10 m de alcance y dos usos."
+  },
+  "infiltrate": {
+   "nivel": "12",
+   "por_que": "Esquiva y apareces detrás del objetivo, y te devuelve el Vigor. Nunca cojas la habilidad encadenada."
+  },
+  "whirlwind-slice": {
+   "nivel": "12",
+   "por_que": "Acercamiento de largo alcance. Pega fuerte sobre el papel, pero la animación es larga: no entra en la rotación."
+  },
+  "shadow-fall": {
+   "nivel": "12",
+   "por_que": "Una habilidad de JcJ; en JcE solo sirve como cura de emergencia del 10 %."
+  },
+  "illusive-clone": {
+   "nivel": "20",
+   "por_que": "Tu burst: durante 20 s a nivel 20 (17 a 15) Estocada al corazón no tiene enfriamiento y haces un 20 % más de daño, con +20 % de Daño Crítico y Explotar debilidades x1,5 encima. Enfriamiento de 1 min 30 s. Casi todo tu daño pasa dentro: úsalo en el jefe, nunca en monstruos normales. aLuckyRO: imprescindible hasta que Estocada al corazón llegue a 16; con críticos de sobra Estocada al corazón se reinicia sola y puedes cambiar el hueco un tiempo, pero a 20 vuelve por su aumento de daño."
+  },
+  "swift-contract": {
+   "nivel": "15, luego 20",
+   "por_que": "+20 % de Velocidad de Hechizo, e Impacto trasero y Postura de agresión x1,5 mientras dura. Con 15 basta para empezar; 20 añade otro 10 % de Velocidad de Hechizo."
+  },
+  "savage-fang": {
+   "nivel": "15",
+   "por_que": "Cinco Insignias de golpe, mucho daño de stagger y, a 15, +10 % de Amplificación de Daño de JcE durante 10 s. Mismo enfriamiento de un minuto que Pacto de celeridad: púlsalos juntos."
+  },
+  "triniels-dagger": {
+   "nivel": "10",
+   "por_que": "No es por su daño: a 10, un golpe recorta un 10 % el enfriamiento que le queda a todas tus habilidades. Púlsalo justo después de los buffs, cuando sus enfriamientos son más largos."
+  },
+  "evasion-stance": {
+   "nivel": "Alternativa (5-10)",
+   "por_que": "Evasión garantizada de un golpe fuerte; dos cargas a 5 y se puede usar en movimiento a 10. El cambio seguro por uno de los buffs mientras aprendes un combate: la clase es frágil."
+  },
+  "throw-shadowblade": {
+   "nivel": "Farmeo",
+   "por_que": "Lanzamiento a 20 m que se reinicia al matar a 10: para farmear en mundo abierto, no para jefes."
+  }
+ },
+ "traducciones": {
+  "evasion-stance": {
+   "efecto": "Evasión garantizada de todo el daño durante un momento. Al evadir, recupera una vez 110 de Puntos de Maná y de Vigor.",
+   "specs": [
+    "Lanzamientos en cadena +1",
+    "Cambio a habilidad disponible en movimiento",
+    "Al evadir, aumento del 20 % de Velocidad de Movimiento durante 3 s",
+    "Recupera una vez el 10 % de Puntos de Vida tras evadir con éxito"
+   ]
+  },
+  "throw-shadowblade": {
+   "efecto": "Inflige daño a un objetivo en un radio de 20 m y le provoca Ralentización, que reduce un 40 % la Velocidad de Movimiento durante 5 s. 15 de daño al medidor de stagger.",
+   "specs": [
+    "Añade [Shadowblade Pursuit] como segunda habilidad",
+    "Al derrotar a un enemigo, restablecimiento del Tiempo de Enfriamiento",
+    "Al acertar, Crítico garantizado",
+    "Cambio a habilidad de área"
+   ]
+  }
+ },
+ "secciones": {
+  "habilidades": [
+   {
+    "tipo": "aviso",
+    "texto": "Solo importan tres niveles de habilidad: **12, 16 y 20**. Los puntos de habilidad dan 10, Daevanion +4, los dos anillos +2 y las Arcanas el resto. Primero las cinco habilidades clave a **16**; luego Estocada al corazón y Explosión de insignia a 20."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "**Poca Reducción de Tiempo de Enfriamiento al principio.** Por eso Desenfreno de tormenta va a 16 y Puñal de Triniel se usa como herramienta de enfriamientos, no por su daño."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "Los puntos de habilidad suben casi todas las pasivas al máximo mientras subes de nivel. Lo escaso son las líneas del equipo: la clase quiere cuatro pasivas ahí y solo caben dos o tres."
+   },
+   {
+    "titulo": "Pasivas",
+    "tipo": "tabla",
+    "columnas": [
+     "Pasiva",
+     "Prioridad en el equipo",
+     "Por qué"
+    ],
+    "filas": [
+     [
+      "Impacto trasero",
+      "1",
+      "Ataque por la Espalda y Amplificación de Daño de JcE: la pasiva más fuerte; da daño incluso de frente"
+     ],
+     [
+      "Explotar debilidades",
+      "2",
+      "Crítico y un buff de Ataque activo casi todo el combate; Clon ilusorio lo multiplica"
+     ],
+     [
+      "Postura de agresión",
+      "2",
+      "Amplificación de Daño Crítico; Pacto de celeridad la multiplica"
+     ],
+     [
+      "Determinación",
+      "3",
+      "Daño extra contra un objetivo con poca vida. aLuckyRO la cuenta entre las más importantes: todos los jefes pasan el final del combate ahí"
+     ],
+     [
+      "Acierto de impacto",
+      "4",
+      "Golpe: solo un 3,3 % a nivel 10, casi nada en JcE (aLuckyRO). Para JcJ; en el equipo de JcE coge antes Determinación (XifanGG la deja como cuarta)"
+     ],
+     [
+      "Postura de emboscada, Maximización de sexto sentido",
+      "Solo puntos",
+      "Se suben al máximo con los puntos de habilidad; no valen una línea del equipo"
+     ],
+     [
+      "Pacto de resurrección",
+      "Solo puntos",
+      "Te devuelve buena parte de la vida al bajar del 10 % (46 % en el personaje de XifanGG): una red de seguridad en jefes difíciles"
+     ],
+     [
+      "Aplicación de veneno, Grieta defensiva",
+      "Saltar",
+      "El veneno es menos del 1 % de tu daño; Grieta defensiva es para JcJ"
+     ]
+    ]
+   }
+  ],
+  "estigmas": [
+   {
+    "tipo": "aviso",
+    "texto": "Los cuatro huecos son buffs. Sube primero Clon ilusorio a 20 (se come casi todos tus Fragmentos de estigma) y luego el resto."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "El orden de XifanGG es otro: Pacto de celeridad a 10 y Clon ilusorio a 15 primero, y luego **Pacto de celeridad a 20 antes que Clon ilusorio**: su último nivel añade un 10 % de Velocidad de Hechizo, que es lo que más necesita la clase. Los dos valen; el suyo da un daño más estable mientras escasean los fragmentos."
+   },
+   {
+    "tipo": "aviso",
+    "texto": "**No hay Clon ilusorio permanente.** El nivel que acorta su enfriamiento con críticos por la espalda es el 25: no existe en global."
+   },
+   {
+    "titulo": "Qué estigmas y a qué nivel",
+    "tipo": "tabla",
+    "columnas": [
+     "Estigma",
+     "Nivel",
+     "Para qué"
+    ],
+    "filas": [
+     [
+      "Clon ilusorio",
+      "20",
+      "El burst: 20 s sin enfriamiento de Estocada al corazón"
+     ],
+     [
+      "Pacto de celeridad",
+      "15, luego 20",
+      "+20 % de Velocidad de Hechizo e Impacto trasero x1,5"
+     ],
+     [
+      "Colmillo salvaje",
+      "15",
+      "5 Insignias, stagger y +10 % de Amplificación de Daño de JcE"
+     ],
+     [
+      "Puñal de Triniel",
+      "10",
+      "−10 % al enfriamiento restante de todo"
+     ],
+     [
+      "Postura de evasión",
+      "5-10 (alternativa)",
+      "El cambio seguro mientras aprendes un jefe"
+     ],
+     [
+      "Tiro de daga sombría",
+      "Farmeo",
+      "Mundo abierto, no jefes"
+     ]
+    ]
+   },
+   {
+    "comun": "fragmentos-estigma"
+   }
+  ],
+  "equipo": [
+   {
+    "titulo": "Equipo y estadísticas",
+    "tipo": "lista",
+    "items": [
+     "**Anillos**: el único sitio para habilidades activas: Estocada al corazón, Corte rápido, Explosión de insignia y Emboscada. Llevan las habilidades clave de 14 a 16.",
+     "**Arma y guarda**: nunca pongas habilidades ahí; sus líneas de daño valen más que un nivel de habilidad.",
+     "**Resto de piezas**: Impacto trasero primero; cualquiera de las tres pasivas siguientes vale. No persigas un juego perfecto en Season 1: el equipo de global tiene una línea menos y además saca ahí Might, Precision y Velocidad de Hechizo.",
+     "**Crítico** importa más que en otras clases: Estocada al corazón solo se reinicia con un crítico.",
+     "**Alas**: las Alas de Talisra dan un 4 % de Reducción de Tiempo de Enfriamiento, las mejores para la clase (XifanGG). Están en la tienda de la temporada, pestaña Especial, por puntos de temporada: guárdalos para ellas.",
+     "**Piedras de maná**: Ataque, Crítico y Precisión."
+    ]
+   },
+   {
+    "comun": "soulbind"
+   }
+  ],
+  "daevanion": [
+   {
+    "tipo": "aviso",
+    "texto": "Daevanion lleva tus habilidades de 10 a 14 y añade estadísticas. Cada nodo azul da +1 nivel a su habilidad."
+   },
+   {
+    "titulo": "Prioridades",
+    "tipo": "lista",
+    "items": [
+     "Ve a por los nodos naranja de las esquinas: Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento en Nezekan, Amplificación de Daño en Zikel.",
+     "Coge el camino que pasa por los nodos azules de Estocada al corazón, Explosión de insignia y Corte rápido y por los verdes de tus pasivas clave, como Explotar debilidades (XifanGG); luego Emboscada y Desenfreno de tormenta.",
+     "Daño Crítico pronto: para el Sicario, la Amplificación de Daño Crítico naranja de Vaizel compensa desde el principio, porque critea desde el primer día, al contrario que casi todas las clases (aLuckyRO).",
+     "Azphel (nivel 45) es todo Amplificación y Tolerancia de Daño de JcJ: no cuenta para JcE."
+    ]
+   },
+   {
+    "titulo": "Tableros",
+    "tipo": "tabla",
+    "columnas": [
+     "Tablero",
+     "Nivel",
+     "Nodos naranja"
+    ],
+    "filas": [
+     [
+      "Nezekan",
+      "12",
+      "Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento"
+     ],
+     [
+      "Zikel",
+      "20",
+      "Amplificación de Daño, Tolerancia a Daño"
+     ],
+     [
+      "Vaizel",
+      "30",
+      "Amplificación y Tolerancia de Daño Crítico"
+     ],
+     [
+      "Triniel",
+      "40",
+      "Multigolpe y su resistencia"
+     ],
+     [
+      "Ariel",
+      "45",
+      "Solo JcE, con cristales propios (abajo)"
+     ]
+    ]
+   },
+   {
+    "comun": "ariel"
+   },
+   {
+    "comun": "cristales"
+   }
+  ],
+  "coleccionables": [
+   {
+    "tipo": "aviso",
+    "texto": "Season 1 tiene cinco cartas y dos sets. El Sicario es la única clase que **tiene que** llevar Fantasía (enfriamientos) en el Espejo, y eso hace que el set natural sean cuatro cartas de Vitalidad primordial."
+   },
+   {
+    "titulo": "Arcanas",
+    "tipo": "tabla",
+    "columnas": [
+     "Carta",
+     "Atributo",
+     "Set",
+     "Qué buscar"
+    ],
+    "filas": [
+     [
+      "Cáliz",
+      "Tiempo (Velocidad de Hechizo)",
+      "Vitalidad primordial",
+      "La que aún no llegue a 20 de las tres clave"
+     ],
+     [
+      "Pergamino",
+      "Vida",
+      "Vitalidad primordial",
+      "Corte rápido, Estocada al corazón y Explosión de insignia, las tres"
+     ],
+     [
+      "Brújula",
+      "Libertad (Precisión)",
+      "Vitalidad primordial",
+      "Desenfreno de tormenta, Emboscada y Rugido bestial, para llegar a 16"
+     ],
+     [
+      "Espejo",
+      "Fantasía (enfriamientos)",
+      "Vitalidad primordial",
+      "Impacto trasero, Explotar debilidades; Acierto de impacto"
+     ],
+     [
+      "Campana",
+      "Destrucción (Ataque)",
+      "Armadura mágica",
+      "Postura de agresión"
+     ]
+    ]
+   },
+   {
+    "titulo": "Cómo subirlas",
+    "tipo": "lista",
+    "items": [
+     "El Pergamino es el grind: las tres habilidades que quieres a 20 están en esta carta, y una carta de Season 1 solo deja elegir dos de sus cuatro líneas.",
+     "Subir la carta reparte cuatro +1 al azar: mejor un reparto parejo (+2 en cada una) que +4 en una; así el Cáliz pone el +2 que falte.",
+     "Si no sale, deja Estocada al corazón y Explosión de insignia a 20 y Corte rápido a 16.",
+     "La Brújula y la Campana van sin prisa: nada en ellas tiene que llegar a 20. Todas estas cartas se cambian cuando Season 2 traiga otras."
+    ]
+   },
+   {
+    "comun": "titulos"
+   },
+   {
+    "comun": "titulos-nota"
+   },
+   {
+    "tipo": "aviso",
+    "texto": "**Alas**: Alas de Talisra (4 % de Reducción de Tiempo de Enfriamiento), en la tienda de la temporada."
+   }
+  ],
+  "mascotas": [
+   {
+    "comun": "mascotas"
+   }
+  ]
+ }
+}

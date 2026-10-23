@@ -34,55 +34,49 @@
    "uso": "Jugar solo y mundo abierto."
   }
  ],
- "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
- "macros_por_preset": [],
+ "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
+ "macros_por_preset": [
+  {
+   "preset_en": "Stagger dungeons",
+   "pasos": [
+    "Golpe de escudo",
+    "Juicio",
+    "Estacazo de amparo",
+    "Juicio",
+    "Embestida decadente"
+   ],
+   "retardo_ms": 10,
+   "nota": "Es la macro que guarda el planificador."
+  },
+  {
+   "preset_en": "Daily and no-stagger runs",
+   "pasos": [
+    "Golpe de escudo",
+    "Juicio",
+    "Escudo de perdición",
+    "Juicio",
+    "Estacazo de amparo",
+    "Juicio"
+   ],
+   "retardo_ms": 10,
+   "nota": ""
+  },
+  {
+   "preset_en": "Solo and open world",
+   "pasos": [
+    "Escudo de perdición",
+    "Juicio",
+    "Golpe de escudo",
+    "Juicio",
+    "Estacazo de amparo",
+    "Juicio"
+   ],
+   "retardo_ms": 10,
+   "nota": ""
+  }
+ ],
  "secciones": {
   "equipo": [
-   {
-    "titulo": "Atributos que priorizar (PvE)",
-    "tipo": "tabla",
-    "columnas": [
-     "#",
-     "Atributo",
-     "Dónde / por qué"
-    ],
-    "filas": [
-     [
-      "1",
-      "**Velocidad de Hechizo** + Amplificación de Daño de Arma",
-      "Arma y guarda; después Fuerza y Acierto de Multigolpe (Precisión si no llegas)"
-     ],
-     [
-      "2",
-      "La línea clave de cada pieza",
-      "Amplificación de Daño Crítico en hombreras, Amplificación de Daño en peto, Velocidad de Hechizo en guantes, Perforación y Tolerancia a Daño en grebas"
-     ],
-     [
-      "3",
-      "Ataque, Fuerza, Crítico",
-      "Relleno"
-     ],
-     [
-      "4",
-      "**Arrebato**",
-      "La pasiva de la build en casco, capa, collar y pendientes"
-     ],
-     [
-      "5",
-      "Bloqueo + Evasión + Destreza",
-      "Al principio; más adelante Bloqueo + Resistencia"
-     ],
-     [
-      "6",
-      "Estacazo impetuoso, Juicio, Castigo",
-      "Solo en anillos"
-     ]
-    ]
-   },
-   {
-    "tipo": "aviso",
-    "texto": "En global cada pieza saca **4 o 5 líneas al azar** de su lista (5 en lo crafteado de rey dragón), no todas. En la ficha de cada pieza las líneas van **en orden**: si te salen las primeras, quédatela. Manastones: Ataque, Crítico, Precisión."
-   },
    {
     "titulo": "Ruta de espada y guarda",
     "tipo": "tabla",
@@ -167,7 +161,7 @@
     "tipo": "lista",
     "items": [
      "Caen en Transcendence. Cada carta da su stat de dios + hasta 4 líneas de su pool: buscas una carta cuyas líneas caigan en tus habilidades.",
-     "Sin bonus de 4 piezas a propósito (al principio valen más los stats sueltos), pero sí dos de 2 piezas: +60 de Ataque JcE con vida desde 70% (3 Vitalidad primordial) y 1.500 de maná al bajar del 20%, una vez cada 30 s (2 Armadura mágica).",
+     "Sin bonus de 4 piezas a propósito (al principio valen más los stats sueltos), pero sí dos de 2 piezas: +60 de Ataque JcE con vida ≥70% (3 Vitalidad primordial) y 1.500 de maná al bajar del 20%, una vez cada 30 s (2 Armadura mágica).",
      "El planificador anota una habilidad por carta: toma sus niveles como mínimo.",
      "Chalice of Vigor (saca cualquier activa o pasiva) se craftea la última, como comodín."
     ]
@@ -301,62 +295,62 @@
     "filas": [
      [
       "Golpe de escudo",
-      "8 → 10",
+      "de 8 a 10",
       "En la prioridad (2.º): daño y aturdimiento"
      ],
      [
       "Embestida decadente",
-      "8 → 10",
+      "de 8 a 10",
       "En la prioridad: daño al bloquear"
      ],
      [
       "Aniquilación",
-      "8 → 10",
+      "de 8 a 10",
       "En la prioridad: golpe fuerte al aturdido"
      ],
      [
       "Azotamiento continuo",
-      "8 → 10",
+      "de 8 a 10",
       "En la prioridad: área y hostilidad"
      ],
      [
       "Restricción de dolor",
-      "1 → 10",
+      "de 1 a 10",
       "Tanque: −daño recibido en PvE"
      ],
      [
       "Sello de protección",
-      "1 → 10",
+      "de 1 a 10",
       "Tanque: escudo con poca vida"
      ],
      [
       "Escudo de amparo",
-      "1 → 10",
+      "de 1 a 10",
       "Bloqueo y vida"
      ],
      [
       "Favor de condena",
-      "1 → 10",
+      "de 1 a 10",
       "Crítico y daño extra"
      ],
      [
       "Aprisionamiento",
-      "8 → 10",
+      "de 8 a 10",
       "Atrae enemigos"
      ],
      [
       "Asalto con escudo",
-      "8 → 10",
+      "de 8 a 10",
       "Daño tras esquiva o en vuelo"
      ],
      [
       "Eliminación de impacto",
-      "4 → 10",
+      "de 4 a 10",
       "Rompe aturdimientos"
      ],
      [
       "Voluntad de supervivencia",
-      "1 → 10",
+      "de 1 a 10",
       "Resistencia a efectos (último)"
      ]
     ]
@@ -410,7 +404,7 @@
      [
       "Armadura de nobleza",
       "El mejor de PvE: Puntos de Vida y Defensa; dura 120 s con 120 s de enfriamiento (siempre activa)",
-      "10 y 15: Rugido agravante y Arrebato ×1,5; 20: +10% curación recibida"
+      "10 y 15: Rugido agravante y Arrebato x1,5; 20: +10% curación recibida"
      ],
      [
       "Provocación",
@@ -440,11 +434,6 @@
    }
   ],
   "daevanion": [
-   {
-    "id": "ariel",
-    "tipo": "aviso",
-    "texto": "**Nuevo (parche del 21-oct): tablero Ariel**, solo JcE y con cristales propios (60), no con los puntos de nivel. Salen del modo **Difícil** de Cueva de Krao y Draupnir (nivel de objeto 2.600). Su ruta está en la pestaña **Ariel** del tablero de arriba."
-   },
    {
     "titulo": "Desbloqueo de tableros",
     "tipo": "lista",
@@ -487,60 +476,44 @@
    {
     "id": "macro",
     "tipo": "aviso",
-    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
-   },
-   {
-    "id": "pruebas",
-    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
-    "tipo": "lista",
-    "items": [
-     "Escudo de perdición abajo de la pila E: abre el combate y da más daño (está en el preset «Solitario y mundo abierto»).",
-     "Pila Q con Embestida decadente abajo o con Aniquilación abajo.",
-     "Estandarte del campo de batalla debajo de Armadura de nobleza en la 4 (los dos están en el preset «Solitario y mundo abierto»)."
-    ]
-   },
-   {
-    "id": "presets",
-    "titulo": "Otros presets",
-    "tipo": "lista",
-    "items": [
-     "Preset «Diarias y partidas sin Stagger»: quita Castigo empíreo (tecla 2) y pon **Escudo de perdición** en la 7, a mano.",
-     "Preset «Solitario y mundo abierto»: quita Provocación (tecla 5), Armadura de nobleza (tecla 4) y pon **Escudo de perdición** en la 5, **Estandarte del campo de batalla** en la 4, a mano.",
-     "La macro es la misma: pulsa las mismas teclas."
-    ]
-   },
-   {
-    "titulo": "Antes de empezar",
-    "tipo": "lista",
-    "items": [
-     "Activa **Skill Queue**: hace mucho más fluida la cadena escudo → Juicio.",
-     "Puedes apilar hasta 3 habilidades sobre una ranura rápida.",
-     "La idea: habilidad de escudo, Juicio, repetir; lo demás rellena."
-    ]
-   },
-   {
-    "titulo": "Opener",
-    "tipo": "pasos",
-    "items": [
-     "Provocación (Encogimiento sobre el jefe).",
-     "Entra con Asalto con escudo o Aprisionamiento.",
-     "Mantén la macro (Clic der.) y Clic izq. todo el combate."
-    ]
-   },
-   {
-    "titulo": "Durante el combate",
-    "tipo": "pasos",
-    "items": [
-     "Cada habilidad de escudo que vuelve es otro Juicio.",
-     "Mantén Estacazo impetuoso entre medias: su espec. 4 acorta Estacazo de amparo.",
-     "Guarda Estacazo de amparo, si puedes, para justo antes de un golpe fuerte (es tu reducción de daño).",
-     "Carga Castigo en momentos tranquilos para mantener Executor.",
-     "Escudo de protección en los golpes fuertes del jefe (el bloqueo alimenta Arrebato)."
-    ]
+    "texto": "La tecla de macro no viene asignada: Ajustes, Configuración de teclas, General, Macro: **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
    },
    {
     "tipo": "aviso",
-    "texto": "Castigo nunca va en la macro: cárgalo a mano en momentos seguros."
+    "texto": "Toda la rotación es una idea: habilidad de escudo, Juicio y repetir. Todo lo demás rellena los huecos."
+   },
+   {
+    "titulo": "La barra",
+    "tipo": "lista",
+    "items": [
+     "**Clic izq.**: Estacazo impetuoso. Mantenlo entre todo lo demás.",
+     "**Q** (tecla de relleno; el autor la tiene en Clic der.): Azotamiento continuo, con Embestida decadente y Aniquilación encima.",
+     "**1** (tecla de daño): Juicio, con Golpe de escudo y Estacazo de amparo encima.",
+     "**2**: Castigo, cargado a mano en momentos seguros; nunca en una macro. **3**: Asalto con escudo. **4**: Aprisionamiento.",
+     "**Estigmas (5-8)**: Escudo de protección, Armadura de nobleza, Provocación, y Castigo empíreo o Escudo de perdición."
+    ]
+   },
+   {
+    "titulo": "La macro (cada preset la suya, 10 ms por paso)",
+    "tipo": "lista",
+    "items": [
+     "Mazmorras de Stagger: Golpe de escudo, Juicio, Estacazo de amparo, Juicio y Embestida decadente. Con tus teclas: **1** y **Q**.",
+     "Diarias: Golpe de escudo, Juicio, Escudo de perdición, Juicio, Estacazo de amparo y Juicio.",
+     "Solitario: Escudo de perdición, Juicio, Golpe de escudo, Juicio, Estacazo de amparo y Juicio.",
+     "Activa **Skill Queue**: hace más fluida la cadena de escudo y Juicio."
+    ]
+   },
+   {
+    "titulo": "Momento a momento",
+    "tipo": "pasos",
+    "items": [
+     "Abre con Provocación (7) para dejar Shrink sobre el jefe; luego entra con Asalto con escudo (3) o Aprisionamiento (4).",
+     "Machaca la 1 (Juicio) o la macro: cada habilidad de escudo que sale de enfriamiento es otro Juicio.",
+     "Estacazo impetuoso entre medias: su 4.ª espec. acorta Estacazo de amparo, y eso es más Juicio.",
+     "Guarda Estacazo de amparo para justo antes de un golpe fuerte cuando puedas: también es tu reducción de daño.",
+     "Castigo (2) cargado en los momentos tranquilos para mantener Executor.",
+     "Escudo de protección (5) en los golpes fuertes del jefe: el bloqueo garantizado alimenta Arrebato."
+    ]
    },
    {
     "tipo": "aviso",
@@ -615,28 +588,6 @@
    }
   ],
   "mascotas": [
-   {
-    "id": "minimo",
-    "titulo": "Lo mínimo, sí o sí (al menos 1 vez)",
-    "tipo": "pasos",
-    "items": [
-     "**Golpe** en la ranura 4 de Special: es la única del juego que lo saca. Vale la Kinah extra.",
-     "La línea de daño de la **ranura 4** en cada genus: Cogni: **Amplificación de Daño Crítico**, Fera: **Amplificación de Daño de Arma**, Natura: **Perforación**, Varian: **Amplificación de Daño Frontal**. Si no sale, el plan B de la ficha.",
-     "Un **Ataque Máximo** (o Ataque Adicional) en la ranura 1 o la 5 de cada genus.",
-     "El resto (vida, Precisión, Crítico, Tolerancia) mejora poco a poco: no gastes Kinah persiguiendo tiradas perfectas ahí."
-    ]
-   },
-   {
-    "id": "como-tirar",
-    "titulo": "Cómo tirar sin tirar la Kinah",
-    "tipo": "lista",
-    "items": [
-     "Sube cada genus a **10** antes de bloquear nada: los niveles de las mascotas lo llevan a 8–9; el resto, con cristales (unos 30–40 cubos para todos).",
-     "Tira con **Auto Analyze**: marca las líneas que quieres, pon el grado en Único o Heroico y deja que tire hasta que salga una.",
-     "**Bloquea** una línea solo cuando esté cerca del máximo de su rango (una de daño al 2,3 % sí; un Ataque de 10 sobre 16, no).",
-     "Las ★★★ primero, luego las ★★ y al final las ★. Las 9 líneas de la ficha son la tirada perfecta: casi nadie la tiene completa."
-    ]
-   },
    {
     "titulo": "Reglas",
     "tipo": "lista",

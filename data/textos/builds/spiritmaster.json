@@ -35,55 +35,41 @@
    "uso": "Jefes con comprobación de stagger (sin probar, punto de partida)."
   }
  ],
- "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
- "macros_por_preset": [],
+ "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
+ "macros_por_preset": [
+  {
+   "preset_en": "Bosses and dungeons",
+   "pasos": [
+    "Mejora: Favor de Espíritu",
+    "Fusión elemental",
+    "Golpe conjunto: Corrosión"
+   ],
+   "retardo_ms": 10,
+   "nota": "Mantén Mouse1 (Impacto helado) y el botón derecho a la vez; el resto, a mano."
+  },
+  {
+   "preset_en": "Solo and leveling",
+   "pasos": [
+    "Invocación: Espíritu de agua",
+    "Fusión elemental",
+    "Golpe conjunto: Corrosión"
+   ],
+   "retardo_ms": 10,
+   "nota": "El planificador guarda una sola macro (la de Favor de Espíritu); esta variante es la del texto."
+  },
+  {
+   "preset_en": "Stagger burst",
+   "pasos": [
+    "Mejora: Favor de Espíritu",
+    "Fusión elemental",
+    "Golpe conjunto: Corrosión"
+   ],
+   "retardo_ms": 10,
+   "nota": ""
+  }
+ ],
  "secciones": {
   "equipo": [
-   {
-    "titulo": "Atributos que priorizar (PvE)",
-    "tipo": "tabla",
-    "columnas": [
-     "#",
-     "Atributo",
-     "Dónde / por qué"
-    ],
-    "filas": [
-     [
-      "1",
-      "**Velocidad de Hechizo** (65 % o más)",
-      "Arma y guarda, con Amplificación de Daño y de Arma; la necesitas para encadenar"
-     ],
-     [
-      "2",
-      "**Golpe** hasta 25 % y Reducción de enfriamiento 20 %",
-      "Objetivos de Season 1"
-     ],
-     [
-      "3",
-      "**Precisión total** 1.500",
-      "Objetivo; el espíritu copia tus atributos al invocarlo (invoca con los buffs puestos)"
-     ],
-     [
-      "4",
-      "Concentración mental y Golpe de Espíritu",
-      "Las pasivas de la build en todas las piezas"
-     ],
-     [
-      "5",
-      "La línea clave de cada pieza",
-      "Golpe, Aumento de Ataque, Perforación, Amplificación de Daño Crítico"
-     ],
-     [
-      "6",
-      "Fusión elemental, Combustión, Invocación: Espíritu de fuego",
-      "En anillos"
-     ]
-    ]
-   },
-   {
-    "tipo": "aviso",
-    "texto": "En global cada pieza saca **4 o 5 líneas al azar** de su lista (5 en lo crafteado de rey dragón), no todas. En la ficha de cada pieza las líneas van **en orden**: si te salen las primeras, quédatela. Manastones: Ataque, Crítico, Precisión."
-   },
    {
     "titulo": "Camino de orbe y escudo",
     "tipo": "tabla",
@@ -384,7 +370,7 @@
      [
       "Mejora: Favor de Espíritu",
       "+20% Amplificación de Daño de JcE y Tolerancia a Daño 10 s para ti y el espíritu",
-      "10: Golpe de Espíritu ×1,5; 20: +25%"
+      "10: Golpe de Espíritu x1,5; 20: +25%"
      ],
      [
       "Bendición ardiente",
@@ -415,11 +401,6 @@
   ],
   "daevanion": [
    {
-    "id": "ariel",
-    "tipo": "aviso",
-    "texto": "**Nuevo (parche del 21-oct): tablero Ariel**, solo JcE y con cristales propios (60), no con los puntos de nivel. Salen del modo **Difícil** de Cueva de Krao y Draupnir (nivel de objeto 2.600). Su ruta está en la pestaña **Ariel** del tablero de arriba."
-   },
-   {
     "titulo": "Desbloqueo de tableros",
     "tipo": "lista",
     "items": [
@@ -432,7 +413,7 @@
     "tipo": "pasos",
     "items": [
      "Nodos azules en los 4 tableros: Fusión elemental, Combustión, Invocación: Espíritu de fuego, Impacto helado e Invocación: Espíritu de agua. Si vas corto, primero el nodo más barato de cada una.",
-     "Verdes: Concentración mental (Zikel ×2, Vaizel, Triniel) y Golpe de Espíritu (Nezekan ×2, Vaizel, Triniel): 4 de cada.",
+     "Verdes: Concentración mental (Zikel x2, Vaizel, Triniel) y Golpe de Espíritu (Nezekan x2, Vaizel, Triniel): 4 de cada.",
      "Naranjas: Reducción de Tiempo de Enfriamiento y Velocidad de Hechizo en Nezekan, Amplificación de Daño en Zikel, Amplificación de Daño Crítico en Vaizel, Acierto de Multigolpe en Triniel.",
      "Resto de azules y verdes, luego Ataque y lo demás de camino."
     ]
@@ -460,61 +441,52 @@
    {
     "id": "macro",
     "tipo": "aviso",
-    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
+    "texto": "La tecla de macro no viene asignada: Ajustes, Configuración de teclas, General, Macro: **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
    },
    {
-    "id": "pruebas",
-    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
-    "tipo": "lista",
-    "items": [
-     "Macro «2 → E → Q» o «Q → E» con los buffs (2) a mano.",
-     "Que las 5 acumulaciones de Temblor terrestre no se caigan con la macro."
-    ]
-   },
-   {
-    "id": "presets",
-    "titulo": "Otros presets",
-    "tipo": "lista",
-    "items": [
-     "Preset «Solo y subida de nivel»: quita Bendición ardiente (tecla 2) y pon **Drenaje** en la 3, a mano.",
-     "Preset «Burst en stagger»: quita Bendición ardiente (tecla 2) y pon **Golpe conjunto: Ofensiva de perdición** en la 3, a mano.",
-     "La macro es la misma: pulsa las mismas teclas."
-    ]
+    "tipo": "aviso",
+    "texto": "Toda la rotación es una idea: buffear, invocar, llenar Four Elements, lanzar Fusión y repetir. Impacto helado rellena cada hueco."
    },
    {
     "titulo": "Antes de empezar",
     "tipo": "lista",
     "items": [
-     "Asigna «dismiss all spirits» a una tecla a mano.",
-     "Puedes apilar hasta 3 habilidades sobre una ranura; la de abajo sale primero.",
-     "En el juego puedes apilar en una tecla Favor de Espíritu, Bendición ardiente y Espíritu ancestral, para que los buffs vayan siempre antes de la invocación.",
-     "En la línea de espíritus, Fusión elemental abajo (sale en cuanto tengas Four Elements) e Invocación: Espíritu de fuego al final (el que quieres fuera más tiempo)."
+     "Macro en **Clic der.** La línea que el autor tenía en el botón derecho pasa a la T; aquí, a la **3**.",
+     "Pon «dismiss all spirits» en una tecla a mano.",
+     "En una pila sale primero la de abajo."
     ]
    },
    {
-    "titulo": "Opener",
-    "tipo": "pasos",
+    "titulo": "La barra",
+    "tipo": "lista",
     "items": [
-     "Bendición ardiente.",
-     "Mejora: Favor de Espíritu.",
-     "Invocación: Espíritu ancestral (siempre después de los buffs).",
-     "Línea de espíritus y Golpe conjunto: Corrosión: espíritus base fuera y daño en el tiempo sobre el jefe.",
-     "Empieza a mantener los dos botones (Impacto helado + macro)."
+     "**Clic izq.**: Impacto helado, mantenlo todo el combate.",
+     "**1** (línea de espíritus): Fusión elemental abajo del todo, para que salga en cuanto tengas Four Elements; luego Espíritu de agua, de tierra y, el último, de fuego, el que quieres fuera más tiempo.",
+     "**3** (línea de daño): Golpe conjunto: Maldición, luego Dominio espacial y Combustión. El autor (Evripides) pone Golpe conjunto: Corrosión abajo del todo de esta pila; el planificador lo deja en su tecla de estigma (8).",
+     "**2**: Ráfaga continua.",
+     "**Estigmas (5-8)**: Espíritu ancestral, Favor de Espíritu, Bendición ardiente y Corrosión. En el juego puedes apilar los buffs en una tecla (Favor de Espíritu, Bendición ardiente y Espíritu ancestral) para que vayan siempre antes de la invocación."
     ]
    },
    {
-    "titulo": "Durante el combate",
+    "titulo": "La macro (cada preset la suya, 10 ms por paso)",
+    "tipo": "lista",
+    "items": [
+     "Jefes y mazmorras, y burst en stagger: Mejora: Favor de Espíritu, Fusión elemental y Golpe conjunto: Corrosión. Con tus teclas: **6, 1 y 8**.",
+     "Solo y subida de nivel: Espíritu de agua, Fusión elemental y Corrosión. Con tus teclas: 1 y 8.",
+     "Juegas con dos botones: Clic izq. (Impacto helado) y Clic der. (la macro) a la vez; todo lo demás, a mano."
+    ]
+   },
+   {
+    "titulo": "Momento a momento",
     "tipo": "pasos",
     "items": [
+     "Bendición ardiente (7), Favor de Espíritu (6) y Espíritu ancestral (5): los buffs siempre antes de la invocación.",
+     "Línea de espíritus (1) y Golpe conjunto: Corrosión (8): espíritus fuera y daño en el tiempo sobre el jefe.",
+     "Empieza a mantener los dos botones.",
      "Relanza los buffs en cuanto estén listos; no los guardes para el siguiente Espíritu ancestral.",
-     "Mantén 5 acumulaciones de Earth Tremor: vale la pena retrasar una invocación un ataque básico para tener antes la quinta.",
-     "Golpe conjunto: Corrosión cada vez que salga de reutilización.",
-     "Pulsa Dominio espacial en cuanto se ilumine."
+     "Mantén las 5 acumulaciones de Temblor terrestre: compensa retrasar una invocación un ataque básico para tener antes la quinta.",
+     "Golpe conjunto: Corrosión cada vez que salga de reutilización."
     ]
-   },
-   {
-    "tipo": "aviso",
-    "texto": "La copia de stats al invocar manda: un espíritu invocado antes de tus buffs queda más débil todo el rato que esté fuera."
    },
    {
     "tipo": "aviso",
@@ -596,38 +568,16 @@
      ],
      [
       "Estatuas",
-      "Libertad → Muerte → Espacio"
+      "Libertad, luego Muerte, luego Espacio"
      ],
      [
       "Obras maestras",
-      "Fantasía → Sabiduría → Vida → Destino"
+      "Fantasía, luego Sabiduría, luego Vida, luego Destino"
      ]
     ]
    }
   ],
   "mascotas": [
-   {
-    "id": "minimo",
-    "titulo": "Lo mínimo, sí o sí (al menos 1 vez)",
-    "tipo": "pasos",
-    "items": [
-     "**Golpe** en la ranura 4 de Special: es la única del juego que lo saca. Vale la Kinah extra.",
-     "La línea de daño de la **ranura 4** en cada genus: Cogni: **Amplificación de Daño de JcE**, Fera: **Amplificación de Daño de JcE**, Natura: **Amplificación de Daño de JcE**, Varian: **Amplificación de Daño de JcE**. Si no sale, el plan B de la ficha.",
-     "Un **Ataque Adicional** (o Ataque Máximo) en la ranura 1 o la 5 de cada genus.",
-     "El resto (vida, Precisión, Crítico, Tolerancia) mejora poco a poco: no gastes Kinah persiguiendo tiradas perfectas ahí."
-    ]
-   },
-   {
-    "id": "como-tirar",
-    "titulo": "Cómo tirar sin tirar la Kinah",
-    "tipo": "lista",
-    "items": [
-     "Sube cada genus a **10** antes de bloquear nada: los niveles de las mascotas lo llevan a 8–9; el resto, con cristales (unos 30–40 cubos para todos).",
-     "Tira con **Auto Analyze**: marca las líneas que quieres, pon el grado en Único o Heroico y deja que tire hasta que salga una.",
-     "**Bloquea** una línea solo cuando esté cerca del máximo de su rango (una de daño al 2,3 % sí; un Ataque de 10 sobre 16, no).",
-     "Las ★★★ primero, luego las ★★ y al final las ★. Las 9 líneas de la ficha son la tirada perfecta: casi nadie la tiene completa."
-    ]
-   },
    {
     "titulo": "Reglas",
     "tipo": "lista",

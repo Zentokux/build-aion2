@@ -1,0 +1,157 @@
+{
+ "clase": "cleric",
+ "nombre": "Clérigo",
+ "resumen": "En las mazmorras de AION 2 el Clérigo es un sanador que **tiene que hacer daño**: las recompensas dependen de tu contribución, y un Clérigo que solo cura puede irse sin nada. Tu grupo tiene esquivas e invulnerabilidades de sobra: cura a quien acaba de recibir un golpe y pon todo lo demás en daño. La build en una frase: Castigo terrestre hace que Condena siempre critee, y un crítico reinicia Condena, así que sale sin enfriamiento, mientras Aura divina, Centella y Aura noble suman daño encima.",
+ "pros": [
+  "Condena sin enfriamiento gracias a Castigo terrestre",
+  "Curas fuertes con poco enfriamiento: Luz de curación y Resplandor de recobro a 16",
+  "Las especializaciones se cambian gratis: solo las Arcanas cuestan recursos",
+  "Buffea al grupo con Castigo terrestre y Luz de protección"
+ ],
+ "contras": [
+  "Te pagan por daño: si solo curas, la contribución y las recompensas bajan",
+  "Su mantra no se acumula con el de un Conjurador: con uno en el grupo hay que cambiar de preset",
+  "Siempre va corto de Crítico: las pasivas de crítico solo rinden cuando el equipo lo da",
+  "En Season 1 solo una o dos habilidades llegan a 20"
+ ],
+ "presets": [
+  {"nombre_en": "nochanter", "nombre": "Sin Conjurador", "uso": "Castigo terrestre, Oración de amplificación, Luz de protección y Aura noble. A 20: Castigo terrestre, luego Oración y Luz de protección la tercera (Whelps: 20, 20, 15 y 13)."},
+  {"nombre_en": "chanter", "nombre": "Con Conjurador", "uso": "Castigo terrestre, Oración de amplificación, Aura noble y Resurrección de invocación. A 20: Castigo terrestre, Oración y Aura noble la tercera."},
+  {"nombre_en": "support", "nombre": "De apoyo", "uso": "Cambia Aura noble por Resurrección de invocación o Poder de Yustiel."}
+ ],
+ "cartas": {
+  "condemnation": {"nivel": "20", "por_que": "La habilidad más importante de tu barra: cerca de la mitad de tu daño. Whelps (20-oct): reinicio del enfriamiento con crítico y Multigolpe desde 16; a 20 añade +12 % a un solo objetivo. Antes de 16, sin Multigolpe, coge el reinicio y +12 % (Lucia); si vas corto de Maná, la de Maná."},
+  "divine-aura": {"nivel": "16, luego 20", "por_que": "Infravalorada: hace daño a la vez que tú, así que cuanto más tiempo esté, mejor. A 16 coge velocidad de ataque del aura y −10 s; a 20 añade +3 s (Lucia). Opción: Kaeria coge +3 s en vez de la velocidad a 16; para farmear, aLuckyRO coge la de área (hasta cuatro monstruos). Whelps (global) coge la de área y −10 s a 16, y las mismas tres a 20."},
+  "bolt": {"nivel": "16, luego 20", "por_que": "Tu golpe más fuerte. Cárgala del todo: abre el combate con ella y otra vez cada vez que vuelva. Whelps (20-oct): +30 % de Velocidad de habilidad y crítico garantizado a 16, +20 % a un solo objetivo a 20. Opción: Lucia deja +300 de Precisión de habilidad en vez del crítico hasta 20: mientras tu Precisión es baja, evita que falle."},
+  "judgment-thunder": {"nivel": "12, luego 16", "por_que": "Daño constante y cancela animaciones. Whelps (20-oct) la deja a 13 con −20 % de Maná y +12 % a un solo objetivo: con Castigo terrestre a 20 sale de la macro de jefes (le quita la animación a Condena) y se queda para farmear. ¿Farmeas mucho? A 16 la espec. Divine Punishment casi la duplica (Kaeria)."},
+  "lightning-strike-scattershot": {"nivel": "12, luego 16", "por_que": "Solo en stagger, pero cada golpe quita 1 s a todos tus enfriamientos. Whelps la deja a 13 y solo la pulsa cuando Condena no está saliendo durante el stagger; si sale, sigue con la macro."},
+  "healing-light": {"nivel": "16", "por_que": "Cura rápida casi sin enfriamiento: +2 usos y +2 % de vida (sube con la Mejora curativa). A 20 añade −2 s."},
+  "radiant-recovery": {"nivel": "16, luego 20", "por_que": "Tu cura más fuerte fuera de los estigmas; quita un debuff. Lucia: −3 s y +10 % de Curación Recibida hasta 16, luego −3 s y +5 % de vida; súbela a 20 pronto. Opción: +1 uso en vez de −3 s, para dos curas grandes seguidas. A 20 Whelps coge +1 uso, −3 s y +5 % de vida."},
+  "earths-retribution": {"nivel": "12, luego 16", "por_que": "Ataque básico para cancelar animaciones: probabilidad de Discharge y −7 s a Centella con cada Discharge (cuantos más Discharge, antes vuelve Centella). A 20 añade Multigolpe."},
+  "debilitating-mark": {"nivel": "12", "por_que": "−15 % de Defensa al jefe mientras dura el daño en el tiempo; Lucia añade el 20 % de aturdimiento para controlar en Trascendencia. Opción: la que baja el daño del jefe en vez del aturdimiento (Lucia no está segura de que funcione como dice)."},
+  "chain-of-torment": {"nivel": "12", "por_que": "Existe para habilitar Condena; −10 % de tolerancia a daño de JcE al jefe. Lucia coge el 20 % de derribo para controlar en Trascendencia. Opción: +3 s de daño en el tiempo si no necesitas el derribo. A 16 Whelps coge la reducción de tolerancia y el intervalo de daño a la mitad."},
+  "light-of-regeneration": {"nivel": "12-16", "por_que": "Relánzala en cuanto vuelva. +5 % de Curación Recibida; antes de 16 la segunda es +20 % de cura por debajo del 50 % de vida; a 16, la de 5 % de tolerancia."},
+  "defiance": {"nivel": "12", "por_que": "Rompe aturdimientos; 10 % de vida y +2 s de inmunidad."},
+  "earth-punishment": {"nivel": "15, luego 20", "por_que": "Condena siempre critea (así no tiene enfriamiento) y el grupo recibe Defensa, Ataque y Golpe. De tus habilidades más importantes."},
+  "light-of-protection": {"nivel": "20", "por_que": "Tu mantra: Curación Recibida, Precisión, +10 % de vida y Perforación, sin enfriamiento. No se acumula con el mantra de un Conjurador: si hay uno en el grupo, cámbiala. Es un interruptor: actívalo una vez y déjalo fuera de las líneas y de la macro."},
+  "prayer-of-amplification": {"nivel": "10, luego 20", "por_que": "+20 % de Ataque en cuanto vuelve, y mejora Gracia empírea y Gracia terrestre. Sin ella un Clérigo no hace daño. Los tres primeros estigmas a 20 de Lucia: este, Castigo terrestre y Luz de protección."},
+  "noble-aura": {"nivel": "10 o más", "por_que": "Un orbe que ataca contigo, cerca del doble de tu daño; cuanto más alto, mejor."},
+  "absolution": {"nivel": "Con Conjurador", "por_que": "El estigma de cura más fuerte, pero solo bueno desde 15: +5 % de vida, cura 15-20 mil y 1 minuto de enfriamiento desde 5. La elección de Lucia en lugar de Luz de protección con un Conjurador en el grupo."},
+  "benevolence": {"nivel": "Santuario", "por_que": "Cura en el tiempo para todo el grupo; como Absolución, solo vale un hueco desde 15."},
+  "yustiels-power": {"nivel": "Santuario", "por_que": "Tolerancia a daño para el grupo durante 10 s: un cambio de santuario en lugar de Aura noble o de Oración."},
+  "summon-resurrection": {"nivel": "5", "por_que": "Déjala a 5 al principio; cógela si tu grupo no para de morir. En grupos al azar Lucia no la lleva: si el jugador revive con una piedra, el estigma entra igual en 2 minutos de enfriamiento."},
+  "salvation": {"nivel": "No subir", "por_que": "3 s de invulnerabilidad con un enfriamiento largo; los ataques rojos la atraviesan de todos modos: mejor esquivar."}
+ },
+ "traducciones": {
+  "absolution": {"efecto": "Quita hasta 2 debuffs y recupera 1.602-1.762 de Puntos de Vida a ti y a los miembros del grupo en un radio de 40 m.", "specs": ["Reducción de 30 s de Tiempo de Enfriamiento", "Quita todos los debuffs", "+5 % de Puntos de Vida recuperados", "Recupera un 1,5 % de Puntos de Vida cada 2 s durante 10 s"]},
+  "benevolence": {"efecto": "Te da Benevolence durante 20 s: recupera 90-100 de Puntos de Vida cada 2 s a ti y a los miembros del grupo en un radio de 40 m mientras dura.", "specs": ["+10 s de duración", "Recupera 200 de Vigor cada 5 s mientras dura", "Recupera un 2 % de Puntos de Vida cada 5 s mientras dura", "Efecto de limpieza cada 5 s mientras dura"]},
+  "yustiels-power": {"efecto": "Aumenta un 20 % la Tolerancia a Daño JcE y un 10 % la de JcJ durante 10 s a ti y a los miembros del grupo en un radio de 40 m. No le afectan los aumentos de enfriamiento.", "specs": ["Escudo protector del 10 % de los Puntos de Vida máximos", "+100 de Bloqueo y Evasión", "+20 % de Resistencia a Efectos de Estado", "+10 % de Tolerancia a Daño JcE y +5 % de tolerancia de JcJ adicionales"]},
+  "summon-resurrection": {"efecto": "Resucita a un miembro del grupo caído en un radio de 40 m.", "specs": ["−1 s de tiempo de lanzamiento", "Invencible 3 s tras resucitar", "Recupera el 20 % de los Puntos de Vida máximos", "Invencible 5 s tras resucitar"]},
+  "salvation": {"efecto": "Eres inmune al daño y a los efectos de estado durante 3 s. No bloquea algunos ataques poderosos. No le afectan los aumentos de enfriamiento.", "specs": ["+100 % de Curación Recibida", "Al terminar [Salvación], recupera el 20 % de los Puntos de Vida máximos", "Da el efecto base de [Salvación] al miembro del grupo con menos vida", "Se activa [Salvación] al sufrir un estado de tipo impacto"]}
+ },
+ "secciones": {
+  "habilidades": [
+   {"tipo": "aviso", "texto": "**Te pagan por daño.** Las recompensas de mazmorra dependen de tu contribución: toda esta build va de hacer daño mientras curas de paso. Casi todo va a daño; las curas que importan necesitan 16: Luz de curación y Resplandor de recobro."},
+   {"titulo": "Orden de subida", "tipo": "lista", "items": [
+    "**Mientras subes** (Lucia): primero las dos que intercalas, Retribución terrestre y Rayo del juicio; luego Condena; luego las curas. Tras las misiones regionales a 45, todas a 12 o más; desde ahí, especializaciones y curas.",
+    "**Final** (Whelps, 20-oct): Condena y Centella a 18, primero; Aura divina 16; Retribución terrestre y Luz de regeneración 15; las curas, Rayo del juicio, Relámpagos sin puntería y Estigma debilitante 13; Enlace de dolor 12."
+   ]},
+   {"titulo": "Pasivas", "tipo": "lista", "items": [
+    "**Gracia empírea**: la más importante (Daño Crítico, Golpe y daño extra en cada golpe). Lo más alta que puedas.",
+    "**Gracia terrestre**: antes buffeaba al grupo, ahora solo a ti; aún vale la pena subirla.",
+    "**Mejora curativa**: aumento de cura según tu Ataque, así que un Clérigo sube Ataque, no Defensa.",
+    "**Favor radiante**: cura a los aliados cercanos al atacar; cógela si vas a todo daño.",
+    "Favor cálido y Velo inmortal están bien; Favor empíreo es para JcJ.",
+    "Lucia sube estas tres primero: Gracia empírea, Mejora curativa y Gracia terrestre. Velo inmortal ayuda al principio y pierde valor cuando la armadura sube.",
+    "Primeros días (aLuckyRO): Favor radiante (cura a todo el grupo cada pocos segundos mientras pegan) y Mejora curativa primero. Las de crítico solo rinden cuando el equipo da Crítico."
+   ]}
+  ],
+  "estigmas": [
+   {"tipo": "aviso", "texto": "**Grupos grandes** (expediciones de 5 y santuarios de 10): con un Conjurador en el grupo tu mantra no se suma al suyo: quita Luz de protección."},
+   {"titulo": "Dos presets (Whelps, 20-oct)", "tipo": "tabla", "columnas": ["Preset", "Estigmas", "Orden a 20"], "filas": [
+    ["Sin Conjurador", "Castigo terrestre, Oración de amplificación, Luz de protección, Aura noble", "Castigo terrestre, luego Oración y Luz de protección la tercera (baja Aura noble si así llega Luz de protección a 20; sus niveles: 20, 20, 15 y 13)"],
+    ["Con Conjurador", "Castigo terrestre, Oración de amplificación, Aura noble, Resurrección de invocación", "Castigo terrestre, Oración y Aura noble la tercera"]
+   ]},
+   {"tipo": "aviso", "texto": "Cada preset guarda sus propios niveles de habilidad, así que se pueden subir los dos al máximo. Para un papel de apoyo, cambia Aura noble por Resurrección de invocación o Poder de Yustiel. Con Conjurador: Luz de protección fuera y en su lugar Absolución, otra cura o Resurrección de invocación. Voice of Doom (−200 de Resistencia Crítica al jefe a 15) es una opción en santuarios con un segundo sanador, sobre todo al principio; Power Burst solo donde haya que romper la barra de stagger y nadie más pueda (Pesadilla)."},
+   {"titulo": "Qué estigmas y a qué nivel", "tipo": "tabla", "columnas": ["Estigma", "Nivel", "Para qué"], "filas": [
+    ["Castigo terrestre", "15, luego 20", "Condena siempre critea; buffs al grupo"],
+    ["Luz de protección", "20", "Tu mantra (interruptor)"],
+    ["Oración de amplificación", "10, luego 20", "+20 % de Ataque; sin ella no hay daño"],
+    ["Aura noble", "10 o más", "Un orbe que ataca contigo"],
+    ["Absolución", "Con Conjurador", "La cura más fuerte; desde 15"],
+    ["Benevolence", "Santuario", "Cura en el tiempo de grupo; desde 15"],
+    ["Poder de Yustiel", "Santuario", "Tolerancia a daño de grupo 10 s"],
+    ["Resurrección de invocación", "5", "Si el grupo no para de morir"],
+    ["Salvación", "No subir", "Los ataques rojos la atraviesan"]
+   ]},
+   {"comun": "fragmentos-estigma"}
+  ],
+  "equipo": [
+   {"titulo": "Equipo y estadísticas", "tipo": "lista", "items": [
+    "**Líneas del equipo**: Might (ataque y cura), Velocidad de Hechizo y Amplificación de Daño; también son fuertes Amplificación de Daño de Arma y Precision. En JcE sáltate resistencias, evasión y líneas defensivas.",
+    "**Arma y guarda** (Lucia): Amplificación de Daño de Arma, Might, Velocidad de Hechizo y Precision. Guantes: Velocidad de Hechizo; botas: Velocidad de Movimiento. Accesorios: Velocidad de Hechizo, Might y Precision, más una línea de Gracia terrestre o Gracia empírea.",
+    "**Anillos**: fabrícalos cuanto antes (los fabricados tienen una línea más de activas). Llena todas las líneas con activas: Condena, Resplandor de recobro, Rayo del juicio, y Luz de curación o Aura divina.",
+    "**Estadísticas**: Destrucción, Sabiduría (Golpe), Fantasía (enfriamientos), Tiempo (Velocidad de Hechizo), Libertad (Precisión) y Muerte (Crítico), la elección de Kaeria: un Clérigo siempre va corto de crítico. Las cuatro de Lucia: Tiempo, Fantasía, Espacio y Destrucción.",
+    "**Para la raid de Ludra**: al menos 1.000 de Precisión y 1.000 de Crítico.",
+    "**Reducción de Tiempo de Enfriamiento**: cuanta más, mejor. Con cerca de un 33 % Condena no pararía de salir, pero en Season 1 se llega a un 10-11 % en total (Whelps)."
+   ]},
+   {"comun": "soulbind"}
+  ],
+  "daevanion": [
+   {"tipo": "aviso", "texto": "Daevanion lleva tus habilidades de 10 a 14 y añade estadísticas. Cada nodo azul da **+1 nivel** a su habilidad. Reiniciar un tablero es barato y lo rehacerás muchas veces."},
+   {"titulo": "Prioridades", "tipo": "lista", "items": [
+    "Primero los nodos naranja de Reducción de Tiempo de Enfriamiento y Velocidad de Hechizo; luego Ataque y Crítico; luego los azules de habilidad; luego los naranja defensivos; las pasivas al final.",
+    "Tolerancia a Daño Crítico y resistencia a Multigolpe no hacen nada en JcE: los jefes no hacen críticos ni multigolpes.",
+    "**Orden de Lucia**: en Nezekan y Zikel coge las cuatro esquinas y tus habilidades; en Vaizel y Triniel sáltate las esquinas y ve directo a las activas que usas.",
+    "**Orden de Whelps**: primero los azules que llevan tus activas a 12 (el segundo hueco de especialización es un gran salto); luego los naranja de ataque (Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento, Amplificación de Daño, Amplificación de Daño Crítico, Multigolpe), los nodos de Gracia empírea y Gracia terrestre, Ataque y Crítico, y solo después los defensivos. Evita los nodos de +50 de Maná cuando puedas.",
+    "Azphel (nivel 45) es todo Amplificación y Tolerancia de Daño de JcJ: no cuenta para JcE."
+   ]},
+   {"titulo": "Tableros", "tipo": "tabla", "columnas": ["Tablero", "Nivel", "Nodos naranja"], "filas": [
+    ["Nezekan", "12", "Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento"],
+    ["Zikel", "20", "Amplificación de Daño, Tolerancia a Daño"],
+    ["Vaizel", "30", "Amplificación y Tolerancia de Daño Crítico"],
+    ["Triniel", "40", "Multigolpe y su resistencia"],
+    ["Ariel", "45", "Solo JcE, con cristales propios (abajo)"]
+   ]},
+   {"comun": "ariel"},
+   {"comun": "cristales"}
+  ],
+  "coleccionables": [
+   {"tipo": "aviso", "texto": "La regla de Whelps para Season 1 (20-oct): de verdad solo una o dos habilidades llegan a 20; una tercera o cuarta pide tiradas perfectas y no compensa, y las cartas seguramente se rehagan en Season 2. Así que apunta solo a **Condena 20** (cerca de la mitad de tu daño) y sube una segunda a 20 solo si las cartas te dan la ocasión. Con Condena a 20, vuelve a Conquista a farmear Kina y únicos para tus tiradas de Soul Binding."},
+   {"titulo": "Arcanas", "tipo": "tabla", "columnas": ["Carta", "Set / atributo", "Qué buscar"], "filas": [
+    ["Cáliz", "Vigor (Tiempo, Velocidad de Hechizo)", "Condena, y una segunda habilidad si sale; luego busca la misma pareja en el Pergamino"],
+    ["Pergamino", "Cualquiera (Vida o Destino es defensivo; importan más las líneas de habilidad)", "Condena: guarda y sube todo Pergamino que la tenga; +4 en Condena solo pide +2 de un anillo para 20"],
+    ["Brújula", "Vigor para cerrar el set de 4, o Magic (Muerte, Crítico)", "Aura divina: +4 es la mejor tirada de cualquier carta (20 con +2 de un anillo); +2 la deja en 16"],
+    ["Campana", "Magic (Destrucción, Ataque)", "Gracia empírea a nivel alto; apunta a +3"],
+    ["Espejo", "Vigor (Fantasía, enfriamientos)", "Gracia terrestre a nivel alto; Mejora curativa también vale"]
+   ]},
+   {"titulo": "Cómo subirlas", "tipo": "lista", "items": [
+    "**Condena 20**: por ejemplo +2 en el Cáliz, +2 en el Pergamino y +2 de un anillo. Un Cáliz transmutado con dos habilidades facilita un segundo 20, pero cuesta 15 Mysterious Crystals y 5 millones de Kina: Whelps prefiere subir las cartas.",
+    "**Anillos los últimos**: tira primero las líneas de Soul Binding de armas, guarda, armadura y demás accesorios; el anillo solo cuando cierre un hueco (el Cáliz ya tiene la habilidad).",
+    "**Sets**: con dos cartas Vigor (Cáliz y Espejo) basta; la Brújula y el Pergamino pueden ser Magic. Al principio, una carta con las habilidades correctas vale más que una del set correcto.",
+    "**Especializaciones a 20** (Whelps): Aura divina, velocidad de ataque, +3 s y −10 s; Centella, +30 % de Velocidad de habilidad, +20 % a un objetivo y crítico garantizado; Resplandor de recobro, +1 uso, −3 s y +5 % de vida; Retribución terrestre, probabilidad de Discharge, Multigolpe y −7 s a Centella."
+   ]},
+   {"titulo": "Títulos (Whelps)", "tipo": "lista", "items": [
+    "**Ataque**: Guardian of Baran o Artguard por la Amplificación de Daño de JcE, hasta Librarse de las ataduras de raza (todas las ruedas de Comprensión de raza a 10).",
+    "**Defensa**: Santo, por Tolerancia a Daño y Defensa.",
+    "**Variado**: De ida y vuelta al infierno por la Reducción de Tiempo de Enfriamiento, hasta Ay, no tengo nada que ponerme (Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento; 700 aspectos: extrae equipo azul o inferior y combina; el armario se comparte con tus otros personajes)."
+   ]},
+   {"tipo": "aviso", "texto": "**Alas**: empieza con las **Forest Spirit wings**, las más baratas y las mejores para daño a jefes (Whelps); cualquiera menos las Dark Veil de jefe vale. Las mejores: **Alas de Talisra** (Ataque 60, Defensa 400, Precisión 35, −4 % de enfriamientos), en la tienda de la temporada por unos 250.000 puntos de temporada: guárdalos para ellas. Al final colecciona todas por sus efectos de posesión."},
+   {"comun": "titulos"},
+   {"comun": "titulos-nota"}
+  ],
+  "mascotas": [
+   {"tipo": "aviso", "texto": "Sube pronto todas las mascotas a nivel 3: matar mascotas que ya tienes subidas da los cristales para estas líneas."},
+   {"titulo": "Líneas del Clérigo en cada rueda (Lucia)", "tipo": "tabla", "columnas": ["Línea", "Qué coger"], "filas": [
+    ["1 y 5", "Ataque (en la 5, o Ataque Máximo)"],
+    ["2 y 8", "Puntos de Vida"],
+    ["3, 6 y 9", "Precisión, o Bloqueo si ya vas sobrado de Precisión"],
+    ["4", "La línea de daño de esa rueda: Amplificación de Daño, Perforación o Ataque por la Espalda"],
+    ["7", "Recuperación o Tenacidad"],
+    ["Especial", "Golpe"]
+   ]},
+   {"tipo": "aviso", "texto": "Tira buscando el valor más alto y bloquea una línea solo cuando esté cerca del máximo, y nunca antes de que la rueda esté a nivel 9-10. Lo general de Comprensión de raza, abajo."},
+   {"comun": "mascotas"}
+  ]
+ }
+}

@@ -1,0 +1,142 @@
+{
+ "clase": "sorcerer",
+ "nombre": "Hechicero",
+ "resumen": "Cañón de cristal a distancia que lanza fuego y hielo. El fuego hace el daño (Marca ígnea marca el objetivo y Explosión de llama la cobra) y el hielo ralentiza, ata y congela para que nada te alcance. La mitad de tus bonus de daño dependen del Maná: por encima del 50 % criticas más y por encima del 25 % haces un 20 % más de daño. La build en una frase: abre con Voto de concentración, Mejora elemental, Explosión retrasada y Atadura invernal, y carga del todo Llamas del infierno a mano dentro de los 5 s de Atadura invernal; el resto va en las líneas apiladas o en una macro de tres botones. Con Voto de concentración a 16, pasa al final.",
+ "pros": [
+  "Llamas del infierno sigue siendo el mayor daño en los registros de jefes de global",
+  "El hielo controla: ralentiza, ata y congela para que nada te alcance",
+  "Dos formas de jugarlo: líneas apiladas a mano (más daño) o macro de tres botones (más cómoda)"
+ ],
+ "contras": [
+  "Cañón de cristal: poca supervivencia",
+  "Depende del Maná: por debajo del 50 % pierdes crítico y por debajo del 25 %, un 20 % de daño",
+  "Al principio falta Maná (unos 3.000 y sin Reducción de Tiempo de Enfriamiento)",
+  "Las habilidades se quedan en 16, no en 20: las Arcanas y los anillos llegan despacio"
+ ],
+ "presets": [
+  {"nombre_en": "main", "nombre": "Principal", "uso": "Mejora elemental, Explosión retrasada, Barrera de fuego y Tormenta helada."},
+  {"nombre_en": "stagger", "nombre": "Grupo sin stagger", "uso": "Explosión de divinidad en lugar de Tormenta helada cuando el grupo no rompe el stagger (EUTOPIA)."},
+  {"nombre_en": "short", "nombre": "Combates cortos y farmeo", "uso": "Golpe de glaciar en lugar de Tormenta helada."},
+  {"nombre_en": "survive", "nombre": "Jefe que te mata", "uso": "Barrera de acero en lugar de Tormenta helada; también mientras subes de nivel en solitario."}
+ ],
+ "cartas": {
+  "hellfire": {"nivel": "16, luego 20", "por_que": "Sigue siendo el mayor daño en los registros de jefes de global, pero la última habilidad en subir: EUTOPIA (11-oct) se queda con +30 % de Velocidad de habilidad y la de ignorar Bloqueo y Evasión (según su descripción también sale como Multigolpe, que es lo que cogen los mejores) en vez de correr a 16. Cárgala del todo y lánzala a mano. A 16 cámbiala por −15 s de enfriamiento y recupérala como tercera a 20."},
+  "firestorm": {"nivel": "16, luego 20", "por_que": "Lánzala con su enfriamiento de 5 s. De 12 a 15: +20 % de Velocidad de habilidad y −2 s a Llamas del infierno por bola de fuego (EUTOPIA). A 16 cambia la velocidad por +15 % de daño por bola (hasta +75 %); la velocidad vuelve a 20. Corto de Maná al principio: −50 % de coste de Maná en vez de la velocidad."},
+  "bittercold-wind": {"nivel": "16", "por_que": "Campo de atadura: +1 s de duración y a 12 un crítico garantizado que atraviesa Bloqueo y Evasión (EUTOPIA). Su espec. de 16 solo acorta Congelación: sáltala cuando Congelación ya no esté en la barra."},
+  "blaze": {"nivel": "16, luego 20", "por_que": "Daño principal sobre un objetivo con Marca ígnea; recupera Maná. De 12 a 15: daño retardado y Multigolpe (EUTOPIA); en solitario contra un jefe difícil, cambia el retardo por la absorción de vida (aLuckyRO). A 16 cambia el retardo por −3 s a Voto de concentración en cada golpe; el retardo vuelve a 20."},
+  "wish-of-concentration": {"nivel": "16, luego 20", "por_que": "+10 % de Ataque adicional y, de 12 a 15, +10 % de Velocidad de Hechizo: las dos fuentes cogen estas dos. La primera en subir: a 16 cambia la Velocidad de Hechizo por −10 s a todos los enfriamientos (el punto clave n.º 1 de EUTOPIA) y recupérala a 20. Antes de 16, lanza Voto el primero: su buff y la velocidad cubren todo el burst. Desde 16, el último, con Llamas del infierno, Quebrantamiento en llamas y Viento helado en enfriamiento, para que el recorte caiga sobre ellos."},
+  "winters-shackles": {"nivel": "16, luego 20", "por_que": "+20 % de Amplificación de Daño de JcE durante 5 s al acertar: la razón para subirla y la ventana donde cae tu Llamas del infierno cargada. De 12 a 15 añade la cadena Winter's Illusion (EUTOPIA); a 16 cámbiala por −15 s de enfriamiento para que la ventana llegue más a menudo; la cadena vuelve a 20."},
+  "flame-arrow": {"nivel": "16, luego 20", "por_que": "Ataque básico y tu motor de Maná. Primeros días: +20 % de Maná recuperado; luego +50 % de Multigolpe y, desde 12, +5 % de daño de fuego durante 10 s cada vez que salta Pyroclasm (EUTOPIA). A 16 cambia el Multigolpe por el reinicio de Explosión de llama; el Multigolpe vuelve a 20."},
+  "ice-chain": {"nivel": "12", "por_que": "EUTOPIA quita de la barra Cadena gélida, Congelación y Explosión de Congelación: cuestan de meter y suman poco daño. Tampoco para el stagger: su daño de stagger es pequeño y Llamas del infierno sola hace 20-35. aLuckyRO deja Cadena gélida a 12: cada golpe quita 1 s a Atadura invernal. +20 % de Velocidad de habilidad, o −20 % de Maná si te falta."},
+  "flame-scattershot": {"nivel": "12", "por_que": "Solo contra objetivos en stagger. EUTOPIA la deja fuera de la macro: en su propia tecla, o fuera de la barra mientras sigues tu rotación. Coge la de movimiento, y Multigolpe a 12."},
+  "frost": {"nivel": "Subida de nivel", "por_que": "Recupera 200 de Maná: útil mientras subes de nivel y vas corto de Maná; EUTOPIA la quita de la barra al final. Algunas builds de global dejan Congelación y Explosión de Congelación a 12: −5 s de enfriamiento, y Congelación reinicia Explosión de Congelación."},
+  "defiance": {"nivel": "12", "por_que": "Rompe aturdimientos; recuperas un 20 % de vida al soltarte."},
+  "frost-burst": {"nivel": "No subir", "por_que": "Solo contra objetivos congelados. En las pruebas de EUTOPIA va de +0,8 % a −2-3 %: ninguna ganancia estable. Si la rotación te aburre puedes meter Explosión de Congelación o Cadena gélida, no las dos: el porcentaje de daño que muestran esconde las Flechas en llamas que desplazan. Krix Domi coge la de Bloqueo y Evasión y la de movimiento y le sale a cuenta hasta unos 2.700 de nivel de objeto y 150.000 de Poder de Combate; pasado eso, quítala de la macro."},
+  "element-enhancement": {"nivel": "20", "por_que": "+20 % de Ataque de fuego y agua (+10 % más a 20): tu buff principal, cada vez que esté listo. El primero en subir a 20, cuando los cuatro estén a 10."},
+  "delayed-explosion": {"nivel": "10", "por_que": "El objetivo recibe +15 % de daño tuyo durante 4 s; a 10 su enfriamiento baja 10 s. EUTOPIA lo cuenta entre los principales y lo sube justo después de Mejora elemental."},
+  "fire-wall": {"nivel": "10", "por_que": "Campo de daño de fuego en el tiempo; Embers añade daño extra en cada golpe. Mejor cuando el jefe está quieto o el grupo de monstruos pasa por él."},
+  "cold-storm": {"nivel": "10", "por_que": "Campo de daño de agua en el tiempo con Frostbite: daño extra en cada golpe que das dentro."},
+  "glacial-smite": {"nivel": "Alternativa", "por_que": "Golpe grande instantáneo en área, más fuerte contra grupos; el cambio por Tormenta helada en combates cortos y para farmear."},
+  "divine-burst": {"nivel": "Alternativa", "por_que": "Un golpe con 50 de daño al medidor de stagger: el cambio por Tormenta helada cuando el grupo no rompe el stagger (EUTOPIA). Absorción de vida a 10 y empuja al objetivo a 15."},
+  "steel-barrier": {"nivel": "Alternativa", "por_que": "Escudo del 16 % de tus Puntos de Vida máximos: llévalo mientras subes de nivel en solitario y ponlo en lugar de Tormenta helada contra un jefe que no para de matarte (EUTOPIA)."}
+ },
+ "traducciones": {
+  "glacial-smite": {"efecto": "Elige un objetivo en un radio de 20 m e inflige daño de agua a un máximo de 4 enemigos en un radio de 4 m alrededor del objetivo. 20 de daño al medidor de stagger.", "specs": ["Cuantos más objetivos se acierten, aumento máx. del 20 % de daño", "Reducción de 30 s de Tiempo de Enfriamiento", "50 % de probabilidad de provocar Congelación durante 3 s", "Ignora el Bloqueo y la Evasión y sale como Multigolpe"]},
+  "divine-burst": {"efecto": "Inflige daño de fuego a un objetivo en un radio de 20 m. 50 de daño al medidor de stagger.", "specs": ["+20 % de Velocidad de habilidad", "Absorción del 10 % de Puntos de Vida", "75 % de probabilidad de empujar al objetivo", "Aturdimiento de 3 s tras el empuje"]},
+  "steel-barrier": {"efecto": "Da un escudo protector del 16 % de los Puntos de Vida máximos durante 60 s. Mientras dura, +10 % de Tolerancia a Daño JcE y +5 % de la de JcJ, y al terminar recupera 300 de Vigor.", "specs": ["+10 % de Velocidad de Movimiento", "Regeneración de Puntos de Vida cada cierto tiempo", "+10 % de Tolerancia a Daño JcE y +5 % de la de JcJ adicionales", "Reducción de 15 s de Tiempo de Enfriamiento"]}
+ },
+ "secciones": {
+  "habilidades": [
+   {"titulo": "Antes de nada", "tipo": "lista", "items": [
+    "**Fija el objetivo.** Pulsa Tab o haz clic en el enemigo: dos flechas en su barra de vida = fijado duro. Así el ataque básico Flecha en llamas sigue solo tras cada habilidad y recupera Maná; si solo apuntas, se para tras cada habilidad. Es por el fijado, no por el modo de control: el modo de AION 2 va bien.",
+    "**Dos etapas.** Los primeros días a 45 tus habilidades están a 8-10 con una especialización cada una: coge las de Maná y velocidad que dicen las cartas. Los niveles de las cartas y las espec. marcadas son el objetivo posterior (16); qué coger de 12 a 15 está en el texto de cada carta (EUTOPIA)."
+   ]},
+   {"tipo": "aviso", "texto": "Más adelante siete habilidades van a **16**: Voto de concentración primero, luego Flecha en llamas, Quebrantamiento en llamas, Explosión de llama, Viento helado y Llamas del infierno la última (EUTOPIA, 11-oct); el resto se queda en **12** o sale de la barra. Por debajo de 12 una habilidad tiene un solo hueco de especialización."},
+   {"titulo": "Avisos", "tipo": "lista", "items": [
+    "**Habilidades a 16, no a 20.** Las Arcanas y los anillos son los que pasan de 16, y llegan despacio.",
+    "**Al principio falta Maná.** Unos 3.000 y sin Reducción de Tiempo de Enfriamiento: las primeras espec. van de Maná y Velocidad de habilidad, no de daño.",
+    "**Las espec. cambian a 16.** Ese nivel abre una opción que supera a las anteriores: las marcadas son para 16 y cada carta dice qué coger de 12 a 15."
+   ]},
+   {"titulo": "Pasivas", "tipo": "tabla", "columnas": ["Pasiva", "Por qué"], "filas": [
+    ["Toga de llama", "Precisión, Amplificación de Daño de JcE y Golpe: la primera a subir al máximo"],
+    ["Marca ígnea", "Pone la Marca ígnea que necesita Explosión de llama y quema al objetivo. Al máximo"],
+    ["Merced de mejora", "+20 % de Amplificación de Daño de JcE con el Maná al 25 % o más, y golpes extra: la tercera prioridad de EUTOPIA"],
+    ["Toga terrestre", "Puntos de Maná y Crítico con el Maná al 50 % o más (casi siempre). Al máximo"],
+    ["Vaporización de viveza", "Daño extra mientras el objetivo está por encima del 70 % de vida: fuerte al principio, cuando los combates son cortos"],
+    ["Toga de helada", "Defensa, Resistencia Crítica y ralentiza a quien te ataca: EUTOPIA la mantiene alta para los jefes difíciles"],
+    ["Invocación helada", "Daño extra contra objetivos ralentizados (Atadura invernal los ralentiza). Menos de lo que parece: EUTOPIA la deja baja"]
+   ]},
+   {"tipo": "aviso", "texto": "El Crítico de Toga terrestre pide el Maná al 50 % o más y la Amplificación de Daño de Merced de mejora, al 25 % o más: mantén el Maná por encima de la mitad. Krix Domi (14-oct) las ordena distinto: Toga de llama lo más alta posible, luego Toga terrestre por su crítico, luego Toga de helada; el resto le parece menor."}
+  ],
+  "estigmas": [
+   {"tipo": "aviso", "texto": "Orden: Mejora elemental, Explosión retrasada, Barrera de fuego y Tormenta helada. Primero los cuatro a **5** (el nivel 5 de cada uno añade daño), luego a **10**, y solo entonces uno a 20 (EUTOPIA, 11-oct; su personaje en global va 11, 7, 5 y 5)."},
+   {"titulo": "Qué estigmas y a qué nivel", "tipo": "tabla", "columnas": ["Estigma", "Nivel", "Para qué"], "filas": [
+    ["Mejora elemental", "20", "Tu buff principal; el primero a 20 cuando los cuatro estén a 10"],
+    ["Explosión retrasada", "10", "+15 % de daño tuyo durante 4 s; −10 s de enfriamiento a 10"],
+    ["Barrera de fuego", "10", "Campo de fuego; mejor con el jefe quieto"],
+    ["Tormenta helada", "10", "Campo de agua con daño extra en cada golpe"],
+    ["Golpe de glaciar", "Alternativa", "Combates cortos y farmeo"],
+    ["Explosión de divinidad", "Alternativa", "Cuando el grupo no rompe el stagger"],
+    ["Barrera de acero", "Alternativa", "Subida de nivel en solitario o un jefe que te mata"]
+   ]},
+   {"tipo": "aviso", "texto": "En global EUTOPIA lleva justo estos cuatro; cuando el grupo no rompe el stagger, cambia Tormenta helada por Explosión de divinidad. Krix Domi (14-oct) deja Mejora elemental el primero pero sube Barrera de fuego lo más alto posible pronto, mantiene Tormenta helada y Barrera de fuego al menos a 5, y ve bien Explosión retrasada a 1 y mejor a 10: no es prioridad."},
+   {"comun": "fragmentos-estigma"}
+  ],
+  "equipo": [
+   {"titulo": "Equipo", "tipo": "lista", "items": [
+    "**Piedras de maná**: Ataque, Crítico y Precisión.",
+    "Vigila los **Puntos de Maná** y su recuperación hasta que la rotación deje de quedarse seca."
+   ]},
+   {"titulo": "Líneas de cada pieza (Krix Domi, 14-oct)", "tipo": "tabla", "columnas": ["Pieza", "Líneas"], "filas": [
+    ["Arma y guarda", "Velocidad de Hechizo, Amplificación de Daño de Arma, Might, Multigolpe, Amplificación de Daño; una sexta (Ataque) con Philosopher's Stones en un arma fabricada, tirada y ligada"],
+    ["Casco", "Golpe, Aumento de Ataque, Ataque, Toga de llama; la quinta libre (Crítico, Precisión)"],
+    ["Hombreras", "Golpe, Ataque, Amplificación de Daño Crítico, Toga de llama; una libre"],
+    ["Peto", "Amplificación de Daño, Perforación, Ataque, Toga de llama; una libre"],
+    ["Guantes", "Perforación, Velocidad de Hechizo, Ataque, Toga de llama"],
+    ["Capa", "Golpe, Aumento de Ataque, Ataque, Toga de llama"],
+    ["Botas", "Velocidad de Movimiento, Perforación, Ataque, Toga de llama"],
+    ["Pendientes", "Might, Precision, Velocidad de Movimiento, Ataque, Toga de llama (Precision y Velocidad de Movimiento pueden dejar sitio a Ataque o Crítico)"],
+    ["Amuleto", "Velocidad de Hechizo, Might, Ataque, Toga de llama"],
+    ["Anillos", "Niveles de habilidad para llenar lo que no den las Arcanas"]
+   ]},
+   {"tipo": "aviso", "texto": "Una línea de **Toga de llama** en todas las piezas: el Hechicero solo tiene cuatro líneas buenas por pieza y esta pasiva es la quinta (Krix Domi)."}
+  ],
+  "daevanion": [
+   {"tipo": "aviso", "texto": "Daevanion lleva tus habilidades de 10 a 14 y añade estadísticas. Cada nodo azul da **+1 nivel** a su habilidad."},
+   {"titulo": "Prioridades", "tipo": "lista", "items": [
+    "Naranja de Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento; luego Ataque y Amplificación de Daño; luego Amplificación de Daño Crítico. Después los azules en el orden en que subes las habilidades: Voto de concentración, Quebrantamiento en llamas, Flecha en llamas, Explosión de llama, Viento helado, Atadura invernal y Llamas del infierno (al menos a 12), y también Llamas sin puntería y los verdes de Marca ígnea, Merced de mejora y Toga terrestre (EUTOPIA, 11-oct).",
+    "**Sáltate** Multigolpe y los naranja defensivos: un Hechicero quiere daño plano; la Precisión, más adelante. Krix Domi también se salta la resistencia a Multigolpe de Triniel, coge solo dos niveles de las habilidades de subida para llegar a 12, y más tarde recoge todos los nodos extra de Ataque y Puntos de Vida.",
+    "Azphel (nivel 45) es todo Amplificación y Tolerancia de Daño de JcJ: no cuenta para JcE."
+   ]},
+   {"titulo": "Tableros", "tipo": "tabla", "columnas": ["Tablero", "Nivel", "Nodos naranja"], "filas": [
+    ["Nezekan", "12", "Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento"],
+    ["Zikel", "20", "Amplificación de Daño, Tolerancia a Daño"],
+    ["Vaizel", "30", "Amplificación y Tolerancia de Daño Crítico"],
+    ["Triniel", "40", "Multigolpe y su resistencia"],
+    ["Ariel", "45", "Solo JcE, con cristales propios (abajo)"]
+   ]},
+   {"comun": "ariel"},
+   {"comun": "cristales"}
+  ],
+  "coleccionables": [
+   {"tipo": "aviso", "texto": "Krix Domi (14-oct, el mejor Hechicero del medidor de DPS de global) marca el objetivo: **Voto de concentración a 20 primero**, luego Llamas del infierno a 20 en el final; Flecha en llamas, Quebrantamiento en llamas y Explosión de llama solo necesitan 16. Busca Voto y Llamas del infierno en el **Pergamino** y el **Cáliz**; el **Espejo** lleva Toga de llama; la **Brújula**, solo +4 en Viento helado (para su 20). Cuatro cartas amarillas y una azul. Los anillos cierran el hueco: +2 en Viento helado y +2 en Voto de concentración."},
+   {"titulo": "Arcanas (un plan de global por nivel de equipo)", "tipo": "tabla", "columnas": ["Carta", "Atributo", "Set", "Líneas (final JcE)"], "filas": [
+    ["Cáliz", "Tiempo (Velocidad de Hechizo)", "Vitalidad primordial", "Quebrantamiento en llamas +3, Explosión de llama +2, Viento helado +2, Voto de concentración +2"],
+    ["Pergamino", "Vida", "Vitalidad primordial", "Llamas del infierno +3, Quebrantamiento en llamas +2, Explosión de llama +2, Voto de concentración +2"],
+    ["Brújula", "Libertad (Precisión)", "Armadura mágica", "Viento helado +3, Atadura invernal +3, Eliminación de impacto +2, Cadena gélida +1"],
+    ["Espejo", "Fantasía (enfriamientos)", "Armadura mágica", "Toga de llama +4, Toga terrestre +2, Vaporización de viveza +2, Absorción de esencia +1"],
+    ["Campana", "Destrucción (Ataque)", "Armadura mágica", "Marca ígnea +4, Toga de helada +2, Pacto de resurrección +2, Merced de resistencia +1"]
+   ]},
+   {"tipo": "aviso", "texto": "Las cartas de habilidad (Cáliz y Pergamino) llevan el núcleo de fuego; la Brújula, Viento helado y Atadura invernal; el Espejo y la Campana van a las pasivas: Toga de llama y Marca ígnea primero, luego Toga terrestre. Dos cartas de Vitalidad primordial y tres de Armadura mágica. Todas se cambian cuando Season 2 traiga otras."},
+   {"titulo": "Títulos y alas (Krix Domi)", "tipo": "lista", "items": [
+    "Títulos para JcE: **Librarse de las ataduras de raza** y **Saint of Vanguard**; al principio **De ida y vuelta al infierno** por su Reducción de Tiempo de Enfriamiento, hasta que lo sustituya uno con Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento (pide 700 aspectos).",
+    "Alas: las de temporada, **Alas de Talisra**, por su Reducción de Tiempo de Enfriamiento; las de Forest hasta tenerlas."
+   ]},
+   {"comun": "titulos"},
+   {"comun": "titulos-nota"}
+  ],
+  "mascotas": [
+   {"comun": "mascotas"}
+  ]
+ }
+}

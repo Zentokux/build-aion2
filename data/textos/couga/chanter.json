@@ -1,0 +1,135 @@
+{
+ "clase": "chanter",
+ "nombre": "Conjurador",
+ "resumen": "El Conjurador pelea cuerpo a cuerpo con bastón y a la vez hace más fuerte a todo el grupo: un buffer y un sanador de apoyo que todos los grupos quieren. No esperes el daño más alto (con el mismo equipo, Conjurador y Clérigo son los que menos daño hacen), pero el grupo pega más, muere menos y se le limpian los debuffs. La build en una frase: mantén Proclama del invicto activa y mantén la macro sobre la línea donde Golpe giratorio, Ira de Marchutan y Fractura impactante abren una y otra vez Fractura sombría, metiendo Fractura trituradora entre cada golpe.",
+ "pros": [
+  "Todos los grupos lo quieren: buffer y sanador de apoyo",
+  "Proclama del invicto da Crítico, Precisión, Daño Crítico y Golpe a todo el grupo",
+  "Con Fractura sombría a 16 su enfriamiento desaparece dentro de la ventana",
+  "Limpia debuffs al grupo (Hechizo de recobro)"
+ ],
+ "contras": [
+  "Con el mismo equipo, Conjurador y Clérigo son los que menos daño hacen",
+  "Todo depende de mantener abierta la ventana de Fractura sombría (2-3 s tras un abridor)",
+  "Antes de Fractura sombría a 16 la línea se rompe",
+  "Al principio va corto de Precisión: tiene que pegar a los jefes por la espalda o le bloquean"
+ ],
+ "presets": [
+  {"nombre_en": "main", "nombre": "Principal", "uso": "Proclama del invicto 20, Poder de vendaval de 5 a 20, Ira de Marchutan 1 y Defensa concentrada 5."},
+  {"nombre_en": "dungeons", "nombre": "Mazmorras y farmeo", "uso": "Proclama de esprint 10 (notXeon en mazmorras y farmeo; Grobs siempre, en lugar de Defensa concentrada)."},
+  {"nombre_en": "nocleric", "nombre": "Sin Clérigo", "uso": "Toque de recobro cuando eres el único sanador o el combate tiene muchos debuffs."},
+  {"nombre_en": "stagger", "nombre": "Comprobaciones de stagger", "uso": "Obliterate para jefes con comprobación de stagger (WallyJTV)."}
+ ],
+ "cartas": {
+  "dark-crush": {"nivel": "16, luego 20", "por_que": "Tu daño principal y la primera habilidad a subir a 16: sin quitarle el enfriamiento la clase no funciona. A 20 añade el crítico garantizado: así cada Fractura sombría recibe todo el bonus de Promesa de viento."},
+  "onslaught": {"nivel": "16, luego 20", "por_que": "Ataque básico que metes entre todo: recupera Maná, acorta Golpe giratorio y a 16 añade Storm Chain. La tercera espec. a 20 es a tu gusto: daño o la absorción de vida."},
+  "spinning-strike": {"nivel": "16, luego 20", "por_que": "De tus golpes más fuertes: +15 % de Daño Crítico acumulable durante 30 s, y abre Fractura sombría. A 20 añade la que ignora Bloqueo y Evasión y siempre critea. Grobs ya la coge a 16 y quita −5 s. Sáltate la de aumento de cura: no eres el sanador principal."},
+  "incandescent-blow": {"nivel": "16", "por_que": "El relleno mientras Fractura sombría está cerrada: +12 % a un solo objetivo y Multigolpe. No hay una tercera espec. buena, así que con 16 basta."},
+  "recuperation": {"nivel": "12", "por_que": "Tu única cura fuera de los estigmas, y tu limpieza. Con 12 basta (notXeon, WallyJTV): +5 % de vida (la cura base es una cifra fija) y una segunda carga. Cambia la carga por la limpieza de dos debuffs en combates con muchos debuffs; sube a 16 por −3 s solo si eres el único sanador. Grobs coge 16 y −3 s en vez de +5 % de vida."},
+  "defiance": {"nivel": "16", "por_que": "Rompe aturdimientos: +2 s de Tenacidad con un 50 % de tolerancia a daño todo ese tiempo, siete segundos en los que puedes quedarte en las mecánicas."},
+  "impactful-crush": {"nivel": "12", "por_que": "Habilidad a distancia que abre Fractura sombría; en movimiento y más rápida. Con 12 basta: la espec. de 16 es para JcJ."},
+  "wave-blow": {"nivel": "12", "por_que": "−15 % de daño del jefe durante 10 s y 10 m de alcance. Su animación encaja mal: púlsala solo cuando haya un hueco, nunca en vez de Fractura sombría."},
+  "rushing-smash": {"nivel": "12", "por_que": "Acercamiento que se reinicia al matar: de grupo en grupo. Nunca cojas la espec. de carga: las habilidades cargadas pierden daño."},
+  "tremor-crush": {"nivel": "12", "por_que": "Esquiva que devuelve su Vigor y acercamiento de 20 m."},
+  "heat-wave-blow": {"nivel": "12", "por_que": "Pega fuerte, pero en JcE casi nunca tienes un momento para él ahora que Fractura sombría lleva la rotación."},
+  "gust-rampage": {"nivel": "De 0 a 8", "por_que": "Solo contra objetivos en stagger, y un jefe entra en stagger dos o tres veces por combate: no vale los puntos en Season 1."},
+  "undefeated-mantra": {"nivel": "20", "por_que": "La razón por la que un grupo lleva Conjurador: daño y tolerancia de JcE, Crítico, Precisión, Daño Crítico y Golpe para todos. El primero a 20 y nunca sale de tu barra."},
+  "marchutans-wrath": {"nivel": "1", "por_que": "Una tercera habilidad a distancia que abre Fractura sombría durante 3 s: casi duplica tu tiempo de Fractura sombría. Con un punto basta: los niveles altos son para JcJ."},
+  "focused-defense": {"nivel": "5", "por_que": "Un bloqueo con dos cargas a nivel 5. Infravalorado: deja a un cuerpo a cuerpo quedarse en el jefe durante casi todos los ataques en vez de salir corriendo."},
+  "sprint-mantra": {"nivel": "10", "por_que": "Velocidad de movimiento, +10 % de Curación Recibida y regeneración de Vigor, así el grupo esquiva casi sin límite. notXeon lo lleva en mazmorras y farmeando. Grobs lo lleva siempre, en lugar de Defensa concentrada: con un Conjurador el grupo sale de casi todos los ataques, y cada golpe tiene un 15 % de probabilidad de curarlo. Su cura es mínima: no lo subas de 10."},
+  "power-of-the-storm": {"nivel": "5, luego 20", "por_que": "+20 % de Velocidad de Hechizo y −20 % a los enfriamientos durante 10 s (el grupo recibe +20 % y −10 %). notXeon lo lleva en todo: mientras nadie tiene Velocidad de Hechizo es de tus mayores buffs de daño. A 5 su enfriamiento baja 30 s; a 20 añade Ataque para ti y el grupo. Orden de Grobs: este a 5, luego Proclama del invicto a 20, luego el resto."},
+  "healing-touch": {"nivel": "Sin Clérigo", "por_que": "Cura de emergencia fuerte: más con poca vida, y a 15 quita cinco debuffs. Cógelo cuando eres el único sanador o el combate tiene muchos debuffs. Grobs lo salta incluso entonces: poca cura para 30 s de enfriamiento; más daño y buffs ayudan más al grupo."},
+  "impeding-authority": {"nivel": "Progresión", "por_que": "Un escudo para el grupo: más vida efectiva mientras el grupo aún aprende un combate."},
+  "guardian-blessing": {"nivel": "Sin hueco", "por_que": "Promesa de viento x1,5 a 15 es una ganancia de daño real, pero con cuatro huecos no hay sitio para él en Season 1."},
+  "obliterate": {"nivel": "Stagger", "por_que": "Derribo en área para grupos mientras subes de nivel. WallyJTV lo mantiene al máximo para jefes con comprobación de stagger: 50 de daño al medidor cuando el grupo lo necesita."}
+ },
+ "traducciones": {
+  "sprint-mantra": {"efecto": "Aumenta un 10,5 % la Velocidad de Movimiento y da un 15 % de probabilidad de recuperar 127-140 de Puntos de Vida al acertar un ataque, a ti y a los miembros del grupo cercanos. Enfriamiento de la cura: 1 s.", "specs": ["+10 % de Curación Recibida", "+30 % de regeneración natural de Vigor", "+50 % de cura con la vida al 50 % o menos", "+10 % de Recuperación"]},
+  "healing-touch": {"efecto": "Recupera 927-1.020 de Puntos de Vida a ti y a los miembros del grupo en un radio de 40 m.", "specs": ["+20 % de cura con la vida al 50 % o menos", "Recupera 1.000 de Vigor", "Quita 5 debuffs", "+5 % de Puntos de Vida recuperados"]},
+  "impeding-authority": {"efecto": "Da a ti y a los miembros del grupo en un radio de 40 m un escudo protector que bloquea daño igual al 16 % de los Puntos de Vida máximos durante 20 s.", "specs": ["+15 % de Defensa", "+10 % de Curación Recibida", "+10 % de Tolerancia a Daño JcE y +5 % de la de JcJ", "Recupera el 7 % de los Puntos de Vida máximos cuando el escudo termina o se rompe"]},
+  "guardian-blessing": {"efecto": "Aumenta un 5,4 % tus Puntos de Vida máximos durante 120 s y recupera al momento un 5,4 % de vida. No le afectan los efectos que quitan buffs.", "specs": ["+10 % de Resistencia a Efectos de Estado", "Efecto de [Defensa en cruz] x1,5 mientras dura", "Efecto de [Promesa de viento] x1,5 mientras dura", "+10 % de Curación Recibida"]},
+  "obliterate": {"efecto": "Inflige daño a un máximo de 4 enemigos en un radio de 4 m del objetivo, con un 50 % de probabilidad de Derribo. Derribo garantizado contra PNJ. 50 de daño al medidor de stagger.", "specs": ["Cuantos más objetivos se acierten, aumento máx. del 20 % de daño", "+20 % de Velocidad de habilidad", "Al acertar, Crítico garantizado", "Aumento del 25 % de probabilidad de Derribo"]}
+ },
+ "secciones": {
+  "habilidades": [
+   {"tipo": "aviso", "texto": "**Cómo funciona Fractura sombría:** solo se puede usar un momento después de una habilidad a distancia: 2 s tras Golpe giratorio o Fractura impactante y 3 s tras Ira de Marchutan. A nivel 16 su propio enfriamiento desaparece, así que dentro de esa ventana la pulsas una y otra vez. Toda la build va de mantener esa ventana abierta."},
+   {"tipo": "aviso", "texto": "Solo importan tres niveles de habilidad: **12, 16 y 20**, donde se abre una especialización o un hueco; un nivel entre medias casi no añade nada. Los puntos de habilidad dan 10, Daevanion +4, los dos anillos +2 y las Arcanas el resto. Primero las habilidades clave a **16**."},
+   {"titulo": "Avisos", "tipo": "lista", "items": [
+    "**Poca Reducción de Tiempo de Enfriamiento y poca Velocidad de Hechizo al principio.** Toda especialización que acorte un enfriamiento vale más, y los combates duran más que en Taiwán.",
+    "**El nivel 20 es difícil de alcanzar en Season 1.** Cuenta primero con 16 en las clave; el 20 llega después con las Arcanas.",
+    "**Grupos grandes** (expediciones de 5 y santuarios de 10): con un Clérigo tu mantra no se suma a Luz de protección (al mismo nivel gana el tuyo) y el debuff de Golpe ondulatorio no se suma al Estigma debilitante del Clérigo."
+   ]},
+   {"tipo": "aviso", "texto": "Hay puntos de habilidad para subir casi todas las pasivas al máximo. Las líneas del equipo escasean: ponlas en las tres primeras."},
+   {"titulo": "Pasivas", "tipo": "tabla", "columnas": ["Pasiva", "Prioridad", "Por qué"], "filas": [
+    ["Preparación de ataque", "1, al máximo", "Amplificación de Daño de JcE, Defensa y Precisión planas: siempre funciona"],
+    ["Hechizo de inspiración", "2, al máximo", "Crítico y Perforación. Promesa de viento solo rinde con críticos, así que esta va antes (notXeon, WallyJTV)"],
+    ["Promesa de viento", "3, al máximo", "Amplificación de Daño Crítico y daño extra; va con el crítico garantizado de Fractura sombría. Sin nivel mínimo: al máximo en cuanto la tengas"],
+    ["Acierto de impacto", "4, al máximo", "Golpe: aumento de daño directo"],
+    ["Círculo de protección", "Al máximo", "Un escudo grande al bajar de la mitad de vida y uno pequeño para el grupo con cada golpe: la mejor pasiva defensiva y la primera tras las de daño"],
+    ["Promesa terrestre", "5", "−Tolerancia a Daño JcE al objetivo, pero activa cerca de la mitad del tiempo y se pisa con el Enlace de dolor del Clérigo"],
+    ["Bendición de vida, Voluntad de supervivencia", "Solo puntos", "Gratis al máximo con los puntos de habilidad; no gastes líneas del equipo en ellas"],
+    ["Defensa en cruz, Hechizo de furia", "Saltar", "Casi no hacen nada en JcE: vuelve a tirarlas del equipo"]
+   ]}
+  ],
+  "estigmas": [
+   {"tipo": "aviso", "texto": "Tres son fijos y el cuarto se elige. Súbelos en este orden: Proclama del invicto a 20 va antes que todo. Los mantras son interruptores: actívalos una vez y déjalos fuera de cualquier macro (la segunda pulsación los apaga). Barrier Spell, Ensnaring Mark y Assault Shock no pintan nada en JcE. Fracturing Blow es la elección de Grobs para un grupo hecho al principio de la temporada: la Defensa es una reducción plana, así que bajarla vale más mientras el equipo es bajo."},
+   {"titulo": "Qué estigmas y a qué nivel", "tipo": "tabla", "columnas": ["Estigma", "Nivel", "Para qué"], "filas": [
+    ["Proclama del invicto", "20", "El buff de grupo por el que te llevan; el primero a 20"],
+    ["Poder de vendaval", "5, luego 20", "+20 % de Velocidad de Hechizo y −20 % a los enfriamientos 10 s"],
+    ["Ira de Marchutan", "1", "Tercer abridor de Fractura sombría (3 s)"],
+    ["Defensa concentrada", "5", "Bloqueo con dos cargas"],
+    ["Proclama de esprint", "10", "Mazmorras y farmeo; Grobs siempre, en lugar de Defensa concentrada"],
+    ["Toque de recobro", "Sin Clérigo", "Cura de emergencia; a 15 quita cinco debuffs"],
+    ["Impeding Authority", "Progresión", "Escudo de grupo mientras se aprende un combate"],
+    ["Guardian Blessing", "Sin hueco", "Buena, pero no cabe con cuatro huecos"],
+    ["Obliterate", "Stagger", "50 de daño al medidor de stagger"]
+   ]},
+   {"comun": "fragmentos-estigma"}
+  ],
+  "equipo": [
+   {"titulo": "Equipo y estadísticas", "tipo": "lista", "items": [
+    "**Anillos**: el único sitio para activas: cuatro o cinco líneas (los fabricados tienen una más) que llevan las clave de 14 a 16.",
+    "**Arma y guarda**: nunca pongas habilidades ahí; sus líneas de daño valen más.",
+    "Las **pasivas** salen del resto de piezas. El equipo de global además saca ahí Might, Precision y Velocidad de Hechizo: cuenta con menos líneas de pasivas que en Taiwán.",
+    "**Precisión**: al principio escasea; sin ella tienes que pegar a los jefes por la espalda y te bloquean.",
+    "**Piedras de maná**: Ataque, Crítico y Precisión. **Guarda** a +10."
+   ]},
+   {"comun": "soulbind"}
+  ],
+  "daevanion": [
+   {"tipo": "aviso", "texto": "Daevanion lleva tus habilidades de 10 a 14 y añade estadísticas. Cada nodo azul da **+1 nivel** a su habilidad."},
+   {"titulo": "Prioridades", "tipo": "lista", "items": [
+    "Nodos azules de Fractura sombría, Fractura trituradora, Golpe giratorio y Golpe incandescente; luego los naranja.",
+    "Azphel (nivel 45) es todo Amplificación y Tolerancia de Daño de JcJ: no cuenta para JcE."
+   ]},
+   {"titulo": "Tableros", "tipo": "tabla", "columnas": ["Tablero", "Nivel", "Nodos naranja"], "filas": [
+    ["Nezekan", "12", "Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento"],
+    ["Zikel", "20", "Amplificación de Daño, Tolerancia a Daño"],
+    ["Vaizel", "30", "Amplificación y Tolerancia de Daño Crítico"],
+    ["Triniel", "40", "Multigolpe y su resistencia"],
+    ["Ariel", "45", "Solo JcE, con cristales propios (abajo)"]
+   ]},
+   {"comun": "ariel"},
+   {"comun": "cristales"}
+  ],
+  "coleccionables": [
+   {"tipo": "aviso", "texto": "Season 1 tiene cinco cartas y dos sets. La elección de Arthars: tres cartas de Vitalidad primordial más la Campana y el Espejo de Armadura mágica; cuatro de Vitalidad primordial (+150 de Ataque JcE) también valen."},
+   {"titulo": "Arcanas", "tipo": "tabla", "columnas": ["Carta", "Atributo", "Set", "Qué buscar"], "filas": [
+    ["Cáliz", "Tiempo (Velocidad de Hechizo)", "Vitalidad primordial", "La habilidad clave que aún no llegue a 20"],
+    ["Pergamino", "Vida", "Vitalidad primordial", "Fractura sombría, Fractura trituradora, Golpe giratorio"],
+    ["Brújula", "Libertad (Precisión)", "Vitalidad primordial", "Golpe incandescente, Hechizo de recobro; Eliminación de impacto vale"],
+    ["Campana", "Destrucción (Ataque)", "Armadura mágica", "Preparación de ataque"],
+    ["Espejo", "Sabiduría (Golpe)", "Armadura mágica", "Acierto de impacto, Promesa de viento"]
+   ]},
+   {"titulo": "Cómo subirlas", "tipo": "lista", "items": [
+    "Subir una carta reparte hasta +4 al azar entre sus habilidades: cuenta con cerca de **+2**. Basta: 10 de los puntos, 4 de Daevanion y 2 de una carta dan 16, y las líneas de los anillos van a otras habilidades.",
+    "No gastes de más en estas cartas: se cambian en cuanto Season 2 traiga otras. Fantasía (enfriamientos) en el Espejo es la alternativa de apoyo puro a Sabiduría."
+   ]},
+   {"comun": "titulos"},
+   {"comun": "titulos-nota"}
+  ],
+  "mascotas": [
+   {"comun": "mascotas"}
+  ]
+ }
+}

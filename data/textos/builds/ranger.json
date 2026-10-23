@@ -34,50 +34,49 @@
    "uso": "Juego en solitario o cuando mueres demasiado; cambia daño por supervivencia."
   }
  ],
- "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
- "macros_por_preset": [],
+ "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
+ "macros_por_preset": [
+  {
+   "preset_en": "Bosses and dungeons",
+   "pasos": [
+    "Flecha de tentáculo",
+    "Estallido de flechas",
+    "Flecha de grifo",
+    "Tiro rápido",
+    "Flecha punzante",
+    "Huracán de flechas"
+   ],
+   "retardo_ms": 10,
+   "nota": "Línea del grifo + línea de Gale. El texto la da sin Flecha de tentáculo al inicio; el planificador ya la pone delante para que Estallido de flechas no falle."
+  },
+  {
+   "preset_en": "Packs and stagger checks",
+   "pasos": [
+    "Flecha de tentáculo",
+    "Estallido de flechas",
+    "Flecha de grifo",
+    "Tiro rápido",
+    "Flecha punzante",
+    "Huracán de flechas"
+   ],
+   "retardo_ms": 10,
+   "nota": "Misma macro que en jefes."
+  },
+  {
+   "preset_en": "Solo and hard progression",
+   "pasos": [
+    "Flecha de tentáculo",
+    "Estallido de flechas",
+    "Tiro rápido",
+    "Flecha punzante",
+    "Huracán de flechas"
+   ],
+   "retardo_ms": 10,
+   "nota": "Igual pero sin Flecha de grifo, que sale de este preset."
+  }
+ ],
  "secciones": {
   "equipo": [
-   {
-    "titulo": "Atributos que priorizar (PvE)",
-    "tipo": "tabla",
-    "columnas": [
-     "#",
-     "Atributo",
-     "Dónde / por qué"
-    ],
-    "filas": [
-     [
-      "1",
-      "**Velocidad de Hechizo**, Amplificación de Daño de Arma, Amplificación de Daño, Fuerza",
-      "Arco y guarda (+ Acierto de Multigolpe si es crafteado)"
-     ],
-     [
-      "2",
-      "**Precisión total** 1.100–1.200",
-      "2.º atributo: un golpe bloqueado pierde más de la mitad del daño"
-     ],
-     [
-      "3",
-      "La línea clave de cada pieza",
-      "Golpe y Aumento de Ataque (casco, capa), Amplificación de Daño Crítico (hombreras), Amplificación de Daño (peto)"
-     ],
-     [
-      "4",
-      "Ataque, Crítico u Ojo concentrado",
-      "En los huecos libres, el que te salga primero. El Crítico topa en 50 % en global"
-     ],
-     [
-      "5",
-      "Flecha al objetivo, Huracán de flechas, Flecha punzante",
-      "En anillos; si no, Fuerza"
-     ]
-    ]
-   },
-   {
-    "tipo": "aviso",
-    "texto": "En global cada pieza saca **4 o 5 líneas al azar** de su lista (5 en lo crafteado de rey dragón), no todas. En la ficha de cada pieza las líneas van **en orden**: si te salen las primeras, quédatela. Manastones: una línea amarilla de Ataque basta en Season 1."
-   },
    {
     "titulo": "Camino de equipo (arco + escudo)",
     "tipo": "tabla",
@@ -186,7 +185,7 @@
      ],
      [
       "Brazaletes",
-      "Ascension Bracelet (misiones) → Abyssal Bracelet (Ludra)",
+      "Ascension Bracelet (misiones), luego Abyssal Bracelet (Ludra)",
       "Fantasía (Reducción de Tiempo de Enfriamiento) y Sabiduría (Golpe) son las que más importan"
      ],
      [
@@ -369,67 +368,67 @@
     "filas": [
      [
       "Flecha en el objetivo",
-      "8 → 10",
+      "de 8 a 10",
       "En la prioridad: activa Precisión"
      ],
      [
       "Flecha de tentáculo",
-      "8 → 10",
+      "de 8 a 10",
       "En la prioridad: área y Ralentización"
      ],
      [
       "Estallido de flechas",
-      "8 → 10",
+      "de 8 a 10",
       "En la prioridad: mucho daño en área"
      ],
      [
       "Disparo cercano",
-      "8 → 10",
+      "de 8 a 10",
       "Daño extra pasivo"
      ],
      [
       "Ojo de atadura",
-      "8 → 10",
+      "de 8 a 10",
       "Daño extra a objetivos ralentizados"
      ],
      [
       "Flecha sin puntería",
-      "1 → 10",
+      "de 1 a 10",
       "Daño en la ventana de Tambaleo"
      ],
      [
       "Flecha de supresión",
-      "8 → 10",
+      "de 8 a 10",
       "Daño con Precisión"
      ],
      [
       "Cepo explosivo",
-      "8 → 10",
+      "de 8 a 10",
       "Trampa de área"
      ],
      [
       "Ojo vigilante",
-      "6 → 10",
+      "de 6 a 10",
       "Más vida"
      ],
      [
       "Determinación de resistencia",
-      "6 → 10",
+      "de 6 a 10",
       "Resistencias"
      ],
      [
       "Pacto de resurrección",
-      "6 → 10",
+      "de 6 a 10",
       "Resistencia a efectos"
      ],
      [
       "Eliminación de impacto",
-      "8 → 10",
+      "de 8 a 10",
       "Rompe aturdimientos"
      ],
      [
       "Vitalidad de viento",
-      "6 → 10",
+      "de 6 a 10",
       "Vigor y velocidad (último)"
      ]
     ]
@@ -478,7 +477,7 @@
      [
       "Poder de Vaizel",
       "+20% Ataque 10 s (20 s a nivel 20)",
-      "10 y 15: Ojo concentrado y Alma de cazador ×1,5; 20: tus Críticos pueden quitar 1 s a todas las reutilizaciones"
+      "10 y 15: Ojo concentrado y Alma de cazador x1,5; 20: tus Críticos pueden quitar 1 s a todas las reutilizaciones"
      ],
      [
       "Flecha de bendición",
@@ -518,11 +517,6 @@
    }
   ],
   "daevanion": [
-   {
-    "id": "ariel",
-    "tipo": "aviso",
-    "texto": "**Nuevo (parche del 21-oct): tablero Ariel**, solo JcE y con cristales propios (60), no con los puntos de nivel. Salen del modo **Difícil** de Cueva de Krao y Draupnir (nivel de objeto 2.600). Su ruta está en la pestaña **Ariel** del tablero de arriba."
-   },
    {
     "titulo": "Desbloqueo de tableros",
     "tipo": "lista",
@@ -565,75 +559,64 @@
    {
     "id": "macro",
     "tipo": "aviso",
-    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
+    "texto": "La tecla de macro no viene asignada: Ajustes, Configuración de teclas, General, Macro: **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
    },
    {
-    "id": "pruebas",
-    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
-    "tipo": "lista",
-    "items": [
-     "Retardo 10 ms (15 o 20 también valen; 40-50 ms con ping alto).",
-     "Versión cómoda: Estallido de flechas abajo de la pila del 2 (buffs) y macro Q → E → 2 → E. La macro lo hace todo, pero da menos daño que los buffs a mano.",
-     "Antes de Flecha de grifo a 15: Flecha explosiva a 5 en su lugar, si la tienes en los estigmas."
-    ]
-   },
-   {
-    "id": "presets",
-    "titulo": "Otros presets",
-    "tipo": "lista",
-    "items": [
-     "Preset «Grupos y comprobaciones de stagger»: quita Disparos de apoyo (tecla 2) y pon **Tormenta de flechas (o Flecha explosiva)** en la 6, a mano.",
-     "Preset «Solo y progresión difícil»: quita Flecha de grifo (tecla Q) y pon **Respiro de Madre Naturaleza** en la 6, a mano.",
-     "La macro es la misma: pulsa las mismas teclas."
-    ]
+    "tipo": "aviso",
+    "texto": "Toda la rotación es una idea: primero los buffs y Precisión, y luego Flecha al objetivo dentro de ellos. Disparo certero y la macro rellenan todo lo demás."
    },
    {
     "titulo": "Antes de empezar",
     "tipo": "lista",
     "items": [
-     "Usa el modo de control de AION 2 (no el de AION 1): la macro lo necesita.",
-     "Activa **Skill Queue ON** en opciones.",
-     "Puedes apilar hasta 3 habilidades más sobre una ranura: sale primero la de abajo."
+     "Usa el modo de control de AION 2, no el de AION 1: la macro lo necesita.",
+     "Activa **Skill Queue ON**.",
+     "En una pila sale primero la de abajo y el juego no deja apilar una reutilización más larga encima de una más corta."
     ]
    },
    {
-    "titulo": "Apertura / ventana de burst",
-    "tipo": "pasos",
+    "titulo": "La barra",
+    "tipo": "lista",
     "items": [
-     "Flecha en el objetivo (3).",
-     "La pila de buffs (2), una pulsación por buff: Poder de Vaizel, Flecha de bendición y Disparos de apoyo.",
-     "Flecha al objetivo (4) cargada al completo.",
-     "Mantén Clic izq. (Disparo certero) y la macro (Clic der.) todo el combate: Disparo certero te devuelve el Maná que gasta Tiro rápido."
+     "**Clic izq.**: Disparo certero. Mantenlo pulsado.",
+     "**2** (línea del grifo): Estallido de flechas, luego Flecha de tentáculo y Flecha de grifo encima. Estallido de flechas solo sale sobre un objetivo ralentizado o inmovilizado: acierta antes Flecha de tentáculo.",
+     "**3** (línea de Gale): Tiro rápido, luego Flecha punzante y Huracán de flechas encima.",
+     "**1**: Flecha al objetivo. El autor la pone en un botón lateral del ratón para cargarla sin soltar lo demás.",
+     "**El resto**: Flecha en el objetivo (4), Cepo explosivo (Q), Flecha de supresión (E), Eliminación de impacto y los estigmas (5-7). Flecha sin puntería (8) va aparte."
     ]
    },
    {
-    "titulo": "Entre ventanas",
-    "tipo": "pasos",
+    "titulo": "La macro",
+    "tipo": "lista",
     "items": [
-     "La macro pulsa la Q (Huracán de flechas en cuanto está, luego Flecha de grifo, Flecha de tentáculo para ralentizar y Estallido de flechas) y dos veces la E (Flecha punzante; Tiro rápido rellena cada hueco). El segundo paso de la E hace que Tiro rápido salga más: 465 lanzamientos frente a 413.",
-     "Mantén Disparo certero (Clic izq.) y la macro (Clic der.). Dale a Flecha al objetivo una 2.ª tecla en un botón lateral del ratón (Configuración de teclas → Ranura rápida) para cargarla sin soltar nada.",
-     "Lanza Flecha al objetivo (4) cada vez que vuelva, siempre cargada del todo: soltarla antes pierde daño. Con Poder de Vaizel a 20, cada crítico le quita 1 s de reutilización.",
-     "Renueva Flecha en el objetivo (3) cuando a Precisión le quede cerca de 1 s: dura más que su reutilización y relanzarla antes pierde daño.",
-     "Relanza los buffs (2) cuando vuelvan, salvo que el jefe esté a punto de irse o morir: entonces guárdalos para la siguiente ventana."
+     "En **Clic der.**, 10 ms por paso: la línea del grifo y luego la de Gale. Con tus teclas: **2** y **3**.",
+     "La ralentización de Flecha de tentáculo dura 5 s y tiene 15 s de reutilización: acierta Flecha de tentáculo (u otra ralentización) antes de empezar la macro. Si Estallido de flechas sigue fallando, pon Flecha de tentáculo delante en tu macro.",
+     "En el preset de solo no hay Flecha de grifo: la macro son las mismas cinco sin ella.",
+     "Fuera de la macro: cargadas, trampas, Eliminación de impacto y Flecha sin puntería."
     ]
    },
    {
-    "titulo": "Ventana de stagger",
+    "titulo": "Momento a momento",
     "tipo": "pasos",
     "items": [
-     "Colócate cuando el jefe vaya a entrar en stagger.",
-     "Renueva Flecha en el objetivo.",
-     "Junta buffs y stigmas de daño.",
-     "Cierra con Flecha al objetivo cargada."
+     "Flecha de bendición (6), Disparos de apoyo (7) y Poder de Vaizel (5).",
+     "Flecha en el objetivo (4) para Precisión.",
+     "Flecha al objetivo (1) cargada.",
+     "Mantén Disparo certero (Clic izq.) y la macro (Clic der.); lanza Flecha al objetivo cada vez que vuelva.",
+     "Renueva Flecha en el objetivo cuando a Precisión le queden menos de 3 s.",
+     "Cada buff, en cuanto vuelva: Poder de Vaizel cada minuto y Flecha de bendición cada dos; con Disparos de apoyo a 15 coincide con cada Vaizel."
+    ]
+   },
+   {
+    "titulo": "Ventanas de stagger",
+    "tipo": "lista",
+    "items": [
+     "Colócate cuando el jefe vaya a entrar en stagger, renueva Flecha en el objetivo, junta buffs y estigmas de daño y cierra con Flecha al objetivo cargada."
     ]
    },
    {
     "tipo": "aviso",
-    "texto": "Nunca en la macro: habilidades cargadas, trampas, Eliminación de impacto, Flecha sin puntería ni los buffs. Flecha sin puntería no compensa en un jefe en stagger: sigue con la rotación normal."
-   },
-   {
-    "tipo": "aviso",
-    "texto": "No dejes de mantener Disparo certero: con su espec. 4 cada golpe quita 1 s a Flecha al objetivo. Cada hueco es una Flecha al objetivo más lenta."
+    "texto": "La 4.ª espec. de Disparo certero quita 1 s a Flecha al objetivo con cada golpe: nunca dejes de mantenerlo. Cada hueco es una Flecha al objetivo más lenta."
    }
   ],
   "coleccionables": [
@@ -708,28 +691,6 @@
    }
   ],
   "mascotas": [
-   {
-    "id": "minimo",
-    "titulo": "Lo mínimo, sí o sí (al menos 1 vez)",
-    "tipo": "pasos",
-    "items": [
-     "**Golpe** en la ranura 4 de Special: es la única del juego que lo saca. Vale la Kinah extra.",
-     "La línea de daño de la **ranura 4** en cada genus: Cogni: **Amplificación de Daño Crítico**, Fera: **Amplificación de Daño de Arma**, Natura: **Acierto de Multigolpe**, Varian: **Amplificación de Daño Frontal**. Si no sale, el plan B de la ficha.",
-     "Un **Ataque Máximo** (o Ataque Adicional) en la ranura 1 o la 5 de cada genus.",
-     "El resto (vida, Precisión, Crítico, Tolerancia) mejora poco a poco: no gastes Kinah persiguiendo tiradas perfectas ahí."
-    ]
-   },
-   {
-    "id": "como-tirar",
-    "titulo": "Cómo tirar sin tirar la Kinah",
-    "tipo": "lista",
-    "items": [
-     "Sube cada genus a **10** antes de bloquear nada: los niveles de las mascotas lo llevan a 8–9; el resto, con cristales (unos 30–40 cubos para todos).",
-     "Tira con **Auto Analyze**: marca las líneas que quieres, pon el grado en Único o Heroico y deja que tire hasta que salga una.",
-     "**Bloquea** una línea solo cuando esté cerca del máximo de su rango (una de daño al 2,3 % sí; un Ataque de 10 sobre 16, no).",
-     "Las ★★★ primero, luego las ★★ y al final las ★. Las 9 líneas de la ficha son la tirada perfecta: casi nadie la tiene completa."
-    ]
-   },
    {
     "titulo": "Reglas",
     "tipo": "lista",

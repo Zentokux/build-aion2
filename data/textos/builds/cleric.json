@@ -34,55 +34,50 @@
    "uso": "Si el mantra del Conjurador ya cubre Luz de protección: entra Absolución."
   }
  ],
- "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
- "macros_por_preset": [],
+ "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
+ "macros_por_preset": [
+  {
+   "preset_en": "Party dungeons (no Chanter)",
+   "pasos": [
+    "Retribución terrestre",
+    "Rayo del juicio",
+    "Relámpagos sin puntería",
+    "Condena",
+    "Relámpagos sin puntería",
+    "Condena",
+    "Condena"
+   ],
+   "retardo_ms": 10,
+   "nota": "Con mucho ping, prueba 40-50 ms. Relámpagos sin puntería solo sale con el jefe en stagger; si no, la macro se la salta."
+  },
+  {
+   "preset_en": "New dungeon or struggling party",
+   "pasos": [
+    "Retribución terrestre",
+    "Condena",
+    "Rayo del juicio",
+    "Condena"
+   ],
+   "retardo_ms": 10,
+   "nota": "Con mucho ping, prueba 40-50 ms."
+  },
+  {
+   "preset_en": "Chanter in the party",
+   "pasos": [
+    "Retribución terrestre",
+    "Rayo del juicio",
+    "Relámpagos sin puntería",
+    "Condena",
+    "Relámpagos sin puntería",
+    "Condena",
+    "Condena"
+   ],
+   "retardo_ms": 10,
+   "nota": "Igual que en grupo normal. Condena va tres veces a propósito para aprovechar cada reinicio."
+  }
+ ],
  "secciones": {
   "equipo": [
-   {
-    "titulo": "Atributos que priorizar (PvE)",
-    "tipo": "tabla",
-    "columnas": [
-     "#",
-     "Atributo",
-     "Dónde / por qué"
-    ],
-    "filas": [
-     [
-      "1",
-      "**Amplificación de Daño de Arma** > Fuerza > Velocidad de Hechizo > Precisión",
-      "Arma y guarda, en ese orden"
-     ],
-     [
-      "2",
-      "**Fuerza**, Velocidad de Hechizo, Amplificación de Daño",
-      "En el resto: la Fuerza sube el ataque y la curación"
-     ],
-     [
-      "3",
-      "**Crítico**",
-      "Al Clérigo siempre le falta. Para Ludra: 1.000 de Crítico y 1.000 de Precisión"
-     ],
-     [
-      "4",
-      "Gracia terrestre",
-      "La pasiva de la build en capa, collar y pendientes"
-     ],
-     [
-      "5",
-      "Condena, Resplandor de recobro, Centella",
-      "Todas las líneas de los anillos con activas (los crafteados tienen una más)"
-     ],
-     [
-      "6",
-      "Nada de resistencias, Evasión ni defensa",
-      "No sirven en PvE"
-     ]
-    ]
-   },
-   {
-    "tipo": "aviso",
-    "texto": "En global cada pieza saca **4 o 5 líneas al azar** de su lista (5 en lo crafteado de rey dragón), no todas. En la ficha de cada pieza las líneas van **en orden**: si te salen las primeras, quédatela. Manastones: Ataque, Crítico, Precisión."
-   },
    {
     "titulo": "Ruta del arma",
     "tipo": "tabla",
@@ -250,20 +245,6 @@
      "Si vas corto de Precisión: Brújula de vitalidad (Libertad).",
      "El Cáliz es la única carta que saca cualquier habilidad: tu comodín."
     ]
-   },
-   {
-    "id": "arcana-whelps",
-    "titulo": "Arcana en Season 1",
-    "tipo": "lista",
-    "items": [
-     "**Solo Condena a 20** (hace cerca de la mitad de tu daño): +2 en el Cáliz, +2 en el Pergamino y +2 de un anillo. Una 2.ª habilidad a 20 solo si las cartas te la dan; más no compensa.",
-     "Guarda y sube todo Pergamino con Condena: con +4, un anillo de +2 ya la deja en 20.",
-     "Aura divina +4 es la mejor tirada en cualquier carta (+2 de anillo = 20; con +2 se queda en 16).",
-     "Campana: Gracia empírea alta (busca +3). Espejo: Gracia terrestre alta (Mejora curativa también vale).",
-     "Dos cartas de Vigor (Cáliz y Espejo) bastan; la Brújula y el Pergamino pueden ser de Magia.",
-     "Anillos al final: primero las líneas de Soul Binding del arma, la guarda, la armadura y el resto de accesorios.",
-     "Fijar dos habilidades en el Cáliz cuesta 15 Mysterious Crystals y 5 millones de Kinah: mejor subir las cartas. Con Condena a 20, vuelve a Conquista a farmear Kinah."
-    ]
    }
   ],
   "habilidades": [
@@ -293,13 +274,13 @@
     "filas": [
      [
       "Condena",
-      "Tu daño principal (cerca de la mitad): más daño a pocos objetivos, reinicio con crítico y Multigolpe. Necesita Enlace de dolor",
-      "A 16: reinicio con crítico y Multigolpe; a 20 añade +12% a un objetivo. Antes de 16: reinicio y +12% (sin Maná, la de Maná)"
+      "Tu daño principal: más daño a pocos objetivos, reinicio con crítico y Multigolpe. Necesita Enlace de dolor",
+      ""
      ],
      [
       "Centella",
-      "Tu golpe más fuerte: ábrelo con ella y úsala cada vez que vuelva, siempre cargada del todo",
-      "A 16: +30% de velocidad y crítico garantizado; a 20, +20% a un objetivo. Con poca Precisión, +300 de Precisión en vez del crítico"
+      "Más daño a pocos objetivos y crítico garantizado. Cárgala del todo en el stagger",
+      "A 20, spec 3 (carga más rápida)"
      ],
      [
       "Aura divina",
@@ -308,8 +289,8 @@
      ],
      [
       "Rayo del juicio",
-      "Daño constante y cancela animaciones; arriba de la línea de Debuff",
-      "A 13 con −20% de Maná y +12% a un objetivo. Sale de la macro con Castigo terrestre a 20 (le quita la animación a Condena); para farmear se queda"
+      "Más daño a pocos objetivos y un Divine Punishment extra",
+      "A 20, spec 1 (−20% de Maná)"
      ],
      [
       "Enlace de dolor",
@@ -328,55 +309,8 @@
      ],
      [
       "Relámpagos sin puntería",
-      "Solo contra objetivo en stagger; cada golpe quita 1 s a todo",
-      "A 13. Púlsala solo si Condena no está saliendo en el stagger"
-     ]
-    ]
-   },
-   {
-    "id": "niveles-whelps",
-    "titulo": "Niveles finales (Season 1)",
-    "tipo": "tabla",
-    "columnas": [
-     "Habilidad",
-     "Nivel",
-     "Nota"
-    ],
-    "filas": [
-     [
-      "Condena",
-      "20",
-      "La primera: cerca de la mitad de tu daño"
-     ],
-     [
-      "Centella",
-      "18",
-      "Justo detrás de Condena"
-     ],
-     [
-      "Aura divina",
-      "16",
-      "A 20: velocidad de ataque, +3 s y −10 s"
-     ],
-     [
-      "Retribución terrestre y Luz de regeneración",
-      "15",
-      "A 20 Retribución: Discharge, Multigolpe y −7 s a Centella"
-     ],
-     [
-      "Resplandor de recobro y Luz de curación",
-      "16",
-      "A 20 Resplandor: +1 uso, −3 s y +5% de PV"
-     ],
-     [
-      "Rayo del juicio, Relámpagos sin puntería y Estigma debilitante",
-      "13",
-      "Más si farmeas mucho"
-     ],
-     [
-      "Enlace de dolor",
-      "12",
-      "Solo hace falta que marque"
+      "Solo contra objetivo en stagger; spec 4 da Multigolpe",
+      "A 16, spec 5: −1 s a todo por golpe"
      ]
     ]
    },
@@ -466,32 +400,32 @@
     "filas": [
      [
       "Aura divina",
-      "— → 10",
+      "hasta 10",
       "En la prioridad y la build no marca nivel: súbela primero"
      ],
      [
       "Luz de regeneración",
-      "— → 10",
+      "hasta 10",
       "En la prioridad: cura al grupo; sin nivel en la build"
      ],
      [
       "Mejora curativa",
-      "— → 10",
+      "hasta 10",
       "Pasiva de la prioridad: más curación; sin nivel en la build"
      ],
      [
       "Oración de concentración",
-      "1 → 10",
+      "de 1 a 10",
       "Barrera y más curación con poca vida"
      ],
      [
       "Eliminación de impacto",
-      "8 → 10",
+      "de 8 a 10",
       "Rompe aturdimientos"
      ],
      [
       "Voluntad de supervivencia",
-      "1 → 10",
+      "de 1 a 10",
       "Resistencia a efectos (último)"
      ]
     ]
@@ -519,8 +453,8 @@
      ],
      [
       "Conjurador en el grupo",
-      "Resurrección de invocación (o Absolución), Castigo terrestre, Aura noble, Oración de amplificación",
-      "Luz de protección no se acumula con el mantra del Conjurador. Aura noble pasa a ser la 3.ª a 20"
+      "Absolución, Castigo terrestre, Aura noble, Oración de amplificación",
+      "Luz de protección no se acumula con el mantra del Conjurador"
      ]
     ]
    },
@@ -583,16 +517,12 @@
     "titulo": "Orden de fragmentos",
     "tipo": "pasos",
     "items": [
-     "Castigo terrestre a 20, lo primero (Condena siempre crítico y, a 20, activo casi todo el combate).",
-     "Oración de amplificación a 20.",
-     "La 3.ª a 20: Luz de protección sin Conjurador (si hace falta, baja Aura noble para llegar); con Conjurador, Aura noble.",
-     "La 4.ª, lo que sobre."
+     "Luz de protección a 10.",
+     "Castigo terrestre a 15.",
+     "Los otros dos a 5.",
+     "Castigo terrestre a 20 (cambia la frecuencia de críticos de Condena).",
+     "Luz de protección a 20 (solo +5 puntos a un buff que ya tienes)."
     ]
-   },
-   {
-    "id": "dos-presets",
-    "tipo": "aviso",
-    "texto": "Usa **dos presets de habilidades**: sin Conjurador (Castigo terrestre, Oración de amplificación, Luz de protección y Aura noble) y con Conjurador (Luz de protección fuera, Resurrección de invocación dentro). Cada preset guarda sus niveles, sus estigmas y su barra: cambia de preset, no de habilidades."
    },
    {
     "tipo": "aviso",
@@ -600,11 +530,6 @@
    }
   ],
   "daevanion": [
-   {
-    "id": "ariel",
-    "tipo": "aviso",
-    "texto": "**Nuevo (parche del 21-oct): tablero Ariel**, solo JcE y con cristales propios (60), no con los puntos de nivel. Salen del modo **Difícil** de Cueva de Krao y Draupnir (nivel de objeto 2.600). Su ruta está en la pestaña **Ariel** del tablero de arriba."
-   },
    {
     "titulo": "Tableros",
     "tipo": "lista",
@@ -650,33 +575,18 @@
    {
     "id": "macro",
     "tipo": "aviso",
-    "texto": "La tecla de macro no viene asignada: Ajustes → Configuración de teclas → General → Macro → **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
+    "texto": "La tecla de macro no viene asignada: Ajustes, Configuración de teclas, General, Macro: **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
    },
    {
-    "id": "pruebas",
-    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
-    "tipo": "lista",
-    "items": [
-     "Con Castigo terrestre a 20: macro «E, Q» sin Rayo del juicio frente a «E, E, E, Q» con él. Al principio puede dar lo mismo o menos: la diferencia se nota con Condena y Centella a 16.",
-     "En el Análisis de combate, Condena debe salir al menos tantas veces como Rayo del juicio; si sale menos, añade otro paso de E a la macro."
-    ]
-   },
-   {
-    "id": "presets",
-    "titulo": "Otros presets",
-    "tipo": "lista",
-    "items": [
-     "Preset «Mazmorra nueva o grupo que muere»: quita Castigo terrestre (tecla E), Oración de amplificación (tecla E), Aura noble (tecla 6) y pon **Absolución** en la 6, **Resurrección de invocación** en la 7, **Poder de Yustiel** en la 8, a mano.",
-     "Preset «Conjurador en el grupo»: quita Luz de protección (tecla 5) y pon **Absolución** en la 5, a mano.",
-     "La macro es la misma: pulsa las mismas teclas."
-    ]
+    "tipo": "aviso",
+    "texto": "La rotación son dos tareas en una sola barra: mantener Condena en marcha y curar antes de que llegue el golpe."
    },
    {
     "titulo": "Prioridad de curas",
     "tipo": "tabla",
     "columnas": [
      "Situación",
-     "Qué haces"
+     "Qué usar"
     ],
     "filas": [
      [
@@ -685,7 +595,7 @@
      ],
      [
       "Daño normal sobre el grupo",
-      "Resplandor de recobro primero, Luz de regeneración para mantener la cura en el tiempo, Luz de curación para quien vaya más bajo"
+      "Resplandor de recobro primero (cura y limpia), Luz de regeneración para mantener una cura en el tiempo, Luz de curación para quien vaya más bajo"
      ],
      [
       "Un aliado en apuros",
@@ -702,41 +612,47 @@
     ]
    },
    {
-    "titulo": "Combate contra jefe",
+    "titulo": "La barra",
+    "tipo": "lista",
+    "items": [
+     "**Clic izq.**: Retribución terrestre, cuando no haya nada más; recupera Maná.",
+     "**3** (el autor la tiene en Clic der.): Rayo del juicio, con Luz de regeneración, Estigma debilitante y Aura divina encima.",
+     "**1** (tecla de daño): Condena, con Enlace de dolor encima. **2**: Relámpagos sin puntería, para las ventanas de stagger.",
+     "**4**: Luz de curación. **Q**: Resplandor de recobro. **E**: Centella, cargada a mano.",
+     "**Estigmas (5-8)**: Luz de protección, Castigo terrestre, Aura noble y Oración de amplificación (en cuanto se abre una ventana de burst).",
+     "Activa **Skill Queue ON**."
+    ]
+   },
+   {
+    "titulo": "La macro (cada preset la suya, 10 ms por paso; con mucho ping, 40-50 ms)",
+    "tipo": "lista",
+    "items": [
+     "Grupo normal y grupo con Conjurador: Retribución terrestre, Rayo del juicio, Relámpagos sin puntería, Condena, Relámpagos sin puntería, Condena y Condena. Con tus teclas: **Clic izq., 3, 2, 1, 2, 1, 1**.",
+     "Mazmorra nueva: Retribución terrestre, Condena, Rayo del juicio y Condena. Con tus teclas: Clic izq., 1, 3, 1.",
+     "Condena sale tres veces a propósito: cada crítico la reinicia. Relámpagos sin puntería solo sale con el jefe en stagger; fuera, la macro se la salta.",
+     "Nunca en una macro: curas de emergencia, limpiezas, Eliminación de impacto ni Resurrección de invocación."
+    ]
+   },
+   {
+    "titulo": "Momento a momento",
     "tipo": "pasos",
     "items": [
-     "Luz de protección activa antes del pull.",
-     "Abre con Centella (4) cargada del todo y mantén la macro: la Q pone Estigma debilitante, Aura divina y Luz de regeneración, y la E lanza Oración de amplificación y Castigo terrestre en cuanto están listos.",
-     "Mantén la macro (Clic der.) y Clic izq. (Retribución terrestre, te devuelve Maná): la macro pulsa E, E, E, Q, tres veces la línea de Oración por cada Debuff, y cada crítico es otra Condena. Rayo del juicio, arriba de la Q, rellena los huecos.",
-     "Centella (4) cargada del todo cada vez que vuelva. En el stagger, Relámpagos sin puntería (1) solo si Condena no está saliendo; si sale, sigue con la macro.",
+     "Luz de protección (5) activa antes del pull.",
+     "Abre con Estigma debilitante y Enlace de dolor, y luego Castigo terrestre (6).",
+     "Mantén la 1 (Condena) o la macro: cada crítico es otra Condena.",
+     "En el stagger: Centella (E) cargada del todo con Oración de amplificación (8) activa. Suelta la 1 para que pueda salir Relámpagos sin puntería.",
      "Vigila al jefe: cura antes de su golpe fuerte y vuelve al paso 3.",
-     "Enlace de dolor va arriba de la E: sale cuando lo demás está en enfriamiento y renueva la marca sin que hagas nada."
+     "Renueva Enlace de dolor y Castigo terrestre cuando se caigan."
     ]
-   },
-   {
-    "id": "castigo20",
-    "titulo": "Cuando Castigo terrestre llegue a 20",
-    "tipo": "pasos",
-    "items": [
-     "Saca Rayo del juicio de la Q y ponlo solo en la 7: le quita la animación a Condena. Si quieres, púlsalo en el hueco de 6-7 s sin Condena que deja Enlace de dolor.",
-     "La macro pasa a E, Q (un solo paso de E, 10 ms cada uno): sin Rayo del juicio ya no hace falta repetir la E.",
-     "Al principio puede parecer igual o peor: se nota cuando Condena y Centella llegan a 16 y tienes más velocidad y Reducción. Sin Rayo del juicio también gastas menos Maná.",
-     "Con Conjurador en el grupo, cambia al preset con Conjurador: Resurrección de invocación en la 5 (en vez de Luz de protección) y Estigma debilitante fuera de la Q, a mano en la 8 (la Promesa terrestre del Conjurador pisa su debuff).",
-     "Para farmear monstruos, vuelve a poner Rayo del juicio arriba de la Q y la macro E, E, E, Q."
-    ]
-   },
-   {
-    "tipo": "aviso",
-    "texto": "Nunca en la macro: curas de emergencia, limpiezas, Eliminación de impacto ni Resurrección de invocación. Centella se carga a mano. Activa Skill Queue en las opciones."
    },
    {
     "titulo": "Puntos de Maná",
     "tipo": "lista",
     "items": [
      "Retribución terrestre y su cadena de Discharge recuperan Maná con cada golpe: intercala básicos si vas bajo.",
-     "La cadena de Eliminación de impacto devuelve un 40% del Maná.",
+     "La cadena de Eliminación de impacto devuelve un 40 % del Maná.",
      "Alas de gloria y el Pergamino de Destino también ayudan.",
-     "Si aún te quedas seco: spec 1 de Retribución terrestre (+20% de Maná recuperado)."
+     "Si aún te quedas seco: espec. 1 de Retribución terrestre (+20 % de Maná recuperado)."
     ]
    }
   ],
@@ -751,24 +667,19 @@
     ],
     "filas": [
      [
-      "Forest Spirit Wings",
-      "Amplificación de Daño de Jefe",
-      "Para empezar: las más baratas y las mejores para jefes"
-     ],
-     [
       "Talisra Wings",
       "4% de Reducción de Tiempo de Enfriamiento, Precisión y Ataque",
-      "La meta: tienda de temporada, cerca de 250.000 puntos (guárdalos)"
+      "1.ª opción"
      ],
      [
-      "Nightmare Wings",
+      "Nightmare Wings / Forest Spirit Wings",
       "Amplificación de Daño de Jefe",
-      "También valen"
+      "Alternativas fuertes"
      ],
      [
       "Dark Veil Wings",
       "",
-      "Las únicas que no"
+      "Opción temprana"
      ],
      [
       "Glorious Wings",
@@ -797,25 +708,20 @@
     "filas": [
      [
       "Ofensivo",
-      "Librarse de las ataduras de raza (cuando tengas todas las ruedas de Genus a 10)",
-      "Mientras tanto, Guardian of Baran o Artguard (Amplificación de Daño de JcE)"
+      "Creación del cielo y la tierra (Golpe, Amplificación de Daño de JcE)",
+      "Librarse de las ataduras de raza (añade Crítico)"
      ],
      [
       "Defensivo",
-      "Santo (Tolerancia a Daño y Defensa)",
-      "Dominador del espacio (Tolerancia a Daño JcE)"
+      "Dominador del espacio (Tolerancia a Daño JcE)",
+      ""
      ],
      [
       "Otro",
-      "Ay, no tengo nada que ponerme (Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento; 700 apariencias)",
-      "Mientras tanto, De ida y vuelta al infierno (Reducción de Tiempo de Enfriamiento)"
+      "Ay, no tengo nada que ponerme (Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento)",
+      ""
      ]
     ]
-   },
-   {
-    "id": "reduccion",
-    "tipo": "aviso",
-    "texto": "Reducción de Tiempo de Enfriamiento: cuanta más, mejor (con cerca de 33% Condena no pararía de reiniciarse), pero en Season 1 lo realista es **10-11%** en total. Para las 700 apariencias del título: extrae equipo azul o peor y combínalo; el armario se comparte con tus alts."
    },
    {
     "titulo": "Panteón",
@@ -829,28 +735,6 @@
    }
   ],
   "mascotas": [
-   {
-    "id": "minimo",
-    "titulo": "Lo mínimo, sí o sí (al menos 1 vez)",
-    "tipo": "pasos",
-    "items": [
-     "**Golpe** en la ranura 4 de Special: es la única del juego que lo saca. Vale la Kinah extra.",
-     "La línea de daño de la **ranura 4** en cada genus: Cogni: **Amplificación de Daño Crítico**, Fera: **Amplificación de Daño de Arma**, Natura: **Perforación**, Varian: **Amplificación de Daño por la Espalda**. Si no sale, el plan B de la ficha.",
-     "Un **Ataque Máximo** (o Ataque Adicional) en la ranura 1 o la 5 de cada genus.",
-     "El resto (vida, Precisión, Crítico, Tolerancia) mejora poco a poco: no gastes Kinah persiguiendo tiradas perfectas ahí."
-    ]
-   },
-   {
-    "id": "como-tirar",
-    "titulo": "Cómo tirar sin tirar la Kinah",
-    "tipo": "lista",
-    "items": [
-     "Sube cada genus a **10** antes de bloquear nada: los niveles de las mascotas lo llevan a 8–9; el resto, con cristales (unos 30–40 cubos para todos).",
-     "Tira con **Auto Analyze**: marca las líneas que quieres, pon el grado en Único o Heroico y deja que tire hasta que salga una.",
-     "**Bloquea** una línea solo cuando esté cerca del máximo de su rango (una de daño al 2,3 % sí; un Ataque de 10 sobre 16, no).",
-     "Las ★★★ primero, luego las ★★ y al final las ★. Las 9 líneas de la ficha son la tirada perfecta: casi nadie la tiene completa."
-    ]
-   },
    {
     "titulo": "Reglas",
     "tipo": "lista",

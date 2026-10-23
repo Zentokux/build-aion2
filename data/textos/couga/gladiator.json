@@ -1,0 +1,133 @@
+{
+ "clase": "gladiator",
+ "nombre": "Gladiador",
+ "resumen": "La clase insignia del juego: buffea al grupo, hace de semitanque y pega muchísimo con menos decisiones que otras clases. La build en una frase: Punzada descendente a 16-20, Postura de asalto a 20 de estigma y Explosión de furia para activar Punzada descendente; todo lo demás es apoyo.",
+ "pros": [
+  "Daño muy alto y fácil de jugar: el Hechicero y el Sicario lo superan por poco en el muñeco",
+  "Buffea al grupo: cada bloqueo da Amplificación de Daño de JcE a todos",
+  "Hace de semitanque y se cura solo (Absorción de sangre): se apaña sin sanador",
+  "Necesita pocos Fragmentos de estigma: queda montado en los primeros días"
+ ],
+ "contras": [
+  "Necesita Precisión: los jefes bloquean a un Gladiador que va corto",
+  "Sin equipo heroico, la velocidad de ataque, de movimiento, Might y Precision se comen casi todas las líneas: quedan 1-2 para pasivas",
+  "Siempre pega de frente: depende del indicador de orientación del jefe",
+  "Al principio se queda sin Maná si no mantiene Estacazo punzante"
+ ],
+ "presets": [
+  {"nombre_en": "main", "nombre": "Principal", "uso": "Postura de asalto 20, Bloqueo concentrado 5, Explosión de furia 5 y Bendición de Zikel 10."},
+  {"nombre_en": "organized", "nombre": "Grupo organizado", "uso": "Espada de drenaje de sangre a 20 en lugar de Bendición de Zikel: su Predation mejora los golpes de todo el grupo."},
+  {"nombre_en": "semitank", "nombre": "Grupo, de semitanque", "uso": "Blade Toss en lugar de Bendición de Zikel (aLuckyRO): −30 % de Defensa al jefe durante 10 s."},
+  {"nombre_en": "notemplar", "nombre": "Sin Templario", "uso": "Blindaje de onda (nivel 15) solo si no hay Templario en el grupo."}
+ ],
+ "cartas": {
+  "overhead-slam": {"nivel": "16, luego 20", "por_que": "Tu fuente de daño n.º 1. Con Explosión de furia y Postura de asalto está prácticamente siempre disponible. A 20, la tercera espec. es el crítico garantizado."},
+  "rending-blow": {"nivel": "16, luego 20", "por_que": "Segunda fuente de daño y tu motor de Maná. La espec. de 8 para usarla en movimiento es obligatoria (Arthars, Grobs): pegas mientras te mueves. A 16 añade 50 de Maná con cada crítico (el Maná aguanta sin Estacazo punzante); a 20, la de +12 % a un solo objetivo (hasta 16 ocupa el segundo hueco)."},
+  "ruinous-blow": {"nivel": "16", "por_que": "Golpe fuerte que da Prepare for Battle (+20 % de daño en JcE durante 20 s). Grobs coge +20 % de Velocidad de habilidad en vez de Crítico de habilidad a 8."},
+  "leaping-slam": {"nivel": "12", "por_que": "Tu acercamiento principal; 3 s de Prepare for Battle antes de que Embestida de perdición lo alargue."},
+  "rush-strike": {"nivel": "12", "por_que": "Esquiva y acercamiento. Con los recortes de enfriamiento de Postura de asalto, el Vigor vale más que −10 s de enfriamiento."},
+  "mocking-blade": {"nivel": "12", "por_que": "Botón de cura de emergencia: absorbe un 15 % de vida de los jefes."},
+  "ankle-slice": {"nivel": "12", "por_que": "Acercamiento de reserva. Sáltate la cadena Ankle Smash: ralentiza tu rotación."},
+  "crushing-wave": {"nivel": "12", "por_que": "Demasiado lenta para jefes; área y autocuración contra monstruos normales."},
+  "defiance": {"nivel": "16 si sobran puntos", "por_que": "Rompe aturdimientos. Útil en raids, no es prioridad."},
+  "sword-aura-rampage": {"nivel": "16", "por_que": "Solo golpea objetivos en stagger, pero a 16 cada golpe quita 1 s a todos los enfriamientos, estigmas incluidos. Arthars la deja a 16 en la línea de Embestida de perdición (Q): solo sale con el jefe en stagger y no cuesta nada el resto del tiempo. Machacarla fuera del stagger pierde daño (Grobs)."},
+  "keen-strike": {"nivel": "12", "por_que": "Ataque básico: +20 % de Maná recuperado y −1 s a Embestida de perdición por golpe; aLuckyRO y Sen la suben a 12 el primer día, cuando falta Maná. Con Punzada descendente y Embestida desgarradora a 16, deja de mantenerla pulsada (Grobs)."},
+  "aerial-snare": {"nivel": "12 (jefes)", "por_que": "Solo golpea objetivos derribados, pero los jefes son la excepción. aLuckyRO la sube a 12 por +100 % de daño a objetivos inmunes a incapacitación (todos los jefes) y la cadena Forced Fall, y la usa en las mazmorras de Pesadilla. Grobs y Arthars no la llevan; si la añades, ponla en su propia tecla, no en la línea principal."},
+  "lunge-stance": {"nivel": "20", "por_que": "El nivel 20 recorta todos los enfriamientos con los críticos: Punzada descendente, Explosión de furia, el bloqueo y los acercamientos casi siempre listos. El primer estigma a subir al máximo."},
+  "focused-block": {"nivel": "5", "por_que": "Bloqueo garantizado. Cada bloqueo activa el buff de grupo de Contraataque experimentado: bloquear es buffear. A 5 se puede usar dos veces seguidas."},
+  "rage-burst": {"nivel": "5", "por_que": "Activa Punzada descendente sobre el objetivo durante 10 s, +10 % de Amplificación de Daño de JcE y −10 % de Ataque al jefe."},
+  "zikels-blessing": {"nivel": "10", "por_que": "El cuarto hueco por defecto: +20 % de Ataque, sin depender de cómo juegue tu grupo."},
+  "lifestealing-blade": {"nivel": "20", "por_que": "Cuarto hueco para un grupo organizado: Predation mejora los golpes de todos. Solo vale la pena a 20."},
+  "blade-toss": {"nivel": "En grupo", "por_que": "La elección de grupo de aLuckyRO: −30 % de Defensa al jefe durante 10 s, así todo el grupo lo mata antes. En un grupo organizado, en lugar de Bendición de Zikel cuando haces de semitanque."},
+  "wave-armor": {"nivel": "15", "por_que": "Solo sin Templario. Su nivel 25, el fuerte, no existe en global."}
+ },
+ "traducciones": {
+  "focused-block": {"efecto": "Aumenta un 100 % la reducción de daño del Bloqueo durante un momento y garantiza el Bloqueo. Al bloquear, recupera una vez 110 de Puntos de Maná y de Vigor.", "specs": ["Lanzamientos en cadena +1", "Cambio a habilidad disponible en movimiento", "Al bloquear, aumento del 20 % de Velocidad de Movimiento durante 3 s", "Al bloquear, recupera una vez el 10 % de Puntos de Vida"]},
+  "lifestealing-blade": {"efecto": "Inflige daño a un máximo de 4 enemigos en un radio de 4 m y absorbe un 10 % de Puntos de Vida. 20 de daño al medidor de stagger.", "specs": ["Cuantos más objetivos se acierten, aumento máx. del 20 % de daño", "Efecto Predation en los miembros del grupo durante 20 s", "Reducción de 30 s de Tiempo de Enfriamiento", "Aumento del 5 % de Puntos de Vida absorbidos"]},
+  "blade-toss": {"efecto": "Inflige daño a un objetivo en un radio de 20 m y le reduce un 30 % la Defensa y un 50 % la curación recibida durante 10 s. 5 de daño al medidor de stagger.", "specs": ["Aumento del 20 % de la reducción de curación recibida de [Blade Toss]", "[Blade Toss] provoca Ralentización durante 5 s", "[Blade Toss] rompe los escudos protectores", "[Blade Dance] tiene un 30 % de probabilidad de provocar Derribo durante 3 s"]}
+ },
+ "secciones": {
+  "habilidades": [
+   {"tipo": "aviso", "texto": "Solo tres habilidades tienen que ir altas: **Punzada descendente, Embestida desgarradora y Embestida de perdición**, en ese orden. Las habilidades llegan a **10** con los puntos de habilidad, a **14** con Daevanion, a **16** con dos anillos (+1 cada uno) y a **20** con las Arcanas. Las especializaciones se abren a 8, 12 y 16."},
+   {"titulo": "Pasivas", "tipo": "lista", "items": [
+    "Los puntos de pasivas sobran: casi todas llegan al máximo sin pensar.",
+    "**Armadura de protección** es una trampa: una cura minúscula al bloquear. Vuelve a tirar el equipo y las cartas que la saquen.",
+    "**Impulso de destrucción**: daño extra solo contra objetivos en stagger. No es una trampa: aLuckyRO y Sen la suben para la ventana de stagger, donde se suma a Desenfreno de aura de espada. Cógela después de las principales.",
+    "**Absorción de sangre** no necesita inversión: un 50 % de probabilidad de curarte con cada golpe y una cura grande al bajar del 50 % de vida. Por eso el Gladiador se apaña sin sanador."
+   ]},
+   {"titulo": "Pasivas en el equipo", "tipo": "tabla", "columnas": ["#", "Pasiva", "Por qué"], "filas": [
+    ["1", "Preparación de ataque", "Amplificación de Daño de JcE, Defensa y Precisión planas. Sin condiciones"],
+    ["2", "Contraataque experimentado", "Daño frontal siempre, y con cada bloqueo 20 s de Amplificación de Daño de JcE para ti y el grupo. No se suma a la Furia del Templario, pero cubre un grupo sin él"],
+    ["3", "Estallido de sed de sangre / Acierto de impacto", "Cada 5 golpes, una explosión de área y daño crítico / más Impacto y Golpe"]
+   ]}
+  ],
+  "estigmas": [
+   {"tipo": "aviso", "texto": "Tres estigmas son fijos y el cuarto depende del grupo. En JcE no lleves Wrath Wave, Armor of Balance, Forced Restraint, Assault Strike ni Fracturing Rush; Blade Toss solo en grupo. Hay **4 huecos** de estigma (no 6), que se abren a los niveles 22, 27, 32 y 37."},
+   {"titulo": "Qué estigmas y a qué nivel", "tipo": "tabla", "columnas": ["Estigma", "Nivel", "Para qué"], "filas": [
+    ["Postura de asalto", "20", "Recorta todos los enfriamientos con los críticos: el primero a subir"],
+    ["Bloqueo concentrado", "5", "Bloqueo garantizado = buff de grupo; dos usos seguidos"],
+    ["Explosión de furia", "5", "Activa Punzada descendente 10 s"],
+    ["Bendición de Zikel", "10", "Cuarto hueco por defecto: +20 % de Ataque"],
+    ["Espada de drenaje de sangre", "20", "Cuarto hueco en grupo organizado"],
+    ["Blade Toss", "En grupo", "Cuarto hueco de semitanque: −30 % de Defensa al jefe"],
+    ["Blindaje de onda", "15", "Solo sin Templario"]
+   ]},
+   {"tipo": "aviso", "texto": "Los Fragmentos de estigma salen de la Nightmare Shop, la tienda del Shugo Festival y la tienda del Abismo por tramos. El Gladiador necesita tan pocos que queda montado en los primeros días."},
+   {"comun": "fragmentos-estigma"}
+  ],
+  "equipo": [
+   {"titulo": "Equipo y estadísticas", "tipo": "lista", "items": [
+    "Sin equipo heroico, la velocidad de ataque, la de movimiento, Might y Precision se comen casi todas las líneas: quedan 1-2 para pasivas (tabla de pasivas en Habilidades).",
+    "Los tipos más fuertes son el daño de arma y el daño frontal o por la espalda, y el Gladiador siempre pega de frente.",
+    "No persigas tiradas perfectas de piedras de maná en Season 1: cada nueva tirada cuesta unas 200-300 mil en Taiwán."
+   ]},
+   {"titulo": "Estadísticas (Ulfhednar, global)", "tipo": "lista", "items": [
+    "**Líneas del equipo**: todo lo que diga daño: Crítico, Amplificación de Daño.",
+    "**Soul Binding en arma y guarda**: Amplificación de Daño de Arma, Velocidad de Hechizo, Amplificación de Daño y Might, en ese orden.",
+    "**Estadísticas**: Sabiduría (Golpe), Tiempo (Velocidad de Hechizo), Destrucción (daño) y algo de Precisión: los jefes bloquean a un Gladiador que va corto.",
+    "**Comprensión de raza**: tira las líneas de ataque. Suben el Poder de Combate, el número que miran los grupos antes de invitarte a una mazmorra.",
+    "**Maná**: si te quedas seco, coge líneas de Puntos de Maná máximos y de su recuperación, los nodos de +50 de Maná de Daevanion y pociones de Maná (Fabricación, Alquimia)."
+   ]},
+   {"comun": "soulbind"}
+  ],
+  "daevanion": [
+   {"tipo": "aviso", "texto": "Daevanion lleva tus habilidades de 10 a 14 y añade un montón de estadísticas. Cada nodo azul da **+1 nivel** a su habilidad. Coste de los nodos: estadística gris 1, pasiva verde 2, habilidad azul 3, especial naranja 4."},
+   {"titulo": "Prioridades", "tipo": "lista", "items": [
+    "Primero los nodos azules de Punzada descendente, Embestida desgarradora y Embestida de perdición; luego los naranja; luego las estadísticas.",
+    "Azphel (nivel 45) es todo Amplificación y Tolerancia de Daño de JcJ: no cuenta para JcE."
+   ]},
+   {"titulo": "Tableros", "tipo": "tabla", "columnas": ["Tablero", "Nivel", "Nodos naranja"], "filas": [
+    ["Nezekan", "12", "Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento"],
+    ["Zikel", "20", "Amplificación de Daño, Tolerancia a Daño"],
+    ["Vaizel", "30", "Amplificación y Tolerancia de Daño Crítico"],
+    ["Triniel", "40", "Multigolpe y su resistencia"],
+    ["Ariel", "45", "Solo JcE, con cristales propios (abajo)"]
+   ]},
+   {"comun": "ariel"},
+   {"comun": "cristales"}
+  ],
+  "coleccionables": [
+   {"tipo": "aviso", "texto": "Una carta subida a 5 da de media cerca de **+2** a una habilidad al azar de las que puede sacar."},
+   {"titulo": "Arcanas", "tipo": "tabla", "columnas": ["Carta", "Qué buscar"], "filas": [
+    ["Parchment of Vigor", "Punzada descendente y Embestida de perdición: las únicas dos de sus seis que importan"],
+    ["Compass of Vigor", "Solo Embestida desgarradora. Coge la versión de Libertad por la Precisión: los bloqueos del jefe de frente son daño perdido"],
+    ["Chalice of Vigor", "Saca cualquier habilidad; fabricándolo eliges dos. Sube la que aún no llegue a 20"]
+   ]},
+   {"titulo": "Cómo llegar a 20", "tipo": "lista", "items": [
+    "Con suerte normal: 14 + 2 (anillo) + 2 + 2 = **20** en Punzada descendente.",
+    "Si solo otra habilidad puede llegar a 20, elige Embestida desgarradora antes que Embestida de perdición."
+   ]},
+   {"titulo": "Sets y cartas de pasivas", "tipo": "lista", "items": [
+    "Busca el set de 4 de **Vitalidad primordial** (todas las cartas Vigor de arriba). El Gladiador nunca necesita Reducción de Tiempo de Enfriamiento (Fantasía).",
+    "Si te quedas sin Maná con la velocidad de ataque de Season 1, cambia a 2 piezas de **Armadura mágica** (Mirror of Magic y las otras cartas Magic).",
+    "Cartas de pasivas: Preparación de ataque primero; luego cualquier mezcla de Contraataque experimentado, Estallido de sed de sangre, Acierto de impacto e Identificación de debilidades, en ese orden."
+   ]},
+   {"comun": "titulos"},
+   {"comun": "titulos-nota"}
+  ],
+  "mascotas": [
+   {"tipo": "aviso", "texto": "Tira las líneas de ataque: suben el Poder de Combate, el número que miran los grupos antes de invitarte a una mazmorra."},
+   {"comun": "mascotas"}
+  ]
+ }
+}

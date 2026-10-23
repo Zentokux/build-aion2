@@ -35,55 +35,44 @@
    "uso": "Subir de nivel y jugar solo, con Barrera de acero como red de seguridad."
   }
  ],
- "tecla_macro": "Clic der. (asígnala en Ajustes → Configuración de teclas → General → Macro)",
- "macros_por_preset": [],
+ "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
+ "macros_por_preset": [
+  {
+   "preset_en": "Boss dungeons",
+   "pasos": [
+    "Viento helado",
+    "Viento helado",
+    "Viento helado",
+    "Mejora elemental"
+   ],
+   "retardo_ms": 10,
+   "nota": "Mantén pulsados los dos botones del ratón. Con ping de 80-100 o más, sube el retardo a 40-50 ms."
+  },
+  {
+   "preset_en": "Stagger checks",
+   "pasos": [
+    "Viento helado",
+    "Viento helado",
+    "Viento helado",
+    "Mejora elemental"
+   ],
+   "retardo_ms": 10,
+   "nota": "Misma macro en los tres presets."
+  },
+  {
+   "preset_en": "Leveling and solo",
+   "pasos": [
+    "Viento helado",
+    "Viento helado",
+    "Viento helado",
+    "Mejora elemental"
+   ],
+   "retardo_ms": 10,
+   "nota": "Misma macro en los tres presets."
+  }
+ ],
  "secciones": {
   "equipo": [
-   {
-    "titulo": "Atributos que priorizar (PvE)",
-    "tipo": "tabla",
-    "columnas": [
-     "#",
-     "Atributo",
-     "Dónde / por qué"
-    ],
-    "filas": [
-     [
-      "1",
-      "**Velocidad de Hechizo**, Amplificación de Daño de Arma, Amplificación de Daño, Fuerza",
-      "Grimorio y guarda"
-     ],
-     [
-      "2",
-      "**Toga de llama**",
-      "La primera pasiva: Precisión, daño JcE y Golpe"
-     ],
-     [
-      "3",
-      "La línea clave de cada pieza",
-      "Golpe, Aumento de Ataque, Amplificación de Daño Crítico, Amplificación de Daño, Perforación"
-     ],
-     [
-      "4",
-      "Ataque y Crítico",
-      "Relleno; el Hechicero quiere daño plano, no Multigolpe"
-     ],
-     [
-      "5",
-      "Puntos de Maná y su regeneración",
-      "Solo si te quedas sin maná en la rotación"
-     ],
-     [
-      "6",
-      "Llamas del infierno, Voto de concentración, Explosión de llama, Quebrantamiento en llamas",
-      "En anillos"
-     ]
-    ]
-   },
-   {
-    "tipo": "aviso",
-    "texto": "En global cada pieza saca **4 o 5 líneas al azar** de su lista (5 en lo crafteado de rey dragón), no todas. En la ficha de cada pieza las líneas van **en orden**: si te salen las primeras, quédatela. Manastones: Ataque, Crítico, Precisión."
-   },
    {
     "titulo": "Ruta del grimorio",
     "tipo": "tabla",
@@ -120,7 +109,6 @@
     "items": [
      "Las líneas de valor variable, en las primeras ranuras (ahí rerolleas).",
      "**Toga de llama** en toda la armadura, pendientes y collar: 10 líneas = +10 niveles a tu mejor pasiva.",
-     "Una línea de **Toga de llama en cada pieza**: el Hechicero solo tiene 4 líneas buenas por ranura y esta es la 5.ª.",
      "Amplificación de Daño es la línea más rara del grimorio: no tires uno con buena Velocidad de Hechizo y Amplificación de Daño de Arma por esperarla.",
      "Perforación tiene poca prioridad: tu rango de daño solo tiene un 10% de amplitud.",
      "Tolerancia a Daño Crítico y Tolerancia a Daño de Arma en la capa no sirven en PvE: rerolléalas.",
@@ -138,7 +126,7 @@
     "filas": [
      [
       "Grimorio y guarda",
-      "Weapon Damage Boost y Critical Damage Boost → Front Attack Damage Boost → Ataque"
+      "Weapon Damage Boost y Critical Damage Boost, luego Front Attack Damage Boost, luego Ataque"
      ],
      [
       "Armadura",
@@ -189,17 +177,14 @@
      "Compass of Magic antes que la de vitalidad: te falta mucho más Crítico que Precisión (pero el crítico topa en 50%).",
      "Mirror of Vigor da Reducción de Tiempo de Enfriamiento; cuando pases de cerca de 35% sin ella, cámbiala por Mirror of Magic (Golpe).",
      "Bell of Magic apenas importa en PvE: va por su Ataque.",
-     "El planificador anota una habilidad por carta: toma sus niveles como mínimo. Chalice of Vigor (saca cualquier habilidad) se craftea la última.",
-     "Objetivo: **Voto de concentración a 20** primero y después Llamas del infierno a 20; Flecha en llamas, Quebrantamiento en llamas y Explosión de llama solo necesitan 16.",
-     "Busca Voto y Llamas del infierno en el Pergamino y el Cáliz; el Espejo para Toga de llama; la Brújula solo con +4 a Viento helado (para su 20).",
-     "Anillos: +2 a Viento helado y +2 a Voto de concentración."
+     "El planificador anota una habilidad por carta: toma sus niveles como mínimo. Chalice of Vigor (saca cualquier habilidad) se craftea la última."
     ]
    }
   ],
   "habilidades": [
    {
     "tipo": "aviso",
-    "texto": "Orden para subir a 16 (EUTOPIA, 11-oct): **Voto de concentración el primero** (su espec. de −10 s a todo es el gran salto), luego Flecha en llamas, Quebrantamiento en llamas, Explosión de llama, Viento helado, Atadura invernal y **Llamas del infierno la última** (como mínimo a 12). Consigue fragmentos de punto de habilidad cuanto antes."
+    "texto": "Consigue fragmentos de punto de habilidad cuanto antes. El Hechicero florece tarde: se siente completo cuando Llamas del infierno, Voto de concentración, Explosión de llama, Quebrantamiento en llamas y Flecha en llamas llegan a 16."
    },
    {
     "titulo": "Cómo se suman los niveles",
@@ -223,13 +208,13 @@
     "filas": [
      [
       "Llamas del infierno",
-      "Sigue siendo tu golpe más fuerte, cargado en 3 fases, pero se sube la última",
-      "Espec.: +30% de velocidad e ignorar Bloqueo y Evasión (también sale como Multigolpe). A 16, −15 s de enfriamiento. Te deja quieto al cargar"
+      "Golpe más fuerte, cargado en 3 fases",
+      "Te deja quieto al cargar: la espec. 3 te deja moverte. Contra jefe quieto, cambia la 3 por la 4"
      ],
      [
       "Voto de concentración",
-      "La primera en subir: +10% de Ataque adicional y +10% de Velocidad de Hechizo; a 16, espec. de −10 s a todos los enfriamientos",
-      "Antes de 16, lánzala la primera; desde 16, la última (cuando lo grande esté en enfriamiento). A 16 la de −10 s ocupa la ranura de la velocidad, que vuelve a 20"
+      "+10% Velocidad de Hechizo; espec. 5 quita 10 s a todos los enfriamientos",
+      "Hasta tener la 5 lleva la 2 y la 4; a 16 la 5 ocupa la ranura de la 2, que vuelve a 20"
      ],
      [
       "Explosión de llama",
@@ -304,7 +289,7 @@
      [
       "Merced de mejora",
       "16",
-      "+20% Amplificación de Daño de JcE con maná desde 25%. Otros ponen Vaporización de viveza o Marca ígnea"
+      "+20% Amplificación de Daño de JcE con maná ≥25%. Otros ponen Vaporización de viveza o Marca ígnea"
      ],
      [
       "Marca ígnea",
@@ -314,14 +299,9 @@
      [
       "Toga terrestre / Vaporización de viveza",
       "14",
-      "Maná y Crítico con maná desde 50% / daño extra a objetivos >70% de vida; nivel base + tableros"
+      "Maná y Crítico con maná ≥50% / daño extra a objetivos >70% de vida; nivel base + tableros"
      ]
     ]
-   },
-   {
-    "id": "pasivas-krix",
-    "tipo": "aviso",
-    "texto": "Pasivas: Toga de llama siempre la primera. Detrás, Toga terrestre por su Crítico (casi siempre tienes más del 50% de Maná) y Merced de mejora; Toga de helada después. Lo demás apenas cuenta."
    },
    {
     "tipo": "aviso",
@@ -338,37 +318,37 @@
     "filas": [
      [
       "Explosión de Congelación",
-      "8 → 10",
+      "de 8 a 10",
       "Mucho daño en área"
      ],
      [
       "Congelación",
-      "8 → 10",
+      "de 8 a 10",
       "Daño en área y congela"
      ],
      [
       "Absorción de esencia",
-      "1 → 10",
+      "de 1 a 10",
       "Acierto y Maná"
      ],
      [
       "Toga de helada",
-      "8 → 10",
+      "de 8 a 10",
       "Defensa"
      ],
      [
       "Eliminación de impacto",
-      "8 → 10",
+      "de 8 a 10",
       "Rompe aturdimientos"
      ],
      [
       "Merced de resistencia",
-      "1 → 10",
+      "de 1 a 10",
       "Resistencias"
      ],
      [
       "Pacto de resurrección",
-      "1 → 10",
+      "de 1 a 10",
       "Resistencia a efectos (último)"
      ]
     ]
@@ -377,7 +357,7 @@
   "estigmas": [
    {
     "tipo": "aviso",
-    "texto": "4 ranuras (niveles 22, 27, 32 y 37). Coste en fragmentos: 1 por nivel hasta 5, 2 hasta 10, 4 hasta 15 y 8 hasta 20 (75 para llevar uno a 20). Orden (EUTOPIA, 11-oct): Mejora elemental, Explosión retrasada, Barrera de fuego y Tormenta helada **los cuatro a 5** (cada uno gana daño en su nivel 5), luego **los cuatro a 10**, y solo entonces **Mejora elemental a 20**. Explosión retrasada da su 15% desde nivel 1: equípala ya."
+    "texto": "4 ranuras (niveles 22, 27, 32 y 37). Coste en fragmentos: 1 por nivel hasta 5, 2 hasta 10, 4 hasta 15 y 8 hasta 20 (75 para llevar uno a 20). Orden: **Mejora elemental hasta arriba**, luego Barrera de fuego, Tormenta helada y Explosión retrasada a 10. Explosión retrasada da su 15% desde nivel 1: equípala ya."
    },
    {
     "titulo": "Qué lleva cada preset",
@@ -417,7 +397,7 @@
      [
       "Mejora elemental",
       "+20% Ataque de Fuego y Agua (núcleo de la clase)",
-      "5: +200 Precisión; 10: Toga de llama ×1,5; 15: Merced de mejora ×1,5; 20: +10% más"
+      "5: +200 Precisión; 10: Toga de llama x1,5; 15: Merced de mejora x1,5; 20: +10% más"
      ],
      [
       "Barrera de fuego",
@@ -457,11 +437,6 @@
    }
   ],
   "daevanion": [
-   {
-    "id": "ariel",
-    "tipo": "aviso",
-    "texto": "**Nuevo (parche del 21-oct): tablero Ariel**, solo JcE y con cristales propios (60), no con los puntos de nivel. Salen del modo **Difícil** de Cueva de Krao y Draupnir (nivel de objeto 2.600). Su ruta está en la pestaña **Ariel** del tablero de arriba."
-   },
    {
     "titulo": "Desbloqueo de tableros",
     "tipo": "lista",
@@ -504,85 +479,78 @@
    {
     "id": "macro",
     "tipo": "aviso",
-    "texto": "Esta clase va **sin macro**: lo pulsas todo tú (hace más daño que con macro) y Clic der. queda libre. Mantén **Clic izq.** de relleno entre habilidades."
+    "texto": "La tecla de macro no viene asignada: Ajustes, Configuración de teclas, General, Macro: **Clic der.** Mantén pulsados **Clic izq.** (ataque básico) y **Clic der.** (macro) todo el combate. Cada paso al retardo que pone «Tu macro»; con ping alto, 40-50 ms. Las pilas en dorado las pulsa la macro; el resto, tú."
    },
    {
-    "id": "pruebas",
-    "titulo": "Para probar en el muñeco (1 min, medidor Ctrl+X)",
-    "tipo": "lista",
-    "items": [
-     "Pilas a mano frente a la macro de 3 botones (en la rotación): 1 min cada una; las pilas dieron cerca de un 10 % más.",
-     "Barrera de fuego y Tormenta helada (1) antes que la Q solo contra jefes que no se mueven al empezar.",
-     "Cadena gélida, Explosión de Congelación y Congelación (5): en jefes no hacen falta; úsalas en grupos de monstruos."
-    ]
-   },
-   {
-    "id": "presets",
-    "titulo": "Otros presets",
-    "tipo": "lista",
-    "items": [
-     "Preset «Comprobaciones de Stagger»: quita Tormenta helada (tecla 1) y pon **Explosión de divinidad** en la 7, a mano.",
-     "Preset «Leveling y solitario»: quita Tormenta helada (tecla 1) y pon **Barrera de acero** en la 7, a mano."
-    ]
+    "tipo": "aviso",
+    "texto": "La rotación es una idea: buffs y suelos, unas Llamas del infierno cargadas y luego todos los enfriamientos cortos girando hasta que Llamas del infierno vuelva."
    },
    {
     "titulo": "Antes de empezar",
     "tipo": "lista",
     "items": [
-     "**Fija el objetivo** (Tab o clic sobre el enemigo; dos flechas en su barra de vida = fijado duro): así Flecha en llamas sigue sola tras cada habilidad y te devuelve Maná. Va por el fijado, no por el modo de control.",
-     "Activa Skill Queue si las habilidades no salen.",
-     "Puedes apilar hasta 3 habilidades sobre una ranura rápida.",
-     "Mantén pulsada Flecha en llamas: también cancela el final de las animaciones (verás una imagen fantasma)."
+     "Juega en **Target Mode**: el modo acción interrumpe el ataque básico entre habilidades.",
+     "Activa Skill Queue si las habilidades no salen."
+    ]
+   },
+   {
+    "titulo": "La barra",
+    "tipo": "lista",
+    "items": [
+     "**Clic izq.**: Flecha en llamas. Mantenla pulsada: también cancela el final de las animaciones (verás una imagen fantasma).",
+     "**E** (el autor la tiene en Clic der.): Viento helado, con Explosión de llama, Quebrantamiento en llamas y Atadura invernal encima. Es la que alimenta la macro.",
+     "**1**: Voto de concentración. **2**: Llamas del infierno, cargada a mano, nunca en macro. **3**: Llamas sin puntería. **4**: Cadena gélida. **Q**: Explosión de Congelación y Congelación (tu cura).",
+     "**Estigmas (5-8)**: Mejora elemental, Barrera de fuego, Explosión retrasada, y Tormenta helada, Explosión de divinidad o Barrera de acero según el preset."
     ]
    },
    {
     "titulo": "Opener",
     "tipo": "pasos",
     "items": [
-     "Voto de concentración (6) mientras esté por debajo de 16; luego Mejora elemental (2).",
-     "La Q: Explosión retrasada y Atadura invernal (+20 % de Amplificación de Daño de JcE durante 5 s).",
-     "Llamas del infierno (3) cargada a 3/3 dentro de esos 5 s.",
-     "Barrera de fuego y Tormenta helada (1) bajo el jefe; si al empezar se mueve, espera a que se quede quieto.",
-     "Sin macro, todo a mano. Mantén Clic izq. (Flecha en llamas) de relleno: te devuelve Maná. Luego machaca la E (Viento helado, Explosión de llama y Quebrantamiento en llamas, en ese orden de prioridad) y la 1 cuando vuelva. Voto de concentración (6): antes de 16, el primero de todo; desde 16, el último, cuando Llamas del infierno, Quebrantamiento en llamas y Viento helado estén en enfriamiento, para que su −10 s caiga sobre ellos. Llamas sin puntería (4) solo en el stagger."
+     "Mejora elemental (5).",
+     "Explosión retrasada (8).",
+     "Llamas del infierno (2) con la carga al máximo.",
+     "Barrera de fuego (6) y Tormenta helada (7) sobre el jefe.",
+     "Activa la macro y sigue con Flecha en llamas."
     ]
    },
    {
-    "titulo": "Entre ventanas",
-    "tipo": "pasos",
+    "titulo": "Después",
+    "tipo": "lista",
     "items": [
-     "Voto de concentración (6): desde 16, cuando lo grande esté en enfriamiento (su espec. quita 10 s a todo).",
-     "Mantén Viento helado en enfriamiento.",
-     "Rellena huecos con Explosión de llama, Quebrantamiento en llamas y Flecha en llamas.",
-     "Cuando vuelva Llamas del infierno: Explosión retrasada primero, Atadura invernal justo antes de cargar (su buff de 5 s la cubre) y carga al máximo."
+     "Voto de concentración (1) siempre que esté listo: resetea casi toda la barra.",
+     "Mantén Viento helado en enfriamiento y rellena con Explosión de llama, Quebrantamiento en llamas y Flecha en llamas.",
+     "Cada vez que vuelva Llamas del infierno: primero Explosión retrasada y Atadura invernal justo antes de la carga, para que su buff de daño de 5 s la cubra."
     ]
    },
    {
-    "tipo": "aviso",
-    "texto": "Llamas del infierno: cárgala siempre a mano hasta 3/3."
-   },
-   {
-    "tipo": "aviso",
-    "texto": "¿Prefieres macro? Versión de 3 botones (cerca de un 10 % menos de daño que las pilas a mano): macro en Clic der., 10 ms por paso: 6 (Voto), 2 (Mejora elemental), Q, 1 y E. Cada paso pulsa una pila entera y la macro mira todas sus habilidades. Mantén a la vez Clic izq. (Flecha en llamas) y pulsa tú Llamas del infierno (3) en cuanto caiga Atadura invernal. Con Voto a 16, quita el 6 del principio y ponlo al final. Retardo: 10 ms con ping por debajo de 50 y 15-20 ms por encima; no repitas un paso para alargar, escribe el retardo que necesites."
+    "titulo": "La macro",
+    "tipo": "lista",
+    "items": [
+     "En **Clic der.**: Viento helado tres veces y Mejora elemental, 10 ms por paso. Con tus teclas: **E, E, E y 5**. Mantén los dos botones del ratón.",
+     "Las tres E dan prioridad a esa pila, donde viven tus enfriamientos cortos; con una sola, las teclas se turnan y el ping se va sumando.",
+     "Ping por debajo de 50: 10 ms. Con 80-100 o más: 40-50 ms."
+    ]
    },
    {
     "titulo": "A qué apuntar",
     "tipo": "tabla",
     "columnas": [
-     "Stat",
+     "Estadística",
      "Objetivo"
     ],
     "filas": [
      [
       "Reducción de Tiempo de Enfriamiento",
-      "Mínimo 25% (Voto siempre activo y golpes extra de Viento helado); cómodo con 35%; tope del juego 60%"
+      "Mínimo 25 % (Voto siempre activo y golpes extra de Viento helado); cómodo con 35 %; tope del juego 60 %"
      ],
      [
       "Velocidad de Hechizo",
-      "115-120% con Voto y un pergamino de Velocidad de Hechizo"
+      "115-120 % con Voto y un pergamino de Velocidad de Hechizo"
      ],
      [
       "Crítico",
-      "Tope 50% y la Resistencia Crítica del jefe lo baja; Viento helado (espec. 4) ya critea siempre. Cerca del tope, mejor Ataque o Precisión"
+      "Tope 50 % y la Resistencia Crítica del jefe lo baja; Viento helado (espec. 4) ya critea siempre. Cerca del tope, mejor Ataque o Precisión"
      ],
      [
       "Precisión",
@@ -590,13 +558,9 @@
      ],
      [
       "Maná",
-      "Por encima del 50% (Toga terrestre pierde Crítico por debajo; Merced de mejora pierde su 20% bajo el 25%)"
+      "Por encima del 50 % (Toga terrestre pierde Crítico por debajo; Merced de mejora pierde su 20 % bajo el 25 %)"
      ]
     ]
-   },
-   {
-    "tipo": "aviso",
-    "texto": "Referencia: en Corea y Taiwán un Hechicero bien equipado mete Llamas del infierno 26-28 veces por minuto en un muñeco. Sirve para medir cuánto te rinde la Reducción."
    }
   ],
   "coleccionables": [
@@ -620,9 +584,9 @@
       "—"
      ],
      [
-      "Mientras tanto",
+      "Opcional",
       "Forest Spirit Wings",
-      "Amplificación de Daño de Jefe y Tolerancia a Daño, hasta tener las Talisra"
+      "Amplificación de Daño de Jefe y Tolerancia a Daño"
      ]
     ]
    },
@@ -639,21 +603,6 @@
      "Qué da"
     ],
     "filas": [
-     [
-      "Ahora",
-      "Librarse de las ataduras de raza",
-      "Lo lleva el mejor Hechicero de global en PvE"
-     ],
-     [
-      "Ahora",
-      "Saint of Vanguard",
-      "Lo lleva el mejor Hechicero de global en PvE"
-     ],
-     [
-      "Al principio",
-      "De ida y vuelta al infierno",
-      "Reducción de Tiempo de Enfriamiento, hasta tener Ay, no tengo nada que ponerme (700 apariencias)"
-     ],
      [
       "Lanzamiento",
       "Protector de Verteron (Protector de Altgard en Asmodian)",
@@ -683,6 +632,11 @@
       "Más adelante",
       "Ay, no tengo nada que ponerme",
       "Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento"
+     ],
+     [
+      "Más adelante",
+      "De ida y vuelta al infierno",
+      "Reducción de Tiempo de Enfriamiento"
      ]
     ]
    },
@@ -696,28 +650,6 @@
    }
   ],
   "mascotas": [
-   {
-    "id": "minimo",
-    "titulo": "Lo mínimo, sí o sí (al menos 1 vez)",
-    "tipo": "pasos",
-    "items": [
-     "**Golpe** en la ranura 4 de Special: es la única del juego que lo saca. Vale la Kinah extra.",
-     "La línea de daño de la **ranura 4** en cada genus: Cogni: **Amplificación de Daño Crítico**, Fera: **Amplificación de Daño de Arma**, Natura: **Acierto de Multigolpe**, Varian: **Amplificación de Daño Frontal**. Si no sale, el plan B de la ficha.",
-     "Un **Ataque Máximo** (o Ataque Adicional) en la ranura 1 o la 5 de cada genus.",
-     "El resto (vida, Precisión, Crítico, Tolerancia) mejora poco a poco: no gastes Kinah persiguiendo tiradas perfectas ahí."
-    ]
-   },
-   {
-    "id": "como-tirar",
-    "titulo": "Cómo tirar sin tirar la Kinah",
-    "tipo": "lista",
-    "items": [
-     "Sube cada genus a **10** antes de bloquear nada: los niveles de las mascotas lo llevan a 8–9; el resto, con cristales (unos 30–40 cubos para todos).",
-     "Tira con **Auto Analyze**: marca las líneas que quieres, pon el grado en Único o Heroico y deja que tire hasta que salga una.",
-     "**Bloquea** una línea solo cuando esté cerca del máximo de su rango (una de daño al 2,3 % sí; un Ataque de 10 sobre 16, no).",
-     "Las ★★★ primero, luego las ★★ y al final las ★. Las 9 líneas de la ficha son la tirada perfecta: casi nadie la tiene completa."
-    ]
-   },
    {
     "titulo": "Reglas",
     "tipo": "lista",

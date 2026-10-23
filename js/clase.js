@@ -1,13 +1,14 @@
-// Página de clase: lee window.BUILD (data/builds/<clase>.js) y la pinta
+// Página de clase: dos builds por clase, M1 (window.BUILD, data/builds) y C2 (window.BUILD2, data/couga); pinta la elegida
 var TECLA_TXT = { LMB: "Clic izq.", RMB: "Clic der.", Espacio: "Espacio", Otra: "Otra" };
-var PRESET_DAEV = { "Launch priority": "Prioridad de lanzamiento", "Full PvE": "JcE completo" };
+var PRESET_DAEV = { "Launch priority": "Prioridad de lanzamiento", "Full PvE": "JcE completo", "Guide route": "Ruta de la guía" };
 var IZQ = [["MainHand", "SubHand"], ["Helmet", "Shoulder"], ["Torso", "Pants"], ["Gloves", "Boots"], ["Cape"]];
 var DER = [["Necklace", "Amulet"], ["Earring1", "Earring2"], ["Ring1", "Ring2"], ["Bracelet1", "Bracelet2"],
   ["Belt", "Rune1"], ["Rune2", "Brooch1"], ["Brooch2", "Pendant"]];
 var VACIAS = { Brooch1: "Broche 1", Brooch2: "Broche 2", Pendant: "Colgante", Rune1: "Runa 1", Rune2: "Runa 2", Amulet: "Amuleto", Belt: "Cinturón" };
 
-function pintarClase() {
-  var B = window.BUILD, T = B.textos || {}, S = T.secciones || {};
+// cada clase tiene dos builds completas: M1 (data/builds) y C2 (data/couga)
+function pintarClase(B, guia) {
+  var T = B.textos || {}, S = T.secciones || {};
   var H = {};
   B.habilidades.forEach(function (h) { H[h.id] = h; });
   // habilidades que el texto nombra pero no van en la build (alternativas, PvP, farmeo): solo icono y nombre
@@ -61,11 +62,14 @@ function pintarClase() {
   var tarjeta = '<div class="tarjeta-build"><div class="cab"><img src="icons/clases/' + B.clase + '.webp" alt=""><div><b>' + esc(B.nombre) +
     '</b><span class="fac">' + esc((B.faccion || "").toUpperCase()) + '</span><div class="rol">' + esc(B.rol || "") + "</div></div></div>" +
     '<div class="lbl">Nivel de objeto</div><div class="gs"><span>★</span> ' + (B.puntuacion_equipo || "—") + "</div>" +
-    '<div style="color:var(--suave);font-size:11px;margin-bottom:8px">' + B.huecos[0] + " de " + B.huecos[1] + " huecos ocupados</div>" +
+    (B.huecos ? '<div style="color:var(--suave);font-size:11px;margin-bottom:8px">' + B.huecos[0] + " de " + B.huecos[1] + " huecos ocupados</div>" : "") +
     cont.map(function (c) { return '<div class="fila">' + esc(c.label) + "<b>" + c.used + ' <small style="color:var(--suave)">/ ' + c.cap + "</small></b></div>"; }).join("") +
     '<div class="fila">Nv. de personaje<b>' + B.nivel + "</b></div></div>";
 
-  var h = "<h1>Build PvE de " + esc(B.nombre) + '</h1><div class="ruta">AION 2 / Guías de builds</div>' +
+  var h = '<div class="pestanas" id="tabs-guia">' + [1, 2].filter(function (g) { return g === 1 || window.BUILD2; }).map(function (g) {
+    return '<button class="pestana' + (g === guia ? " on" : "") + '" data-guia="' + g + '">' + GUIAS[g] + "</button>";
+  }).join("") + "</div>";
+  h += "<h1>Build PvE de " + esc(B.nombre) + '</h1><div class="ruta">AION 2 / Guías de builds</div>' +
     '<p class="intro">' + md(T.resumen || "") + "</p>";
   h += seccion("resumen", "Resumen de la build",
     '<div class="resumen"><div>' + bloquesHTML(S.resumen) +
@@ -120,6 +124,7 @@ function pintarClase() {
   var tablaSB = filasSB.length ? "<h3>Líneas de Soul Binding</h3><div class=\"tabla-scroll\"><table><thead><tr><th>Ranura</th><th>Líneas a buscar</th></tr></thead><tbody>" +
     filasSB.map(function (f) { return "<tr><td>" + esc(f[0]) + "</td><td>" + esc(f[1]) + "</td></tr>"; }).join("") + "</tbody></table></div>" : "";
   var bloqEq = S.equipo || [];
+  if (!Object.keys(B.equipo || {}).length) te = "";   // la guía no da piezas concretas: solo sus tablas
   // prioridad de atributos (tabla + aviso) y ruta del arma antes de la tabla de Soul Binding
   var antes = bloqEq.length && bloqEq[0].titulo === "Atributos que priorizar (PvE)" ? 3 : 1;
   te += bloquesHTML(bloqEq.slice(0, antes)) + tablaSB + bloquesHTML(bloqEq.slice(antes));
@@ -158,9 +163,10 @@ function pintarClase() {
 
   function ficha(x) {
     var sp = x.especializaciones.filter(function (s) { return s.elegida; });
-    return '<div class="ficha">' + icono(x.id) + '<div class="cuerpo"><div class="linea"><b>' + esc(x.nombre) + '</b><span class="nv">Nv. ' + (x.nivel || "—") +
+    return '<div class="ficha">' + icono(x.id) + '<div class="cuerpo"><div class="linea"><b>' + esc(x.nombre) + '</b><span class="nv">Nv. ' + esc(x.nivel_txt || x.nivel || "—") +
       (x.extra ? " (" + x.base + " + " + x.extra + ")" : "") + "</span>" + (teclaDe[x.id] ? '<span class="tec">' + esc(teclaDe[x.id]) + "</span>" : "") + "</div>" +
-      (sp.length ? '<div class="esp">' + sp.map(function (s) { return esc(s.texto); }).join(" · ") + "</div>" : "") + "</div></div>";
+      (sp.length ? '<div class="esp">' + sp.map(function (s) { return esc(s.texto); }).join(" · ") + "</div>" : "") +
+      (x.por_que ? '<div class="porque">' + md(x.por_que) + "</div>" : "") + "</div></div>";
   }
   var enP1 = (B.presets[0] || {}).habilidades || [];
   // orden: por casilla de la barra y, dentro de cada pila, de abajo arriba
@@ -186,7 +192,7 @@ function pintarClase() {
       }).join(" ") + "</div>" : "";
     }).join("") +
     B.macros.map(function (m) {
-      return '<div class="sub-mr">Macro 2 (Clic der.)</div>' + m.pasos.map(function (p, i) {
+      return '<div class="sub-mr">Macro (Clic der.)</div>' + m.pasos.map(function (p, i) {
         var c = B.barra.filter(function (x) { return x.tecla === p.tecla; })[0];
         return (i ? ", " : "") + "<b>" + esc(TECLA_TXT[p.tecla] || p.tecla) + "</b> " + esc(c.pila.length > 1 ? c.nombre : H[c.pila[0]].nombre) + " <small>" + p.ms + " ms</small>";
       }).join("");
@@ -201,16 +207,7 @@ function pintarClase() {
   h += seccion("habilidades", "Habilidades", th);
 
   // ---------- rotación y macros (barra estilo juego) ----------
-  // Macro 1 (barra_alt) y Macro 2 (barra), en pestañas como las de Coleccionables
-  var vistas = B.barra_alt ? [["Macro 1", Object.assign({}, B, { barra: B.barra_alt, macros: B.macros_alt || [] }), B.rot_m1], ["Macro 2", B, B.rot_m2]] : [["Macro", B, []]];
-  var tr = vistas.length > 1 ? '<div class="pestanas" id="tabs-macro">' + vistas.map(function (v, i) {
-    return '<button class="pestana' + (i ? "" : " on") + '" data-m="' + i + '">' + v[0] + "<span>" + (v[1].macros.length ? v[1].macros[0].pasos.length + " pasos" : "sin macro") + "</span></button>";
-  }).join("") + "</div>" : "";
-  tr += vistas.map(function (v, i) {
-    return '<div class="panel-macro" data-m="' + i + '"' + (i ? " hidden" : "") + ">" + barraJuego(v[1], H, icono, hab, nombrePreset, idPorNombre, T) + bloquesHTML(v[2]) + "</div>";
-  }).join("");
-  // lo común a las dos (cómo van las pilas y la tecla de macro) arriba; cada pestaña lleva la explicación de su autor
-  h += seccion("rotacion", "Rotación y macros", bloquesHTML(S.rotacion) + tr);
+  h += seccion("rotacion", "Rotación y macros", barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) + bloquesHTML(S.rotacion));
 
   // ---------- coleccionables ----------
   var C = B.coleccionables || {};
@@ -240,7 +237,7 @@ function pintarClase() {
         return '<div class="gen"><div class="cab"><img src="icons/ui/' + g.icono + '.webp" alt=""><b>' + esc(g.nombre) + "</b></div>" +
           '<div class="pos">' + g.posesion.map(function (s) { return esc(s[0]) + " " + esc(s[1]); }).join(" · ") + "</div>" +
           '<div class="ran"><span>Ranuras: qué buscar</span><span>' + g.ranuras + " al azar</span></div><ol class=\"plan\">" + filas + "</ol></div>";
-      }).join("") + '</div><div class="otorgado"><div class="t">Si todo saliera perfecto</div>' + filasStats(B.mascotas_total) + "</div></div>";
+      }).join("") + "</div>" + ((B.mascotas_total || []).length ? '<div class="otorgado"><div class="t">Si todo saliera perfecto</div>' + filasStats(B.mascotas_total) + "</div>" : "") + "</div>";
   }
   tm += bloquesHTML(bloqM.filter(function (x) { return x.id !== "minimo"; }));
   h += seccion("mascotas", "Mascotas", tm);
@@ -280,25 +277,10 @@ function pintarClase() {
   var PN = {};
   Object.keys(H).forEach(function (id) { PN[H[id].nombre] = id; });
   pintarColeccionables(C, filasStats, function (n) { return PN[n] ? hab(PN[n]) : '<span class="hab">' + esc(n) + "</span>"; });
-  pintarMacros();
-}
-
-// pestañas Macro 1 / Macro 2 (se recuerda la elegida en este navegador)
-function pintarMacros() {
-  var tabs = document.getElementById("tabs-macro");
-  if (!tabs) return;
-  function elige(m) {
-    [].forEach.call(tabs.children, function (b) { b.classList.toggle("on", b.dataset.m === m); });
-    [].forEach.call(document.querySelectorAll(".panel-macro"), function (p) { p.hidden = p.dataset.m !== m; });
-    try { localStorage.setItem("macro-elegida", m); } catch (e) {}
-  }
-  tabs.addEventListener("click", function (e) {
-    var b = e.target.closest("[data-m]");
-    if (b) elige(b.dataset.m);
+  document.getElementById("tabs-guia").addEventListener("click", function (e) {
+    var b = e.target.closest("[data-guia]");
+    if (b && +b.dataset.guia !== guia) elegirGuia(+b.dataset.guia);
   });
-  var guardada = null;
-  try { guardada = localStorage.getItem("macro-elegida"); } catch (e) {}
-  if (guardada && tabs.querySelector('[data-m="' + guardada + '"]')) elige(guardada);
 }
 
 // ===== barra estilo juego (la que pidió el usuario) =====
@@ -402,12 +384,16 @@ function pintarDaevanion(B, H) {
       (tb.propio ? '<div class="aviso" style="margin-top:10px"><strong>Ariel (nuevo, parche del 21-oct):</strong> solo JcE y con cristales propios, no con los puntos de nivel. ' +
       "Sale <strong>Fragmento de Ariel</strong> en el modo <strong>Difícil</strong> de Cueva de Krao y Draupnir (nivel de objeto <strong>2.600</strong>); 100 fragmentos = 1 Cristal de Daevanion: Ariel " +
       "(Substance Morph), hasta 30 por mazmorra: <strong>60 en total</strong>. La ruta coge los 4 nodos de Amplificación de Daño de JcE (+6 %), uno de Amplificación de Daño de Jefe (+1 %) y Crítico +10; " +
-      "primero los dos del medio (a los 13 y 26 cristales). Es igual en los dos modos y en todas las clases.</div>" :
-      '<div class="aviso" style="margin-top:10px"><strong>Dos modos:</strong> primero rellena <strong>Prioridad de lanzamiento</strong> (lo esencial, ' +
+      "primero los dos del medio (a los 13 y 26 cristales). Es igual en todas las clases.</div>" :
+      D.presets.length > 1 ? '<div class="aviso" style="margin-top:10px"><strong>Dos modos:</strong> primero rellena <strong>Prioridad de lanzamiento</strong> (lo esencial, ' +
       sumaPuntos(D.presets[0]) + " puntos); cuando la completes, sigue con <strong>JcE completo</strong> hasta " + sumaPuntos(D.presets[D.presets.length - 1]) +
-      " puntos. Los tableros se abren a nivel " + D.tableros.filter(function (t) { return !t.propio; }).map(function (t) { return t.nivel; }).join(", ") +
-      "; Ariel va aparte, con sus propios cristales.</div>");
+      " puntos. Los tableros se abren a nivel " + abren() + ".</div>" :
+      '<div class="aviso" style="margin-top:10px"><strong>Ruta de la guía:</strong> ' + sumaPuntos(D.presets[0]) + " puntos en los cuatro tableros (cuestan 570 en total: no da para todos). " +
+      "Los tableros se abren a nivel " + abren() + (D.tableros.some(function (t) { return t.propio; }) ? "; Ariel va aparte, con sus propios cristales" : "") + ".</div>");
     el.innerHTML = h;
+  }
+  function abren() {
+    return D.tableros.filter(function (t) { return !t.propio; }).map(function (t) { return t.nivel; }).join(", ");
   }
   function sumaPuntos(p) {
     var s = 0, propio = {};
@@ -508,10 +494,32 @@ function pintarColeccionables(C, filasStats, habN) {
   if (primero) pinta(primero.dataset.tab);
 }
 
+// M1 (metaroad) o C2 (couga): se recuerda la elegida en este navegador y va en la dirección (&g=m1 / &g=c2)
+var GUIAS = { 1: "M1", 2: "C2" };
+function elegirGuia(g) {
+  try { localStorage.setItem("guia-elegida", String(g)); } catch (e) {}
+  var u = new URL(location.href);
+  u.searchParams.set("g", GUIAS[g].toLowerCase());
+  history.replaceState(null, "", u);
+  var y = window.scrollY;
+  pintarClase(g === 2 ? window.BUILD2 : window.BUILD, g);
+  window.scrollTo(0, y);
+}
+
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  cargarScript("data/builds/" + c + ".js?v=17", pintarClase, function () {
+  var V = "?v=18";
+  cargarScript("data/builds/" + c + ".js" + V, function () {
+    cargarScript("data/couga/" + c + ".js" + V, arranca, arranca);
+  }, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
+  function arranca() {
+    var g = 1, pg = (param("g") || "").toLowerCase();
+    if (pg === "c2") g = 2;
+    else if (pg !== "m1") try { g = +localStorage.getItem("guia-elegida") || 1; } catch (e) {}
+    if (g === 2 && !window.BUILD2) g = 1;
+    pintarClase(g === 2 ? window.BUILD2 : window.BUILD, g);
+  }
 })();

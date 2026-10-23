@@ -1,0 +1,255 @@
+{
+ "fragmentos-estigma": [
+  {
+   "titulo": "Fragmentos de estigma: 270 por personaje",
+   "tipo": "lista",
+   "items": [
+    "Tienda del Abismo: 50 por paso, cuatro pasos por personaje (200 en total) por 10.000, 15.000, 20.000 y 25.000 Abyss Points.",
+    "Nightmare Shop (pestaña Growth): 35 por personaje, a 1.500 Phantasmal Fragment cada uno (52.500 en total).",
+    "Tienda del Shugo Festival: 35 por personaje, a 300 Centuryroot Tokens cada uno (10.500 en total).",
+    "Los niveles y la historia principal dan unos pocos más."
+   ]
+  }
+ ],
+ "soulbind": [
+  {
+   "titulo": "Soul Binding: qué buscar en cada pieza",
+   "tipo": "tabla",
+   "columnas": [
+    "Pieza",
+    "Líneas"
+   ],
+   "filas": [
+    [
+     "Arma y guarda",
+     "Velocidad de Hechizo, Amplificación de Daño de Arma, Amplificación de Daño"
+    ],
+    [
+     "Casco",
+     "Golpe, Aumento de Ataque"
+    ],
+    [
+     "Hombreras",
+     "Amplificación de Daño Crítico, Golpe"
+    ],
+    [
+     "Peto",
+     "Amplificación de Daño, Perforación"
+    ],
+    [
+     "Grebas",
+     "Aumento de Ataque, Perforación, Tolerancia a Daño"
+    ],
+    [
+     "Guantes",
+     "Velocidad de Hechizo, Perforación"
+    ],
+    [
+     "Botas",
+     "Velocidad de Movimiento, Perforación"
+    ],
+    [
+     "Capa",
+     "Golpe, Aumento de Ataque"
+    ],
+    [
+     "Pendientes",
+     "Velocidad de Movimiento"
+    ],
+    [
+     "Collar",
+     "Velocidad de Hechizo"
+    ],
+    [
+     "Anillos",
+     "Habilidades"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Ataque, Might y Precision salen en todas las piezas de todos modos: la tabla da las otras líneas que más pesan. Para cambiarlas, en la ventana de Soul Binding pulsa **Sync**, elige una pieza legendaria que sobre y la línea que quieres: la ventana enseña la probabilidad y la pieza se consume (Aragon)."
+  }
+ ],
+ "ariel": [
+  {
+   "tipo": "aviso",
+   "texto": "**Ariel** (nuevo, 21 de octubre): un sexto tablero, de JcE. Sus puntos no salen de los niveles: los fragmentos de Ariel caen en el modo Difícil de la Cueva de Krao y de Draupnir (nivel de objeto 2600), y 100 fragmentos son un Daevanion Crystal: Ariel en Substance Morph (Especial, Daevanion): hasta 30 cristales de cada mazmorra, 60 por personaje. La ruta coge los cuatro nodos de Amplificación de Daño de JcE (+6 %), uno de Amplificación de Daño de Jefe (+1 %) y Crítico +10; los dos de Amplificación de Daño de JcE del centro primero, a 13 y 26 cristales."
+  }
+ ],
+ "cristales": [
+  {
+   "titulo": "Daevanion Crystal: 416 como mucho para los cuatro tableros de JcE",
+   "tipo": "lista",
+   "items": [
+    "Niveles 12 a 45: 136.",
+    "Sealed Dungeons (el «?» del mapa): 122.",
+    "Misiones secundarias de cada región: 58.",
+    "Tienda del Shugo Festival: 50 por personaje por 10.500 Centuryroot Tokens en total (el precio sube en cuatro tramos: 10 por 50, 10 por 100, 15 por 200 y 15 por 400).",
+    "Nightmare Shop (pestaña Growth): 50 por personaje por 15.000 Phantasmal Fragment en total (300 cada uno)."
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Los tableros cuestan más de lo que hay: Nezekan, Zikel y Vaizel 134 cada uno y Triniel 168, 570 en total, así que no se pueden llenar todos. La ruta de arriba coge primero los nodos que cuentan. Las mazmorras del lado de la facción enemiga no dan nada para estos tableros, y Azphel tiene su propio cristal (solo JcJ). Comprueba el tablero en el juego antes de gastarlo todo: la ruta está calculada, no sacada de un vídeo."
+  }
+ ],
+ "titulos": [
+  {
+   "titulo": "Títulos: qué equipar (JcE)",
+   "tipo": "tabla",
+   "columnas": [
+    "Ranura",
+    "Título",
+    "Qué da",
+    "Cómo se consigue"
+   ],
+   "filas": [
+    [
+     "Ataque (el primero)",
+     "Protector de Verteron / Protector de Altgard",
+     "Penetración +210, Amplificación de Daño de JcE +3 %",
+     "Nivel 20 del Monolito de tu región (busca Empyrean Traces)"
+    ],
+    [
+     "Ataque (el mejor)",
+     "Librarse de las ataduras de raza",
+     "Crítico +68, Ataque Adicional +34, Amplificación de Daño de JcE +4,5 %",
+     "Las cinco ruedas de Comprensión de raza a 10; objetivo largo"
+    ],
+    [
+     "Defensa (el habitual)",
+     "Santo de Verteron / Santo de Altgard",
+     "Bloqueo +100, Defensa Adicional +300, Tolerancia a Daño +3 %",
+     "Nivel 30 del mismo Monolito, todos los rastros"
+    ],
+    [
+     "Defensa (si mueres en jefes)",
+     "Dominador del espacio",
+     "Puntos de Vida +1.000, Defensa Adicional +340, Tolerancia a Daño JcE +4,5 %",
+     "Conseguir 25 alas"
+    ],
+    [
+     "Defensa (a largo plazo)",
+     "Gobernar todas las cosas",
+     "Defensa +320, Tolerancia a Daño por la Espalda +3 %, Tolerancia a Daño de Jefe +4 %",
+     "200 tipos de mascotas"
+    ],
+    [
+     "Variado (fácil y bueno)",
+     "De ida y vuelta al infierno",
+     "Puntos de Vida +900, Vigor +225, Reducción de Tiempo de Enfriamiento +3 %",
+     "Completar la Sealed Dungeon Ruins of the Ancient City of Ru (tu región)"
+    ],
+    [
+     "Variado (el mejor)",
+     "Ay, no tengo nada que ponerme",
+     "Velocidad de Hechizo +3,5 %, Reducción de Tiempo de Enfriamiento +3,5 %",
+     "Más de 700 aspectos; lleva meses"
+    ]
+   ]
+  }
+ ],
+ "titulos-nota": [
+  {
+   "tipo": "aviso",
+   "texto": "Solo el título equipado da esas estadísticas, pero cada título que tienes suma un pequeño bonus permanente: vale la pena coleccionar el resto."
+  }
+ ],
+ "mascotas": [
+  {
+   "titulo": "Comprensión de raza: cuándo subirla",
+   "tipo": "lista",
+   "items": [
+    "**No demasiado pronto.** Con los niveles de las mascotas cada rueda llega sola a 8-9 (9 pide todas las mascotas de su tipo, también las del mapa enemigo). Gasta Kina y cristales después.",
+    "Los niveles cuestan cristales arcoíris. Los cubos los dan mucho más rápido que farmear monstruos: cuenta con unos 30-40 cubos para llevar todas las ruedas a 10 y tirar sus líneas (Fubgun).",
+    "**Todas las ruedas a 10 primero**: las cinco a 10 dan el título Librarse de las ataduras de raza."
+   ]
+  },
+  {
+   "titulo": "Tirar y bloquear",
+   "tipo": "lista",
+   "items": [
+    "Tira con **Auto Analyze**: marca las estadísticas que quieres, pon el grado en Único o Heroico y empieza; tira hasta que sale una y para.",
+    "Bloquea una línea cuando su valor está cerca del máximo de su rango. Aragon se queda un 2,3 % en una línea de daño; un Ataque de 10 sobre 16 lo deja sin bloquear.",
+    "Bloquea en **tres tandas**: primero las líneas 1, 4 y 5; luego 3, 6 y 9; luego 2, 7 y 8."
+   ]
+  },
+  {
+   "titulo": "Qué poner en cada línea",
+   "tipo": "tabla",
+   "columnas": [
+    "Líneas",
+    "Estadística (rango)",
+    "Tanda"
+   ],
+   "filas": [
+    [
+     "1 y 5",
+     "Ataque 8-16 (o Ataque Máximo)",
+     "1.ª"
+    ],
+    [
+     "4",
+     "Una de daño, distinta en cada rueda (tabla de abajo)",
+     "1.ª"
+    ],
+    [
+     "3, 6 y 9",
+     "Precisión 20-40 (o Crítico)",
+     "2.ª"
+    ],
+    [
+     "2 y 8",
+     "Aumento de Puntos de Vida 0,8-1,6 %",
+     "3.ª"
+    ],
+    [
+     "7",
+     "Tolerancia a Daño JcE 2-4 % (Especial: Tolerancia a Daño 1,5-3 %)",
+     "3.ª"
+    ]
+   ]
+  },
+  {
+   "titulo": "Línea 4 de cada rueda",
+   "tipo": "tabla",
+   "columnas": [
+    "Rueda",
+    "Línea 4",
+    "Rango"
+   ],
+   "filas": [
+    [
+     "Cognis",
+     "Amplificación de Daño de JcE",
+     "2-4 %"
+    ],
+    [
+     "Feras",
+     "Amplificación de Daño de Arma",
+     "1,5-3 %"
+    ],
+    [
+     "Naturas",
+     "Amplificación de Daño de JcE",
+     "2-4 %"
+    ],
+    [
+     "Varians",
+     "Ataque Frontal",
+     "1,5-3 %"
+    ],
+    [
+     "Especial",
+     "Golpe",
+     "1,5-3 %"
+    ]
+   ]
+  },
+  {
+   "tipo": "aviso",
+   "texto": "Por qué no Precisión JcE ni Ataque Frontal en las demás líneas: las estadísticas de dios multiplican las planas (Might sube el Ataque, Libertad la Precisión y Precision el Crítico), y según las cuentas de Aragon la Precisión JcE y el Ataque Frontal no reciben nada de ellas. Por eso coge Precisión, Crítico y Ataque planos, que crecen con el Panteón. Fubgun (todas sus ruedas a 10) sí se queda las de Precisión JcE y Ataque Frontal cuando salen; en la línea 4 coinciden salvo Cognis (Fubgun: Amplificación de Daño) y Varians (Fubgun: Amplificación de Daño de JcE)."
+  }
+ ]
+}
