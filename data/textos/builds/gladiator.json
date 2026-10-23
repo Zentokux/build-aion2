@@ -561,6 +561,37 @@
    {
     "tipo": "aviso",
     "texto": "Embestida de perdición y Explosión de furia vuelven con 1-2 s de diferencia: lánzalas juntas. Postura de asalto (60 s) entra cada dos ciclos de Explosión de furia (30 s), o antes si sus procs la recortan."
+   },
+   {
+    "id": "un-boton",
+    "titulo": "Solo macro (un botón)",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "Cómo"
+    ],
+    "filas": [
+     [
+      "Macro en Clic der.",
+      "**6, Q, 1 y Clic izq.**, 10 ms por paso. Solo mantienes Clic der."
+     ],
+     [
+      "Qué lanza cada tecla",
+      "**6**: Explosión de furia; **Q**: Punzada descendente, Embestida desgarradora; **1**: Embestida de perdición; **Clic izq.**: Estacazo punzante"
+     ],
+     [
+      "Cambios en la barra",
+      "Ninguno: la misma barra."
+     ],
+     [
+      "A mano",
+      "Postura de asalto (5) y Bendición de Zikel (7) (el autor no las quiere en la macro), Blindaje de onda (8), Desenfreno de aura de espada (2) en el stagger, el Knockdown (4) y los acercamientos (3)."
+     ],
+     [
+      "¿Pierde daño frente a la de arriba?",
+      "No: añade Embestida de perdición (1) en cuanto vuelve; el autor la lanza junto a Explosión de furia, que vuelve casi a la vez."
+     ]
+    ]
    }
   ],
   "coleccionables": [

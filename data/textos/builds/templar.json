@@ -478,6 +478,37 @@
    {
     "tipo": "aviso",
     "texto": "Si vas bien de aguante, saca Azotamiento continuo de la pila de relleno: la reducción de Estacazo impetuoso sobre Estacazo de amparo vale más que su curación."
+   },
+   {
+    "id": "un-boton",
+    "titulo": "Solo macro (un botón)",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "Cómo"
+    ],
+    "filas": [
+     [
+      "Macro en Clic der.",
+      "**1, Q, 6 y Clic izq.**, 10 ms por paso. Solo mantienes Clic der."
+     ],
+     [
+      "Qué lanza cada tecla",
+      "**1**: Juicio, Golpe de escudo, Estacazo de amparo; **Q**: Embestida decadente, Aniquilación, Azotamiento continuo; **6**: Armadura de nobleza; **Clic izq.**: Estacazo impetuoso"
+     ],
+     [
+      "Cambios en la barra",
+      "**Q**: Embestida decadente, Aniquilación, Azotamiento continuo (de abajo arriba)"
+     ],
+     [
+      "A mano",
+      "Castigo (2, cargado), Escudo de protección (5) en los golpes fuertes, Provocación (7), Castigo empíreo (8) para el stagger y los acercamientos (3 y 4)."
+     ],
+     [
+      "¿Pierde daño frente a la de arriba?",
+      "No, gana: la pila Q del autor tiene Azotamiento continuo (sin enfriamiento) abajo, y así tapa a Embestida decadente y Aniquilación; aquí va arriba. Además Armadura de nobleza (6) se renueva sola."
+     ]
+    ]
    }
   ],
   "coleccionables": [

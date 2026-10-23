@@ -577,6 +577,37 @@
    {
     "tipo": "aviso",
     "texto": "La 4.ª espec. de Disparo certero quita 1 s a Flecha al objetivo con cada golpe: que no deje de salir (por eso va dentro de la macro). Cada hueco es una Flecha al objetivo más lenta."
+   },
+   {
+    "id": "un-boton",
+    "titulo": "Solo macro (un botón)",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "Cómo"
+    ],
+    "filas": [
+     [
+      "Macro en Clic der.",
+      "**2, 3, 5, 6, 7 y Clic izq.**, 10 ms por paso. Solo mantienes Clic der."
+     ],
+     [
+      "Qué lanza cada tecla",
+      "**2**: Estallido de flechas, Flecha de tentáculo, Flecha de grifo; **3**: Flecha punzante, Huracán de flechas, Tiro rápido; **5**: Poder de Vaizel; **6**: Flecha de bendición; **7**: Disparos de apoyo; **Clic izq.**: Disparo certero"
+     ],
+     [
+      "Cambios en la barra",
+      "**3**: Flecha punzante, Huracán de flechas, Tiro rápido (de abajo arriba)"
+     ],
+     [
+      "A mano",
+      "Flecha al objetivo (1, cargada), Flecha en el objetivo (4, cuando a Precisión le queden menos de 3 s), las trampas (Q y E) y Flecha sin puntería (8)."
+     ],
+     [
+      "¿Pierde daño frente a la de arriba?",
+      "No, gana: la pila 3 del autor tiene Tiro rápido (sin enfriamiento) abajo, y tapa a Flecha punzante y Huracán de flechas; aquí va arriba. Los buffs (5-7) el autor los lanza en cuanto vuelven, que es lo que hace la macro."
+     ]
+    ]
    }
   ],
   "coleccionables": [

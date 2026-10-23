@@ -671,6 +671,37 @@
      "Promesa terrestre no se aplica junto a Enlace de dolor; el debuff de Golpe ondulatorio no se acumula con Estigma debilitante.",
      "Dos Conjuradores en el grupo: solo cuenta el mantra de más nivel."
     ]
+   },
+   {
+    "id": "un-boton",
+    "titulo": "Solo macro (un botón)",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "Cómo"
+    ],
+    "filas": [
+     [
+      "Macro en Clic der.",
+      "**4, E y Clic izq.**, 10 ms por paso. Solo mantienes Clic der."
+     ],
+     [
+      "Qué lanza cada tecla",
+      "**4**: Fractura sombría, Golpe giratorio, Fractura impactante, Golpe incandescente; **E**: Desenfreno de vendaval; **Clic izq.**: Fractura trituradora"
+     ],
+     [
+      "Cambios en la barra",
+      "Ninguno: la misma barra."
+     ],
+     [
+      "A mano",
+      "Poder de vendaval (6) justo antes del stagger, Ira de Marchutan (7) de reserva, Defensa concentrada (8), Hechizo de recobro (1), Golpe ondulatorio (2) en los huecos, los acercamientos (3 y Q) y los mantras (una vez)."
+     ],
+     [
+      "¿Pierde daño frente a la de arriba?",
+      "No: solo añade Desenfreno de vendaval (E), que únicamente sale con el jefe en stagger."
+     ]
+    ]
    }
   ],
   "coleccionables": [

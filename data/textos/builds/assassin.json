@@ -571,6 +571,37 @@
      "Infiltración necesita una esquiva antes (o vuelo): es para recolocarte, no para abrir.",
      "Avisa al tanque de que eres Sicario: un jefe mirando al tanque todo el combate es tu mayor buff."
     ]
+   },
+   {
+    "id": "un-boton",
+    "titulo": "Solo macro (un botón)",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "Cómo"
+    ],
+    "filas": [
+     [
+      "Macro en Clic der.",
+      "**E, 3 y Clic izq.**, 10 ms por paso. Solo mantienes Clic der."
+     ],
+     [
+      "Qué lanza cada tecla",
+      "**E**: Explosión de insignia, Estocada al corazón, Emboscada; **3**: Desenfreno de tormenta; **Clic izq.**: Corte rápido"
+     ],
+     [
+      "Cambios en la barra",
+      "Ninguno: la misma barra."
+     ],
+     [
+      "A mano",
+      "El burst (5-8: el autor no lo quiere en la macro), Rugido bestial (1, también a mano según el autor) y los movimientos (2, 4 y Q)."
+     ],
+     [
+      "¿Pierde daño frente a la de arriba?",
+      "No: solo añade Desenfreno de tormenta (3), que la macro únicamente lanza con el jefe en stagger."
+     ]
+    ]
    }
   ],
   "coleccionables": [

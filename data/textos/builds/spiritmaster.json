@@ -459,6 +459,37 @@
    {
     "tipo": "aviso",
     "texto": "La primera semana no pasa nada por jugar sin macro. Con equipo bajo, algunos dejan Espíritu de viento en la línea de espíritus para llenar antes Four Elements; quítalo al subir las habilidades principales."
+   },
+   {
+    "id": "un-boton",
+    "titulo": "Solo macro (un botón)",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "Cómo"
+    ],
+    "filas": [
+     [
+      "Macro en Clic der.",
+      "**6, 7, 1, 3, 8, 2 y Clic izq.**, 10 ms por paso. Solo mantienes Clic der."
+     ],
+     [
+      "Qué lanza cada tecla",
+      "**6**: Mejora: Favor de Espíritu; **7**: Bendición ardiente; **1**: Fusión elemental, Invocación: Espíritu de agua, Invocación: Espíritu de tierra, Invocación: Espíritu de fuego; **3**: Golpe conjunto: Maldición, Dominio espacial, Combustión; **8**: Golpe conjunto: Corrosión; **2**: Ráfaga continua; **Clic izq.**: Impacto helado"
+     ],
+     [
+      "Cambios en la barra",
+      "Ninguno: la misma barra."
+     ],
+     [
+      "A mano",
+      "Invocación: Espíritu ancestral (5), solo con los buffs puestos (copia tus estadísticas al aparecer), y «dismiss all spirits»."
+     ],
+     [
+      "¿Pierde daño frente a la de arriba?",
+      "No: añade Bendición ardiente (7), que el autor relanza en cuanto está lista, la línea de daño (3) en cuanto vuelve y Ráfaga continua (2), que solo sale en el stagger."
+     ]
+    ]
    }
   ],
   "coleccionables": [

@@ -613,6 +613,37 @@
      "Alas de gloria y el Pergamino de Destino también ayudan.",
      "Si aún te quedas seco: espec. 1 de Retribución terrestre (+20 % de Maná recuperado)."
     ]
+   },
+   {
+    "id": "un-boton",
+    "titulo": "Solo macro (un botón)",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "Cómo"
+    ],
+    "filas": [
+     [
+      "Macro en Clic der.",
+      "**Clic izq., 3, 2, 1, 2, 1, 1, 6 y 7**, 10 ms por paso. Solo mantienes Clic der."
+     ],
+     [
+      "Qué lanza cada tecla",
+      "**Clic izq.**: Retribución terrestre; **3**: Luz de regeneración, Estigma debilitante, Aura divina, Rayo del juicio; **2**: Relámpagos sin puntería; **1**: Condena, Enlace de dolor; **6**: Castigo terrestre; **7**: Aura noble"
+     ],
+     [
+      "Cambios en la barra",
+      "**3**: Luz de regeneración, Estigma debilitante, Aura divina, Rayo del juicio (de abajo arriba)"
+     ],
+     [
+      "A mano",
+      "Centella (E, cargada), Oración de amplificación (8) al abrir una ventana de daño, las curas (4 y Q) y Luz de protección (5, interruptor: una vez)."
+     ],
+     [
+      "¿Pierde daño frente a la de arriba?",
+      "No, gana: la pila 3 del autor tiene Rayo del juicio (sin enfriamiento) abajo, y tapa a Luz de regeneración, Estigma debilitante y Aura divina; aquí va arriba. Además Castigo terrestre (6) y Aura noble (7) se renuevan solos."
+     ]
+    ]
    }
   ],
   "coleccionables": [

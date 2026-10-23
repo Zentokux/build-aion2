@@ -526,6 +526,37 @@
       "Por encima del 50 % (Toga terrestre pierde Crítico por debajo; Merced de mejora pierde su 20 % bajo el 25 %)"
      ]
     ]
+   },
+   {
+    "id": "un-boton",
+    "titulo": "Solo macro (un botón)",
+    "tipo": "tabla",
+    "columnas": [
+     "Qué",
+     "Cómo"
+    ],
+    "filas": [
+     [
+      "Macro en Clic der.",
+      "**E, E, E, 5, 1 y Clic izq.**, 10 ms por paso. Solo mantienes Clic der."
+     ],
+     [
+      "Qué lanza cada tecla",
+      "**E**: Viento helado, Explosión de llama, Quebrantamiento en llamas, Atadura invernal; **5**: Mejora elemental; **1**: Voto de concentración; **Clic izq.**: Flecha en llamas"
+     ],
+     [
+      "Cambios en la barra",
+      "Ninguno: la misma barra."
+     ],
+     [
+      "A mano",
+      "Llamas del infierno (2, cargada a tope), con Explosión retrasada (8) antes y Atadura invernal justo antes de la carga; Barrera de fuego (6) y Tormenta helada (7) bajo el jefe; Llamas sin puntería (3) en el stagger."
+     ],
+     [
+      "¿Pierde daño frente a la de arriba?",
+      "No: solo añade Voto de concentración (1), que el autor lanza siempre que está listo."
+     ]
+    ]
    }
   ],
   "coleccionables": [
