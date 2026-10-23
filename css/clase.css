@@ -147,6 +147,9 @@ details.rot .dentro { padding: 0 12px 12px; font-size: 13px; }
 .pestana.on { background: #232a36; color: #fff; }
 .panel-col { display: grid; grid-template-columns: 1fr 260px; gap: 14px; background: #232a36; border: 1px solid var(--borde); border-radius: 0 8px 8px 8px; padding: 12px; }
 @media (max-width: 760px) { .panel-col { grid-template-columns: 1fr; } }
+.panel-macro { background: #232a36; border: 1px solid var(--borde); border-radius: 0 8px 8px 8px; padding: 12px; }
+.panel-macro[hidden] { display: none; }
+.panel-macro > .barra-box:first-child { margin-top: 0; }
 .items-col { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px; align-content: start; }
 .item-col { display: flex; gap: 8px; align-items: center; background: #1a1f29; border: 1px solid #2c3442; border-radius: 4px; padding: 6px; font-size: 12px; min-width: 0; }
 .item-col img { width: 45px; height: 45px; border-radius: 3px; border: 1px solid #b2541c; flex: none; }

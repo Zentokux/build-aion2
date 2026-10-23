@@ -186,7 +186,7 @@ function pintarClase() {
       }).join(" ") + "</div>" : "";
     }).join("") +
     B.macros.map(function (m) {
-      return '<div class="sub-mr">Macro (Clic der.)</div>' + m.pasos.map(function (p, i) {
+      return '<div class="sub-mr">Macro 2 (Clic der.)</div>' + m.pasos.map(function (p, i) {
         var c = B.barra.filter(function (x) { return x.tecla === p.tecla; })[0];
         return (i ? " → " : "") + "<b>" + esc(TECLA_TXT[p.tecla] || p.tecla) + "</b> " + esc(c.pila.length > 1 ? c.nombre : H[c.pila[0]].nombre) + " <small>" + p.ms + " ms</small>";
       }).join("");
@@ -201,7 +201,16 @@ function pintarClase() {
   h += seccion("habilidades", "Habilidades", th);
 
   // ---------- rotación y macros (barra estilo juego) ----------
-  h += seccion("rotacion", "Rotación y macros", barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) + bloquesHTML(S.rotacion));
+  // Macro 1 (barra_alt) y Macro 2 (barra), en pestañas como las de Coleccionables
+  var vistas = B.barra_alt ? [["Macro 1", Object.assign({}, B, { barra: B.barra_alt, macros: B.macros_alt || [] })], ["Macro 2", B]] : [["Macro", B]];
+  var tr = vistas.length > 1 ? '<div class="pestanas" id="tabs-macro">' + vistas.map(function (v, i) {
+    return '<button class="pestana' + (i ? "" : " on") + '" data-m="' + i + '">' + v[0] + "<span>" + (v[1].macros.length ? v[1].macros[0].pasos.length + " pasos" : "sin macro") + "</span></button>";
+  }).join("") + "</div>" : "";
+  tr += vistas.map(function (v, i) {
+    return '<div class="panel-macro" data-m="' + i + '"' + (i ? " hidden" : "") + ">" + barraJuego(v[1], H, icono, hab, nombrePreset, idPorNombre, T) + "</div>";
+  }).join("");
+  if (vistas.length > 1) tr += bloquesHTML([{ tipo: "aviso", texto: "Los pasos de abajo usan las teclas de la **Macro 2**. Con la **Macro 1** las habilidades son las mismas: mira en su tabla en qué tecla está cada una." }]);
+  h += seccion("rotacion", "Rotación y macros", tr + bloquesHTML(S.rotacion));
 
   // ---------- coleccionables ----------
   var C = B.coleccionables || {};
@@ -271,6 +280,25 @@ function pintarClase() {
   var PN = {};
   Object.keys(H).forEach(function (id) { PN[H[id].nombre] = id; });
   pintarColeccionables(C, filasStats, function (n) { return PN[n] ? hab(PN[n]) : '<span class="hab">' + esc(n) + "</span>"; });
+  pintarMacros();
+}
+
+// pestañas Macro 1 / Macro 2 (se recuerda la elegida en este navegador)
+function pintarMacros() {
+  var tabs = document.getElementById("tabs-macro");
+  if (!tabs) return;
+  function elige(m) {
+    [].forEach.call(tabs.children, function (b) { b.classList.toggle("on", b.dataset.m === m); });
+    [].forEach.call(document.querySelectorAll(".panel-macro"), function (p) { p.hidden = p.dataset.m !== m; });
+    try { localStorage.setItem("macro-elegida", m); } catch (e) {}
+  }
+  tabs.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-m]");
+    if (b) elige(b.dataset.m);
+  });
+  var guardada = null;
+  try { guardada = localStorage.getItem("macro-elegida"); } catch (e) {}
+  if (guardada && tabs.querySelector('[data-m="' + guardada + '"]')) elige(guardada);
 }
 
 // ===== barra estilo juego (la que pidió el usuario) =====
@@ -483,7 +511,7 @@ function pintarColeccionables(C, filasStats, habN) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  cargarScript("data/builds/" + c + ".js?v=14", pintarClase, function () {
+  cargarScript("data/builds/" + c + ".js?v=15", pintarClase, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
 })();
