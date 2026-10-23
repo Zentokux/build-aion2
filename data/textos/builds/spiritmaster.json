@@ -36,38 +36,6 @@
   }
  ],
  "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
- "macros_por_preset": [
-  {
-   "preset_en": "Bosses and dungeons",
-   "pasos": [
-    "Mejora: Favor de Espíritu",
-    "Fusión elemental",
-    "Golpe conjunto: Corrosión"
-   ],
-   "retardo_ms": 10,
-   "nota": "Mantén Clic izq. (Impacto helado) y el botón derecho a la vez; el resto, a mano."
-  },
-  {
-   "preset_en": "Solo and leveling",
-   "pasos": [
-    "Invocación: Espíritu de agua",
-    "Fusión elemental",
-    "Golpe conjunto: Corrosión"
-   ],
-   "retardo_ms": 10,
-   "nota": "El planificador guarda una sola macro (la de Favor de Espíritu); esta variante es la del texto."
-  },
-  {
-   "preset_en": "Stagger burst",
-   "pasos": [
-    "Mejora: Favor de Espíritu",
-    "Fusión elemental",
-    "Golpe conjunto: Corrosión"
-   ],
-   "retardo_ms": 10,
-   "nota": ""
-  }
- ],
  "secciones": {
   "equipo": [
    {
@@ -460,7 +428,7 @@
     "titulo": "La barra",
     "tipo": "lista",
     "items": [
-     "**Clic izq.**: Impacto helado, mantenlo todo el combate.",
+     "**Clic izq.**: Impacto helado; aquí va como último paso de la macro.",
      "**1** (línea de espíritus): Fusión elemental abajo del todo, para que salga en cuanto tengas Four Elements; luego Espíritu de agua, de tierra y, el último, de fuego, el que quieres fuera más tiempo.",
      "**3** (línea de daño): Golpe conjunto: Maldición, luego Dominio espacial y Combustión. El autor (Evripides) pone Golpe conjunto: Corrosión abajo del todo de esta pila; el planificador lo deja en su tecla de estigma (8).",
      "**2**: Ráfaga continua.",
@@ -473,7 +441,7 @@
     "items": [
      "Jefes y mazmorras, y burst en stagger: Mejora: Favor de Espíritu, Fusión elemental y Golpe conjunto: Corrosión. Con tus teclas: **6, 1 y 8**.",
      "Solo y subida de nivel: Espíritu de agua, Fusión elemental y Corrosión. Con tus teclas: 1 y 8.",
-     "Juegas con dos botones: Clic izq. (Impacto helado) y Clic der. (la macro) a la vez; todo lo demás, a mano."
+     "El autor juega con los dos botones a la vez (Impacto helado y la macro); aquí Impacto helado va dentro de la macro y solo mantienes Clic der. Todo lo demás, a mano."
     ]
    },
    {
@@ -482,7 +450,7 @@
     "items": [
      "Bendición ardiente (7), Favor de Espíritu (6) y Espíritu ancestral (5): los buffs siempre antes de la invocación.",
      "Línea de espíritus (1) y Golpe conjunto: Corrosión (8): espíritus fuera y daño en el tiempo sobre el jefe.",
-     "Empieza a mantener los dos botones.",
+     "Mantén la macro (Clic der.).",
      "Relanza los buffs en cuanto estén listos; no los guardes para el siguiente Espíritu ancestral.",
      "Mantén las 5 acumulaciones de Temblor terrestre: compensa retrasar una invocación un ataque básico para tener antes la quinta.",
      "Golpe conjunto: Corrosión cada vez que salga de reutilización."

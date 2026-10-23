@@ -35,46 +35,6 @@
   }
  ],
  "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
- "macros_por_preset": [
-  {
-   "preset_en": "Stagger dungeons",
-   "pasos": [
-    "Golpe de escudo",
-    "Juicio",
-    "Estacazo de amparo",
-    "Juicio",
-    "Embestida decadente"
-   ],
-   "retardo_ms": 10,
-   "nota": "Es la macro que guarda el planificador."
-  },
-  {
-   "preset_en": "Daily and no-stagger runs",
-   "pasos": [
-    "Golpe de escudo",
-    "Juicio",
-    "Escudo de perdición",
-    "Juicio",
-    "Estacazo de amparo",
-    "Juicio"
-   ],
-   "retardo_ms": 10,
-   "nota": ""
-  },
-  {
-   "preset_en": "Solo and open world",
-   "pasos": [
-    "Escudo de perdición",
-    "Juicio",
-    "Golpe de escudo",
-    "Juicio",
-    "Estacazo de amparo",
-    "Juicio"
-   ],
-   "retardo_ms": 10,
-   "nota": ""
-  }
- ],
  "secciones": {
   "equipo": [
    {
@@ -486,7 +446,7 @@
     "titulo": "La barra",
     "tipo": "lista",
     "items": [
-     "**Clic izq.**: Estacazo impetuoso. Mantenlo entre todo lo demás.",
+     "**Clic izq.**: Estacazo impetuoso, entre todo lo demás (aquí, como último paso de la macro).",
      "**Q** (tecla de relleno; el autor la tiene en Clic der.): Azotamiento continuo, con Embestida decadente y Aniquilación encima.",
      "**1** (tecla de daño): Juicio, con Golpe de escudo y Estacazo de amparo encima.",
      "**2**: Castigo, cargado a mano en momentos seguros; nunca en una macro. **3**: Asalto con escudo. **4**: Aprisionamiento.",

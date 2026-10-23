@@ -36,41 +36,6 @@
   }
  ],
  "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
- "macros_por_preset": [
-  {
-   "preset_en": "Boss dungeons",
-   "pasos": [
-    "Viento helado",
-    "Viento helado",
-    "Viento helado",
-    "Mejora elemental"
-   ],
-   "retardo_ms": 10,
-   "nota": "Mantén pulsados los dos botones del ratón. Con ping de 80-100 o más, sube el retardo a 40-50 ms."
-  },
-  {
-   "preset_en": "Stagger checks",
-   "pasos": [
-    "Viento helado",
-    "Viento helado",
-    "Viento helado",
-    "Mejora elemental"
-   ],
-   "retardo_ms": 10,
-   "nota": "Misma macro en los tres presets."
-  },
-  {
-   "preset_en": "Leveling and solo",
-   "pasos": [
-    "Viento helado",
-    "Viento helado",
-    "Viento helado",
-    "Mejora elemental"
-   ],
-   "retardo_ms": 10,
-   "nota": "Misma macro en los tres presets."
-  }
- ],
  "secciones": {
   "equipo": [
    {
@@ -497,7 +462,7 @@
     "titulo": "La barra",
     "tipo": "lista",
     "items": [
-     "**Clic izq.**: Flecha en llamas. Mantenla pulsada: también cancela el final de las animaciones (verás una imagen fantasma).",
+     "**Clic izq.**: Flecha en llamas, como último paso de la macro: también cancela el final de las animaciones (verás una imagen fantasma).",
      "**E** (el autor la tiene en Clic der.): Viento helado, con Explosión de llama, Quebrantamiento en llamas y Atadura invernal encima. Es la que alimenta la macro.",
      "**1**: Voto de concentración. **2**: Llamas del infierno, cargada a mano, nunca en macro. **3**: Llamas sin puntería. **4**: Cadena gélida. **Q**: Explosión de Congelación y Congelación (tu cura).",
      "**Estigmas (5-8)**: Mejora elemental, Barrera de fuego, Explosión retrasada, y Tormenta helada, Explosión de divinidad o Barrera de acero según el preset."
@@ -527,7 +492,7 @@
     "titulo": "Cómo usar la macro",
     "tipo": "lista",
     "items": [
-     "En **Clic der.**: Viento helado tres veces y Mejora elemental, 10 ms por paso. Con tus teclas: **E, E, E y 5**. Mantén los dos botones del ratón.",
+     "En **Clic der.**: Viento helado tres veces y Mejora elemental, 10 ms por paso. Con tus teclas: **E, E, E y 5**. El autor mantiene además Clic izq.; aquí Flecha en llamas va como último paso y solo mantienes Clic der.",
      "Las tres E dan prioridad a esa pila, donde viven tus enfriamientos cortos; con una sola, las teclas se turnan y el ping se va sumando.",
      "Ping por debajo de 50: 10 ms. Con 80-100 o más: 40-50 ms."
     ]

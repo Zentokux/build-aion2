@@ -329,7 +329,8 @@ function barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) {
         '<span class="iconos-pila">' + c.pila.map(function (id) { return icono(id); }).join("") + "</span>" +
         "<span>Tecla <strong>" + esc(txt(p.tecla)) + "</strong>" + (c.pila.length > 1 ? " · " + esc(c.nombre) : " · " + esc(H[c.pila[0]].nombre)) + "</span><small>" + p.ms + " ms</small></div>";
     }).join("") + "</div><table><tr><th>Tecla de la macro</th><td><strong>Clic der.</strong>, mantenla pulsada " +
-      "(Ajustes, Configuración de teclas, General, Macro)</td></tr><tr><th>Al crearla</th><td>En la ventana de la macro eliges <strong>teclas</strong> (pilas), no habilidades sueltas: " +
+      "(Ajustes, Configuración de teclas, General, Macro)</td></tr>" +
+      (B.basico_en_macro ? "<tr><th>Ataque básico</th><td>Va como <strong>último paso</strong> de la macro: en el juego no se repite manteniendo Clic izq., así que solo mantienes Clic der.</td></tr>" : "") + "<tr><th>Al crearla</th><td>En la ventana de la macro eliges <strong>teclas</strong> (pilas), no habilidades sueltas: " +
       "la macro lanza lo que esté listo en esa pila.</td></tr></table></div>";
   }
   return out;

@@ -35,47 +35,6 @@
   }
  ],
  "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
- "macros_por_preset": [
-  {
-   "preset_en": "Party dungeons (no Chanter)",
-   "pasos": [
-    "Retribución terrestre",
-    "Rayo del juicio",
-    "Relámpagos sin puntería",
-    "Condena",
-    "Relámpagos sin puntería",
-    "Condena",
-    "Condena"
-   ],
-   "retardo_ms": 10,
-   "nota": "Con mucho ping, prueba 40-50 ms. Relámpagos sin puntería solo sale con el jefe en stagger; si no, la macro se la salta."
-  },
-  {
-   "preset_en": "New dungeon or struggling party",
-   "pasos": [
-    "Retribución terrestre",
-    "Condena",
-    "Rayo del juicio",
-    "Condena"
-   ],
-   "retardo_ms": 10,
-   "nota": "Con mucho ping, prueba 40-50 ms."
-  },
-  {
-   "preset_en": "Chanter in the party",
-   "pasos": [
-    "Retribución terrestre",
-    "Rayo del juicio",
-    "Relámpagos sin puntería",
-    "Condena",
-    "Relámpagos sin puntería",
-    "Condena",
-    "Condena"
-   ],
-   "retardo_ms": 10,
-   "nota": "Igual que en grupo normal. Condena va tres veces a propósito para aprovechar cada reinicio."
-  }
- ],
  "secciones": {
   "equipo": [
    {

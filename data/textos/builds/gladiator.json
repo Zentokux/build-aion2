@@ -35,40 +35,6 @@
   }
  ],
  "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
- "macros_por_preset": [
-  {
-   "preset_en": "Boss dungeons with a Templar",
-   "pasos": [
-    "Explosión de furia",
-    "Punzada descendente",
-    "Embestida desgarradora"
-   ],
-   "retardo_ms": 10,
-   "nota": "Con ping de más de 80 ms, sube cada paso a 40-50 ms o la macro se saltará habilidades."
-  },
-  {
-   "preset_en": "Off-tank or no Templar",
-   "pasos": [
-    "Explosión de furia",
-    "Punzada descendente",
-    "Embestida desgarradora",
-    "Estacazo punzante"
-   ],
-   "retardo_ms": 10,
-   "nota": "Con ping de más de 80 ms, 40-50 ms por paso."
-  },
-  {
-   "preset_en": "Solo and open world",
-   "pasos": [
-    "Embestida de perdición",
-    "Explosión de furia",
-    "Punzada descendente",
-    "Onda pulverizadora"
-   ],
-   "retardo_ms": 10,
-   "nota": "Con ping de más de 80 ms, 40-50 ms por paso."
-  }
- ],
  "secciones": {
   "equipo": [
    {

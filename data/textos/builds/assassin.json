@@ -35,41 +35,6 @@
   }
  ],
  "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
- "macros_por_preset": [
-  {
-   "preset_en": "Boss and dungeons",
-   "pasos": [
-    "Explosión de insignia",
-    "Estocada al corazón",
-    "Emboscada",
-    "Corte rápido"
-   ],
-   "retardo_ms": 10,
-   "nota": "En el juego son 2 pasos: la tecla de daño (Explosión de insignia con Estocada al corazón y Emboscada apiladas debajo) y Corte rápido."
-  },
-  {
-   "preset_en": "Progression and new fights",
-   "pasos": [
-    "Explosión de insignia",
-    "Estocada al corazón",
-    "Emboscada",
-    "Corte rápido"
-   ],
-   "retardo_ms": 10,
-   "nota": "Misma macro que en jefes."
-  },
-  {
-   "preset_en": "Farming and leveling",
-   "pasos": [
-    "Explosión de insignia",
-    "Estocada al corazón",
-    "Rugido bestial",
-    "Corte rápido"
-   ],
-   "retardo_ms": 10,
-   "nota": "Rugido bestial sustituye a Emboscada: en un grupo de monstruos no hay espalda que cuidar."
-  }
- ],
  "secciones": {
   "equipo": [
    {

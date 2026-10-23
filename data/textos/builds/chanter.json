@@ -36,35 +36,6 @@
   }
  ],
  "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
- "macros_por_preset": [
-  {
-   "preset_en": "Party with a Cleric",
-   "pasos": [
-    "Fractura sombría",
-    "Fractura trituradora"
-   ],
-   "retardo_ms": 10,
-   "nota": "El paso 1 es la línea de Fractura sombría (con Golpe giratorio, Fractura impactante y Golpe incandescente apilados encima)."
-  },
-  {
-   "preset_en": "No Cleric in the party",
-   "pasos": [
-    "Fractura sombría",
-    "Fractura trituradora"
-   ],
-   "retardo_ms": 10,
-   "nota": "Misma macro en todos los presets."
-  },
-  {
-   "preset_en": "Dailies and farming",
-   "pasos": [
-    "Fractura sombría",
-    "Fractura trituradora"
-   ],
-   "retardo_ms": 10,
-   "nota": "Misma macro en todos los presets."
-  }
- ],
  "secciones": {
   "equipo": [
    {
@@ -584,7 +555,7 @@
     "titulo": "Antes de empezar",
     "tipo": "lista",
     "items": [
-     "**Desactiva Skill Queue**: estorba al mejor truco del Conjurador, cancelar el final de Fractura trituradora con la línea de Fractura sombría (mantén Clic izq. y toca la 4). Si aún no usas el cancel, dejarlo activo no molesta.",
+     "**Desactiva Skill Queue**: estorba al mejor truco del Conjurador, cancelar el final de Fractura trituradora con la línea de Fractura sombría (la macro lo hace al alternar la 4 y Clic izq.). Si aún no usas el cancel, dejarlo activo no molesta.",
      "Activa Proclama del invicto (5) y Proclama de esprint a mano, una vez, antes del pull. **Nunca metas un mantra en una macro**: la segunda pulsación lo desactiva.",
      "En una pila sale primero la fila de abajo.",
      "Fractura trituradora golpea 4 veces (el 4.º es Storm Chain) y cada golpe debe llegar a menos de 3 s del anterior."
@@ -655,7 +626,7 @@
     "titulo": "Cómo usar la macro",
     "tipo": "lista",
     "items": [
-     "La misma en todos los presets: dos pasos a 10 ms, la línea de Fractura sombría y luego Fractura trituradora. Con tus teclas: **4** y **Clic izq.** Mantenla y sigue tocando Fractura trituradora y la línea por encima.",
+     "La misma en todos los presets: dos pasos a 10 ms, la línea de Fractura sombría y luego Fractura trituradora. Con tus teclas: **4** y **Clic izq.** Mantenla; el autor además toca a mano Fractura trituradora y la línea por encima.",
      "A mano: Ira de Marchutan, Defensa concentrada, Hechizo de recobro, Golpe ondulatorio, los acercamientos y los dos mantras.",
      "Antes de que Fractura sombría llegue a 16, su enfriamiento rompe la línea: pon un abridor en su propia tecla y púlsalo en cuanto Fractura sombría vuelva."
     ]

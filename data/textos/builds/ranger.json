@@ -35,46 +35,6 @@
   }
  ],
  "tecla_macro": "Clic der. (asígnala en Ajustes, Configuración de teclas, General, Macro)",
- "macros_por_preset": [
-  {
-   "preset_en": "Bosses and dungeons",
-   "pasos": [
-    "Flecha de tentáculo",
-    "Estallido de flechas",
-    "Flecha de grifo",
-    "Tiro rápido",
-    "Flecha punzante",
-    "Huracán de flechas"
-   ],
-   "retardo_ms": 10,
-   "nota": "Línea del grifo + línea de Gale. El texto la da sin Flecha de tentáculo al inicio; el planificador ya la pone delante para que Estallido de flechas no falle."
-  },
-  {
-   "preset_en": "Packs and stagger checks",
-   "pasos": [
-    "Flecha de tentáculo",
-    "Estallido de flechas",
-    "Flecha de grifo",
-    "Tiro rápido",
-    "Flecha punzante",
-    "Huracán de flechas"
-   ],
-   "retardo_ms": 10,
-   "nota": "Misma macro que en jefes."
-  },
-  {
-   "preset_en": "Solo and hard progression",
-   "pasos": [
-    "Flecha de tentáculo",
-    "Estallido de flechas",
-    "Tiro rápido",
-    "Flecha punzante",
-    "Huracán de flechas"
-   ],
-   "retardo_ms": 10,
-   "nota": "Igual pero sin Flecha de grifo, que sale de este preset."
-  }
- ],
  "secciones": {
   "equipo": [
    {
@@ -578,7 +538,7 @@
     "titulo": "La barra",
     "tipo": "lista",
     "items": [
-     "**Clic izq.**: Disparo certero. Mantenlo pulsado.",
+     "**Clic izq.**: Disparo certero. Aquí va como último paso de la macro, para no tener que hacer clic sin parar.",
      "**2** (línea del grifo): Estallido de flechas, luego Flecha de tentáculo y Flecha de grifo encima. Estallido de flechas solo sale sobre un objetivo ralentizado o inmovilizado: acierta antes Flecha de tentáculo.",
      "**3** (línea de Gale): Tiro rápido, luego Flecha punzante y Huracán de flechas encima.",
      "**1**: Flecha al objetivo. El autor la pone en un botón lateral del ratón para cargarla sin soltar lo demás.",
@@ -602,7 +562,7 @@
      "Flecha de bendición (6), Disparos de apoyo (7) y Poder de Vaizel (5).",
      "Flecha en el objetivo (4) para Precisión.",
      "Flecha al objetivo (1) cargada.",
-     "Mantén Disparo certero (Clic izq.) y la macro (Clic der.); lanza Flecha al objetivo cada vez que vuelva.",
+     "Mantén la macro (Clic der.), que ya lanza Disparo certero; lanza Flecha al objetivo cada vez que vuelva.",
      "Renueva Flecha en el objetivo cuando a Precisión le queden menos de 3 s.",
      "Cada buff, en cuanto vuelva: Poder de Vaizel cada minuto y Flecha de bendición cada dos; con Disparos de apoyo a 15 coincide con cada Vaizel."
     ]
@@ -616,7 +576,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "La 4.ª espec. de Disparo certero quita 1 s a Flecha al objetivo con cada golpe: nunca dejes de mantenerlo. Cada hueco es una Flecha al objetivo más lenta."
+    "texto": "La 4.ª espec. de Disparo certero quita 1 s a Flecha al objetivo con cada golpe: que no deje de salir (por eso va dentro de la macro). Cada hueco es una Flecha al objetivo más lenta."
    }
   ],
   "coleccionables": [
