@@ -202,15 +202,15 @@ function pintarClase() {
 
   // ---------- rotación y macros (barra estilo juego) ----------
   // Macro 1 (barra_alt) y Macro 2 (barra), en pestañas como las de Coleccionables
-  var vistas = B.barra_alt ? [["Macro 1", Object.assign({}, B, { barra: B.barra_alt, macros: B.macros_alt || [] })], ["Macro 2", B]] : [["Macro", B]];
+  var vistas = B.barra_alt ? [["Macro 1", Object.assign({}, B, { barra: B.barra_alt, macros: B.macros_alt || [] }), B.rot_m1], ["Macro 2", B, B.rot_m2]] : [["Macro", B, []]];
   var tr = vistas.length > 1 ? '<div class="pestanas" id="tabs-macro">' + vistas.map(function (v, i) {
     return '<button class="pestana' + (i ? "" : " on") + '" data-m="' + i + '">' + v[0] + "<span>" + (v[1].macros.length ? v[1].macros[0].pasos.length + " pasos" : "sin macro") + "</span></button>";
   }).join("") + "</div>" : "";
   tr += vistas.map(function (v, i) {
-    return '<div class="panel-macro" data-m="' + i + '"' + (i ? " hidden" : "") + ">" + barraJuego(v[1], H, icono, hab, nombrePreset, idPorNombre, T) + "</div>";
+    return '<div class="panel-macro" data-m="' + i + '"' + (i ? " hidden" : "") + ">" + barraJuego(v[1], H, icono, hab, nombrePreset, idPorNombre, T) + bloquesHTML(v[2]) + "</div>";
   }).join("");
-  if (vistas.length > 1) tr += bloquesHTML([{ tipo: "aviso", texto: "Los pasos y avisos de abajo van con las teclas de la **Macro 2**. Con la **Macro 1** las habilidades son las mismas: mira en su tabla en qué tecla está cada una." }]);
-  h += seccion("rotacion", "Rotación y macros", tr + bloquesHTML(S.rotacion));
+  // lo común a las dos (cómo van las pilas y la tecla de macro) arriba; cada pestaña lleva la explicación de su autor
+  h += seccion("rotacion", "Rotación y macros", bloquesHTML(S.rotacion) + tr);
 
   // ---------- coleccionables ----------
   var C = B.coleccionables || {};
@@ -511,7 +511,7 @@ function pintarColeccionables(C, filasStats, habN) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  cargarScript("data/builds/" + c + ".js?v=16", pintarClase, function () {
+  cargarScript("data/builds/" + c + ".js?v=17", pintarClase, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
 })();
