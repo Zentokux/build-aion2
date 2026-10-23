@@ -68,7 +68,7 @@
   },
   {
    "tipo": "aviso",
-   "texto": "Ataque, Might y Precision salen en todas las piezas de todos modos: la tabla da las otras líneas que más pesan. Para cambiarlas, en la ventana de Soul Binding pulsa **Sync**, elige una pieza legendaria que sobre y la línea que quieres: la ventana enseña la probabilidad y la pieza se consume (Aragon)."
+   "texto": "Ataque, Fuerza y Precisión (de atributo) salen en todas las piezas de todos modos: la tabla da las otras líneas que más pesan. Para cambiarlas, en la ventana de Soul Binding pulsa **Sync**, elige una pieza legendaria que sobre y la línea que quieres: la ventana enseña la probabilidad y la pieza se consume (Aragon)."
   }
  ],
  "ariel": [
@@ -249,7 +249,7 @@
   },
   {
    "tipo": "aviso",
-   "texto": "Por qué no Precisión JcE ni Ataque Frontal en las demás líneas: las estadísticas de dios multiplican las planas (Might sube el Ataque, Libertad la Precisión y Precision el Crítico), y según las cuentas de Aragon la Precisión JcE y el Ataque Frontal no reciben nada de ellas. Por eso coge Precisión, Crítico y Ataque planos, que crecen con el Panteón. Fubgun (todas sus ruedas a 10) sí se queda las de Precisión JcE y Ataque Frontal cuando salen; en la línea 4 coinciden salvo Cognis (Fubgun: Amplificación de Daño) y Varians (Fubgun: Amplificación de Daño de JcE)."
+   "texto": "Por qué no Precisión JcE ni Ataque Frontal en las demás líneas: las estadísticas de dios multiplican las planas (Fuerza sube el Ataque, Libertad la Precisión y el atributo Precisión el Crítico), y según las cuentas de Aragon la Precisión JcE y el Ataque Frontal no reciben nada de ellas. Por eso coge Precisión, Crítico y Ataque planos, que crecen con el Panteón. Fubgun (todas sus ruedas a 10) sí se queda las de Precisión JcE y Ataque Frontal cuando salen; en la línea 4 coinciden salvo Cognis (Fubgun: Amplificación de Daño) y Varians (Fubgun: Amplificación de Daño de JcE)."
   }
  ]
 }

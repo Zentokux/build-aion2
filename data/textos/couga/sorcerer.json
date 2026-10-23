@@ -88,15 +88,15 @@
     "Vigila los **Puntos de Maná** y su recuperación hasta que la rotación deje de quedarse seca."
    ]},
    {"titulo": "Líneas de cada pieza (Krix Domi, 14-oct)", "tipo": "tabla", "columnas": ["Pieza", "Líneas"], "filas": [
-    ["Arma y guarda", "Velocidad de Hechizo, Amplificación de Daño de Arma, Might, Multigolpe, Amplificación de Daño; una sexta (Ataque) con Philosopher's Stones en un arma fabricada, tirada y ligada"],
+    ["Arma y guarda", "Velocidad de Hechizo, Amplificación de Daño de Arma, Fuerza, Multigolpe, Amplificación de Daño; una sexta (Ataque) con Philosopher's Stones en un arma fabricada, tirada y ligada"],
     ["Casco", "Golpe, Aumento de Ataque, Ataque, Toga de llama; la quinta libre (Crítico, Precisión)"],
     ["Hombreras", "Golpe, Ataque, Amplificación de Daño Crítico, Toga de llama; una libre"],
     ["Peto", "Amplificación de Daño, Perforación, Ataque, Toga de llama; una libre"],
     ["Guantes", "Perforación, Velocidad de Hechizo, Ataque, Toga de llama"],
     ["Capa", "Golpe, Aumento de Ataque, Ataque, Toga de llama"],
     ["Botas", "Velocidad de Movimiento, Perforación, Ataque, Toga de llama"],
-    ["Pendientes", "Might, Precision, Velocidad de Movimiento, Ataque, Toga de llama (Precision y Velocidad de Movimiento pueden dejar sitio a Ataque o Crítico)"],
-    ["Amuleto", "Velocidad de Hechizo, Might, Ataque, Toga de llama"],
+    ["Pendientes", "Fuerza, Precisión, Velocidad de Movimiento, Ataque, Toga de llama (Precisión y Velocidad de Movimiento pueden dejar sitio a Ataque o Crítico)"],
+    ["Amuleto", "Velocidad de Hechizo, Fuerza, Ataque, Toga de llama"],
     ["Anillos", "Niveles de habilidad para llenar lo que no den las Arcanas"]
    ]},
    {"tipo": "aviso", "texto": "Una línea de **Toga de llama** en todas las piezas: el Hechicero solo tiene cuatro líneas buenas por pieza y esta pasiva es la quinta (Krix Domi)."}

@@ -96,13 +96,13 @@
     "**B · Bloqueo, Tenacidad y Defensa de tenacidad**: final del juego; con 100 % de Tenacidad un golpe hace un 50 % menos de daño."
    ]},
    {"titulo": "Soul Binding del Templario", "tipo": "tabla", "columnas": ["Pieza", "Línea única", "Luego"], "filas": [
-    ["Arma y guarda", "Velocidad de Hechizo y Amplificación de Daño de Arma", "Might y Multigolpe; Precision si no llegas al tope de Precisión"],
-    ["Casco", "Curación Recibida", "Ataque, Might, Crítico, Precision"],
-    ["Hombreras", "Amplificación de Daño Crítico", "Ataque, Might, Precision, Perforación"],
-    ["Peto", "Amplificación de Daño", "Ataque, Might, Crítico, Físico"],
-    ["Guantes", "Velocidad de Hechizo", "Perforación, Ataque, Might, Multigolpe"],
-    ["Grebas", "Perforación", "Tolerancia a Daño, Ataque, Might, Físico"],
-    ["Botas", "Velocidad de Movimiento", "Perforación, Ataque, Might, Destreza"],
+    ["Arma y guarda", "Velocidad de Hechizo y Amplificación de Daño de Arma", "Fuerza y Multigolpe; Precisión de atributo si no llegas al tope de Precisión"],
+    ["Casco", "Curación Recibida", "Ataque, Fuerza, Crítico, Precisión"],
+    ["Hombreras", "Amplificación de Daño Crítico", "Ataque, Fuerza, Precisión, Perforación"],
+    ["Peto", "Amplificación de Daño", "Ataque, Fuerza, Crítico, Físico"],
+    ["Guantes", "Velocidad de Hechizo", "Perforación, Ataque, Fuerza, Multigolpe"],
+    ["Grebas", "Perforación", "Tolerancia a Daño, Ataque, Fuerza, Físico"],
+    ["Botas", "Velocidad de Movimiento", "Perforación, Ataque, Fuerza, Destreza"],
     ["Capa", "Tolerancia a Daño Crítico", "Perforación, Tolerancia a Daño, Ataque"],
     ["Anillos, pendientes y collar", "Anillos: tus 4 mejores activas", "Pendientes: tus 4 mejores pasivas; collar: 2 activas y Ataque, Crítico, Amplificación de Daño de Arma"]
    ]},

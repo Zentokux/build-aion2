@@ -10,7 +10,7 @@
  ],
  "contras": [
   "Necesita Precisión: los jefes bloquean a un Gladiador que va corto",
-  "Sin equipo heroico, la velocidad de ataque, de movimiento, Might y Precision se comen casi todas las líneas: quedan 1-2 para pasivas",
+  "Sin equipo heroico, la velocidad de ataque, de movimiento, Fuerza y Precisión se comen casi todas las líneas: quedan 1-2 para pasivas",
   "Siempre pega de frente: depende del indicador de orientación del jefe",
   "Al principio se queda sin Maná si no mantiene Estacazo punzante"
  ],
@@ -77,13 +77,13 @@
   ],
   "equipo": [
    {"titulo": "Equipo y estadísticas", "tipo": "lista", "items": [
-    "Sin equipo heroico, la velocidad de ataque, la de movimiento, Might y Precision se comen casi todas las líneas: quedan 1-2 para pasivas (tabla de pasivas en Habilidades).",
+    "Sin equipo heroico, la velocidad de ataque, la de movimiento, Fuerza y Precisión se comen casi todas las líneas: quedan 1-2 para pasivas (tabla de pasivas en Habilidades).",
     "Los tipos más fuertes son el daño de arma y el daño frontal o por la espalda, y el Gladiador siempre pega de frente.",
     "No persigas tiradas perfectas de piedras de maná en Season 1: cada nueva tirada cuesta unas 200-300 mil en Taiwán."
    ]},
    {"titulo": "Estadísticas (Ulfhednar, global)", "tipo": "lista", "items": [
     "**Líneas del equipo**: todo lo que diga daño: Crítico, Amplificación de Daño.",
-    "**Soul Binding en arma y guarda**: Amplificación de Daño de Arma, Velocidad de Hechizo, Amplificación de Daño y Might, en ese orden.",
+    "**Soul Binding en arma y guarda**: Amplificación de Daño de Arma, Velocidad de Hechizo, Amplificación de Daño y Fuerza, en ese orden.",
     "**Estadísticas**: Sabiduría (Golpe), Tiempo (Velocidad de Hechizo), Destrucción (daño) y algo de Precisión: los jefes bloquean a un Gladiador que va corto.",
     "**Comprensión de raza**: tira las líneas de ataque. Suben el Poder de Combate, el número que miran los grupos antes de invitarte a una mazmorra.",
     "**Maná**: si te quedas seco, coge líneas de Puntos de Maná máximos y de su recuperación, los nodos de +50 de Maná de Daevanion y pociones de Maná (Fabricación, Alquimia)."

@@ -75,14 +75,14 @@
   "equipo": [
    {"tipo": "aviso", "texto": "El equipo es sencillo: lo de más nivel de objeto. En el final: arma, guarda y accesorios fabricados, brazaletes de Ludra y armadura de mazmorra. **Precisión para la raid**: en Corea el objetivo para Ludra era unos 1.200-1.300 (JOHNPAL: 1.200); úsalo de guía cuando llegues."},
    {"titulo": "Soul Binding imprescindible", "tipo": "tabla", "columnas": ["Pieza", "Líneas"], "filas": [
-    ["Arma y guarda", "Velocidad de Hechizo, Amplificación de Daño de Arma, Amplificación de Daño, Might (y Multigolpe si es fabricada)"],
+    ["Arma y guarda", "Velocidad de Hechizo, Amplificación de Daño de Arma, Amplificación de Daño, Fuerza (y Multigolpe si es fabricada)"],
     ["Casco y capa", "Golpe, Aumento de Ataque"],
     ["Hombreras", "Golpe, Amplificación de Daño Crítico"],
     ["Peto", "Amplificación de Daño"],
     ["Grebas", "Aumento de Ataque, Tolerancia a Daño"],
     ["Guantes / botas", "Velocidad de Hechizo / Velocidad de Movimiento"],
-    ["Pendientes / collar", "Velocidad de Movimiento y Might / Velocidad de Hechizo y Might"],
-    ["Anillos", "Niveles de Flecha al objetivo y Huracán de flechas (luego Flecha punzante o Disparo certero); si no, Might"]
+    ["Pendientes / collar", "Velocidad de Movimiento y Fuerza / Velocidad de Hechizo y Fuerza"],
+    ["Anillos", "Niveles de Flecha al objetivo y Huracán de flechas (luego Flecha punzante o Disparo certero); si no, Fuerza"]
    ]},
    {"titulo": "Estadísticas", "tipo": "lista", "items": [
     "**La Precisión es la segunda estadística.** Los golpes bloqueados pierden más de la mitad del daño y el Ranger no siempre puede atacar por la espalda. Apunta a cerca de 1.100-1.200 (los apoyos añaden +100).",
@@ -90,7 +90,7 @@
     "**Piedras de maná**: una línea amarilla de Ataque basta en Season 1; no persigas sets de ataque frontal o por la espalda.",
     "Tira Soul Binding solo en armaduras que ya tengan una de las imprescindibles.",
     "**Arco y guarda a +10** siempre, y piedras de maná básicas en todas las piezas: estadísticas baratas (Fubgun).",
-    "**Dónde tirar primero** (Fubgun): arma y guarda, luego anillos y collar (niveles de habilidad, Ataque, Might); más adelante, Velocidad de habilidad en guantes y daño crítico en hombreras. El Crítico topa en el 50 % en global: necesitas menos de lo que dicen las guías coreanas."
+    "**Dónde tirar primero** (Fubgun): arma y guarda, luego anillos y collar (niveles de habilidad, Ataque, Fuerza); más adelante, Velocidad de habilidad en guantes y daño crítico en hombreras. El Crítico topa en el 50 % en global: necesitas menos de lo que dicen las guías coreanas."
    ]}
   ],
   "daevanion": [
