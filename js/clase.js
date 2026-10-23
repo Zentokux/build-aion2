@@ -188,7 +188,7 @@ function pintarClase() {
     B.macros.map(function (m) {
       return '<div class="sub-mr">Macro 2 (Clic der.)</div>' + m.pasos.map(function (p, i) {
         var c = B.barra.filter(function (x) { return x.tecla === p.tecla; })[0];
-        return (i ? " → " : "") + "<b>" + esc(TECLA_TXT[p.tecla] || p.tecla) + "</b> " + esc(c.pila.length > 1 ? c.nombre : H[c.pila[0]].nombre) + " <small>" + p.ms + " ms</small>";
+        return (i ? ", " : "") + "<b>" + esc(TECLA_TXT[p.tecla] || p.tecla) + "</b> " + esc(c.pila.length > 1 ? c.nombre : H[c.pila[0]].nombre) + " <small>" + p.ms + " ms</small>";
       }).join("");
     }).join("") + "</div></details>";
 
@@ -209,7 +209,7 @@ function pintarClase() {
   tr += vistas.map(function (v, i) {
     return '<div class="panel-macro" data-m="' + i + '"' + (i ? " hidden" : "") + ">" + barraJuego(v[1], H, icono, hab, nombrePreset, idPorNombre, T) + "</div>";
   }).join("");
-  if (vistas.length > 1) tr += bloquesHTML([{ tipo: "aviso", texto: "Los pasos de abajo usan las teclas de la **Macro 2**. Con la **Macro 1** las habilidades son las mismas: mira en su tabla en qué tecla está cada una." }]);
+  if (vistas.length > 1) tr += bloquesHTML([{ tipo: "aviso", texto: "Los pasos y avisos de abajo van con las teclas de la **Macro 2**. Con la **Macro 1** las habilidades son las mismas: mira en su tabla en qué tecla está cada una." }]);
   h += seccion("rotacion", "Rotación y macros", tr + bloquesHTML(S.rotacion));
 
   // ---------- coleccionables ----------
@@ -347,7 +347,7 @@ function barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) {
         '<span class="iconos-pila">' + c.pila.map(function (id) { return icono(id); }).join("") + "</span>" +
         "<span>Tecla <strong>" + esc(txt(p.tecla)) + "</strong>" + (c.pila.length > 1 ? " · " + esc(c.nombre) : " · " + esc(H[c.pila[0]].nombre)) + "</span><small>" + p.ms + " ms</small></div>";
     }).join("") + "</div><table><tr><th>Tecla de la macro</th><td><strong>Clic der.</strong>, mantenla pulsada junto a Clic izq. " +
-      "(Ajustes → Configuración de teclas → General → Macro)</td></tr><tr><th>Al crearla</th><td>En la ventana de la macro eliges <strong>teclas</strong> (pilas), no habilidades sueltas: " +
+      "(Ajustes, Configuración de teclas, General, Macro)</td></tr><tr><th>Al crearla</th><td>En la ventana de la macro eliges <strong>teclas</strong> (pilas), no habilidades sueltas: " +
       "la macro lanza lo que esté listo en esa pila.</td></tr></table></div>";
   }
   return out;
@@ -511,7 +511,7 @@ function pintarColeccionables(C, filasStats, habN) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  cargarScript("data/builds/" + c + ".js?v=15", pintarClase, function () {
+  cargarScript("data/builds/" + c + ".js?v=16", pintarClase, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
 })();
