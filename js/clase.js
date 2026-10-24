@@ -121,7 +121,7 @@ function pintarClase(B, guia) {
     if (g && B.equipo[g[1]] && B.equipo[g[1]].vinculos.join() === e.vinculos.join()) { etiqueta = g[2]; hechas[g[1]] = true; }
     filasSB.push([etiqueta, e.vinculos.map(function (v) { return v.replace(/^\+ /, ""); }).join(", ")]);
   });
-  var tablaSB = filasSB.length ? "<h3>Líneas de Soul Binding</h3><div class=\"tabla-scroll\"><table><thead><tr><th>Ranura</th><th>Líneas a buscar</th></tr></thead><tbody>" +
+  var tablaSB = filasSB.length && !B.sb_en_textos ? "<h3>Líneas de Soul Binding</h3><div class=\"tabla-scroll\"><table><thead><tr><th>Ranura</th><th>Líneas a buscar</th></tr></thead><tbody>" +
     filasSB.map(function (f) { return "<tr><td>" + esc(f[0]) + "</td><td>" + esc(f[1]) + "</td></tr>"; }).join("") + "</tbody></table></div>" : "";
   var bloqEq = S.equipo || [];
   if (!Object.keys(B.equipo || {}).length) te = "";   // la guía no da piezas concretas: solo sus tablas
@@ -546,7 +546,7 @@ function elegirGuia(g) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  var V = "?v=21";
+  var V = "?v=22";
   cargarScript("data/builds/" + c + ".js" + V, function () {
     cargarScript("data/couga/" + c + ".js" + V, arranca, arranca);
   }, function () {
