@@ -202,3 +202,10 @@ td .arc-carta img { width: 64px; height: 64px; border-color: #b2541c; }
 .gen ol.plan li b { color: var(--oro); font-weight: 400; white-space: nowrap; font-size: 11px; }
 .gen ol.plan li.p3 > span { color: #fff; font-weight: 600; }
 .gen ol.plan li.p1 > span { color: #c9cfdb; }
+
+/* desglose del nivel de cada habilidad y orden de puntos */
+.ficha .fuentes-nv{font-size:12px;color:var(--suave);margin:2px 0 4px}
+.ficha .fuentes-nv b{color:var(--oro,#e5c07b)}
+table.orden-pts td:nth-child(n+3),table.orden-pts th:nth-child(n+3){text-align:center}
+.ficha{min-width:0}
+.ficha .linea{flex-wrap:wrap;row-gap:2px}

@@ -161,10 +161,41 @@ function pintarClase(B, guia) {
     return '<span class="chip-pas">' + icono(x.id) + esc(x.nombre) + "</span>";
   }).join("") + "</div></div>";
 
+  // de dónde sale cada nivel: puntos de habilidad y lo que suben Daevanion, equipo (anillos) y Arcanas
+  var FUENTE = { daevanion: "Daevanion", gear: "equipo", anillos: "anillos", arcana: "Arcanas" };
+  function desglose(x) {
+    var f = x.fuentes || {};
+    return "<b>" + x.base + "</b> puntos" + ["daevanion", "gear", "anillos", "arcana"].filter(function (k) { return f[k]; }).map(function (k) {
+      return " + <b>" + f[k] + "</b> " + FUENTE[k];
+    }).join("");
+  }
+  // orden en que se gastan los puntos de habilidad (el de la guía) y de dónde sale el resto del nivel
+  function ordenPuntos() {
+    var vistos = {}, lista = [];
+    ((B.prioridad || {}).Active || []).concat(B.habilidades.filter(function (x) { return x.tipo === "Activa"; }).map(function (x) { return x.id; }))
+      .concat(((B.prioridad || {}).Passive || []).concat(B.habilidades.filter(function (x) { return x.tipo === "Pasiva"; }).map(function (x) { return x.id; })))
+      .forEach(function (id) {
+        var x = H[id];
+        if (!x || vistos[id] || !x.nivel || x.tipo === "Estigma" || (x.tipo === "Activa" && enP1.indexOf(id) < 0)) return;
+        vistos[id] = 1; lista.push(x);
+      });
+    if (!lista.length) return "";
+    var col = function (x, k) { return (x.fuentes || {})[k] ? "+" + x.fuentes[k] : ""; };
+    var hayAn = lista.some(function (x) { return (x.fuentes || {}).anillos; }), hayEq = lista.some(function (x) { return (x.fuentes || {}).gear; });
+    return '<h3>Orden de puntos de habilidad</h3><div class="aviso">Los <b>puntos de habilidad</b> suben cada una hasta 10 como mucho: ponlos en este orden hasta la cifra de «Puntos». ' +
+      "El resto del nivel no se compra con puntos: lo dan los nodos azules de <b>Daevanion</b>, las líneas de habilidad del <b>equipo</b> (anillos en las activas) y las <b>Arcanas</b>.</div>" +
+      '<div class="tabla-scroll"><table class="orden-pts"><thead><tr><th>#</th><th>Habilidad</th><th>Puntos</th><th>Daevanion</th>' +
+      (hayEq ? "<th>Equipo</th>" : "") + (hayAn ? "<th>Anillos</th>" : "") + "<th>Arcanas</th><th>Nivel</th></tr></thead><tbody>" +
+      lista.map(function (x, i) {
+        return "<tr><td>" + (i + 1) + "</td><td>" + hab(x.id) + (x.tipo === "Pasiva" ? " <small>(pasiva)</small>" : "") + "</td><td><b>" + (x.base != null ? x.base : x.nivel) + "</b></td><td>" + col(x, "daevanion") + "</td>" +
+          (hayEq ? "<td>" + col(x, "gear") + "</td>" : "") + (hayAn ? "<td>" + col(x, "anillos") + "</td>" : "") + "<td>" + col(x, "arcana") + "</td><td><b>" + esc(x.nivel_txt || x.nivel) + "</b></td></tr>";
+      }).join("") + "</tbody></table></div>";
+  }
   function ficha(x) {
     var sp = x.especializaciones.filter(function (s) { return s.elegida; });
     return '<div class="ficha">' + icono(x.id) + '<div class="cuerpo"><div class="linea"><b>' + esc(x.nombre) + '</b><span class="nv">Nv. ' + esc(x.nivel_txt || x.nivel || "—") +
-      (x.extra ? " (" + x.base + " + " + x.extra + ")" : "") + "</span>" + (teclaDe[x.id] ? '<span class="tec">' + esc(teclaDe[x.id]) + "</span>" : "") + "</div>" +
+      (x.extra && !x.fuentes ? " (" + x.base + " + " + x.extra + ")" : "") + "</span>" + (teclaDe[x.id] ? '<span class="tec">' + esc(teclaDe[x.id]) + "</span>" : "") + "</div>" +
+      (x.extra && x.fuentes ? '<div class="fuentes-nv">' + desglose(x) + "</div>" : "") +
       (sp.length ? '<div class="esp">' + sp.map(function (s) { return esc(s.texto); }).join(" · ") + "</div>" : "") +
       (x.por_que ? '<div class="porque">' + md(x.por_que) + "</div>" : "") + "</div></div>";
   }
@@ -181,7 +212,7 @@ function pintarClase(B, guia) {
   th += '<div class="mr-barra" style="margin-top:10px"><div class="sub-mr" style="margin-top:0">Build de habilidades</div>' +
     grupoFichas("Estigma", B.habilidades.filter(function (x) { return x.tipo === "Estigma" && enP1.indexOf(x.id) >= 0; })) +
     grupoFichas("Activas de maestría", B.habilidades.filter(function (x) { return x.tipo === "Activa" && enP1.indexOf(x.id) >= 0; })) +
-    grupoFichas("Pasivas", pas) + "</div>";
+    grupoFichas("Pasivas", pas) + "</div>" + ordenPuntos();
 
   var P = B.prioridad || {};
   var nPrio = enP1.length;
@@ -464,13 +495,14 @@ function pintarColeccionables(C, filasStats, habN) {
         return '<div class="cat-titulo"><small>' + esc(t.categoria) + "</small><b>" + esc(t.nombre) + "</b></div>";
       }).join("") + '</div><div class="items-col">' + C.titulos.map(function (t) {
         return item("", t.nombre, "Título · " + t.categoria, t.equipado, tipStats(t.nombre, t.stats,
-          t.posesion.length ? "<div class='tt-sec'>Al poseer</div>" + t.posesion.map(function (s) { return esc(s[0] + " " + s[1]); }).join("<br>") : ""));
+          (t.posesion.length ? "<div class='tt-sec'>Al poseer</div>" + t.posesion.map(function (s) { return esc(s[0] + " " + s[1]); }).join("<br>") : "") +
+          (t.nota ? "<div class='tt-sec'>Cuándo</div>" + esc(t.nota) : "")));
       }).join("") + "</div></div>" + otorgado(C.titulos_equipado, C.titulos_posesion);
     } else if (tab === "arcanas") {
       var tot = {};
       C.arcanas.forEach(function (a) { a.stats.forEach(function (s) { tot[s[0]] = s[1]; }); });
       h = '<div class="items-col arc-cartas">' + C.arcanas.map(function (a) {
-        return item("icons/objetos/" + a.icono + ".webp", a.nombre, a.ranura + " · Nv. " + (a.nivel || ""), true, tipStats(a.nombre, a.stats,
+        return item("icons/objetos/" + a.icono + ".webp", a.nombre, a.ranura + (a.nivel ? " · Nv. " + a.nivel : a.set ? " · " + a.set : ""), true, tipStats(a.nombre, a.stats,
           a.vinculos.length ? "<div class='tt-sec'>Líneas</div>" + a.vinculos.map(esc).join("<br>") : ""));
       }).join("") + "</div>" + otorgado(Object.keys(tot).map(function (k) { return [k, tot[k]]; }), []);
       if (C.arcanas.some(function (a) { return a.buscar; })) {
@@ -485,7 +517,7 @@ function pintarColeccionables(C, filasStats, habN) {
       }
     } else if (tab === "alas") {
       h = '<div class="items-col">' + C.alas.map(function (a) {
-        return item("icons/objetos/" + a.icono + ".png", a.nombre, "+" + (a.nivel || 0), a.equipado, tipStats(a.nombre, a.stats));
+        return item("icons/objetos/" + a.icono + ".png", a.nombre, a.nota || "+" + (a.nivel || 0), a.equipado, tipStats(a.nombre, a.stats));
       }).join("") + "</div>" + otorgado(C.alas_equipado, C.alas_posesion);
     }
     panel.innerHTML = '<div class="panel-col">' + h + "</div>";
@@ -514,7 +546,7 @@ function elegirGuia(g) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  var V = "?v=20";
+  var V = "?v=21";
   cargarScript("data/builds/" + c + ".js" + V, function () {
     cargarScript("data/couga/" + c + ".js" + V, arranca, arranca);
   }, function () {
