@@ -125,7 +125,7 @@
      [
       "Cinturón y runas",
       "Noble Belt + 2 Clash Rune",
-      "No"
+      ""
      ]
     ]
    },
@@ -139,10 +139,10 @@
     "items": [
      "Caen en Transcendence. Cada carta da su stat de dios + hasta 4 líneas de su propio grupo: buscas una carta cuyas líneas caigan en tus habilidades.",
      "El set se salta a propósito el bonus de 4 piezas: al principio valen más los stats sueltos.",
-     "Compass of Magic antes que la de vitalidad: te falta mucho más Crítico que Precisión (pero el crítico topa en 50%).",
-     "Mirror of Vigor da Reducción de Tiempo de Enfriamiento; cuando pases de cerca de 35% sin ella, cámbiala por Mirror of Magic (Golpe).",
-     "Bell of Magic apenas importa en PvE: va por su Ataque.",
-     "El planificador anota una habilidad por carta: toma sus niveles como mínimo. Chalice of Vigor (saca cualquier habilidad) se craftea la última."
+     "Brújula de magia antes que la de vitalidad: te falta mucho más Crítico que Precisión (pero el crítico topa en 50%).",
+     "Espejo de vitalidad da Reducción de Tiempo de Enfriamiento; cuando pases de cerca de 35% sin ella, cámbiala por Espejo de magia (Golpe).",
+     "Campana de magia apenas importa en PvE: va por su Ataque.",
+     "La build anota una habilidad por carta: toma sus niveles como mínimo. Cáliz de vitalidad (saca cualquier habilidad) se craftea la última."
     ]
    }
   ],
@@ -214,7 +214,7 @@
      [
       "Cadena gélida",
       "Rellena huecos mientras tu Reducción sea baja",
-      "No"
+      ""
      ],
      [
       "Explosión de Congelación",
@@ -254,7 +254,7 @@
      [
       "Merced de mejora",
       "16",
-      "+20% Amplificación de Daño de JcE con maná ≥25%. Otros ponen Vaporización de viveza o Marca ígnea"
+      "+20% Amplificación de Daño de JcE con el maná al 25% o más. Otros ponen Vaporización de viveza o Marca ígnea"
      ],
      [
       "Marca ígnea",
@@ -264,7 +264,7 @@
      [
       "Toga terrestre / Vaporización de viveza",
       "14",
-      "Maná y Crítico con maná ≥50% / daño extra a objetivos >70% de vida; nivel base + tableros"
+      "Maná y Crítico con el maná al 50% o más / daño extra a objetivos por encima del 70% de vida; nivel base + tableros"
      ]
     ]
    },
@@ -284,17 +284,12 @@
      [
       "Explosión de Congelación",
       "de 8 a 10",
-      "Mucho daño en área"
+      "Tu cura (absorción de vida), no daño"
      ],
      [
       "Congelación",
       "de 8 a 10",
-      "Daño en área y congela"
-     ],
-     [
-      "Absorción de esencia",
-      "de 1 a 10",
-      "Acierto y Maná"
+      "Reinicia Explosión de Congelación; sobre todo para subir de nivel"
      ],
      [
       "Toga de helada",
@@ -305,16 +300,6 @@
       "Eliminación de impacto",
       "de 8 a 10",
       "Rompe aturdimientos"
-     ],
-     [
-      "Merced de resistencia",
-      "de 1 a 10",
-      "Resistencias"
-     ],
-     [
-      "Pacto de resurrección",
-      "de 1 a 10",
-      "Resistencia a efectos (último)"
      ]
     ]
    }
@@ -372,7 +357,7 @@
      [
       "Tormenta helada",
       "Daño, Slow y campo de Frostbite 7 s",
-      "No"
+      ""
      ],
      [
       "Explosión retrasada",
@@ -465,7 +450,8 @@
      "**Clic izq.**: Flecha en llamas, como último paso de la macro: también cancela el final de las animaciones (verás una imagen fantasma).",
      "**E** (el autor la tiene en Clic der.): Viento helado, con Explosión de llama, Quebrantamiento en llamas y Atadura invernal encima. Es la que alimenta la macro.",
      "**1**: Voto de concentración. **2**: Llamas del infierno, cargada a mano, nunca en macro. **3**: Llamas sin puntería. **4**: Cadena gélida. **Q**: Explosión de Congelación y Congelación (tu cura).",
-     "**Estigmas (5-8)**: Mejora elemental, Barrera de fuego, Explosión retrasada, y Tormenta helada, Explosión de divinidad o Barrera de acero según el preset."
+     "**Estigmas (5-8)**: Mejora elemental, Barrera de fuego, Explosión retrasada, y Tormenta helada, Explosión de divinidad o Barrera de acero según el preset.",
+     "**Espacio**: Eliminación de impacto, para romper aturdimientos."
     ]
    },
    {
@@ -577,7 +563,7 @@
      [
       "Apaño",
       "Nightmare Wings / Dark Veil Wings",
-      "No"
+      ""
      ],
      [
       "Opcional",

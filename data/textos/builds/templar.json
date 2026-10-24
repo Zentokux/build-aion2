@@ -112,7 +112,7 @@
      [
       "Cinturón y runas",
       "Noble Belt + 2 Clash Rune",
-      "No"
+      ""
      ]
     ]
    },
@@ -121,9 +121,9 @@
     "tipo": "lista",
     "items": [
      "Caen en Transcendence. Cada carta da su stat de dios + hasta 4 líneas de su pool: buscas una carta cuyas líneas caigan en tus habilidades.",
-     "Sin bonus de 4 piezas a propósito (al principio valen más los stats sueltos), pero sí dos de 2 piezas: +60 de Ataque JcE con vida ≥70% (3 Vitalidad primordial) y 1.500 de maná al bajar del 20%, una vez cada 30 s (2 Armadura mágica).",
-     "El planificador anota una habilidad por carta: toma sus niveles como mínimo.",
-     "Chalice of Vigor (saca cualquier activa o pasiva) se craftea la última, como comodín."
+     "Sin bonus de 4 piezas a propósito (al principio valen más los stats sueltos), pero sí dos de 2 piezas: +60 de Ataque JcE con la vida al 70% o más (3 Vitalidad primordial) y 1.500 de maná al bajar del 20%, una vez cada 30 s (2 Armadura mágica).",
+     "La build anota una habilidad por carta: toma sus niveles como mínimo.",
+     "Cáliz de vitalidad (saca cualquier activa o pasiva) se craftea la última, como comodín."
     ]
    }
   ],
@@ -179,7 +179,7 @@
      [
       "Aniquilación",
       "Daño doble contra jefes con Incapacitated Immunity, −10 s",
-      "No"
+      ""
      ],
      [
       "Azotamiento continuo",
@@ -194,7 +194,7 @@
      [
       "Eliminación de impacto",
       "Rompe aturdimientos y devuelve 20% de vida",
-      "No"
+      ""
      ]
     ]
    },
@@ -301,7 +301,7 @@
      [
       "Asalto con escudo",
       "de 8 a 10",
-      "Daño tras esquiva o en vuelo"
+      "Acercarte (doble alcance); activa Juicio"
      ],
      [
       "Eliminación de impacto",
@@ -450,7 +450,8 @@
      "**Q** (tecla de relleno; el autor la tiene en Clic der.): Azotamiento continuo, con Embestida decadente y Aniquilación encima.",
      "**1** (tecla de daño): Juicio, con Golpe de escudo y Estacazo de amparo encima.",
      "**2**: Castigo, cargado a mano en momentos seguros; nunca en una macro. **3**: Asalto con escudo. **4**: Aprisionamiento.",
-     "**Estigmas (5-8)**: Escudo de protección, Armadura de nobleza, Provocación, y Castigo empíreo o Escudo de perdición."
+     "**Estigmas (5-8)**: Escudo de protección, Armadura de nobleza, Provocación, y Castigo empíreo o Escudo de perdición.",
+     "**Espacio**: Eliminación de impacto, para romper aturdimientos."
     ]
    },
    {
@@ -534,7 +535,7 @@
      [
       "Temprana",
       "Dark Veil Wings",
-      "No"
+      ""
      ]
     ]
    },

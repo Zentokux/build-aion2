@@ -158,27 +158,27 @@
     ],
     "filas": [
      [
-      "Chalice of Vigor",
+      "Cáliz de vitalidad",
       "Tiempo: Velocidad de Hechizo",
       "Cualquiera que no llegue a su objetivo, Fractura trituradora primero"
      ],
      [
-      "Parchment of Vigor",
+      "Pergamino de vitalidad",
       "Vida: Puntos de Vida",
       "Fractura sombría, Fractura trituradora, Golpe giratorio"
      ],
      [
-      "Compass of Vigor",
+      "Brújula de vitalidad",
       "Libertad: Precisión",
       "Golpe incandescente, Hechizo de recobro, Eliminación de impacto"
      ],
      [
-      "Bell of Magic",
+      "Campana de magia",
       "Destrucción: Ataque",
       "Preparación de ataque, Círculo de protección"
      ],
      [
-      "Mirror of Magic",
+      "Espejo de magia",
       "Sabiduría: Golpe",
       "Promesa de viento, Acierto de impacto, Hechizo de inspiración"
      ]
@@ -190,8 +190,8 @@
     "items": [
      "Caen en Transcendence. Una carta suele dar unos +2 a lo que quieres, +4 como mucho: no lo inviertas todo en el lanzamiento.",
      "Bonus de 2 piezas de los dos sets y ningún bonus de 4, a propósito.",
-     "Cambio: Mirror of Vigor (Fantasía) en vez del Espejo de magia para una build totalmente de apoyo.",
-     "Cambio: Compass of Magic (Muerte, Crítico) en vez de la Brújula de vitalidad si vas holgado de Precisión y lejos del 50% de crítico.",
+     "Cambio: Espejo de vitalidad (Fantasía) en vez del Espejo de magia para una build totalmente de apoyo.",
+     "Cambio: Brújula de magia (Muerte, Crítico) en vez de la Brújula de vitalidad si vas holgado de Precisión y lejos del 50% de crítico.",
      "El Cáliz es la única carta que saca cualquier habilidad: tapa con él la que vaya corta."
     ]
    }
@@ -352,12 +352,12 @@
      [
       "Golpe incandescente",
       "de 8 a 10",
-      "En la prioridad: mucho daño en área"
+      "En la prioridad: tu relleno (más daño contra pocos objetivos)"
      ],
      [
       "Fractura impactante",
       "de 8 a 10",
-      "En la prioridad: daño y aturdimiento"
+      "En la prioridad: abre la ventana de Fractura sombría"
      ],
      [
       "Hechizo de recobro",
@@ -365,29 +365,14 @@
       "En la prioridad: cura al grupo"
      ],
      [
-      "Hechizo de furia",
-      "de 1 a 10",
-      "Daño extra contra objetivo en Impacto/Tambaleo"
-     ],
-     [
-      "Desenfreno de vendaval",
-      "de 4 a 10",
-      "Daño en la ventana de Tambaleo"
-     ],
-     [
       "Trituración de acometida",
       "de 8 a 10",
-      "Daño en área y Maná"
-     ],
-     [
-      "Golpe de onda abrasadora",
-      "de 4 a 10",
-      "Daño en área"
+      "Acercarte; se reinicia al matar (grupos)"
      ],
      [
       "Fractura sísmica",
       "de 8 a 10",
-      "Daño tras esquiva o en vuelo"
+      "Acercarte: Vigor y 10 m más de alcance (grupos)"
      ],
      [
       "Bendición de vida",
@@ -398,11 +383,6 @@
       "Voluntad de supervivencia",
       "de 4 a 10",
       "Resistencia a efectos"
-     ],
-     [
-      "Defensa en cruz",
-      "de 1 a 10",
-      "Bloqueo (último)"
      ]
     ]
    }
@@ -619,6 +599,7 @@
      "**4** (el autor la tiene en Clic der.): línea de Fractura sombría. Fractura sombría abajo; si la ventana no está abierta, Golpe giratorio la reabre, luego Fractura impactante, y Golpe incandescente rellena.",
      "**1**: Hechizo de recobro. **2**: Golpe ondulatorio. **3**: Trituración de acometida. **Q**: Fractura sísmica. **E**: Desenfreno de vendaval.",
      "**Estigmas (5-8)**: Proclama del invicto, Poder de vendaval y los dos que cambian según el grupo. Ira de Marchutan (7) en su propia tecla, fuera de la línea: es tu forma de reserva de reabrir la ventana.",
+     "**Espacio**: Eliminación de impacto, para romper aturdimientos.",
      "Golpe de onda abrasadora está en la barra del autor (una 9.ª casilla) pero su texto no lo nombra: aquí va encima de la Q."
     ]
    },

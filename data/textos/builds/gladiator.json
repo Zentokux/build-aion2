@@ -79,7 +79,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "No hay tabla publicada de líneas por ranura para Gladiador: la del planificador es recomendación de esta guía, basada en lo que llevan los Gladiadores fuertes."
+    "texto": "No hay tabla publicada de líneas por ranura para Gladiador: la del equipo de esta build es recomendación de la guía, basada en lo que llevan los Gladiadores fuertes."
    },
    {
     "titulo": "Reglas de Soul Binding",
@@ -166,27 +166,27 @@
     ],
     "filas": [
      [
-      "Chalice of Vigor",
+      "Cáliz de vitalidad",
       "Tiempo: Velocidad de Hechizo",
       "Onda pulverizadora, Embestida de perdición, Punzada descendente, Preparación de ataque"
      ],
      [
-      "Parchment of Magic",
+      "Pergamino de magia",
       "Destino: Puntos de Maná máximos",
       "Punzada descendente, Embestida de perdición, Estacazo punzante, Perforación con salto"
      ],
      [
-      "Compass of Magic",
+      "Brújula de magia",
       "Muerte: Crítico",
       "Embestida desgarradora, Onda pulverizadora, Desenfreno de aura de espada, Espada devastadora"
      ],
      [
-      "Bell of Magic",
+      "Campana de magia",
       "Destrucción: Ataque",
       "Preparación de ataque"
      ],
      [
-      "Mirror of Magic",
+      "Espejo de magia",
       "Sabiduría: Golpe",
       "Contraataque experimentado, Estallido de sed de sangre, Acierto de impacto"
      ]
@@ -198,7 +198,7 @@
     "items": [
      "Cuatro de las cinco son de **Armadura mágica**: 1.500 de Maná al bajar al 20% (una vez cada 30 s) y +1.000 de Defensa JcE con el Maná a la mitad o más.",
      "Pergamino y Brújula de magia antes que los de vitalidad: Maná máximo y Crítico alimentan el ciclo de Maná.",
-     "Fabrica el Cáliz el último: es el comodín. esta guía lo pone en Onda pulverizadora (sin línea de anillo), que pasa de 14 a 18."
+     "Fabrica el Cáliz el último: es el comodín. Esta guía lo pone en Onda pulverizadora (sin línea de anillo), que pasa de 14 a 18."
     ]
    }
   ],
@@ -333,7 +333,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Casi todo lo conocido viene de Corea, donde varias specs cambiaron antes del global. se comprobaron con el texto de global. Los números pueden cambiar con parches."
+    "texto": "Casi todo lo conocido viene de Corea, donde varias specs cambiaron antes del global. Cada elección se comprobó con el texto de global. Los números pueden cambiar con parches."
    },
    {
     "tipo": "aviso",
@@ -371,11 +371,6 @@
       "Voluntad de supervivencia",
       "de 1 a 10",
       "Resistencia a efectos"
-     ],
-     [
-      "Armadura de protección",
-      "de 1 a 10",
-      "Bloqueo (último)"
      ]
     ]
    }
@@ -533,7 +528,8 @@
      "**Clic izq.**: Estacazo punzante, ataque básico y Maná.",
      "**Q** (tecla principal; el autor la tiene en Clic der.): Punzada descendente siempre que se pueda usar; Embestida desgarradora rellena el resto.",
      "**1**: Embestida de perdición. **2**: Onda pulverizadora, con Desenfreno de aura de espada para jefes en stagger. **3**: Perforación con salto y Estacazo de acometida. **4** (Knockdown): Espada devastadora, Amarre aéreo y Corte de tobillo.",
-     "**Estigmas (5-8)**: Postura de asalto, Explosión de furia y los dos que cambian según la situación."
+     "**Estigmas (5-8)**: Postura de asalto, Explosión de furia y los dos que cambian según la situación.",
+     "**Espacio**: Eliminación de impacto, para romper aturdimientos."
     ]
    },
    {

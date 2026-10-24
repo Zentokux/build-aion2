@@ -12,7 +12,7 @@
   "La regla de la copia: un buff lanzado después de invocar no hace nada a ese espíritu",
   "Perder las acumulaciones de Impacto helado cuesta un 10 % de Ataque a ti y a cada espíritu que invoques",
   "Es la clase que más pierde si mueres con todo en enfriamiento",
-  "El ritmo depende del ping: el autor pide 65 % de Velocidad de Combate o más y menos de unos 60 ms"
+  "El ritmo depende del ping: el autor pide 65 % de Velocidad de Hechizo o más y menos de unos 60 ms"
  ],
  "presets": [
   {"nombre_en": "main", "nombre": "Todo el JcE", "uso": "Invocación: Espíritu ancestral, Mejora: Favor de Espíritu, Bendición ardiente y Golpe conjunto: Corrosión. Cursed Cloud es fuerte, pero en Season 1 no hay hueco."}

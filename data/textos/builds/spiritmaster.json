@@ -92,7 +92,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Ve a por piedras Unique y lleva siempre al menos una de Precisión (el planificador la pone en orbe y escudo): una Fusión elemental fallada es el fallo más caro. Ataque Frontal es discutido: si pegas casi siempre por detrás o de lado, cámbialo por Ataque. Las manastones se pierden al transferir."
+    "texto": "Ve a por piedras Unique y lleva siempre al menos una de Precisión (la build la pone en orbe y escudo): una Fusión elemental fallada es el fallo más caro. Ataque Frontal es discutido: si pegas casi siempre por detrás o de lado, cámbialo por Ataque. Las manastones se pierden al transferir."
    },
    {
     "titulo": "Accesorios",
@@ -148,8 +148,8 @@
     "items": [
      "Caen en Transcendence. Cada carta da su stat de dios + hasta 4 líneas de su grupo: buscas una carta cuyas líneas caigan en tus habilidades.",
      "Set: 3 cartas Vitalidad primordial + 2 Armadura mágica = dos bonus de 2 piezas (Ataque JcE extra con mucha vida y recarga de maná cuando vas bajo).",
-     "El planificador anota una habilidad por carta: toma sus niveles como mínimo.",
-     "Si prefieres Reducción de Tiempo de Enfriamiento a Golpe, cambia Mirror of Magic por Mirror of Vigor (Fantasía): Vitalidad primordial pasa a 4 piezas, pero pierdes la pareja de Armadura mágica y su maná."
+     "La build anota una habilidad por carta: toma sus niveles como mínimo.",
+     "Si prefieres Reducción de Tiempo de Enfriamiento a Golpe, cambia Espejo de magia por Espejo de vitalidad (Fantasía): Vitalidad primordial pasa a 4 piezas, pero pierdes la pareja de Armadura mágica y su maná."
     ]
    }
   ],
@@ -175,12 +175,12 @@
      [
       "Combustión",
       "Más daño contra menos objetivos, +20% velocidad y Ashy Call en cadena",
-      "No"
+      ""
      ],
      [
       "Invocación: Espíritu de fuego",
       "Espíritu base con más daño (+20% daño crítico, +20% stats)",
-      "No"
+      ""
      ],
      [
       "Impacto helado",
@@ -195,7 +195,7 @@
      [
       "Golpe conjunto: Maldición",
       "+2 s de Maldición, lanzable en movimiento",
-      "No"
+      ""
      ],
      [
       "Dominio espacial",
@@ -210,7 +210,7 @@
      [
       "Invocación: Espíritu de tierra",
       "+20% Tolerancia a Daño JcE para el espíritu",
-      "No"
+      ""
      ],
      [
       "Eliminación de impacto",
@@ -432,7 +432,8 @@
      "**1** (línea de espíritus): Fusión elemental abajo del todo, para que salga en cuanto tengas Four Elements; luego Espíritu de agua, de tierra y, el último, de fuego, el que quieres fuera más tiempo.",
      "**3** (línea de daño): Golpe conjunto: Maldición, luego Dominio espacial y Combustión. El autor (Evripides) pone Golpe conjunto: Corrosión abajo del todo de esta pila; el planificador lo deja en su tecla de estigma (8).",
      "**2**: Ráfaga continua.",
-     "**Estigmas (5-8)**: Espíritu ancestral, Favor de Espíritu, Bendición ardiente y Corrosión. En el juego puedes apilar los buffs en una tecla (Favor de Espíritu, Bendición ardiente y Espíritu ancestral) para que vayan siempre antes de la invocación."
+     "**Estigmas (5-8)**: Espíritu ancestral, Favor de Espíritu, Bendición ardiente y Corrosión. En el juego puedes apilar los buffs en una tecla (Favor de Espíritu, Bendición ardiente y Espíritu ancestral) para que vayan siempre antes de la invocación.",
+     "**Espacio**: Eliminación de impacto, para romper aturdimientos."
     ]
    },
    {
@@ -540,12 +541,12 @@
      [
       "Defensivo",
       "Gobernar todas las cosas (Tolerancia a Daño de Jefe y por la Espalda; al coleccionar 200 tipos de mascotas)",
-      "No"
+      ""
      ],
      [
       "Otro",
       "Ay, no tengo nada que ponerme (Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento)",
-      "No"
+      ""
      ]
     ]
    },

@@ -109,9 +109,9 @@
   "coleccionables": [
    {"tipo": "aviso", "texto": "Una carta subida a 5 da de media cerca de **+2** a una habilidad al azar de las que puede sacar."},
    {"titulo": "Arcanas", "tipo": "tabla", "columnas": ["Carta", "Qué buscar"], "filas": [
-    ["Parchment of Vigor", "Punzada descendente y Embestida de perdición: las únicas dos de sus seis que importan"],
-    ["Compass of Vigor", "Solo Embestida desgarradora. Coge la versión de Libertad por la Precisión: los bloqueos del jefe de frente son daño perdido"],
-    ["Chalice of Vigor", "Saca cualquier habilidad; fabricándolo eliges dos. Sube la que aún no llegue a 20"]
+    ["Pergamino de vitalidad", "Punzada descendente y Embestida de perdición: las únicas dos de sus seis que importan"],
+    ["Brújula de vitalidad", "Solo Embestida desgarradora. Coge la versión de Libertad por la Precisión: los bloqueos del jefe de frente son daño perdido"],
+    ["Cáliz de vitalidad", "Saca cualquier habilidad; fabricándolo eliges dos. Sube la que aún no llegue a 20"]
    ]},
    {"titulo": "Cómo llegar a 20", "tipo": "lista", "items": [
     "Con suerte normal: 14 + 2 (anillo) + 2 + 2 = **20** en Punzada descendente.",
@@ -119,7 +119,7 @@
    ]},
    {"titulo": "Sets y cartas de pasivas", "tipo": "lista", "items": [
     "Busca el set de 4 de **Vitalidad primordial** (todas las cartas Vigor de arriba). El Gladiador nunca necesita Reducción de Tiempo de Enfriamiento (Fantasía).",
-    "Si te quedas sin Maná con la velocidad de ataque de Season 1, cambia a 2 piezas de **Armadura mágica** (Mirror of Magic y las otras cartas Magic).",
+    "Si te quedas sin Maná con la velocidad de ataque de Season 1, cambia a 2 piezas de **Armadura mágica** (Espejo de magia y las otras cartas de magia).",
     "Cartas de pasivas: Preparación de ataque primero; luego cualquier mezcla de Contraataque experimentado, Estallido de sed de sangre, Acierto de impacto e Identificación de debilidades, en ese orden."
    ]},
    {"comun": "titulos"},

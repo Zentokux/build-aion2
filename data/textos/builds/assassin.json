@@ -164,27 +164,27 @@
     ],
     "filas": [
      [
-      "Parchment of Vigor",
+      "Pergamino de vitalidad",
       "Vida: Puntos de Vida",
       "Estocada al corazón, Corte rápido, Explosión de insignia, Ataque sigiloso"
      ],
      [
-      "Compass of Magic",
+      "Brújula de magia",
       "Muerte: Crítico",
       "Rugido bestial, Emboscada, Desenfreno de tormenta, Eliminación de impacto"
      ],
      [
-      "Bell of Magic",
+      "Campana de magia",
       "Destrucción: Ataque",
       "Postura de agresión, Postura de emboscada, Maximización de sexto sentido"
      ],
      [
-      "Mirror of Magic",
+      "Espejo de magia",
       "Sabiduría: Golpe",
       "Impacto trasero, Explotar debilidades, Acierto de impacto, Determinación"
      ],
      [
-      "Chalice of Vigor",
+      "Cáliz de vitalidad",
       "Tiempo: Velocidad de Hechizo",
       "Cualquiera: Explotar debilidades, Estocada al corazón, Postura de agresión, Impacto trasero"
      ]
@@ -198,7 +198,7 @@
      "Sin bonus de 4 piezas a propósito: Crítico (Brújula) y Golpe (Espejo) valen más al principio.",
      "El Pergamino es el grind: confórmate con 2 de las 4 líneas que quieres.",
      "El Cáliz es la única carta que saca cualquier habilidad: úsalo para tapar lo que no llegue a su nivel.",
-     "El planificador guarda una habilidad por carta: tómalo como el mínimo."
+     "La build anota una habilidad por carta: tómalo como el mínimo."
     ]
    }
   ],
@@ -342,19 +342,9 @@
       "En tu rotación: +20 % de Amplificación de Daño Crítico"
      ],
      [
-      "Grieta defensiva",
-      "de 1 a 10",
-      "−Defensa al objetivo: más daño a jefes"
-     ],
-     [
       "Postura de emboscada",
       "de 1 a 10",
       "Daño extra tras moverte"
-     ],
-     [
-      "Aplicación de veneno",
-      "de 8 a 10",
-      "Daño continuo"
      ],
      [
       "Corte de destello",
@@ -379,12 +369,12 @@
      [
       "Maximización de sexto sentido",
       "de 1 a 10",
-      "Más vida"
+      "Cura al esquivar"
      ],
      [
       "Pacto de resurrección",
       "de 1 a 10",
-      "Resistencia a efectos (último)"
+      "Cura del 35 % al bajar al 10 % de vida, una vez por minuto (último)"
      ]
     ]
    }
@@ -525,10 +515,11 @@
     "titulo": "La barra",
     "tipo": "lista",
     "items": [
-     "**Clic izq.**: Corte rápido. Púlsalo tú, aparte de la macro: cancela animaciones.",
+     "**Clic izq.**: Corte rápido, en su propia tecla (no en la pila de la E): la macro lo pulsa como 2.º paso y cancela animaciones.",
      "**E** (tecla de daño): Explosión de insignia, Estocada al corazón y Emboscada. Sale la primera que esté lista, en ese orden.",
      "**A mano**: Rugido bestial (1, aunque tengas buen ping), Ataque sigiloso (2), Desenfreno de tormenta (3), Corte de destello (4) e Infiltración (Q).",
-     "**Estigmas (5-8)**: Clon ilusorio, Pacto de celeridad, Colmillo salvaje y Puñal de Triniel. A mano, nunca en una macro."
+     "**Estigmas (5-8)**: Clon ilusorio, Pacto de celeridad, Colmillo salvaje y Puñal de Triniel. A mano, nunca en una macro.",
+     "**Espacio**: Eliminación de impacto, para romper aturdimientos."
     ]
    },
    {

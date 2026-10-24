@@ -317,7 +317,9 @@ function barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) {
   var cols = B.barra.slice().sort(function (a, b) { return orden.indexOf(a.tecla) - orden.indexOf(b.tecla); });
   out += '<h3>Qué va en cada tecla</h3><div class="tabla-scroll"><table class="pilas"><thead><tr><th>Tecla</th><th>Para qué</th><th>Pila (1 = abajo, sale primero)</th><th>La pulsa</th></tr></thead><tbody>' +
     cols.map(function (c) {
-      var quien = c.tecla === "LMB" ? "Tú: mantenla pulsada" : enMacro[c.tecla] ? (c.uso === "ambas" ? "La macro (y tú, si quieres)" : "La macro") : "Tú";
+      // el ataque básico no se mantiene: si la macro lo lleva, lo pulsa ella; sin macro, de relleno entre habilidades
+      var quien = c.tecla === "LMB" ? (enMacro.LMB ? "La macro (último paso)" : "Tú, de relleno entre habilidades") :
+        enMacro[c.tecla] ? (c.uso === "ambas" ? "La macro (y tú, si quieres)" : "La macro") : "Tú";
       return "<tr><td><strong>" + esc(txt(c.tecla)) + "</strong></td><td>" + esc(c.nombre) + "</td><td>" +
         c.pila.map(function (id, i) { return '<span class="item">' + (c.pila.length > 1 ? "<small>" + (i + 1) + ".</small> " : "") + hab(id) + "</span>"; }).join("") + "</td><td>" + esc(quien) + "</td></tr>";
     }).join("") + "</tbody></table></div>";
@@ -510,7 +512,7 @@ function elegirGuia(g) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  var V = "?v=18";
+  var V = "?v=19";
   cargarScript("data/builds/" + c + ".js" + V, function () {
     cargarScript("data/couga/" + c + ".js" + V, arranca, arranca);
   }, function () {

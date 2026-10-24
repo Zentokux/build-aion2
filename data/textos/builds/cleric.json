@@ -169,27 +169,27 @@
     ],
     "filas": [
      [
-      "Chalice of Vigor",
+      "Cáliz de vitalidad",
       "Tiempo: Velocidad de Hechizo",
       "Rayo del juicio, Luz de regeneración o lo que no llegue a su objetivo"
      ],
      [
-      "Parchment of Magic",
+      "Pergamino de magia",
       "Destino: Puntos de Maná",
       "Condena, Resplandor de recobro, Centella, Enlace de dolor"
      ],
      [
-      "Compass of Magic",
+      "Brújula de magia",
       "Muerte: Crítico",
       "Aura divina, Rayo del juicio, Luz de regeneración, Luz de curación"
      ],
      [
-      "Bell of Magic",
+      "Campana de magia",
       "Destrucción: Ataque",
       "Gracia empírea, Favor cálido, Velo inmortal"
      ],
      [
-      "Mirror of Magic",
+      "Espejo de magia",
       "Sabiduría: Golpe",
       "Gracia terrestre, Mejora curativa, Favor radiante"
      ]
@@ -579,6 +579,7 @@
      "**1** (tecla de daño): Condena, con Enlace de dolor encima. **2**: Relámpagos sin puntería, para las ventanas de stagger.",
      "**4**: Luz de curación. **Q**: Resplandor de recobro. **E**: Centella, cargada a mano.",
      "**Estigmas (5-8)**: Luz de protección, Castigo terrestre, Aura noble y Oración de amplificación (en cuanto se abre una ventana de burst).",
+     "**Espacio**: Eliminación de impacto, para romper aturdimientos.",
      "Activa **Skill Queue ON**."
     ]
    },

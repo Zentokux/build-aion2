@@ -121,7 +121,7 @@
      [
       "Armadura",
       "Ataque normal (basta para la 1.ª temporada)",
-      "No"
+      ""
      ]
     ]
    },
@@ -156,7 +156,7 @@
      [
       "Cinturón y runas",
       "Noble Belt + 2 Clash Rune",
-      "No"
+      ""
      ]
     ]
    },
@@ -166,8 +166,8 @@
     "items": [
      "Caen en Transcendence o se craftean con cristales. Cada carta da su stat de dios + hasta 4 líneas de habilidad de su propio grupo.",
      "Buscas una carta cuyas líneas caigan en tus habilidades, no una habilidad suelta. El set va por stats individuales, no por bonus de set.",
-     "El planificador anota una habilidad por carta: toma sus niveles como mínimo.",
-     "**Chalice of Vigor** es la comodín (puede sacar cualquier activa o pasiva): craftéala la última y apúntala a lo que no llegue a su nivel."
+     "La build anota una habilidad por carta: toma sus niveles como mínimo.",
+     "**Cáliz de vitalidad** es la comodín (puede sacar cualquier activa o pasiva): craftéala la última y apúntala a lo que no llegue a su nivel."
     ]
    }
   ],
@@ -228,7 +228,7 @@
      [
       "Eliminación de impacto",
       "Ruptura de aturdimiento, cura un 20% de Puntos de Vida",
-      "No"
+      ""
      ],
      [
       "Flecha sin puntería",
@@ -303,12 +303,12 @@
      ],
      [
       "Pacto de resurrección",
-      "No",
+      "",
       "Segunda vida: al 10% de vida te cura un 35% (54% a nivel 20), una vez por minuto"
      ],
      [
       "Ojo vigilante",
-      "No",
+      "",
       "Te cura con cada esquiva"
      ]
     ]
@@ -352,11 +352,6 @@
       "Daño extra a objetivos ralentizados"
      ],
      [
-      "Flecha sin puntería",
-      "de 1 a 10",
-      "Daño en la ventana de Tambaleo"
-     ],
-     [
       "Flecha de supresión",
       "de 8 a 10",
       "Daño con Precisión"
@@ -369,7 +364,7 @@
      [
       "Ojo vigilante",
       "de 6 a 10",
-      "Más vida"
+      "Cura al esquivar"
      ],
      [
       "Determinación de resistencia",
@@ -379,7 +374,7 @@
      [
       "Pacto de resurrección",
       "de 6 a 10",
-      "Resistencia a efectos"
+      "Cura del 35 % al bajar al 10 % de vida, una vez por minuto"
      ],
      [
       "Eliminación de impacto",
@@ -542,7 +537,7 @@
      "**2** (línea del grifo): Estallido de flechas, luego Flecha de tentáculo y Flecha de grifo encima. Estallido de flechas solo sale sobre un objetivo ralentizado o inmovilizado: acierta antes Flecha de tentáculo.",
      "**3** (línea de Gale): Tiro rápido, luego Flecha punzante y Huracán de flechas encima.",
      "**1**: Flecha al objetivo. El autor la pone en un botón lateral del ratón para cargarla sin soltar lo demás.",
-     "**El resto**: Flecha en el objetivo (4), Cepo explosivo (Q), Flecha de supresión (E), Eliminación de impacto y los estigmas (5-7). Flecha sin puntería (8) va aparte."
+     "**El resto**: Flecha en el objetivo (4), Cepo explosivo (Q), Flecha de supresión (E), Eliminación de impacto (Espacio) y los estigmas (5-7). Flecha sin puntería (8) va aparte."
     ]
    },
    {
@@ -663,12 +658,12 @@
      [
       "Defensivo",
       "Dominador del espacio (Tolerancia a Daño JcE)",
-      "No"
+      ""
      ],
      [
       "Otro",
       "Ay, no tengo nada que ponerme (Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento)",
-      "No"
+      ""
      ]
     ]
    },
