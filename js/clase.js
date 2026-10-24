@@ -1,6 +1,6 @@
 // Página de clase: dos builds por clase, Build 1 (window.BUILD, data/builds) y Build 2 (window.BUILD2, data/couga); pinta la elegida
 var TECLA_TXT = { LMB: "Clic izq.", RMB: "Clic der.", Espacio: "Espacio", Otra: "Otra" };
-var PRESET_DAEV = { "Launch priority": "Prioridad de lanzamiento", "Full PvE": "JcE completo", "Guide route": "Ruta de la guía" };
+var PRESET_DAEV = { "Launch priority": "Prioridad de lanzamiento", "Full PvE": "JcE completo", "Guide route": "Ruta de la guía", "Up to 416": "Con 416 cristales (máx. daño)" };
 var IZQ = [["MainHand", "SubHand"], ["Helmet", "Shoulder"], ["Torso", "Pants"], ["Gloves", "Boots"], ["Cape"]];
 var DER = [["Necklace", "Amulet"], ["Earring1", "Earring2"], ["Ring1", "Ring2"], ["Bracelet1", "Bracelet2"],
   ["Belt", "Rune1"], ["Rune2", "Brooch1"], ["Brooch2", "Pendant"]];
@@ -367,7 +367,7 @@ function pintarDaevanion(B, H) {
         return '<button class="boton' + (i === estado.tablero ? " on" : "") + '" data-tab="' + i + '">' + esc(t.nombre) + " · " + t.nivel + "</button>";
       }).join("") + "</div>" +
       '<div class="daev-info"><span>' + Math.min(paso, orden.length) + " de " + total + " nodos · " + puntos + " / " + (info.tope || "—") +
-      (tb.propio ? " cristales de Ariel" : " puntos en este tablero") + '</span><button class="boton" data-iconos="1">' + (estado.iconos ? "Ocultar" : "Mostrar") + " iconos de habilidad</button></div>" +
+      (tb.propio ? " " + (tb.moneda || "cristales de Ariel") : " puntos en este tablero") + '</span><button class="boton" data-iconos="1">' + (estado.iconos ? "Ocultar" : "Mostrar") + " iconos de habilidad</button></div>" +
       '<div class="orden">Orden <button class="boton" data-mov="-1">◀</button><input type="range" min="0" max="' + orden.length + '" value="' + paso +
       '"><button class="boton" data-mov="1">▶</button><span>' + paso + "/" + orden.length + "</span></div>" +
       '<div class="rejilla-daev" style="grid-template-columns:repeat(' + tb.cols + ',1fr)">' + celdas.map(function (n) {
@@ -384,13 +384,15 @@ function pintarDaevanion(B, H) {
       }).join("") + "</div>" +
       '<div class="leyenda-daev"><span>Borde azul = nodo tomado hasta este paso del orden</span><span>Borde blanco = último nodo del paso</span>' +
       "<span>Mueve «Orden» para ver en qué orden se cogen</span></div>" +
-      (tb.propio ? '<div class="aviso" style="margin-top:10px"><strong>Ariel (nuevo, parche del 21-oct):</strong> solo JcE y con cristales propios, no con los puntos de nivel. ' +
+      (tb.propio && tb.aviso ? '<div class="aviso" style="margin-top:10px">' + tb.aviso + "</div>" :
+      tb.propio ? '<div class="aviso" style="margin-top:10px"><strong>Ariel (nuevo, parche del 21-oct):</strong> solo JcE y con cristales propios, no con los puntos de nivel. ' +
       "Sale <strong>Fragmento de Ariel</strong> en el modo <strong>Difícil</strong> de Cueva de Krao y Draupnir (nivel de objeto <strong>2.600</strong>); 100 fragmentos = 1 Cristal de Daevanion: Ariel " +
       "(Substance Morph), hasta 30 por mazmorra: <strong>60 en total</strong>. La ruta coge los 4 nodos de Amplificación de Daño de JcE (+6 %), uno de Amplificación de Daño de Jefe (+1 %) y Crítico +10; " +
       "primero los dos del medio (a los 13 y 26 cristales). Es igual en todas las clases.</div>" :
-      D.presets.length > 1 ? '<div class="aviso" style="margin-top:10px"><strong>Dos modos:</strong> primero rellena <strong>Prioridad de lanzamiento</strong> (lo esencial, ' +
-      sumaPuntos(D.presets[0]) + " puntos); cuando la completes, sigue con <strong>JcE completo</strong> hasta " + sumaPuntos(D.presets[D.presets.length - 1]) +
-      " puntos. Los tableros se abren a nivel " + abren() + ".</div>" :
+      D.presets.length > 1 ? '<div class="aviso" style="margin-top:10px"><strong>Modos, por orden:</strong> ' + D.presets.map(function (p) {
+        return "<strong>" + esc(PRESET_DAEV[p.nombre_en] || p.nombre_en) + "</strong> (" + sumaPuntos(p) + ")";
+      }).join(", luego ") + ". Hoy se juntan como mucho <strong>416 cristales</strong> para estos cuatro tableros: «Con 416 cristales» los gasta todos en lo que más daño da. " +
+      "Los tableros se abren a nivel " + abren() + "; Ariel y Azphel van aparte, con sus propios cristales.</div>" :
       '<div class="aviso" style="margin-top:10px"><strong>Ruta de la guía:</strong> ' + sumaPuntos(D.presets[0]) + " puntos en los cuatro tableros (cuestan 570 en total: no da para todos). " +
       "Los tableros se abren a nivel " + abren() + (D.tableros.some(function (t) { return t.propio; }) ? "; Ariel va aparte, con sus propios cristales" : "") + ".</div>");
     el.innerHTML = h;
@@ -512,7 +514,7 @@ function elegirGuia(g) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  var V = "?v=19";
+  var V = "?v=20";
   cargarScript("data/builds/" + c + ".js" + V, function () {
     cargarScript("data/couga/" + c + ".js" + V, arranca, arranca);
   }, function () {
