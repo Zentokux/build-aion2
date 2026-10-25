@@ -223,8 +223,24 @@ function pintarClase(B, guia) {
     return '<div class="ficha">' + icono(x.id) + '<div class="cuerpo"><div class="linea"><b>' + esc(x.nombre) + '</b><span class="nv">Nv. ' + esc(x.nivel_txt || x.nivel || "—") +
       (x.extra && !x.fuentes ? " (" + x.base + " + " + x.extra + ")" : "") + "</span>" + (teclaDe[x.id] ? '<span class="tec">' + esc(teclaDe[x.id]) + "</span>" : "") + "</div>" +
       (x.extra && x.fuentes ? '<div class="fuentes-nv">' + desglose(x) + "</div>" : "") +
-      (sp.length ? '<div class="esp">' + sp.map(function (s) { return esc(s.texto); }).join(" · ") + "</div>" : "") +
+      espHTML(x, sp) +
       (x.por_que ? '<div class="porque">' + md(x.por_que) + "</div>" : "") + "</div></div>";
+  }
+  // especializaciones por hueco: en las activas se abren a nivel 8, 12 y 20; en los estigmas se activan solas a 5, 10, 15 y 20
+  function espHTML(x, sp) {
+    if (!sp.length) return "";
+    if (sp.some(function (s) { return s.auto; }))
+      return '<div class="esp"><span class="esp-cab">Se activan solas:</span> ' + sp.map(function (s) { return "<b>" + s.nivel + "</b> " + esc(s.texto); }).join(" · ") + "</div>";
+    var n = +x.nivel || 0;
+    var ahora = sp.filter(function (s) { return !(s.a_20 && n < 20); }), luego = sp.filter(function (s) { return s.a_20 && n < 20; });
+    var marca = function (s) { return s.propia ? ' <span class="esp-propia">(de esta guía)</span>' : ""; };
+    var h = '<div class="esp"><span class="esp-cab">Especialización:</span> ' + ahora.map(function (s, i) {
+      return "<b>" + Math.max([8, 12, 20][i], s.nivel) + "</b> " + esc(s.texto) + marca(s);   // a qué nivel la tienes
+    }).join(" · ") + (luego.length ? " · <b>20</b> " + luego.map(function (s) { return esc(s.texto) + marca(s); }).join(", ") + " <small>(cuando llegue a 20)</small>" : "") + "</div>";
+    var mot = sp.filter(function (s) { return s.propia || s.del_texto; });
+    return h + (mot.length ? '<div class="esp-motivo">' + mot.map(function (s) {
+      return (s.propia ? "El autor no la da; elegida por esta guía: " : "") + esc(s.motivo);
+    }).join(" · ") + "</div>" : "");
   }
   var enP1 = (B.presets[0] || {}).habilidades || [];
   // orden: por casilla de la barra y, dentro de cada pila, de abajo arriba
@@ -615,7 +631,7 @@ function elegirGuia(g) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  var V = "?v=25";
+  var V = "?v=26";
   cargarScript("data/builds/" + c + ".js" + V, function () {
     cargarScript("data/couga/" + c + ".js" + V, arranca, arranca);
   }, function () {

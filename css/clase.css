@@ -141,6 +141,10 @@ h2.mr {
 .ficha .nv { color: var(--suave); white-space: nowrap; }
 .ficha .tec { font: 600 10px/1 Consolas, monospace; border: 1px solid #3a4558; border-radius: 3px; padding: 2px 4px; color: #fff; margin-left: 6px; white-space: nowrap; }
 .ficha .esp { color: var(--suave); margin-top: 2px; }
+.ficha .esp b { color: #e8b64c; }
+.ficha .esp-cab { color: var(--texto, #ddd); }
+.ficha .esp-propia { color: #8fb3ff; font-size: 11px; }
+.ficha .esp-motivo { color: var(--suave); font-size: 11px; font-style: italic; margin-top: 2px; }
 details.rot { background: #121620; border: 1px solid var(--borde); border-radius: 8px; margin-top: 8px; }
 details.rot summary { cursor: pointer; padding: 10px 12px; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #fff; display: flex; justify-content: space-between; }
 details.rot .dentro { padding: 0 12px 12px; font-size: 13px; }
