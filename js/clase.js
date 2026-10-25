@@ -1,6 +1,8 @@
 // Página de clase: dos builds por clase, Build 1 (window.BUILD, data/builds) y Build 2 (window.BUILD2, data/couga); pinta la elegida
 var TECLA_TXT = { LMB: "Clic izq.", RMB: "Clic der.", Espacio: "Espacio", Otra: "Otra" };
 var PRESET_DAEV = { "Launch priority": "Prioridad de lanzamiento", "Full PvE": "JcE completo", "Guide route": "Ruta de la guía", "Up to 416": "Con 416 cristales (máx. daño)" };
+// puntos de habilidad que cuesta llevar una habilidad del nivel 1 al n (2-4: 1 por nivel, 5-7: 2, 8-10: 4)
+var COSTE_PTS = { 1: 0, 2: 1, 3: 2, 4: 3, 5: 5, 6: 7, 7: 9, 8: 13, 9: 17, 10: 21 };
 var IZQ = [["MainHand", "SubHand"], ["Helmet", "Shoulder"], ["Torso", "Pants"], ["Gloves", "Boots"], ["Cape"]];
 var DER = [["Necklace", "Amulet"], ["Earring1", "Earring2"], ["Ring1", "Ring2"], ["Bracelet1", "Bracelet2"],
   ["Belt", "Rune1"], ["Rune2", "Brooch1"], ["Brooch2", "Pendant"]];
@@ -182,14 +184,39 @@ function pintarClase(B, guia) {
     if (!lista.length) return "";
     var col = function (x, k) { return (x.fuentes || {})[k] ? "+" + x.fuentes[k] : ""; };
     var hayAn = lista.some(function (x) { return (x.fuentes || {}).anillos; }), hayEq = lista.some(function (x) { return (x.fuentes || {}).gear; });
-    return '<h3>Orden de puntos de habilidad</h3><div class="aviso">Los <b>puntos de habilidad</b> suben cada una hasta 10 como mucho: ponlos en este orden hasta la cifra de «Puntos». ' +
+    return '<h3>Nivel final de cada habilidad</h3><div class="aviso">«Con puntos» es hasta dónde la subes tú con los <b>puntos de habilidad</b> (10 como mucho) y «Cuesta» lo que vale desde el nivel 1. ' +
       "El resto del nivel no se compra con puntos: lo dan los nodos azules de <b>Daevanion</b>, las líneas de habilidad del <b>equipo</b> (anillos en las activas) y las <b>Arcanas</b>.</div>" +
-      '<div class="tabla-scroll"><table class="orden-pts"><thead><tr><th>#</th><th>Habilidad</th><th>Puntos</th><th>Daevanion</th>' +
+      '<div class="tabla-scroll"><table class="orden-pts"><thead><tr><th>#</th><th>Habilidad</th><th>Con puntos</th><th>Cuesta</th><th>Daevanion</th>' +
       (hayEq ? "<th>Equipo</th>" : "") + (hayAn ? "<th>Anillos</th>" : "") + "<th>Arcanas</th><th>Nivel</th></tr></thead><tbody>" +
       lista.map(function (x, i) {
-        return "<tr><td>" + (i + 1) + "</td><td>" + hab(x.id) + (x.tipo === "Pasiva" ? " <small>(pasiva)</small>" : "") + "</td><td><b>" + (x.base != null ? x.base : x.nivel) + "</b></td><td>" + col(x, "daevanion") + "</td>" +
+        var bp = Math.min(10, x.base != null ? x.base : x.nivel);
+        return "<tr><td>" + (i + 1) + "</td><td>" + hab(x.id) + (x.tipo === "Pasiva" ? " <small>(pasiva)</small>" : "") + "</td><td><b>" + bp + "</b></td><td>" + (COSTE_PTS[bp] || "nada") + "</td><td>" + col(x, "daevanion") + "</td>" +
           (hayEq ? "<td>" + col(x, "gear") + "</td>" : "") + (hayAn ? "<td>" + col(x, "anillos") + "</td>" : "") + "<td>" + col(x, "arcana") + "</td><td><b>" + esc(x.nivel_txt || x.nivel) + "</b></td></tr>";
       }).join("") + "</tbody></table></div>";
+  }
+  // plan paso a paso: qué subir con los puntos de habilidad, cuánto cuesta y cuántos llevas
+  function planPuntos() {
+    var P = B.plan_puntos;
+    if (!P || !P.filas.length) return "";
+    var corte = -1;
+    P.filas.forEach(function (f, i) { if (f.llevas <= P.nivel45) corte = i; });
+    var h = "", fase = -1;
+    P.filas.forEach(function (f, i) {
+      if (f.fase !== fase) {
+        fase = f.fase;
+        h += '<tr class="fase-pts"><td colspan="5">Fase ' + (fase + 1) + " · " + esc(P.fases[fase]) + "</td></tr>";
+      }
+      h += "<tr><td>" + (i + 1) + "</td><td>" + hab(f.id) + (H[f.id].tipo === "Pasiva" ? " <small>(pasiva)</small>" : "") + "</td><td>" + f.de + " a <b>" + f.a + "</b></td><td>" + f.cuesta + "</td><td><b>" + f.llevas + "</b></td></tr>";
+      if (i === corte && i < P.filas.length - 1)
+        h += '<tr class="corte-pts"><td colspan="5">Hasta aquí llegas con los <b>' + P.nivel45 + " puntos</b> de subir a nivel 45. Lo de abajo, con Piedras de sabiduría (Wisdom Stone, 1 punto cada una)</td></tr>";
+    });
+    return '<h3>Dónde echar los puntos de habilidad, paso a paso</h3>' +
+      '<div class="tabla-scroll"><table class="coste-pts"><thead><tr><th>Subir a nivel</th><th>2-4</th><th>5-7</th><th>8-10</th><th>De 1 a 8</th><th>De 1 a 10</th></tr></thead>' +
+      "<tbody><tr><td>Puntos por nivel</td><td>1</td><td>2</td><td>4</td><td><b>13</b></td><td><b>21</b></td></tr></tbody></table></div>" +
+      '<div class="aviso">Sigue la tabla de arriba abajo: en el juego, <b>Habilidades, Maestría</b>, pulsa la habilidad y súbela hasta el nivel de la columna. «Llevas» son los puntos gastados en total. ' +
+      "A nivel 8 se abre la primera especialización, por eso las clave van primero a 8. Con puntos llegas a 10 como mucho; lo de encima lo dan Daevanion, equipo y Arcanas. " +
+      "Piedras de sabiduría: 2 por cada mazmorra sellada, misiones regionales, el Monolito, el Festival de Shugo y la tienda de Pesadilla. Esta build pide <b>" + P.total + " puntos</b> en total.</div>" +
+      '<div class="tabla-scroll"><table class="orden-pts plan-pts"><thead><tr><th>#</th><th>Habilidad</th><th>Nivel</th><th>Cuesta</th><th>Llevas</th></tr></thead><tbody>' + h + "</tbody></table></div>";
   }
   function ficha(x) {
     var sp = x.especializaciones.filter(function (s) { return s.elegida; });
@@ -212,7 +239,7 @@ function pintarClase(B, guia) {
   th += '<div class="mr-barra" style="margin-top:10px"><div class="sub-mr" style="margin-top:0">Build de habilidades</div>' +
     grupoFichas("Estigma", B.habilidades.filter(function (x) { return x.tipo === "Estigma" && enP1.indexOf(x.id) >= 0; })) +
     grupoFichas("Activas de maestría", B.habilidades.filter(function (x) { return x.tipo === "Activa" && enP1.indexOf(x.id) >= 0; })) +
-    grupoFichas("Pasivas", pas) + "</div>" + ordenPuntos();
+    grupoFichas("Pasivas", pas) + "</div>" + planPuntos() + ordenPuntos();
 
   var P = B.prioridad || {};
   var nPrio = enP1.length;
@@ -588,7 +615,7 @@ function elegirGuia(g) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  var V = "?v=24";
+  var V = "?v=25";
   cargarScript("data/builds/" + c + ".js" + V, function () {
     cargarScript("data/couga/" + c + ".js" + V, arranca, arranca);
   }, function () {

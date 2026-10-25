@@ -106,6 +106,9 @@ h2.mr {
 .nodo.inicio { background: #11392e; border: 1px solid #2b8a6b; }
 .nodo .num { position: absolute; left: 2px; top: 1px; font-size: 9px; color: #fff; text-shadow: 0 0 2px #000; display: none; }
 .nodo.ultimo { box-shadow: 0 0 0 2px #fff, 0 0 10px rgba(255, 255, 255, .6); }
+.plan-pts tr.fase-pts td { background: rgba(232, 182, 76, .12); color: #e8b64c; font-weight: 600; text-align: left; }
+.plan-pts tr.corte-pts td { background: rgba(61, 123, 255, .15); text-align: left; font-size: 13px; }
+.plan-pts td:nth-child(n+3), .plan-pts th:nth-child(n+3), .coste-pts td, .coste-pts th { text-align: center; }
 .nodo.fase-nueva { border: 2px solid #e8b64c; box-shadow: 0 0 8px rgba(232, 182, 76, .7); }
 .botones.fases { align-items: center; }
 .botones.fases > span { font-size: 12px; color: var(--suave); }
