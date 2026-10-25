@@ -106,6 +106,10 @@ h2.mr {
 .nodo.inicio { background: #11392e; border: 1px solid #2b8a6b; }
 .nodo .num { position: absolute; left: 2px; top: 1px; font-size: 9px; color: #fff; text-shadow: 0 0 2px #000; display: none; }
 .nodo.ultimo { box-shadow: 0 0 0 2px #fff, 0 0 10px rgba(255, 255, 255, .6); }
+.nodo.fase-nueva { border: 2px solid #e8b64c; box-shadow: 0 0 8px rgba(232, 182, 76, .7); }
+.botones.fases { align-items: center; }
+.botones.fases > span { font-size: 12px; color: var(--suave); }
+.tabla-fases tr.on td { background: rgba(232, 182, 76, .12); }
 .leyenda-daev { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--suave); margin-top: 10px; }
 
 /* barra de habilidades */

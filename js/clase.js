@@ -373,13 +373,26 @@ function barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) {
 function pintarDaevanion(B, H) {
   var D = B.daevanion, el = document.getElementById("daev");
   if (!D || !D.tableros.length) { el.remove(); return; }
-  var estado = { preset: D.activo || 0, tablero: 0, paso: null, iconos: true };
+  var estado = { preset: D.activo || 0, tablero: 0, paso: null, iconos: true, fase: null };
+  // preset con las fases (los 416 repartidos en 3 tandas parejas entre los 4 tableros)
+  var iFases = -1;
+  D.presets.forEach(function (p, i) { if (p.fases && p.fases.length) iFases = i; });
 
   function pinta() {
     var pr = D.presets[estado.preset], tb = D.tableros[estado.tablero];
     var info = pr.tableros[tb.tablero] || { tomados: [], puntos: 0, tope: 0 };
     var orden = info.tomados;
     var paso = estado.paso == null ? orden.length : estado.paso;
+    var fz = estado.fase && pr.fases ? pr.fases[estado.fase - 1] : null, desde = -1;
+    if (fz && !tb.propio) {
+      paso = fz.hasta[tb.tablero] || 0;
+      desde = estado.fase > 1 ? (pr.fases[estado.fase - 2].hasta[tb.tablero] || 0) : 0;
+    }
+    function faseDe(i) {
+      if (!pr.fases || tb.propio) return 0;
+      for (var f = 0; f < pr.fases.length; f++) if (i < (pr.fases[f].hasta[tb.tablero] || 0)) return f + 1;
+      return 0;
+    }
     var pos = {};
     orden.forEach(function (id, i) { pos[id] = i; });
     var puntos = 0;
@@ -394,6 +407,9 @@ function pintarDaevanion(B, H) {
     var h = '<div class="botones">' + D.presets.map(function (p, i) {
       return '<button class="boton' + (i === estado.preset ? " on" : "") + '" data-preset="' + i + '">' + esc(PRESET_DAEV[p.nombre_en] || p.nombre_en) + "</button>";
     }).join("") + "</div>" +
+      (iFases >= 0 ? '<div class="botones fases"><span>Por fases (416 en 3 tandas):</span>' + D.presets[iFases].fases.map(function (f, i) {
+        return '<button class="boton' + (estado.fase === i + 1 ? " on" : "") + '" data-fase="' + (i + 1) + '">Fase ' + (i + 1) + " · " + f.puntos + "</button>";
+      }).join("") + "</div>" : "") +
       '<div class="botones">' + D.tableros.map(function (t, i) {
         return '<button class="boton' + (i === estado.tablero ? " on" : "") + '" data-tab="' + i + '">' + esc(t.nombre) + " · " + t.nivel + "</button>";
       }).join("") + "</div>" +
@@ -405,16 +421,22 @@ function pintarDaevanion(B, H) {
         if (!n) return '<div class="nodo"></div>';
         var tomado = pos[n.id] != null && pos[n.id] < paso;
         var ultimo = pos[n.id] === paso - 1;
+        var nueva = desde >= 0 && pos[n.id] != null && pos[n.id] >= desde && pos[n.id] < paso;
+        var fn = pos[n.id] != null ? faseDe(pos[n.id]) : 0;
         var tip = "<div class='tt-nombre'>" + esc(n.titulo) + "</div>" + (n.valor ? "<div>" + esc(n.valor) + "</div>" : "") +
           (n.coste ? "<div class='tt-sub'>Coste: " + n.coste + "</div>" : "") +
-          (pos[n.id] != null ? "<div class='tt-sub'>Paso " + (pos[n.id] + 1) + " del orden</div>" : "<div class='tt-sub'>No se toma en este preset</div>");
+          (pos[n.id] != null ? "<div class='tt-sub'>Paso " + (pos[n.id] + 1) + " del orden" + (fn ? " · Fase " + fn : "") + "</div>" : "<div class='tt-sub'>No se toma en este preset</div>");
         if (n.tipo === "Start") return '<div class="nodo inicio" data-tip="' + esc(tip) + '"><img src="icons/clases/' + B.clase + '.webp" alt=""></div>';
         var img = (n.icono && estado.iconos) ? "habilidades/" + n.icono + ".webp" :
           "ui/Node_" + (n.rareza === "None" ? "Common" : n.rareza) + (tomado ? "" : "_Disabled") + ".webp";
-        return '<div class="nodo lleno' + (tomado ? " tomado" : " apagado") + (ultimo ? " ultimo" : "") + '" data-tip="' + esc(tip) + '"><img src="icons/' + img + '" alt="" loading="lazy"></div>';
+        return '<div class="nodo lleno' + (tomado ? " tomado" : " apagado") + (nueva ? " fase-nueva" : ultimo && desde < 0 ? " ultimo" : "") + '" data-tip="' + esc(tip) + '"><img src="icons/' + img + '" alt="" loading="lazy"></div>';
       }).join("") + "</div>" +
+      (desde >= 0 ? '<div class="leyenda-daev"><span>Borde dorado = nodos de la Fase ' + estado.fase + ' en este tablero</span><span>Borde azul = fases anteriores</span>' +
+        "<span>Cambia de pestaña para ver los de cada tablero</span></div>" :
       '<div class="leyenda-daev"><span>Borde azul = nodo tomado hasta este paso del orden</span><span>Borde blanco = último nodo del paso</span>' +
-      "<span>Mueve «Orden» para ver en qué orden se cogen</span></div>" +
+      "<span>Mueve «Orden» para ver en qué orden se cogen</span></div>") +
+      (fz && tb.propio ? '<div class="aviso" style="margin-top:10px">Las fases son solo para los 416 cristales de los cuatro primeros tableros; este va aparte, con su ruta completa.</div>' : "") +
+      (estado.fase ? tablaFases(pr) : "") +
       (tb.propio && tb.aviso ? '<div class="aviso" style="margin-top:10px">' + tb.aviso + "</div>" :
       tb.propio ? '<div class="aviso" style="margin-top:10px"><strong>Ariel (nuevo, parche del 21-oct):</strong> solo JcE y con cristales propios, no con los puntos de nivel. ' +
       "Sale <strong>Fragmento de Ariel</strong> en el modo <strong>Difícil</strong> de Cueva de Krao y Draupnir (nivel de objeto <strong>2.600</strong>); 100 fragmentos = 1 Cristal de Daevanion: Ariel " +
@@ -428,6 +450,24 @@ function pintarDaevanion(B, H) {
       "Los tableros se abren a nivel " + abren() + (D.tableros.some(function (t) { return t.propio; }) ? "; Ariel va aparte, con sus propios cristales" : "") + ".</div>");
     el.innerHTML = h;
   }
+  // qué poner en cada tablero en cada fase (nodos y cristales que se añaden)
+  function tablaFases(pr) {
+    var tabs = D.tableros.filter(function (t) { return !t.propio; });
+    var filas = pr.fases.map(function (f, i) {
+      var antes = i ? pr.fases[i - 1].hasta : {};
+      return '<tr' + (estado.fase === i + 1 ? ' class="on"' : "") + "><td><strong>Fase " + (i + 1) + "</strong></td><td>" + f.puntos + "</td>" + tabs.map(function (t) {
+        var lista = (pr.tableros[t.tablero] || { tomados: [] }).tomados, a = antes[t.tablero] || 0, h = f.hasta[t.tablero] || 0;
+        var coste = {}, s = 0;
+        t.nodos.forEach(function (n) { coste[n.id] = n.coste; });
+        lista.slice(a, h).forEach(function (id) { s += coste[id] || 0; });
+        return "<td>" + (h > a ? "+" + (h - a) + " nodos · " + s : "nada") + "</td>";
+      }).join("") + "</tr>";
+    }).join("");
+    return '<div class="aviso" style="margin-top:10px"><strong>Por fases:</strong> los 416 cristales en 3 tandas parejas, repartidas entre los cuatro tableros para que el daño suba a la vez. ' +
+      "Primero va lo que pide el autor de esta build y luego lo que más daño da por cristal. En cada fase pon en cada tablero los nodos en dorado (cambia de pestaña) y pasa a la siguiente. Ariel y Azphel van aparte.</div>" +
+      '<div class="tabla-scroll"><table class="tabla tabla-fases"><thead><tr><th>Fase</th><th>Cristales</th>' +
+      tabs.map(function (t) { return "<th>" + esc(t.nombre) + "</th>"; }).join("") + "</tr></thead><tbody>" + filas + "</tbody></table></div>";
+  }
   function abren() {
     return D.tableros.filter(function (t) { return !t.propio; }).map(function (t) { return t.nivel; }).join(", ");
   }
@@ -440,10 +480,12 @@ function pintarDaevanion(B, H) {
   el.addEventListener("click", function (e) {
     var b = e.target.closest("button");
     if (!b) return;
-    if (b.dataset.preset) { estado.preset = +b.dataset.preset; estado.paso = null; }
+    if (b.dataset.preset) { estado.preset = +b.dataset.preset; estado.paso = null; estado.fase = null; }
+    if (b.dataset.fase) { estado.preset = iFases; estado.paso = null; estado.fase = +b.dataset.fase; }
     if (b.dataset.tab) { estado.tablero = +b.dataset.tab; estado.paso = null; }
     if (b.dataset.iconos) estado.iconos = !estado.iconos;
     if (b.dataset.mov) {
+      estado.fase = null;
       var n = D.presets[estado.preset].tableros[D.tableros[estado.tablero].tablero].tomados.length;
       var p = estado.paso == null ? n : estado.paso;
       estado.paso = Math.max(0, Math.min(n, p + (+b.dataset.mov)));
@@ -451,7 +493,7 @@ function pintarDaevanion(B, H) {
     pinta();
   });
   el.addEventListener("input", function (e) {
-    if (e.target.type === "range") { estado.paso = +e.target.value; pinta(); }
+    if (e.target.type === "range") { estado.paso = +e.target.value; estado.fase = null; pinta(); }
   });
   pinta();
 }
@@ -546,7 +588,7 @@ function elegirGuia(g) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  var V = "?v=23";
+  var V = "?v=24";
   cargarScript("data/builds/" + c + ".js" + V, function () {
     cargarScript("data/couga/" + c + ".js" + V, arranca, arranca);
   }, function () {
