@@ -636,7 +636,7 @@ function elegirGuia(g) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  var V = "?v=29";
+  var V = "?v=30";
   cargarScript("data/builds/" + c + ".js" + V, function () {
     cargarScript("data/couga/" + c + ".js" + V, build3, build3);
   }, function () {
