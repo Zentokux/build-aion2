@@ -1,6 +1,8 @@
-// Página de clase: dos builds por clase, Build 1 (window.BUILD, data/builds) y Build 2 (window.BUILD2, data/couga); pinta la elegida
+// Página de clase: Build 1 (window.BUILD, data/builds) y Build 2 (window.BUILD2, data/couga) en todas las clases,
+// Build 3 (window.BUILD3, data/build3) solo en BUILD3_CLASES; pinta la elegida
+var BUILD3_CLASES = ["assassin"];
 var TECLA_TXT = { LMB: "Clic izq.", RMB: "Clic der.", Espacio: "Espacio", Otra: "Otra" };
-var PRESET_DAEV = { "Launch priority": "Prioridad de lanzamiento", "Full PvE": "JcE completo", "Guide route": "Ruta de la guía", "Up to 416": "Con 416 cristales (máx. daño)" };
+var PRESET_DAEV = { "Launch priority": "Prioridad de lanzamiento", "Full PvE": "JcE completo", "Guide route": "Ruta de la guía", "Up to 416": "Con 416 cristales (máx. daño)", "Full board": "Tablero completo" };
 // puntos de habilidad que cuesta llevar una habilidad del nivel 1 al n (2-4: 1 por nivel, 5-7: 2, 8-10: 4)
 var COSTE_PTS = { 1: 0, 2: 1, 3: 2, 4: 3, 5: 5, 6: 7, 7: 9, 8: 13, 9: 17, 10: 21 };
 var IZQ = [["MainHand", "SubHand"], ["Helmet", "Shoulder"], ["Torso", "Pants"], ["Gloves", "Boots"], ["Cape"]];
@@ -68,7 +70,7 @@ function pintarClase(B, guia) {
     cont.map(function (c) { return '<div class="fila">' + esc(c.label) + "<b>" + c.used + ' <small style="color:var(--suave)">/ ' + c.cap + "</small></b></div>"; }).join("") +
     '<div class="fila">Nv. de personaje<b>' + B.nivel + "</b></div></div>";
 
-  var h = '<div class="pestanas" id="tabs-guia">' + [1, 2].filter(function (g) { return g === 1 || window.BUILD2; }).map(function (g) {
+  var h = '<div class="pestanas" id="tabs-guia">' + [1, 2, 3].filter(function (g) { return buildDe(g); }).map(function (g) {
     return '<button class="pestana' + (g === guia ? " on" : "") + '" data-guia="' + g + '">' + GUIAS[g] + "</button>";
   }).join("") + "</div>";
   h += "<h1>Build PvE de " + esc(B.nombre) + '</h1><div class="ruta">AION 2 / Guías de builds</div>' +
@@ -616,32 +618,40 @@ function pintarColeccionables(C, filasStats, habN) {
   if (primero) pinta(primero.dataset.tab);
 }
 
-// Build 1 o Build 2: se recuerda la elegida en este navegador y va en la dirección (&g=1 / &g=2)
-var GUIAS = { 1: "Build 1", 2: "Build 2" };
+// Build 1, 2 o 3 (la 3 solo en las clases que la tienen): se recuerda la elegida en este navegador y va en la dirección (&g=1 / &g=2 / &g=3)
+var GUIAS = { 1: "Build 1", 2: "Build 2", 3: "Build 3" };
+function buildDe(g) {
+  return g === 3 ? window.BUILD3 : g === 2 ? window.BUILD2 : window.BUILD;
+}
 function elegirGuia(g) {
   try { localStorage.setItem("guia-elegida", String(g)); } catch (e) {}
   var u = new URL(location.href);
   u.searchParams.set("g", String(g));
   history.replaceState(null, "", u);
   var y = window.scrollY;
-  pintarClase(g === 2 ? window.BUILD2 : window.BUILD, g);
+  pintarClase(buildDe(g), g);
   window.scrollTo(0, y);
 }
 
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  var V = "?v=26";
+  var V = "?v=27";
   cargarScript("data/builds/" + c + ".js" + V, function () {
-    cargarScript("data/couga/" + c + ".js" + V, arranca, arranca);
+    cargarScript("data/couga/" + c + ".js" + V, build3, build3);
   }, function () {
     document.getElementById("main").innerHTML = "<p>No existe esa clase.</p>";
   });
+  function build3() {
+    if (BUILD3_CLASES.indexOf(c) >= 0) cargarScript("data/build3/" + c + ".js" + V, arranca, arranca);
+    else arranca();
+  }
   function arranca() {
     var g = 1, pg = (param("g") || "").toLowerCase();
     if (pg === "2" || pg === "c2") g = 2;          // c2/m1: enlaces de antes
+    else if (pg === "3") g = 3;
     else if (pg !== "1" && pg !== "m1") try { g = +localStorage.getItem("guia-elegida") || 1; } catch (e) {}
-    if (g === 2 && !window.BUILD2) g = 1;
-    pintarClase(g === 2 ? window.BUILD2 : window.BUILD, g);
+    if (!buildDe(g)) g = 1;
+    pintarClase(buildDe(g), g);
   }
 })();
