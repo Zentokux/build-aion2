@@ -109,8 +109,65 @@
     "Un nodo solo se abre **junto a uno que ya tienes** (arriba, abajo, izquierda, derecha): el camino cuesta tanto como el destino.",
     "Elige una dirección y no vayas de un lado a otro: quemas puntos en nodos que no querías.",
     "Se pueden **devolver nodos** a cambio de moneda del juego (Kina). El precio no se ha publicado de forma fiable.",
-    "No se sabe cuántos puntos tiene un personaje al tope ni cuánto cuesta cada nodo."
+    "En global se juntan como mucho **416 Daevanion Crystal** para los cuatro tableros de JcE, y llenarlos cuesta **570** (Nezekan, Zikel y Vaizel 134 cada uno, Triniel 168): no da para todo, por eso cada build dice qué coger."
    ]
+  },
+  {
+   "id": "daev-builds",
+   "titulo": "Daevanion en cada build (cristales en los cuatro tableros de JcE)",
+   "tipo": "tabla",
+   "columnas": [
+    "Clase",
+    "Build 1",
+    "Build 2"
+   ],
+   "filas": [
+    [
+     "**Sicario**",
+     "Prioridad de lanzamiento **345** · JcE completo **498** · Con 416 cristales **416**",
+     "Ruta de la guía **234** · Con 416 cristales **416**"
+    ],
+    [
+     "**Gladiador**",
+     "Prioridad de lanzamiento **295** · JcE completo **542** · Con 416 cristales **416**",
+     "Ruta de la guía **216** · Con 416 cristales **416**"
+    ],
+    [
+     "**Templario**",
+     "Prioridad de lanzamiento **336** · JcE completo **497** · Con 416 cristales **416**",
+     "Ruta de la guía **238** · Con 416 cristales **416**"
+    ],
+    [
+     "**Ranger**",
+     "Prioridad de lanzamiento **299** · JcE completo **497** · Con 416 cristales **416**",
+     "Ruta de la guía **230** · Con 416 cristales **416**"
+    ],
+    [
+     "**Hechicero**",
+     "Prioridad de lanzamiento **277** · JcE completo **471** · Con 416 cristales **416**",
+     "Ruta de la guía **264** · Con 416 cristales **416**"
+    ],
+    [
+     "**Espiritualista**",
+     "Prioridad de lanzamiento **258** · JcE completo **526** · Con 416 cristales **416**",
+     "Ruta de la guía **246** · Con 416 cristales **416**"
+    ],
+    [
+     "**Clérigo**",
+     "Prioridad de lanzamiento **306** · JcE completo **534** · Con 416 cristales **416**",
+     "Ruta de la guía **243** · Con 416 cristales **416**"
+    ],
+    [
+     "**Conjurador**",
+     "Prioridad de lanzamiento **319** · JcE completo **462** · Con 416 cristales **416**",
+     "Ruta de la guía **227** · Con 416 cristales **416**"
+    ]
+   ]
+  },
+  {
+   "id": "daev-builds-aviso",
+   "tipo": "aviso",
+   "texto": "**Build 1:** su autor da dos rutas, **Prioridad de lanzamiento** y luego **JcE completo** (que pide más de los 416 que hay hoy); «Con 416 cristales» lo pone esta guía, solo con nodos de su JcE completo. Su autor no trata Ariel: la ruta de Ariel de la Build 1 es de esta guía (máximo daño). **Build 2:** todo es de su autor: la ruta de la guía, el orden hasta 416 (y sus tres fases) y la ruta de Ariel. Cada ruta, nodo a nodo, está en la página de la clase (sección Daevanion, pestaña de cada build)."
   },
   {
    "titulo": "De dónde salen puntos y cristales (Corea)",
@@ -166,10 +223,11 @@
   },
   {
    "tipo": "aviso",
-   "texto": "Eso es Corea. En global, por ahora, los cristales de Ariel salen **solo del modo Difícil** (parche del 21-oct, abajo); las demás fuentes coreanas aún no han llegado. Azphel sigue siendo solo PvP."
+   "texto": "Eso es Corea. En global, por ahora, los cristales de Ariel salen **solo del modo Difícil** (parches del 21 y 28-oct, abajo); las demás fuentes coreanas aún no han llegado. Azphel sigue siendo solo PvP."
   },
   {
-   "titulo": "Ariel en global (parche del 21-oct-2026)",
+   "id": "daev-ariel",
+   "titulo": "Ariel en global (parches del 21 y 28-oct-2026)",
    "tipo": "tabla",
    "columnas": [
     "Qué",
@@ -178,7 +236,7 @@
    "filas": [
     [
      "Dónde",
-     "Modo **Difícil** de Cueva de Krao y Draupnir: nivel de objeto **2.600**, frenesí del jefe a los 4 min y 3 resurrecciones por jugador"
+     "Modo **Difícil** de Cueva de Krao y Draupnir (nivel de objeto **2.600**) y, desde el 28-oct, de Cañón de Urugugu e Isla Aérea de Vakron (**2.700**)"
     ],
     [
      "Qué sale",
@@ -190,11 +248,11 @@
     ],
     [
      "Total",
-     "**60 puntos** por personaje, aparte de los puntos de nivel"
+     "**120 puntos** por personaje (antes del 28-oct, 60), aparte de los 416 de los otros cuatro tableros"
     ],
     [
-     "Ruta (todas las clases)",
-     "Los 4 nodos de Amplificación de Daño de JcE (+6%), uno de Amplificación de Daño de Jefe (+1%) y Crítico +10; primero los dos del medio (a los 13 y 26 cristales). Está dibujada en la pestaña Ariel del tablero de cada clase"
+     "Ruta",
+     "Va en la pestaña Ariel del tablero de cada clase. **Build 2** (la de su autor, igual en todas las clases): los 4 nodos de Amplificación de Daño de JcE (+6 %), los 4 de Amplificación de Daño de Jefe (+4 %), los 4 de Tolerancia a Daño JcE (+6 %) y dos de Crítico (+20); los primeros 60 son los de antes (los dos de JcE del medio a los 13 y 26 cristales), luego Jefe (a 87) y Tolerancia (a 117). **Build 1**: su autor no lo trata; ruta de máximo daño de esta guía"
     ]
    ]
   },
