@@ -428,7 +428,7 @@
    "tipo": "tabla",
    "columnas": [
     "Equipo",
-    "Opciones PvE (Amplificación de Daño de JcE, Tolerancia a Daño JcE)"
+    "Opciones JcE (Amplificación de Daño de JcE, Tolerancia a Daño JcE)"
    ],
    "filas": [
     [
@@ -446,7 +446,7 @@
    "tipo": "lista",
    "items": [
     "Enero de 2026: el productor dijo que el equipo fabricado mantendría su valor la siguiente temporada y en el contenido nuevo (intención de diseño, no garantía).",
-    "En la tercera temporada coreana, las dos series Épicas señaladas como mejor set PvE **solo se fabrican**.",
+    "En la tercera temporada coreana, las dos series Épicas señaladas como mejor set JcE **solo se fabrican**.",
     "Una pieza Épica exclusiva de fabricación cuesta en Corea cerca de **280 a 300 millones de Kina**: proyecto de toda una temporada, no lo uses como objetivo de ahorro."
    ]
   },
@@ -462,7 +462,7 @@
    "titulo": "Comprobar el primer día (por prioridad)",
    "tipo": "pasos",
    "items": [
-    "Si el botín de mazmorra lleva opciones de amplificación y resistencia PvE: si las lleva, el argumento entero se cae.",
+    "Si el botín de mazmorra lleva opciones de amplificación y resistencia JcE: si las lleva, el argumento entero se cae.",
     "Si se puede conseguir Épico y de dónde.",
     "Si algún grado es exclusivo de fabricación.",
     "La barrera del mercado (Membership)."

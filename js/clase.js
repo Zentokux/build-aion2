@@ -18,7 +18,7 @@ function pintarClase(B, guia) {
     return H["x:" + x.nombre] = { id: "x:" + x.nombre, nombre: x.nombre, icono: x.icono, tipo: "No va en esta build (alternativa)", especializaciones: [], efecto: "" };
   });
   var main = document.getElementById("main");
-  document.title = "Build PvE de " + B.nombre + " · BUILD AION2";
+  document.title = "Build JcE de " + B.nombre + " · BUILD AION2";
   var secciones = [];
 
   // ---------- utilidades ----------
@@ -71,7 +71,7 @@ function pintarClase(B, guia) {
   var h = '<div class="pestanas" id="tabs-guia">' + [1, 2].filter(function (g) { return buildDe(g); }).map(function (g) {
     return '<button class="pestana' + (g === guia ? " on" : "") + '" data-guia="' + g + '">' + GUIAS[g] + "</button>";
   }).join("") + "</div>";
-  h += "<h1>Build PvE de " + esc(B.nombre) + '</h1><div class="ruta">AION 2 / Guías de builds</div>' +
+  h += "<h1>Build JcE de " + esc(B.nombre) + '</h1><div class="ruta">AION 2 / Guías de builds</div>' +
     '<p class="intro">' + md(T.resumen || "") + "</p>";
   h += seccion("resumen", "Resumen de la build",
     '<div class="resumen"><div>' + bloquesHTML(S.resumen) +
@@ -128,7 +128,7 @@ function pintarClase(B, guia) {
   var bloqEq = S.equipo || [];
   if (!Object.keys(B.equipo || {}).length) te = "";   // la guía no da piezas concretas: solo sus tablas
   // prioridad de atributos (tabla + aviso) y ruta del arma antes de la tabla de Soul Binding
-  var antes = bloqEq.length && bloqEq[0].titulo === "Atributos que priorizar (PvE)" ? 3 : 1;
+  var antes = bloqEq.length && bloqEq[0].titulo === "Atributos que priorizar (JcE)" ? 3 : 1;
   te += bloquesHTML(bloqEq.slice(0, antes)) + tablaSB + bloquesHTML(bloqEq.slice(antes));
   h += seccion("equipo", "Equipo", te);
 
@@ -634,7 +634,7 @@ function elegirGuia(g) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  var V = "?v=31";
+  var V = "?v=32";
   cargarScript("data/builds/" + c + ".js" + V, function () {
     cargarScript("data/couga/" + c + ".js" + V, arranca, arranca);
   }, function () {

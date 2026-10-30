@@ -2,14 +2,14 @@
  "slug": "pvp__es-obligatorio-el-pvp-en-aion-2",
  "categoria": "pvp",
  "titulo": "¿Es obligatorio el PvP?",
- "resumen": "No: puedes subir, equiparte, hacer mazmorras y raids sin pelear nunca contra otro jugador. Pero el PvE necesita AP (fragmentos de stigma) y el PvP necesita nivel de objeto y poder de combate que se ganan en PvE.",
+ "resumen": "No: puedes subir, equiparte, hacer mazmorras y raids sin pelear nunca contra otro jugador. Pero el JcE necesita AP (fragmentos de stigma) y el PvP necesita nivel de objeto y poder de combate que se ganan en JcE.",
  "bloques": [
   {
    "tipo": "aviso",
    "texto": "Números medidos en **servidores coreanos a septiembre de 2026**. Seguro para el lanzamiento: PvP opcional, AP sin PvP, fragmentos de stigma con AP y Abismo con PvP abierto. Comprueba los umbrales y si la contienda de la Grieta Espacio-Tiempo existe siquiera en global."
   },
   {
-   "titulo": "Si solo quieres PvE: lo que te ata al lado de facción",
+   "titulo": "Si solo quieres JcE: lo que te ata al lado de facción",
    "tipo": "tabla",
    "columnas": [
     "Qué",
@@ -39,13 +39,13 @@
     ],
     [
      "**Equipo de facción**",
-     "Las piezas **Decanus** allanan el camino a las mazmorras superiores del Abismo (PvE en zona PvP)",
+     "Las piezas **Decanus** allanan el camino a las mazmorras superiores del Abismo (JcE en zona PvP)",
      "Cómpralas poco a poco; destaca el **anillo Decanus**: Único, nivel 62, **30.000 AP**"
     ]
    ]
   },
   {
-   "titulo": "Si solo quieres PvP: las barreras (todas se ganan en PvE)",
+   "titulo": "Si solo quieres PvP: las barreras (todas se ganan en JcE)",
    "tipo": "tabla",
    "columnas": [
     "Contenido",
@@ -81,7 +81,7 @@
      "AP y **Medals of Merit**"
     ],
     [
-     "PvE",
+     "JcE",
      "**Sanctuary** y crafteo",
      "La suya propia"
     ]
@@ -114,7 +114,7 @@
    ]
   },
   {
-   "titulo": "Los dos cruces entre PvE y PvP",
+   "titulo": "Los dos cruces entre JcE y PvP",
    "tipo": "tabla",
    "columnas": [
     "Dirección",
@@ -122,11 +122,11 @@
    ],
    "filas": [
     [
-     "PvP → PvE",
+     "PvP → JcE",
      "**Fragmentos de estigma** (con AP)"
     ],
     [
-     "PvE → PvP",
+     "JcE → PvP",
      "**Nivel de objeto** (y poder de combate)"
     ]
    ]
@@ -135,8 +135,8 @@
    "titulo": "Resumen",
    "tipo": "lista",
    "items": [
-    "Jugador de PvE: tu obligación es un circuito de misiones en zona con riesgo a cambio de una moneda que necesitas de vez en cuando.",
-    "Jugador de PvP: tu obligación es mayor; los requisitos de entrada al mejor PvP son números de PvE."
+    "Jugador de JcE: tu obligación es un circuito de misiones en zona con riesgo a cambio de una moneda que necesitas de vez en cuando.",
+    "Jugador de PvP: tu obligación es mayor; los requisitos de entrada al mejor PvP son números de JcE."
    ]
   }
  ]

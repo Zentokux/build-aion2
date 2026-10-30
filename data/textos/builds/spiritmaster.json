@@ -221,7 +221,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Fuera de la barra de PvE: Invocación: Espíritu de viento (saca su habilidad menos y más tarde) y Grito de alma (PvP)."
+    "texto": "Fuera de la barra de JcE: Invocación: Espíritu de viento (saca su habilidad menos y más tarde) y Grito de alma (PvP)."
    },
    {
     "tipo": "aviso",
@@ -280,12 +280,12 @@
      [
       "Resto (Protección de Espíritu, Descenso de Espíritu, Erosión, Retroceso continuo, Comunión de Espíritu, Pacto de resurrección)",
       "14",
-      "Con los tableros basta para PvE"
+      "Con los tableros basta para JcE"
      ]
     ]
    },
    {
-    "titulo": "Puntos que sobran (PvE)",
+    "titulo": "Puntos que sobran (JcE)",
     "tipo": "aviso",
     "texto": "Esta build ya tiene todas las habilidades a **10** con puntos. Si te sobran, guárdalos: no hay otro sitio donde ponerlos."
    }
@@ -364,7 +364,7 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Los presets de solo y de stagger son recomendación de esta guía; el de stagger **está sin probar**. Cursed Cloud también es fuerte en PvE, pero no cabe con 4 ranuras. PvP: Espíritu ancestral, Favor de Espíritu, Command: Proxy y Seize Magic (Golpe conjunto: Corrosión en vez de Proxy contra sanadores), y sube Eliminación de impacto, Impacto helado, Maldición y Combustión a 20."
+    "texto": "Los presets de solo y de stagger son recomendación de esta guía; el de stagger **está sin probar**. Cursed Cloud también es fuerte en JcE, pero no cabe con 4 ranuras. PvP: Espíritu ancestral, Favor de Espíritu, Command: Proxy y Seize Magic (Golpe conjunto: Corrosión en vez de Proxy contra sanadores), y sube Eliminación de impacto, Impacto helado, Maldición y Combustión a 20."
    }
   ],
   "daevanion": [
@@ -390,14 +390,14 @@
     "titulo": "Qué saltarte",
     "tipo": "lista",
     "items": [
-     "Nodos de Invocación: Espíritu de viento (no va en la barra de PvE).",
+     "Nodos de Invocación: Espíritu de viento (no va en la barra de JcE).",
      "Nodos de Grito de alma: es un Fear de PvP, 3 puntos por nodo para nada.",
-     "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): inútiles en PvE."
+     "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): inútiles en JcE."
     ]
    },
    {
     "tipo": "aviso",
-    "texto": "Dos presets: **Prioridad de lanzamiento** (258 puntos, pasos 1-3) y **PvE completo** (526). No se sabe cuántos puntos tiene un nivel 45 en el lanzamiento: sigue el primero y para donde se acaben. Reasignar es barato."
+    "texto": "Dos presets: **Prioridad de lanzamiento** (258 puntos, pasos 1-3) y **JcE completo** (526). No se sabe cuántos puntos tiene un nivel 45 en el lanzamiento: sigue el primero y para donde se acaben. Reasignar es barato."
    }
   ],
   "rotacion": [

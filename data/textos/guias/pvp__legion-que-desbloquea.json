@@ -2,7 +2,7 @@
  "slug": "pvp__legion-que-desbloquea",
  "categoria": "pvp",
  "titulo": "Legión: qué desbloquea",
- "resumen": "Ninguna legión es obligatoria, pero únete igualmente por sus buffs (EXP, ataque PvE y PvP) y entra antes de tu primera noche de asedio, que depende de la legión. No se ha encontrado contenido PvE que la requiera.",
+ "resumen": "Ninguna legión es obligatoria, pero únete igualmente por sus buffs (EXP, ataque JcE y PvP) y entra antes de tu primera noche de asedio, que depende de la legión. No se ha encontrado contenido JcE que la requiera.",
  "bloques": [
   {
    "tipo": "aviso",
@@ -43,7 +43,7 @@
      "Cuesta **Legion Coin o Kina** activarlo (lo gestiona la legión)"
     ],
     [
-     "Poder de ataque PvE",
+     "Poder de ataque JcE",
      "Igual"
     ],
     [
@@ -115,7 +115,7 @@
   },
   {
    "tipo": "aviso",
-   "texto": "No se ha encontrado **ningún contenido PvE que requiera legión**: ni mazmorras, ni raids, ni Sanctuary (Expedition y Sanctuary van por grupos). Es ausencia de pruebas, no confirmación oficial. Si una legión te dice que sin ellos no progresas, es discurso de reclutamiento."
+   "texto": "No se ha encontrado **ningún contenido JcE que requiera legión**: ni mazmorras, ni raids, ni Sanctuary (Expedition y Sanctuary van por grupos). Es ausencia de pruebas, no confirmación oficial. Si una legión te dice que sin ellos no progresas, es discurso de reclutamiento."
   },
   {
    "titulo": "Cómo elegir legión",

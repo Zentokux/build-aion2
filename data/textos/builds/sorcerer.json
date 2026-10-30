@@ -1,12 +1,12 @@
 {
  "clase": "sorcerer",
  "nombre": "Hechicero",
- "resumen": "Caster de PvE a 20 metros cuyo daño es una cadena de reducciones de enfriamiento: Flecha en llamas marca, Explosión de llama gasta la marca y acelera Voto de concentración, Voto quita 10 s a todo y Quebrantamiento en llamas acelera **Llamas del infierno**, tu golpe más fuerte. Mejora elemental (+20% de Ataque de Fuego y Agua) lo multiplica todo y la **Reducción de Tiempo de Enfriamiento** es lo que mantiene la rueda girando.",
+ "resumen": "Caster de JcE a 20 metros cuyo daño es una cadena de reducciones de enfriamiento: Flecha en llamas marca, Explosión de llama gasta la marca y acelera Voto de concentración, Voto quita 10 s a todo y Quebrantamiento en llamas acelera **Llamas del infierno**, tu golpe más fuerte. Mejora elemental (+20% de Ataque de Fuego y Agua) lo multiplica todo y la **Reducción de Tiempo de Enfriamiento** es lo que mantiene la rueda girando.",
  "pros": [
   "20 metros de alcance: rara vez te comes lo malo del suelo.",
   "El daño se reparte entre muchas habilidades: un casteo fallado no arruina el pull.",
   "Barrera de fuego, Tormenta helada y Viento helado golpean hasta 4 enemigos y siguen golpeando mientras estén dentro.",
-  "Toga de llama no tiene techo de nivel: cada nivel es más daño PvE.",
+  "Toga de llama no tiene techo de nivel: cada nivel es más daño JcE.",
   "Explosión de Congelación te cura: aguantas en solitario mejor que la mayoría de casters.",
   "El equipo crafteado conserva sus líneas de Soul Binding al subirlo de tier."
  ],
@@ -76,7 +76,7 @@
      "**Toga de llama** en toda la armadura, pendientes y collar: 10 líneas = +10 niveles a tu mejor pasiva.",
      "Amplificación de Daño es la línea más rara del grimorio: no tires uno con buena Velocidad de Hechizo y Amplificación de Daño de Arma por esperarla.",
      "Perforación tiene poca prioridad: tu rango de daño solo tiene un 10% de amplitud.",
-     "Tolerancia a Daño Crítico y Tolerancia a Daño de Arma en la capa no sirven en PvE: rerolléalas.",
+     "Tolerancia a Daño Crítico y Tolerancia a Daño de Arma en la capa no sirven en JcE: rerolléalas.",
      "Anillos = niveles de habilidad: llevan las 4 principales de 14 a 16 (5.ª especialización). Ataque en un anillo solo cuando cumplas todos los objetivos de habilidad.",
      "La línea extra de Piedra filosofal no se conserva al transferir o subir de tier; todo lo demás sí."
     ]
@@ -141,7 +141,7 @@
      "El set se salta a propósito el bonus de 4 piezas: al principio valen más los stats sueltos.",
      "Brújula de magia antes que la de vitalidad: te falta mucho más Crítico que Precisión (pero el crítico topa en 50%).",
      "Espejo de vitalidad da Reducción de Tiempo de Enfriamiento; cuando pases de cerca de 35% sin ella, cámbiala por Espejo de magia (Golpe).",
-     "Campana de magia apenas importa en PvE: va por su Ataque.",
+     "Campana de magia apenas importa en JcE: va por su Ataque.",
      "La build anota una habilidad por carta: toma sus niveles como mínimo. Cáliz de vitalidad (saca cualquier habilidad) se craftea la última."
     ]
    }
@@ -270,10 +270,10 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Los puntos de habilidad solo suben cada habilidad hasta **10**; lo demás sale del equipo. Si te sobran, ponlos en este orden (enfocado a PvE)."
+    "texto": "Los puntos de habilidad solo suben cada habilidad hasta **10**; lo demás sale del equipo. Si te sobran, ponlos en este orden (enfocado a JcE)."
    },
    {
-    "titulo": "Puntos que sobran (PvE)",
+    "titulo": "Puntos que sobran (JcE)",
     "tipo": "tabla",
     "columnas": [
      "Habilidad",
@@ -411,13 +411,13 @@
     "items": [
      "Al principio: Puntos de Vida máximos, Defensa, Puntos de Maná máximos y Resistencia Crítica (cógelos al completar el tablero).",
      "Absorción de esencia, Merced de resistencia y Pacto de resurrección: PvP y aguante, nada para mazmorra.",
-     "Tolerancia a Daño Crítico (Vaizel) y Resistencia a Multigolpe (Triniel): inútiles en PvE.",
+     "Tolerancia a Daño Crítico (Vaizel) y Resistencia a Multigolpe (Triniel): inútiles en JcE.",
      "Acierto de Multigolpe en Triniel es opinable: esta guía lo coge en el tablero completo, no en el de lanzamiento."
     ]
    },
    {
     "tipo": "aviso",
-    "texto": "Dos presets: **Prioridad de lanzamiento** (277 puntos, pasos 1-3) y **PvE completo** (471). No se sabe cuántos puntos tendrá un nivel 45 en el lanzamiento: sigue el primero y para donde se acaben. Al principio resetear es gratis."
+    "texto": "Dos presets: **Prioridad de lanzamiento** (277 puntos, pasos 1-3) y **JcE completo** (471). No se sabe cuántos puntos tendrá un nivel 45 en el lanzamiento: sigue el primero y para donde se acaben. Al principio resetear es gratis."
    }
   ],
   "rotacion": [

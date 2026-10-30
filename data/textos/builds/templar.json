@@ -1,11 +1,11 @@
 {
  "clase": "templar",
  "nombre": "Templario",
- "resumen": "Tanque de PvE que aguanta al jefe con Provocación y, al bloquear, da Amplificación de Daño de JcE a todo el grupo con Arrebato. Tu daño es **Juicio**: cada habilidad de escudo (Golpe de escudo, Estacazo de amparo, Asalto con escudo: 2 s; Escudo de perdición: 3 s) abre una ventana para pulsarlo, y toda la build busca pulsarlo más a menudo.",
+ "resumen": "Tanque de JcE que aguanta al jefe con Provocación y, al bloquear, da Amplificación de Daño de JcE a todo el grupo con Arrebato. Tu daño es **Juicio**: cada habilidad de escudo (Golpe de escudo, Estacazo de amparo, Asalto con escudo: 2 s; Escudo de perdición: 3 s) abre una ventana para pulsarlo, y toda la build busca pulsarlo más a menudo.",
  "pros": [
   "Todos los grupos necesitan tank: encuentras grupo enseguida.",
   "Juicio no gasta maná y pierde el enfriamiento a nivel 16.",
-  "Arrebato potencia el daño PvE de todo el grupo cada vez que bloqueas.",
+  "Arrebato potencia el daño JcE de todo el grupo cada vez que bloqueas.",
   "Escudo de protección y Estacazo de amparo dejan casi cualquier golpe de jefe en nada.",
   "El equipo crafteado conserva sus líneas de Soul Binding al subirlo de tier.",
   "Provocación encoge al jefe: menos Precisión y menos Ataque contra tu grupo."
@@ -242,10 +242,10 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Los puntos de habilidad solo suben cada habilidad hasta **10**; lo demás sale del equipo. Si te sobran, ponlos en este orden (enfocado a PvE)."
+    "texto": "Los puntos de habilidad solo suben cada habilidad hasta **10**; lo demás sale del equipo. Si te sobran, ponlos en este orden (enfocado a JcE)."
    },
    {
-    "titulo": "Puntos que sobran (PvE)",
+    "titulo": "Puntos que sobran (JcE)",
     "tipo": "tabla",
     "columnas": [
      "Habilidad",
@@ -276,7 +276,7 @@
      [
       "Restricción de dolor",
       "de 1 a 10",
-      "Tanque: −daño recibido en PvE"
+      "Tanque: −daño recibido en JcE"
      ],
      [
       "Sello de protección",
@@ -363,7 +363,7 @@
      ],
      [
       "Armadura de nobleza",
-      "El mejor de PvE: Puntos de Vida y Defensa; dura 120 s con 120 s de enfriamiento (siempre activa)",
+      "El mejor de JcE: Puntos de Vida y Defensa; dura 120 s con 120 s de enfriamiento (siempre activa)",
       "10 y 15: Rugido agravante y Arrebato x1,5; 20: +10% curación recibida"
      ],
      [
@@ -419,12 +419,12 @@
      "Puntos de Maná máximos: al principio no los necesitas.",
      "Desenfreno de destello: 3 puntos por nodo para una habilidad que no usas.",
      "Verdes de Escudo de amparo y Sello de protección, salvo que te sobren puntos.",
-     "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): inútiles en PvE."
+     "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): inútiles en JcE."
     ]
    },
    {
     "tipo": "aviso",
-    "texto": "Dos presets: **Prioridad de lanzamiento** (336 puntos, pasos 1-3) y **PvE completo** (497). No se sabe cuántos puntos tendrá un nivel 45 en el lanzamiento: sigue el primero y para donde se acaben. Resetear es barato."
+    "texto": "Dos presets: **Prioridad de lanzamiento** (336 puntos, pasos 1-3) y **JcE completo** (497). No se sabe cuántos puntos tendrá un nivel 45 en el lanzamiento: sigue el primero y para donde se acaben. Resetear es barato."
    }
   ],
   "rotacion": [

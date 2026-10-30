@@ -11,7 +11,7 @@
    "Dentro de un mismo tier, la clase que va **primero** es la que se elegiría antes.",
    "Estar bajo en una lista no significa ser débil: ese contenido todavía no necesita su rol (ejemplo claro: el Templario mientras subes de nivel)."
   ]},
-  {"titulo": "Tiers PvE", "tipo": "tabla", "columnas": ["Contenido", "Tier S", "Tier A", "Tier B", "Tier C", "Tier D"], "filas": [
+  {"titulo": "Tiers JcE", "tipo": "tabla", "columnas": ["Contenido", "Tier S", "Tier A", "Tier B", "Tier C", "Tier D"], "filas": [
    ["Subir de nivel", "Ranger, Hechicero, Espiritualista", "Sicario, Gladiador, Clérigo", "Templario, Conjurador", "-", "-"],
    ["Mazmorras con grupo experimentado", "Conjurador, Templario, Gladiador, Clérigo", "Sicario, Espiritualista", "Ranger, Hechicero", "-", "-"],
    ["Mazmorras mientras aprendes", "Clérigo, Templario, Conjurador", "Ranger, Espiritualista, Gladiador", "Sicario, Hechicero", "-", "-"]
@@ -49,7 +49,7 @@
   ]},
   {"tipo": "aviso", "texto": "Fueron correcciones, no cambios de balance: ninguna clase cambia de tier, pero los dos lanzadores de hechizos se sienten mejor que en la semana del lanzamiento."},
   {"tipo": "aviso", "texto": "**Solo Corea (no está en el global):** la actualización coreana del 14 de octubre bajó el daño PvP en torno a un 30%, hizo que la habilidad de asalto de cada clase dé hasta un 80% de Defensa y de todas las resistencias elementales durante unos segundos, y dio daño elemental a los ataques de Hechicero, Espiritualista y Clérigo. Si llega al global, los tiers de Abismo y Asedio serán los primeros en cambiar."},
-  {"titulo": "Guías de build PvE por clase", "tipo": "tabla", "columnas": ["Clase", "Idea de la build"], "filas": [
+  {"titulo": "Guías de build JcE por clase", "tipo": "tabla", "columnas": ["Clase", "Idea de la build"], "filas": [
    ["Templario (tanque)", "Cada habilidad de escudo abre una ventana corta para Juicio: ahí está su daño."],
    ["Gladiador (DPS)", "Diez segundos de Explosión de furia sin enfriamiento en Punzada descendente."],
    ["Sicario (burst)", "Estocada al corazón solo salta con crítico, y cada crítico puede reiniciarla."],

@@ -1,11 +1,11 @@
 {
  "clase": "ranger",
  "nombre": "Ranger",
- "resumen": "DPS a distancia de PvE (nivel 45: Expedition, Transcendence y farmeo diario) que pega desde 20 metros. La clave: junta tus buffs, mantén **Precisión** (de Flecha en el objetivo) y haz que **Flecha al objetivo** cargada caiga dentro de esa ventana; entre ráfagas, Disparo certero + macro + Flecha al objetivo.",
+ "resumen": "DPS a distancia de JcE (nivel 45: Expedition, Transcendence y farmeo diario) que pega desde 20 metros. La clave: junta tus buffs, mantén **Precisión** (de Flecha en el objetivo) y haz que **Flecha al objetivo** cargada caiga dentro de esa ventana; entre ráfagas, Disparo certero + macro + Flecha al objetivo.",
  "pros": [
   "Casi todo llega a 20 metros: esquivas de lejos la mayoría de mecánicas de jefe.",
   "Disparo certero no gasta Puntos de Maná y además los devuelve: el maná casi nunca falta.",
-  "Huracán de flechas te sube Velocidad de Hechizo y daño de PvE en cada lanzamiento.",
+  "Huracán de flechas te sube Velocidad de Hechizo y daño de JcE en cada lanzamiento.",
   "Flecha al objetivo, Huracán de flechas, Flecha de tentáculo, Estallido de flechas y Flecha de grifo se pueden especializar para lanzarlas en movimiento.",
   "Flecha de bendición y Poder de Vaizel se apilan en una ventana de burst corta y muy fuerte.",
   "El equipo crafteado conserva sus líneas de Soul Binding al subirlo de tier."
@@ -242,7 +242,7 @@
     "tipo": "tabla",
     "columnas": [
      "Habilidad",
-     "PvE (1.ª opción)",
+     "JcE (1.ª opción)",
      "Opcional"
     ],
     "filas": [
@@ -315,10 +315,10 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Los puntos de habilidad solo suben cada habilidad hasta **10**; lo demás sale del equipo. Si te sobran, ponlos en este orden (enfocado a PvE)."
+    "texto": "Los puntos de habilidad solo suben cada habilidad hasta **10**; lo demás sale del equipo. Si te sobran, ponlos en este orden (enfocado a JcE)."
    },
    {
-    "titulo": "Puntos que sobran (PvE)",
+    "titulo": "Puntos que sobran (JcE)",
     "tipo": "tabla",
     "columnas": [
      "Habilidad",
@@ -484,7 +484,7 @@
     "titulo": "Orden",
     "tipo": "pasos",
     "items": [
-     "Nodos azules de habilidad: cada tablero de PvE da +1 a Flecha al objetivo, Huracán de flechas, Disparo certero, Flecha punzante, Tiro rápido y Estallido de flechas (de 10 a 14; Estallido de flechas a 12 para su 2.ª especialización).",
+     "Nodos azules de habilidad: cada tablero de JcE da +1 a Flecha al objetivo, Huracán de flechas, Disparo certero, Flecha punzante, Tiro rápido y Estallido de flechas (de 10 a 14; Estallido de flechas a 12 para su 2.ª especialización).",
      "Naranjas (1,5% cada uno): Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento en Nezekan, Amplificación de Daño en Zikel, Amplificación de Daño Crítico en Vaizel.",
      "Verdes de pasivas: Ojo concentrado y Determinación de cazador (2 de cada en Nezekan), Alma de cazador (2 en Zikel) y 1 de cada en Vaizel y Triniel: +4 para las tres.",
      "Ataque y Crítico, luego Acierto de Multigolpe en Triniel, y el resto según pases."
@@ -496,13 +496,13 @@
     "items": [
      "Puntos de Maná máximos: Disparo certero ya te da maná.",
      "Flecha sin puntería (3 puntos por nodo, solo contra stagger): solo los que estén de paso.",
-     "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): no hacen nada en PvE.",
+     "Resistencia a Multigolpe (Triniel) y Tolerancia a Daño Crítico (Vaizel): no hacen nada en JcE.",
      "Si vas corto: Flecha de supresión, Cepo explosivo y Eliminación de impacto pueden esperar."
     ]
    },
    {
     "tipo": "aviso",
-    "texto": "Dos presets: **Prioridad de lanzamiento** (299 puntos, pasos 1-3) y **PvE completo** (497 puntos). No se ha publicado cuántos puntos tiene un nivel 45 en el lanzamiento: sigue el primero en orden y para donde se acaben. Reasignar es barato."
+    "texto": "Dos presets: **Prioridad de lanzamiento** (299 puntos, pasos 1-3) y **JcE completo** (497 puntos). No se ha publicado cuántos puntos tiene un nivel 45 en el lanzamiento: sigue el primero en orden y para donde se acaben. Reasignar es barato."
    }
   ],
   "rotacion": [

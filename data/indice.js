@@ -267,13 +267,13 @@ window.INDICE = [
   "slug": "pvp__legion-que-desbloquea",
   "categoria": "pvp",
   "titulo": "Legión: qué desbloquea",
-  "resumen": "Ninguna legión es obligatoria, pero únete igualmente por sus buffs (EXP, ataque PvE y PvP) y entra antes de tu primera noche de asedio, que depende de la legión. No se ha encontrado contenido PvE que la requiera."
+  "resumen": "Ninguna legión es obligatoria, pero únete igualmente por sus buffs (EXP, ataque JcE y PvP) y entra antes de tu primera noche de asedio, que depende de la legión. No se ha encontrado contenido JcE que la requiera."
  },
  {
   "slug": "pvp__es-obligatorio-el-pvp-en-aion-2",
   "categoria": "pvp",
   "titulo": "¿Es obligatorio el PvP?",
-  "resumen": "No: puedes subir, equiparte, hacer mazmorras y raids sin pelear nunca contra otro jugador. Pero el PvE necesita AP (fragmentos de stigma) y el PvP necesita nivel de objeto y poder de combate que se ganan en PvE."
+  "resumen": "No: puedes subir, equiparte, hacer mazmorras y raids sin pelear nunca contra otro jugador. Pero el JcE necesita AP (fragmentos de stigma) y el PvP necesita nivel de objeto y poder de combate que se ganan en JcE."
  },
  {
   "slug": "economy__farmear-kina-tope-diario-rutas-y-comisiones-del-mercado",

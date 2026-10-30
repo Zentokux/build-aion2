@@ -325,10 +325,10 @@
    },
    {
     "tipo": "aviso",
-    "texto": "Los puntos de habilidad solo suben cada habilidad hasta **10**; lo demás sale del equipo. Si te sobran, ponlos en este orden (enfocado a PvE)."
+    "texto": "Los puntos de habilidad solo suben cada habilidad hasta **10**; lo demás sale del equipo. Si te sobran, ponlos en este orden (enfocado a JcE)."
    },
    {
-    "titulo": "Puntos que sobran (PvE)",
+    "titulo": "Puntos que sobran (JcE)",
     "tipo": "tabla",
     "columnas": [
      "Habilidad",
