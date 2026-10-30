@@ -9,8 +9,7 @@
   "Clase divertida y con mucho techo de habilidad"
  ],
  "contras": [
-  "Burst y luego un hueco: unos 20 s de burst cada 1 min 30 s; entre ventanas, Estocada al corazón depende de la suerte con los críticos",
-  "Los buffs no cuadran: Pacto de celeridad y Colmillo salvaje vuelven al minuto y Clon ilusorio al minuto y medio",
+  "Burst y luego un hueco: unos 20 s de burst cada minuto; entre ventanas, Estocada al corazón depende de la suerte con los críticos",
   "Estar a la espalda es daño: en el muñeco 100 %, en un combate real cuenta con un 60-80 %",
   "Frágil: sin bloqueo y con poca defensa; errores que un Gladiador aguanta te matan",
   "Según Arthars, pide varias veces más trabajo que un Gladiador o un Hechicero para el mismo daño o menos: elígelo por cómo se juega, no por los números"
@@ -83,7 +82,7 @@
   },
   "illusive-clone": {
    "nivel": "20",
-   "por_que": "Tu burst: durante 20 s a nivel 20 (17 a 15) Estocada al corazón no tiene enfriamiento y haces un 20 % más de daño, con +20 % de Daño Crítico y Explotar debilidades x1,5 encima. Enfriamiento de 1 min 30 s. Casi todo tu daño pasa dentro: úsalo en el jefe, nunca en monstruos normales. aLuckyRO: imprescindible hasta que Estocada al corazón llegue a 16; con críticos de sobra Estocada al corazón se reinicia sola y puedes cambiar el hueco un tiempo, pero a 20 vuelve por su aumento de daño."
+   "por_que": "Tu burst: durante 20 s a nivel 20 (17 a 15) Estocada al corazón no tiene enfriamiento y haces un 20 % más de daño, con +20 % de Daño Crítico y Explotar debilidades x1,5 encima. Enfriamiento de 1 min (desde el parche del 28-oct; antes 1 min 30 s). Casi todo tu daño pasa dentro: úsalo en el jefe, nunca en monstruos normales. aLuckyRO: imprescindible hasta que Estocada al corazón llegue a 16; con críticos de sobra Estocada al corazón se reinicia sola y puedes cambiar el hueco un tiempo, pero a 20 vuelve por su aumento de daño."
   },
   "swift-contract": {
    "nivel": "15, luego 20",

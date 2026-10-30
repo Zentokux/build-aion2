@@ -36,7 +36,7 @@
   "lunge-stance": {"nivel": "20", "por_que": "El nivel 20 recorta todos los enfriamientos con los críticos: Punzada descendente, Explosión de furia, el bloqueo y los acercamientos casi siempre listos. El primer estigma a subir al máximo."},
   "focused-block": {"nivel": "5", "por_que": "Bloqueo garantizado. Cada bloqueo activa el buff de grupo de Contraataque experimentado: bloquear es buffear. A 5 se puede usar dos veces seguidas."},
   "rage-burst": {"nivel": "5", "por_que": "Activa Punzada descendente sobre el objetivo durante 10 s, +10 % de Amplificación de Daño de JcE y −10 % de Ataque al jefe."},
-  "zikels-blessing": {"nivel": "10", "por_que": "El cuarto hueco por defecto: +20 % de Ataque, sin depender de cómo juegue tu grupo."},
+  "zikels-blessing": {"nivel": "10", "por_que": "El cuarto hueco por defecto: +20 % de Ataque, sin depender de cómo juegue tu grupo. A 10 suma +10 % de Amplificación de Daño de JcE. Si puedes subirla más, a 15 da +50 % de Acierto de Multigolpe; ninguna de las fuentes de esta build llega ahí."},
   "lifestealing-blade": {"nivel": "20", "por_que": "Cuarto hueco para un grupo organizado: Predation mejora los golpes de todos. Solo vale la pena a 20."},
   "blade-toss": {"nivel": "En grupo", "por_que": "La elección de grupo de aLuckyRO: −30 % de Defensa al jefe durante 10 s, así todo el grupo lo mata antes. En un grupo organizado, en lugar de Bendición de Zikel cuando haces de semitanque."},
   "wave-armor": {"nivel": "15", "por_que": "Solo sin Templario. Su nivel 25, el fuerte, no existe en global."}

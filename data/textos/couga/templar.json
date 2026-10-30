@@ -27,7 +27,7 @@
   "shield-smite": {"nivel": "16", "por_que": "Activa Juicio; −2 s de enfriamiento y un 50 % de probabilidad de activar Embestida decadente."},
   "debilitating-smash": {"nivel": "12", "por_que": "Se activa tras un bloqueo o tras Golpe de escudo; ignora Bloqueo y Evasión."},
   "warding-strike": {"nivel": "12", "por_que": "Activa Juicio; Bloqueo y tolerancia a daño mientras dura su efecto."},
-  "flash-rampage": {"nivel": "12, luego 16", "por_que": "Solo contra objetivos en stagger; −1 s a todos los enfriamientos por golpe. Ya no va en la línea de JcE: Leonis la quitó porque perdía daño, Azotamiento continuo rellena mejor los huecos. Sáltate también sus nodos de Daevanion. La espec. de −1 s necesita 16; a 12 coge Multigolpe y la de Maná."},
+  "flash-rampage": {"nivel": "De 0 a 8", "por_que": "Solo contra objetivos en stagger; −1 s a todos los enfriamientos por golpe. No la subas en JcE: Leonis la quitó de la línea porque perdía daño, Azotamiento continuo rellena mejor los huecos. Sáltate también sus nodos de Daevanion."},
   "shield-rush": {"nivel": "12", "por_que": "Esquiva y embestida, activa Juicio; −10 s de enfriamiento y +10 m de alcance."},
   "vicious-strike": {"nivel": "10", "por_que": "Ataque básico en Clic izq.; con los 10 de los puntos de habilidad basta."},
   "empyrean-lords-punishment": {"nivel": "15", "por_que": "Daño en área con mucho stagger (+50 a 10); a 15, +10 % de Amplificación de Daño de JcE. Necesario contra jefes con mecánica de stagger."},

@@ -19,7 +19,7 @@
   {"nombre_en": "leveling", "nombre": "Subida de nivel", "uso": "Tormenta de flechas para los grupos de monstruos."}
  ],
  "cartas": {
-  "deadshot": {"nivel": "20", "por_que": "Golpe cargado: siempre cargado del todo y siempre con Precisión activa. Antes de 20 coge las dos primeras; cambia la de movimiento por la de +50 % de daño si no necesitas moverte mientras cargas. Fubgun (global) prefiere daño a movilidad: +30 % de Velocidad de habilidad y la de daño a 16, y a 20 Ignorar Bloqueo y Evasión (la hoja de JOHNPAL también), o la de movimiento donde el combate la pida."},
+  "deadshot": {"nivel": "20", "por_que": "Golpe cargado: siempre cargado del todo y siempre con Precisión activa. Fubgun (global) y la hoja de JOHNPAL prefieren daño a movilidad: +30 % de Velocidad de habilidad y la de daño extra a 16, y a 20 Ignorar Bloqueo y Evasión. Cambia una por la de movimiento solo donde el combate te obligue a moverte mientras cargas."},
   "gale-arrow": {"nivel": "20", "por_que": "Buff de Velocidad de Hechizo y de daño. Antes de 20 coge la de Velocidad de Hechizo y −10 s de enfriamiento (antes de 16: +5 s de duración). Fubgun no coge movilidad hasta el tercer hueco, porque sin ella el buff está siempre activo."},
   "drill-dart": {"nivel": "16", "por_que": "Como mínimo 16. Contra un jefe que pide aguantar, coge la absorción de vida en vez de Velocidad de habilidad."},
   "snipe": {"nivel": "16", "por_que": "Ataque básico: acorta Flecha al objetivo y añade la cadena Tempest Arrow. A 20 añade Multigolpe."},
@@ -98,7 +98,8 @@
    {"titulo": "Prioridades", "tipo": "pasos", "items": [
     "Nodos azules que llevan las activas a 12 (abren su segunda especialización): Flecha al objetivo, Disparo certero, Huracán de flechas, Flecha punzante y Estallido de flechas.",
     "Nodos naranja ofensivos de las esquinas: Velocidad de Hechizo y Reducción de Tiempo de Enfriamiento. Coge el camino más corto y las habilidades que pillen de paso.",
-    "Nodos de Ataque, Crítico, Ojo concentrado y Determinación de cazador; luego el resto (defensa: Defensa, Puntos de Vida, Resistencia Crítica)."
+    "Nodos de Ataque, Crítico, Ojo concentrado y Determinación de cazador; luego el resto (defensa: Defensa, Puntos de Vida, Resistencia Crítica).",
+    "Prioridad de la ruta: nodos azules de Flecha al objetivo, Estallido de flechas, Eliminación de impacto, Huracán de flechas y Flecha en el objetivo, las habilidades que suben las builds coreanas."
    ]},
    {"titulo": "Tableros", "tipo": "tabla", "columnas": ["Tablero", "Nivel", "Nodos naranja"], "filas": [
     ["Nezekan", "12", "Velocidad de Hechizo, Reducción de Tiempo de Enfriamiento"],

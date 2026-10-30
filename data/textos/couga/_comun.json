@@ -74,7 +74,7 @@
  "ariel": [
   {
    "tipo": "aviso",
-   "texto": "**Ariel** (nuevo, 21 de octubre): un sexto tablero, de JcE. Sus puntos no salen de los niveles: los fragmentos de Ariel caen en el modo Difícil de la Cueva de Krao y de Draupnir (nivel de objeto 2600), y 100 fragmentos son un Daevanion Crystal: Ariel en Substance Morph (Especial, Daevanion): hasta 30 cristales de cada mazmorra, 60 por personaje. La ruta coge los cuatro nodos de Amplificación de Daño de JcE (+6 %), uno de Amplificación de Daño de Jefe (+1 %) y Crítico +10; los dos de Amplificación de Daño de JcE del centro primero, a 13 y 26 cristales."
+   "texto": "**Ariel** (nuevo, 21 de octubre): un sexto tablero, de JcE. Sus puntos no salen de los niveles: los fragmentos de Ariel caen en el modo Difícil de la Cueva de Krao y de Draupnir (nivel de objeto 2600) y, desde el 28 de octubre, también del Cañón de Urugugu y de la Isla Aérea de Vakron (2700); 100 fragmentos son un Daevanion Crystal: Ariel en Substance Morph (Especial, Daevanion): hasta 30 cristales de cada mazmorra, **120 por personaje**, aparte de los 416. La ruta coge los cuatro nodos de Amplificación de Daño de JcE (+6 %), los cuatro de Amplificación de Daño de Jefe (+4 %), los cuatro de Tolerancia a Daño JcE (+6 %) y dos de Crítico (+20). Los primeros 60 cristales son los de antes (los dos de Amplificación de Daño de JcE del centro a 13 y 26); pasados 60 vienen los otros tres de Amplificación de Daño de Jefe, a 87, y luego los de Tolerancia a Daño JcE, a 117. Los otros dos de Crítico se quedan fuera: con ellos no cabe el cuarto de Tolerancia."
   }
  ],
  "cristales": [
@@ -91,7 +91,7 @@
   },
   {
    "tipo": "aviso",
-   "texto": "Los tableros cuestan más de lo que hay: Nezekan, Zikel y Vaizel 134 cada uno y Triniel 168, 570 en total, así que no se pueden llenar todos. La ruta de arriba coge primero los nodos que cuentan. Las mazmorras del lado de la facción enemiga no dan nada para estos tableros, y Azphel tiene su propio cristal (solo JcJ). Comprueba el tablero en el juego antes de gastarlo todo: la ruta está calculada, no sacada de un vídeo."
+   "texto": "Los tableros cuestan más de lo que hay: Nezekan, Zikel y Vaizel 134 cada uno y Triniel 168, 570 en total, así que no se pueden llenar todos. La ruta de arriba coge primero los nodos que cuentan (en JcE solo los naranja ofensivos); el preset «Con 416 cristales» sigue después el orden de esta build: sus otras habilidades, luego las habilidades y pasivas que más suben los mejores jugadores coreanos, Ataque y Crítico, defensa y el Maná al final. Las mazmorras del lado de la facción enemiga no dan nada para estos tableros, y Azphel tiene su propio cristal (solo JcJ). Comprueba el tablero en el juego antes de gastarlo todo: la ruta está calculada, no sacada de un vídeo."
   }
  ],
  "titulos": [

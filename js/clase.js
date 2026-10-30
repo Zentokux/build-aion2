@@ -483,10 +483,10 @@ function pintarDaevanion(B, H) {
       (fz && tb.propio ? '<div class="aviso" style="margin-top:10px">Las fases son solo para los 416 cristales de los cuatro primeros tableros; este va aparte, con su ruta completa.</div>' : "") +
       (estado.fase ? tablaFases(pr) : "") +
       (tb.propio && tb.aviso ? '<div class="aviso" style="margin-top:10px">' + tb.aviso + "</div>" :
-      tb.propio ? '<div class="aviso" style="margin-top:10px"><strong>Ariel (nuevo, parche del 21-oct):</strong> solo JcE y con cristales propios, no con los puntos de nivel. ' +
-      "Sale <strong>Fragmento de Ariel</strong> en el modo <strong>Difícil</strong> de Cueva de Krao y Draupnir (nivel de objeto <strong>2.600</strong>); 100 fragmentos = 1 Cristal de Daevanion: Ariel " +
-      "(Substance Morph), hasta 30 por mazmorra: <strong>60 en total</strong>. La ruta coge los 4 nodos de Amplificación de Daño de JcE (+6 %), uno de Amplificación de Daño de Jefe (+1 %) y Crítico +10; " +
-      "primero los dos del medio (a los 13 y 26 cristales). Es igual en todas las clases.</div>" :
+      tb.propio ? '<div class="aviso" style="margin-top:10px"><strong>Ariel (parches del 21 y 28-oct):</strong> solo JcE y con cristales propios, no con los puntos de nivel. ' +
+      "Sale <strong>Fragmento de Ariel</strong> en el modo <strong>Difícil</strong> de Cueva de Krao y Draupnir (nivel de objeto <strong>2.600</strong>) y de Cañón de Urugugu e Isla Aérea de Vakron (<strong>2.700</strong>); 100 fragmentos = 1 Cristal de Daevanion: Ariel " +
+      "(Substance Morph), hasta 30 por mazmorra: <strong>120 en total</strong>. La ruta coge los 4 nodos de Amplificación de Daño de JcE (+6 %), los 4 de Amplificación de Daño de Jefe (+4 %), los 4 de Tolerancia a Daño JcE (+6 %) y dos de Crítico (+20); " +
+      "los primeros 60 son los de antes (los dos del medio a los 13 y 26 cristales), luego los otros tres de Jefe (a 87) y la Tolerancia (a 117). Es igual en todas las clases.</div>" :
       D.presets.length > 1 ? '<div class="aviso" style="margin-top:10px"><strong>Modos, por orden:</strong> ' + D.presets.map(function (p) {
         return "<strong>" + esc(PRESET_DAEV[p.nombre_en] || p.nombre_en) + "</strong> (" + sumaPuntos(p) + ")";
       }).join(", luego ") + ". Hoy se juntan como mucho <strong>416 cristales</strong> para estos cuatro tableros: «Con 416 cristales» los gasta todos en lo que más daño da. " +
@@ -636,7 +636,7 @@ function elegirGuia(g) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  var V = "?v=30";
+  var V = "?v=31";
   cargarScript("data/builds/" + c + ".js" + V, function () {
     cargarScript("data/couga/" + c + ".js" + V, build3, build3);
   }, function () {
