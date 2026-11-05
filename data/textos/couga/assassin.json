@@ -259,8 +259,78 @@
      "**Resto de piezas**: Impacto trasero primero; cualquiera de las tres pasivas siguientes vale. No persigas un juego perfecto en Season 1: el equipo de global tiene una línea menos y además saca ahí Fuerza, Precisión y Velocidad de Hechizo.",
      "**Crítico** importa más que en otras clases: Estocada al corazón solo se reinicia con un crítico.",
      "**Alas**: las Alas de Talisra dan un 4 % de Reducción de Tiempo de Enfriamiento, las mejores para la clase (XifanGG). Están en la tienda de la temporada, pestaña Especial, por puntos de temporada: guárdalos para ellas.",
-     "**Piedras de maná**: Ataque, Crítico y Precisión."
+     "**Piedras de maná**: Amplificación de Daño por la Espalda y Ataque primero, luego Puntos de Vida: es lo que engastan los mejores Sicarios de Corea (tabla de abajo). Crítico y Precisión salen de las líneas de las joyas."
     ]
+   },
+   {
+    "titulo": "Qué llevan en cada pieza los 747 mejores Sicarios de Corea (2-nov)",
+    "tipo": "tabla",
+    "columnas": [
+     "Ranura",
+     "Líneas de equipo",
+     "Piedras de maná"
+    ],
+    "filas": [
+     [
+      "Arma y guarda",
+      "Amplificación de Daño de Arma, Fuerza, Velocidad de Hechizo, Amplificación de Daño: vienen todas de serie",
+      "Amplificación de Daño por la Espalda, luego Ataque, luego Puntos de Vida"
+     ],
+     [
+      "Casco",
+      "Golpe, Ataque; Curación recibida en un 22 % de ellos",
+      "Amplificación de Daño por la Espalda, luego Ataque, luego Maná"
+     ],
+     [
+      "Hombreras",
+      "Amplificación de Daño Crítico, Ataque",
+      "Amplificación de Daño por la Espalda, luego Ataque, luego Puntos de Vida"
+     ],
+     [
+      "Peto",
+      "Amplificación de Daño, Ataque; Crítico en un 18 %",
+      "Amplificación de Daño por la Espalda, luego Ataque, luego Puntos de Vida"
+     ],
+     [
+      "Grebas",
+      "Tolerancia a Daño, Perforación, Ataque",
+      "Amplificación de Daño por la Espalda, luego Ataque, luego Maná"
+     ],
+     [
+      "Guantes",
+      "Velocidad de Hechizo, Perforación, Ataque",
+      "Amplificación de Daño por la Espalda, luego Ataque, luego Puntos de Vida"
+     ],
+     [
+      "Botas",
+      "Velocidad de Movimiento, Perforación, Ataque",
+      "Amplificación de Daño por la Espalda, luego Ataque, luego Puntos de Vida"
+     ],
+     [
+      "Capa",
+      "Golpe, Perforación, Ataque",
+      "Amplificación de Daño por la Espalda, luego Ataque, luego Puntos de Vida"
+     ],
+     [
+      "Collar y pendientes",
+      "Ataque; luego Crítico (67-73 %), luego Precisión (40-46 %)",
+      "Ataque, luego Amplificación de Daño por la Espalda, luego Puntos de Vida"
+     ],
+     [
+      "Anillos",
+      "Ataque; luego Crítico (47 %), luego Precisión (23 %)",
+      "Ataque, luego Puntos de Vida, luego Maná"
+     ],
+     [
+      "Brazaletes",
+      "Tiempo, Destrucción, Fantasía, Sabiduría",
+      "Ataque, luego Puntos de Vida, luego Maná"
+     ]
+    ]
+   },
+   {
+    "tipo": "aviso",
+    "texto": "La mayoría de las líneas vienen de serie con la pieza; las que llevan porcentaje son las que merece la pena comparar entre dos piezas. **En global** los mejores Sicarios llevan el conjunto de rey dragón blanco brillante (cerca de la mitad) o de rey dragón sabio brillante a +15, con Ascension Bracelet, Cinturón noble, Amuleto de la revelación y Runa de enfrentamiento (3-nov)."
    },
    {
     "comun": "soulbind"
