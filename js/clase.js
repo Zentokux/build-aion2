@@ -90,7 +90,7 @@ function pintarClase(B, guia) {
     var posibles = Object.keys(rango).length;
     var col = function (titulo, filas) { return "<div><div class='tt-sec'>" + titulo + "</div><div class='tt-lista'>" + filas.join("") + "</div></div>"; };
     var izq = fijas.length ? col("Fijas", fijas.map(function (s) { return "<div><span>" + esc(s[0]) + "</span><b>" + esc(s[1]) + "</b></div>"; })) : "";
-    var der = e.vinculos.length ? col("Soul Binding · busca estas, en orden", e.vinculos.map(function (v, i) {
+    var der = e.vinculos.length ? col(B.ficha_real ? "Soul Binding · las que lleva" : "Soul Binding · busca estas, en orden", e.vinculos.map(function (v, i) {
       return "<div><span><i>" + (i + 1) + ".</i> " + esc(v) + "</span><b>" + esc(rango[v] || "") + "</b></div>";
     })) : "";
     return "<div class='tt-ancho'><div class='tt-nombre'>" + esc(e.nombre) + (e.mejora ? " +" + e.mejora : "") + "</div><div class='tt-sub'>" + esc(e.ranura) +
@@ -452,7 +452,7 @@ function pintarDaevanion(B, H) {
     var h = '<div class="botones">' + D.presets.map(function (p, i) {
       return '<button class="boton' + (i === estado.preset ? " on" : "") + '" data-preset="' + i + '">' + esc(PRESET_DAEV[p.nombre_en] || p.nombre_en) + "</button>";
     }).join("") + "</div>" +
-      (iFases >= 0 ? '<div class="botones fases"><span>Por fases (416 en 3 tandas):</span>' + D.presets[iFases].fases.map(function (f, i) {
+      (iFases >= 0 ? '<div class="botones fases"><span>Por fases (' + totalFases() + ' en 3 tandas):</span>' + D.presets[iFases].fases.map(function (f, i) {
         return '<button class="boton' + (estado.fase === i + 1 ? " on" : "") + '" data-fase="' + (i + 1) + '">Fase ' + (i + 1) + " · " + f.puntos + "</button>";
       }).join("") + "</div>" : "") +
       '<div class="botones">' + D.tableros.map(function (t, i) {
@@ -480,13 +480,14 @@ function pintarDaevanion(B, H) {
         "<span>Cambia de pestaña para ver los de cada tablero</span></div>" :
       '<div class="leyenda-daev"><span>Borde azul = nodo tomado hasta este paso del orden</span><span>Borde blanco = último nodo del paso</span>' +
       "<span>Mueve «Orden» para ver en qué orden se cogen</span></div>") +
-      (fz && tb.propio ? '<div class="aviso" style="margin-top:10px">Las fases son solo para los 416 cristales de los cuatro primeros tableros; este va aparte, con su ruta completa.</div>' : "") +
+      (fz && tb.propio ? '<div class="aviso" style="margin-top:10px">Las fases son solo para los ' + totalFases() + ' cristales de los cuatro primeros tableros; este va aparte, con su ruta completa.</div>' : "") +
       (estado.fase ? tablaFases(pr) : "") +
       (tb.propio && tb.aviso ? '<div class="aviso" style="margin-top:10px">' + tb.aviso + "</div>" :
       tb.propio ? '<div class="aviso" style="margin-top:10px"><strong>Ariel (parches del 21 y 28-oct):</strong> solo JcE y con cristales propios, no con los puntos de nivel. ' +
       "Sale <strong>Fragmento de Ariel</strong> en el modo <strong>Difícil</strong> de Cueva de Krao y Draupnir (nivel de objeto <strong>2.600</strong>) y de Cañón de Urugugu e Isla Aérea de Vakron (<strong>2.700</strong>); 100 fragmentos = 1 Cristal de Daevanion: Ariel " +
       "(Substance Morph), hasta 30 por mazmorra: <strong>120 en total</strong>. La ruta coge los 4 nodos de Amplificación de Daño de JcE (+6 %), los 4 de Amplificación de Daño de Jefe (+4 %), los 4 de Tolerancia a Daño JcE (+6 %) y dos de Crítico (+20); " +
       "los primeros 60 son los de antes (los dos del medio a los 13 y 26 cristales), luego los otros tres de Jefe (a 87) y la Tolerancia (a 117). Es igual en todas las clases.</div>" :
+      B.ficha_real ? '<div class="aviso" style="margin-top:10px">Los tableros se abren a nivel ' + abren() + "; Ariel y Azphel van aparte, con sus propios cristales.</div>" :
       D.presets.length > 1 ? '<div class="aviso" style="margin-top:10px"><strong>Modos, por orden:</strong> ' + D.presets.map(function (p) {
         return "<strong>" + esc(PRESET_DAEV[p.nombre_en] || p.nombre_en) + "</strong> (" + sumaPuntos(p) + ")";
       }).join(", luego ") + ". Hoy se juntan como mucho <strong>416 cristales</strong> para estos cuatro tableros: «Con 416 cristales» los gasta todos en lo que más daño da. " +
@@ -494,6 +495,9 @@ function pintarDaevanion(B, H) {
       '<div class="aviso" style="margin-top:10px"><strong>Ruta de la guía:</strong> ' + sumaPuntos(D.presets[0]) + " puntos en los cuatro tableros (cuestan 570 en total: no da para todos). " +
       "Los tableros se abren a nivel " + abren() + (D.tableros.some(function (t) { return t.propio; }) ? "; Ariel va aparte, con sus propios cristales" : "") + ".</div>");
     el.innerHTML = h;
+  }
+  function totalFases() {
+    return iFases < 0 ? 0 : D.presets[iFases].fases.reduce(function (s, f) { return s + f.puntos; }, 0);
   }
   // qué poner en cada tablero en cada fase (nodos y cristales que se añaden)
   function tablaFases(pr) {
@@ -508,8 +512,8 @@ function pintarDaevanion(B, H) {
         return "<td>" + (h > a ? "+" + (h - a) + " nodos · " + s : "nada") + "</td>";
       }).join("") + "</tr>";
     }).join("");
-    return '<div class="aviso" style="margin-top:10px"><strong>Por fases:</strong> los 416 cristales en 3 tandas parejas, repartidas entre los cuatro tableros para que el daño suba a la vez. ' +
-      "Primero va lo que pide el autor de esta build y luego lo que más daño da por cristal. En cada fase pon en cada tablero los nodos en dorado (cambia de pestaña) y pasa a la siguiente. Ariel y Azphel van aparte.</div>" +
+    return '<div class="aviso" style="margin-top:10px"><strong>Por fases:</strong> los ' + totalFases() + ' cristales en 3 tandas parejas, repartidas entre los cuatro tableros para que el daño suba a la vez. ' +
+      (B.ficha_real ? "Son solo sus nodos, de los que más daño dan a los que menos." : "Primero va lo que pide el autor de esta build y luego lo que más daño da por cristal.") + " En cada fase pon en cada tablero los nodos en dorado (cambia de pestaña) y pasa a la siguiente. Ariel y Azphel van aparte.</div>" +
       '<div class="tabla-scroll"><table class="tabla tabla-fases"><thead><tr><th>Fase</th><th>Cristales</th>' +
       tabs.map(function (t) { return "<th>" + esc(t.nombre) + "</th>"; }).join("") + "</tr></thead><tbody>" + filas + "</tbody></table></div>";
   }
@@ -636,7 +640,7 @@ function elegirGuia(g) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  var V = "?v=33";
+  var V = "?v=34";
   cargarScript("data/builds/" + c + ".js" + V, function () {
     cargarScript("data/couga/" + c + ".js" + V, build3, build3);
   }, function () {
