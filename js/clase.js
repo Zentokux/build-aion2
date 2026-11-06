@@ -17,7 +17,7 @@ function pintarClase(B, guia) {
   B.habilidades.forEach(function (h) { H[h.id] = h; });
   // habilidades que el texto nombra pero no van en la build (alternativas, PvP, farmeo): solo icono y nombre
   var EXTRA = (B.habilidades_extra || []).map(function (x) {
-    return H["x:" + x.nombre] = { id: "x:" + x.nombre, nombre: x.nombre, icono: x.icono, tipo: "No va en esta build (alternativa)", especializaciones: [], efecto: "" };
+    return H["x:" + x.nombre] = { id: "x:" + x.nombre, nombre: x.nombre, icono: x.icono, tipo: x.tipo || "No va en esta build (alternativa)", especializaciones: [], efecto: "" };
   });
   var main = document.getElementById("main");
   document.title = "Build JcE de " + B.nombre + " · BUILD AION2";
@@ -283,7 +283,10 @@ function pintarClase(B, guia) {
   h += seccion("habilidades", "Habilidades", th);
 
   // ---------- rotación y macros (barra estilo juego) ----------
-  h += seccion("rotacion", "Rotación y macros", barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) + bloquesHTML(S.rotacion));
+  h += seccion("rotacion", "Rotación y macros", barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) + bloquesHTML(S.rotacion) +
+    (B.abismo ? '<h2 class="mr" id="farmeo-abismo">Farmeo en el Abismo</h2>' + bloquesHTML(B.abismo.intro) +
+      barraJuego({ barra: B.abismo.barra, macros: B.abismo.macros, nivel: B.nivel, basico_en_macro: true, titulo_barra: "Su barra para el Abismo" }, H, icono, hab, nombrePreset, idPorNombre, T) +
+      bloquesHTML(B.abismo.bloques) : ""));
 
   // ---------- coleccionables ----------
   var C = B.coleccionables || {};
@@ -384,7 +387,7 @@ function barraJuego(B, H, icono, hab, nombrePreset, idPorNombre, T) {
     }).join("") + "</div>";
   }).join("") + "</div>";
 
-  var out = '<div class="barra-box"><h3 style="margin-top:0">Barra nivel ' + B.nivel + "</h3>" + barra +
+  var out = '<div class="barra-box"><h3 style="margin-top:0">' + (B.titulo_barra ? esc(B.titulo_barra) : "Barra nivel " + B.nivel) + "</h3>" + barra +
     '<div class="barra-pie">' + (macro ? "Doradas: lo que pulsa la macro (en Clic der.). El resto lo pulsas tú. " : "Sin macro: todo lo pulsas tú. ") +
     "En cada pila sale primero la de abajo (el número pequeño es la prioridad).</div></div>";
 
@@ -640,7 +643,7 @@ function elegirGuia(g) {
 (function () {
   var c = param("c") || "assassin";
   cabecera(c);
-  var V = "?v=34";
+  var V = "?v=35";
   cargarScript("data/builds/" + c + ".js" + V, function () {
     cargarScript("data/couga/" + c + ".js" + V, build3, build3);
   }, function () {
